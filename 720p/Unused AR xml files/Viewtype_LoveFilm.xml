@@ -1,0 +1,165 @@
+﻿<includes>
+	<include name="Viewtype_LoveFilm">
+		<control type="group">
+			<visible>Control.IsVisible(510)</visible>
+			<control type="group">
+				<animation effect="slide" end="0,58" delay="1200" condition="!Player.HasVideo + !VideoPlayer.IsFullscreen + !Player.HasAudio">Conditional</animation>
+				<include>Animation_ZoomInZoomOut</include>
+				<include>Animation_ZoomedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<control type="group">
+					<posx>75</posx>
+					<posy>78</posy>
+					<control type="image">
+						<posx>8</posx>
+						<posy>8</posy>
+						<width>1114</width>
+						<height>434</height>
+						<texture border="8">thumb_border.png</texture>
+					</control>
+					<control type="image">
+						<posx>360</posx>
+						<posy>12</posy>
+						<height>426</height>
+						<width>758</width>
+						<texture border="2">LovefilmEpisodeFrame.png</texture>
+					</control>
+					<control type="group">
+						<visible>Container.Content(movies)</visible>
+						<control type="label">
+							<posx>124</posx>
+							<posy>384</posy>
+							<width>308</width>
+							<height>40</height>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.RatingAndVotes][/B]</label>
+							<font>Font_LandscapeLabel</font>
+							<textcolor>LoveFilmTitle</textcolor>
+							<animation effect="fade" start="0" end="100" time="200" delay="400">WindowOpen</animation>
+							<animation effect="fade" start="100" end="0">WindowClose</animation>
+						</control>
+						<control type="image">
+							<posx>24</posx>
+							<posy>392</posy>
+							<width>134</width>
+							<height>22</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<texture border="2">thumb_border_for_lovefilm_minus_border.png</texture>
+							<animation effect="fade" start="0" end="100" time="200" delay="200">WindowOpen</animation>
+							<animation effect="fade" start="100" end="0">WindowClose</animation>
+						</control>
+					</control>
+					<control type="image">
+						<posx>360</posx>
+						<posy>12</posy>
+						<width>758</width>
+						<height>426</height>
+						<texture background="true" fallback="backdrops/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<aspectratio aligny="top">scale</aspectratio>
+						<visible>!IsEmpty(ListItem.Title) + !IsEmpty(ListItem.path)</visible>
+					</control>
+					<control type="image">
+						<posx>360</posx>
+						<posy>12</posy>
+						<width>758</width>
+						<height>426</height>
+						<texture background="true">backdrops/movies.jpg</texture>
+						<aspectratio aligny="top">scale</aspectratio>
+						<visible>!IsEmpty(ListItem.Title) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>360</posx>
+						<posy>12</posy>
+						<width>75</width>
+						<height>426</height>
+						<texture>LovefilmDiffuse.png</texture>
+					</control>
+					<control type="textbox">
+						<posx>24</posx>
+						<posy>18</posy>
+						<width>308</width>
+						<height>144</height>
+						<font>Font_LoveFilmTitle</font>
+						<textcolor>LoveFilmTitle</textcolor>
+						<label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Year,(,)]</label>
+						<autoscroll time="3200" delay="4000" repeat="4000">True</autoscroll>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="textbox">
+						<posx>24</posx>
+						<posy>164</posy>
+						<width>308</width>
+						<height>216</height>
+						<info>ListItem.Plot</info>
+						<autoscroll time="3600" delay="8000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<font>Font_LandscapeInfo</font>
+						<textcolor>LoveFilmInfo</textcolor>
+					</control>
+					<control type="image">
+						<posx>24</posx>
+						<posy>392</posy>
+						<width>122</width>
+						<height>22</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<texture>$INFO[ListItem.StarRating]</texture>
+						<colordiffuse>MediaFlagsDiffuse</colordiffuse>
+					</control>
+				</control>
+				<!-- Browser -->
+				<control type="fixedlist" id="510">
+					<posx>75</posx>
+					<posy>78</posy>
+					<height>450</height>
+					<width>1130</width>
+					<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
+					<ondown>60</ondown>
+					<viewtype label="LOVEFILM">list</viewtype>
+					<orientation>horizontal</orientation>
+					<scrolltime>100</scrolltime>
+					<preloaditems>2</preloaditems>
+					<pagecontrol>60</pagecontrol>
+					<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
+					<itemlayout width="0" height="0">
+					</itemlayout>
+					<focusedlayout width="1130" height="450">
+						<control type="image">
+							<posx>1078</posx>
+							<posy>400</posy>
+							<width>32</width>
+							<height>32</height>
+							<texture>$INFO[ListItem.Overlay]</texture>
+							<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						</control>
+						<control type="image">
+							<posx>1078</posx>
+							<posy>400</posy>
+							<width>32</width>
+							<height>32</height>
+							<texture>New.png</texture>
+							<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !Skin.HasSetting(RandomItems) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="image">
+					<posx>25</posx>
+					<posy>292</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture flipx="true">pics/picsarrow.png</texture>
+					<visible>Control.IsVisible(510) + Container(510).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>1225</posx>
+					<posy>292</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>pics/picsarrow.png</texture>
+					<visible>Control.IsVisible(510) + Container(510).HasNext</visible>
+				</control>
+			</control>
+			<include>ScrollBar_Horizontal</include>
+		</control>
+	</include>
+</includes>

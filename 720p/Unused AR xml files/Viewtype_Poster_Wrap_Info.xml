@@ -1,0 +1,271 @@
+﻿<includes>
+	<include name="Viewtype_Poster_Wrap_Info">
+		<control type="group">
+			<visible>Control.IsVisible(502)</visible>
+			<!-- Browser -->
+			<control type="wraplist" id="502">
+				<viewtype label="31309">list</viewtype>
+				<onleft>502</onleft>
+				<onright>502</onright>
+				<posx>-110</posx>
+				<posy>95</posy>
+				<height>515</height>
+				<width>1400</width>
+				<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
+				<ondown>60</ondown>
+				<orientation>horizontal</orientation>
+				<focusposition>2</focusposition>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
+				<pagecontrol>60</pagecontrol>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<itemlayout width="168" height="245">
+					<control type="image">
+						<posx>1</posx>
+						<posy>131</posy>
+						<width>162</width>
+						<height>241</height>
+						<texture>postermatte.png</texture>
+						<colordiffuse>MatteDiffuse</colordiffuse>
+						<include>Animation_HiddenByInfo</include>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>1</posx>
+						<posy>131</posy>
+						<width>162</width>
+						<height>241</height>
+						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<include>Animation_HiddenByInfo</include>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>1</posx>
+						<posy>131</posy>
+						<width>162</width>
+						<height>241</height>
+						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<include>Animation_HiddenByInfo</include>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>130</posy>
+						<width>164</width>
+						<height>243</height>
+						<texture>posterframeNF.png</texture>
+						<include>Animation_HiddenByInfo</include>
+					</control>
+					<control type="image">
+						<posx>142</posx>
+						<posy>352</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>PosterDiffuse</colordiffuse>
+						<include>Animation_HiddenByInfo</include>
+						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+					</control>
+					<control type="image">
+						<posx>142</posx>
+						<posy>352</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>New.png</texture>
+						<colordiffuse>PosterDiffuse</colordiffuse>
+						<include>Animation_HiddenByInfo</include>
+						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !Skin.HasSetting(RandomItems) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+					</control>
+					<control type="image">
+						<posx>1</posx>
+						<posy>373</posy>
+						<width>162</width>
+						<height>241</height>
+						<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<colordiffuse>PosterDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<include>Animation_HiddenByInfo</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="328" height="515">
+					<control type="image">
+						<posx>2</posx>
+						<posy>20</posy>
+						<width>320</width>
+						<height>476</height>
+						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<include>Animation_PosterInfoHide2</include>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="51" end="100" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>2</posx>
+						<posy>20</posy>
+						<width>320</width>
+						<height>476</height>
+						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<include>Animation_PosterInfoHide2</include>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="51" end="100" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>-18</posx>
+						<posy>0</posy>
+						<width>359</width>
+						<height>515</height>
+						<texture>posterframeF.png</texture>
+						<include>Animation_PosterInfoHide2</include>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="51" end="100" time="600" tween="back" easing="out" />
+							<effect type="fade" start="0" end="100" time="600" />
+						</animation>
+					</control>
+					<control type="image">
+						<posx>277</posx>
+						<posy>452</posy>
+						<width>32</width>
+						<height>32</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<include>Animation_PosterInfoHide2</include>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="164,278" start="51" end="100" time="600" tween="back" easing="out" />
+							<effect type="fade" start="0" end="100" time="600" />
+						</animation>
+						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+					</control>
+					<control type="image">
+						<posx>277</posx>
+						<posy>452</posy>
+						<width>32</width>
+						<height>32</height>
+						<texture>New.png</texture>
+						<include>Animation_PosterInfoHide2</include>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="164,278" start="51" end="100" time="600" tween="back" easing="out" />
+							<effect type="fade" start="0" end="100" time="600" />
+						</animation>
+						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !Skin.HasSetting(RandomItems) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+					</control>
+				</focusedlayout>
+			</control>
+			<!-- Browser label and flags -->
+			<control type="group">
+				<posx>570</posx>
+				<posy>470</posy>
+				<include>Animation_SlideUpFadeOut</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<control type="fadelabel">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
+					<font>Font_LandscapeTitle</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<visible>!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeTitle</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>[B]$INFO[ListItem.Episode,,. ][/B][B]$INFO[ListItem.Title][/B]</label>
+					<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeTitle</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<visible>IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>32</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeLabel</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>$LOCALIZE[31272]: [B]$INFO[ListItem.Date][/B]</label>
+					<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>32</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeLabel</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
+					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>64</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeLabel</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>$LOCALIZE[20360]: [B]$INFO[ListItem.Episode][/B]</label>
+					<visible>!IsEmpty(ListItem.Episode) + Container.Content(tvshows)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>96</posy>
+					<width>690</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<font>Font_LandscapeLabel</font>
+					<textcolor>LandscapeTitle</textcolor>
+					<label>$LOCALIZE[31242]: [B]$INFO[ListItem.Date][/B]</label>
+					<visible>!IsEmpty(ListItem.Date) + Container.Content(tvshows)</visible>
+				</control>
+				<control type="textbox">
+					<posx>0</posx>
+					<posy>78</posy>
+					<width>690</width>
+					<height>98</height>
+					<align>left</align>
+					<info>ListItem.Plot</info>
+					<autoscroll time="3600" delay="8000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>Font_LandscapeInfo</font>
+					<textcolor>LandscapeInfo</textcolor>
+					<visible>Container.Content(episodes) | Container.Content(movies)</visible>
+				</control>
+			</control>
+			<include>ScrollBar_Horizontal</include>
+		</control>
+	</include>
+</includes>

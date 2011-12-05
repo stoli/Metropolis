@@ -1,0 +1,1 @@
+TexturePacker.exe -i Themes\Aurora\media -o Themes\Aurora.xbt

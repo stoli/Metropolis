@@ -1,0 +1,1 @@
+TexturePacker.exe -i Themes\Fabric\media -o Themes\Fabric.xbt

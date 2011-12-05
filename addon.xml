@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon 
+	id="skin.metropolis" 
+	version="0.9.2" 
+	name="Metropolis" 
+	provider-name="Amra">
+  <requires>
+    <import addon="xbmc.gui" version="3.00"/>
+	<import addon="script.logo-downloader" version="2.0.0"/>
+	<import addon="script.favourites" version="1.0.3"/>
+	<import addon="script.randomitems" version="1.0.6"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<minversion app="xbmc">33035</minversion>
+		<summary>Updated for Eden, a Mix of Retro and Modern. Original Metropolis skin by Amra - continued by Stoli</summary>
+		<description>Metropolis is designed to show as much media info as possible with easy to read text and icons. All while trying to keep the skin smooth and simple to use for all family members with multiple themes and customizable menus and views. Credit to Hitcher for Alaska Revisited which was used as a base for Metropolis.</description>
+	</extension>
+</addon>

@@ -1,0 +1,17 @@
+v0.91 Alpha2
+-------------
+- Fixed some Linux capitalization errors
+- Fixed Fanart view movie set posters not showing
+- Added missing "Movie Set" label on various viewtypes
+- Added landscape.jpg option to Fanart view for TV Shows
+- Changed round button animations
+- Fixed German translation for "Movie Set"
+- Increase default home style time per image
+- Can no longer press left on Default Home style when Recently Added is turned off
+- Attempt to Make Video Genre screens smoother when descriptions are hidden
+- Added more studio logos
+
+
+v0.90 Alpha
+------------
+- Initial release to public for testing

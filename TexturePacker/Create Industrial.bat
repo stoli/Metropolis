@@ -1,0 +1,1 @@
+TexturePacker.exe -i Themes\Industrial\media -o Themes\Industrial.xbt

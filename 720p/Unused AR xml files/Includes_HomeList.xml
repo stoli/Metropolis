@@ -1,0 +1,388 @@
+﻿<includes>
+	<include name="HomeVertical">
+		<posx>30</posx>
+		<posy>-46</posy>
+		<height>766</height>
+		<width>1680</width>
+		<onup>300</onup>
+		<ondown>300</ondown>
+		<viewtype>list</viewtype>
+		<orientation>vertical</orientation>
+		<focusposition>4</focusposition>
+		<scrolltime>160</scrolltime>
+		<include>Animation_ZoomOutZoomIn</include>
+		<itemlayout width="270" height="94">
+			<control type="label">
+				<width>270</width>
+				<height>60</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_HomeListNF</font>
+				<textcolor>HomeListLabel</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<animation effect="fade" end="50" condition="true">Conditional</animation>
+			</control>
+		</itemlayout>
+		<focusedlayout width="270" height="100">
+			<control type="label">
+				<width>290</width>
+				<height>60</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_HomeListF</font>
+				<textcolor>HomeListLabel</textcolor>
+				<animation type="Focus" reversible="false">
+					<effect type="fade" start="50" end="100" time="400" />
+				</animation>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<posy>40</posy>
+				<width>290</width>
+				<height>60</height>
+				<aligny>center</aligny>
+				<font>Font_HomeListDetails</font>
+				<textcolor>HomeListLabel</textcolor>
+				<animation type="Focus" reversible="false">
+					<effect type="fade" start="50" end="100" time="400" />
+				</animation>
+				<label>$INFO[ListItem.Label2]</label>
+			</control>
+		</focusedlayout>
+	</include>
+	<include name="HomeHorizontal">
+		<posx>-220</posx>
+		<posy>330</posy>
+		<height>60</height>
+		<width>1680</width>
+		<onleft>300</onleft>
+		<onright>300</onright>
+		<viewtype>list</viewtype>
+		<orientation>horizontal</orientation>
+		<focusposition>3</focusposition>
+		<scrolltime>300</scrolltime>
+		<include>Animation_ZoomOutZoomIn</include>
+		<itemlayout width="270" height="60">
+			<control type="label">
+				<width>270</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Font_HomeListNF</font>
+				<textcolor>HomeListLabel</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<animation effect="fade" end="50" condition="true">Conditional</animation>
+			</control>
+		</itemlayout>
+		<focusedlayout width="630" height="60">
+			<control type="label">
+				<posx>230</posx>
+				<width>290</width>
+				<height>60</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_HomeListF</font>
+				<textcolor>HomeListLabel</textcolor>
+				<animation type="Focus" reversible="false">
+					<effect type="fade" start="50" end="100" time="400" />
+				</animation>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</focusedlayout>
+	</include>
+	<include name="HomeList">
+		<control type="wraplist" id="300">
+			<include condition="Skin.HasSetting(HomeHorizontal)">HomeHorizontal</include>
+			<include condition="Skin.HasSetting(HomeVertical)">HomeVertical</include>
+			<content>
+				<item id="1">
+					<description>Videos</description>
+					<label>$LOCALIZE[3]</label>
+					<icon>homelist/videosicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/videos.png</property>
+					<thumb fallback="backdrops/videos.jpg">$INFO[Skin.String(CustomVideos)]</thumb>
+					<onclick>ActivateWindow(VideoFiles)</onclick>
+					<visible>!Skin.HasSetting(NoVideos)</visible>
+				</item>
+				<item id="2">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<label2>$INFO[Window.Property(Music.AlbumsCount),,  $LOCALIZE[132]]</label2>
+					<icon>homelist/musicicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/music.png</property>
+					<thumb fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusic)]</thumb>
+					<onclick>ActivateWindow(MyMusicLibrary,Albums,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + !Skin.HasSetting(HomeReturnOff) + !Skin.HasSetting(HomeMusicArtists)</visible>
+				</item>
+				<item id="2">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<label2>$INFO[Window.Property(Music.AlbumsCount),,  $LOCALIZE[132]]</label2>
+					<icon>homelist/musicicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/music.png</property>
+					<thumb fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusic)]</thumb>
+					<onclick>ActivateWindow(MyMusicLibrary,Albums)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeReturnOff) + !Skin.HasSetting(HomeMusicArtists)</visible>
+				</item>
+				<item id="2">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<label2>$INFO[Window.Property(Music.AlbumsCount),,  $LOCALIZE[132]]</label2>
+					<icon>homelist/musicicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/music.png</property>
+					<thumb fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusic)]</thumb>
+					<onclick>ActivateWindow(MyMusicLibrary,Artists,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + !Skin.HasSetting(HomeReturnOff) + Skin.HasSetting(HomeMusicArtists)</visible>
+				</item>
+				<item id="2">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<label2>$INFO[Window.Property(Music.AlbumsCount),,  $LOCALIZE[132]]</label2>
+					<icon>homelist/musicicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/music.png</property>
+					<thumb fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusic)]</thumb>
+					<onclick>ActivateWindow(MyMusicLibrary,Artists)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeReturnOff) + Skin.HasSetting(HomeMusicArtists)</visible>
+				</item>
+				<item id="14">
+					<description>AppleTrailers</description>
+					<label>$LOCALIZE[31334]</label>
+					<icon>homelist/trailersicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/trailers.png</property>
+					<thumb>backdrops/trailers.jpg</thumb>
+					<onclick>ActivateWindow(videolibrary,plugin://plugin.video.apple.movie.trailers.lite,return)</onclick>
+					<visible>system.hasaddon(plugin.video.apple.movie.trailers.lite) + !Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="14">
+					<description>AppleTrailers</description>
+					<label>$LOCALIZE[31334]</label>
+					<icon>homelist/trailersicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/trailers.png</property>
+					<thumb>backdrops/trailers.jpg</thumb>
+					<onclick>ActivateWindow(videolibrary,plugin://plugin.video.apple.movie.trailers.lite)</onclick>
+					<visible>system.hasaddon(plugin.video.apple.movie.trailers.lite) + Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="3">
+					<description>Movies</description>
+					<label>$LOCALIZE[342]</label>
+					<label2>$INFO[Window.Property(Movies.Count),,  $LOCALIZE[342]]</label2>
+					<icon>homelist/moviesicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/movies.png</property>
+					<thumb fallback="backdrops/movies.jpg">$INFO[Skin.String(CustomMovies)]</thumb>
+					<onclick>ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + !Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="3">
+					<description>Movies</description>
+					<label>$LOCALIZE[342]</label>
+					<label2>$INFO[Window.Property(Movies.Count),,  $LOCALIZE[342]]</label2>
+					<icon>homelist/moviesicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/movies.png</property>
+					<thumb fallback="backdrops/movies.jpg">$INFO[Skin.String(CustomMovies)]</thumb>
+					<onclick>ActivateWindow(MyVideoLibrary,movietitles)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="4">
+					<description>TV Shows</description>
+					<label>$LOCALIZE[20343]</label>
+					<label2>$INFO[Window.Property(Episodes.Count),,  $LOCALIZE[20360]]</label2>
+					<icon>homelist/tvshowsicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/tvshows.png</property>
+					<thumb fallback="backdrops/tvshows.jpg">$INFO[Skin.String(CustomTVShows)]</thumb>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + !Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="4">
+					<description>TV Shows</description>
+					<label>$LOCALIZE[20343]</label>
+					<label2>$INFO[Window.Property(Episodes.Count),,  $LOCALIZE[20360]]</label2>
+					<icon>homelist/tvshowsicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/tvshows.png</property>
+					<thumb fallback="backdrops/tvshows.jpg">$INFO[Skin.String(CustomTVShows)]</thumb>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeReturnOff)</visible>
+				</item>
+				<item id="5">
+					<description>Pictures</description>
+					<label>$LOCALIZE[1]</label>
+					<icon>homelist/picturesicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/pictures.png</property>
+					<thumb fallback="backdrops/pictures.jpg">$INFO[Skin.String(CustomPictures)]</thumb>
+					<onclick>ActivateWindow(Pictures)</onclick>
+					<visible>!Skin.HasSetting(NoPictures)</visible>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>$LOCALIZE[8]</label>
+					<icon>homelist/weathericon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/weather.png</property>
+					<thumb>backdrops/spring.jpg</thumb>
+					<onclick>ActivateWindow(weather)</onclick>
+					<visible>!Skin.HasSetting(NoWeather) + !Skin.HasSetting(HomeWeather) + System.Date(03-21,06-21)</visible>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>$LOCALIZE[8]</label>
+					<icon>homelist/weathericon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/weather.png</property>
+					<thumb>backdrops/summer.jpg</thumb>
+					<onclick>ActivateWindow(weather)</onclick>
+					<visible>!Skin.HasSetting(NoWeather) + !Skin.HasSetting(HomeWeather) + System.Date(06-21,09-23)</visible>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>$LOCALIZE[8]</label>
+					<icon>homelist/weathericon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/weather.png</property>
+					<thumb>backdrops/autumn.jpg</thumb>
+					<onclick>ActivateWindow(weather)</onclick>
+					<visible>!Skin.HasSetting(NoWeather) + !Skin.HasSetting(HomeWeather) + System.Date(09-23,12-21)</visible>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>$LOCALIZE[8]</label>
+					<icon>homelist/weathericon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/weather.png</property>
+					<thumb>backdrops/winter.jpg</thumb>
+					<onclick>ActivateWindow(weather)</onclick>
+					<visible>!Skin.HasSetting(NoWeather) + !Skin.HasSetting(HomeWeather) + System.Date(12-21,03-21)</visible>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>$LOCALIZE[8]</label>
+					<label2>$LOCALIZE[31157] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label2>
+					<icon>$INFO[Weather.FanartCode,weathericons/,.png]</icon>
+					<!--icon>$INFO[Weather.Conditions]</icon>
+					<property name="CustomIcon">$INFO[Weather.Conditions]</property-->
+					<property name="CustomIcon">$INFO[Weather.FanartCode,weathericons/,.png]</property>
+					<thumb fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
+					<onclick>ActivateWindow(weather)</onclick>
+					<visible>!Skin.HasSetting(NoWeather) + Skin.HasSetting(HomeWeather)</visible>
+				</item>
+				<item id="7">
+					<description>Programs</description>
+					<label>31029</label>
+					<icon>homelist/addonsicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/addons.png</property>
+					<thumb fallback="backdrops/addons.jpg">$INFO[Skin.String(CustomPrograms)]</thumb>
+					<onclick>ActivateWindow(Programs,Addons)</onclick>
+					<visible>!Skin.HasSetting(NoPrograms)</visible>
+				</item>
+				<item id="8">
+					<description>Settings</description>
+					<label>$LOCALIZE[5]</label>
+					<icon>homelist/settingsicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/settings.png</property>
+					<thumb fallback="backdrops/settings.jpg">$INFO[Skin.String(CustomSettings)]</thumb>
+					<onclick>ActivateWindow(settings)</onclick>
+					<visible>!Skin.HasSetting(NoSettings)</visible>
+				</item>
+				<item id="10">
+					<description>Shutdown</description>
+					<label>$LOCALIZE[13005]</label>
+					<icon>homelist/shutdownicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/shutdown.png</property>
+					<thumb fallback="backdrops/shutdown.jpg">$INFO[Skin.String(CustomShutdown)]</thumb>
+					<onclick>Shutdown()</onclick>
+					<visible>!Skin.HasSetting(NoShutdown)</visible>
+				</item>
+				<item id="11">
+					<description>Play Disc</description>
+					<label>$LOCALIZE[341]</label>
+					<icon>homelist/playdiscicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/playdisc.png</property>
+					<thumb>backdrops/playdisc.jpg</thumb>
+					<onclick>PlayDVD</onclick>
+					<visible>System.HasMediadvd</visible>
+				</item>
+				<item id="12">
+					<description>Favourites</description>
+					<label>$LOCALIZE[1036]</label>
+					<icon>homelist/favouritesicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/favourites.png</property>
+					<thumb fallback="backdrops/favourites.jpg">$INFO[Skin.String(CustomFavourites)]</thumb>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<visible>!Skin.HasSetting(NoFavourites)</visible>
+				</item>
+				<item id="13">
+					<description>Profiles</description>
+					<label>$LOCALIZE[13200]</label>
+					<label2>$INFO[System.ProfileName]</label2>
+					<icon>homelist/profilesicon.png</icon>
+					<property name="CustomIcon">special://skin/extras/customicons/profiles.png</property>
+					<thumb fallback="backdrops/profiles.jpg">$INFO[Skin.String(CustomProfiles)]</thumb>
+					<onclick>ActivateWindow(Profiles)</onclick>
+					<visible>!Skin.HasSetting(NoProfiles)</visible>
+				</item>
+			</content>
+		</control>
+		<control type="image">
+			<posx>490</posx>
+			<posy>180</posy>
+			<width>300</width>
+			<height>360</height>
+			<aspectratio>keep</aspectratio>
+			<include>Animation_ZoomOutZoomIn</include>
+			<animation type="Conditional" reversible="false" condition="Control.HasFocus(300)  + [!Container(300).OnNext + !Container(300).OnPrevious]">
+				<effect type="zoom" center="auto" tween="back" easing="out" time="400" start="80" end="100" />
+				<effect type="fade" start="60" end="100" time="200" />
+			</animation>
+			<texture>$INFO[Container(300).ListItem.ActualIcon]</texture>
+			<visible>!Skin.HasSetting(CustomIcons)</visible>
+		</control>
+		<control type="image">
+			<posx>490</posx>
+			<posy>180</posy>
+			<width>300</width>
+			<height>360</height>
+			<aspectratio>keep</aspectratio>
+			<include>Animation_ZoomOutZoomIn</include>
+			<animation type="Conditional" reversible="false" condition="Control.HasFocus(300)  + [!Container(300).OnNext + !Container(300).OnPrevious]">
+				<effect type="zoom" center="auto" tween="back" easing="out" time="400" start="80" end="100" />
+				<effect type="fade" start="60" end="100" time="200" />
+			</animation>
+			<texture>$INFO[Container(300).ListItem.Property(CustomIcon)]</texture>
+			<visible>Skin.HasSetting(CustomIcons)</visible>
+		</control>
+		<!--control type="image">
+			<posx>490</posx>
+			<posy>180</posy>
+			<width>300</width>
+			<height>360</height>
+			<aspectratio>keep</aspectratio>
+			<include>Animation_ZoomOutZoomIn</include>
+			<animation type="Conditional" reversible="false" condition="Control.HasFocus(300)  + [!Container(300).OnNext + !Container(300).OnPrevious]">
+				<effect type="zoom" center="auto" tween="back" easing="out" time="400" start="80" end="100" />
+				<effect type="fade" start="60" end="100" time="200" />
+			</animation>
+			<texture>$INFO[Container(300).ListItem.ActualIcon]</texture>
+			<visible>!Skin.HasSetting(CustomIcons) + !Container(300).HasFocus(6)</visible>
+		</control>
+		<control type="image">
+			<posx>520</posx>
+			<posy>170</posy>
+			<width>240</width>
+			<height>380</height>
+			<aspectratio>keep</aspectratio>
+			<include>Animation_ZoomOutZoomIn</include>
+			<animation type="Conditional" reversible="false" condition="Control.HasFocus(300)  + [!Container(300).OnNext + !Container(300).OnPrevious]">
+				<effect type="zoom" center="auto" tween="back" easing="out" time="400" start="80" end="100" />
+				<effect type="fade" start="60" end="100" time="200" />
+			</animation>
+			<texture>$INFO[Container(300).ListItem.Property(CustomIcon)]</texture>
+			<visible>Skin.HasSetting(CustomIcons) + Container(300).HasFocus(6)</visible>
+		</control-->
+		<control type="label">
+			<include>Animation_ZoomOutZoomIn</include>
+			<posx>820</posx>
+			<posy>370</posy>
+			<width>290</width>
+			<height>60</height>
+			<aligny>center</aligny>
+			<font>Font_HomeListDetails</font>
+			<textcolor>HomeListLabel</textcolor>
+			<label>$INFO[Container(300).ListItem.Label2]</label>
+			<visible>Skin.HasSetting(HomeHorizontal)</visible>
+		</control>
+	</include>
+</includes>

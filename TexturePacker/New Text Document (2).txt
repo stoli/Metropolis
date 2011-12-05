@@ -1,0 +1,1 @@
+C:\Program Files (x86)\XBMC\TexturePacker.exe" -i C:\Users\jpf\Desktop\texturepacker\media -o C:\Users\jpf\Desktop\texturepacker\Textures.xbt

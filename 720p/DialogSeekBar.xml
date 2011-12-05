@@ -1,0 +1,69 @@
+﻿<window id="115">
+	<defaultcontrol>901</defaultcontrol>
+	<visible>Window.IsActive(fullscreenvideo) + !Window.IsActive(videoosd) + !Window.IsActive(fullscreeninfo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+	<controls>
+		<control type="group">
+			<animation effect="slide" end="0,90" condition="true">Conditional</animation>
+			<include>Animation_OpenCloseFade</include>
+			<include>OSD_Progress_Bar</include>
+			<control type="label">
+				<posx>30</posx>
+				<posy>587</posy>
+				<width>150</width>
+				<height>40</height>
+				<aligny>center</aligny>
+				<font>METF_OSDTime</font>
+				<textcolor>TextNF</textcolor>
+				<label>$INFO[VideoPlayer.Time]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>587</posy>
+				<width>150</width>
+				<height>40</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<font>METF_OSDTime</font>
+				<textcolor>TextNF</textcolor>
+				<label>$INFO[VideoPlayer.Duration]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
+			</control>
+			<control type="fadelabel">
+				<posx>200</posx>
+				<posy>587</posy>
+				<width>880</width>
+				<height>40</height>
+				<font>METF_TitleTextMedium</font>
+				<textcolor>TitleText</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>3800</pauseatend>
+				<scrollspeed>40</scrollspeed>
+				<scroll>true</scroll>
+				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</label>
+				<visible>!IsEmpty(VideoPlayer.Year)</visible>
+			</control>
+			<control type="fadelabel">
+				<posx>200</posx>
+				<posy>587</posy>
+				<width>880</width>
+				<height>40</height>
+				<font>METF_TitleTextMedium</font>
+				<textcolor>TitleText</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>3800</pauseatend>
+				<scrollspeed>40</scrollspeed>
+				<scroll>true</scroll>
+				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</label>
+				<visible>IsEmpty(VideoPlayer.Year)</visible>
+			</control>
+		</control>
+		<include>OSD_Player_Details</include>
+		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
+	</controls>
+</window>

@@ -1,0 +1,1 @@
+TexturePacker.exe -i Themes\Wall2\media -o Themes\Wall2.xbt
