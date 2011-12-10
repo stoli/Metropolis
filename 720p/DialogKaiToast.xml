@@ -11,7 +11,7 @@
 		<control type="group">
 			<posx>390</posx>
 			<posy>745</posy>
-			<visible>!Window.IsActive(2006) + !VideoPlayer.IsFullscreen</visible>
+			<visible>!Window.IsActive(2006)</visible>
 			<!-- Background Panel -->
 			<control type="image">
 				<description>background image</description>

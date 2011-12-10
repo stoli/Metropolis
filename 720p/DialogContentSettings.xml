@@ -5,7 +5,7 @@
 		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
-		<origin x="0" y="120" />
+		<origin x="0" y="30" />
 	</coordinates>
 	<controls>
 		<control type="label"  id="1">

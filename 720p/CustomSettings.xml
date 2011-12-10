@@ -91,6 +91,11 @@
 						<onclick>-</onclick>
 					</item>
 					<item id="7">
+						<description>Music Settings</description>
+						<label>$LOCALIZE[31419]</label>
+						<onclick>-</onclick>
+					</item>
+					<item id="8">
 						<description>Debug</description>
 						<label>$LOCALIZE[31004]</label>
 						<onclick>-</onclick>
@@ -129,14 +134,8 @@
 						<onclick>Skin.ToggleSetting(HideClockTemp)</onclick>
 						<selected>Skin.HasSetting(HideClockTemp)</selected>
 					</control>
-					<!--
-					<control type="radiobutton" id="101">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31056]</label>
-						<onclick>Skin.ToggleSetting(CDArt)</onclick>
-						<selected>Skin.HasSetting(CDArt)</selected>
-					</control>
-					-->
+					
+					
 					<control type="radiobutton" id="102">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31005]</label>
@@ -160,7 +159,7 @@
 						<width>370</width>
 						<label>$LOCALIZE[15311]</label>
 						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-						<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u,t:\playlists\music\)</onclick>
+						<onclick>Skin.SetFile(Startup_Playlist_Path,.xsp,t:\playlists\music\)</onclick>
 						<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 					</control>
 				</control>
@@ -1551,9 +1550,29 @@
 						<selected>Skin.HasSetting(banner_jpg)</selected>
 					</control>
 				</control>
+				<!-- Music Options -->
+				<control type="grouplist" id="9009">
+					<visible>Container(9000).Hasfocus(7)</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>840</width>
+					<height>418</height>
+					<itemgap>0</itemgap>
+					<scrolltime>0</scrolltime>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<control type="radiobutton" id="101">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31056]</label>
+						<onclick>Skin.ToggleSetting(CDArt)</onclick>
+						<selected>Skin.HasSetting(CDArt)</selected>
+					</control>
+
+				
+				</control>
 				<!-- Debug -->
 				<control type="grouplist" id="9008">
-					<visible>Container(9000).Hasfocus(7)</visible>
+					<visible>Container(9000).Hasfocus(8)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>840</width>

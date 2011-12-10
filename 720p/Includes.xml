@@ -52,18 +52,7 @@
 		</control>
 	</include>
 	
-	<include name="HomeCurrentWeather">
-		<!-- <control type="image">
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<posx>1180</posx>
-			<posy>455</posy>
-			<width>80</width>
-			<height>80</height>
-			<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
-			<visible>System.HasNetwork + !Skin.HasSetting(HideClockTemp)</visible>
-		</control> -->
-	</include>
+	
 		
 	<include name="Global_TimeWeekdayDetails">
 		<posx>1241</posx>
@@ -81,6 +70,18 @@
 			<!--
 			<include>Animation_FadedByMenu</include>
 			-->
+			
+		<control type="image">
+			<!-- <include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include> -->
+			<posx>1145</posx>
+			<posy>517</posy>
+			<width>30</width>
+			<height>30</height>
+			<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
+			<visible>!Skin.HasSetting(HideClockTemp)</visible>
+		</control>
+	
 			<control type="label">
 				<description>Temperature</description>
 				<posx>1241</posx>
@@ -139,43 +140,43 @@
 				<description>Monday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[11]</label>
-				<visible>SubString(System.Date,$LOCALIZE[11])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[11])</visible>
 			</control>
 			<control type="label">
 				<description>Tuesday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[12]</label>
-				<visible>SubString(System.Date,$LOCALIZE[12])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[12])</visible>
 			</control>
 			<control type="label">
 				<description>Wednesday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[13]</label>
-				<visible>SubString(System.Date,$LOCALIZE[13])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[13])</visible>
 			</control>
 			<control type="label">
 				<description>Thursday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[14]</label>
-				<visible>SubString(System.Date,$LOCALIZE[14])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[14])</visible>
 			</control>
 			<control type="label">
 				<description>Friday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[15]</label>
-				<visible>SubString(System.Date,$LOCALIZE[15])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[15])</visible>
 			</control>
 			<control type="label">
 				<description>Saturday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[16]</label>
-				<visible>SubString(System.Date,$LOCALIZE[16])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[16])</visible>
 			</control>
 			<control type="label">
 				<description>Sunday</description>
 				<include>Global_TimeWeekdayDetails</include>
 				<label>$LOCALIZE[17]</label>
-				<visible>SubString(System.Date,$LOCALIZE[17])</visible>
+				<visible>SubString(System.Date(DDD),$LOCALIZE[17])</visible>
 			</control>
 		</control>
 	</include>
@@ -1083,9 +1084,9 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<posx>0</posx>
-			<posy>540</posy>
+			<posy>534</posy>
 			<width>1280</width>
-			<height>18</height>
+			<height>30</height>
 			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
 			<texturesliderbackground>-</texturesliderbackground>
 			<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
@@ -1104,7 +1105,7 @@
 			<include>Animation_FadedByMenu</include>
 			<posx>1270</posx>
 			<posy>110</posy>
-			<width>18</width>
+			<width>22</width>
 			<height>468</height>
 			<visible allowhiddenfocus="true">Control.HasFocus(61) | Container.Scrolling</visible>
 			<texturesliderbackground>-</texturesliderbackground>

@@ -204,7 +204,7 @@
 					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration,, $LOCALIZE[31299]]</label>
+					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 					<visible>[IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min)] + Container.Content(movies)</visible>
 				</control>
 				<control type="label">
@@ -268,7 +268,7 @@
 					<aligny>center</aligny>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration,, $LOCALIZE[31299]]</label>
+					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
 				</control>
 				<control type="label">
