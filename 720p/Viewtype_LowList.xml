@@ -349,7 +349,8 @@
 					<!--
 					<texture>$INFO[Container.SeasonThumb]</texture>
 					TEST -->
-					<texture>$INFO[Container.FolderThumb]</texture>
+					<!-- <texture fallback=$INFO[Container.TvshowThumb] background="true">$INFO[ListItem.Path]season-all.png</texture> -->
+					<texture>$INFO[Container.SeasonThumb]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
 					<visible>!IsEmpty(Container.SeasonThumb) + Container.Content(episodes)</visible>

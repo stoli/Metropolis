@@ -5,6 +5,58 @@
 		<control type="group">
 			<animation effect="slide" end="0,90" condition="true">Conditional</animation>
 			<include>Animation_OpenCloseFade</include>
+			<control type ="image" id="7657"> 
+				<description>tv show image</description>
+				<posx>948</posx>     
+				<posy>361</posy>    
+				<width>330</width>     
+				<height>185</height> 
+				<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(Enable_SeekArt) + VideoPlayer.Content(episodes)+ ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+			</control>
+			<control type ="image" id="7658"> 
+				<description>tv show image</description>
+				<posx>948</posx>     
+				<posy>361</posy>    
+				<width>330</width>     
+				<height>185</height> 
+				<texture background="true">$INFO[Player.FolderPath]clearart.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(Enable_SeekArt) + VideoPlayer.Content(episodes)+ ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+			</control>
+			<control type ="image"> 
+				<description>tv show image</description>
+				<posx>960</posx>     
+				<posy>300</posy>    
+				<width>300</width>
+				<height>340</height>
+				<aspectratio align="right" aligny="bottom">keep</aspectratio>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<fadetime>400</fadetime>
+				<bordersize>5</bordersize>
+				<animation type="WindowOpen">
+					<effect type="fade" start="0" end="100" time="900" delay="400" />
+				</animation>
+				<visible>Skin.HasSetting(Enable_SeekArt) + IsEmpty(Control.GetLabel(7657))  + IsEmpty(Control.GetLabel(7658)) + VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type ="image"> 
+				<description>tv show image</description>
+				<posx>960</posx>     
+				<posy>253</posy>    
+				<width>300</width>
+				<height>300</height>
+				<aspectratio align="right" aligny="bottom">keep</aspectratio>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<fadetime>400</fadetime>
+				<bordersize>5</bordersize>
+				<animation type="WindowOpen">
+					<effect type="fade" start="0" end="100" time="900" delay="400" />
+				</animation>
+				<visible>Skin.HasSetting(Enable_SeekArt) + VideoPlayer.Content(movies)+ ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+			</control>
 			<include>OSD_Progress_Bar</include>
 			<control type="label">
 				<posx>30</posx>
@@ -61,6 +113,10 @@
 				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</label>
 				<visible>IsEmpty(VideoPlayer.Year)</visible>
 			</control>
+			
+			
+			
+			
 		</control>
 		<include>OSD_Player_Details</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>

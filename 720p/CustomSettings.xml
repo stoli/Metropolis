@@ -91,11 +91,16 @@
 						<onclick>-</onclick>
 					</item>
 					<item id="7">
+						<description>Video Settings</description>
+						<label>$LOCALIZE[31420]</label>
+						<onclick>-</onclick>
+					</item>
+					<item id="8">
 						<description>Music Settings</description>
 						<label>$LOCALIZE[31419]</label>
 						<onclick>-</onclick>
 					</item>
-					<item id="8">
+					<item id="9">
 						<description>Debug</description>
 						<label>$LOCALIZE[31004]</label>
 						<onclick>-</onclick>
@@ -1550,9 +1555,29 @@
 						<selected>Skin.HasSetting(banner_jpg)</selected>
 					</control>
 				</control>
+				<!-- Video Option -->
+				<control type="grouplist" id="9011">
+					<visible>Container(9000).Hasfocus(7)</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>840</width>
+					<height>418</height>
+					<itemgap>0</itemgap>
+					<scrolltime>0</scrolltime>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<control type="radiobutton" id="101">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31421]</label>
+						<onclick>Skin.ToggleSetting(Enable_SeekArt)</onclick>
+						<selected>Skin.HasSetting(Enable_SeekArt)</selected>
+					</control>
+
+				
+				</control>
 				<!-- Music Options -->
 				<control type="grouplist" id="9009">
-					<visible>Container(9000).Hasfocus(7)</visible>
+					<visible>Container(9000).Hasfocus(8)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>840</width>
@@ -1572,7 +1597,7 @@
 				</control>
 				<!-- Debug -->
 				<control type="grouplist" id="9008">
-					<visible>Container(9000).Hasfocus(8)</visible>
+					<visible>Container(9000).Hasfocus(9)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>840</width>

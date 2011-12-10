@@ -1,1 +1,0 @@
-TexturePacker.exe -i Themes\Wood\media -o Themes\Wood.xbt

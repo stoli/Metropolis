@@ -1,1 +1,0 @@
-TexturePacker.exe -i Themes\Leather\media -o Themes\Leather.xbt

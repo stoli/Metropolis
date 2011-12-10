@@ -1,1 +1,0 @@
-TexturePacker.exe -i Themes\Glass\media -o Themes\Glass.xbt

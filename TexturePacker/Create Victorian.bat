@@ -1,1 +1,0 @@
-TexturePacker.exe -i Themes\Victorian\media -o Themes\Victorian.xbt
