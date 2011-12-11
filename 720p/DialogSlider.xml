@@ -4,7 +4,7 @@
 	<controls>
 		<control type="group">
 			<posx>320</posx>
-			<posy>250</posy>
+			<posy>10</posy>
 			<control type="image">
 				<description>Background Panel</description>
 				<width>600</width>

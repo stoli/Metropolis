@@ -1,16 +1,27 @@
 ﻿<window type="dialog" id="114">
 	<defaultcontrol always="true">404</defaultcontrol>
-	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation) + [Window.IsActive(MusicOverlay) | Window.IsActive(VideoOverlay)]</visible>
+	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
 	<coordinates>
 		<system>1</system>
-		<posx>30</posx>
-		<posy>666</posy>
+		<posx>400</posx>
+		<posy>250</posy>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>220</height>
+			<texture border="20,20,20,2">osd/OSDdialogback.png</texture>
+			<colordiffuse>BackgroundColor</colordiffuse>
+		</control>
+		
 		<control type="button" id="410">
 			<onfocus>Dialog.Close(PlayerControls)</onfocus>
 		</control>
 		<control type="group" id="401">
+			<posx>50</posx>
+			<posy>160</posy>
 			<animation type="WindowOpen">
 				<effect type="fade" start="0" end="100" time="120" delay="120" />
 			</animation>
@@ -28,13 +39,13 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_prev_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_prev_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_prev_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_prev_nf.png</texturenofocus>
 				<onclick>PlayerControl(Previous)</onclick>
 			</control>
 			<control type="button" id="403">
 				<description>Rewind</description>
-				<posx>36</posx>
+				<posx>50</posx>
 				<posy>0</posy>
 				<onleft>402</onleft>
 				<onright>404</onright>
@@ -43,13 +54,13 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_rew_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_rew_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_rew_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_rew_nf.png</texturenofocus>
 				<onclick>PlayerControl(rewind)</onclick>
 			</control>
 			<control type="togglebutton" id="404">
 				<description>Play/Pause</description>
-				<posx>72</posx>
+				<posx>100</posx>
 				<posy>0</posy>
 				<onleft>403</onleft>
 				<onright>405</onright>
@@ -58,18 +69,18 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_pause_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_pause_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_pause_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_pause_nf.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus border="1">osd/osd_button_play_fo.png</alttexturefocus>
-				<alttexturenofocus border="1">osd/osd_button_play_nf.png</alttexturenofocus>
+				<alttexturefocus border="2">osd/osd_button_play_fo.png</alttexturefocus>
+				<alttexturenofocus border="2">osd/osd_button_play_nf.png</alttexturenofocus>
 				<disabledcolor>-</disabledcolor>
 				<colordiffuse>-</colordiffuse>
 				<onclick>PlayerControl(play)</onclick>
 			</control>
 			<control type="button" id="405">
 				<description>Stop</description>
-				<posx>108</posx>
+				<posx>150</posx>
 				<posy>0</posy>
 				<onleft>404</onleft>
 				<onright>406</onright>
@@ -78,13 +89,13 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_stop_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_stop_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_stop_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_stop_nf.png</texturenofocus>
 				<onclick>PlayerControl(stop)</onclick>
 			</control>
 			<control type="button" id="406">
 				<description>Forward</description>
-				<posx>144</posx>
+				<posx>200</posx>
 				<posy>0</posy>
 				<onleft>405</onleft>
 				<onright>407</onright>
@@ -93,13 +104,13 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_ff_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_ff_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_ff_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_ff_nf.png</texturenofocus>
 				<onclick>PlayerControl(forward)</onclick>
 			</control>
 			<control type="button" id="407">
 				<description>Next</description>
-				<posx>180</posx>
+				<posx>250</posx>
 				<posy>0</posy>
 				<onleft>406</onleft>
 				<onright>408</onright>
@@ -108,13 +119,13 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_next_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_next_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_next_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_next_nf.png</texturenofocus>
 				<onclick>PlayerControl(Next)</onclick>
 			</control>
 			<control type="button" id="408">
 				<description>Repeat</description>
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<onleft>407</onleft>
 				<onright>409</onright>
@@ -128,7 +139,7 @@
 				<onclick>PlayerControl(repeat)</onclick>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -137,7 +148,7 @@
 				<visible>!Control.HasFocus(408)</visible>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -146,7 +157,7 @@
 				<visible>Control.HasFocus(408)</visible>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -155,7 +166,7 @@
 				<visible>!Control.HasFocus(408)</visible>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -164,7 +175,7 @@
 				<visible>Control.HasFocus(408)</visible>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -173,7 +184,7 @@
 				<visible>!Control.HasFocus(408)</visible>
 			</control>
 			<control type="image">
-				<posx>216</posx>
+				<posx>300</posx>
 				<posy>0</posy>
 				<width>46</width>
 				<height>46</height>
@@ -183,7 +194,7 @@
 			</control>
 			<control type="togglebutton" id="409">
 				<description>Random</description>
-				<posx>252</posx>
+				<posx>354</posx>
 				<posy>0</posy>
 				<onleft>408</onleft>
 				<onright>402</onright>
@@ -192,19 +203,19 @@
 				<height>46</height>
 				<width>46</width>
 				<label>-</label>
-				<texturefocus border="1">osd/osd_button_random_fo.png</texturefocus>
-				<texturenofocus border="1">osd/osd_button_random_nf.png</texturenofocus>
+				<texturefocus border="2">osd/osd_button_random_fo.png</texturefocus>
+				<texturenofocus border="2">osd/osd_button_random_nf.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
-				<alttexturefocus border="1">osd/osd_button_random_on_fo.png</alttexturefocus>
-				<alttexturenofocus border="1">osd/osd_button_random_on_nf.png</alttexturenofocus>
+				<alttexturefocus border="2">osd/osd_button_random_on_fo.png</alttexturefocus>
+				<alttexturenofocus border="2">osd/osd_button_random_on_nf.png</alttexturenofocus>
 				<disabledcolor>-</disabledcolor>
 				<colordiffuse>-</colordiffuse>
 				<onclick>PlayerControl(random)</onclick>
 			</control>
 			<control type="button" id="411">
 				<description>Fullscreen Control</description>
-				<posx>0</posx>
-				<posy>-176</posy>
+				<posx>410</posx>
+				<posy>0</posy>
 				<width>300</width>
 				<height>174</height>
 				<texturefocus border="8">thumb_border.png</texturefocus>
@@ -222,7 +233,11 @@
 				<onclick>fullscreen</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
+		
 		</control>
+		
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
+		<include>SmallMusicInfo</include>
+		<include>SmallVideoInfo</include>
 	</controls>
 </window>
