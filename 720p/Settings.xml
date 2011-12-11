@@ -3,7 +3,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		
+		<include>GlobalMusic</include>
 		<control type="label">
 			<posx>30</posx>
 			<posy>10</posy>

@@ -2,7 +2,8 @@
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Background</include>		
+		<include>Global_Background</include>
+		<include>GlobalMusic</include>		
 		<control type="group">
 			<animation type="Conditional" condition="Window.IsActive(locksettings) | Window.IsActive(yesnodialog)">
 				<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="inout" />

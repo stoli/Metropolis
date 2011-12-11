@@ -1,5 +1,6 @@
 <includes>
 	<include file="defaults.xml" />
+	<include file="Includes_MusicOverlay.xml" />
 	<include file="Includes_Home1.xml" />
 	<include file="Includes_Home2.xml" />
 	<include file="Includes_HomeRecentlyAdded.xml" />
@@ -81,7 +82,7 @@
 			<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
 			<visible>!Skin.HasSetting(HideClockTemp)</visible>
 		</control>
-	
+		
 			<control type="label">
 				<description>Temperature</description>
 				<posx>1241</posx>
@@ -180,6 +181,8 @@
 			</control>
 		</control>
 	</include>
+	
+	
 	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
 	<include name="Global_VideoPlot">
 		<posx>0</posx>

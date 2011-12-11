@@ -1,3 +1,6 @@
+[B]v0.9.5[/B]
+Revised Music OSD
+
 [B]v0.9.4[/B]
 --------------
 Removed unused files

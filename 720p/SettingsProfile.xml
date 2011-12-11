@@ -2,7 +2,8 @@
 	<defaultcontrol always="true">2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Background</include>		
+		<include>Global_Background</include>
+		<include>GlobalMusic</include>
 		<control type="group">
 			<posy>-60</posy>
 			<include>Animation_OpenCloseFade</include>

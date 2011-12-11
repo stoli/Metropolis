@@ -2,7 +2,8 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Background</include>		
+		<include>Global_Background</include>
+		<include>GlobalMusic</include>		
 		<control type="group">
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_OpenCloseFade</include>

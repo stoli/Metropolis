@@ -44,6 +44,7 @@
 	
 	<include name="Home1_Default">
 		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
+		
 		<!-- Large Fanart and Frame -->
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
