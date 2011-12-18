@@ -1,3 +1,8 @@
+[B]v.0.9.6[/B]
+Updated Music Info screen
+Added Low List view to Music
+Removed List view from Music
+
 [B]v0.9.5[/B]
 Revised Music OSD
 Added Now Playing OSD/Controls

@@ -20,7 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies)</visible>
+				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists)] | Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -54,7 +54,21 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>LowListTitle</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(music)</visible>
+					</control>
+					<control type="label">
+						<posx>45</posx>
+						<posy>0</posy>
+						<width>475</width>
+						<height>35</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+						<scroll>false</scroll>
+						<visible>!Window.IsActive(videolibrary)</visible>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -133,6 +147,22 @@
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
 						<visible>Container.Content(seasons)</visible>
+					</control>
+					<control type="fadelabel">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>735</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
+						<font>METF_TitleText</font>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+						<visible>!Window.IsActive(videolibrary)</visible>
 					</control>
 					<!-- Watched Overlay -->
 					<control type="image">

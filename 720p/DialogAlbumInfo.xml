@@ -1,5 +1,5 @@
 ﻿<window type="dialog" id="2001">
-	<defaultcontrol>7050</defaultcontrol>
+	<defaultcontrol>7001</defaultcontrol>
 	<controls>
 		<control type="button" id="7050">
 			<texturefocus>-</texturefocus>
@@ -11,9 +11,8 @@
 			<onclick />
 		</control>
 		<control type="group">
-			<include>Animation_FadedByMenu</include>
 			<posx>583</posx>
-			<posy>145</posy>
+			<posy>55</posy>
 			<include>Animation_CommonFade</include>
 			<control type="group">
 				<visible>!Container.Content(artists)</visible>
@@ -236,6 +235,7 @@
 					<font>METF_InfoText</font>
 					<textcolor>TextNF</textcolor>
 					<label>$LOCALIZE[21887]:</label>
+					<visible>!Control.IsVisible(50)</visible>
 				</control>
 				<control type="textbox">
 					<posx>155</posx>
@@ -246,23 +246,25 @@
 					<textcolor>TextNF</textcolor>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Description)]</label>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!Control.IsVisible(50)</visible>
 				</control>
 			</control>
 			<control type="panel" id="50">
 				<posx>155</posx>
 				<posy>281</posy>
 				<width>516</width>
-				<height>212</height>
+				<height>155</height>
 				<onleft>7001</onleft>
 				<onright>7001</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
+				<onfocus>99</onfocus>
 				<viewtype label="">list</viewtype>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>0</scrolltime>
 				<orientation>vertical</orientation>
 				<itemlayout height="26" width="516">
-					<control type="label">
+					<control type="label" id="99">
 						<posx>10</posx>
 						<posy>3</posy>
 						<width>500</width>
@@ -312,10 +314,10 @@
 			</control>
 		</control>
 		<control type="image">
-			<include>Animation_FadedByMenu</include>
+			
 			<include>Animation_CommonFade</include>
 			<posx>60</posx>
-			<posy>122</posy>
+			<posy>32</posy>
 			<width>500</width>
 			<height>360</height>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
@@ -325,8 +327,9 @@
 		</control>
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
+			
 			<include>DialogMenuVars_4</include>
-			<posy>330</posy>
+			<posy>505</posy>
 			<control type="button" id="5">
 				<description>Review/Tracks</description>
 				<label>$LOCALIZE[182]</label>
@@ -366,7 +369,7 @@
 		</control>
 		<control type="grouplist">
 			<include>DialogMenuVars_4</include>
-			<posy>300</posy>
+			<posy>480</posy>
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
 				<label>$LOCALIZE[31113]</label>

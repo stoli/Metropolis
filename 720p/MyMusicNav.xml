@@ -1,5 +1,5 @@
 ﻿<window id="502">
-	<views>55,503,58</views>
+	<views>55,58,905</views>
 	<defaultcontrol>55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -14,7 +14,7 @@
 		</control>
 		<include>Object_InfoLines</include>
 		<include>Viewtype_Files</include>
-		<include>Viewtype_List</include>
+		<include>Viewtype_LowList</include>
 		<include>Viewtype_Gallery_Square</include>
 		<include>Global_ContextFilter</include>
 		<!-- Navigation Menu -->
@@ -169,6 +169,7 @@
 		</control>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
+		<include>GlobalMusic</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>

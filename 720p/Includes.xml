@@ -14,14 +14,14 @@
 	<include file="Viewtype_Fanart.xml" />
 	<include file="Viewtype_FanartBanner.xml" />
 	<include file="Viewtype_FanartList.xml" />
-	<include file="Viewtype_Files.xml" />
+	<include file="Viewtype_Files.xml" /> <!-- 55 -->
 	<include file="Viewtype_Gallery.xml" />
 	<include file="Viewtype_Gallery_Fanart.xml" />
 	<include file="Viewtype_Gallery_Square.xml" />
 	<include file="Viewtype_Landscape.xml" />
-	<include file="Viewtype_List.xml" />
+	<include file="Viewtype_List.xml" /> <!-- 503 -->
 	<include file="Viewtype_Logo.xml" />
-	<include file="Viewtype_LowList.xml" />
+	<include file="Viewtype_LowList.xml" /> <!-- 905 -->
 	<include file="Viewtype_PictureGrid.xml" />
 	<include file="Viewtype_Poster_Fixed.xml" />
 	<include file="Viewtype_Poster_Wrap.xml" />
@@ -480,7 +480,7 @@
 	<include name="Object_InfoLines">
 		<control type="image">
 			<posx>0</posx>
-			<posy>191</posy>
+			<posy>101</posy>
 			<width>1280</width>
 			<height>226</height>
 			<texture>infolines.png</texture>
