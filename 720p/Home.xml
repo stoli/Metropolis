@@ -2,8 +2,7 @@
 	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		
-		
+		<onload condition="IsEmpty(Window(Home).Property(Watchlist_Running))">RunScript(script.watchlist,movies=$INFO[Skin.String(Watchlist_Movies)]&amp;episodes=$INFO[Skin.String(Watchlist_Episodes)]&amp;albums=$INFO[Skin.String(Watchlist_Albums)]&amp;limit=25)</onload>  	
 		<include>Global_Background</include>		
 		<include condition="!Skin.HasSetting(home2)">Home1_Default</include>
 		<include condition="Skin.HasSetting(home2)">Home2_Icons</include>
