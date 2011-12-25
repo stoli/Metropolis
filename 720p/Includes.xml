@@ -218,7 +218,7 @@
 		</control>
 		<!-- Plot Outline Option -->
 		<control type="group">
-			<visible>Skin.HasSetting(ShowAllMediaFlags) + [Container.Content(movies) | Container.Content(episodes)] + !SubString(Container.FolderPath,plugin)</visible>
+			<visible>Skin.HasSetting(ShowAllMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
 			<control type="textbox">
 				<posx>220</posx>
 				<posy>557</posy>
@@ -948,6 +948,24 @@
 		<!-- Episode Image -->
 		<control type="image">
 			<posx>25</posx>
+			<posy>450</posy>
+			<width>250</width>
+			<height>230</height>
+			<texture background="true">$INFO[Player.FolderPath]../logo.png</texture>
+			<aspectratio align="center" aligny="bottom">keep</aspectratio>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Logo_in_Info)</visible>
+		</control>
+		<control type="image">
+			<posx>25</posx>
+			<posy>450</posy>
+			<width>250</width>
+			<height>230</height>
+			<texture background="true">$INFO[Player.FolderPath]logo.png</texture>
+			<aspectratio align="center" aligny="bottom">keep</aspectratio>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Logo_in_Info)</visible>
+		</control>
+		<control type="image">
+			<posx>25</posx>
 			<posy>480</posy>
 			<width>250</width>
 			<height>230</height>
@@ -955,7 +973,7 @@
 			<bordertexture border="8">thumb_border.png</bordertexture>
 			<bordersize>6</bordersize>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
-			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default)</visible>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + !Skin.HasSetting(Logo_in_Info)</visible>
 		</control>
 		<!-- Movie Poster with Classic Case -->
 		<control type="image">

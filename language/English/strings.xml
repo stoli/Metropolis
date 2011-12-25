@@ -307,5 +307,6 @@
 <!-- New String from stoli -->
 	<string id="31419">Music Settings</string>
 	<string id="31420">Video Settings</string>
-	<string id="31421">Enable Artwork in Video OSD</string>
+	<string id="31421">Enable Clearart in Video OSD</string>
+	<string id="31422">Display TV Logo instead of Thumbnail on Info Screen</string>
 </strings>

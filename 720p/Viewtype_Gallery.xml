@@ -20,7 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>[Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+				<visible>[Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(MusicVideos)]]</visible>
 				<itemlayout width="170" height="210">
 					<control type="image">
 						<posx>24</posx>
@@ -148,7 +148,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(MusicVideos)]</visible>
 			</control>
 			<control type="grouplist">
 				<posx>40</posx>
@@ -161,7 +161,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(MusicVideos)]</visible>
 				<!-- Genre -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>
@@ -279,7 +279,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(MusicVideos)]</visible>
 				<control type="image">
 					<posx>10</posx>
 					<posy>508</posy>
