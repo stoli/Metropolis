@@ -71,17 +71,17 @@
 			<!--
 			<include>Animation_FadedByMenu</include>
 			-->
-			
-		<control type="image">
-			<!-- <include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include> -->
-			<posx>1145</posx>
-			<posy>517</posy>
-			<width>30</width>
-			<height>30</height>
-			<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
-			<visible>!Skin.HasSetting(HideClockTemp)</visible>
-		</control>
+				
+			<control type="image">
+				<!-- <include>Animation_FadedByMenu</include>
+				<include>Animation_OpenCloseFade</include> -->
+				<posx>1145</posx>
+				<posy>517</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
+				<visible>!Skin.HasSetting(HideClockTemp) + Weather.IsFetched</visible>
+			</control>
 		
 			<control type="label">
 				<description>Temperature</description>
