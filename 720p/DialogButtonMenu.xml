@@ -55,13 +55,13 @@
 					<description>Settings</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[5]</label>
-					<onclick>ActivateWindow(settings)</onclick>
+					<onclick>ActivateWindow(Settings)</onclick>
 				</control>
 				<control type="button" id="3111">
 					<description>Filemanager</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[31118]</label>
-					<onclick>ActivateWindow(filemanager)</onclick>
+					<onclick>ActivateWindow(Filemanager)</onclick>
 				</control>
 				<control type="button" id="3112">
 					<description>Favourites</description>
@@ -105,7 +105,7 @@
 					<description>System Info Button</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[130]</label>
-					<onclick>ActivateWindow(systeminfo)</onclick>
+					<onclick>ActivateWindow(SystemInfo)</onclick>
 				</control>
 				<control type="button" id="3118">
 					<description>Reload Skin</description>

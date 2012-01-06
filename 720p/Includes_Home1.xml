@@ -263,7 +263,7 @@
 					<label>$LOCALIZE[342]</label>
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
-					<onclick>ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(MyVideos,MovieTitles,Return)</onclick>
 					<visible>!Skin.HasSetting(NoMovies)</visible>
 				</item>
 				<item id="5">
@@ -271,7 +271,7 @@
 					<label>$LOCALIZE[20343]</label>
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(MyVideos,TVShowTitles,return)</onclick>
 					<visible>!Skin.HasSetting(NoTVShows)</visible>
 				</item>
 				<item id="6">
@@ -295,7 +295,7 @@
 					<label>$LOCALIZE[31334]</label>
 					<icon>special://skin/extras/home1/trailers.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTrailers)]</thumb>
-					<onclick>ActivateWindow(videolibrary,plugin://plugin.video.apple.movie.trailers.lite,return)</onclick>
+					<onclick>ActivateWindow(Videos,plugin://plugin.video.apple.movie.trailers.lite,return)</onclick>
 					<visible>system.hasaddon(plugin.video.apple.movie.trailers.lite) + !Skin.HasSetting(NoTrailers)</visible>
 				</item>
 				<item id="1">
@@ -311,7 +311,7 @@
 					<label>$LOCALIZE[8]</label>
 					<icon>special://skin/extras/home1/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
-					<onclick>ActivateWindow(weather)</onclick>
+					<onclick>ActivateWindow(Weather)</onclick>
 					<visible>!Skin.HasSetting(NoWeather) + !Skin.HasSetting(HomeWeather)</visible>
 				</item>
 				<item id="7">
@@ -319,7 +319,7 @@
 					<label>$LOCALIZE[8]</label>
 					<icon>special://skin/extras/home1/weather.jpg</icon>
 					<thumb>special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</thumb>
-					<onclick>ActivateWindow(weather)</onclick>
+					<onclick>ActivateWindow(Weather)</onclick>
 					<visible>!Skin.HasSetting(NoWeather) + Skin.HasSetting(HomeWeather)</visible>
 				</item>
 				<item id="8">
@@ -327,7 +327,7 @@
 					<label>$LOCALIZE[5]</label>
 					<icon>special://skin/extras/home1/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
-					<onclick>ActivateWindow(settings)</onclick>
+					<onclick>ActivateWindow(Settings)</onclick>
 					<visible>!Skin.HasSetting(NoSettings)</visible>
 				</item>
 				<item id="10">
@@ -383,7 +383,7 @@
 				<control type="button" id="90150">
 					<include>Submenu_Button</include>
 					<label>Browser</label>
-					<onclick>ActivateWindow(addonbrowser)</onclick>
+					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
 				<control type="button" id="90151">
 					<include>Submenu_Button</include>
@@ -410,30 +410,30 @@
 				<control type="button" id="90101">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[24001]</label>
-					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 				</control>
 				<control type="button" id="90102">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20342]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 					<visible>Library.HasContent(Movies)</visible>
 				</control>
 				<control type="button" id="90103">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20343]</label>
-					<onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</control>
 				<control type="button" id="90104">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20389]</label>
-					<onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
 				<control type="button" id="90105">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[136]</label>
-					<onclick>ActivateWindow(VideoLibrary,Playlists,return)</onclick>
+					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 				</control>
 				<control type="button" id="90106">
 					<include>Submenu_Button</include>
@@ -456,12 +456,12 @@
 				<control type="button" id="90171">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[24001]</label>
-					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 				</control>
 				<control type="button" id="90172">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
 				<control type="button" id="90173">
@@ -520,37 +520,37 @@
 				<control type="button" id="90112">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 				</control>
 				<control type="button" id="90113">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[652]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieYears,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 				</control>
 				<control type="button" id="90114">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[344]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 				</control>
 				<control type="button" id="90115">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20348]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieDirectors,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 				</control>
 				<control type="button" id="90116">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20388]</label>
-					<onclick>ActivateWindow(VideoLibrary,moviestudios,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 				</control>
 				<control type="button" id="90111">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20434]</label>
-					<onclick>ActivateWindow(VideoLibrary,MovieSets,return)</onclick>
+					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 				</control>
 				<control type="button" id="90117">
 					<include>Submenu_Button</include>
 					<label>Recent</label>
-					<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
 			</control>
 			<!-- TVShows Submenu -->
@@ -562,27 +562,27 @@
 				<control type="button" id="90121">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
-					<onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+					<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 				</control>
 				<control type="button" id="90122">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[652]</label>
-					<onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
+					<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 				</control>
 				<control type="button" id="90123">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[344]</label>
-					<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+					<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 				</control>
 				<control type="button" id="90124">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20388]</label>
-					<onclick>ActivateWindow(VideoLibrary,TVShowstudios,return)</onclick>
+					<onclick>ActivateWindow(Videos,TVShowstudios,return)</onclick>
 				</control>
 				<control type="button" id="90125">
 					<include>Submenu_Button</include>
 					<label>Recent</label>
-					<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 				</control>
 			</control>
 			<!-- Settings Submenu -->
@@ -616,7 +616,7 @@
 				<control type="button" id="90181">
 					<include>Submenu_Button</include>
 					<label>Set Timer</label>
-					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>>
+					<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>>
 				</control>
 				<control type="button" id="90182">
 					<include>Submenu_Button</include>

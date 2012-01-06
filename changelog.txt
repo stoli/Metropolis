@@ -1,3 +1,7 @@
+[B]v.0.9.7[/B]
+More Eden standardization - Issue 40
+ 
+
 [B]v.0.9.6[/B]
 Updated Music Info screen
 Added Low List view to Music
