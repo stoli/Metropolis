@@ -1572,6 +1572,12 @@
 						<onclick>Skin.ToggleSetting(Enable_SeekArt)</onclick>
 						<selected>Skin.HasSetting(Enable_SeekArt)</selected>
 					</control>
+					<control type="radiobutton" id="102">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31422]</label>
+						<onclick>Skin.ToggleSetting(Logo_in_Info)</onclick>
+						<selected>Skin.HasSetting(Logo_in_Info)</selected>
+					</control>
 
 				
 				</control>

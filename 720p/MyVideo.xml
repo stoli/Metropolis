@@ -21,6 +21,7 @@
 		<include>Viewtype_Poster_Wrap</include>
 		<include>Viewtype_Poster_Fixed</include>
 		<include>Global_ContextFilter</include>
+		<include>Viewtype_LowList</include>
 		<control type="group">
 			<include>Animation_NavMenu</include>
 			<include>NavMenuBackground</include>

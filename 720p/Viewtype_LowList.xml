@@ -20,7 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists)] | Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
+				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists)] | Container.Content(addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -54,7 +54,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>LowListTitle</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(music)</visible>
+						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(music) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -134,7 +134,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
 					</control>
 					<control type="label">
 						<posx>45</posx>
@@ -182,7 +182,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Control.IsVisible(905) + [Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies)]</visible>
+				<visible>Control.IsVisible(905) + [Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons) | Window.IsActive(videolibrary)]</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>413</posy>
@@ -190,7 +190,7 @@
 					<height>3</height>
 					<texture>VideoInfoLine.png</texture>
 					<colordiffuse>LowListDivider</colordiffuse>
-					<visible>Container.Content(episodes) | Container.Content(tvshows) | Container.Content(movies)</visible>
+					<visible>Window.IsActive(videolibrary) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons)</visible>
 				</control>
 				<control type="image">
 					<posx>360</posx>
@@ -224,6 +224,18 @@
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsInfo</textcolor>
 					<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
+				</control>
+				<!-- Addon Author -->
+				<control type="label">
+					<posx>1245</posx>
+					<posy>380</posy>
+					<width>550</width>
+					<height>27</height>
+					<align>right</align>
+					<label fallback="416">[COLOR=MediaDetailsGenre]$LOCALIZE[31423]:[/COLOR] $INFO[ListItem.Property(Addon.Creator)]</label>
+					<font>METF_MediaDetails</font>
+					<textcolor>MediaDetailsInfo</textcolor>
+					<visible>Container.Content(addons)</visible>
 				</control>
 				<!-- Genre -->
 				<control type="label">
@@ -301,6 +313,24 @@
 					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
+				<!-- Addon Description -->
+				<control type="textbox">
+					<posx>300</posx>
+					<posy>650</posy>
+					<width>840</width>
+					<height>135</height>
+					<align>left</align>
+					<font>METF_PlotText</font>
+					<textcolor>TextNF</textcolor>
+					<info>ListItem.Property(Addon.Description)</info>
+					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<include>Animation_OpenCloseFade</include>
+					<include>Animation_FadedByMenu</include>
+					<include>Animation_HiddenByInfo</include>
+					<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+				</control>
 				<!-- Left side poster for Recently Added Episodes -->
 				<control type="image">
 					<posx>37</posx>
@@ -331,10 +361,10 @@
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons) | Window.IsActive(videolibrary)</visible>
 				</control>
 				<!-- TV Show Poster Image -->
 				<control type="image">
@@ -437,7 +467,7 @@
 					<texture fallback="home/movies.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>300</fadetime>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies) | Container.Content(addons)</visible>
 				</control>
 				<!-- Frame for Episode, Landscape and Fanart images -->
 				<control type="image">
@@ -449,7 +479,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<colordiffuse>GlassDiffuse</colordiffuse>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows)</visible>
+					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons)</visible>
 				</control>
 				<control type="image">
 					<posx>935</posx>
@@ -458,7 +488,7 @@
 					<height>203</height>
 					<texture>frames/ClassicFrame_FanartSmall.png</texture>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows)</visible>
+					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons)</visible>
 				</control>
 				<!-- Scroll Bar -->
 				<control type="scrollbar" id="998">
@@ -475,7 +505,7 @@
 					<orientation>vertical</orientation>
 					<include>Animation_CommonFade</include>
 					<animation effect="fade" start="60" end="100" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(998)">Conditional</animation>
-					<visible>Container.Content(movies) |Container.Content(tvshows) | Container.Content(episodes)</visible>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(addons)</visible>
 				</control>
 			</control>
 			<!-- Movies/TVShows - Year/Duration/Number of Episodes -->

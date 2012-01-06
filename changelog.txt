@@ -1,6 +1,7 @@
 [B]v.0.9.7[/B]
+--------------
 More Eden standardization - Issue 40
- 
+Added Logo support in DialogFullScreenInfo
 
 [B]v.0.9.6[/B]
 Updated Music Info screen
