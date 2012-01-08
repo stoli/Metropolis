@@ -1527,7 +1527,7 @@
 					<control type="button" id="803">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.logo-downloader,mode=bulk,clearart=False,logo=True,showthumb=landscape.jpg,banner=banner.jpg)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader,mediatype=tvshow,poster, fanart, extrafanart, clearart, clearlogo, tvthumb, banner, characterart, defaultthumb)</onclick>
 					</control>
 					<control type="label" id="804">
 						<include>SettingsLabel</include>

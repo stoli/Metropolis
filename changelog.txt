@@ -1,3 +1,9 @@
+[B]v.0.9.8[/B]
+--------------
+More Eden standardization
+Swapped Logo Downloader for Atrwork Downloader
+Added sialivi's Poster and Fanart view
+
 [B]v.0.9.7[/B]
 --------------
 More Eden standardization - Issue 40
