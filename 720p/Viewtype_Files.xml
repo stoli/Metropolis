@@ -79,7 +79,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>735</width>
+						<width>670</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
@@ -225,7 +225,7 @@
 					<control type="fadelabel">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>735</width>
+						<width>670</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
@@ -487,7 +487,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + !Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + !Container.Content(tvshows) + !Container.Content(songs)</visible>
 				</control>
 				<control type="label">
 					<width min="25" max="300">auto</width>
@@ -496,7 +496,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
-					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + !Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + !Container.Content(tvshows) + !Container.Content(songs)</visible>
 				</control>
 			</control>
 			<!-- Movie Sets -->
