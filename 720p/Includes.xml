@@ -27,6 +27,7 @@
 	<include file="Viewtype_Poster_Wrap.xml" />
 	<include file="Viewtype_TallGenre.xml" />
 	<include file="Viewtype_PosterAndFanart.xml" />
+	<include file="Viewtype_Panel_Square.xml" /> <!-- 559 -->
 	<!-- Global dimensions -->
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>

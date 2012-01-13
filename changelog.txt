@@ -1,3 +1,7 @@
+[B]v.0.9.80[/B]
+--------------
+Added new Panel view from sialivi!
+
 [B]v.0.9.8[/B]
 --------------
 More Eden standardization

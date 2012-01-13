@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.metropolis" 
-	version="0.9.8" 
+	version="0.9.80" 
 	name="Metropolis" 
 	provider-name="Amra">
   <requires>
