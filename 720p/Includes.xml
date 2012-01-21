@@ -1003,7 +1003,7 @@
 		<control type ="image" id="7657"> 
 				<description>tv show image</description>
 				<posx>25</posx>
-				<posy>450</posy>
+				<posy>515</posy>
 				<width>250</width>
 				<height>230</height>
 				<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture>
@@ -1013,7 +1013,7 @@
 			<control type ="image" id="7658"> 
 				<description>tv show image</description>
 				<posx>25</posx>
-				<posy>450</posy>
+				<posy>515</posy>
 				<width>250</width>
 				<height>230</height>
 				<texture background="true">$INFO[Player.FolderPath]clearart.png</texture>
