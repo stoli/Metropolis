@@ -3,7 +3,7 @@
 		<control type="group">
 			<posx>3</posx>
 			<posy>5</posy>
-			<visible>Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)</visible>
+			<visible>[Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)] | [Window.IsActive(115) + !SubString(Container.FolderPath,plugin)]</visible>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseFade</include>
@@ -194,7 +194,7 @@
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseFade</include>
-			<visible>Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)</visible>
+			<visible>[Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)] | [Window.IsActive(115) + !SubString(Container.FolderPath,plugin)]</visible>
 			<!-- Video Resolution -->
 			<control type="group">
 				<posx>240</posx>

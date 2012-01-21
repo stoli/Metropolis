@@ -307,8 +307,9 @@
 <!-- New String from stoli -->
 	<string id="31419">Music Settings</string>
 	<string id="31420">Video Settings</string>
-	<string id="31421">Enable Clearart in Video OSD</string>
-	<string id="31422">Display TV Logo instead of Thumbnail on Info Screen</string>
+	<string id="31421">Use Clearart in Video OSD</string>
+	<string id="31422">Use TV Logo in Video OSD</string>
 	<string id="31423">Author</string>
 	<string id="31424">Poster &amp; Fanart</string> 
+	<string id="31425">Use Thumbnail in Video OSD</string>
 </strings>

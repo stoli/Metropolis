@@ -314,6 +314,7 @@
 					<label>$INFO[ListItem.Property(UnwatchedEpisodes)] $LOCALIZE[16101]</label>
 					<visible>!IsEmpty(ListItem.Episode) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
 				</control>
+				
 			</control>
 			<include>ScrollBar_Vertical</include>
 		</control>

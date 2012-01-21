@@ -1569,14 +1569,26 @@
 					<control type="radiobutton" id="101">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31421]</label>
-						<onclick>Skin.ToggleSetting(Enable_SeekArt)</onclick>
-						<selected>Skin.HasSetting(Enable_SeekArt)</selected>
+						<onclick>Skin.SetBool(Enable_OSDClearArt)</onclick>
+						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
+						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
+						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 					</control>
 					<control type="radiobutton" id="102">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31422]</label>
-						<onclick>Skin.ToggleSetting(Logo_in_Info)</onclick>
-						<selected>Skin.HasSetting(Logo_in_Info)</selected>
+						<onclick>Skin.SetBool(Enable_OSDLogo)</onclick>
+						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
+						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
+						<selected>Skin.HasSetting(Enable_OSDLogo)</selected>
+					</control>
+					<control type="radiobutton" id="103">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31425]</label>
+						<onclick>Skin.SetBool(Enable_OSDThumbnail)</onclick>
+						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
+						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
+						<selected>Skin.HasSetting(Enable_OSDThumbnail)</selected>
 					</control>
 
 				

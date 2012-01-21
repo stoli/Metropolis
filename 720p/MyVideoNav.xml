@@ -1,16 +1,12 @@
 ﻿<window id="25">
+	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<views>905,55,53,57,550,512,52,503,504,509,508,511,510,54,59,58,56,501</views>
-	<defaultcontrol always="true">9999</defaultcontrol>
+	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		<control type="button" id="9999">
-			<description>trigger</description>
-			<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
-			<onfocus>SetFocus(55)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-		</control>
+		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<include>Animation_CommonFade</include>
@@ -262,6 +258,7 @@
 		</control>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
+		<include>NextAiredInfo</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>

@@ -478,6 +478,40 @@
 			</control>
 		</control>
 	</include>
+	<!-- Next Aired Date -->
+	<include name="NextAiredInfo">
+		<control type="group">
+			<posx>300</posx>
+			<posy>620</posy>
+			<include>Window_OpenClose_Animation</include>
+			<!--<include>ContentFade</include>
+			<animation effect="slide" start="0,0" end="0,-590" condition="Control.IsVisible(50) | Control.IsVisible(590)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-480" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-510" condition="Control.IsVisible(57)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="385,-165" condition="Control.IsVisible(596)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-200,90" condition="Control.IsVisible(50) + Skin.HasSetting(FanartLong)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="150" condition="Control.IsVisible(55) + Control.IsVisible(7031)">Conditional</animation>
+			<include condition="Skin.HasSetting(HateTransparency)">T-Underlay56</include> -->
+			<visible>Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>680</width>
+				<height>100</height>
+				<texture diffuse="underlay-diffuse.png" border="0,10,0,10">underlay5.png</texture>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>18</posy>
+				<width>680</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<label>[COLOR=blue]$LOCALIZE[31179][/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+			</control>
+		</control>
+	</include>
 	<!-- Info dialog objects -->
 	<include name="Object_InfoLines">
 		<control type="image">
@@ -947,7 +981,7 @@
 			<colordiffuse>MediaFlagDiffuse</colordiffuse>
 			<texture>special://skin/extras/studios/$INFO[VideoPlayer.Studio,,.png]</texture>
 		</control>
-		<!-- Episode Image -->
+		<!-- Episode Image / Logo / Clearart -->
 		<control type="image">
 			<posx>25</posx>
 			<posy>450</posy>
@@ -955,7 +989,7 @@
 			<height>230</height>
 			<texture background="true">$INFO[Player.FolderPath]../logo.png</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
-			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Logo_in_Info)</visible>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDLogo)</visible>
 		</control>
 		<control type="image">
 			<posx>25</posx>
@@ -964,8 +998,30 @@
 			<height>230</height>
 			<texture background="true">$INFO[Player.FolderPath]logo.png</texture>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
-			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Logo_in_Info)</visible>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDLogo)</visible>
 		</control>
+		<control type ="image" id="7657"> 
+				<description>tv show image</description>
+				<posx>25</posx>
+				<posy>450</posy>
+				<width>250</width>
+				<height>230</height>
+				<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes)+ ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+			</control>
+			<control type ="image" id="7658"> 
+				<description>tv show image</description>
+				<posx>25</posx>
+				<posy>450</posy>
+				<width>250</width>
+				<height>230</height>
+				<texture background="true">$INFO[Player.FolderPath]clearart.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes)+ ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+			</control>
+			
+			
 		<control type="image">
 			<posx>25</posx>
 			<posy>480</posy>
@@ -975,7 +1031,7 @@
 			<bordertexture border="8">thumb_border.png</bordertexture>
 			<bordersize>6</bordersize>
 			<aspectratio align="center" aligny="bottom">keep</aspectratio>
-			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + !Skin.HasSetting(Logo_in_Info)</visible>
+			<visible>VideoPlayer.Content(episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDThumbnail)</visible>
 		</control>
 		<!-- Movie Poster with Classic Case -->
 		<control type="image">
@@ -1008,6 +1064,25 @@
 		<align>right</align>
 		<aligny>center</aligny>
 		<include>Animation_CommonFade</include>
+	</include>
+	<include name="OSD_Player_Labels_Left">
+		<posx>25</posx>
+		<posy>12</posy>
+		<width>450</width>
+		<height>40</height>
+		<font>METF_OSDPlayerStatus</font>
+		<textcolor>OSDPlayerStatusText</textcolor>
+		<shadowcolor>ff000000</shadowcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<include>Animation_CommonFade</include>
+	</include>
+	<include name="OSD_Player_Time">
+		<control type="label" id="0">
+			<include>OSD_Player_Labels_Left</include>
+			<label>$INFO[System.Time]</label>
+			
+		</control>
 	</include>
 	<include name="OSD_Player_Details">
 		<control type="group">
