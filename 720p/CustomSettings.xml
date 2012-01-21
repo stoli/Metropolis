@@ -1554,6 +1554,14 @@
 						<onclick>Skin.ToggleSetting(banner_jpg)</onclick>
 						<selected>Skin.HasSetting(banner_jpg)</selected>
 					</control>
+					<control type="image" id="809">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="810">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31426]</label>
+						<onclick>Skin.ToggleSetting(NextAired)</onclick>
+					</control>
 				</control>
 				<!-- Video Option -->
 				<control type="grouplist" id="9011">

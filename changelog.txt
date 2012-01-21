@@ -1,3 +1,13 @@
+[B]v.0.9.81[/B]
+--------------
+Added support for Next Aired Date in TV Views
+Modified Full Screen Info and Paused Screen
+	- Smaller top menu
+	- Added Current Time
+	- Added support for choosing either ClearArt, Logo or Poster image
+	- Removed Plot
+Increased Latest Added items to 10 items from 5.
+
 [B]v.0.9.80[/B]
 --------------
 Added new Panel view from sialivi!
