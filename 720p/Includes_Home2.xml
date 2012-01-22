@@ -457,6 +457,11 @@
 					<label>Recent</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 				</control>
+				<control type="button" id="90126">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[31428]</label>
+					<onclick>RunScript(script.tv.show.next.aired)</onclick>
+				</control>
 			</control>
 			<!-- Settings Submenu -->
 			<control type="grouplist" id="9014">
