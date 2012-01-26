@@ -1598,6 +1598,15 @@
 						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDThumbnail)</selected>
 					</control>
+					<control type="image" id="805">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="104">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31429]</label>
+						<onclick>Skin.SetBool(ShowVideoPath)</onclick>
+						<selected>Skin.HasSetting(ShowVideoPath)</selected>
+					</control>
 
 				
 				</control>
