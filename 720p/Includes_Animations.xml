@@ -66,7 +66,7 @@
 		</animation>
 	</include>
 	<include name="Animation_FadedByMenu">
-		<animation type="Conditional" condition="Window.IsActive(yesnodialog) | Window.IsActive(contentsettings) | Window.IsActive(contextmenu) | Window.IsActive(shutdownmenu) | Window.IsActive(favourites) | Window.IsActive(okdialog) | Window.IsActive(selectdialog) | Window.IsActive(addoninformation) | Window.IsActive(filestackingdialog) | Window.IsActive(profilesettings) | Window.IsActive(smartplaylisteditor) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput)">
+		<animation type="Conditional" condition="Window.IsActive(yesnodialog) | Window.IsActive(contentsettings) | Window.IsActive(contextmenu) | Window.IsActive(shutdownmenu) | Window.IsActive(favourites) | Window.IsActive(okdialog) | Window.IsActive(selectdialog) | Window.IsActive(addoninformation) | Window.IsActive(filestackingdialog) | Window.IsActive(profilesettings) | Window.IsActive(smartplaylisteditor) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | ControlGroup(7000).HasFocus()">
 			<effect type="fade" time="200" start="100" end="10" />
 		</animation>
 		<animation type="Conditional" condition="Window.IsActive(addonsettings) | Window.IsActive(filebrowser) | Window.IsActive(mediasource)">

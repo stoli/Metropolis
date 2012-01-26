@@ -258,7 +258,7 @@
 					<align>left</align>
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration]</label>
+					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 					<visible>substring(listitem.Duration,hrs)</visible>
 					<visible>Container.Content(episodes) + !IsEmpty(listitem.Duration)</visible>
 				</control>

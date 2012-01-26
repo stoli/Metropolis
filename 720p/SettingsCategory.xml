@@ -15,7 +15,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_CommonFadeNoHide</include>
 				<posx>0</posx>
-				<posy>100</posy>
+				<posy>80</posy>
 				<width>380</width>
 				<height>456</height>
 				<itemgap>0</itemgap>
@@ -32,7 +32,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_CommonFadeNoHide</include>
 				<posx>440</posx>
-				<posy>100</posy>
+				<posy>80</posy>
 				<width>840</width>
 				<height>456</height>
 				<scrolltime>0</scrolltime>

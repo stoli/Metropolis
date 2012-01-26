@@ -5,7 +5,7 @@
 			<!-- Browser -->
 			<control type="fixedlist" id="503">
 				<posx>350</posx>
-				<posy>100</posy>
+				<posy>40</posy>
 				<height>500</height>
 				<width>990</width>
 				<onup>503</onup>
