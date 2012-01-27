@@ -71,6 +71,13 @@
 				<visible>[!Skin.HasSetting(ProfileFanart) + !Skin.HasSetting(CustomFanart)] | [Container(300).HasFocus(7) + Skin.HasSetting(homeweather)]</visible>
 				<visible>!Window.IsActive(videooverlay)</visible>
 			</control>
+			<control type="videowindow">
+				<posx>240</posx>
+				<posy>50</posy>
+				<width>800</width>
+				<height>450</height>
+				<visible>Player.HasVideo</visible>
+			</control>
 			<control type="image">
 				<posx>215</posx>
 				<posy>25</posy>
