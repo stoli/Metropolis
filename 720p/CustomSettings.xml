@@ -1575,7 +1575,7 @@
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<control type="radiobutton" id="101">
+					<control type="radiobutton" id="1011">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31421]</label>
 						<onclick>Skin.SetBool(Enable_OSDClearArt)</onclick>
@@ -1583,7 +1583,7 @@
 						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 					</control>
-					<control type="radiobutton" id="102">
+					<control type="radiobutton" id="1012">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31422]</label>
 						<onclick>Skin.SetBool(Enable_OSDLogo)</onclick>
@@ -1591,7 +1591,7 @@
 						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDLogo)</selected>
 					</control>
-					<control type="radiobutton" id="103">
+					<control type="radiobutton" id="1013">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31425]</label>
 						<onclick>Skin.SetBool(Enable_OSDThumbnail)</onclick>
@@ -1599,10 +1599,10 @@
 						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDThumbnail)</selected>
 					</control>
-					<control type="image" id="805">
+					<control type="image" id="1014">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="104">
+					<control type="radiobutton" id="1015">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31429]</label>
 						<onclick>Skin.SetBool(ShowVideoPath)</onclick>
@@ -1653,6 +1653,19 @@
 						<onclick>XBMC.ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
 					</control>
+					<control type="image" id="902">
+						<include>Settings_Line</include>
+					</control>
+					<control type="button" id="903">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31431]</label>
+						<onclick>Skin.ResetSettings</onclick>
+						<onclick>ReloadSkin()</onclick> 
+					</control>
+					<control type="image" id="904">
+						<include>Settings_Line</include>
+					</control>
+					
 				</control>
 			</control>
 			<control type="image">
