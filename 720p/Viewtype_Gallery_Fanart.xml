@@ -37,7 +37,7 @@
 						<height>146</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<visible>Container.Content(episodes)</visible>
+						<visible>Container.Content(episodes) | Window.IsActive(pictures)</visible>
 					</control>
 					<control type="image">
 						<posx>22</posx>
@@ -109,7 +109,7 @@
 							<effect type="fade" start="70" end="100" time="300" />
 						</animation>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<visible>Container.Content(episodes) | [Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)]</visible>
+						<visible>Container.Content(episodes) | Window.IsActive(pictures) | [Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)]</visible>
 					</control>
 					<control type="image">
 						<include>Animation_GalleryFanartFloat</include>

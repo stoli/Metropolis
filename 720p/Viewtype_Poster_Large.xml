@@ -1,7 +1,7 @@
 ﻿<includes>
-	<include name="Viewtype_PosterAndFanart">
+	<include name="Viewtype_Poster_Large">
 		<control type="group">
-			<visible>Control.IsVisible(550)</visible>
+			<visible>Control.IsVisible(551)</visible>
 			<control type="group">			
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
@@ -9,8 +9,8 @@
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 				<!-- Browser label and flags -->
 				<control type="group">
-					<posx>490</posx>
-					<posy>438</posy>
+					<posx>520</posx>
+					<posy>450</posy>
 					<!-- Title -->
 					<control type="fadelabel">
 						<width>800</width>
@@ -131,8 +131,8 @@
 				</control>
 			</control>			
 			<!-- Browser -->
-			<control type="wraplist" id="550">
-				<viewtype label="31424">list</viewtype>
+			<control type="wraplist" id="551">
+				<viewtype label="31430">list</viewtype>
 				<posx>-100</posx>
 				<posy>40</posy>
 				<height>500</height>
@@ -151,7 +151,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-				<itemlayout width="260" height="420">
+				<itemlayout width="300" height="420">
 					<control type="group">
 						<posx>-30</posx>
 						<posy>9</posy>
@@ -200,16 +200,17 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="1030" height="420">
+				<focusedlayout width="370" height="420">
 					<!-- Focused Item Poster -->
 					<control type="group">
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="100,0" start="90" end="100" time="300" tween="sine" easing="inout" />
 						</animation>
+						<posx>-15</posx>
 						<!-- Focused Item - Poster -->
 						<control type="image">
 							<posx>13</posx>
-							<posy>29</posy>
+							<posy>27</posy>
 							<width>290</width>
 							<height>443</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -220,7 +221,7 @@
 						<!-- Focused Item - Poster Frame -->
 						<control type="image">
 							<posx>-2</posx>
-							<posy>8</posy>
+							<posy>6</posy>
 							<width>321</width>
 							<height>485</height>
 							<fadetime>200</fadetime>
@@ -230,7 +231,7 @@
 						<!-- Focused Item - Watched Overlay -->
 						<control type="image">
 							<posx>260</posx>
-							<posy>425</posy>
+							<posy>423</posy>
 							<width>32</width>
 							<height>32</height>
 							<fadetime>200</fadetime>
@@ -241,116 +242,6 @@
 							</animation>
 							<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 						</control>						
-					</control>
-					<!-- Focused Item Fanart -->
-					<control type="group">
-						<posx>309</posx>
-						<posy>10</posy>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture>frames/ClassicFrame_SegmentedDiffuse.png</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
-						</control>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture>frames/ClassicFrame_Background.png</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
-						</control>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="home/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="MissingLandscapeJpeg.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Path]landscape.jpg</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="home/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<!-- Focused Item Landscape -->
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="MissingLandscapeJpeg.jpg">$INFO[ListItem.Path]landscape.jpg</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<!-- Focused Item Segmented Fanart Frame -->
-						<control type="image">
-							<width>700</width>
-							<height>410</height>
-							<texture>frames/ClassicFrame_Segmented.png</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
-						</control>
-						<!-- Focused Item Normal Fanart Frame -->						
-						<control type="image">
-							<width>700</width>
-							<height>410</height>
-							<texture>frames/ClassicFrame_FanartMedium.png</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
-						</control>
 					</control>
 				</focusedlayout>
 			</control>
