@@ -720,6 +720,7 @@
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
+
 	<include name="SettingsLabel">
 		<width>840</width>
 		<height>38</height>
@@ -744,6 +745,17 @@
 		<texturenofocus>-</texturenofocus>
 		<disabledcolor>TextDisabled</disabledcolor>
 		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="SettingsHeaderLabel">
+		<width>840</width>
+		<height>38</height>
+		<textoffsetx>0</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		
+		<font>METF_TitleTextMedium</font>
+		<textcolor>SettingsDetail</textcolor>
+		
 	</include>
 	<!-- Shutdown Menu Buttons -->
 	<include name="SettingsShutdownMenu">

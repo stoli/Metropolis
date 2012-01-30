@@ -118,6 +118,11 @@
 			<size>28</size>
 		</font>
 		<font>
+			<name>METF_MusicVizTitle</name>
+			<filename>MET_FontinSansSmallCaps.ttf</filename>
+			<size>48</size>
+		</font>
+		<font>
 			<name>METF_SettingsDetail</name>
 			<filename>MET_UbuntuRegular.ttf</filename>
 			<size>22</size>

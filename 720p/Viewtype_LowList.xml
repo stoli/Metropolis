@@ -20,7 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists)] | Container.Content(addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
+				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)] | Container.Content(addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -182,7 +182,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Control.IsVisible(905) + [Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons) | Window.IsActive(videolibrary)]</visible>
+				<visible>Control.IsVisible(905) + [Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons) | Window.IsActive(videolibrary)] | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>413</posy>
@@ -437,6 +437,30 @@
 					<fadetime>300</fadetime>
 					<visible>Container.Content(episodes)</visible>
 				</control>
+				<!-- Album and Artist Cover for Music -->
+				<control type="image">
+					<posx>37</posx>
+					<posy>165</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="8">border.png</bordertexture>
+					<bordersize>4</bordersize>
+					<visible>[Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]</visible>
+				</control>
+				<!-- Artist Logo -->
+				<control type="image">
+					<posx>940</posx>
+					<posy>480</posy>
+					<width>300</width>
+					<height>116</height>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
+					<visible>Control.IsVisible(905)</visible>
+				</control>
+				
 				<!-- TV Show Fanart or Landscape Image -->
 				<control type="image">
 					<posx>952</posx>

@@ -1628,7 +1628,33 @@
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>Skin.HasSetting(CDArt)</selected>
 					</control>
+					<control type="button" id="102">
+						<include>SettingsLabel</include>
+						<description>Music Folder Path</description>
+						<label>$LOCALIZE[31432]</label>
+						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
+						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
+						<!-- <enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart)</enable> -->
+					</control>
+					<control type="label" id="103">
+						<include>SettingsHeaderLabel</include>
+						<label>$LOCALIZE[31434]</label>
+					</control>
+					<control type="radiobutton" id="104">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31433]</label>
+						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
+						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
+					</control>
+					<control type="radiobutton" id="105">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31435]</label>
+						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
+						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
+					</control>
+					
 				</control>
+			
 				<!-- Debug -->
 				<control type="grouplist" id="9008">
 					<visible>Container(9000).Hasfocus(9)</visible>

@@ -318,4 +318,8 @@
 	<string id="31429">Display Path in Video Info instead of Rating details</string>
 	<string id="31430">Poster Large</string>
 	<string id="31431">Click to Reset Metropolis to Defaults</string>
+	<string id="31432">Path to Music Library</string>
+	<string id="31433">Use Fanart instead of Visualization</string>
+	<string id="31434">Music Visualization Options</string>
+	<string id="31435">Use Artist Slideshow</string>
 </strings>
