@@ -1611,7 +1611,7 @@
 					<control type="radiobutton" id="1016">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
-						<onclick>Skin.SetBool(Slim_Seekbar)</onclick>
+						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
 
