@@ -45,7 +45,7 @@
 			<fadetime>400</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include>Animation_BackdropFade</include>
-			<visible>Skin.HasSetting(Use_Fanart_Viz) + !Skin.HasSetting(FullscreenJukebox) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -57,7 +57,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>Animation_BackdropFade</include>
-			<visible>Skin.HasSetting(Use_Fanart_Viz) + !Skin.HasSetting(FullscreenJukebox) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -123,6 +123,7 @@
 				<height>260</height>
 				<texture>osd/OSDdialogback.png</texture>
 				<colordiffuse>OSDBackgroundColor</colordiffuse>
+				<visible>Player.ShowInfo</visible>	
 			</control>
 		
 		<control type="group">
@@ -335,7 +336,9 @@
 				</control>		
 			</control>
 		</control>
-
-	<include>Global_Time</include>
+		<control type="group">
+			<include>Global_Time</include>
+			<visible>Player.ShowInfo + !Skin.HasSetting(SmallBandArt)</visible>	
+		</control>
 	</controls>
 </window>
