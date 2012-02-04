@@ -74,7 +74,8 @@
 			
 				
 		</control>-->
-		<include>OSD_Progress_Bar2</include>
+	<!--	<include condition="!Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar2</include> -->
+		<include condition="Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar3</include>
 		<include>OSD_Player_Details</include>
 		<include>MediaInfoVideoPlayer</include>
 		<include>OSD_Player_Time</include>

@@ -1608,6 +1608,12 @@
 						<onclick>Skin.SetBool(ShowVideoPath)</onclick>
 						<selected>Skin.HasSetting(ShowVideoPath)</selected>
 					</control>
+					<control type="radiobutton" id="1016">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31436]</label>
+						<onclick>Skin.SetBool(Slim_Seekbar)</onclick>
+						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
+					</control>
 
 				
 				</control>

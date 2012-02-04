@@ -1062,6 +1062,101 @@
 		</control>
 	</include>
 
+	<include name="OSD_Progress_Bar3">
+		
+		<control type="progress" id="23">
+			<description>Progressbar</description>
+			<posx>295</posx>
+			<posy>157</posy>
+			<width>960</width>
+			<height>15</height>
+			<info>Player.Progress</info>
+			<texturebg>osd/osd_progress_back.png</texturebg>
+			<lefttexture>osd/osd_progress_left.png</lefttexture>
+			<midtexture>osd/osd_progress_mid.png</midtexture>
+			<righttexture>osd/osd_progress_right.png</righttexture>
+			<colordiffuse>OSDProgressBar</colordiffuse>
+			<overlaytexture>-</overlaytexture>
+		</control>
+		<!-- Current position / Total Time -->
+		<control type="label">
+			<posx>1250</posx>
+			<posy>640</posy>
+			<width>250</width>
+			<height>40</height>
+			<aligny>center</aligny>
+			<align>right</align>
+			<font>METF_OSDTime</font>
+			<textcolor>OSDProgressBar</textcolor>
+			<label>$INFO[VideoPlayer.Time] [COLOR TextNF]/[/COLOR] $INFO[VideoPlayer.Duration]</label>
+			<textcolor>OSDPlayingDuration</textcolor>
+		</control>
+		<!-- Finish Time -->
+		<control type="label">
+			<posx>1250</posx>
+			<posy>670</posy>
+			<width>250</width>
+			<height>40</height>
+			<aligny>center</aligny>
+			<align>right</align>
+			<font>METF_OSDTime</font>
+			<textcolor>OSDFinishTime</textcolor>
+			<label>$LOCALIZE[31409]:  $INFO[Player.FinishTime]</label>
+		</control>
+		<!-- Title -->
+		<control type="fadelabel">
+			<posx>300</posx>
+			<posy>555</posy>
+			<width>850</width>
+			<height>40</height>
+			<font>METF_TitleTextMedium</font>
+			<textcolor>TitleText</textcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<scrollout>false</scrollout>
+			<pauseatend>3800</pauseatend>
+			<scrollspeed>40</scrollspeed>
+			<scroll>true</scroll>
+			<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</label>
+			<animation effect="slide" end="0,25" condition="IsEmpty(VideoPlayer.Tagline)">Conditional</animation>
+			<visible>!IsEmpty(VideoPlayer.Year)</visible>
+		</control>
+		<control type="fadelabel">
+			<posx>300</posx>
+			<posy>555</posy>
+			<width>850</width>
+			<height>40</height>
+			<font>METF_TitleTextMedium</font>
+			<textcolor>TitleText</textcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<scrollout>false</scrollout>
+			<pauseatend>3800</pauseatend>
+			<scrollspeed>40</scrollspeed>
+			<scroll>true</scroll>
+			<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</label>
+			<animation effect="slide" end="0,25" condition="IsEmpty(VideoPlayer.Tagline)">Conditional</animation>
+			<visible>IsEmpty(VideoPlayer.Year)</visible>
+		</control>
+		<!-- Movie Tagline -->
+		<control type="fadelabel">
+			<posx>300</posx>
+			<posy>590</posy>
+			<width>850</width>
+			<height>30</height>
+			<font>METF_PlotText</font>
+			<textcolor>TextNF</textcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<scrollout>false</scrollout>
+			<pauseatend>3800</pauseatend>
+			<scrollspeed>40</scrollspeed>
+			<scroll>true</scroll>
+			<label>$INFO[VideoPlayer.Tagline]</label>
+			<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
+		</control>
+		
+	</include>
 	<include name="OSD_Player_Labels">
 		<posx>1255</posx>
 		<posy>12</posy>
