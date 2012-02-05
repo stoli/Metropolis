@@ -1,5 +1,5 @@
 ﻿<window id="25">
-	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<views>905,55,53,57,550,551,512,52,503,504,509,508,511,510,54,59,58,56,501</views>
 	<defaultcontrol always="true">55</defaultcontrol>

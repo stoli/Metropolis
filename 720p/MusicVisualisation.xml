@@ -1,15 +1,10 @@
 ﻿<window id="2006">
 	<allowoverlay>no</allowoverlay>
-	<defaultcontrol>999</defaultcontrol>
+	<onload condition="Skin.HasSetting(Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
+
+	<defaultcontrol>-</defaultcontrol>
 	<controls>
 		
-		<control type="button" id="999">
-			<posx>-10</posx>
-			<posy>-10</posy>
-			<width>1</width>
-			<height>1</height>
-			<onfocus>RunScript(script.artistslideshow)</onfocus>
-		</control>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -22,7 +17,7 @@
 			<randomize>true</randomize>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
+			<visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh)) + Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
@@ -43,11 +38,10 @@
 			<texture background="true" fallback="special://skin/backgrounds/music.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>400</fadetime>
-			<include>VisibleFadeEffect</include>
 			<include>Animation_BackdropFade</include>
 			<visible>Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
-		<control type="multiimage">
+		<control type="multiimage" id="999">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -57,7 +51,19 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>Animation_BackdropFade</include>
-			<visible>Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>IsEmpty(Control.GetLabel(998)) + Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+		</control>
+		<control type="multiimage" id="998">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Player.FolderPath,,../../extrafanart/]</imagepath>
+			<timeperimage>7000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>Animation_BackdropFade</include>
+			<visible>IsEmpty(Control.GetLabel(999)) + Skin.HasSetting(Use_Fanart_Viz) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -221,7 +227,17 @@
 				<width>230</width>
 				<height>89</height>
 				<texture>$INFO[Player.FolderPath,,../logo.png]</texture>
-				
+			</control>
+			<control type="image" id="2">
+				<posx>525</posx>
+				<posy>475</posy><!-- -143 -->
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<width>230</width>
+				<height>89</height>
+				<texture>$INFO[Player.FolderPath,,../../logo.png]</texture>
+				<visible>IsEmpty(Control.GetLabel(1))</visible>
 			</control>
 			<control type="label">
 				<!-- <animation effect="slide" start="1300" end="45" time="700" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
@@ -237,7 +253,7 @@
 				<font>METF_MusicVizTitle</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
 			<!--	<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation> -->
-				<visible>IsEmpty(Control.GetLabel(1))</visible>
+				<visible>IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
 			</control>
 			
 			<control type="label">
