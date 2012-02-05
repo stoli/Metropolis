@@ -1,6 +1,6 @@
 ﻿<window id="2007">
 	<controls>
-		<control type="group">
+		<!-- <control type="group">
 			<posx>30</posx>
 			<posy>520</posy>
 			<visible>Player.ShowInfo + Player.HasMedia</visible>
@@ -68,6 +68,6 @@
 				</control>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include> -->
 	</controls>
 </window>

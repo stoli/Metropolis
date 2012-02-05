@@ -1563,6 +1563,12 @@
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 					</control>
+					<control type="radiobutton" id="811">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31437]</label>
+						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
+						<selected>Skin.HasSetting(TvTunes)</selected>
+					</control>
 				</control>
 				<!-- Video Option -->
 				<control type="grouplist" id="9011">
