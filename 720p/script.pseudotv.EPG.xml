@@ -10,10 +10,10 @@
 		<control type="image">
 			<description>EPG Back</description>
 			<posx>392</posx>
-			<posy>236</posy>
+			<posy>235</posy>
 			<width>864</width>
-			<height>299</height>
-			<texture>ListButtonFo.png</texture>
+			<height>300</height>
+			<texture>ButtonFo.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -32,9 +32,19 @@
 			<height>78</height>
 			<font>METF_TitleText</font>
 			<textcolor>GlobalHeading</textcolor>
+			<shadowcolor>black</shadowcolor>
 			<aligny>center</aligny>
 			<align>left</align>
 			<label>PseudoTV</label>
+		</control>
+		<control type="image">
+			<description>Navigation Flag</description>
+			<posx>900</posx>
+			<posy>25</posy>
+			<width>336</width>
+			<height>28</height>
+			<texture>NavFlagEpg.png</texture>
+			<colordiffuse>GlobalHeading</colordiffuse>
 		</control>
 		<!-- Plot -->
 		<control type="label" id="502">
@@ -120,7 +130,7 @@
 				<width>284</width>
 				<height>50</height>
 				<label>Time 1</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -140,7 +150,7 @@
 				<width>284</width>
 				<height>50</height>
 				<label>Time 2</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -160,7 +170,7 @@
 				<width>284</width>
 				<height>50</height>
 				<label>Time 2</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -234,7 +244,7 @@
 				<width>365</width>
 				<height>50</height>
 				<label>Current Date</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -259,7 +269,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -272,11 +282,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>1</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>			
 			<!-- CHANNEL 2 -->			
 			<control type="image">
@@ -298,7 +308,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -311,11 +321,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>2</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>			
 			<!-- CHANNEL 3 -->			
 			<control type="image">
@@ -337,7 +347,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -350,11 +360,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>2</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>			
 			<!-- CHANNEL 4 -->			
 			<control type="image">
@@ -376,7 +386,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -389,11 +399,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>4</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>			
 			<!-- CHANNEL 5 -->			
 			<control type="image">
@@ -415,7 +425,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -428,11 +438,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>5</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>			
 			<!-- CHANNEL 6 -->			
 			<control type="image">
@@ -454,7 +464,7 @@
 				<width>300</width>
 				<height>50</height>
 				<label>Channel</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -467,11 +477,11 @@
 				<width>50</width>
 				<height>50</height>
 				<label>2</label>
-				<font>font13</font>
+				<font>METF_PlotText</font>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>orange</textcolor>
+				<textcolor>GlobalHeading</textcolor>
 			</control>
         </control>
 		<!--TIME BAR-->		
@@ -493,7 +503,7 @@
     		<itemgap>8</itemgap>
 			<control type="label" id="500">
 				<description>Label Show Title</description>
-				<width min="50" max="425">auto</width>
+				<width min="50" max="500">auto</width>
 				<height>40</height>
 				<font>METF_TitleTextMedium</font>
 				<textcolor>white</textcolor>
@@ -501,7 +511,7 @@
 				<scroll>auto</scroll>
 			</control>
 			<control type="label">
-    			<width min="20" max="50">auto</width>
+    			<width min="20" max="30">auto</width>
     			<height>40</height>
     			<label> - </label>
 				<font>METF_TitleTextMedium</font>
@@ -511,7 +521,7 @@
     		</control>			
 			<control type="label" id="501">
 				<description>Label Episode Title</description>
-				<width min="50" max="425">auto</width>
+				<width min="50" max="700">auto</width>
 				<height>40</height>
 				<font>METF_TitleTextMedium</font>
 				<textcolor>white</textcolor>
@@ -519,6 +529,8 @@
 				<scroll>auto</scroll>
 			</control>
 		</control>
+		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 		<control type="image" id="503">
             <description>Show Channel Icon</description>
             <posx>30</posx>

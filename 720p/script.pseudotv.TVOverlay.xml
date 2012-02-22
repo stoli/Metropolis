@@ -1,6 +1,5 @@
 <window>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<posx>0</posx>
 		<posy>0</posy>
@@ -8,7 +7,7 @@
 	<controls>
 		<control type="image" id="103">
 			<description>Channel Bug</description>
-			<posx>1110</posx>
+			<posx>1140</posx>
 			<posy>635</posy>
 			<width>130</width>
 			<height>75</height>
@@ -104,6 +103,7 @@
 				</control>				
 			</control>
 			<include>OSD_Progress_Bar2</include>
+			<include>OSD_Player_Details</include>
 			<control type="group">
 				<posx>3</posx>
 				<posy>5</posy>
