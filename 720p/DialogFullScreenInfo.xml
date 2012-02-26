@@ -9,17 +9,17 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
-				<height>75</height>
+				<height>80</height>
 				<texture>osd/OSDdialogback_top.png</texture>
 				<colordiffuse>OSDBackgroundColor</colordiffuse>
 				<visible>!IsEmpty(VideoPlayer.Plot)</visible>
 			</control>
 			<!-- Plot -->
-		<!--<control type="textbox">
-				<posx>25</posx>
-				<posy>67</posy>
-				<width>1230</width>
-				<height>45</height>
+			<control type="textbox">
+				<posx>225</posx>
+				<posy>5</posy>
+				<width>830</width>
+				<height>70</height>
 				<align>justify</align>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
@@ -47,7 +47,7 @@
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextFO</textcolor>
 				<label>[B]$LOCALIZE[20339]:[/B]</label>
-				<visible>!IsEmpty(VideoPlayer.Director)</visible>
+				<visible>IsEmpty(VideoPlayer.Plot)</visible>
 			</control>
 			<control type="label">
 				<width min="0" max="750">auto</width>
@@ -56,7 +56,7 @@
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
 				<label>$INFO[VideoPlayer.Director]</label>
-				<visible>!IsEmpty(VideoPlayer.Director)</visible>
+				<visible>IsEmpty(VideoPlayer.Plot)</visible>
 			</control>
 		</control>
 		<!-- Genre -->
