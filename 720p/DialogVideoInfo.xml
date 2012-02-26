@@ -474,7 +474,19 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<animation effect="zoom" center="auto" start="40" end="100" time="400" tween="cubic" easing="inout">WindowOpen</animation>
 					<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
+					<!-- <visible>![Skin.HasSetting(banner_jpg) + Container.Content(tvshows)]</visible> -->
 				</control>
+				<!-- <control type="image">
+					<posx>35</posx>
+					<posy>115</posy>
+					<width>275</width>
+					<height>51</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<animation effect="zoom" center="auto" start="40" end="100" time="400" tween="cubic" easing="inout">WindowOpen</animation>
+					<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
+					<visible>[Skin.HasSetting(banner_jpg) + Container.Content(tvshows)]</visible>
+				</control> -->
 				<control type="image">
 					<posx>17</posx>
 					<posy>92</posy>

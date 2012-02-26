@@ -1634,13 +1634,13 @@
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<control type="radiobutton" id="101">
+					<control type="radiobutton" id="111">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31056]</label>
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>Skin.HasSetting(CDArt)</selected>
 					</control>
-					<control type="button" id="102">
+					<control type="button" id="112">
 						<include>SettingsLabel</include>
 						<description>Music Folder Path</description>
 						<label>$LOCALIZE[31432]</label>
@@ -1648,17 +1648,17 @@
 						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
 						<!-- <enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart)</enable> -->
 					</control>
-					<control type="label" id="103">
+					<control type="label" id="113">
 						<include>SettingsHeaderLabel</include>
 						<label>$LOCALIZE[31434]</label>
 					</control>
-					<control type="radiobutton" id="104">
+					<control type="radiobutton" id="114">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31433]</label>
 						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
 						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
 					</control>
-					<control type="radiobutton" id="105">
+					<control type="radiobutton" id="115">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
