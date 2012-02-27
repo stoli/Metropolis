@@ -278,7 +278,8 @@
 					<label>$LOCALIZE[3]</label>
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+					<!-- ActivateWindow(Videos) -->
 					<visible>!Skin.HasSetting(NoVideos)</visible>
 				</item>
 				<item id="3">
