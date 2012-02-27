@@ -161,7 +161,7 @@
 					<description>Videos</description>
 					<label>$LOCALIZE[3]</label>
 					<icon>special://skin/extras/home2/icon_videos.png</icon>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>!Skin.HasSetting(NoVideos)</visible>
 				</item>
 				<item id="3">
