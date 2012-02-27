@@ -16,9 +16,9 @@
 			<control type="image">
 				<description>background image</description>
 				<posx>5</posx>
-				<posy>-10</posy>
+				<posy>-5</posy>
 				<width>1100</width>
-				<height>67</height>
+				<height>70</height>
 				<texture flipx="true">dialogs/DialogBG_DropdownWide2.png</texture>
 				<colordiffuse>DialogDropdownColor</colordiffuse>
 			</control>
@@ -54,15 +54,15 @@
 				<control type="image">
 					<description>Volume Icon</description>
 					<posx>25</posx>
-					<posy>17</posy>
+					<posy>20</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<texture>dialogs/Dialog_VolumeIcon.png</texture>
 				</control>
 				<control type="label">
-					<posx>50</posx>
-					<posy>5</posy>
+					<posx>60</posx>
+					<posy>14</posy>
 					<width>160</width>
 					<height>45</height>
 					<textcolor>TextFO</textcolor>

@@ -463,7 +463,7 @@
 				<visible>Container(300).HasFocus(3)</visible>
 				<control type="button" id="90178">
 					<include>Submenu_Button</include>
-					<label>Recent</label>
+					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
@@ -527,7 +527,7 @@
 				<visible>Container(300).HasFocus(4)</visible>
 				<control type="button" id="90117">
 					<include>Submenu_Button</include>
-					<label>Recent</label>
+					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
 				<control type="button" id="90112">
@@ -569,7 +569,7 @@
 				<visible>Container(300).HasFocus(5)</visible>
 				<control type="button" id="90125">
 					<include>Submenu_Button</include>
-					<label>Recent</label>
+					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 				</control>
 				<control type="button" id="90121">

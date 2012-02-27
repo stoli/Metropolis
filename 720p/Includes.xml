@@ -263,6 +263,34 @@
 				<textcolor>LowerText</textcolor>
 			</control>
 		</control>
+		
+	</include>
+	<include name="Global_MusicInfo">
+		<control type="group">
+			
+			<control type="textbox">
+				<posx>300</posx>
+				<posy>565</posy>
+				<width>750</width>
+				<height>135</height>
+				<align>left</align>
+				<info>ListItem.Property(Artist_Description)</info>
+				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>LowerText</textcolor>
+			</control>
+			<control type="textbox">
+				<posx>300</posx>
+				<posy>565</posy>
+				<width>750</width>
+				<height>135</height>
+				<align>left</align>
+				<info>ListItem.Property(Album_Description)</info>
+				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>LowerText</textcolor>
+			</control>
+		</control>
 	</include>
 	<!-- Video Info Screen Buttons and Text -->
 	<include name="VideoInfoButton">
@@ -900,6 +928,20 @@
 			<colordiffuse>OSDBackgroundColor</colordiffuse>
 		</control>
 		<control type="progress" id="23">
+			<description>ProgressbarCache</description>
+			<posx>295</posx>
+			<posy>627</posy>
+			<width>960</width>
+			<height>15</height>
+			<info>Player.ProgressCache</info>
+			<texturebg>osd/osd_progress_back.png</texturebg>
+			<lefttexture>osd/osd_progress_left.png</lefttexture>
+			<midtexture>osd/osd_progress_mid.png</midtexture>
+			<righttexture>osd/osd_progress_right.png</righttexture>
+			<colordiffuse>OSDFinishTime</colordiffuse>
+			
+		</control>
+		<control type="progress" id="23">
 			<description>Progressbar</description>
 			<posx>295</posx>
 			<posy>627</posy>
@@ -913,6 +955,7 @@
 			<colordiffuse>OSDProgressBar</colordiffuse>
 			<overlaytexture>-</overlaytexture>
 		</control>
+		<!-- Player.ProgressCache -->
 		<!-- Current position / Total Time -->
 		<control type="label">
 			<posx>1250</posx>
@@ -1211,7 +1254,7 @@
 			</control>
 			<control type="label" id="0">
 				<include>OSD_Player_Labels</include>
-				<label>[UPPERCASE]$LOCALIZE[137] $INFO[Player.SeekOffset][/UPPERCASE]</label>
+				<label>[UPPERCASE]$INFO[Player.SeekOffset][/UPPERCASE]</label>
 				<visible>Player.SeekBar + ![player.forwarding | player.rewinding | player.paused]</visible>
 			</control>
 		</control>
