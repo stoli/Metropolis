@@ -1,3 +1,9 @@
+[B]v.1.0.00[/B]
+--------------
+
+First attempt for main repo.
+
+
 [B]v.0.9.81[/B]
 --------------
 Added support for Next Aired Date in TV Views
