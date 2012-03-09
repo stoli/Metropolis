@@ -1,8 +1,13 @@
-[B]v.0.9.82[/B]
+[B]v.1.0.1[/B]
 --------------
 Thanks to Amra:
 Added new music genre icons
 Added Glass theme
+
+
+[B]v.1.0.00[/B]
+--------------
+First attempt for main repo.
 
 
 [B]v.0.9.81[/B]
