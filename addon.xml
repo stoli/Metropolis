@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.metropolis" 
-	version="0.9.81" 
+	version="0.9.82" 
 	name="Metropolis" 
 	provider-name="Amra">
   <requires>
@@ -9,6 +9,7 @@
 	<import addon="script.artwork.downloader" version="1.0.3"/>
 	<import addon="script.favourites" version="1.0.3"/>
 	<import addon="script.randomitems" version="1.0.6"/>
+	<import addon="script.tv.show.next.aired" version="4.1.15"/>
   </requires>
   <extension
     point="xbmc.gui.skin"

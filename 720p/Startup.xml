@@ -31,6 +31,17 @@
 			<texturefocus>-</texturefocus>
 			<description>trigger</description>
 			<onfocus>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=25)</onfocus>
+			<onfocus>SetFocus(30)</onfocus>
+		</control>
+		<control type="button" id="30">
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<description>trigger</description>
+			<onfocus>RunScript(script.tv.show.next.aired,silent=True)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 		</control>
 	</controls>
