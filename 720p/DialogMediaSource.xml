@@ -7,7 +7,7 @@
 		<posy>0</posy>
 		<origin x="0" y="50" />
 	</coordinates>
-	<visible>!Window.IsActive(126)</visible>
+	<!-- <visible>!Window.IsActive(126)</visible> -->
 	<controls>
 		<control type="group">
 			<animation type="Conditional" condition="Window.IsActive(contentsettings)">
