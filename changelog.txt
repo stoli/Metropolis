@@ -1,6 +1,18 @@
+[B]v.1.0.2[/B]
+--------------
+Thanks to Amra:
+Added new music genre icons
+Removed Glass theme until I can get source files from Amra
+
+[B]v.1.0.1[/B]
+--------------
+Thanks to Amra:
+Added new music genre icons
+Added Glass theme
+
+
 [B]v.1.0.00[/B]
 --------------
-
 First attempt for main repo.
 
 

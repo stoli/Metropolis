@@ -31,7 +31,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(videolibrary) + Container.Content(genres)</visible>
+				<visible>Container.Content(genres)</visible>
 				<itemlayout width="180" height="450">
 					<control type="image">
 						<posx>15</posx>
@@ -39,7 +39,7 @@
 						<width>150</width>
 						<height>300</height>
 						<texture fallback="DefaultMovieGenre.jpg">moviegenres/$INFO[ListItem.Label].jpg</texture>
-						<visible>!Skin.HasSetting(HideGenreIconLabels)</visible>
+						<visible>Window.IsActive(videolibrary) + !Skin.HasSetting(HideGenreIconLabels)</visible>
 					</control>
 					<control type="image">
 						<posx>15</posx>
@@ -47,7 +47,23 @@
 						<width>150</width>
 						<height>300</height>
 						<texture fallback="DefaultMovieGenre.jpg">moviegenres/NoLabels/$INFO[ListItem.Label].jpg</texture>
-						<visible>Skin.HasSetting(HideGenreIconLabels)</visible>
+						<visible>Window.IsActive(videolibrary) + Skin.HasSetting(HideGenreIconLabels)</visible>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>75</posy>
+						<width>150</width>
+						<height>300</height>
+						<texture fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
+						<visible>Window.IsActive(musiclibrary) + !Skin.HasSetting(HideGenreIconLabels)</visible>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>75</posy>
+						<width>150</width>
+						<height>300</height>
+						<texture fallback="DefaultMusicGenre.jpg">musicgenres/NoLabels/$INFO[ListItem.Label].jpg</texture>
+						<visible>Window.IsActive(musiclibrary) + Skin.HasSetting(HideGenreIconLabels)</visible>
 					</control>
 					<control type="image">
 						<posx>5</posx>
@@ -66,7 +82,7 @@
 						<texture fallback="DefaultMovieGenre.jpg">moviegenres/$INFO[ListItem.Label].jpg</texture>
 						<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 						<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-						<visible>!Skin.HasSetting(HideGenreIconLabels)</visible>
+						<visible>Window.IsActive(videolibrary) + !Skin.HasSetting(HideGenreIconLabels)</visible>
 					</control>
 					<control type="image">
 						<posx>15</posx>
@@ -76,8 +92,28 @@
 						<texture fallback="DefaultMovieGenre.jpg">moviegenres/NoLabels/$INFO[ListItem.Label].jpg</texture>
 						<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 						<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-						<visible>Skin.HasSetting(HideGenreIconLabels)</visible>
+						<visible>Window.IsActive(videolibrary) + Skin.HasSetting(HideGenreIconLabels)</visible>
 					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>75</posy>
+						<width>150</width>
+						<height>300</height>
+						<texture fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
+						<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
+						<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
+						<visible>Window.IsActive(musiclibrary) + !Skin.HasSetting(HideGenreIconLabels)</visible>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>75</posy>
+						<width>150</width>
+						<height>300</height>
+						<texture fallback="DefaultMusicGenre.jpg">musicgenres/NoLabels/$INFO[ListItem.Label].jpg</texture>
+						<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
+						<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
+						<visible>Window.IsActive(musiclibrary) + Skin.HasSetting(HideGenreIconLabels)</visible>
+					</control>					
 					<control type="image">
 						<posx>5</posx>
 						<posy>59</posy>
@@ -102,7 +138,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Control.IsVisible(501) + Window.IsActive(videolibrary) + Container.Content(genres)</visible>
+				<visible>Control.IsVisible(501) + Container.Content(genres)</visible>
 			</control>
 			<include condition="!Skin.HasSetting(HideGenreDescriptions)">GenreDescriptions</include>
 			<include>ScrollBar_Horizontal</include>

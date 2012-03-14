@@ -1,5 +1,5 @@
 ﻿<window id="502">
-	<views>55,58,905,559</views>
+	<views>55,58,905,559,501</views>
 	<defaultcontrol>55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -17,6 +17,7 @@
 		<include>Viewtype_LowList</include>
 		<include>Viewtype_Gallery_Square</include>
 		<include>Viewtype_Panel_Square</include>
+		<include>Viewtype_TallGenre</include>		
 		<include>Global_ContextFilter</include>
 		
 		<!-- Navigation Menu -->
