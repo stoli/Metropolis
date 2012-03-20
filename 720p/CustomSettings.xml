@@ -1611,7 +1611,7 @@
 					<control type="radiobutton" id="1015">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31429]</label>
-						<onclick>Skin.SetBool(ShowVideoPath)</onclick>
+						<onclick>Skin.ToggleSetting(ShowVideoPath)</onclick>
 						<selected>Skin.HasSetting(ShowVideoPath)</selected>
 					</control>
 					<control type="radiobutton" id="1016">
