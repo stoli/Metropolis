@@ -611,15 +611,20 @@
 				<visible>Container(300).HasFocus(8)</visible>
 				<control type="button" id="90141">
 					<include>Submenu_Button</include>
+					<label>13000</label>
+					<onclick>ActivateWindow(SystemSettings)</onclick>
+				</control>
+				<control type="button" id="90142">
+					<include>Submenu_Button</include>
 					<label>7</label>
 					<onclick>ActivateWindow(FileManager)</onclick>
 				</control>
-				<control type="button" id="90142">
+				<control type="button" id="90143">
 					<include>Submenu_Button</include>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
-				<control type="button" id="90143">
+				<control type="button" id="90144">
 					<include>Submenu_Button</include>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
