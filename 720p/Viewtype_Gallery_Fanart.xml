@@ -196,7 +196,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+				<visible>[Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]] | Window.IsActive(pictures)</visible>
 			</control>
 			<control type="grouplist">
 				<posx>40</posx>
