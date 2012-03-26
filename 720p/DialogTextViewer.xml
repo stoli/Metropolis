@@ -35,8 +35,15 @@
 				<pagecontrol>61</pagecontrol>
 			</control>
 			<control type="scrollbar" id="61">
+				<posx>1270</posx>
+				<posy>82</posy>
+				<width>22</width>
+				<height>352</height>
+				<texturesliderbackground>-</texturesliderbackground>
+				<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 				<onleft>PreviousMenu</onleft>
-				<onright>PreviousMenu</onright>
+				<onright>-</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
 				<showonepage>true</showonepage>
