@@ -14,7 +14,6 @@
 				<effect type="fade" time="400" start="100" end="0" />
 			</animation>
 			<control type="group">
-				<visible>!Window.IsActive(textviewer)</visible>
 				<control type="label">
 					<posx>460</posx>
 					<posy>0</posy>

@@ -4,50 +4,63 @@
 		<system>1</system>
 		<posx>0</posx>
 		<posy>0</posy>
-		<origin x="0" y="80" />
+		<origin x="450" y="80" />
 	</coordinates>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
-			<control type="label" id="1">
-				<description>Header Label</description>
-				<posx>460</posx>
+			<animation effect="slide" start="830,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="830,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+			<control type="image">
+				<posx>0</posx>
 				<posy>0</posy>
-				<width>790</width>
-				<height>38</height>
-				<font>METF_TitleTextLarge</font>
-				<textcolor>SettingsTitle</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
+				<width>830</width>
+				<height>444</height>
+				<texture background="true">black.png</texture>
+				<aspectratio>scale</aspectratio>
+				<colordiffuse>f0000000</colordiffuse>
 			</control>
-			<control type="textbox" id="5">
-				<description>Text Area</description>
-				<posx>460</posx>
-				<posy>82</posy>
-				<width>790</width>
-				<height>352</height>
-				<label>-</label>
-				<font>METF_ContextValue</font>
-				<textcolor>SettingsDetail</textcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<pagecontrol>61</pagecontrol>
-			</control>
-			<control type="scrollbar" id="61">
-				<posx>1270</posx>
-				<posy>82</posy>
-				<width>22</width>
-				<height>352</height>
-				<texturesliderbackground>-</texturesliderbackground>
-				<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
-				<onleft>PreviousMenu</onleft>
-				<onright>-</onright>
-				<ondown>61</ondown>
-				<onup>61</onup>
-				<showonepage>true</showonepage>
-				<orientation>vertical</orientation>
+			<control type="group">
+				<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<control type="label" id="1">
+					<description>Header Label</description>
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>790</width>
+					<height>38</height>
+					<font>METF_TitleTextLarge</font>
+					<textcolor>SettingsTitle</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="textbox" id="5">
+					<description>Text Area</description>
+					<posx>10</posx>
+					<posy>92</posy>
+					<width>790</width>
+					<height>342</height>
+					<label>-</label>
+					<font>METF_ContextValue</font>
+					<textcolor>SettingsDetail</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<pagecontrol>61</pagecontrol>
+				</control>
+				<control type="scrollbar" id="61">
+					<posx>810</posx>
+					<posy>82</posy>
+					<width>22</width>
+					<height>372</height>
+					<texturesliderbackground>-</texturesliderbackground>
+					<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+					<onleft>PreviousMenu</onleft>
+					<onright>-</onright>
+					<ondown>61</ondown>
+					<onup>61</onup>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>
+				</control>
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
