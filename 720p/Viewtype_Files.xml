@@ -438,6 +438,7 @@
 					<visible>Window.IsActive(musiclibrary) + Container.Content(genres)</visible>
 				</control>
 			</control>
+			<!-- Episode Info -->
 			<control type="grouplist">
 				<posx>37</posx>
 				<posy>511</posy>
@@ -497,6 +498,39 @@
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + !Container.Content(tvshows) + !Container.Content(songs)</visible>
+				</control>
+			</control>
+			<!-- Picture Info -->
+			<control type="grouplist">
+				<posx>37</posx>
+				<posy>570</posy>
+				<width>300</width>
+				<height>90</height>
+				<align>center</align>
+				<orientation>vertical</orientation>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<animation effect="slide" end="6,-120" time="0" condition="Window.IsActive(Pictures)">conditional</animation>
+				<!-- Picture Date -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<align>center</align>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>TitleText</textcolor>
+					<label>$INFO[ListItem.PictureDateTime]</label>
+					<visible>!IsEmpty(ListItem.PictureDateTime)</visible>
+				</control>
+				<!-- Resolution -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<align>center</align>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsInfo</textcolor>
+					<label>$INFO[ListItem.PictureResolution]</label>
+					<visible>!IsEmpty(ListItem.PictureResolution) + !StringCompare(ListItem.PictureResolution, 0 x 0)</visible>
 				</control>
 			</control>
 			<!-- Movie Sets -->
