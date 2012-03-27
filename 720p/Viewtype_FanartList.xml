@@ -145,18 +145,9 @@
 					<posy>66</posy>
 					<width>600</width>
 					<height>338</height>
-					<texture background="true" fallback="home/pictures.jpg">$INFO[ListItem.filenameandpath]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.filenameandpath)</visible>
-				</control>
-				<control type="image">
-					<posx>35</posx>
-					<posy>66</posy>
-					<width>600</width>
-					<height>338</height>
 					<texture background="true" fallback="home/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.filenameandpath)</visible>
+					<visible>Window.IsActive(pictures)</visible>
 				</control>
 				<!-- Movie Fanart Image -->
 				<control type="image">
