@@ -306,7 +306,7 @@
 						<label>$LOCALIZE[31401]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
-						<visible>system.hasaddon(plugin.video.apple.movie.trailers.lite)</visible>
+						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 					</control>					
 					<control type="radiobutton" id="400">
 						<include>SettingsLabel</include>
