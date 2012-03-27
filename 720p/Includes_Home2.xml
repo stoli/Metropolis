@@ -172,11 +172,11 @@
 					<visible>!Skin.HasSetting(NoMusic)</visible>
 				</item>
 				<item id="13">
-					<description>AppleTrailers</description>
+					<description>Movie Trailers</description>
 					<label>$LOCALIZE[31334]</label>
 					<icon>special://skin/extras/home2/icon_trailers.png</icon>
-					<onclick>ActivateWindow(Videos,plugin://plugin.video.apple.movie.trailers.lite,return)</onclick>
-					<visible>system.hasaddon(plugin.video.apple.movie.trailers.lite)</visible>
+					<onclick>ActivateWindow(Videos,plugin://plugin.video.the.trailers,return)</onclick>
+					<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
