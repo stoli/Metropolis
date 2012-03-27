@@ -21,7 +21,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+				<visible>Window.IsActive(pictures) | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<itemlayout width="600" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -55,7 +55,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>LowListTitle</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+						<visible>Window.IsActive(pictures) | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
 					<!-- Watched Overlay -->
 					<control type="image">
@@ -109,7 +109,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+						<visible>Window.IsActive(pictures) | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
 					<!-- Watched Overlay -->
 					<control type="image">
@@ -123,11 +123,12 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<!-- Thumbnails -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+				<visible>Window.IsActive(pictures) | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<!-- Background Frame Matte -->
 				<control type="image">
 					<posx>35</posx>
@@ -137,6 +138,16 @@
 					<texture>frames/ClassicFrame_Background.png</texture>
 					<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
+				</control>
+				<!-- Picture Fanart Image -->
+				<control type="image">
+					<posx>35</posx>
+					<posy>66</posy>
+					<width>600</width>
+					<height>338</height>
+					<texture background="true" fallback="home/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(pictures)</visible>
 				</control>
 				<!-- Movie Fanart Image -->
 				<control type="image">
@@ -225,7 +236,21 @@
 					<label>$LOCALIZE[20416] $INFO[ListItem.Date]</label>
 					<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
 				</control>
+				<!-- Picture Date -->
+				<control type="label">
+					<posx>35</posx>
+					<posy>459</posy>
+					<width>600</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<label>$INFO[ListItem.PictureDateTime]</label>
+					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.PictureDateTime)</visible>
+				</control>
 			</control>
+			<!-- TV Show Info -->
 			<control type="grouplist">
 				<posx>35</posx>
 				<posy>487</posy>
@@ -314,7 +339,30 @@
 					<label>$INFO[ListItem.Property(UnwatchedEpisodes)] $LOCALIZE[16101]</label>
 					<visible>!IsEmpty(ListItem.Episode) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
 				</control>
-				
+			</control>
+			<!-- Picture Info -->
+			<control type="grouplist">
+				<posx>35</posx>
+				<posy>487</posy>
+				<width>600</width>
+				<height>30</height>
+				<align>center</align>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<visible>Window.IsActive(pictures)</visible>
+				<!-- Picture Resolution -->
+				<control type="label">
+					<width min="25" max="1200">auto</width>
+					<height>30</height>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsDuration</textcolor>
+					<label>$INFO[ListItem.PictureResolution]</label>
+					<visible>!IsEmpty(ListItem.PictureResolution) + !StringCompare(ListItem.PictureResolution, 0 x 0)</visible>
+				</control>
 			</control>
 			<include>ScrollBar_Vertical</include>
 		</control>

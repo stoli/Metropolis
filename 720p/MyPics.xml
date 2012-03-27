@@ -1,21 +1,31 @@
 ﻿<window id="2">
-	<views>55,59,500</views>
+	<views>55,503,509,59,500</views>
 	<defaultcontrol>55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
 		<control type="image" id="668">
 			<include>Dimensions_Fullscreen</include>
-			<texture background="true">$INFO[listitem.filenameandpath]</texture>
-			<colordiffuse>PicturesDiffuse</colordiffuse>
+			<texture background="true" diffuse="diffuse_fanart.png">$INFO[listitem.filenameandpath]</texture>
+			<colordiffuse>FanartDiffuse</colordiffuse>
 			<fadetime>400</fadetime>
-			<aspectratio aligny="top">scale</aspectratio>
-			<visible>[Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(59)] + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
+			<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+			<visible>[Control.IsVisible(55) | Control.IsVisible(503) | Control.IsVisible(509) | Control.IsVisible(59) | Control.IsVisible(500)]</visible>
+			<include>Animation_BackdropFade</include>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<colordiffuse>FanartDiffuse</colordiffuse>
+			<fadetime>400</fadetime>
+			<visible>!Skin.HasSetting(HideFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			<include>Animation_BackdropFade</include>
 		</control>
 		<include>Viewtype_Files</include>
-		<include>Viewtype_PictureGrid</include>
+		<include>Viewtype_List</include>
+		<include>Viewtype_FanartList</include>
 		<include>Viewtype_Gallery_Fanart</include>
+		<include>Viewtype_PictureGrid</include>
 		<include>Global_ContextFilter</include>
 		<!-- Navigation Menu -->
 		<control type="group">
