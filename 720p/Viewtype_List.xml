@@ -21,7 +21,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>[Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists)] | Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
+				<visible>[Window.IsActive(musiclibrary) + Container.Content(songs)] | Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="885" height="49">
 					<control type="label">
 						<posx>91</posx>
@@ -69,7 +69,19 @@
 						<textcolor>TextNF</textcolor>
 						<selectedcolor>TextFO</selectedcolor>
 						<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album,, • ]$INFO[ListItem.Duration]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>Container.Content(songs) + !IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="label">
+						<posx>125</posx>
+						<posy>36</posy>
+						<width>780</width>
+						<height>17</height>
+						<aligny>center</aligny>
+						<font>METF_InfoText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>!Container.Content(songs) + IsEmpty(ListItem.Title)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="828" height="104">
