@@ -279,6 +279,11 @@
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
 				</control>
 				<control type="button" id="90153">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[1213]</label>
+					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+				</control>
+				<control type="button" id="90159">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1036]</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
@@ -471,15 +476,20 @@
 				<visible>Container(300).HasFocus(8)</visible>
 				<control type="button" id="90141">
 					<include>Submenu_Button2</include>
+					<label>13000</label>
+					<onclick>ActivateWindow(SystemSettings)</onclick>
+				</control>
+				<control type="button" id="90142">
+					<include>Submenu_Button2</include>
 					<label>7</label>
 					<onclick>ActivateWindow(FileManager)</onclick>
 				</control>
-				<control type="button" id="90142">
+				<control type="button" id="90143">
 					<include>Submenu_Button2</include>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
-				<control type="button" id="90143">
+				<control type="button" id="90144">
 					<include>Submenu_Button2</include>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
