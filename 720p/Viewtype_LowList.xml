@@ -32,6 +32,7 @@
 						<texture>VideoInfoLine.png</texture>
 						<colordiffuse>FilesDividerDiffuse</colordiffuse>
 					</control>
+					<!-- Items in Video Library -->
 					<control type="label">
 						<posx>45</posx>
 						<posy>0</posy>
@@ -63,26 +64,12 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>METF_TitleText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
-						<scroll>false</scroll>
-						<visible>!Window.IsActive(videolibrary)</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
-						<width>475</width>
-						<height>35</height>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>LowListTitle</textcolor>
 						<visible>Container.Content(seasons)</visible>
 					</control>
-					<!-- Watched Overlay -->
+					<!-- Watched Overlay for Items in Video Library -->
 					<control type="image">
 						<posx>4</posx>
 						<posy>5</posy>
@@ -90,10 +77,35 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Items NOT in Video Library -->
+					<control type="label">
+						<posx>45</posx>
+						<posy>0</posy>
+						<width>475</width>
+						<height>35</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+						<scroll>false</scroll>
+						<visible>!Window.IsActive(videolibrary)</visible>
+					</control>
+					<!-- Watched Overlay for Items NOT in Video Library -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="535" height="34">
+				<focusedlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
 						<posx>35</posx>
@@ -112,47 +124,72 @@
 						<texture>FocusLine.png</texture>
 						<colordiffuse>FocusBar</colordiffuse>
 					</control>
-					<control type="label">
+					<!-- Items in Video Library -->
+					<control type="fadelabel">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
 						<visible>!IsEmpty(ListItem.Episode) + Container.Content(episodes)</visible>
 					</control>
-					<control type="label">
+					<control type="fadelabel">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
 						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
 					</control>
-					<control type="label">
+					<control type="fadelabel">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Episode] $LOCALIZE[20360])</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
 						<visible>Container.Content(seasons)</visible>
 					</control>
+					<!-- Watched Overlay for Items in Video Library -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Items NOT in Video Library -->
 					<control type="fadelabel">
 						<posx>45</posx>
-						<posy>-2</posy>
-						<width>735</width>
+						<posy>0</posy>
+						<width>475</width>
 						<height>35</height>
+						<align>left</align>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
 						<pauseatend>1800</pauseatend>
@@ -164,7 +201,7 @@
 						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
 						<visible>!Window.IsActive(videolibrary)</visible>
 					</control>
-					<!-- Watched Overlay -->
+					<!-- Watched Overlay for Items NOT in Video Library -->
 					<control type="image">
 						<posx>4</posx>
 						<posy>5</posy>
@@ -172,7 +209,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					</control>
 				</focusedlayout>
 			</control>
