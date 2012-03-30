@@ -22,7 +22,7 @@
 		<align>left</align>
 		<itemgap>0</itemgap>
 		<onleft>9000</onleft>
-		<onright>Control.SetFocus(8000,0)</onright>
+		<onright>9002</onright>
 	</include>
 	<include name="HomeStatsDetails">
 		<posx>1130</posx>
@@ -44,7 +44,23 @@
 	
 	<include name="Home1_Default">
 		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
-		
+		<control type="button" id="9002">
+			<description>Hidden Button to pass through navigation when recently added is disabled</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<font>-</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9001</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<visible>false</visible>
+		</control>
+
 		<!-- Large Fanart and Frame -->
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
@@ -200,7 +216,7 @@
 			<height>416</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<include condition="Skin.HasSetting(ShowRecentlyAdded)">OnLeft8000</include>
+			<onleft>9002</onleft>
 			<onright>9001</onright>
 			<viewtype>list</viewtype>
 			<orientation>vertical</orientation>
