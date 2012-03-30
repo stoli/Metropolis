@@ -27,6 +27,11 @@
 		<include>Viewtype_Gallery_Fanart</include>
 		<include>Viewtype_PictureGrid</include>
 		<include>Global_ContextFilter</include>
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Global_PictureInfo</include>
+		</control>
 		<!-- Navigation Menu -->
 		<control type="group">
 			<include>Animation_NavMenu</include>

@@ -263,11 +263,102 @@
 				<textcolor>LowerText</textcolor>
 			</control>
 		</control>
-		
 	</include>
+
+	<include name="Global_PictureInfo">
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>Animation_HiddenByInfo</include>
+		<control type="grouplist">
+			<visible>Window.IsActive(pictures)</visible>
+			<posx>220</posx>
+			<posy>565</posy>
+			<width>840</width>
+			<height>135</height>
+			<align>left</align>
+			<orientation>vertical</orientation>
+			<!-- Camera Info -->
+			<control type="label">
+				<width>840</width>
+				<height>20</height>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>LowerText</textcolor>
+				<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
+				<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
+			</control>
+			<!-- Focus and Aperture -->
+			<control type="grouplist">
+				<width>840</width>
+				<height>20</height>
+				<align>left</align>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<width min="25" max="840">auto</width>
+					<height>20</height>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<label>$INFO[ListItem.PictureFocalLen]</label>
+					<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
+				</control>
+				<control type="image">
+					<width>8</width>
+					<height>24</height>
+					<texture>Dot.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>BulletDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
+				</control>
+				<control type="label">
+					<width min="25" max="840">auto</width>
+					<height>20</height>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<label>f/$INFO[ListItem.PictureAperture]</label>
+					<visible>!IsEmpty(ListItem.PictureAperture)</visible>
+				</control>
+				<control type="image">
+					<width>8</width>
+					<height>24</height>
+					<texture>Dot.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>BulletDiffuse</colordiffuse>
+					<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
+				</control>
+				<control type="label">
+					<width min="25" max="840">auto</width>
+					<height>20</height>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<label>$INFO[ListItem.PictureFocusDist]</label>
+					<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
+				</control>
+				<visible>!IsEmpty(ListItem.PictureFocalLen) | !IsEmpty(ListItem.PictureAperture) | !IsEmpty(ListItem.PictureFocusDist)</visible>
+			</control>
+			<!-- Exposure -->
+			<control type="label">
+				<width>840</width>
+				<height>20</height>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>LowerText</textcolor>
+				<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
+				<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
+			</control>
+			<!-- Comment -->
+			<control type="textbox">
+				<width>840</width>
+				<height>65</height>
+				<align>left</align>
+				<autoscroll time="4000" delay="3000" repeat="3000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>LowerText</textcolor>
+				<label>$INFO[ListItem.PictureCaption]</label>
+			</control>
+		</control>
+	</include>
+
 	<include name="Global_MusicInfo">
 		<control type="group">
-			
 			<control type="textbox">
 				<posx>300</posx>
 				<posy>565</posy>
