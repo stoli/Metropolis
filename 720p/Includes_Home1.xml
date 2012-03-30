@@ -92,7 +92,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!ControlGroup(9001)HasFocus() + !Control.HasFocus(8000) + [Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(8) | Container(300).HasFocus(9) | Container(300).HasFocus(11)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + !Control.HasFocus(8000) + [Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(8) | Container(300).HasFocus(9) | Container(300).HasFocus(11)]</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>190</posx>
@@ -122,7 +122,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-			<visible>ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+			<visible>ControlGroup(9001).HasFocus() + !Control.HasFocus(8000)</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>1060</posx>
@@ -229,7 +229,7 @@
 					<aligny>center</aligny>
 					<texture flipx="true">FocusLine.png</texture>
 					<colordiffuse>FocusBar</colordiffuse>
-					<visible>!IsEmpty(ListItem.Label) + !ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+					<visible>!IsEmpty(ListItem.Label) + !ControlGroup(9001).HasFocus() + !Control.HasFocus(8000)</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -241,7 +241,7 @@
 					<font>METF_HomeMenu</font>
 					<textcolor>FocusBarText</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>!ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+					<visible>!ControlGroup(9001).HasFocus() + !Control.HasFocus(8000)</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -253,7 +253,7 @@
 					<font>METF_HomeMenu</font>
 					<textcolor>HomeMenuTextFocused</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>ControlGroup(9001)HasFocus() | Control.HasFocus(8000)</visible>
+					<visible>ControlGroup(9001).HasFocus() | Control.HasFocus(8000)</visible>
 				</control>
 			</focusedlayout>
 			<content>
@@ -703,7 +703,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="100" end="0" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-			<visible>!ControlGroup(9001)HasFocus() + Skin.HasSetting(HomeStats)</visible>
+			<visible>!ControlGroup(9001).HasFocus() + Skin.HasSetting(HomeStats)</visible>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
 				<control type="label">

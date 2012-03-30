@@ -235,7 +235,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!ControlGroup(9001)HasFocus() + !Control.HasFocus(8000) + [Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(8) | Container(300).HasFocus(9) | Container(300).HasFocus(11)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + !Control.HasFocus(8000) + [Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(8) | Container(300).HasFocus(9) | Container(300).HasFocus(11)]</visible>
 			<control type="image">
 				<posx>625</posx>
 				<posy>505</posy>
@@ -568,7 +568,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="100" end="0" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-			<visible>!ControlGroup(9001)HasFocus() + Skin.HasSetting(HomeStats)</visible>
+			<visible>!ControlGroup(9001).HasFocus() + Skin.HasSetting(HomeStats)</visible>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
 				<control type="label">
