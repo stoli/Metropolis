@@ -503,9 +503,9 @@
 			<!-- Picture Info -->
 			<control type="grouplist">
 				<posx>37</posx>
-				<posy>570</posy>
+				<posy>600</posy>
 				<width>300</width>
-				<height>90</height>
+				<height>60</height>
 				<align>center</align>
 				<orientation>vertical</orientation>
 				<include>Animation_OpenCloseFade</include>
@@ -515,7 +515,7 @@
 				<!-- Picture Date -->
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
+					<height>20</height>
 					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>TitleText</textcolor>
@@ -525,7 +525,7 @@
 				<!-- Resolution -->
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
+					<height>20</height>
 					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsInfo</textcolor>

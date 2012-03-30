@@ -126,7 +126,7 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
-					<visible>ListItem.IsFolder</visible>
+					<visible>ListItem.IsFolder + !SubString(Container.FolderPath,plugin)</visible>
 				</control>
 				<control type="radiobutton" id="9">
 					<description>Randomise</description>

@@ -18,6 +18,8 @@
 				<texture background="true">black.png</texture>
 				<aspectratio>scale</aspectratio>
 				<colordiffuse>f0000000</colordiffuse>
+				<bordertexture border="8,8,0,8">border.png</bordertexture>
+				<bordersize>4,4,0,4</bordersize>
 			</control>
 			<control type="group">
 				<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
@@ -42,7 +44,7 @@
 					<width>790</width>
 					<height>342</height>
 					<onleft>PreviousMenu</onleft>
-					<onright>-</onright>
+					<onright>PreviousMenu</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
 					<pagecontrol>-</pagecontrol>
