@@ -41,6 +41,24 @@
 	-->
 	
 	<include name="Home2_Icons">
+		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
+		<control type="button" id="9002">
+			<description>Hidden Button to pass through navigation when recently added is disabled</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<font>-</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9001</ondown>
+			<visible>false</visible>
+		</control>
+
 		<!-- XBMC Logo and Skin Name -->
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
@@ -72,7 +90,7 @@
 			<posy>65</posy>
 			<height>450</height>
 			<width>1280</width>
-			<onup>Control.SetFocus(8000,0)</onup>
+			<onup>9002</onup>
 			<ondown>9001</ondown>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -279,7 +297,7 @@
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
 				</control>
 				<control type="button" id="90153">
-					<include>Submenu_Button</include>
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1213]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 				</control>
@@ -463,7 +481,7 @@
 					<onclick>ActivateWindow(Videos,TVShowstudios,return)</onclick>
 				</control>
 				<control type="button" id="90126">
-					<include>Submenu_Button</include>
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31428]</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
 				</control>

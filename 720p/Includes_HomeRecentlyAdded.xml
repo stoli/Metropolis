@@ -1,11 +1,12 @@
 <includes>
 	<include name="HomeRecentlyAddedInfo">
 		<control type="group" id="9002">
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			<!-- Submenu title -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+				<visible>!Skin.HasSetting(home2)</visible>
 				<control type="image">
 					<posx>238</posx>
 					<posy>510</posy>
@@ -72,7 +73,7 @@
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+				<visible>Skin.HasSetting(home1) | Container(8000).HasFocus()</visible>
 				<control type="image">
 					<posx>265</posx>
 					<posy>560</posy>
@@ -91,7 +92,7 @@
 				<posy>563</posy>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+				<visible>Skin.HasSetting(home1) | Container(8000).HasFocus()</visible>
 				<control type="list" id="8000">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -102,7 +103,7 @@
 					<onleft>SetFocus(8000,0)</onleft>
 					<onleft>9000</onleft>
 					<onright>SetFocus(8000,0)</onright>
-					<onright>9000</onright>
+					<onright>9001</onright>
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
