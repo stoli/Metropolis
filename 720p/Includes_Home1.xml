@@ -22,7 +22,7 @@
 		<align>left</align>
 		<itemgap>0</itemgap>
 		<onleft>9000</onleft>
-		<onright>9002</onright>
+		<onright>9000</onright>
 	</include>
 	<include name="HomeStatsDetails">
 		<posx>1130</posx>

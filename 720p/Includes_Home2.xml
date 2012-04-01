@@ -275,6 +275,7 @@
 			-->
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
+			<visible>!Control.HasFocus(8000)</visible>
 			<!-- Programs/Addons Submenu -->
 			<control type="grouplist" id="9015">
 				<include>Submenu_VerticalDetails2</include>

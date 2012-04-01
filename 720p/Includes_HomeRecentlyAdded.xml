@@ -1,79 +1,151 @@
 <includes>
 	<include name="HomeRecentlyAddedInfo">
-		<control type="group" id="9002">
+		<!-- Submenu title for default home view -->
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<visible>Skin.HasSetting(home1)</visible>
 			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
-			<!-- Submenu title -->
-			<control type="group">
-				<include>Animation_OpenCloseFade</include>
-				<include>Animation_FadedByMenu</include>
-				<visible>!Skin.HasSetting(home2)</visible>
-				<control type="image">
-					<posx>238</posx>
-					<posy>510</posy>
-					<width>30</width>
-					<height>30</height>
-					<texture>ArrowLeft.png</texture>
-					<colordiffuse>HelpArrowDiffuse</colordiffuse>
-					<visible>!Control.HasFocus(8000)</visible>
-				</control>
-				<!-- Recently Added Movies -->
-				<control type="label">
-					<posx>270</posx>
-					<posy>513</posy>
-					<width>570</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_RecentlyAddedTitle</font>
-					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$LOCALIZE[20386][/B]</label>
-					<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(RandomItems)</visible>
-				</control>
-				<!-- Random Movies -->
-				<control type="label">
-					<posx>270</posx>
-					<posy>513</posy>
-					<width>570</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_RecentlyAddedTitle</font>
-					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
-					<visible>Container(9000).HasFocus(4) + Skin.HasSetting(RandomItems)</visible>
-				</control>
-				<!-- Recently Added Episodes -->
-				<control type="label">
-					<posx>270</posx>
-					<posy>513</posy>
-					<width>570</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_RecentlyAddedTitle</font>
-					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$LOCALIZE[20387][/B]</label>
-					<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(RandomItems)</visible>
-				</control>
-				<!-- Random Episodes -->
-				<control type="label">
-					<posx>270</posx>
-					<posy>513</posy>
-					<width>570</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_RecentlyAddedTitle</font>
-					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
-					<visible>Container(9000).HasFocus(5) + Skin.HasSetting(RandomItems)</visible>
-				</control>
+			<control type="image">
+				<posx>238</posx>
+				<posy>510</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture>ArrowLeft.png</texture>
+				<colordiffuse>HelpArrowDiffuse</colordiffuse>
+				<visible>!Control.HasFocus(8000)</visible>
 			</control>
+			<!-- Recently Added Movies -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[20386][/B]</label>
+				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Random Movies -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Recently Added Episodes -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[20387][/B]</label>
+				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Random Episodes -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(RandomItems)</visible>
+			</control>
+		</control>
+		<!-- Submenu title for icon home view -->
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<visible>Skin.HasSetting(home2)</visible>
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+			<control type="image">
+				<posx>625</posx>
+				<posy>45</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture>ArrowUp.png</texture>
+				<colordiffuse>HelpArrowDiffuse</colordiffuse>
+				<visible>!Control.HasFocus(8000)</visible>
+			</control>
+			<!-- Recently Added Movies -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[20386][/B]</label>
+				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Random Movies -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Recently Added Episodes -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[20387][/B]</label>
+				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(RandomItems)</visible>
+			</control>
+			<!-- Random Episodes -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(RandomItems)</visible>
+			</control>
+		</control>
+		<control type="group" id="9002">
+			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + !ControlGroup(9002).HasFocus()">conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">WindowClose</animation>
+			<defaultcontrol always="true">8000</defaultcontrol>
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			<!-- Thumbnail -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>Skin.HasSetting(home1) | Container(8000).HasFocus()</visible>
 				<control type="image">
 					<posx>265</posx>
 					<posy>560</posy>
@@ -92,7 +164,6 @@
 				<posy>563</posy>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>Skin.HasSetting(home1) | Container(8000).HasFocus()</visible>
 				<control type="list" id="8000">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -103,7 +174,7 @@
 					<onleft>SetFocus(8000,0)</onleft>
 					<onleft>9000</onleft>
 					<onright>SetFocus(8000,0)</onright>
-					<onright>9001</onright>
+					<onright>9000</onright>
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
