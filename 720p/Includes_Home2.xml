@@ -253,7 +253,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!ControlGroup(9001).HasFocus() + !Control.HasFocus(8000) + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]</visible>
 			<control type="image">
 				<posx>625</posx>
 				<posy>505</posy>
@@ -275,7 +275,7 @@
 			-->
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!Control.HasFocus(8000)</visible>
+			<visible>![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
 			<!-- Programs/Addons Submenu -->
 			<control type="grouplist" id="9015">
 				<include>Submenu_VerticalDetails2</include>
