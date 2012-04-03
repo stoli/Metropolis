@@ -4,7 +4,7 @@
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>Skin.HasSetting(home1)</visible>
+			<visible>!Skin.HasSetting(home2)</visible>
 			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			<control type="image">
 				<posx>238</posx>
@@ -155,7 +155,7 @@
 					<bordertexture border="6">frames/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<fadetime>100</fadetime>
-					<visible>Container(9000).HasFocus(4) + Library.HasContent(Movies) + [Skin.HasSetting(home1) | [Skin.HasSetting(home2) + Control.HasFocus(8000)]]</visible>
+					<visible>Container(9000).HasFocus(4) + Library.HasContent(Movies) + [!Skin.HasSetting(home2) | Control.HasFocus(8000)]</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -171,7 +171,7 @@
 					<bordertexture border="6">frames/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<fadetime>100</fadetime>
-					<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows) + [Skin.HasSetting(home1) | [Skin.HasSetting(home2) + Control.HasFocus(8001)]]</visible>
+					<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows) + [!Skin.HasSetting(home2) | Control.HasFocus(8001)]</visible>
 				</control>
 			</control>
 			<!-- Lists -->
