@@ -14,7 +14,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>830</width>
-				<height>444</height>
+				<height>453</height>
 				<texture background="true">black.png</texture>
 				<aspectratio>scale</aspectratio>
 				<colordiffuse>f0000000</colordiffuse>
@@ -42,41 +42,46 @@
 					<posx>10</posx>
 					<posy>92</posy>
 					<width>790</width>
-					<height>342</height>
+					<height>351</height>
 					<onleft>PreviousMenu</onleft>
 					<onright>PreviousMenu</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
-					<pagecontrol>-</pagecontrol>
-					<focusposition>4</focusposition>
-					<movement>4</movement>
-					<itemlayout height="38" width="790">
+					<viewtype>list</viewtype>
+					<orientation>vertical</orientation>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="27" width="790">
 						<control type="label">
-							<width>790</width>
-							<height>38</height>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
+							<posx>10</posx>
+							<posy>-2</posy>
+							<width>780</width>
+							<height>27</height>
+							<font>METF_DialogMedium</font>
+							<textcolor>TextNF</textcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="38" width="790">
+					<focusedlayout height="27" width="790">
 						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
 							<width>790</width>
-							<height>38</height>
-							<align>left</align>
+							<height>27</height>
 							<aligny>center</aligny>
-							<texture>ButtonFo.png</texture>
+							<texture>FocusLine.png</texture>
+							<colordiffuse>FocusBar</colordiffuse>
 						</control>
 						<control type="label">
 							<posx>10</posx>
-							<width>770</width>
-							<height>38</height>
-							<textcolor>ButtonText</textcolor>
-							<font>METF_ContextValue</font>
+							<posy>-2</posy>
+							<width>780</width>
+							<height>27</height>
 							<align>left</align>
 							<aligny>center</aligny>
+							<font>METF_DialogMedium</font>
+							<selectedcolor>FocusBarText</selectedcolor>
 							<label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
 						</control>
 					</focusedlayout>
