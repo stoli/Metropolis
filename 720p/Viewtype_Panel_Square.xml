@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(559)</visible>
 			<control type="group">
 				<include>Animation_ZoomInZoomOut</include>
-				<include>Animation_ZoomedByMenu</include>
+				<!--<include>Animation_ZoomedByMenu</include>-->
 				<include>Animation_HiddenByInfo</include>
 				<posx>30</posx>
 				<posy>20</posy>
@@ -125,7 +125,7 @@
 				<pagecontrol>61</pagecontrol>
 				<preloaditems>2</preloaditems>
 				<include>Animation_ZoomInZoomOut</include>
-				<include>Animation_ZoomedByMenu</include>
+				<!--<include>Animation_ZoomedByMenu</include>-->
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(programs) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
 				<itemlayout width="205" height="205">

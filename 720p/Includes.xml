@@ -533,7 +533,7 @@
 			<include>Global_NextAired</include>
 			<posx>0</posx>
 			<posy>-7</posy>
-			<include>Window_OpenClose_Animation</include>
+			<!--<include>Window_OpenClose_Animation</include>-->
 			<visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes)]] + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 			<control type="label">
 				<posx>0</posx>
