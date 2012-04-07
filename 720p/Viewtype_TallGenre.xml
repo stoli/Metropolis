@@ -22,7 +22,7 @@
 				<ondown>60</ondown>
 				<onleft>501</onleft>
 				<onright>501</onright>
-				<viewtype label="$LOCALIZE[31416]">list</viewtype>
+				<viewtype label="$LOCALIZE[31416]">bigwrap</viewtype>
 				<orientation>horizontal</orientation>
 				<focusposition>3</focusposition>
 				<scrolltime>200</scrolltime>

@@ -12,7 +12,7 @@
 				<ondown>60</ondown>
 				<onleft>52</onleft>
 				<onright>52</onright>
-				<viewtype label="31291">list</viewtype>
+				<viewtype label="31291">icon</viewtype>
 				<orientation>horizontal</orientation>
 				<focusposition>2</focusposition>
 				<scrolltime>200</scrolltime>

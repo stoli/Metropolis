@@ -2909,7 +2909,7 @@
 					<height>10</height>
 					<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
 					<ondown>60</ondown>
-					<viewtype label="33031">list</viewtype>
+					<viewtype label="33031">wide</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<orientation>horizontal</orientation>
 					<scrolltime>250</scrolltime>
