@@ -89,7 +89,7 @@
 			<posx>10</posx>
 			<posy>65</posy>
 			<height>450</height>
-			<width>1280</width>
+			<width>1260</width>
 			<onup>9002</onup>
 			<ondown>9001</ondown>
 			<onleft>9000</onleft>
@@ -108,7 +108,7 @@
 					<width>150</width>
 					<height>300</height>
 					<texture>$INFO[ListItem.ActualIcon]</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
 					<posx>5</posx>
@@ -116,6 +116,7 @@
 					<width>180</width>
 					<height>335</height>
 					<texture>frames/ClassicFrame_Tall.png</texture>
+					<aspectratio>stretch</aspectratio>
 				</control>
 			</itemlayout>
 			<focusedlayout width="180" height="450">
@@ -125,7 +126,7 @@
 					<width>150</width>
 					<height>300</height>
 					<texture>$INFO[ListItem.ActualIcon]</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 					<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
 				</control>
@@ -135,6 +136,7 @@
 					<width>180</width>
 					<height>335</height>
 					<texture>frames/ClassicFrame_Tall.png</texture>
+					<aspectratio>stretch</aspectratio>
 					<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 					<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
 				</control>
