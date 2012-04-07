@@ -179,7 +179,7 @@
 						<colordiffuse>FocusBar</colordiffuse>
 					</control>
 					<!-- Items in Video Library -->
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
 						<width>620</width>
@@ -195,7 +195,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows)</visible>
 					</control>
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
 						<width>540</width>
@@ -222,7 +222,7 @@
 						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
 						<width>670</width>
