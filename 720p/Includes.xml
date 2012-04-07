@@ -1329,10 +1329,6 @@
 	<include name="OnLeft7000">
 		<onleft>7000</onleft>
 	</include>
-	<!-- Recently Added left selection -->
-	<include name="OnLeft8000">
-		<onleft>Control.SetFocus(8000,0)</onleft>
-	</include>	
 	<!--  Navigation Menu Background Panel -->
 	<include name="NavMenuBackground">
 		<control type="image">
