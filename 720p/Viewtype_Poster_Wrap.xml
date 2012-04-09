@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(57)</visible>
 			<!-- Browser -->
 			<control type="wraplist" id="57">
-				<viewtype label="31282">list</viewtype>
+				<viewtype label="31282">wrap</viewtype>
 				<onleft>57</onleft>
 				<onright>57</onright>
 				<posx>20</posx>

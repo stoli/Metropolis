@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(53)</visible>
 			<!-- Browser -->
 			<control type="fixedlist" id="53">
-				<viewtype label="31283">list</viewtype>
+				<viewtype label="31283">icon</viewtype>
 				<onleft>53</onleft>
 				<onright>53</onright>
 				<posx>20</posx>
