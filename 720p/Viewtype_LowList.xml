@@ -125,7 +125,7 @@
 						<colordiffuse>FocusBar</colordiffuse>
 					</control>
 					<!-- Items in Video Library -->
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
@@ -141,7 +141,7 @@
 						<textcolor>FocusBarText</textcolor>
 						<visible>!IsEmpty(ListItem.Episode) + Container.Content(episodes)</visible>
 					</control>
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
@@ -157,7 +157,7 @@
 						<textcolor>FocusBarText</textcolor>
 						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
 					</control>
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
@@ -184,7 +184,7 @@
 						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
-					<control type="fadelabel">
+					<control type="label">
 						<posx>45</posx>
 						<posy>0</posy>
 						<width>475</width>
