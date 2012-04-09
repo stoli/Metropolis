@@ -21,8 +21,8 @@
 		<orientation>vertical</orientation>
 		<align>left</align>
 		<itemgap>0</itemgap>
-		<onleft>300</onleft>
-		<onright>Control.SetFocus(8000,0)</onright>
+		<onleft>9000</onleft>
+		<onright>9000</onright>
 	</include>
 	<include name="HomeStatsDetails">
 		<posx>1130</posx>
@@ -44,7 +44,23 @@
 	
 	<include name="Home1_Default">
 		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
-		
+		<control type="button" id="9002">
+			<description>Hidden Button to pass through navigation when recently added is disabled</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<font>-</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9001</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<visible>false</visible>
+		</control>
+
 		<!-- Large Fanart and Frame -->
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
@@ -66,9 +82,9 @@
 				<timeperimage>15000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>500</fadetime>
-				<imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
+				<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
 				<aspectratio>stretch</aspectratio>
-				<visible>[!Skin.HasSetting(ProfileFanart) + !Skin.HasSetting(CustomFanart)] | [Container(300).HasFocus(7) + Skin.HasSetting(homeweather)]</visible>
+				<visible>[!Skin.HasSetting(ProfileFanart) + !Skin.HasSetting(CustomFanart)] | [Container(9000).HasFocus(7) + Skin.HasSetting(homeweather)]</visible>
 				<visible>!Window.IsActive(videooverlay)</visible>
 			</control>
 			<control type="videowindow">
@@ -92,7 +108,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!ControlGroup(9001)HasFocus() + !Control.HasFocus(8000) + [Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(8) | Container(300).HasFocus(9) | Container(300).HasFocus(11)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>190</posx>
@@ -122,7 +138,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-			<visible>ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+			<visible>ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>1060</posx>
@@ -150,7 +166,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>Control.HasFocus(8000) + Skin.HasSetting(ShowRecentlyAdded)</visible>
+			<visible>[Control.HasFocus(8000) | Control.HasFocus(8001)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>163</posx>
@@ -189,18 +205,18 @@
 				<font>METF_HelpText</font>
 				<textcolor>HelpText</textcolor>
 				<label>$LOCALIZE[31410]</label>
-				<visible>[Container(300).HasFocus(4) | Container(300).HasFocus(5)]</visible>
+				<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)]</visible>
 			</control>
 		</control>
 		<!-- Main Menu -->
-		<control type="list" id="300">
+		<control type="list" id="9000">
 			<posx>0</posx>
 			<posy>50</posy>
 			<width>1050</width>
 			<height>416</height>
-			<onup>300</onup>
-			<ondown>300</ondown>
-			<include condition="Skin.HasSetting(ShowRecentlyAdded)">OnLeft8000</include>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<onleft>9002</onleft>
 			<onright>9001</onright>
 			<viewtype>list</viewtype>
 			<orientation>vertical</orientation>
@@ -229,7 +245,7 @@
 					<aligny>center</aligny>
 					<texture flipx="true">FocusLine.png</texture>
 					<colordiffuse>FocusBar</colordiffuse>
-					<visible>!IsEmpty(ListItem.Label) + !ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+					<visible>!IsEmpty(ListItem.Label) + !ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -241,7 +257,7 @@
 					<font>METF_HomeMenu</font>
 					<textcolor>FocusBarText</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>!ControlGroup(9001)HasFocus() + !Control.HasFocus(8000)</visible>
+					<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -253,7 +269,7 @@
 					<font>METF_HomeMenu</font>
 					<textcolor>HomeMenuTextFocused</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>ControlGroup(9001)HasFocus() | Control.HasFocus(8000)</visible>
+					<visible>ControlGroup(9001).HasFocus() | Control.HasFocus(8000) | Control.HasFocus(8001)</visible>
 				</control>
 			</focusedlayout>
 			<content>
@@ -387,7 +403,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9015</onup>
 				<ondown>9015</ondown>
-				<visible>Container(300).HasFocus(1)</visible>
+				<visible>Container(9000).HasFocus(1)</visible>
 				<control type="button" id="90150">
 					<include>Submenu_Button</include>
 					<label>Browser</label>
@@ -419,7 +435,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9010</onup>
 				<ondown>9010</ondown>
-				<visible>Container(300).HasFocus(2)</visible>
+				<visible>Container(9000).HasFocus(2)</visible>
 				<control type="button" id="90101">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[24001]</label>
@@ -465,7 +481,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9017</onup>
 				<ondown>9017</ondown>
-				<visible>Container(300).HasFocus(3)</visible>
+				<visible>Container(9000).HasFocus(3)</visible>
 				<control type="button" id="90178">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31438]</label>
@@ -529,7 +545,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9011</onup>
 				<ondown>9011</ondown>
-				<visible>Container(300).HasFocus(4)</visible>
+				<visible>Container(9000).HasFocus(4)</visible>
 				<control type="button" id="90117">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31438]</label>
@@ -571,7 +587,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9012</onup>
 				<ondown>9012</ondown>
-				<visible>Container(300).HasFocus(5)</visible>
+				<visible>Container(9000).HasFocus(5)</visible>
 				<control type="button" id="90125">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31438]</label>
@@ -608,7 +624,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9014</onup>
 				<ondown>9014</ondown>
-				<visible>Container(300).HasFocus(8)</visible>
+				<visible>Container(9000).HasFocus(8)</visible>
 				<control type="button" id="90141">
 					<include>Submenu_Button</include>
 					<label>13000</label>
@@ -635,7 +651,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9018</onup>
 				<ondown>9018</ondown>
-				<visible>Container(300).HasFocus(11)</visible>
+				<visible>Container(9000).HasFocus(11)</visible>
 				<control type="button" id="90181">
 					<include>Submenu_Button</include>
 					<label>Set Timer</label>
@@ -685,7 +701,7 @@
 				<include>Submenu_VerticalDetails</include>
 				<onup>9019</onup>
 				<ondown>9019</ondown>
-				<visible>Container(300).HasFocus(9)</visible>
+				<visible>Container(9000).HasFocus(9)</visible>
 				<control type="button" id="90191">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[13391]</label>
@@ -703,7 +719,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="100" end="0" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
-			<visible>!ControlGroup(9001)HasFocus() + Skin.HasSetting(HomeStats)</visible>
+			<visible>!ControlGroup(9001).HasFocus() + Skin.HasSetting(HomeStats)</visible>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
 				<control type="label">
@@ -823,7 +839,7 @@
 			<!-- Weather Stats
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
-				<visible>Container(300).HasFocus(7) + System.HasNetwork</visible>
+				<visible>Container(9000).HasFocus(7) + System.HasNetwork</visible>
 				<control type="image">
 					<posx>1062</posx>
 					<posy>350</posy>

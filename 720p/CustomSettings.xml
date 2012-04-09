@@ -208,11 +208,9 @@
 						<label>$LOCALIZE[31060]</label>
 						<onclick>Skin.ToggleSetting(ShowRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowRecentlyAdded)</selected>
-						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
 					<control type="image" id="203">
 						<include>Settings_Line</include>
-						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
 					<control type="radiobutton" id="200">
 						<include>SettingsLabel</include>
@@ -243,6 +241,7 @@
 					</control>
 					<control type="image" id="211">
 						<include>Settings_Line</include>
+						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
 					<!--
 					<control type="radiobutton" id="206">

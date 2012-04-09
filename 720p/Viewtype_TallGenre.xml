@@ -18,7 +18,7 @@
 				<posx>10</posx>
 				<posy>65</posy>
 				<height>450</height>
-				<width>1280</width>
+				<width>1260</width>
 				<ondown>60</ondown>
 				<onleft>501</onleft>
 				<onright>501</onright>
