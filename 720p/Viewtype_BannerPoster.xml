@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(510)</visible>
 			<!-- Browser -->
 			<control type="panel" id="510">
-				<viewtype label="$LOCALIZE[31286] $LOCALIZE[31413]">icon</viewtype>
+				<viewtype label="$LOCALIZE[31286] $LOCALIZE[31413]">bigwide</viewtype>
 				<posx>400</posx>
 				<posy>50</posy>
 				<height>450</height>
