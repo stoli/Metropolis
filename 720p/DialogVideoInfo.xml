@@ -208,7 +208,7 @@
 				<posy>138</posy>
 				<width>515</width>
 				<height>339</height>
-				<font>METF_PlotTextSpaced</font>
+				<font>METF_PlotText</font>
 				<textcolor>TextNF</textcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
