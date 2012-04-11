@@ -494,16 +494,6 @@
 					<fadetime>300</fadetime>
 					<visible>Container.Content(seasons)</visible>
 				</control>
-				<!-- Artist Logo -->
-				<control type="image">
-					<posx>940</posx>
-					<posy>480</posy>
-					<width>300</width>
-					<height>116</height>
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-					<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
-					<visible>Control.IsVisible(905)</visible>
-				</control>
 				<!-- Frame for Episode, Landscape and Fanart images -->
 				<control type="image">
 					<posx>952</posx>

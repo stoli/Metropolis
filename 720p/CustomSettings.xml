@@ -139,8 +139,6 @@
 						<onclick>Skin.ToggleSetting(HideClockTemp)</onclick>
 						<selected>Skin.HasSetting(HideClockTemp)</selected>
 					</control>
-					
-					
 					<control type="radiobutton" id="102">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31005]</label>
@@ -206,18 +204,18 @@
 					<control type="radiobutton" id="4995">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31060]</label>
+						<onclick>Skin.Reset(ShowRandomItems)</onclick>
 						<onclick>Skin.ToggleSetting(ShowRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowRecentlyAdded)</selected>
-					</control>
-					<control type="image" id="203">
-						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="200">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31328]</label>
-						<onclick>Skin.ToggleSetting(RandomItems)</onclick>
-						<selected>Skin.HasSetting(RandomItems)</selected>
+						<onclick>Skin.Reset(ShowRecentlyAdded)</onclick>
+						<onclick>Skin.ToggleSetting(ShowRandomItems)</onclick>
+						<selected>Skin.HasSetting(ShowRandomItems)</selected>
 					</control>
+					<!-- XXX: not yet implemented
 					<control type="radiobutton" id="201">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31327]</label>
@@ -238,19 +236,11 @@
 						<label>$LOCALIZE[31314]</label>
 						<onclick>Skin.ToggleSetting(HomeReturnOff)</onclick>
 						<selected>Skin.HasSetting(HomeReturnOff)</selected>
-					</control>
+					</control> -->
 					<control type="image" id="211">
 						<include>Settings_Line</include>
 						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
-					<!--
-					<control type="radiobutton" id="206">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31322]</label>
-						<onclick>Skin.ToggleSetting(HomeStats)</onclick>
-						<selected>Skin.HasSetting(HomeStats)</selected>
-					</control>
-					-->
 					<control type="radiobutton" id="209">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31034]</label>
@@ -385,6 +375,15 @@
 						<onclick>Skin.ToggleSetting(ShowAllMediaFlags)</onclick>
 						<selected>Skin.HasSetting(ShowAllMediaFlags)</selected>
 					</control>
+					<control type="image" id="510">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="509">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31406]</label>
+						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
+						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
+					</control>
 					<control type="radiobutton" id="508">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31404]</label>
@@ -396,12 +395,6 @@
 						<label>$LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(HideGenreIconLabels)</onclick>
 						<selected>Skin.HasSetting(HideGenreIconLabels)</selected>
-					</control>
-					<control type="radiobutton" id="509">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31406]</label>
-						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
-						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
 				</control>
 				<!-- Home Artwork -->
@@ -1512,12 +1505,16 @@
 					<onright>9000</onright>
 					<control type="button" id="800">
 						<include>SettingsLabel</include>
+						<width>370</width>
 						<label>$LOCALIZE[31319]</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(LyricPath))]</label2>
 						<onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
 					</control>
 					<control type="button" id="801">
 						<include>SettingsLabel</include>
+						<width>370</width>
 						<label>$LOCALIZE[31320]</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(SubtitlePath))]</label2>
 						<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>
 					</control>
 					<control type="image" id="802">
@@ -1526,14 +1523,11 @@
 					<control type="button" id="803">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.artwork.downloader,mediatype=tvshow,poster, fanart, extrafanart, clearart, clearlogo, tvthumb, banner, characterart, defaultthumb)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader,mediatype=tvshow, poster, fanart, extrafanart, clearart, clearlogo, tvthumb, banner, characterart, defaultthumb)</onclick>
 					</control>
 					<control type="label" id="804">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31127]</label>
-					</control>
-					<control type="image" id="805">
-						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="806">
 						<include>SettingsLabel</include>
@@ -1639,33 +1633,25 @@
 						<onclick>Skin.ToggleSetting(CDArt)</onclick>
 						<selected>Skin.HasSetting(CDArt)</selected>
 					</control>
-					<control type="button" id="112">
-						<include>SettingsLabel</include>
-						<description>Music Folder Path</description>
-						<label>$LOCALIZE[31432]</label>
-						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
-						<onclick>Skin.SetPath(Music_Folder_Path)</onclick>
-						<!-- <enable>!Skin.HasSetting(CDArt) | Skin.HasSetting(MusicExtraFanart)</enable> -->
-					</control>
-					<control type="label" id="113">
-						<include>SettingsHeaderLabel</include>
-						<label>$LOCALIZE[31434]</label>
+					<control type="image" id="112">
+						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="114">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31433]</label>
+						<onclick>Skin.Reset(Artist_Slideshow)</onclick>
 						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
 						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
 					</control>
 					<control type="radiobutton" id="115">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
+						<onclick>Skin.Reset(Use_Fanart_Viz)</onclick>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
 					</control>
 					
 				</control>
-			
 				<!-- Debug -->
 				<control type="grouplist" id="9008">
 					<visible>Container(9000).Hasfocus(9)</visible>
@@ -1699,10 +1685,6 @@
 						<onclick>Skin.ResetSettings</onclick>
 						<onclick>ReloadSkin()</onclick> 
 					</control>
-					<control type="image" id="904">
-						<include>Settings_Line</include>
-					</control>
-					
 				</control>
 			</control>
 			<control type="image">

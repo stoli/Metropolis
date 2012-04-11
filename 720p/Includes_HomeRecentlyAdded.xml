@@ -26,7 +26,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20386][/B]</label>
-				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Random Movies -->
 			<control type="label">
@@ -39,7 +39,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
-				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Recently Added Episodes -->
 			<control type="label">
@@ -52,7 +52,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20387][/B]</label>
-				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Random Episodes -->
 			<control type="label">
@@ -65,7 +65,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
-				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 		</control>
 		<!-- Submenu title for icon home view -->
@@ -94,7 +94,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20386][/B]</label>
-				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Random Movies -->
 			<control type="label">
@@ -107,7 +107,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
-				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Recently Added Episodes -->
 			<control type="label">
@@ -120,7 +120,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20387][/B]</label>
-				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 			<!-- Random Episodes -->
 			<control type="label">
@@ -133,7 +133,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
-				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(RandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
 		</control>
 		<control type="group" id="9002">
