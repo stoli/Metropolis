@@ -4,7 +4,7 @@
 			<visible>Control.IsVisible(509)</visible>
 			<!-- Browser -->
 			<control type="fixedlist" id="509">
-				<viewtype label="$LOCALIZE[20445] $LOCALIZE[535]">list</viewtype>
+				<viewtype label="$LOCALIZE[20445] $LOCALIZE[535]">biglist</viewtype>
 				<posx>658</posx>
 				<posy>60</posy>
 				<height>455</height>
