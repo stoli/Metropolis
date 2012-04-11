@@ -67,7 +67,7 @@
 				<font>METF_PlotText</font>
 				<textcolor>TextNF</textcolor>
 				<label>$INFO[ListItem.Tagline]</label>
-				<visible>!IsEmpty(ListItem.Tagline)+ !Container.Content(episodes)</visible>
+				<visible>!IsEmpty(ListItem.Tagline) + !Container.Content(episodes)</visible>
 			</control>
 			<!-- TVShows Number of Episodes -->
 			<control type="label">
@@ -141,7 +141,7 @@
 				<font>METF_MPAA</font>
 				<textcolor>MPAADescription</textcolor>
 				<label>$INFO[ListItem.FilenameAndPath]</label>
-				<visible>[Container.Content(movies) | Container.Content(videos)] + Skin.HasSetting(ShowVideoPath)</visible>
+				<visible>[Container.Content(movies) | Container.Content(videos) | Container.Content(episodes)] + Skin.HasSetting(ShowVideoPath)</visible>
 			</control>	
 			<control type="group">
 				<posx>550</posx>
