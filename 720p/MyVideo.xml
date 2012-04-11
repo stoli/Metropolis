@@ -1,5 +1,5 @@
 ﻿<window id="24">
-	<views>55,53,57,58,59,503</views>
+	<views>55,503,58,59,53,57</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
