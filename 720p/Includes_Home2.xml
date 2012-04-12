@@ -184,19 +184,19 @@
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>!Skin.HasSetting(NoVideos)</visible>
 				</item>
-				<item id="3">
-					<description>Music</description>
-					<label>$LOCALIZE[2]</label>
-					<icon>special://skin/extras/home2/icon_music.png</icon>
-					<onclick>ActivateWindow(MyMusicLibrary,Artists,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic)</visible>
-				</item>
 				<item id="13">
 					<description>Movie Trailers</description>
 					<label>$LOCALIZE[31334]</label>
 					<icon>special://skin/extras/home2/icon_trailers.png</icon>
 					<onclick>ActivateWindow(Videos,plugin://plugin.video.the.trailers,return)</onclick>
 					<visible>system.hasaddon(plugin.video.the.trailers)</visible>
+				</item>
+				<item id="3">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<icon>special://skin/extras/home2/icon_music.png</icon>
+					<onclick>ActivateWindow(MyMusicLibrary,Artists,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusic)</visible>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
