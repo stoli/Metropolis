@@ -14,17 +14,7 @@
 	<string id="31010">MUSIC LIBRARY</string>
 	<string id="31011">Metropolis</string>
 	<string id="31012">Increase Star Rating</string>
-	<string id="31013">Hide Add-Ons</string>
-	<string id="31014">Hide Videos</string>
-	<string id="31015">Hide Music</string>
-	<string id="31016">Hide Movies</string>
-	<string id="31017">Hide TV Shows</string>
-	<string id="31018">Hide Pictures</string>
-	<string id="31019">Hide Weather</string>
-	<string id="31020">Hide Settings</string>
 	<string id="31021">Decrease Star Rating</string>
-	<string id="31022">Hide Shutdown</string>
-	<string id="31023">Hide Favourites</string>
 	<string id="31024">Icon Home Layout</string>
 	<string id="31025">Horizontal Home Layout</string>
 	<string id="31026">Vertical Home Layout</string>
@@ -157,7 +147,6 @@
 	<string id="31252">Create</string>
 	<string id="31253">Edit Image</string>
 	<string id="31268">Runtime Not Available</string>
-	<string id="31269">Hide Shutdown</string>
 	<string id="31270">Enable Custom Button</string>
 	<string id="31271">Favourite</string>
 	<string id="31272">Broadcast</string>
@@ -177,7 +166,7 @@
 	<string id="31290">Episode</string>
 	<string id="31291">Landscape</string>
 	<string id="31292">Music Wall</string>
-	<string id="31293">Grid</string>
+	<string id="31293">Picture Grid</string>
 	<string id="31294">Hide Music Files</string>
 	<string id="31295">Hide IMDB Ratings</string>
 	<string id="31296">Use 'landscape.jpg' for TV Shows</string>
@@ -286,7 +275,6 @@
 	<string id="31398">Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music. </string>
 	<string id="31399">Hide Login Screen frames</string>
 	<string id="31400">Hide Current Temperature and Weather Conditions</string>
-	<string id="31401">Hide Trailers</string>
 	<string id="31402">Use plot outline if available (Info screen still shows full plot)</string>
 	<string id="31403">Show extra media flags in all views (not just Info screen)</string>
 	<string id="31404">Tall Genre View: Hide Descriptions</string>
@@ -327,4 +315,6 @@
 	<string id="31438">Recent</string>
 	<string id="31439">Banner &amp; Poster</string> 
 	<string id="31440">View Types</string>
+	<string id="31441">Hide</string>
+	<string id="31442">Banner &amp; Fanart</string> 
 </strings>

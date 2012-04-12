@@ -20,6 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewLowList)</visible>
 				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)] | Container.Content(addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->

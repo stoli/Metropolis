@@ -19,6 +19,7 @@
 				<posy>65</posy>
 				<height>450</height>
 				<width>1260</width>
+				<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
 				<ondown>60</ondown>
 				<onleft>501</onleft>
 				<onright>501</onright>
@@ -31,6 +32,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewTallGenre)</visible>
 				<visible>Container.Content(genres)</visible>
 				<itemlayout width="180" height="450">
 					<control type="image">

@@ -149,6 +149,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewPosterLarge)</visible>
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 				<itemlayout width="300" height="420">
 					<control type="group">

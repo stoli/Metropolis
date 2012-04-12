@@ -79,6 +79,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
 				<ondown>7000</ondown>
+				<visible>!Skin.HasSetting(NoViewPictureGrid)</visible>
 				<itemlayout width="110" height="110">
 					<include>Object_PicturePanel</include>
 					<control type="image">
