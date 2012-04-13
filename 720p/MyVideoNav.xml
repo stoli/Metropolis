@@ -1,7 +1,7 @@
 ﻿<window id="25">
 	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="Skin.HasSetting(NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<views>55,905,503,54,58,59,53,57,551,550,504,509,508,511,510,52,56,512,501</views>
+	<views>55,905,503,54,58,59,53,57,551,550,504,509,511,508,510,52,56,512,501</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -239,7 +239,7 @@
 
 				<control type="button" id="98">
 					<description>Open Player Controls</description>
-					<label>31015</label>
+					<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<visible>Player.HasMedia</visible>
 					<width>340</width>

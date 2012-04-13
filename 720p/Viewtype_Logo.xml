@@ -21,6 +21,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewLogo)</visible>
 				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
 				<itemlayout width="294" height="194">
 					<control type="image">

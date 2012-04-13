@@ -26,7 +26,6 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>![Window.IsActive(videolibrary) + Container.Content(genres)]</visible>
 				<itemlayout width="0" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
