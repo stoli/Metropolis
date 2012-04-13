@@ -10,7 +10,7 @@
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<fadetime>400</fadetime>
 			<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-			<visible>[Control.IsVisible(55) | Control.IsVisible(503) | Control.IsVisible(509) | Control.IsVisible(59)]</visible>
+			<visible>!Skin.HasSetting(HideFanart) + !Control.IsVisible(500) + [StringCompare(ListItem.FileExtension,png) | StringCompare(ListItem.FileExtension,jpg) | StringCompare(ListItem.FileExtension,jpeg) | StringCompare(ListItem.FileExtension,bmp) | StringCompare(ListItem.FileExtension,gif) | StringCompare(ListItem.FileExtension,ico) | StringCompare(ListItem.FileExtension,tif) | StringCompare(ListItem.FileExtension,tiff) | StringCompare(ListItem.FileExtension,tga) | StringCompare(ListItem.FileExtension,pcx) | StringCompare(ListItem.FileExtension,cbz) | StringCompare(ListItem.FileExtension,zip) | StringCompare(ListItem.FileExtension,cbr) | StringCompare(ListItem.FileExtension,rar) | StringCompare(ListItem.FileExtension,m3u)]</visible>
 			<include>Animation_BackdropFade</include>
 		</control>
 		<control type="image">
