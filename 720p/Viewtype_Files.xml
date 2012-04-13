@@ -517,7 +517,7 @@
 					<height>20</height>
 					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
-					<textcolor>TitleText</textcolor>
+					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.PictureDateTime]</label>
 					<visible>!IsEmpty(ListItem.PictureDateTime)</visible>
 				</control>
