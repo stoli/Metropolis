@@ -21,6 +21,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewList)</visible>
 				<visible>[Window.IsActive(musiclibrary) + Container.Content(songs)] | Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
 				<itemlayout width="885" height="49">
 					<control type="label">

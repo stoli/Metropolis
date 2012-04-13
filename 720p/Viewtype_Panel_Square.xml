@@ -105,6 +105,7 @@
 				<include>Animation_ZoomInZoomOut</include>
 				<!--<include>Animation_ZoomedByMenu</include>-->
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewPanelSquare)</visible>
 				<visible>Window.IsActive(programs) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
 				<itemlayout width="205" height="205">
 					<control type="image">
