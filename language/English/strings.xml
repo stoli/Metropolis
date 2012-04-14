@@ -25,7 +25,7 @@
 	<string id="31031">Hide Movie Watched Status</string>
 	<string id="31032">Hide TV Watched Status</string>
 	<string id="31033">Hide Background Fanart</string>
-	<string id="31034">Enable dynamic Weather Artwork</string>
+	<string id="31034">Enable Dynamic Weather Artwork</string>
 	<string id="31035">Hide Movie Directors</string>
 	<string id="31050">Hide Add-On Settings</string>
 	<string id="31051">Panel Tall</string>
@@ -318,4 +318,5 @@
 	<string id="31441">Hide</string>
 	<string id="31442">Banner &amp; Fanart</string>
 	<string id="31443">Pseudo TV</string>	
+	<string id="31444">Hide RSS Feed</string> 
 </strings>
