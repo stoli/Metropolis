@@ -187,9 +187,7 @@
 					<height>135</height>
 					<onup>8000</onup>
 					<ondown>8000</ondown>
-					<onleft>SetFocus(8000,0)</onleft>
 					<onleft>9000</onleft>
-					<onright>SetFocus(8000,0)</onright>
 					<onright>9000</onright>
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
@@ -209,9 +207,7 @@
 					<height>135</height>
 					<onup>8001</onup>
 					<ondown>8001</ondown>
-					<onleft>SetFocus(8001,0)</onleft>
 					<onleft>9000</onleft>
-					<onright>SetFocus(8001,0)</onright>
 					<onright>9000</onright>
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
@@ -249,7 +245,7 @@
 				<aligny>center</aligny>
 				<texture>FocusLine.png</texture>
 				<colordiffuse>FocusBar</colordiffuse>
-				<visible>!IsEmpty(ListItem.Label) + Control.HasFocus(8000)</visible>
+				<visible>Control.HasFocus(8000)</visible>
 			</control>
 			<control type="label">
 				<posx>10</posx>
@@ -377,7 +373,7 @@
 				<aligny>center</aligny>
 				<texture>FocusLine.png</texture>
 				<colordiffuse>FocusBar</colordiffuse>
-				<visible>!IsEmpty(ListItem.Label) + Control.HasFocus(8001)</visible>
+				<visible>Control.HasFocus(8001)</visible>
 			</control>
 			<control type="label">
 				<posx>10</posx>
