@@ -21,6 +21,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewFanartList)</visible>
 				<visible>Window.IsActive(pictures) | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<itemlayout width="600" height="35">
 					<!-- List Line Item Divider -->

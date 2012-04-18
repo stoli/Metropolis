@@ -20,6 +20,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>!Skin.HasSetting(NoViewBannerPoster)</visible>
 				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
 				<itemlayout width="420" height="90">
 					<control type="image">

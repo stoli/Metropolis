@@ -26,7 +26,6 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>![Window.IsActive(videolibrary) + Container.Content(genres)]</visible>
 				<itemlayout width="0" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -518,7 +517,7 @@
 					<height>20</height>
 					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
-					<textcolor>TitleText</textcolor>
+					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.PictureDateTime]</label>
 					<visible>!IsEmpty(ListItem.PictureDateTime)</visible>
 				</control>
