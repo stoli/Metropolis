@@ -625,9 +625,16 @@
 				</control>
 				<control type="button" id="90127">
 					<include>Submenu_Button</include>
+					<label>$LOCALIZE[31443]</label>
+					<visible>System.HasAddon(script.pseudotv)</visible>
+					<onclick>RunScript(script.pseudotv)</onclick>
+				</control>
+				<control type="button" id="90128">
+					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
 				</control>
+				
 			</control>
 			<!-- Settings Submenu -->
 			<control type="grouplist" id="9014">
