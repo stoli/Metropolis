@@ -10,7 +10,7 @@
 			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(HideFanart)</visible>
+			<visible>!Skin.HasSetting(HideMusicFanart)</visible>
 		</control>
 		<include>Object_InfoLines</include>
 		<include>Viewtype_Files</include>

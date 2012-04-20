@@ -11,7 +11,7 @@
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<include>Animation_CommonFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!Skin.HasSetting(HideFanart) + !IsEmpty(ListItem.path)</visible>
+			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path)</visible>
 		</control>
 		<include>Object_MovieInfoLines</include>
 		<include>Viewtype_Files</include>				<!-- 55 -->

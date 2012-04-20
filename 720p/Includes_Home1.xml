@@ -1,6 +1,17 @@
 <includes>
 	<!-- Home1 Default-->
 	<visible>!Skin.HasSetting(home2)</visible>
+	<include name="Submenu_VerticalDetails">
+		<posx>1060</posx>
+		<posy>50</posy>
+		<width>220</width>
+		<height>416</height>
+		<orientation>vertical</orientation>
+		<align>left</align>
+		<itemgap>0</itemgap>
+		<onleft>9000</onleft>
+		<onright>9000</onright>
+	</include>
 	<include name="Submenu_Button">
 		<width>208</width>
 		<height>32</height>
@@ -12,17 +23,6 @@
 		<focusedcolor>FocusBarText</focusedcolor>
 		<texturefocus>FocusLine.png</texturefocus>
 		<colordiffuse>FocusBar</colordiffuse>
-	</include>
-	<include name="Submenu_VerticalDetails">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>220</width>
-		<height>416</height>
-		<orientation>vertical</orientation>
-		<align>left</align>
-		<itemgap>0</itemgap>
-		<onleft>9000</onleft>
-		<onright>9000</onright>
 	</include>
 	<include name="HomeStatsDetails">
 		<posx>1130</posx>
@@ -40,8 +40,7 @@
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsNumber</textcolor>
 	</include>
-					
-	
+
 	<include name="Home1_Default">
 		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
 		<control type="button" id="9002">
@@ -65,7 +64,6 @@
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!Window.IsActive(videooverlay)</visible>
 			<control type="image">
 				<posx>240</posx>
 				<posy>50</posy>
@@ -84,7 +82,6 @@
 				<fadetime>500</fadetime>
 				<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
 				<aspectratio>stretch</aspectratio>
-				<visible>[!Skin.HasSetting(ProfileFanart) + !Skin.HasSetting(CustomFanart)] | [Container(9000).HasFocus(7) + Skin.HasSetting(homeweather)]</visible>
 				<visible>!Window.IsActive(videooverlay)</visible>
 			</control>
 			<control type="videowindow">
@@ -212,7 +209,7 @@
 		<control type="list" id="9000">
 			<posx>0</posx>
 			<posy>50</posy>
-			<width>1050</width>
+			<width>220</width>
 			<height>416</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
@@ -245,7 +242,7 @@
 					<aligny>center</aligny>
 					<texture flipx="true">FocusLine.png</texture>
 					<colordiffuse>FocusBar</colordiffuse>
-					<visible>!IsEmpty(ListItem.Label) + !ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
+					<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001)]</visible>
 				</control>
 				<control type="label">
 					<posx>215</posx>
@@ -295,7 +292,6 @@
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
-					<!-- ActivateWindow(Videos) -->
 					<visible>!Skin.HasSetting(NoVideos)</visible>
 				</item>
 				<item id="13">
@@ -388,11 +384,9 @@
 				</item>
 			</content>
 		</control>
-		
+
 		<!-- Submenus -->
 		<control type="group" id="9001">
-			<posx>1060</posx>
-			<posy>50</posy>
 			<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
@@ -727,7 +721,7 @@
 				</control>
 			</control>
 		</control>
-	
+
 		<!-- Home Stats/Media Totals -->
 		<control type="group">
 			<posx>0</posx>
