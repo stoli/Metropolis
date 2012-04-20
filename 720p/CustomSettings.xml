@@ -105,6 +105,11 @@
 						<label>$LOCALIZE[31419]</label>
 						<onclick>-</onclick>
 					</item>
+					<item id="11">
+						<description>Picture Settings</description>
+						<label>$LOCALIZE[31445]</label>
+						<onclick>-</onclick>
+					</item>
 					<item id="9">
 						<description>Debug</description>
 						<label>$LOCALIZE[31004]</label>
@@ -355,56 +360,47 @@
 					<onright>9000</onright>
 					<control type="radiobutton" id="501">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31033]</label>
-						<onclick>Skin.ToggleSetting(HideFanart)</onclick>
-						<selected>Skin.HasSetting(HideFanart)</selected>
-					</control>
-					<control type="image" id="502">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="503">
-						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31031]</label>
 						<onclick>Skin.ToggleSetting(HideMovieWatchedOverlays)</onclick>
 						<selected>Skin.HasSetting(HideMovieWatchedOverlays)</selected>
 					</control>
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="502">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31032]</label>
 						<onclick>Skin.ToggleSetting(HideTVWatchedOverlays)</onclick>
 						<selected>Skin.HasSetting(HideTVWatchedOverlays)</selected>
 					</control>
-					<control type="image" id="505">
+					<control type="image" id="503">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="506">
+					<control type="radiobutton" id="504">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31402]</label>
 						<onclick>Skin.ToggleSetting(Show_PlotOutline)</onclick>
 						<selected>Skin.HasSetting(Show_PlotOutline)</selected>
 					</control>
-					<control type="radiobutton" id="507">
+					<control type="radiobutton" id="505">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31403]</label>
 						<onclick>Skin.ToggleSetting(ShowAllMediaFlags)</onclick>
 						<selected>Skin.HasSetting(ShowAllMediaFlags)</selected>
 					</control>
-					<control type="image" id="508">
+					<control type="image" id="506">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="509">
+					<control type="radiobutton" id="507">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31406]</label>
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="508">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31404]</label>
 						<onclick>Skin.ToggleSetting(HideGenreDescriptions)</onclick>
 						<selected>Skin.HasSetting(HideGenreDescriptions)</selected>
 					</control>
-					<control type="radiobutton" id="511">
+					<control type="radiobutton" id="509">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(HideGenreIconLabels)</onclick>
@@ -1749,7 +1745,7 @@
 						<selected>Skin.HasSetting(TvTunes)</selected>
 					</control>
 				</control>
-				<!-- Video Option -->
+				<!-- Video Settings -->
 				<control type="grouplist" id="9011">
 					<visible>Container(9000).Hasfocus(7)</visible>
 					<posx>0</posx>
@@ -1762,13 +1758,22 @@
 					<onright>9000</onright>
 					<control type="radiobutton" id="801">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31033]</label>
+						<onclick>Skin.ToggleSetting(HideVideoFanart)</onclick>
+						<selected>Skin.HasSetting(HideVideoFanart)</selected>
+					</control>
+					<control type="image" id="802">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="803">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31421]</label>
 						<onclick>Skin.SetBool(Enable_OSDClearArt)</onclick>
 						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
 						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 					</control>
-					<control type="radiobutton" id="802">
+					<control type="radiobutton" id="804">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31422]</label>
 						<onclick>Skin.SetBool(Enable_OSDLogo)</onclick>
@@ -1776,7 +1781,7 @@
 						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDLogo)</selected>
 					</control>
-					<control type="radiobutton" id="803">
+					<control type="radiobutton" id="805">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31425]</label>
 						<onclick>Skin.SetBool(Enable_OSDThumbnail)</onclick>
@@ -1784,25 +1789,23 @@
 						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDThumbnail)</selected>
 					</control>
-					<control type="image" id="804">
+					<control type="image" id="806">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="805">
+					<control type="radiobutton" id="807">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31429]</label>
 						<onclick>Skin.ToggleSetting(ShowVideoPath)</onclick>
 						<selected>Skin.HasSetting(ShowVideoPath)</selected>
 					</control>
-					<control type="radiobutton" id="806">
+					<control type="radiobutton" id="808">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
-
-				
 				</control>
-				<!-- Music Options -->
+				<!-- Music Settings -->
 				<control type="grouplist" id="9009">
 					<visible>Container(9000).Hasfocus(8)</visible>
 					<posx>0</posx>
@@ -1815,28 +1818,54 @@
 					<onright>9000</onright>
 					<control type="radiobutton" id="901">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31056]</label>
-						<onclick>Skin.ToggleSetting(CDArt)</onclick>
-						<selected>Skin.HasSetting(CDArt)</selected>
+						<label>$LOCALIZE[31033]</label>
+						<onclick>Skin.ToggleSetting(HideMusicFanart)</onclick>
+						<selected>Skin.HasSetting(HideMusicFanart)</selected>
 					</control>
 					<control type="image" id="902">
 						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="903">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31056]</label>
+						<onclick>Skin.ToggleSetting(CDArt)</onclick>
+						<selected>Skin.HasSetting(CDArt)</selected>
+					</control>
+					<control type="image" id="904">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="905">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31433]</label>
 						<onclick>Skin.Reset(Artist_Slideshow)</onclick>
 						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
 						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
 					</control>
-					<control type="radiobutton" id="904">
+					<control type="radiobutton" id="906">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
 						<onclick>Skin.Reset(Use_Fanart_Viz)</onclick>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
 					</control>
-					
+				</control>
+				<!-- Picture Settings -->
+				<control type="grouplist" id="9013">
+					<visible>Container(9000).Hasfocus(11)</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>840</width>
+					<height>418</height>
+					<itemgap>0</itemgap>
+					<scrolltime>0</scrolltime>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<control type="radiobutton" id="1101">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31033]</label>
+						<onclick>Skin.ToggleSetting(HidePictureFanart)</onclick>
+						<selected>Skin.HasSetting(HidePictureFanart)</selected>
+					</control>
 				</control>
 				<!-- Debug -->
 				<control type="grouplist" id="9008">
