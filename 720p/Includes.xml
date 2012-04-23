@@ -498,20 +498,12 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
-			<control type="label">
-				<label>24001</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(programs)</visible>
-			</control>
+
+			<!-- Left side title -->
 			<control type="label">
 				<label>$LOCALIZE[342]</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[1213]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(pictures)</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[20343]</label>
@@ -529,14 +521,29 @@
 				<visible>[[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin) + !Window.IsActive(favourites)</visible>
 			</control>
 			<control type="label">
+				<label>$LOCALIZE[157] $LOCALIZE[559]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(videoplaylist)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[2]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)]</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[2] $LOCALIZE[559]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(musicplaylist)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[1213]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(pictures) + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
 				<label>$LOCALIZE[1037]</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[31009]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(musicfiles) + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)]</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[1038]</label>
@@ -544,19 +551,31 @@
 				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
 			</control>
 			<control type="label">
-				<label>$LOCALIZE[31010]</label>
+				<label>$LOCALIZE[1039]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(musiclibrary) + ![SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
+				<visible>Window.IsActive(pictures) + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[24001]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(AddonBrowser)</visible>
+				<visible>Window.IsActive(programs) | Window.IsActive(AddonBrowser)</visible>
 			</control>
+			<control type="label">
+				<label>$LOCALIZE[130]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(systeminfo)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[20096]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(LoginScreen)</visible>
+			</control>
+
+			<!-- Right side details -->
 			<control type="label">
 				<label>$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>![Container.Content(episodes) | Window.IsActive(pictures)]</visible>
+				<visible>![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
 			</control>
 			<control type="label">
 				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
@@ -568,56 +587,16 @@
 				<include>Global_HeadingDetailVars</include>
 				<visible>IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
 			</control>
-			<!-- Testing code to show Specials text 
-			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20381] ] - $INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>!IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes) + IsEmpty(ListItem.Season)</visible>
-			</control>
-			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20381] ] - $INFO[Container.NumItems,, $LOCALIZE[20360]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes) + IsEmpty(ListItem.Season)</visible>
-			</control>
-			-->
-			<control type="label">
-				<label>$INFO[ListItem.path,,] - $INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(pictures)</visible>
-			</control>
 			<control type="label">
 				<label>$INFO[ListItem.Artist]$INFO[ListItem.Album,] - $INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>!substring(ListItem.Label,*) + Window.IsActive(musiclibrary) + Control.IsVisible(50)</visible>
-			</control>
-			<control type="label">
-				<description>System Info</description>
-				<label>$LOCALIZE[130]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(systeminfo)</visible>
 			</control>
 			<control type="label" id="52">
 				<description>Build Version</description>
 				<label>$LOCALIZE[144]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>Window.IsActive(systeminfo)</visible>
-			</control>
-			<control type="label">
-				<description>Playlist</description>
-				<label>$LOCALIZE[157] $LOCALIZE[559]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(videoplaylist)</visible>
-			</control>
-			<control type="label">
-				<description>Playlist</description>
-				<label>$LOCALIZE[2] $LOCALIZE[559]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(musicplaylist)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[20096]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(LoginScreen)</visible>
 			</control>
 		</control>
 	</include>
