@@ -45,7 +45,7 @@
 			</control>
 			<control type="label">
 				<posx>1250</posx>
-				<posy>10</posy>
+				<posy>60</posy>
 				<width>150</width>
 				<height>40</height>
 				<aligny>center</aligny>
@@ -61,7 +61,7 @@
 			<include>OSD_Player_Details</include>
 			<control type="label">
 				<posx>30</posx>
-				<posy>640</posy>
+				<posy>632</posy>
 				<width>150</width>
 				<height>40</height>
 				<aligny>center</aligny>
@@ -72,7 +72,7 @@
 			</control>
 			<control type="label">
 				<posx>1250</posx>
-				<posy>640</posy>
+				<posy>632</posy>
 				<width>150</width>
 				<height>40</height>
 				<aligny>center</aligny>
@@ -84,7 +84,7 @@
 			</control>
 			<control type="grouplist" id="2001">
 				<posx>20</posx>
-				<posy>668</posy>
+				<posy>664</posy>
 				<width>500</width>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
@@ -142,7 +142,7 @@
 			</control>
 			<control type="group">
 				<posx>62</posx>
-				<posy>668</posy>
+				<posy>664</posy>
 				<control type="image">
 					<width>52</width>
 					<height>52</height>
@@ -188,7 +188,7 @@
 			</control>
 			<control type="grouplist" id="2002">
 				<posx>460</posx>
-				<posy>660</posy>
+				<posy>644</posy>
 				<width>400</width>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
@@ -251,9 +251,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="2003">
-				<posx>1092</posx>
-				<posy>668</posy>
-				<width>500</width>
+				<posx>1050</posx>
+				<posy>664</posy>
+				<width>208</width>
+				<align>right</align>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
 				<onleft>10</onleft>
