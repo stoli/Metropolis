@@ -414,6 +414,17 @@
 					<onclick>ActivateWindow(MusicSettings)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</control>
+				<control type="button" id="90180">
+					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[653]</label>
+					<onclick>UpdateLibrary(music)</onclick>
+				</control>
+				<control type="button" id="90181">
+					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[31446]</label>
+					<onclick>fullscreen</onclick>
+					<visible>Player.HasAudio</visible>
+				</control>
 			</control>
 			<!-- Movies Submenu -->
 			<control type="grouplist" id="9011">

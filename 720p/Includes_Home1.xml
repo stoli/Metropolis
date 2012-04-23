@@ -533,6 +533,12 @@
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(music)</onclick>
 				</control>
+				<control type="button" id="90181">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[31446]</label>
+					<onclick>fullscreen</onclick>
+					<visible>Player.HasAudio</visible>
+				</control>
 			</control>
 			<!-- Movies Submenu -->
 			<control type="grouplist" id="9011">

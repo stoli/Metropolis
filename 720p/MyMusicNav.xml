@@ -168,6 +168,24 @@
 					<onclick>ActivateWindow(playercontrols)</onclick>
 					<visible>Player.HasMedia</visible>
 				</control>
+				<control type="button" id="97">
+					<description>Fullscreen</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>METF_DialogLarge</font>
+					<label>$LOCALIZE[31446]</label>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<pulseonselect>false</pulseonselect>
+					<onclick>fullscreen</onclick>
+					<visible>Player.HasAudio</visible>
+				</control>
 			</control>
 		</control>
 		<include>Global_Time</include>
