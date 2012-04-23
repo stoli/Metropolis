@@ -1417,9 +1417,7 @@
 	</include>
 	
 	<!-- Video and Music OSD -->
-	
 	<include name="SmallMusicInfo">
-		
 		<control type="image">
 			<description>Cover image</description>
 			<posx>20</posx>
