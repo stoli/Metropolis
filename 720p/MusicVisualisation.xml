@@ -10,12 +10,12 @@
 			<height>720</height>
 			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 			<aspectratio>keep</aspectratio>
-			<timeperimage>5000</timeperimage>
+			<timeperimage>10000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh)) + Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
@@ -99,13 +99,13 @@
 			<height>720</height>
 			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 			<aspectratio>keep</aspectratio>
-			<timeperimage>5000</timeperimage>
+			<timeperimage>10000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
 			
 			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh)) + Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(Artist_Slideshow)</visible>
 
 		</control>
 		
