@@ -1836,15 +1836,7 @@
 					</control>
 					<control type="radiobutton" id="905">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31433]</label>
-						<onclick>Skin.Reset(Artist_Slideshow)</onclick>
-						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
-						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
-					</control>
-					<control type="radiobutton" id="906">
-						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
-						<onclick>Skin.Reset(Use_Fanart_Viz)</onclick>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
 					</control>

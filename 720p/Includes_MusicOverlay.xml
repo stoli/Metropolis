@@ -1,5 +1,5 @@
 ﻿<includes>
-		<include name="GlobalMusic">
+	<include name="GlobalMusic">
 		<control type="group">
 			<posx>20</posx>
 			<posy>560</posy>
