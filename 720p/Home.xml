@@ -24,6 +24,7 @@
 			<textcolor>RSSText</textcolor>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
+			<visible>!Skin.HasSetting(NoRSS)</visible>
 		</control>
 	</controls>
 </window>
