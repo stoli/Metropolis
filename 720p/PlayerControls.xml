@@ -12,10 +12,12 @@
 			<posy>0</posy>
 			<width>500</width>
 			<height>220</height>
-			<texture border="20,20,20,2">osd/OSDdialogback.png</texture>
+			<texture background="true">black.png</texture>
+			<aspectratio>scale</aspectratio>
+			<bordertexture border="20,20,20,2">osd/OSDdialogback.png</bordertexture>
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
-		
+
 		<control type="button" id="410">
 			<onfocus>Dialog.Close(PlayerControls)</onfocus>
 		</control>
@@ -233,9 +235,7 @@
 				<onclick>fullscreen</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
-		
 		</control>
-		
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 		<include>SmallMusicInfo</include>
 		<include>SmallVideoInfo</include>

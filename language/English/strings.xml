@@ -33,7 +33,7 @@
 	<string id="31053">Creator</string>
 	<string id="31054">Logo</string>
 	<string id="31055">Use TV Show Logos</string>
-	<string id="31056">Enable Cover Art</string>
+	<string id="31056">Enable Cover Art Overlay</string>
 	<string id="31057">Hide Profiles</string>
 	<string id="31060">Show Recently Added Items</string>
 	<string id="31061">Apps (Click to open/close)</string>
@@ -320,4 +320,5 @@
 	<string id="31443">Pseudo TV</string>	
 	<string id="31444">Hide RSS Feed</string> 
 	<string id="31445">Picture Settings</string>
+	<string id="31446">Fullscreen</string>
 </strings>
