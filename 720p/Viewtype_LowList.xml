@@ -414,7 +414,7 @@
 					<texture background="true" fallback="home/tvshows.jpg">$INFO[ListItem.Property(SeasonThumb)]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>!Container.Content(tvshows) + Container.Content(episodes) + [[SubString(Container.FolderPath,-1) + !IsEmpty(ListItem.Property(SeasonThumb)] | SubString(Container.FolderPath,videodb://5/)]</visible>
+					<visible>!Container.Content(tvshows) + Container.Content(episodes) + [[SubString(Container.FolderPath,-1) + !IsEmpty(ListItem.Property(SeasonThumb))] | SubString(Container.FolderPath,videodb://5/)]</visible>
 				</control>
 				<!-- Frame for poster -->
 				<control type="image">
