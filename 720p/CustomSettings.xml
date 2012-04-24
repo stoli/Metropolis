@@ -1828,8 +1828,8 @@
 					<control type="radiobutton" id="903">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31056]</label>
-						<onclick>Skin.ToggleSetting(CDArt)</onclick>
-						<selected>Skin.HasSetting(CDArt)</selected>
+						<onclick>Skin.ToggleSetting(MusicCoverArtOverlay)</onclick>
+						<selected>Skin.HasSetting(MusicCoverArtOverlay)</selected>
 					</control>
 					<control type="image" id="904">
 						<include>Settings_Line</include>
