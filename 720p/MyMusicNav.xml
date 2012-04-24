@@ -195,6 +195,7 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 	 		<include>Global_MusicInfo</include> 
+			<visible>Container.Content(albums) | Container.Content(artists)</visible>
 		</control>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>

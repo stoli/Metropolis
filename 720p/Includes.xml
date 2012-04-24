@@ -372,6 +372,7 @@
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>LowerText</textcolor>
+				<visible>IsEmpty(ListItem.Property(Album_Description))</visible>
 			</control>
 			<control type="textbox">
 				<posx>300</posx>
