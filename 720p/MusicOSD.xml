@@ -3,13 +3,14 @@
 	<controls>
 		<control type="group">
 			<animation type="Visible">
-				<effect type="slide" start="0,-300" end="0,0" time="600" tween="cubic" easing="out" />
-				<effect type="fade" start="0" end="100" time="200" />
+				<effect type="slide" start="0,-300" end="0,0" time="400" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="400" />
 			</animation>
 			<animation type="Hidden">
-				<effect type="slide" start="0,0" end="0,-300" time="600" tween="cubic" easing="out" />
-				<effect type="fade" start="100" end="0" time="200" />
-			</animation>  
+				<effect type="slide" start="0,0" end="0,-300" time="400" tween="cubic" easing="out" />
+				<effect type="fade" start="100" end="0" time="400" />
+			</animation>
+			<include>Animation_SlideDownFadeOut</include>
 			<control type="group">
 				<posx>30</posx>
 				<posy>18</posy>
@@ -35,6 +36,18 @@
 				<scroll>true</scroll>
 				<label>$INFO[MusicPlayer.Title]</label>  
 			</control>
+		</control>
+		<control type="group">
+			<animation type="Visible">
+				<effect type="slide" start="1580,0" end="0,0" time="400" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="400" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" start="0,0" end="0,1580" time="400" tween="cubic" easing="out" />
+				<effect type="fade" start="100" end="0" time="400" />
+			</animation>
+			<animation effect="slide" start="1580,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="1580,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="label">
 				<posx>1250</posx>
 				<posy>60</posy>
