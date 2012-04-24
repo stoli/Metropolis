@@ -1828,23 +1828,15 @@
 					<control type="radiobutton" id="903">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31056]</label>
-						<onclick>Skin.ToggleSetting(CDArt)</onclick>
-						<selected>Skin.HasSetting(CDArt)</selected>
+						<onclick>Skin.ToggleSetting(MusicCoverArtOverlay)</onclick>
+						<selected>Skin.HasSetting(MusicCoverArtOverlay)</selected>
 					</control>
 					<control type="image" id="904">
 						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="905">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31433]</label>
-						<onclick>Skin.Reset(Artist_Slideshow)</onclick>
-						<onclick>Skin.ToggleSetting(Use_Fanart_Viz)</onclick>
-						<selected>Skin.HasSetting(Use_Fanart_Viz)</selected>
-					</control>
-					<control type="radiobutton" id="906">
-						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
-						<onclick>Skin.Reset(Use_Fanart_Viz)</onclick>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
 					</control>
