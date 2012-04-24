@@ -3,50 +3,30 @@
 		<control type="group">
 			<posx>20</posx>
 			<posy>560</posy>
-			<animation effect="slide" start="0,0" end="-186,0" time="400" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
-			<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
-			<!-- Optional CD Art -->
+			<animation effect="slide" start="0,0" end="-186,0" time="600" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
+			<visible>Skin.HasSetting(MusicCoverArtOverlay) + Player.HasAudio + !Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 			<control type="image">
-				<animation type="Conditional" reversible="false" condition="Skin.HasSetting(MusicCoverArtOverlay) + !StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png)">
-					<effect type="slide" start="0,0" end="60,0" time="600" tween="cubic" easing="out" delay="400"/>
-					<effect type="fade" start="0" end="100" time="400" delay="400"/>
-				</animation>
-				<animation effect="fade" start="100" end="0">WindowClose</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
-				<animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
 				<posx>18</posx>
 				<posy>8</posy>
 				<width>135</width>
 				<height>135</height>
-				<texture fallback="cd.png">$INFO[Player.FolderPath]/cdart.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>Skin.HasSetting(MusicCoverArtOverlay) + !StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png) + Player.HasAudio</visible>
-			</control>			
+				<include>Animation_SpinningCD</include>
+			</control>
 			<control type="image">
+				<description>cover image</description>
 				<width>150</width>
 				<height>150</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio aligny="bottom">scale</aspectratio>
+				<texture background="true">$INFO[MusicPlayer.cover]</texture>
 				<bordertexture border="8">thumb_border.png</bordertexture>
 				<bordersize>6</bordersize>
-				<visible>!StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
 			</control>
-			<control type="image">
-				<width>150</width>
-				<height>150</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture>DefaultThumb.png</texture>
-				<visible>StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png)</visible>
-			</control>
+		</control>
+		<control type="group">
+			<posx>20</posx>
+			<posy>560</posy>
+			<animation effect="slide" start="0,0" end="-186,0" time="600" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
+			<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 			<control type="group">
 				<visible>!Window.IsActive(videolibrary)</visible>
 				<control type="fadelabel">
@@ -99,7 +79,6 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsActive(videolibrary)</visible>
-				
 				<control type="grouplist">
 					<posx>3</posx>
 					<posy>132</posy>

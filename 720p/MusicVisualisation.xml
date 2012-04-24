@@ -54,24 +54,7 @@
 					<height>180</height>
 					<posx>55</posx>
 					<posy>-70</posy>
-					<animation type="Conditional" reversible="false" condition="Skin.HasSetting(MusicCoverArtOverlay) + !StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png)">
-						<effect type="slide" start="0,0" end="60,0" time="600" tween="cubic" easing="out" delay="400"/>
-						<effect type="fade" start="0" end="100" time="400" delay="400"/>
-					</animation>
-					<animation effect="fade" start="100" end="0">WindowClose</animation>
-					<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
-					<animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
-					<texture fallback="cd.png">$INFO[Player.FolderPath]/cdart.png</texture>
-					<aspectratio align="bottom">keep</aspectratio>
+					<include>Animation_SpinningCD</include>
 				</control>
 				<control type="image">
 					<description>cover image</description>
