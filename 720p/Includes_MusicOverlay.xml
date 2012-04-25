@@ -28,7 +28,7 @@
 				<posx>20</posx>
 				<posy>560</posy>
 				<animation effect="slide" start="0,0" end="-186,0" time="600" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
-				<visible>IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Artist_Description)) + [!Window.IsActive(home) | [!Skin.HasSetting(Home2) + [![Container(9000).Hasfocus(4) | Container(9000).Hasfocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]]] | [Skin.HasSetting(Home2) + ![Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]]]</visible>
+				<visible>[![Container.Content(albums) | Container.Content(artists)] | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Artist_Description))]] + [!Window.IsActive(home) | [!Skin.HasSetting(Home2) + [![Container(9000).Hasfocus(4) | Container(9000).Hasfocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]]] | [Skin.HasSetting(Home2) + ![Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]]]</visible>
 				<control type="group">
 					<visible>!Window.IsActive(videolibrary)</visible>
 					<control type="fadelabel">
@@ -53,6 +53,7 @@
 						<align>left</align>
 						<orientation>horizontal</orientation>
 						<animation effect="slide" start="0,0" end="54,0" time="600" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(MusicCoverArtOverlay) + !StringCompare(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
+						<visible>Skin.HasSetting(MusicCoverArtOverlay)</visible>
 						<control type="label">
 							<posx>0</posx>
 							<posy>0</posy>

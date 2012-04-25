@@ -13,7 +13,7 @@
 			<include>Animation_FadedByMenu</include>
 			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path)</visible>
 		</control>
-		<include>Object_MovieInfoLines</include>
+		<include>Object_InfoLines</include>
 		<include>Viewtype_Files</include>				<!-- 55 -->
 		<include>Viewtype_Gallery_Fanart</include>
 		<include>Viewtype_Gallery_Square</include>		<!-- 58 -->

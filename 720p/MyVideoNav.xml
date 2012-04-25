@@ -37,7 +37,7 @@
 			<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
 			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path) + [Container.Content(seasons) | [Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://5/)]]</visible>
 		</control>
-		<include>Object_MovieInfoLines</include>
+		<include>Object_InfoLines</include>
 		<include>Viewtype_LowList</include>				<!-- 905 -->
 		<include>Viewtype_Files</include>				<!-- 55 -->
 		<include>Viewtype_Poster_Fixed</include>		<!-- 53 -->
