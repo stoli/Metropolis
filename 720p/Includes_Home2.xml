@@ -98,7 +98,11 @@
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
-			<preloaditems>2</preloaditems>
+			<!-- Setting preloaditems to anything greater than zero currently causes -->
+			<!-- flickering/slowdown if any home items are hidden.  -->
+			<!-- See http://trac.xbmc.org/ticket/12145 and https://github.com/stoli/Metropolis/issues/21 -->
+			<!--<preloaditems>2</preloaditems>-->
+			<preloaditems>0</preloaditems>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<itemlayout width="180" height="450">
