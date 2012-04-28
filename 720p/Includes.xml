@@ -56,9 +56,7 @@
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 		</control>
 	</include>
-	
-	
-		
+
 	<include name="Global_TimeWeekdayDetails">
 		<posx>1241</posx>
 		<posy>546</posy>
@@ -72,13 +70,7 @@
 		<control type="group">
 			<posx>12</posx>
 			<posy>40</posy>
-			<!--
-			<include>Animation_FadedByMenu</include>
-			-->
-				
 			<control type="image">
-				<!-- <include>Animation_FadedByMenu</include>
-				<include>Animation_OpenCloseFade</include> -->
 				<posx>1145</posx>
 				<posy>517</posy>
 				<width>30</width>
@@ -86,7 +78,6 @@
 				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
 				<visible>!Skin.HasSetting(HideClockTemp) + Weather.IsFetched</visible>
 			</control>
-		
 			<control type="label">
 				<description>Temperature</description>
 				<posx>1241</posx>
@@ -185,82 +176,84 @@
 			</control>
 		</control>
 	</include>
-	
-	
+
 	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
 	<include name="Global_VideoPlot">
-		<posx>0</posx>
-		<posy>0</posy>
-		<include>Animation_HiddenByInfo</include>
-		<!-- Regular Plot -->
-		<control type="group">
-			<visible>!Skin.HasSetting(ShowAllMediaFlags) | [Skin.HasSetting(ShowAllMediaFlags) + Container.Content(tvshows)] | [Skin.HasSetting(ShowAllMediaFlags) + SubString(Container.FolderPath,plugin)]</visible>
-			<control type="textbox">
-				<posx>220</posx>
-				<posy>565</posy>
-				<width>840</width>
-				<height>135</height>
-				<align>left</align>
-				<info>ListItem.Plot</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
-				<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
+		<control type="group" id="9900">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_HiddenByInfo</include>
+			<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)</visible>
+			<!-- Regular Plot -->
+			<control type="group">
+				<visible>!Skin.HasSetting(ShowAllMediaFlags) | [Skin.HasSetting(ShowAllMediaFlags) + Container.Content(tvshows)] | [Skin.HasSetting(ShowAllMediaFlags) + SubString(Container.FolderPath,plugin)]</visible>
+				<control type="textbox">
+					<posx>220</posx>
+					<posy>565</posy>
+					<width>840</width>
+					<height>135</height>
+					<align>left</align>
+					<info>ListItem.Plot</info>
+					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
+				</control>
+				<control type="textbox">
+					<posx>220</posx>
+					<posy>565</posy>
+					<width>840</width>
+					<height>135</height>
+					<align>left</align>
+					<info>ListItem.PlotOutline</info>
+					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline)</visible>
+				</control>
 			</control>
-			<control type="textbox">
-				<posx>220</posx>
-				<posy>565</posy>
-				<width>840</width>
-				<height>135</height>
-				<align>left</align>
-				<info>ListItem.PlotOutline</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
-				<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline)</visible>
+			<!-- Plot Outline Option -->
+			<control type="group">
+				<visible>Skin.HasSetting(ShowAllMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
+				<control type="textbox">
+					<posx>220</posx>
+					<posy>557</posy>
+					<width>840</width>
+					<height>88</height>
+					<align>left</align>
+					<info>ListItem.Plot</info>
+					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextSmall</font>
+					<textcolor>LowerText</textcolor>
+					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
+				</control>
+				<control type="textbox">
+					<posx>220</posx>
+					<posy>557</posy>
+					<width>840</width>
+					<height>88</height>
+					<align>left</align>
+					<info>ListItem.PlotOutline</info>
+					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextSmall</font>
+					<textcolor>LowerText</textcolor>
+					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline) + Container.Content(movies)</visible>
+				</control>
 			</control>
-		</control>
-		<!-- Plot Outline Option -->
-		<control type="group">
-			<visible>Skin.HasSetting(ShowAllMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
-			<control type="textbox">
-				<posx>220</posx>
-				<posy>557</posy>
-				<width>840</width>
-				<height>88</height>
-				<align>left</align>
-				<info>ListItem.Plot</info>
-				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextSmall</font>
-				<textcolor>LowerText</textcolor>
-				<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
-			</control>
-			<control type="textbox">
-				<posx>220</posx>
-				<posy>557</posy>
-				<width>840</width>
-				<height>88</height>
-				<align>left</align>
-				<info>ListItem.PlotOutline</info>
-				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextSmall</font>
-				<textcolor>LowerText</textcolor>
-				<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline) + Container.Content(movies)</visible>
-			</control>
-		</control>
-		<!-- Seasons - TV Show Plot -->
-		<control type="group">
-			<visible>Container.Content(seasons)</visible>
-			<control type="textbox">
-				<posx>220</posx>
-				<posy>565</posy>
-				<width>840</width>
-				<height>135</height>
-				<align>left</align>
-				<info>Container.ShowPlot</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
+			<!-- Seasons - TV Show Plot -->
+			<control type="group">
+				<visible>Container.Content(seasons)</visible>
+				<control type="textbox">
+					<posx>220</posx>
+					<posy>565</posy>
+					<width>840</width>
+					<height>135</height>
+					<align>left</align>
+					<info>Container.ShowPlot</info>
+					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<font>METF_PlotTextMedium</font>
+					<textcolor>LowerText</textcolor>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -271,16 +264,18 @@
 		<include>Animation_HiddenByInfo</include>
 		<control type="grouplist">
 			<visible>Window.IsActive(pictures)</visible>
-			<posx>220</posx>
+			<posx>340</posx>
 			<posy>565</posy>
-			<width>840</width>
-			<height>135</height>
-			<align>left</align>
+			<width>600</width>
+			<height>72</height>
+			<align>center</align>
+			<aligny>top</aligny>
 			<orientation>vertical</orientation>
 			<!-- Camera Info -->
 			<control type="label">
-				<width>840</width>
+				<width>600</width>
 				<height>20</height>
+				<align>center</align>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>LowerText</textcolor>
 				<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
@@ -288,13 +283,13 @@
 			</control>
 			<!-- Focus and Aperture -->
 			<control type="grouplist">
-				<width>840</width>
+				<width>600</width>
 				<height>20</height>
-				<align>left</align>
+				<align>center</align>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="label">
-					<width min="25" max="840">auto</width>
+					<width min="25" max="600">auto</width>
 					<height>20</height>
 					<font>METF_PlotTextMedium</font>
 					<textcolor>LowerText</textcolor>
@@ -310,7 +305,7 @@
 					<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
 				</control>
 				<control type="label">
-					<width min="25" max="840">auto</width>
+					<width min="25" max="600">auto</width>
 					<height>20</height>
 					<font>METF_PlotTextMedium</font>
 					<textcolor>LowerText</textcolor>
@@ -326,7 +321,7 @@
 					<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
 				</control>
 				<control type="label">
-					<width min="25" max="840">auto</width>
+					<width min="25" max="600">auto</width>
 					<height>20</height>
 					<font>METF_PlotTextMedium</font>
 					<textcolor>LowerText</textcolor>
@@ -337,22 +332,13 @@
 			</control>
 			<!-- Exposure -->
 			<control type="label">
-				<width>840</width>
+				<width>600</width>
 				<height>20</height>
+				<align>center</align>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>LowerText</textcolor>
 				<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
 				<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
-			</control>
-			<!-- Comment -->
-			<control type="textbox">
-				<width>840</width>
-				<height>65</height>
-				<align>left</align>
-				<autoscroll time="4000" delay="3000" repeat="3000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
-				<label>$INFO[ListItem.PictureCaption]</label>
 			</control>
 		</control>
 	</include>
@@ -1617,7 +1603,7 @@
 	</include>
 	<!-- Genre Descriptions -->
 	<include name="GenreDescriptions">
-		<control type="group">
+		<control type="group" id="9903">
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_HiddenByInfo</include>
