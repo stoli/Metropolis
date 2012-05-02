@@ -169,6 +169,7 @@
 		</control>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
+		<include>GlobalMusic</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>
