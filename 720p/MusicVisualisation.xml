@@ -174,7 +174,7 @@
 					<width>60</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[MusicPlayer.Channels,flags/AudioChannels/,.png]</texture>
+					<texture fallback="flags/AudioChannels/DefaultChannels.png">$INFO[MusicPlayer.Channels,flags/AudioChannels/,ch.png]</texture>
 				</control>
 				<control type="image">
 					<posx>75</posx>
