@@ -3,7 +3,6 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		<include>GlobalMusic</include>
 		<control type="label">
 			<posx>30</posx>
 			<posy>10</posy>
@@ -308,6 +307,7 @@
 			</control>
 		</control>
 		<include>Global_Time</include>
+		<include>GlobalMusic</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>
