@@ -149,6 +149,12 @@
 						<onclick>Skin.ToggleSetting(HideClockTemp)</onclick>
 						<selected>Skin.HasSetting(HideClockTemp)</selected>
 					</control>
+					<control type="radiobutton" id="108">
+						<include>SettingsLabel</include>
+						<label>Use Realistic Weather Icons</label>
+						<onclick>Skin.ToggleSetting(WeatherIcons2)</onclick>
+						<selected>Skin.HasSetting(WeatherIcons2)</selected>
+					</control>
 					<control type="radiobutton" id="104">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31005]</label>
