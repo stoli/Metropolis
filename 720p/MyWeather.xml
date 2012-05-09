@@ -307,7 +307,7 @@
 					<height>140</height>
 					<posx>30</posx>
 					<posy>10</posy>
-					<texture>$VAR[Weather_Icons_Day2</texture>
+					<texture>$VAR[Weather_Icons_Day2]</texture>
 				</control>
 				<control type="label">
 					<info>Window.Property(Day2.Title)</info>
