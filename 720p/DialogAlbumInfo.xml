@@ -156,6 +156,7 @@
 					<height>325</height>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
+					<align>justify</align>
 					<label fallback="161">$INFO[ListItem.Property(Album_Description)]</label>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Control.IsVisible(50)</visible>
@@ -299,6 +300,7 @@
 					<height>325</height>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
+					<align>justify</align>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Description)]</label>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<visible>!Control.IsVisible(50)</visible>

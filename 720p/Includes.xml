@@ -192,7 +192,7 @@
 					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
-					<align>left</align>
+					<align>justify</align>
 					<info>ListItem.Plot</info>
 					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<font>METF_PlotTextMedium</font>
@@ -204,7 +204,7 @@
 					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
-					<align>left</align>
+					<align>justify</align>
 					<info>ListItem.PlotOutline</info>
 					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<font>METF_PlotTextMedium</font>
@@ -220,7 +220,7 @@
 					<posy>557</posy>
 					<width>840</width>
 					<height>88</height>
-					<align>left</align>
+					<align>justify</align>
 					<info>ListItem.Plot</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<font>METF_PlotTextSmall</font>
@@ -232,7 +232,7 @@
 					<posy>557</posy>
 					<width>840</width>
 					<height>88</height>
-					<align>left</align>
+					<align>justify</align>
 					<info>ListItem.PlotOutline</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<font>METF_PlotTextSmall</font>
@@ -248,7 +248,7 @@
 					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
-					<align>left</align>
+					<align>justify</align>
 					<info>Container.ShowPlot</info>
 					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 					<font>METF_PlotTextMedium</font>
@@ -353,7 +353,7 @@
 				<posy>565</posy>
 				<width>750</width>
 				<height>135</height>
-				<align>left</align>
+				<align>justify</align>
 				<info>ListItem.Property(Artist_Description)</info>
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<font>METF_PlotTextMedium</font>
@@ -365,7 +365,7 @@
 				<posy>565</posy>
 				<width>750</width>
 				<height>135</height>
-				<align>left</align>
+				<align>justify</align>
 				<info>ListItem.Property(Album_Description)</info>
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<font>METF_PlotTextMedium</font>
