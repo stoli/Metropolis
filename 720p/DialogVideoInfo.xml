@@ -208,6 +208,7 @@
 				<posy>138</posy>
 				<width>515</width>
 				<height>339</height>
+				<align>justify</align>
 				<font>METF_PlotText</font>
 				<textcolor>TextNF</textcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
