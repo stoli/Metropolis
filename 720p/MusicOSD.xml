@@ -273,18 +273,11 @@
 					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
-					<onclick>XBMC.RunScript(script.cu.lyrics)</onclick>
-					<visible>IsEmpty(Skin.String(LyricPath))</visible>
-				</control>
-				<control type="button" id="17">
-					<description>Lyrics</description>
-					<height>52</height>
-					<width>52</width>
-					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
-					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
-					<onclick>Close</onclick>
 					<onclick>XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
-					<visible>Skin.HasSetting(LyricButton) + !IsEmpty(Skin.String(LyricPath))</visible>
+					<altclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</altclick>
+					<altclick>Close</altclick>
+					<altclick>XBMC.RunScript($INFO[Skin.String(LyricPath)])</altclick>
+					<usealttexture>IsEmpty(Skin.String(LyricPath))</usealttexture>
 				</control>
 				<control type="button" id="500">
 					<description>Visualisation Select Button</description>
