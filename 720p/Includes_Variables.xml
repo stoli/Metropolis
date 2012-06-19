@@ -18,7 +18,7 @@
 		<value condition="Control.HasFocus(171)">$INFO[Container(171).ListItem.Property(Fanart_Image)]</value>
 		<value condition="Control.HasFocus(181)">$INFO[Container(181).ListItem.Property(Fanart_Image)]</value>
 	</variable>	
-		<variable name="Weather_Icons_Current">
+	<variable name="Weather_Icons_Current">
 		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window.Property(Current.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
 		<value>$INFO[Window.Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</value>
 	</variable>
