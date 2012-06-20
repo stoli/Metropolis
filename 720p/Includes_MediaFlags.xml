@@ -158,7 +158,6 @@
 				<control type="group">
 					<posx>91</posx>
 					<posy>560</posy>
-					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<control type="image">
 						<posx>2</posx>
 						<posy>4</posy>
@@ -177,6 +176,7 @@
 						<info>ListItem.Rating</info>
 						<textcolor>MediaFlagDiffuse</textcolor>
 						<font>METF_StarRating</font>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="image">
 						<posx>-10</posx>
@@ -191,12 +191,19 @@
 				<control type="group">
 					<posx>2</posx>
 					<posy>622</posy>
-					<visible>!SubString(Container.FolderPath,plugin)</visible>
 					<control type="image">
 						<height>70</height>
 						<aspectratio aligny="center">keep</aspectratio>
 						<colordiffuse>MediaFlagDiffuse</colordiffuse>
 						<texture fallback="flags/default.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
+						<visible>!IsEmpty(ListItem.Studio)</visible>
+					</control>
+					<control type="image">
+						<height>70</height>
+						<aspectratio aligny="center">keep</aspectratio>
+						<colordiffuse>MediaFlagDiffuse</colordiffuse>
+						<texture>flags/default.png</texture>
+						<visible>IsEmpty(ListItem.Studio)</visible>
 					</control>
 					<control type="image">
 						<posx>10</posx>
