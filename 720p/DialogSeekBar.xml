@@ -1,6 +1,6 @@
 ﻿<window id="115">
 	<defaultcontrol>901</defaultcontrol>
-	<visible>Window.IsActive(fullscreenvideo) + !Window.IsActive(videoosd) + !Window.IsActive(fullscreeninfo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+	<visible>Window.IsActive(fullscreenvideo) + !Window.IsActive(videoosd) + !Window.IsActive(fullscreeninfo) + [!SubString(Window(Videos).Property(CinemaExperienceRunning),True) | [SubString(Window(Videos).Property(CinemaExperienceRunning),True) + !Player.Caching]] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 	<controls>
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
