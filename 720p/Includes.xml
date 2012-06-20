@@ -180,16 +180,15 @@
 	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
 	<include name="Global_VideoPlot">
 		<control type="group" id="9900">
-			<posx>0</posx>
+			<posx>200</posx>
+			<posy>565</posy>
 			<posy>0</posy>
 			<include>Animation_HiddenByInfo</include>
-			<visible>!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)</visible>
-			<!-- Regular Plot -->
+			<visible>!Skin.HasSetting(Hide_Plot) + [!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)]</visible>
+			<!-- Big Plot (Extra Media Info flags disabled) -->
 			<control type="group">
-				<visible>!Skin.HasSetting(ShowAllMediaFlags) | [Skin.HasSetting(ShowAllMediaFlags) + Container.Content(tvshows)] | [Skin.HasSetting(ShowAllMediaFlags) + SubString(Container.FolderPath,plugin)]</visible>
+				<visible>Skin.HasSetting(Hide_ExtraMediaFlags) | [!Skin.HasSetting(Hide_ExtraMediaFlags) + Container.Content(tvshows)] | [!Skin.HasSetting(Hide_ExtraMediaFlags) + SubString(Container.FolderPath,plugin)]</visible>
 				<control type="textbox">
-					<posx>220</posx>
-					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
 					<align>justify</align>
@@ -200,8 +199,6 @@
 					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 				<control type="textbox">
-					<posx>220</posx>
-					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
 					<align>justify</align>
@@ -212,14 +209,12 @@
 					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 			</control>
-			<!-- Plot Outline Option -->
+			<!-- Small Plot (Extra Media Info flags enabled) -->
 			<control type="group">
-				<visible>Skin.HasSetting(ShowAllMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
+				<visible>!Skin.HasSetting(Hide_ExtraMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
 				<control type="textbox">
-					<posx>220</posx>
-					<posy>557</posy>
 					<width>840</width>
-					<height>88</height>
+					<height>67</height>
 					<align>justify</align>
 					<info>ListItem.Plot</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -228,10 +223,8 @@
 					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 				<control type="textbox">
-					<posx>220</posx>
-					<posy>557</posy>
 					<width>840</width>
-					<height>88</height>
+					<height>67</height>
 					<align>justify</align>
 					<info>ListItem.PlotOutline</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -244,8 +237,6 @@
 			<control type="group">
 				<visible>Container.Content(seasons)</visible>
 				<control type="textbox">
-					<posx>220</posx>
-					<posy>565</posy>
 					<width>840</width>
 					<height>135</height>
 					<align>justify</align>

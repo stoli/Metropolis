@@ -6,7 +6,7 @@
 	<string id="31002">Home Artwork</string>
 	<string id="31003">Sub Menus</string>
 	<string id="31004">Debug</string>
-	<string id="31005">Scroll Plot</string>
+	<string id="31005">Enable auto scrolling for text that does not fit on-screen</string>
 	<string id="31006">Hidden</string>
 	<string id="31007">ON</string>
 	<string id="31008">Order</string>
@@ -15,7 +15,7 @@
 	<string id="31011">Metropolis</string>
 	<string id="31012">Increase Star Rating</string>
 	<string id="31021">Decrease Star Rating</string>
-	<string id="31024">Icon Home Layout</string>
+	<string id="31024">Icon Home layout</string>
 	<string id="31025">Horizontal Home Layout</string>
 	<string id="31026">Vertical Home Layout</string>
 	<string id="31027">Enable Home Backgrounds</string>
@@ -33,7 +33,7 @@
 	<string id="31053">Creator</string>
 	<string id="31054">Logo</string>
 	<string id="31055">Use TV Show Logos</string>
-	<string id="31056">Enable Cover Art Overlay</string>
+	<string id="31056">Enable Cover Art overlay</string>
 	<string id="31057">Hide Profiles</string>
 	<string id="31060">Show Recently Added Items</string>
 	<string id="31061">Apps (Click to open/close)</string>
@@ -81,8 +81,8 @@
 	<string id="31105">Hide Hibernate</string>
 	<string id="31106">Hide Logoff</string>
 	<string id="31107">Hide Info</string>
-	<string id="31108">Debug Mode</string>
-	<string id="31109">Debug Grid</string>
+	<string id="31108">Enable Debug Mode</string>
+	<string id="31109">Enable Debug Grid</string>
 	<string id="31113">View</string>
 	<string id="31114">Information</string>
 	<string id="31115">Get</string>
@@ -123,7 +123,7 @@
 	<string id="31200">Change Star Rating</string>
 	<string id="31207">Current</string>
 	<string id="31208">Last Updated:</string>
-	<string id="31210">Default Home Layout</string>
+	<string id="31210">Default Home layout</string>
 	<string id="31211">Adjust how XBMC handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</string>
 	<string id="31212">Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications.</string>
 	<string id="31213">Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions</string>
@@ -275,8 +275,8 @@
 	<string id="31398">Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music. </string>
 	<string id="31399">Hide Login Screen frames</string>
 	<string id="31400">Hide Current Temperature and Weather Conditions</string>
-	<string id="31402">Use plot outline if available (Info screen still shows full plot)</string>
-	<string id="31403">Show extra media flags in all views (not just Info screen)</string>
+	<string id="31402">Use Plot Summary in other views</string>
+	<string id="31403">Show extra Media Flags only in Info dialog</string>
 	<string id="31404">Tall Genre View: Hide Descriptions</string>
 	<string id="31405">Tall Genre View: Hide Icon Labels</string>
 	<string id="31406">Fanart Views: Classic Frame (Default is Segmented)</string>
@@ -300,17 +300,17 @@
 	<string id="31423">Author</string>
 	<string id="31424">Poster &amp; Fanart</string> 
 	<string id="31425">Use Thumbnail in Video OSD</string>
-	<string id="31426">Enable Next Aired Date Display</string>
+	<string id="31426">Enable Next Aired Date display</string>
 	<string id="31427">Next Episode</string>
 	<string id="31428">TV Guide</string>
 	<string id="31429">Display Path in Video Info instead of Rating details</string>
 	<string id="31430">Poster Large</string>
-	<string id="31431">Click to Reset Metropolis to Defaults</string>
+	<string id="31431">Click to reset Metropolis to defaults</string>
 	<string id="31432">Path to Music Library</string>
 	<string id="31433">Visualization: Use Fanart</string>
 	<string id="31434">Music Visualization Options</string>
 	<string id="31435">Visualization: Use Artist Slideshow</string>
-	<string id="31436">Use Slim Seekbar in Videos</string>
+	<string id="31436">Use Slim Seekbar</string>
 	<string id="31437">Enable TV Tunes script</string>
 	<string id="31438">Recent</string>
 	<string id="31439">Banner &amp; Poster</string> 
@@ -322,4 +322,5 @@
 	<string id="31445">Picture Settings</string>
 	<string id="31446">Fullscreen</string>
 	<string id="31447">Use Realistic Weather Icons</string>
+	<string id="31448">Show Plot only in Info dialog</string>
 </strings>
