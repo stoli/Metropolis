@@ -264,15 +264,6 @@
 						<selected>Skin.HasSetting(HomeWeather)</selected>
 						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
-					<control type="image" id="213">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="214">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31444]</label>
-						<onclick>Skin.ToggleSetting(NoRSS)</onclick>
-						<selected>Skin.HasSetting(NoRSS)</selected>
-					</control>
 				</control>
 				<!-- Home Items -->
 				<control type="grouplist" id="9012">
