@@ -3,19 +3,14 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="button" id="10">
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
+			<description>Default Trigger</description>
+			<onfocus>SetFocus(20)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<description>Trigger</description>
-			<onfocus>SetFocus(10)</onfocus>
-			<onfocus>ReplaceWindow(Home)</onfocus>
 			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
 		</control>
 		<control type="button" id="10">
-			<description>trigger with startup Playlist</description>
+			<description>Startup Playlist</description>
 			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
 			<onfocus>SetFocus(20)</onfocus>
 			<texturenofocus>-</texturenofocus>
@@ -23,26 +18,19 @@
 			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 		</control>
 		<control type="button" id="20">
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
+			<description>Default Trigger</description>
+			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<description>trigger</description>
-			<onfocus>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=25)</onfocus>
-			<onfocus>SetFocus(30)</onfocus>
+			<visible>!Skin.HasSetting(NextAired)</visible>
 		</control>
-		<control type="button" id="30">
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<description>trigger</description>
+		<control type="button" id="20">
+			<description>TV Show Next Aired</description>
 			<onfocus>RunScript(script.tv.show.next.aired,silent=True)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(NextAired)</visible>
 		</control>
 	</controls>
 </window>
