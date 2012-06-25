@@ -5,7 +5,7 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<visible>!Skin.HasSetting(home2)</visible>
-			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
 			<control type="image">
 				<posx>238</posx>
 				<posy>510</posy>
@@ -73,7 +73,7 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<visible>Skin.HasSetting(home2)</visible>
-			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
 			<control type="image">
 				<posx>625</posx>
 				<posy>45</posy>
@@ -140,7 +140,7 @@
 			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + !ControlGroup(9002).HasFocus()">conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">WindowClose</animation>
-			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + Skin.HasSetting(ShowRecentlyAdded)</visible>
+			<visible>[Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
 			<!-- Thumbnail -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
@@ -174,6 +174,7 @@
 					<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows) + [!Skin.HasSetting(home2) | Control.HasFocus(8001)]</visible>
 				</control>
 			</control>
+
 			<!-- Lists -->
 			<control type="group">
 				<posx>522</posx>
@@ -192,7 +193,8 @@
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
-					<include>RecentlyAddedMovieContents</include>
+					<include condition="Skin.HasSetting(ShowRecentlyAdded)">RecentlyAddedMovieContents</include>
+					<include condition="Skin.HasSetting(ShowRandomItems)">RandomMovieContents</include>
 				</control>
 			</control>
 			<control type="group">
@@ -212,12 +214,14 @@
 					<viewtype>list</viewtype>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
-					<include>RecentlyAddedTVShowContents</include>
+					<include condition="Skin.HasSetting(ShowRecentlyAdded)">RecentlyAddedTVShowContents</include>
+					<include condition="Skin.HasSetting(ShowRandomItems)">RandomTVShowContents</include>
 				</control>
 			</control>
 		</control>
 	</include>
-	<include name="RecentlyAddedMovieContents">
+
+	<include name="Global_MovieDeck">
 		<visible>Container(9000).HasFocus(4) + Library.HasContent(Movies)</visible>
 		<itemlayout width="510" height="27">
 			<control type="label">
@@ -262,6 +266,56 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</focusedlayout>
+	</include>
+	<include name="Global_TVShowDeck">
+		<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows)</visible>
+		<itemlayout width="510" height="27">
+			<control type="label">
+				<posx>10</posx>
+				<posy>-2</posy>
+				<width>500</width>
+				<height>27</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>20</scrollspeed>
+				<font>METF_RecentlyAddedListText</font>
+				<textcolor>RecentlyAddedNF</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</itemlayout>
+		<focusedlayout width="510" height="27">
+			<!-- Focus Bar -->
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>510</width>
+				<height>27</height>
+				<aligny>center</aligny>
+				<texture>FocusLine.png</texture>
+				<colordiffuse>FocusBar</colordiffuse>
+				<visible>Control.HasFocus(8001)</visible>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>-2</posy>
+				<width>500</width>
+				<height>27</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>20</scrollspeed>
+				<font>METF_RecentlyAddedListText</font>
+				<textcolor>FocusBarText</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</focusedlayout>
+	</include>
+
+	<include name="RecentlyAddedMovieContents">
+		<include>Global_MovieDeck</include>
 		<content>
 			<item id="1">
 				<description>Recently Added Movie 1</description>
@@ -346,50 +400,7 @@
 		</content>
 	</include>
 	<include name="RecentlyAddedTVShowContents">
-		<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows)</visible>
-		<itemlayout width="510" height="27">
-			<control type="label">
-				<posx>10</posx>
-				<posy>-2</posy>
-				<width>500</width>
-				<height>27</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<scrollout>false</scrollout>
-				<pauseatend>600</pauseatend>
-				<scrollspeed>20</scrollspeed>
-				<font>METF_RecentlyAddedListText</font>
-				<textcolor>RecentlyAddedNF</textcolor>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
-		</itemlayout>
-		<focusedlayout width="510" height="27">
-			<!-- Focus Bar -->
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>510</width>
-				<height>27</height>
-				<aligny>center</aligny>
-				<texture>FocusLine.png</texture>
-				<colordiffuse>FocusBar</colordiffuse>
-				<visible>Control.HasFocus(8001)</visible>
-			</control>
-			<control type="label">
-				<posx>10</posx>
-				<posy>-2</posy>
-				<width>500</width>
-				<height>27</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<scrollout>false</scrollout>
-				<pauseatend>600</pauseatend>
-				<scrollspeed>20</scrollspeed>
-				<font>METF_RecentlyAddedListText</font>
-				<textcolor>FocusBarText</textcolor>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
-		</focusedlayout>
+		<include>Global_TVShowDeck</include>
 		<content>
 			<item id="1">
 				<description>Recently Added Episode 1</description>
@@ -470,6 +481,177 @@
 				<thumb>$INFO[Window.Property(LatestEpisode.10.Thumb)]</thumb>
 				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.10.Path)])</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.10.Path))</visible>
+			</item>
+		</content>
+	</include>
+
+	<include name="RandomMovieContents">
+		<include>Global_MovieDeck</include>
+		<content>
+			<item id="1">
+				<description>Random Movie 1</description>
+				<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.1.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.1.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.1.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.1.Path))</visible>
+			</item>
+			<item id="2">
+				<description>Random Movie 2</description>
+				<label>$INFO[Window.Property(RandomMovie.2.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.2.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.2.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.2.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.2.Path))</visible>
+			</item>
+			<item id="3">
+				<description>Random Movie 3</description>
+				<label>$INFO[Window.Property(RandomMovie.3.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.3.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.3.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.3.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.3.Path))</visible>
+			</item>
+			<item id="4">
+				<description>Random Movie 4</description>
+				<label>$INFO[Window.Property(RandomMovie.4.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.4.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.4.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.4.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.4.Path))</visible>
+			</item>
+			<item id="5">
+				<description>Random Movie 5</description>
+				<label>$INFO[Window.Property(RandomMovie.5.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.5.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.5.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.5.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.5.Path))</visible>
+			</item>
+			<item id="6">
+				<description>Random Movie 6</description>
+				<label>$INFO[Window.Property(RandomMovie.6.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.6.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.6.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.6.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.6.Path))</visible>
+			</item>
+			<item id="7">
+				<description>Random Movie 7</description>
+				<label>$INFO[Window.Property(RandomMovie.7.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.7.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.7.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.7.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.7.Path))</visible>
+			</item>
+			<item id="8">
+				<description>Random Movie 8</description>
+				<label>$INFO[Window.Property(RandomMovie.8.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.8.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.8.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.8.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.8.Path))</visible>
+			</item>
+			<item id="9">
+				<description>Random Movie 9</description>
+				<label>$INFO[Window.Property(RandomMovie.9.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.9.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.9.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.9.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.9.Path))</visible>
+			</item>
+			<item id="10">
+				<description>Random Movie 10</description>
+				<label>$INFO[Window.Property(RandomMovie.10.Title)]</label>
+				<icon>$INFO[Window.Property(RandomMovie.10.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(RandomMovie.10.Fanart)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.10.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomMovie.10.Path))</visible>
+			</item>
+		</content>
+	</include>
+	<include name="RandomTVShowContents">
+		<include>Global_TVShowDeck</include>
+		<content>
+			<item id="1">
+				<description>Random Episode 1</description>
+				<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)] $INFO[Window.Property(RandomEpisode.1.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.1.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.1.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.1.Path))</visible>
+			</item>
+			<item id="2">
+				<description>Random Episode 2</description>
+				<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)] $INFO[Window.Property(RandomEpisode.2.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.2.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.2.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.2.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.2.Path))</visible>
+			</item>
+			<item id="3">
+				<description>Random Episode 3</description>
+				<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)] $INFO[Window.Property(RandomEpisode.3.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.3.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.3.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.3.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.3.Path))</visible>
+			</item>
+			<item id="4">
+				<description>Random Episode 4</description>
+				<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)] $INFO[Window.Property(RandomEpisode.4.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.4.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.4.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.4.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.4.Path))</visible>
+			</item>
+			<item id="5">
+				<description>Random Episode 5</description>
+				<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)] $INFO[Window.Property(RandomEpisode.5.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.5.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.5.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.5.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.5.Path))</visible>
+			</item>
+			<item id="6">
+				<description>Random Episode 6</description>
+				<label>$INFO[Window.Property(RandomEpisode.6.ShowTitle)] $INFO[Window.Property(RandomEpisode.6.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.6.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.6.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.6.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.6.Path))</visible>
+			</item>
+			<item id="7">
+				<description>Random Episode 7</description>
+				<label>$INFO[Window.Property(RandomEpisode.7.ShowTitle)] $INFO[Window.Property(RandomEpisode.7.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.7.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.7.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.7.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.7.Path))</visible>
+			</item>
+			<item id="8">
+				<description>Random Episode 8</description>
+				<label>$INFO[Window.Property(RandomEpisode.8.ShowTitle)] $INFO[Window.Property(RandomEpisode.8.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.8.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.8.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.8.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.8.Path))</visible>
+			</item>
+			<item id="9">
+				<description>Random Episode 9</description>
+				<label>$INFO[Window.Property(RandomEpisode.9.ShowTitle)] $INFO[Window.Property(RandomEpisode.9.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.9.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.9.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.9.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.9.Path))</visible>
+			</item>
+			<item id="10">
+				<description>Random Episode 10</description>
+				<label>$INFO[Window.Property(RandomEpisode.10.ShowTitle)] $INFO[Window.Property(RandomEpisode.10.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.10.EpisodeTitle)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(RandomEpisode.10.Thumb)]</thumb>
+				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.10.Path)])</onclick>
+				<visible>!IsEmpty(Window.Property(RandomEpisode.10.Path))</visible>
 			</item>
 		</content>
 	</include>

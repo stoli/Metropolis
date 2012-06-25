@@ -41,7 +41,7 @@
 	-->
 	
 	<include name="Home2_Icons">
-		<include condition="Skin.HasSetting(ShowRecentlyAdded)">HomeRecentlyAddedInfo</include>
+		<include condition="Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)">HomeRecentlyAddedInfo</include>
 		<control type="button" id="9002">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<posx>-20</posx>
