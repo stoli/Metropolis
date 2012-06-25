@@ -2,12 +2,12 @@
 	<include name="MediaInfo2">
 		<!-- Additional Media Flags -->
 		<control type="group" id="9902">
-			<posx>171</posx>
+			<posx>40</posx>
 			<posy>3</posy>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseFade</include>
-			<animation effect="slide" start="0,0" end="35,0" time="300" condition="Skin.HasSetting(ShowAllMediaFlags) + !Window.IsActive(movieinformation)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="130,0" time="300" condition="Window.IsActive(movieinformation)">Conditional</animation>
 			<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
 			<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
 			<!-- IMDB Flag -->
