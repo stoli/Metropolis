@@ -207,15 +207,15 @@
 						<onclick>Skin.Reset(Home1)</onclick>
 						<selected>Skin.HasSetting(Home2)</selected>
 					</control>
-					<control type="image" id="203">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="203">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31322]</label>
 						<onclick>Skin.ToggleSetting(HomeStats)</onclick>
 						<selected>Skin.HasSetting(HomeStats)</selected>
 						<visible>!Skin.HasSetting(Home2)</visible>
+					</control>
+					<control type="image" id="204">
+						<include>Settings_Line</include>
 					</control>
 					<control type="radiobutton" id="205">
 						<include>SettingsLabel</include>
