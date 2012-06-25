@@ -41,7 +41,7 @@
 	<include name="Global_Background">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture fallback="background.png">$INFO[Skin.String(CustomBackground)]</texture>
+			<texture background="true" fallback="background.png">$INFO[Skin.String(CustomBackground)]</texture>
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
@@ -49,7 +49,7 @@
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture fallback="background.png" diffuse="diffuse_fanart.png">$INFO[Skin.String(CustomBackground)]</texture>
+			<texture background="true" fallback="background.png" diffuse="diffuse_fanart.png">$INFO[Skin.String(CustomBackground)]</texture>
 			<colordiffuse>GlobalContextColour</colordiffuse>
 			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(yesnodialog) | Window.IsActive(contextmenu) | Window.IsActive(contentsettings) | Window.IsActive(favourites) | Window.IsActive(mediasource) | Window.IsActive(addonsettings) | Window.IsActive(okdialog) | Window.IsActive(pictureinfo) | Window.IsActive(songinformation)</visible>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
@@ -450,21 +450,21 @@
 		</control>
 	</include>
 	<!-- Heading info for various screens -->
-	<include name="Global_HeadingSectionVars">
-		<width>750</width>
-		<height>30</height>
-		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
-		<align>left</align>
-		<aligny>center</aligny>
-		<include>Animation_HiddenByInfo</include>
-	</include>
 	<include name="Global_NextAired">
 		<width>1920</width>
 		<height>30</height>
 		<font>METF_Heading</font>
 		<textcolor>GlobalHeading</textcolor>
 		<align>center</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
+	<include name="Global_HeadingSectionVars">
+		<width>750</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>left</align>
 		<aligny>center</aligny>
 		<include>Animation_HiddenByInfo</include>
 	</include>
