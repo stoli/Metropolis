@@ -62,12 +62,12 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<include>MediaInfo</include>
-			<include condition="Skin.HasSetting(ShowAllMediaFlags)">MediaInfo2</include>
+			<include condition="!Skin.HasSetting(Hide_ExtraMediaFlags)">MediaInfo2</include>
 		</control>
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<include>Global_VideoPlot</include>
+			<include condition="!Skin.HasSetting(Hide_Plot)">Global_VideoPlot</include>
 		</control>
 		<!-- Video Navigation Menu -->		
 		<control type="group">

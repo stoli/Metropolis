@@ -372,32 +372,39 @@
 					</control>
 					<control type="radiobutton" id="504">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31402]</label>
-						<onclick>Skin.ToggleSetting(Show_PlotOutline)</onclick>
-						<selected>Skin.HasSetting(Show_PlotOutline)</selected>
+						<label>$LOCALIZE[31448]</label>
+						<onclick>Skin.ToggleSetting(Hide_Plot)</onclick>
+						<selected>Skin.HasSetting(Hide_Plot)</selected>
 					</control>
 					<control type="radiobutton" id="505">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31403]</label>
-						<onclick>Skin.ToggleSetting(ShowAllMediaFlags)</onclick>
-						<selected>Skin.HasSetting(ShowAllMediaFlags)</selected>
+						<label>$LOCALIZE[31402]</label>
+						<onclick>Skin.ToggleSetting(Show_PlotOutline)</onclick>
+						<selected>Skin.HasSetting(Show_PlotOutline)</selected>
+						<visible>!Skin.HasSetting(Hide_Plot)</visible>
 					</control>
-					<control type="image" id="506">
+					<control type="radiobutton" id="506">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31403]</label>
+						<onclick>Skin.ToggleSetting(Hide_ExtraMediaFlags)</onclick>
+						<selected>Skin.HasSetting(Hide_ExtraMediaFlags)</selected>
+					</control>
+					<control type="image" id="507">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="507">
+					<control type="radiobutton" id="508">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31406]</label>
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
-					<control type="radiobutton" id="508">
+					<control type="radiobutton" id="509">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31404]</label>
 						<onclick>Skin.ToggleSetting(HideGenreDescriptions)</onclick>
 						<selected>Skin.HasSetting(HideGenreDescriptions)</selected>
 					</control>
-					<control type="radiobutton" id="509">
+					<control type="radiobutton" id="510">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(HideGenreIconLabels)</onclick>
