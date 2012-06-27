@@ -316,7 +316,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<control type="image">
-					<posx>374</posx>
+					<posx>265</posx>
 					<posy>560</posy>
 					<width>140</width>
 					<height>140</height>
@@ -375,14 +375,14 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>522</posx>
+				<posx>413</posx>
 				<posy>563</posy>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<control type="list" id="8002">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>510</width>
+					<width>619</width>
 					<height>135</height>
 					<onup>8002</onup>
 					<ondown>8002</ondown>
@@ -493,11 +493,11 @@
 	</include>
 	<include name="Global_MusicDeck">
 		<visible>Container(9000).HasFocus(3) + Library.HasContent(Music)</visible>
-		<itemlayout width="510" height="27">
+		<itemlayout width="620" height="27">
 			<control type="label">
 				<posx>10</posx>
 				<posy>-2</posy>
-				<width>500</width>
+				<width>609</width>
 				<height>27</height>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -509,12 +509,12 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout width="510" height="27">
+		<focusedlayout width="620" height="27">
 			<!-- Focus Bar -->
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>510</width>
+				<width>619</width>
 				<height>27</height>
 				<aligny>center</aligny>
 				<texture>FocusLine.png</texture>
@@ -524,7 +524,7 @@
 			<control type="label">
 				<posx>10</posx>
 				<posy>-2</posy>
-				<width>500</width>
+				<width>609</width>
 				<height>27</height>
 				<align>left</align>
 				<aligny>center</aligny>
