@@ -133,41 +133,35 @@
 					<onright>9000</onright>
 					<control type="radiobutton" id="101">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31399]</label>
-						<onclick>Skin.ToggleSetting(HideLoginFrames)</onclick>
-						<selected>Skin.HasSetting(HideLoginFrames)</selected>
-					</control>
-					<control type="radiobutton" id="102">
-						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31400]</label>
 						<onclick>Skin.ToggleSetting(HideClockTemp)</onclick>
 						<selected>Skin.HasSetting(HideClockTemp)</selected>
 					</control>
-					<control type="radiobutton" id="103">
+					<control type="radiobutton" id="102">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31447]</label>
 						<onclick>Skin.ToggleSetting(WeatherIcons2)</onclick>
 						<selected>Skin.HasSetting(WeatherIcons2)</selected>
 					</control>
-					<control type="radiobutton" id="104">
+					<control type="radiobutton" id="103">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31005]</label>
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="105">
+					<control type="radiobutton" id="104">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31336]</label>
 						<onclick>Skin.ToggleSetting(ViewLockdown)</onclick>
 						<selected>Skin.HasSetting(ViewLockdown)</selected>
 					</control>
-					<control type="radiobutton" id="106">
+					<control type="radiobutton" id="105">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[21398]</label>
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="107">
+					<control type="button" id="106">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>$LOCALIZE[15311]</label>
