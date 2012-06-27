@@ -5,15 +5,18 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<visible>!Skin.HasSetting(home2)</visible>
-			<visible>[Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
-			<control type="image">
-				<posx>238</posx>
-				<posy>510</posy>
-				<width>30</width>
-				<height>30</height>
-				<texture>ArrowLeft.png</texture>
-				<colordiffuse>HelpArrowDiffuse</colordiffuse>
-				<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+			<visible>Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems) | Skin.HasSetting(ShowWatchlist)</visible>
+				<control type="image">
+					<posx>238</posx>
+					<posy>510</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>ArrowLeft.png</texture>
+					<colordiffuse>HelpArrowDiffuse</colordiffuse>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+				</control>
 			</control>
 			<!-- Recently Added Movies -->
 			<control type="label">
@@ -26,7 +29,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20386][/B]</label>
-				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Movies -->
 			<control type="label">
@@ -41,6 +44,19 @@
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
 				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
+			<!-- Recommended Movies -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[20342][/B]</label>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowWatchlist)</visible>
+			</control>
 			<!-- Recently Added Episodes -->
 			<control type="label">
 				<posx>270</posx>
@@ -52,7 +68,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20387][/B]</label>
-				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Episodes -->
 			<control type="label">
@@ -67,6 +83,19 @@
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
 				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
+			<!-- Recommended Episodes -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[20360][/B]</label>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowWatchlist)</visible>
+			</control>
 			<!-- Recently Added Albums -->
 			<control type="label">
 				<posx>270</posx>
@@ -78,7 +107,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[359][/B]</label>
-				<visible>Container(9000).HasFocus(3) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Albums -->
 			<control type="label">
@@ -92,6 +121,19 @@
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[590] $LOCALIZE[132][/B]</label>
 				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowRandomItems)</visible>
+			</control>
+			<!-- Recommended Albums -->
+			<control type="label">
+				<posx>270</posx>
+				<posy>513</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[132][/B]</label>
+				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowWatchlist)</visible>
 			</control>
 		</control>
 		<!-- Submenu title for icon home view -->
@@ -99,15 +141,18 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<visible>Skin.HasSetting(home2)</visible>
-			<visible>[Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
-			<control type="image">
-				<posx>625</posx>
-				<posy>45</posy>
-				<width>30</width>
-				<height>30</height>
-				<texture>ArrowUp.png</texture>
-				<colordiffuse>HelpArrowDiffuse</colordiffuse>
-				<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+			<visible>Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems) | Skin.HasSetting(ShowWatchlist)</visible>
+				<control type="image">
+					<posx>625</posx>
+					<posy>45</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>ArrowUp.png</texture>
+					<colordiffuse>HelpArrowDiffuse</colordiffuse>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+				</control>
 			</control>
 			<!-- Recently Added Movies -->
 			<control type="label">
@@ -120,7 +165,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20386][/B]</label>
-				<visible>Container(9000).HasFocus(4) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Movies -->
 			<control type="label">
@@ -135,6 +180,19 @@
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20342][/B]</label>
 				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
+			<!-- Recommended Movies -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[20342][/B]</label>
+				<visible>Container(9000).HasFocus(4) + Skin.HasSetting(ShowWatchlist)</visible>
+			</control>
 			<!-- Recently Added Episodes -->
 			<control type="label">
 				<posx>355</posx>
@@ -146,7 +204,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[20387][/B]</label>
-				<visible>Container(9000).HasFocus(5) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Episodes -->
 			<control type="label">
@@ -161,6 +219,19 @@
 				<label>[B]$LOCALIZE[590] $LOCALIZE[20360][/B]</label>
 				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
+			<!-- Recommended Episodes -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[20360][/B]</label>
+				<visible>Container(9000).HasFocus(5) + Skin.HasSetting(ShowWatchlist)</visible>
+			</control>
 			<!-- Recently Added Albums -->
 			<control type="label">
 				<posx>355</posx>
@@ -172,7 +243,7 @@
 				<font>METF_RecentlyAddedTitle</font>
 				<textcolor>HomeMenuText</textcolor>
 				<label>[B]$LOCALIZE[359][/B]</label>
-				<visible>Container(9000).HasFocus(3) + !Skin.HasSetting(ShowRandomItems)</visible>
+				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowRecentlyAdded)</visible>
 			</control>
 			<!-- Random Albums -->
 			<control type="label">
@@ -187,12 +258,27 @@
 				<label>[B]$LOCALIZE[590] $LOCALIZE[132][/B]</label>
 				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowRandomItems)</visible>
 			</control>
+			<!-- Recommended Albums -->
+			<control type="label">
+				<posx>355</posx>
+				<posy>75</posy>
+				<width>570</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_RecentlyAddedTitle</font>
+				<textcolor>HomeMenuText</textcolor>
+				<label>[B]$LOCALIZE[31451] $LOCALIZE[132][/B]</label>
+				<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowWatchlist)</visible>
+			</control>
 		</control>
+
 		<control type="group" id="9002">
 			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + !ControlGroup(9002).HasFocus()">conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(home2) + ControlGroup(9002).HasFocus()">WindowClose</animation>
-			<visible>[Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
+			<visible>Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5)</visible>
+			<visible>Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems) | Skin.HasSetting(ShowWatchlist)</visible>
 			<!-- Thumbnail -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
@@ -263,6 +349,7 @@
 					<scrolltime>200</scrolltime>
 					<include condition="Skin.HasSetting(ShowRecentlyAdded)">RecentlyAddedMovieContents</include>
 					<include condition="Skin.HasSetting(ShowRandomItems)">RandomMovieContents</include>
+					<include condition="Skin.HasSetting(ShowWatchlist)">WatchlistMovieContents</include>
 				</control>
 			</control>
 			<control type="group">
@@ -284,6 +371,7 @@
 					<scrolltime>200</scrolltime>
 					<include condition="Skin.HasSetting(ShowRecentlyAdded)">RecentlyAddedTVShowContents</include>
 					<include condition="Skin.HasSetting(ShowRandomItems)">RandomTVShowContents</include>
+					<include condition="Skin.HasSetting(ShowWatchlist)">WatchlistTVShowContents</include>
 				</control>
 			</control>
 			<control type="group">
@@ -305,6 +393,7 @@
 					<scrolltime>200</scrolltime>
 					<include condition="Skin.HasSetting(ShowRecentlyAdded)">RecentlyAddedAlbumContents</include>
 					<include condition="Skin.HasSetting(ShowRandomItems)">RandomAlbumContents</include>
+					<include condition="Skin.HasSetting(ShowWatchlist)">WatchlistAlbumContents</include>
 				</control>
 			</control>
 		</control>
@@ -457,7 +546,7 @@
 				<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.1.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.1.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.1.Path))</visible>
 			</item>
 			<item id="2">
@@ -465,7 +554,7 @@
 				<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.2.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.2.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.2.Path))</visible>
 			</item>
 			<item id="3">
@@ -473,7 +562,7 @@
 				<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.3.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.3.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.3.Path))</visible>
 			</item>
 			<item id="4">
@@ -481,7 +570,7 @@
 				<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.4.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.4.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.4.Path))</visible>
 			</item>
 			<item id="5">
@@ -489,7 +578,7 @@
 				<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.5.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.5.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.5.Path))</visible>
 			</item>
 			<item id="6">
@@ -497,7 +586,7 @@
 				<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.6.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.6.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.6.Path))</visible>
 			</item>
 			<item id="7">
@@ -505,7 +594,7 @@
 				<label>$INFO[Window.Property(LatestMovie.7.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.7.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.7.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.7.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.7.Path))</visible>
 			</item>
 			<item id="8">
@@ -513,7 +602,7 @@
 				<label>$INFO[Window.Property(LatestMovie.8.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.8.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.8.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.8.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.8.Path))</visible>
 			</item>
 			<item id="9">
@@ -521,7 +610,7 @@
 				<label>$INFO[Window.Property(LatestMovie.9.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.9.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.9.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.9.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.9.Path))</visible>
 			</item>
 			<item id="10">
@@ -529,7 +618,7 @@
 				<label>$INFO[Window.Property(LatestMovie.10.Title)]</label>
 				<icon>$INFO[Window.Property(LatestMovie.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.10.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.10.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestMovie.10.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestMovie.10.Path))</visible>
 			</item>
 		</content>
@@ -542,7 +631,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)] $INFO[Window.Property(LatestEpisode.1.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.1.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.1.Path))</visible>
 			</item>
 			<item id="2">
@@ -550,7 +639,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)] $INFO[Window.Property(LatestEpisode.2.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.2.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.2.Path))</visible>
 			</item>
 			<item id="3">
@@ -558,7 +647,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)] $INFO[Window.Property(LatestEpisode.3.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.3.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.3.Path))</visible>
 			</item>
 			<item id="4">
@@ -566,7 +655,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)] $INFO[Window.Property(LatestEpisode.4.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.4.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.4.Path))</visible>
 			</item>
 			<item id="5">
@@ -574,7 +663,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)] $INFO[Window.Property(LatestEpisode.5.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.5.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.5.Path))</visible>
 			</item>
 			<item id="6">
@@ -582,7 +671,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.6.ShowTitle)] $INFO[Window.Property(LatestEpisode.6.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.6.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.6.Path))</visible>
 			</item>
 			<item id="7">
@@ -590,7 +679,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.7.ShowTitle)] $INFO[Window.Property(LatestEpisode.7.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.7.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.7.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.7.Path))</visible>
 			</item>
 			<item id="8">
@@ -598,7 +687,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.8.ShowTitle)] $INFO[Window.Property(LatestEpisode.8.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.8.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.8.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.8.Path))</visible>
 			</item>
 			<item id="9">
@@ -606,7 +695,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.9.ShowTitle)] $INFO[Window.Property(LatestEpisode.9.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.9.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.9.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.9.Path))</visible>
 			</item>
 			<item id="10">
@@ -614,7 +703,7 @@
 				<label>$INFO[Window.Property(LatestEpisode.10.ShowTitle)] $INFO[Window.Property(LatestEpisode.10.EpisodeNo)] - $INFO[Window.Property(LatestEpisode.10.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(LatestEpisode.10.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.10.Path)])</onclick>
+				<onclick>$INFO[Window.Property(LatestEpisode.10.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.10.Path))</visible>
 			</item>
 		</content>
@@ -713,7 +802,7 @@
 				<label>$INFO[Window.Property(RandomMovie.1.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.1.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.1.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.1.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.1.Path))</visible>
 			</item>
 			<item id="2">
@@ -721,7 +810,7 @@
 				<label>$INFO[Window.Property(RandomMovie.2.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.2.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.2.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.2.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.2.Path))</visible>
 			</item>
 			<item id="3">
@@ -729,7 +818,7 @@
 				<label>$INFO[Window.Property(RandomMovie.3.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.3.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.3.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.3.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.3.Path))</visible>
 			</item>
 			<item id="4">
@@ -737,7 +826,7 @@
 				<label>$INFO[Window.Property(RandomMovie.4.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.4.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.4.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.4.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.4.Path))</visible>
 			</item>
 			<item id="5">
@@ -745,7 +834,7 @@
 				<label>$INFO[Window.Property(RandomMovie.5.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.5.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.5.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.5.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.5.Path))</visible>
 			</item>
 			<item id="6">
@@ -753,7 +842,7 @@
 				<label>$INFO[Window.Property(RandomMovie.6.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.6.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.6.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.6.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.6.Path))</visible>
 			</item>
 			<item id="7">
@@ -761,7 +850,7 @@
 				<label>$INFO[Window.Property(RandomMovie.7.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.7.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.7.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.7.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.7.Path))</visible>
 			</item>
 			<item id="8">
@@ -769,7 +858,7 @@
 				<label>$INFO[Window.Property(RandomMovie.8.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.8.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.8.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.8.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.8.Path))</visible>
 			</item>
 			<item id="9">
@@ -777,7 +866,7 @@
 				<label>$INFO[Window.Property(RandomMovie.9.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.9.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.9.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.9.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.9.Path))</visible>
 			</item>
 			<item id="10">
@@ -785,7 +874,7 @@
 				<label>$INFO[Window.Property(RandomMovie.10.Title)]</label>
 				<icon>$INFO[Window.Property(RandomMovie.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RandomMovie.10.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomMovie.10.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomMovie.10.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomMovie.10.Path))</visible>
 			</item>
 		</content>
@@ -798,7 +887,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)] $INFO[Window.Property(RandomEpisode.1.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.1.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.1.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.1.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.1.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.1.Path))</visible>
 			</item>
 			<item id="2">
@@ -806,7 +895,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)] $INFO[Window.Property(RandomEpisode.2.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.2.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.2.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.2.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.2.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.2.Path))</visible>
 			</item>
 			<item id="3">
@@ -814,7 +903,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.3.ShowTitle)] $INFO[Window.Property(RandomEpisode.3.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.3.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.3.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.3.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.3.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.3.Path))</visible>
 			</item>
 			<item id="4">
@@ -822,7 +911,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.4.ShowTitle)] $INFO[Window.Property(RandomEpisode.4.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.4.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.4.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.4.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.4.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.4.Path))</visible>
 			</item>
 			<item id="5">
@@ -830,7 +919,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.5.ShowTitle)] $INFO[Window.Property(RandomEpisode.5.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.5.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.5.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.5.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.5.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.5.Path))</visible>
 			</item>
 			<item id="6">
@@ -838,7 +927,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.6.ShowTitle)] $INFO[Window.Property(RandomEpisode.6.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.6.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.6.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.6.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.6.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.6.Path))</visible>
 			</item>
 			<item id="7">
@@ -846,7 +935,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.7.ShowTitle)] $INFO[Window.Property(RandomEpisode.7.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.7.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.7.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.7.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.7.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.7.Path))</visible>
 			</item>
 			<item id="8">
@@ -854,7 +943,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.8.ShowTitle)] $INFO[Window.Property(RandomEpisode.8.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.8.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.8.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.8.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.8.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.8.Path))</visible>
 			</item>
 			<item id="9">
@@ -862,7 +951,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.9.ShowTitle)] $INFO[Window.Property(RandomEpisode.9.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.9.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.9.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.9.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.9.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.9.Path))</visible>
 			</item>
 			<item id="10">
@@ -870,7 +959,7 @@
 				<label>$INFO[Window.Property(RandomEpisode.10.ShowTitle)] $INFO[Window.Property(RandomEpisode.10.EpisodeNo)] - $INFO[Window.Property(RandomEpisode.10.EpisodeTitle)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window.Property(RandomEpisode.10.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window.Property(RandomEpisode.10.Path)])</onclick>
+				<onclick>$INFO[Window.Property(RandomEpisode.10.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomEpisode.10.Path))</visible>
 			</item>
 		</content>
@@ -957,6 +1046,262 @@
 				<thumb>$INFO[Window.Property(RandomAlbum.10.Thumb)]</thumb>
 				<onclick>$INFO[Window.Property(RandomAlbum.10.Path)]</onclick>
 				<visible>!IsEmpty(Window.Property(RandomAlbum.10.Path))</visible>
+			</item>
+		</content>
+	</include>
+
+	<include name="WatchlistMovieContents">
+		<include>Global_MovieDeck</include>
+		<content>
+			<item id="1">
+				<description>Watchlist Movie 1</description>
+				<label>$INFO[Window.Property(WatchList_Movie.1.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.1.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.1.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.1.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.1.Path))</visible>
+			</item>
+			<item id="2">
+				<description>Watchlist Movie 2</description>
+				<label>$INFO[Window.Property(WatchList_Movie.2.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.2.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.2.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.2.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.2.Path))</visible>
+			</item>
+			<item id="3">
+				<description>Watchlist Movie 3</description>
+				<label>$INFO[Window.Property(WatchList_Movie.3.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.3.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.3.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.3.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.3.Path))</visible>
+			</item>
+			<item id="4">
+				<description>Watchlist Movie 4</description>
+				<label>$INFO[Window.Property(WatchList_Movie.4.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.4.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.4.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.4.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.4.Path))</visible>
+			</item>
+			<item id="5">
+				<description>Watchlist Movie 5</description>
+				<label>$INFO[Window.Property(WatchList_Movie.5.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.5.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.5.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.5.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.5.Path))</visible>
+			</item>
+			<item id="6">
+				<description>Watchlist Movie 6</description>
+				<label>$INFO[Window.Property(WatchList_Movie.6.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.6.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.6.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.6.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.6.Path))</visible>
+			</item>
+			<item id="7">
+				<description>Watchlist Movie 7</description>
+				<label>$INFO[Window.Property(WatchList_Movie.7.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.7.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.7.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.7.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.7.Path))</visible>
+			</item>
+			<item id="8">
+				<description>Watchlist Movie 8</description>
+				<label>$INFO[Window.Property(WatchList_Movie.8.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.8.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.8.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.8.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.8.Path))</visible>
+			</item>
+			<item id="9">
+				<description>Watchlist Movie 9</description>
+				<label>$INFO[Window.Property(WatchList_Movie.9.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.9.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.9.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.9.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.9.Path))</visible>
+			</item>
+			<item id="10">
+				<description>Watchlist Movie 10</description>
+				<label>$INFO[Window.Property(WatchList_Movie.10.Label)]</label>
+				<icon>$INFO[Window.Property(WatchList_Movie.10.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(WatchList_Movie.10.Fanart)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Movie.10.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.10.Path))</visible>
+			</item>
+		</content>
+	</include>
+	<include name="WatchlistTVShowContents">
+		<include>Global_TVShowDeck</include>
+		<content>
+			<item id="1">
+				<description>Watchlist Episode 1</description>
+				<label>$INFO[Window.Property(WatchList_Episode.1.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.1.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.1.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.1.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.1.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.1.Path))</visible>
+			</item>
+			<item id="2">
+				<description>Watchlist Episode 2</description>
+				<label>$INFO[Window.Property(WatchList_Episode.2.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.2.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.2.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.2.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.2.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.2.Path))</visible>
+			</item>
+			<item id="3">
+				<description>Watchlist Episode 3</description>
+				<label>$INFO[Window.Property(WatchList_Episode.3.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.3.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.3.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.3.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.3.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.3.Path))</visible>
+			</item>
+			<item id="4">
+				<description>Watchlist Episode 4</description>
+				<label>$INFO[Window.Property(WatchList_Episode.4.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.4.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.4.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.4.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.4.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.4.Path))</visible>
+			</item>
+			<item id="5">
+				<description>Watchlist Episode 5</description>
+				<label>$INFO[Window.Property(WatchList_Episode.5.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.5.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.5.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.5.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.5.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.5.Path))</visible>
+			</item>
+			<item id="6">
+				<description>Watchlist Episode 6</description>
+				<label>$INFO[Window.Property(WatchList_Episode.6.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.6.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.6.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.6.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.6.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.6.Path))</visible>
+			</item>
+			<item id="7">
+				<description>Watchlist Episode 7</description>
+				<label>$INFO[Window.Property(WatchList_Episode.7.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.7.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.7.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.7.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.7.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.7.Path))</visible>
+			</item>
+			<item id="8">
+				<description>Watchlist Episode 8</description>
+				<label>$INFO[Window.Property(WatchList_Episode.8.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.8.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.8.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.8.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.8.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.8.Path))</visible>
+			</item>
+			<item id="9">
+				<description>Watchlist Episode 9</description>
+				<label>$INFO[Window.Property(WatchList_Episode.9.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.9.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.9.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.9.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.9.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.9.Path))</visible>
+			</item>
+			<item id="10">
+				<description>Watchlist Episode 10</description>
+				<label>$INFO[Window.Property(WatchList_Episode.10.TVShowTitle)] $INFO[Window.Property(WatchList_Episode.10.EpisodeNo)] - $INFO[Window.Property(WatchList_Episode.10.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Episode.10.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Episode.10.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.10.Path))</visible>
+			</item>
+		</content>
+	</include>
+	<include name="WatchlistAlbumContents">
+		<include>Global_MusicDeck</include>
+		<content>
+			<item id="1">
+				<description>Watchlist Album 1</description>
+				<label>$INFO[Window.Property(WatchList_Album.1.Artist)] - $INFO[Window.Property(WatchList_Album.1.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.1.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.1.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.1.Path))</visible>
+			</item>
+			<item id="2">
+				<description>Watchlist Album 2</description>
+				<label>$INFO[Window.Property(WatchList_Album.2.Artist)] - $INFO[Window.Property(WatchList_Album.2.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.2.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.2.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.2.Path))</visible>
+			</item>
+			<item id="3">
+				<description>Watchlist Album 3</description>
+				<label>$INFO[Window.Property(WatchList_Album.3.Artist)] - $INFO[Window.Property(WatchList_Album.3.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.3.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.3.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.3.Path))</visible>
+			</item>
+			<item id="4">
+				<description>Watchlist Album 4</description>
+				<label>$INFO[Window.Property(WatchList_Album.4.Artist)] - $INFO[Window.Property(WatchList_Album.4.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.4.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.4.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.4.Path))</visible>
+			</item>
+			<item id="5">
+				<description>Watchlist Album 5</description>
+				<label>$INFO[Window.Property(WatchList_Album.5.Artist)] - $INFO[Window.Property(WatchList_Album.5.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.5.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.5.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.5.Path))</visible>
+			</item>
+			<item id="6">
+				<description>Watchlist Album 6</description>
+				<label>$INFO[Window.Property(WatchList_Album.6.Artist)] - $INFO[Window.Property(WatchList_Album.6.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.6.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.6.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.6.Path))</visible>
+			</item>
+			<item id="7">
+				<description>Watchlist Album 7</description>
+				<label>$INFO[Window.Property(WatchList_Album.7.Artist)] - $INFO[Window.Property(WatchList_Album.7.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.7.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.7.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.7.Path))</visible>
+			</item>
+			<item id="8">
+				<description>Watchlist Album 8</description>
+				<label>$INFO[Window.Property(WatchList_Album.8.Artist)] - $INFO[Window.Property(WatchList_Album.8.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.8.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.8.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.8.Path))</visible>
+			</item>
+			<item id="9">
+				<description>Watchlist Album 9</description>
+				<label>$INFO[Window.Property(WatchList_Album.9.Artist)] - $INFO[Window.Property(WatchList_Album.9.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.9.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.9.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.9.Path))</visible>
+			</item>
+			<item id="10">
+				<description>Watchlist Album 10</description>
+				<label>$INFO[Window.Property(WatchList_Album.10.Artist)] - $INFO[Window.Property(WatchList_Album.10.Label)]</label>
+				<icon>-</icon>
+				<thumb>$INFO[Window.Property(WatchList_Album.10.Thumb)]</thumb>
+				<onclick>$INFO[Window.Property(WatchList_Album.10.Path)]</onclick>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.10.Path))</visible>
 			</item>
 		</content>
 	</include>

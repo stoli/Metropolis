@@ -214,56 +214,66 @@
 						<selected>Skin.HasSetting(HomeStats)</selected>
 						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
-					<control type="image" id="204">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="205">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31060]</label>
-						<onclick>Skin.Reset(ShowRandomItems)</onclick>
-						<onclick>Skin.ToggleSetting(ShowRecentlyAdded)</onclick>
-						<selected>Skin.HasSetting(ShowRecentlyAdded)</selected>
-					</control>
-					<control type="radiobutton" id="206">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31328]</label>
-						<onclick>Skin.Reset(ShowRecentlyAdded)</onclick>
-						<onclick>Skin.ToggleSetting(ShowRandomItems)</onclick>
-						<selected>Skin.HasSetting(ShowRandomItems)</selected>
-					</control>
-					<!-- XXX: not yet implemented
-					<control type="radiobutton" id="207">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31327]</label>
-						<onclick>Skin.ToggleSetting(PlayAlbums)</onclick>
-						<selected>Skin.HasSetting(PlayAlbums)</selected>
-					</control>
-					<control type="image" id="208">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="209">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31333]</label>
-						<onclick>Skin.ToggleSetting(HomeMusicArtists)</onclick>
-						<selected>Skin.HasSetting(HomeMusicArtists)</selected>
-					</control>
-					<control type="radiobutton" id="210">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31314]</label>
-						<onclick>Skin.ToggleSetting(HomeReturnOff)</onclick>
-						<selected>Skin.HasSetting(HomeReturnOff)</selected>
-					</control> -->
-					<control type="image" id="211">
-						<include>Settings_Line</include>
-						<visible>!Skin.HasSetting(Home2)</visible>
-					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="204">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31034]</label>
 						<onclick>Skin.ToggleSetting(HomeWeather)</onclick>
 						<selected>Skin.HasSetting(HomeWeather)</selected>
 						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
+					<control type="image" id="205">
+						<include>Settings_Line</include>
+					</control>
+					<control type="label" id="206">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31450]</label>
+					</control>
+					<control type="radiobutton" id="207">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31060]</label>
+						<onclick>Skin.Reset(ShowRandomItems)</onclick>
+						<onclick>Skin.Reset(ShowWatchlist)</onclick>
+						<onclick>Skin.ToggleSetting(ShowRecentlyAdded)</onclick>
+						<selected>Skin.HasSetting(ShowRecentlyAdded)</selected>
+					</control>
+					<control type="radiobutton" id="208">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31328]</label>
+						<onclick>Skin.Reset(ShowRecentlyAdded)</onclick>
+						<onclick>Skin.Reset(ShowWatchlist)</onclick>
+						<onclick>Skin.ToggleSetting(ShowRandomItems)</onclick>
+						<selected>Skin.HasSetting(ShowRandomItems)</selected>
+					</control>
+					<control type="radiobutton" id="209">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31449]</label>
+						<onclick>Skin.Reset(ShowRecentlyAdded)</onclick>
+						<onclick>Skin.Reset(ShowRandomItems)</onclick>
+						<onclick>Skin.ToggleSetting(ShowWatchlist)</onclick>
+						<selected>Skin.HasSetting(ShowWatchlist)</selected>
+					</control>
+					<!-- XXX: not yet implemented
+					<control type="radiobutton" id="210">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31327]</label>
+						<onclick>Skin.ToggleSetting(PlayAlbums)</onclick>
+						<selected>Skin.HasSetting(PlayAlbums)</selected>
+					</control>
+					<control type="image" id="211">
+						<include>Settings_Line</include>
+					</control>
+					<control type="radiobutton" id="212">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31333]</label>
+						<onclick>Skin.ToggleSetting(HomeMusicArtists)</onclick>
+						<selected>Skin.HasSetting(HomeMusicArtists)</selected>
+					</control>
+					<control type="radiobutton" id="213">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31314]</label>
+						<onclick>Skin.ToggleSetting(HomeReturnOff)</onclick>
+						<selected>Skin.HasSetting(HomeReturnOff)</selected>
+					</control> -->
 				</control>
 				<!-- Home Items -->
 				<control type="grouplist" id="9012">

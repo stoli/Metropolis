@@ -323,4 +323,7 @@
 	<string id="31446">Fullscreen</string>
 	<string id="31447">Use Realistic Weather Icons</string>
 	<string id="31448">Show Plot only in Info dialog</string>
+	<string id="31449">Show Recommended Items</string>
+	<string id="31450"> - changing the options below requires a restart -</string>
+	<string id="31451">Recommended</string>
 </strings>

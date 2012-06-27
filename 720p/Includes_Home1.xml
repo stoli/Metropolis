@@ -42,7 +42,7 @@
 	</include>
 
 	<include name="Home1_Default">
-		<include condition="Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)">HomeRecentlyAddedInfo</include>
+		<include condition="Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems) | Skin.HasSetting(ShowWatchlist)">HomeRecentlyAddedInfo</include>
 		<control type="button" id="9002">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<posx>-20</posx>
@@ -163,7 +163,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>[Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems)]</visible>
+			<visible>[Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)] + [Skin.HasSetting(ShowRecentlyAdded) | Skin.HasSetting(ShowRandomItems) | Skin.HasSetting(ShowWatchlist)]</visible>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<control type="image">
 				<posx>163</posx>

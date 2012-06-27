@@ -42,12 +42,27 @@
 		</control>
 		<control type="button" id="40">
 			<description>Passthrough</description>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(ShowWatchlist)</visible>
+		</control>
+		<control type="button" id="40">
+			<description>Watchlist</description>
+			<onfocus>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(ShowWatchlist)</visible>
+		</control>
+		<control type="button" id="50">
+			<description>Passthrough</description>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(NextAired)</visible>
 		</control>
-		<control type="button" id="40">
+		<control type="button" id="50">
 			<description>TV Show Next Aired</description>
 			<onfocus>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=360)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
