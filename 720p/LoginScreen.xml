@@ -92,7 +92,7 @@
 				<font>METF_HelpText</font>
 				<textcolor>HelpText</textcolor>
 				<label>$LOCALIZE[31411]</label>
-				<visible>Control.HasFocus(52) + !Skin.HasSetting(HideHelpText)</visible>
+				<visible>Control.HasFocus(52)</visible>
 			</control>
 			<control type="label">
 				<posx>505</posx>
@@ -103,9 +103,9 @@
 				<font>METF_HelpText</font>
 				<textcolor>HelpText</textcolor>
 				<label>$LOCALIZE[31412]</label>
-				<visible>!Control.HasFocus(52) + !Skin.HasSetting(HideHelpText)</visible>
+				<visible>!Control.HasFocus(52)</visible>
 			</control>
-			
+
 			<control type="label">
 				<description>Heading</description>
 				<posx>240</posx>

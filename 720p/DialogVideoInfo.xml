@@ -199,7 +199,7 @@
 					<font>METF_HelpText</font>
 					<textcolor>HelpText</textcolor>
 					<label>$LOCALIZE[31407]</label>
-					<visible>!Control.IsVisible(50)+ !Skin.HasSetting(HideHelpText)</visible>
+					<visible>!Control.IsVisible(50)</visible>
 				</control>
 			</control>
 			<!-- Plot -->
