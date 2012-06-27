@@ -3,30 +3,68 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="button" id="10">
-			<description>Default Trigger</description>
+			<description>Weather</description>
 			<onfocus>SetFocus(20)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<label>$INFO[Weather.Conditions]</label>
+			<font>-</font>
+		</control>
+		<control type="button" id="20">
+			<description>Passthrough</description>
+			<onfocus>SetFocus(30)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
 		</control>
-		<control type="button" id="10">
+		<control type="button" id="20">
 			<description>Startup Playlist</description>
 			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
-			<onfocus>SetFocus(20)</onfocus>
+			<onfocus>SetFocus(30)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 		</control>
-		<control type="button" id="20">
-			<description>Default Trigger</description>
+		<control type="button" id="30">
+			<description>Passthrough</description>
+			<onfocus>SetFocus(40)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(ShowRandomItems)</visible>
+		</control>
+		<control type="button" id="30">
+			<description>RandomItems</description>
+			<onfocus>RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;alarm=360)</onfocus>
+			<onfocus>SetFocus(40)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(ShowRandomItems)</visible>
+		</control>
+		<control type="button" id="40">
+			<description>Passthrough</description>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(ShowWatchlist)</visible>
+		</control>
+		<control type="button" id="40">
+			<description>Watchlist</description>
+			<onfocus>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(ShowWatchlist)</visible>
+		</control>
+		<control type="button" id="50">
+			<description>Passthrough</description>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(NextAired)</visible>
 		</control>
-		<control type="button" id="20">
+		<control type="button" id="50">
 			<description>TV Show Next Aired</description>
-			<onfocus>RunScript(script.tv.show.next.aired,silent=True)</onfocus>
+			<onfocus>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=360)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
