@@ -396,18 +396,6 @@
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
-					<control type="radiobutton" id="509">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31404]</label>
-						<onclick>Skin.ToggleSetting(HideGenreDescriptions)</onclick>
-						<selected>Skin.HasSetting(HideGenreDescriptions)</selected>
-					</control>
-					<control type="radiobutton" id="510">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31405]</label>
-						<onclick>Skin.ToggleSetting(HideGenreIconLabels)</onclick>
-						<selected>Skin.HasSetting(HideGenreIconLabels)</selected>
-					</control>
 				</control>
 				<!-- View Types -->
 				<control type="grouplist" id="9005">
