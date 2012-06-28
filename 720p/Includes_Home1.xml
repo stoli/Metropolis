@@ -105,6 +105,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
+			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(6) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | Container(9000).HasFocus(11)]</visible>
 			<control type="image">
 				<posx>190</posx>
@@ -134,6 +135,7 @@
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
+			<visible>!Skin.HasSetting(HideHelpText)</visible>
 			<visible>ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
 			<control type="image">
 				<posx>1060</posx>
