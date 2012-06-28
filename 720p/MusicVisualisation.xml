@@ -42,13 +42,14 @@
 				<height>260</height>
 				<texture>osd/OSDdialogback.png</texture>
 				<colordiffuse>OSDBackgroundColor</colordiffuse>
+				<visible>!Skin.HasSetting(SlimMusicInfo)</visible>
 			</control>
 			<control type="group">
 				<posx>-20</posx>
 				<posy>555</posy>
 				<animation effect="slide" start="-280" end="30" time="600" tween="cubic" easing="out" delay="400">WindowOpen</animation>
 				<animation effect="slide" start="30" end="-280" time="600" tween="cubic" easing="out" delay="800">WindowClose</animation> 
-				<visible>Skin.HasSetting(MusicCoverArtOverlay)</visible>
+				<visible>!Skin.HasSetting(SlimMusicInfo) + Skin.HasSetting(MusicCoverArtOverlay)</visible>
 				<control type="image" id="7026">
 					<width>180</width>
 					<height>180</height>
@@ -100,7 +101,7 @@
 				<scroll>true</scroll>
 				<font>METF_MusicVizTitle</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
-				<visible>IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
+				<visible>!Skin.HasSetting(SlimMusicInfo) + IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
 			</control>
 			<control type="label">
 				<posx>315</posx>
@@ -111,6 +112,30 @@
 				<font>METF_TitleTextLarge</font>
 				<label>$INFO[MusicPlayer.Album]</label>
 				<textcolor>80C2C4C3</textcolor>
+				<visible>!Skin.HasSetting(SlimMusicInfo)</visible>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>610</posy><!-- -143 -->
+				<width>336</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>-</aligny>
+				<scroll>true</scroll>
+				<font>METF_SettingsHeading</font>
+				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
+				<visible>Skin.HasSetting(SlimMusicInfo) + IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>640</posy> <!-- -103 -->
+				<width>336</width>
+				<height>30</height>
+				<align>left</align>
+				<font>METF_SettingsHeading</font>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<textcolor>80C2C4C3</textcolor>
+				<visible>Skin.HasSetting(SlimMusicInfo)</visible>
 			</control>
 			<control type="label">
 				<posx>315</posx>

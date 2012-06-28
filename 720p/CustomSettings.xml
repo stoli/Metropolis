@@ -1870,6 +1870,12 @@
 					</control>
 					<control type="radiobutton" id="905">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31452]</label>
+						<onclick>Skin.ToggleSetting(SlimMusicInfo)</onclick>
+						<selected>Skin.HasSetting(SlimMusicInfo)</selected>
+					</control>
+					<control type="radiobutton" id="906">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
