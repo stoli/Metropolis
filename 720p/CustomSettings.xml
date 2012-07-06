@@ -1,4 +1,4 @@
-﻿<window id="56">
+<window id="56">
 	<defaultcontrol>9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -343,6 +343,12 @@
 						<selected>Skin.HasSetting(NoTrailers)</selected>
 						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 					</control>					
+					<control type="radiobutton" id="415">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] $LOCALIZE[19020]</label>
+						<onclick>Skin.ToggleSetting(NoTV)</onclick>
+						<selected>Skin.HasSetting(NoTV)</selected>
+					</control>
 					<control type="radiobutton" id="405">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
@@ -735,6 +741,12 @@
 								<onclick>-</onclick>
 								<icon>home/tvshows.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
+							</item>
+							<item id="16">
+								<label>19020</label>
+								<onclick>-</onclick>
+								<icon>home/tv.jpg</icon>
+								<thumb>$INFO[Skin.String(CustomTV)]</thumb>
 							</item>
 							<item id="5">
 								<label>1</label>
@@ -1678,6 +1690,66 @@
 								<aligny>center</aligny>
 								<texturefocus>ButtonFo.png</texturefocus>
 								<onclick>Skin.Reset(CustomPlayDisc)</onclick>
+								<onleft>301</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(16)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>31275</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.SetPath(CustomTV)</onclick>
+								<onleft>302</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>31284</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.SetImage(CustomTV)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>192</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.Reset(CustomTV)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
