@@ -30,6 +30,8 @@
 	<include file="Viewtype_PosterAndFanart.xml" />
 	<include file="Viewtype_Poster_Large.xml" />
 	<include file="Viewtype_Panel_Square.xml" /> <!-- 559 -->
+	<include file="Viewtype_PVR_TVChannel.xml" />
+	<include file="Viewtype_PVR_EPG.xml" />
 	<!-- Global dimensions -->
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
@@ -1857,6 +1859,61 @@
 				<include>Genre_Description</include>
 				<label>$LOCALIZE[31398]</label>
 				<visible>StringCompare(ListItem.Label,Silent)</visible>
+			</control>
+		</control>
+	</include>
+  
+  <!-- TV Channel Plot -->
+	<include name="TVChannelPlot">
+    <!-- Plot (Bottom) -->
+		<control type="group">
+			<posx>30</posx>
+			<posy>560</posy>
+			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(15) | Control.IsVisible(16)</visible>
+			<control type="image">
+				<description>TV Channel Icon</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<info>ListItem.Icon</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Title</description>
+				<posx>120</posx>
+				<posy>0</posy>
+				<width>640</width>
+				<height>30</height>
+				<scroll>true</scroll>
+				<align>false</align>
+				<aligny>center</aligny>
+        <scroll>true</scroll>
+ 				<include>SettingsLabel</include>
+				<info>ListItem.Title</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Timing</description>
+				<posx>1040</posx>
+				<posy>0</posy>
+				<width>430</width>
+				<height>30</height>
+				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, , /]$INFO[ListItem.Duration, ,)]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<include>SettingsLabel</include>
+			</control>
+			<control type="textbox">
+				<description>TV Channel Plot</description>
+				<posx>140</posx>
+				<posy>40</posy>
+				<width>880</width>
+				<height>110</height>
+				<align>justify</align>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>TextNF</textcolor>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 		</control>
 	</include>
