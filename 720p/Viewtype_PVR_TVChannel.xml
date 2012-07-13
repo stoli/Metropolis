@@ -4,8 +4,6 @@
 		<control type="group">
 			<description>TV Channels group</description>
 			<visible>Control.IsVisible(11)</visible>
-			<include>VisibleFadeEffect</include>
-      
 			<!-- TV Channels list -->
 			<control type="group">
 				<posx>810</posx>
@@ -21,6 +19,7 @@
    				<scrolltime>200</scrolltime>
    				<itemlayout height="60" width="400">
    					<control type="label">
+    					<description>Channel number label</description>
    						<posx>20</posx>
    						<posy>0</posy>
    						<width>40</width>
@@ -33,6 +32,7 @@
    						<info>ListItem.ChannelNumber</info>
    					</control>
    					<control type="label">
+    					<description>Channel name label</description>
    						<posx>65</posx>
    						<posy>4</posy>
    						<width>270</width>
@@ -42,9 +42,10 @@
    						<textcolor>SettingsDetail</textcolor>
    						<font>METF_ContextValue</font>
    						<focusedcolor>ButtonText</focusedcolor>
-   						<label>$INFO[ListItem.Label]</label>
+   						<info>ListItem.Label</info>
    					</control>
    					<control type="label">
+    					<description>Channel title label</description>
    						<posx>65</posx>
    						<posy>29</posy>
    						<width>270</width>
@@ -54,17 +55,18 @@
    						<textcolor>SettingsDetail</textcolor>
    						<font>METF_ContextValue</font>
    						<focusedcolor>ButtonText</focusedcolor>
-   						<label>$INFO[ListItem.Title]</label>
+   						<info>ListItem.Title</info>
    					</control>
    					<control type="image">
+    					<description>Channel icon</description>
    						<posx>350</posx>
    						<posy>8</posy>
    						<width>50</width>
    						<height>50</height>
-   						<texture>$INFO[ListItem.Icon]</texture>
+  						<texture>$INFO[ListItem.Icon]</texture>
    					</control>
       				<control type="progress">
-      					<description>Progressbar</description>
+      					<description>Channel progressbar</description>
       					<posx>65</posx>
       					<posy>52</posy>
       					<width>280</width>
@@ -74,6 +76,7 @@
       				</control>
    				</itemlayout>
    				<focusedlayout height="60" width="500">
+    					<description>Channel focus selection</description>
     					<control type="image">
    						<posx>0</posx>
    						<posy>4</posy>
@@ -82,6 +85,7 @@
    						<texture>ButtonFo.png</texture>
    					</control>
    					<control type="label">
+    					<description>Channel number label</description>
    						<posx>20</posx>
    						<posy>0</posy>
    						<width>40</width>
@@ -94,6 +98,7 @@
    						<info>ListItem.ChannelNumber</info>
    					</control>
    					<control type="label">
+    					<description>Channel name label</description>
    						<posx>65</posx>
    						<posy>4</posy>
    						<width>270</width>
@@ -103,9 +108,10 @@
    						<textcolor>SettingsDetail</textcolor>
    						<font>METF_ContextValue</font>
    						<focusedcolor>ButtonText</focusedcolor>
-   						<label>$INFO[ListItem.Label]</label>
+   						<info>ListItem.Label</info>
    					</control>
    					<control type="label">
+    					<description>Channel title label</description>
    						<posx>65</posx>
    						<posy>29</posy>
    						<width>270</width>
@@ -115,17 +121,18 @@
    						<textcolor>SettingsDetail</textcolor>
    						<font>METF_ContextValue</font>
    						<focusedcolor>ButtonText</focusedcolor>
-   						<label>$INFO[ListItem.Title]</label>
+   						<info>ListItem.Title</info>
    					</control>
    					<control type="image">
+    					<description>Channel icon</description>
    						<posx>350</posx>
    						<posy>8</posy>
    						<width>50</width>
    						<height>50</height>
-   						<texture>$INFO[ListItem.Icon]</texture>
+  						<texture>$INFO[ListItem.Icon]</texture>
    					</control>
      				<control type="progress">
-     					<description>Progressbar</description>
+     					<description>Channel progressbar</description>
      					<posx>65</posx>
      					<posy>52</posy>
      					<width>280</width>
@@ -136,6 +143,7 @@
    				</focusedlayout>
    			</control>
    			<control type="scrollbar" id="70">
+					<description>Channel scrollbar</description>
    				<posx>430</posx>
    				<posy>0</posy>
    				<width>25</width>
@@ -152,11 +160,10 @@
       <!-- TV Channel Display and Information (Left) -->
 			<control type="group">
 				<description>TV Channel information</description>
-				<include>VisibleFadeEffect</include>
 				<posx>70</posx>
 				<posy>435</posy>
 				<control type="label">
-					<description>Show Start Time</description>
+					<description>Channel start time label</description>
 					<posx>100</posx>
 					<posy>65</posy>
 					<width>130</width>
@@ -164,18 +171,18 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<include>SettingsLabel</include>
-					<label>$INFO[Container(11).ListItem.StartTime]</label>
+					<info>ListItem.StartTime</info>
 				</control>
 				<control type="progress">
-					<description>Show ProgressBar</description>
+					<description>Channel progress bar</description>
 					<posx>95</posx>
 					<posy>73</posy>
 					<width>510</width>
 					<height>8</height>
-					<info>Container(11).ListItem.Progress</info>
+					<info>ListItem.Progress</info>
 				</control>
 				<control type="label">
-					<description>Show End Time</description>
+					<description>Channel end time label</description>
 					<posx>600</posx>
 					<posy>65</posy>
 					<width>130</width>
@@ -183,9 +190,10 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<include>SettingsLabel</include>
-					<label>$INFO[Container(11).ListItem.EndTime]</label>
+					<info>ListItem.EndTime</info>
 				</control>
 			</control>
+      <!-- TV Channel Plot (Bottom) -->
       <include>TVChannelPlot</include>
 		</control>
 	</include>

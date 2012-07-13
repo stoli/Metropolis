@@ -329,8 +329,9 @@
 	<string id="31451">Recommandations</string>
 	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string> 
   
-  <!-- PVR Resources -->
-  <string id="31600">Ajouter Groupe</string>
-  <string id="31601">Renommer Groupe</string>
-  <string id="31602">Supprimer Groupe</string>  
+	<!-- PVR Resources -->
+	<string id="31600">Ajouter Groupe</string>
+	<string id="31601">Renommer Groupe</string>
+	<string id="31602">Supprimer Groupe</string>  
+	<string id="31610">Temps programmé</string>
 </strings>
