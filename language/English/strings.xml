@@ -330,8 +330,9 @@
 	<string id="31452">Visualization: Use Slim Info Overlay</string>
 	
 	<!-- PVR Resources -->
-	<string id="31600">Add Group</string>
-	<string id="31601">Rename Group</string>
-	<string id="31602">Delete Group</string>   
+	<string id="31600">Enable TV Settings display</string>
+	<string id="31605">Add Group</string>
+	<string id="31606">Rename Group</string>
+	<string id="31607">Delete Group</string>   
 	<string id="31610">Scheduled Time</string>
 </strings>

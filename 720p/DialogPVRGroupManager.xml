@@ -266,17 +266,17 @@
 			<control type="button" id="26">
 				<description>Add Group Button</description>
 				<include>SettingsLabelLeft</include>
-				<label>$LOCALIZE[31600]</label>
+				<label>$LOCALIZE[31605]</label>
 			</control>
 			<control type="button" id="27">
 				<description>Rename Group Button</description>
 				<include>SettingsLabelLeft</include>
-				<label>$LOCALIZE[31601]</label>
+				<label>$LOCALIZE[31606]</label>
 			</control>
 			<control type="button" id="28">
 				<description>Delete Group Button</description>
 				<include>SettingsLabelLeft</include>
-				<label>$LOCALIZE[31602]</label>
+				<label>$LOCALIZE[31607]</label>
 			</control>
 		</control>
 

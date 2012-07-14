@@ -123,6 +123,7 @@
 						<label>$LOCALIZE[19020]</label>
 						<icon>settings/settings_tv.png</icon>
 						<onclick>ActivateWindow(PVRSettings)</onclick>
+						<visible>Skin.HasSetting(Use_TV_Settings)</visible>
 					</item>
 					<item id="2">
 						<description>Music</description>

@@ -260,7 +260,7 @@
 					<icon>special://skin/extras/home1/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTV)]</thumb>
 					<onclick>ActivateWindow(TV)</onclick>
-					<visible>!Skin.HasSetting(NoTV)</visible>
+					<visible>!Skin.HasSetting(NoTV) + Skin.HasSetting(Use_TV_Settings)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>

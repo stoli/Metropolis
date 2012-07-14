@@ -175,6 +175,12 @@
 						<onclick>Skin.SetFile(Startup_Playlist_Path,.xsp,t:\playlists\music\)</onclick>
 						<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 					</control>
+					<control type="radiobutton" id="108">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31600]</label>
+						<onclick>Skin.ToggleSetting(Use_TV_Settings)</onclick>
+						<selected>Skin.HasSetting(Use_TV_Settings)</selected>
+					</control>
 				</control>
 				<!-- Home Options -->
 				<control type="grouplist" id="9002">
@@ -747,6 +753,7 @@
 								<onclick>-</onclick>
 								<icon>home/tv.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomTV)]</thumb>
+								<visible>Skin.HasSetting(Use_TV_Settings)</visible>
 							</item>
 							<item id="5">
 								<label>1</label>
