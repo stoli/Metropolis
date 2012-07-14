@@ -2,7 +2,7 @@
 	<include name="Viewtype_PVR_EPG">
 		<control type="group">
 			<visible>Control.IsVisible(15)</visible>
-  		<!-- TV Guide By Channel -->
+			<!-- TV Guide By Channel -->
 			<control type="group">
  				<posx>80</posx>
 				<posy>50</posy>
@@ -39,7 +39,7 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout height="36">
 						<control type="label">
-    					<description>Channel date/time label</description>
+							<description>Channel date/time label</description>
 							<posx>150</posx>
 							<posy>0</posy>
 							<width>300</width>
@@ -52,7 +52,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-  					 <description>Channel title label</description>
+							 <description>Channel title label</description>
 							<posx>300</posx>
 							<posy>0</posy>
 							<width>790</width>
@@ -66,16 +66,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="36">
-  					<description>Focus selection</description>
-  					<control type="image">
-  						<width>1090</width>
-  						<height>36</height>
-  						<posx>0</posx>
-  						<posy>0</posy>
-  						<texture>ButtonFo.png</texture>
-  					</control>
+						<description>Focus selection</description>
+						<control type="image">
+							<width>1090</width>
+							<height>36</height>
+							<posx>0</posx>
+							<posy>0</posy>
+							<texture>ButtonFo.png</texture>
+						</control>
 						<control type="label">
-    					<description>Channel date/time label</description>
+							<description>Channel date/time label</description>
 							<posx>150</posx>
 							<posy>0</posy>
 							<width>300</width>
@@ -88,7 +88,7 @@
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
-    					<description>Channel title label</description>
+							<description>Channel title label</description>
 							<posx>300</posx>
 							<posy>0</posy>
 							<width>790</width>
@@ -108,8 +108,8 @@
 					<posy>30</posy>
 					<width>25</width>
 					<height>466</height>
-   				<texturesliderbackground>-</texturesliderbackground>
-   				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+					<texturesliderbackground>-</texturesliderbackground>
+					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 					<onleft>15</onleft>
 					<onright>31</onright>
 					<showonepage>false</showonepage>
@@ -169,7 +169,7 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout height="36">
 						<control type="label">
-    					<description>Channel start time label</description>
+		 					<description>Channel start time label</description>
 							<posx>60</posx>
 							<posy>0</posy>
 							<width>120</width>
@@ -182,15 +182,15 @@
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
-    					<description>Channel icon</description>
+							<description>Channel icon</description>
 							<posx>130</posx>
 							<posy>5</posy>
 							<width>32</width>
 							<height>32</height>
-						  <texture>$INFO[ListItem.Icon]</texture>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-    					<description>Channel name label</description>
+							<description>Channel name label</description>
 							<posx>180</posx>
 							<posy>0</posy>
 							<width>190</width>
@@ -203,7 +203,7 @@
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
-      				<description>Channel title label</description>
+							<description>Channel title label</description>
 							<posx>380</posx>
 							<posy>0</posy>
 							<width>590</width>
@@ -217,16 +217,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="36">
-  					<control type="image">
-    					<description>Focus selection</description>
-  						<width>1090</width>
-  						<height>36</height>
-  						<posx>0</posx>
-  						<posy>0</posy>
-  						<texture>ButtonFo.png</texture>
-  					</control>
+						<control type="image">
+							<description>Focus selection</description>
+							<width>1090</width>
+							<height>36</height>
+							<posx>0</posx>
+							<posy>0</posy>
+							<texture>ButtonFo.png</texture>
+						</control>
 						<control type="label">
-    					<description>Channel start time label</description>
+							<description>Channel start time label</description>
 							<posx>60</posx>
 							<posy>0</posy>
 							<width>120</width>
@@ -237,7 +237,7 @@
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
-    					<description>Channel icon</description>
+							<description>Channel icon</description>
 							<posx>130</posx>
 							<posy>5</posy>
 							<width>32</width>
@@ -245,7 +245,7 @@
   						<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-    					<description>Channel name label</description>
+							<description>Channel name label</description>
 							<posx>180</posx>
 							<posy>0</posy>
 							<width>190</width>
@@ -256,7 +256,7 @@
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
-      				<description>Channel title label</description>
+							<description>Channel title label</description>
 							<posx>380</posx>
 							<posy>0</posy>
 							<width>690</width>
@@ -274,8 +274,8 @@
 					<posy>30</posy>
 					<width>25</width>
 					<height>466</height>
-   				<texturesliderbackground>-</texturesliderbackground>
-   				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+					<texturesliderbackground>-</texturesliderbackground>
+					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 					<onleft>16</onleft>
 					<onright>31</onright>
 					<showonepage>false</showonepage>
@@ -394,7 +394,7 @@
 				</focusedlayout>
 			</control>
 		</control>
-   <!-- TV Channel Plot (Bottom) -->
-   <include>TVChannelPlot</include>
+		<!-- TV Channel Plot (Bottom) -->
+		<include>TVChannelPlot</include>
 	</include>
 </includes>

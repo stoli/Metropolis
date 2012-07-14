@@ -16,7 +16,7 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40" width="700">
 					<control type="image">
-    				<description>Recording icon</description>
+						<description>Recording icon</description>
 						<posx>10</posx>
 						<posy>5</posy>
 						<width>30</width>
@@ -24,7 +24,7 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-    				<description>Recording label</description>
+						<description>Recording label</description>
 						<posx>50</posx>
 						<posy>0</posy>
 						<width>630</width>
@@ -37,7 +37,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-    				<description>Recording date label</description>
+						<description>Recording date label</description>
 						<posx>690</posx>
 						<posy>0</posy>
 						<width>500</width>
@@ -52,7 +52,7 @@
 				</itemlayout>
 				<focusedlayout height="40" width="700">
 					<control type="image">
-  					<description>Focus selection</description>
+						<description>Focus selection</description>
 						<width>1210</width>
 						<height>40</height>
 						<posx>0</posx>
@@ -60,7 +60,7 @@
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
-    				<description>Recording icon</description>
+						<description>Recording icon</description>
 						<posx>10</posx>
 						<posy>5</posy>
 						<width>30</width>
@@ -68,7 +68,7 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-    				<description>Recording label</description>
+						<description>Recording label</description>
 						<posx>50</posx>
 						<posy>0</posy>
 						<width>630</width>
@@ -81,7 +81,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-    				<description>Recording date label</description>
+						<description>Recording date label</description>
 						<posx>690</posx>
 						<posy>0</posy>
 						<width>500</width>
@@ -111,7 +111,7 @@
 				<posx>80</posx>
 				<posy>100</posy>
 				<control type="image">
-  				<description>Recording icon</description>
+					<description>Recording icon</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>380</width>
@@ -120,7 +120,7 @@
 					<texture fallback="DefaultVideoCover.png">ListItem.Icon</texture>
 				</control>
 				<control type="label">
-  				<description>Recording title label</description>
+					<description>Recording title label</description>
 					<posx>0</posx>
 					<posy>290</posy>
 					<width>380</width>
@@ -132,8 +132,8 @@
 					<include>SettingsLabel</include>
 				</control>
 			</control>
-      <!-- TV Channel Plot (Bottom) -->
-      <include>TVChannelPlot</include>
+			<!-- TV Channel Plot (Bottom) -->
+			<include>TVChannelPlot</include>
 		</control>
 	</include>
 </includes>

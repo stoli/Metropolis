@@ -52,7 +52,7 @@
 					<scrolltime>200</scrolltime>
 					<itemlayout height="40">
 						<control type="label">
-    					<description>Title Label</description>
+							<description>Title Label</description>
 							<posx>150</posx>
 							<posy>0</posy>
 							<width>290</width>
@@ -65,7 +65,7 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-    					<description>Schedule time label</description>
+							<description>Schedule time label</description>
 							<posx>570</posx>
 							<posy>0</posy>
 							<width>590</width>
@@ -78,7 +78,7 @@
 							<info>ListItem.Date</info>
 						</control>
 						<control type="label">
-    					<description>Status label</description>
+							<description>Status label</description>
 							<posx>940</posx>
 							<posy>0</posy>
 							<width>190</width>
@@ -92,16 +92,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="40">
-    					<description>Focus selection</description>
-    					<control type="image">
-   						<posx>0</posx>
-   						<posy>4</posy>
-   						<width>1050</width>
-   						<height>40</height>
-   						<texture>ButtonFo.png</texture>
-   					</control>
+						<description>Focus selection</description>
+						<control type="image">
+							<posx>0</posx>
+							<posy>4</posy>
+							<width>1050</width>
+							<height>40</height>
+							<texture>ButtonFo.png</texture>
+						</control>
 						<control type="label">
-    					<description>Title Label</description>
+							<description>Title Label</description>
 							<posx>150</posx>
 							<posy>0</posy>
 							<width>290</width>
@@ -114,7 +114,7 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-    					<description>Schedule time label</description>
+							<description>Schedule time label</description>
 							<posx>570</posx>
 							<posy>0</posy>
 							<width>530</width>
@@ -127,7 +127,7 @@
 							<info>ListItem.Date</info>
 						</control>
 						<control type="label">
-    					<description>Status label</description>
+							<description>Status label</description>
 							<posx>940</posx>
 							<posy>0</posy>
 							<width>190</width>

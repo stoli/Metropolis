@@ -34,6 +34,7 @@
 	<include file="Viewtype_PVR_EPG.xml" />
 	<include file="Viewtype_PVR_Timers.xml" />
 	<include file="Viewtype_PVR_Recordings.xml" />
+
 	<!-- Global dimensions -->
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
@@ -1865,9 +1866,9 @@
 		</control>
 	</include>
   
-  <!-- TV Channel Plot -->
+	<!-- TV Channel Plot -->
 	<include name="TVChannelPlot">
-    <!-- Plot (Bottom) -->
+		<!-- Plot (Bottom) -->
 		<control type="group">
 			<posx>30</posx>
 			<posy>560</posy>
@@ -1890,7 +1891,7 @@
 				<scroll>true</scroll>
 				<align>false</align>
 				<aligny>center</aligny>
-        <scroll>true</scroll>
+				<scroll>true</scroll>
  				<include>SettingsLabel</include>
 				<info>ListItem.Title</info>
 			</control>

@@ -1,18 +1,16 @@
 <window id="604">
 	<defaultcontrol always="true">13</defaultcontrol>
 	<controls>
- 		<!-- Background Image (Global_Background include can't be used. 
-         Actually, in PVR Settings the skin variables aren't set when this dialog box is called... -->
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>background.png</texture>
 		</control>  
 
-    <!-- TV Channels Groups list -->
+    		<!-- TV Channels Groups list -->
 		<control type="group">
 			<posx>290</posx>
 			<posy>55</posy>
-		  <control type="label">
+			<control type="label">
 				<description>Group Name</description>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -20,8 +18,8 @@
 				<height>70</height>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[19207]</label>
-      </control>
-      <control type="list" id="13">
+			</control>
+			<control type="list" id="13">
 				<posx>5</posx>
 				<posy>66</posy>
 				<width>330</width>
@@ -38,7 +36,7 @@
 						<textcolor>SettingsDetail</textcolor>
 						<font>METF_ContextValue</font>
 						<focusedcolor>ButtonText</focusedcolor>
-						<label>$INFO[ListItem.Label]</label>
+						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="38">
@@ -57,7 +55,7 @@
 						<font>METF_ContextValue</font>
 						<textcolor>ButtonText</textcolor>
 						<focusedcolor>ButtonText</focusedcolor>
-						<label>$INFO[ListItem.Label]</label>
+						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
 			</control>          
@@ -76,7 +74,7 @@
   		</control>
  		</control>
 
-   <!-- Unused TV Channels list -->
+		<!-- Unused TV Channels list -->
 		<control type="group">
 			<description>Channels List</description>
 			<posx>580</posx>
@@ -87,7 +85,7 @@
 				<posy>0</posy>
 				<width>340</width>
 				<height>70</height>
-        <include>SettingsLabel</include>
+				<include>SettingsLabel</include>
 				<label></label>
 			</control>
 			<control type="list" id="11">
@@ -100,18 +98,18 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="image">
-            <posx>18</posx>
-            <posy>5</posy>
+						<posx>18</posx>
+						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-            <posx>60</posx>
-            <posy>0</posy>
-            <width>270</width>
-            <height>35</height>
-            <align>left</align>
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>270</width>
+						<height>35</height>
+						<align>left</align>
 						<aligny>center</aligny>
 						<font>METF_ContextValue</font>
 						<textcolor>ButtonText</textcolor>
@@ -128,18 +126,18 @@
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
-            <posx>18</posx>
-            <posy>5</posy>
+						<posx>18</posx>
+						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-            <posx>60</posx>
-            <posy>0</posy>
-            <width>270</width>
-            <height>35</height>
-            <align>left</align>
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>270</width>
+						<height>35</height>
+						<align>left</align>
 						<aligny>center</aligny>
 						<font>METF_ContextValue</font>
 						<textcolor>ButtonText</textcolor>
@@ -159,10 +157,10 @@
 				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-  		</control>
+			</control>
 		</control>
 
-    <!-- TV Channels list for current group-->
+		<!-- TV Channels list for current group-->
  		<control type="group">
 			<description>TV Channels list for current group</description>
 			<posx>925</posx>
@@ -177,7 +175,7 @@
 				<posy>0</posy>
 				<width>340</width>
 				<height>70</height>
-        <include>SettingsLabel</include>
+				<include>SettingsLabel</include>
 				<label>$INFO[Control.GetLabel(20),, :]</label>
 			</control>
 			<control type="list" id="12">
@@ -190,18 +188,18 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="image">
-            <posx>18</posx>
-            <posy>5</posy>
+						<posx>18</posx>
+						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-            <posx>60</posx>
-            <posy>0</posy>
-            <width>270</width>
-            <height>35</height>
-            <align>left</align>
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>270</width>
+						<height>35</height>
+						<align>left</align>
 						<aligny>center</aligny>
 						<font>METF_ContextValue</font>
 						<textcolor>ButtonText</textcolor>
@@ -218,18 +216,18 @@
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
-            <posx>18</posx>
-            <posy>5</posy>
+						<posx>18</posx>
+						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-            <posx>60</posx>
-            <posy>0</posy>
-            <width>270</width>
-            <height>35</height>
-            <align>left</align>
+						<posx>60</posx>
+						<posy>0</posy>
+						<width>270</width>
+						<height>35</height>
+						<align>left</align>
 						<aligny>center</aligny>
 						<font>METF_ContextValue</font>
 						<textcolor>ButtonText</textcolor>
@@ -249,10 +247,10 @@
 				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-  		</control>
+			</control>
 		</control>
 
-    <!-- Menu group -->
+		<!-- Menu group -->
 		<control type="grouplist">
 			<posx>-110</posx>
 			<posy>200</posy>
@@ -262,27 +260,27 @@
 			<onright>13</onright>
 			<control type="button" id="29">
 				<description>OK Button</description>
-			  <include>SettingsLabelLeft</include>
+				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[186]</label>
 			</control>
 			<control type="button" id="26">
-			  <description>Add Group Button</description>
-			  <include>SettingsLabelLeft</include>
+				<description>Add Group Button</description>
+				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[31600]</label>
 			</control>
 			<control type="button" id="27">
 				<description>Rename Group Button</description>
-			  <include>SettingsLabelLeft</include>
+				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[31601]</label>
 			</control>
 			<control type="button" id="28">
 				<description>Delete Group Button</description>
-			  <include>SettingsLabelLeft</include>
+				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[31602]</label>
 			</control>
 		</control>
 
-    <!-- Header group --> 
+		<!-- Header group --> 
 		<control type="group">
 			<posx>30</posx>
 			<posy>10</posy>
