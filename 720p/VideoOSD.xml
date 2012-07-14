@@ -151,6 +151,30 @@
 					<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>				
+				<control type="button" id="21">
+					<description>Record</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_record_off_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_record_off_nf.png</texturenofocus>
+					<texturenofocus>osd/osd_button_record_off_nf.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + !Player.Recording</visible>
+				</control>				
+				<control type="button" id="21">
+					<description>Record</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_record_on_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_record_on_nf.png</texturenofocus>
+					<texturenofocus>osd/osd_button_record_on_nf.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + Player.Recording</visible>
+				</control>				
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
