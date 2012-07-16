@@ -1,4 +1,4 @@
-﻿<window id="4">
+<window id="4">
 	<defaultcontrol always="true">60</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -118,6 +118,13 @@
 						<icon>settings/settings_video.png</icon>
 						<onclick>ActivateWindow(VideosSettings)</onclick>
 					</item>
+					<item id="15">
+						<description>TV</description>
+						<label>$LOCALIZE[19020]</label>
+						<icon>settings/settings_tv.png</icon>
+						<onclick>ActivateWindow(PVRSettings)</onclick>
+						<visible>Skin.HasSetting(Use_TV_Settings)</visible>
+					</item>
 					<item id="2">
 						<description>Music</description>
 						<label>$LOCALIZE[2]</label>
@@ -165,6 +172,20 @@
 					<label>$LOCALIZE[31211]</label>
 				</control>
 			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>498</posy>
+				<visible>Container(60).HasFocus(15)</visible>
+				<include>Animation_CommonFadeNoHide</include>
+				<control type="label">
+					<include>SettingsHeadingVars</include>
+					<label>$LOCALIZE[19020]</label>
+				</control>
+				<control type="label">
+					<include>SettingsDetailVars</include>
+					<label>$LOCALIZE[31220]</label>
+				</control>
+			</control>      
 			<control type="group">
 				<posx>40</posx>
 				<posy>498</posy>
