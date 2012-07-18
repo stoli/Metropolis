@@ -255,12 +255,12 @@
 					<visible>system.hasaddon(plugin.video.the.trailers) + !Skin.HasSetting(NoTrailers)</visible>
 				</item>
 				<item id="15">
-					<description>TV</description>
+					<description>Live TV</description>
 					<label>$LOCALIZE[19020]</label>
 					<icon>special://skin/extras/home1/tv.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 					<onclick>ActivateWindow(TV)</onclick>
-					<visible>!Skin.HasSetting(NoLiveTV) + Skin.HasSetting(LiveTV)</visible>
+					<visible>Skin.HasSetting(LiveTV)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
@@ -495,7 +495,7 @@
 					<onclick>UpdateLibrary(video)</onclick>
 				</control>
 			</control>
-			<!-- TV Submenu -->
+			<!-- Live TV Submenu -->
 			<control type="grouplist" id="9020">
 				<include>Submenu_VerticalDetails</include>
 				<onup>9020</onup>

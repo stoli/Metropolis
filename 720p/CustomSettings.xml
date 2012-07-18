@@ -349,12 +349,6 @@
 						<selected>Skin.HasSetting(NoTrailers)</selected>
 						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 					</control>					
-					<control type="radiobutton" id="415">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[19020]</label>
-						<onclick>Skin.ToggleSetting(NoLiveTV)</onclick>
-						<selected>Skin.HasSetting(NoLiveTV)</selected>
-					</control>
 					<control type="radiobutton" id="405">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
