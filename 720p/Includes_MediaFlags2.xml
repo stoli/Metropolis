@@ -10,41 +10,6 @@
 			<animation effect="slide" start="0,0" end="130,0" time="300" condition="Window.IsActive(movieinformation)">Conditional</animation>
 			<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
 			<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
-			<!-- IMDB Flag -->
-			<control type="group">
-				<posx>-3</posx>
-				<posy>640</posy>
-				<control type="image">
-					<posx>22</posx>
-					<posy>19</posy>
-					<width>55</width>
-					<height>34</height>
-					<texture>flags/IMDB-Logo.png</texture>
-					<colordiffuse>IMDbDiffuse</colordiffuse>
-					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
-				</control>
-				<control type="label">
-					<posx>74</posx>
-					<posy>13</posy>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>METF_IMDbRating</font>
-					<textcolor>MediaFlagDiffuse</textcolor>
-					<label>$INFO[ListItem.top250]</label>
-					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
-				</control>
-				<control type="image">
-					<posx>8</posx>
-					<posy>8</posy>
-					<width>125</width>
-					<height>54</height>
-					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-					<texture>flags/flag_frame.png</texture>
-					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
-				</control>
-			</control>
 			<!-- Video Source -->
 			<control type="group">
 				<posx>145</posx>
@@ -205,7 +170,7 @@
 			</control>
 			<!-- Subtitles -->
 			<control type="group">
-				<posx>760</posx>
+				<posx>727</posx>
 				<posy>645</posy>
 				<control type="image">
 					<posx>5</posx>
@@ -224,6 +189,41 @@
 					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
 					<texture>flags/flag_framesquare.png</texture>
 					<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+				</control>
+			</control>
+			<!-- IMDB Flag -->
+			<control type="group">
+				<posx>875</posx>
+				<posy>640</posy>
+				<control type="image">
+					<posx>22</posx>
+					<posy>19</posy>
+					<width>55</width>
+					<height>34</height>
+					<texture>flags/IMDB-Logo.png</texture>
+					<colordiffuse>IMDbDiffuse</colordiffuse>
+					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
+				</control>
+				<control type="label">
+					<posx>74</posx>
+					<posy>13</posy>
+					<width>50</width>
+					<height>50</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_IMDbRating</font>
+					<textcolor>MediaFlagDiffuse</textcolor>
+					<label>$INFO[ListItem.top250]</label>
+					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>8</posy>
+					<width>125</width>
+					<height>54</height>
+					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
+					<texture>flags/flag_frame.png</texture>
+					<visible>!substring(listitem.top250,0,Left) + !IsEmpty(listitem.top250)</visible>
 				</control>
 			</control>
 		</control>
