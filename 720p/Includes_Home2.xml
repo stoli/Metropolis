@@ -197,7 +197,7 @@
 				</item>
 				<item id="15">
 					<description>Live TV</description>
-					<label>$LOCALIZE[19020]</label>
+					<label>$LOCALIZE[31601]</label>
 					<icon>special://skin/extras/home2/icon_tv.png</icon>
 					<onclick>ActivateWindow(TV)</onclick>
 					<visible>Skin.HasSetting(LiveTV)</visible>

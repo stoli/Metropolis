@@ -743,7 +743,7 @@
 								<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 							</item>
 							<item id="16">
-								<label>19020</label>
+								<label>31601</label>
 								<onclick>-</onclick>
 								<icon>home/tv.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>

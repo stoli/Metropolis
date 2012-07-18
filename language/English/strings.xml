@@ -331,6 +331,7 @@
 	
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
+	<string id="31601">Live TV</string>
 	<string id="31605">Add Group</string>
 	<string id="31606">Rename Group</string>
 	<string id="31607">Delete Group</string>   
