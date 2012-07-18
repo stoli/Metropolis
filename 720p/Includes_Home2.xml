@@ -200,7 +200,7 @@
 					<label>$LOCALIZE[19020]</label>
 					<icon>special://skin/extras/home2/icon_tv.png</icon>
 					<onclick>ActivateWindow(TV)</onclick>
-					<visible>!Skin.HasSetting(NoTV) + Skin.HasSetting(Use_TV_Settings)</visible>
+					<visible>!Skin.HasSetting(NoLiveTV) + Skin.HasSetting(LiveTV)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>

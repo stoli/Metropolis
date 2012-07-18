@@ -168,7 +168,7 @@
 					<posy>0</posy>
 					<width>700</width>
 					<height>430</height>
-					<texture background="true" diffuse="maskfanart.png" fallback="special://skin/extras/home1/tv.jpg">$INFO[Skin.String(CustomTV)]</texture>
+					<texture background="true" diffuse="maskfanart.png" fallback="special://skin/extras/home1/tv.jpg">$INFO[Skin.String(CustomLiveTV)]</texture>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<include>VisibleFadeEffect</include>
 					<visible>!Player.HasVideo</visible>

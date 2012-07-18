@@ -330,7 +330,7 @@
 	<string id="31452">Visualization: Use Slim Info Overlay</string>
 	
 	<!-- PVR Resources -->
-	<string id="31600">Enable TV Settings display</string>
+	<string id="31600">Enable Live TV (PVR) support</string>
 	<string id="31605">Add Group</string>
 	<string id="31606">Rename Group</string>
 	<string id="31607">Delete Group</string>   

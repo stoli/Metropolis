@@ -178,8 +178,8 @@
 					<control type="radiobutton" id="108">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31600]</label>
-						<onclick>Skin.ToggleSetting(Use_TV_Settings)</onclick>
-						<selected>Skin.HasSetting(Use_TV_Settings)</selected>
+						<onclick>Skin.ToggleSetting(LiveTV)</onclick>
+						<selected>Skin.HasSetting(LiveTV)</selected>
 					</control>
 				</control>
 				<!-- Home Options -->
@@ -352,8 +352,8 @@
 					<control type="radiobutton" id="415">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[19020]</label>
-						<onclick>Skin.ToggleSetting(NoTV)</onclick>
-						<selected>Skin.HasSetting(NoTV)</selected>
+						<onclick>Skin.ToggleSetting(NoLiveTV)</onclick>
+						<selected>Skin.HasSetting(NoLiveTV)</selected>
 					</control>
 					<control type="radiobutton" id="405">
 						<include>SettingsLabel</include>
@@ -752,8 +752,8 @@
 								<label>19020</label>
 								<onclick>-</onclick>
 								<icon>home/tv.jpg</icon>
-								<thumb>$INFO[Skin.String(CustomTV)]</thumb>
-								<visible>Skin.HasSetting(Use_TV_Settings)</visible>
+								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
+								<visible>Skin.HasSetting(LiveTV)</visible>
 							</item>
 							<item id="5">
 								<label>1</label>
@@ -1718,7 +1718,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<texturefocus>ButtonFo.png</texturefocus>
-								<onclick>Skin.SetPath(CustomTV)</onclick>
+								<onclick>Skin.SetPath(CustomLiveTV)</onclick>
 								<onleft>302</onleft>
 								<onright>301</onright>
 								<onup>304</onup>
@@ -1737,7 +1737,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<texturefocus>ButtonFo.png</texturefocus>
-								<onclick>Skin.SetImage(CustomTV)</onclick>
+								<onclick>Skin.SetImage(CustomLiveTV)</onclick>
 								<onleft>300</onleft>
 								<onright>302</onright>
 								<onup>304</onup>
@@ -1756,7 +1756,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<texturefocus>ButtonFo.png</texturefocus>
-								<onclick>Skin.Reset(CustomTV)</onclick>
+								<onclick>Skin.Reset(CustomLiveTV)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
