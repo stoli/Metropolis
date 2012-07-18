@@ -222,6 +222,14 @@
 				</control>
 			</focusedlayout>
 			<content>
+				<item id="9">
+					<description>Play Disc</description>
+					<label>$LOCALIZE[341]</label>
+					<icon>special://skin/extras/home1/playdisc.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomPlayDisc)]</thumb>
+					<onclick>PlayDVD</onclick>
+					<visible>System.HasMediadvd</visible>
+				</item>
 				<item id="4">
 					<description>Movies</description>
 					<label>$LOCALIZE[342]</label>
@@ -302,14 +310,6 @@
 					<onclick>ActivateWindow(Weather)</onclick>
 					<visible>!Skin.HasSetting(NoWeather) + Skin.HasSetting(HomeWeather)</visible>
 				</item>
-				<item id="8">
-					<description>Settings</description>
-					<label>$LOCALIZE[5]</label>
-					<icon>special://skin/extras/home1/settings.jpg</icon>
-					<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
-					<onclick>ActivateWindow(Settings)</onclick>
-					<visible>!Skin.HasSetting(NoSettings)</visible>
-				</item>
 				<item id="10">
 					<description>Favourites</description>
 					<label>$LOCALIZE[1036]</label>
@@ -317,6 +317,14 @@
 					<thumb>$INFO[Skin.String(CustomFavourites)]</thumb>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<visible>!Skin.HasSetting(NoFavourites)</visible>
+				</item>
+				<item id="8">
+					<description>Settings</description>
+					<label>$LOCALIZE[5]</label>
+					<icon>special://skin/extras/home1/settings.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
+					<onclick>ActivateWindow(Settings)</onclick>
+					<visible>!Skin.HasSetting(NoSettings)</visible>
 				</item>
 				<item id="11">
 					<description>Shutdown</description>
@@ -334,14 +342,6 @@
 					<onclick>System.LogOff</onclick>
 					<visible>System.HasLoginScreen</visible>
 				</item>
-				<item id="9">
-					<description>Play Disc</description>
-					<label>$LOCALIZE[341]</label>
-					<icon>special://skin/extras/home1/playdisc.jpg</icon>
-					<thumb>$INFO[Skin.String(CustomPlayDisc)]</thumb>
-					<onclick>PlayDVD</onclick>
-					<visible>System.HasMediadvd</visible>
-				</item>
 			</content>
 		</control>
 
@@ -352,6 +352,19 @@
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
+			<!-- Play Disc Submenu -->
+			<control type="grouplist" id="9019">
+				<include>Submenu_VerticalDetails</include>
+				<onup>9019</onup>
+				<ondown>9019</ondown>
+				<visible>Container(9000).HasFocus(9)</visible>
+				<control type="button" id="90191">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[13391]</label>
+					<onclick>EjectTray()</onclick>
+					<visible>System.HasMediaDVD</visible>
+				</control>
+			</control>
 			<!-- Movies Submenu -->
 			<control type="grouplist" id="9011">
 				<include>Submenu_VerticalDetails</include>
@@ -397,7 +410,7 @@
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
-					<visible>Skin.HasSetting(NoVideos)</visible>
+					<visible>Skin.HasSetting(NoVideos) + !Skin.HasSetting(nosettings)</visible>
 				</control>
 			</control>
 			<!-- TVShows Submenu -->
@@ -446,7 +459,7 @@
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
-					<visible>Skin.HasSetting(NoVideos)</visible>
+					<visible>Skin.HasSetting(NoVideos) + !Skin.HasSetting(nosettings)</visible>
 				</control>
 			</control>
 			<!-- Videos Submenu -->
@@ -523,7 +536,7 @@
 					<onclick>Setfocus(14)</onclick>
 				</control>
 			</control>
-			<!-- Music Submenu -->
+			<!-- Music Submenu (note: overflows into 9018) -->
 			<control type="grouplist" id="9017">
 				<include>Submenu_VerticalDetails</include>
 				<onup>9017</onup>
@@ -583,15 +596,15 @@
 				</control>
 				<control type="button" id="90180">
 					<include>Submenu_Button</include>
-					<label>$LOCALIZE[10004]</label>
-					<onclick>ActivateWindow(MusicSettings)</onclick>
-					<visible>!Skin.HasSetting(nosettings)</visible>
-				</control>
-				<control type="button" id="90181">
-					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31446]</label>
 					<onclick>fullscreen</onclick>
 					<visible>Player.HasAudio</visible>
+				</control>
+				<control type="button" id="90181">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[10004]</label>
+					<onclick>ActivateWindow(MusicSettings)</onclick>
+					<visible>!Skin.HasSetting(nosettings)</visible>
 				</control>
 				<control type="button" id="90182">
 					<include>Submenu_Button</include>
@@ -671,66 +684,53 @@
 				</control>
 			</control>
 			<!-- Shutdown Submenu -->
-			<control type="grouplist" id="9018">
+			<control type="grouplist" id="9090">
 				<include>Submenu_VerticalDetails</include>
-				<onup>9018</onup>
-				<ondown>9018</ondown>
+				<onup>9090</onup>
+				<ondown>9090</ondown>
 				<visible>Container(9000).HasFocus(11)</visible>
-				<control type="button" id="90181">
+				<control type="button" id="90901">
 					<include>Submenu_Button</include>
 					<label>Set Timer</label>
 					<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>>
 				</control>
-				<control type="button" id="90182">
+				<control type="button" id="90902">
 					<include>Submenu_Button</include>
 					<label>Cancel Timer</label>
 					<onclick>CancelAlarm(ShutdownTimer)</onclick>
 					<visible>System.HasAlarm(ShutdownTimer)</visible>
 				</control>
-				<control type="button" id="90183">
+				<control type="button" id="90903">
 					<include>Submenu_Button</include>
 					<label>13011</label>
 					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
 					<onclick>Suspend()</onclick>
 				</control>
-				<control type="button" id="90184">
+				<control type="button" id="90904">
 					<include>Submenu_Button</include>
 					<label>13010</label>
 					<onclick>Hibernate()</onclick>
 				</control>
-				<control type="button" id="90185">
+				<control type="button" id="90905">
 					<include>Submenu_Button</include>
 					<label>13313</label>
 					<onclick>RestartApp()</onclick>
 				</control>
-				<control type="button" id="90186">
+				<control type="button" id="90906">
 					<include>Submenu_Button</include>
 					<label>13005</label>
 					<onclick>ShutDown()</onclick>
 				</control>
-				<control type="button" id="90187">
+				<control type="button" id="90907">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20126]</label>
 					<onclick>System.LogOff</onclick>
 					<visible>System.HasLoginScreen</visible>
 				</control>
-				<control type="button" id="90188">
+				<control type="button" id="90908">
 					<include>Submenu_Button</include>
 					<label>13012</label>
 					<onclick>XBMC.Quit()</onclick>
-				</control>
-			</control>
-			<!-- Play Disc Submenu -->
-			<control type="grouplist" id="9019">
-				<include>Submenu_VerticalDetails</include>
-				<onup>9019</onup>
-				<ondown>9019</ondown>
-				<visible>Container(9000).HasFocus(9)</visible>
-				<control type="button" id="90191">
-					<include>Submenu_Button</include>
-					<label>$LOCALIZE[13391]</label>
-					<onclick>EjectTray()</onclick>
-					<visible>System.HasMediaDVD</visible>
 				</control>
 			</control>
 		</control>
