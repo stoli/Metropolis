@@ -361,6 +361,7 @@
 				<control type="button" id="90191">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[13391]</label>
+					<onclick>SetFocus(9000)</onclick>
 					<onclick>EjectTray()</onclick>
 					<visible>System.HasMediaDVD</visible>
 				</control>
