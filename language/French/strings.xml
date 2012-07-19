@@ -327,7 +327,9 @@
 	<string id="31449">Afficher les Articles Recommandés</string>
 	<string id="31450"> - la modification des options ci-dessous nécessite un redémarrage -</string>
 	<string id="31451">Recommandations</string>
-	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string> 
+	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string>
+	<string id="31453">Afficher la Date à la place du Jour de la Semaine</string>
+	<string id="31454">Visualisation: Afficher la durée de la chanson</string> 
   
 	<!-- PVR Resources -->
 	<string id="31600">Activer l'affichage des paramètres TV</string>
