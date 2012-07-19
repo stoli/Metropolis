@@ -14,7 +14,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<label>$LOCALIZE[21820]</label>
 				</control>
 				<control type="label">
@@ -25,7 +25,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<label>$LOCALIZE[369]</label>
 				</control>
 				<control type="list" id="15">
@@ -46,9 +46,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
@@ -59,19 +57,17 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
 					<focusedlayout height="36">
 						<description>Focus selection</description>
 						<control type="image">
-							<width>1090</width>
-							<height>36</height>
 							<posx>0</posx>
 							<posy>0</posy>
+							<width>1090</width>
+							<height>36</height>
 							<texture>ButtonFo.png</texture>
 						</control>
 						<control type="label">
@@ -82,9 +78,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
@@ -95,9 +89,7 @@
 							<height>40</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
@@ -133,7 +125,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<label>$LOCALIZE[555]</label>
 				</control>
 				<control type="label">
@@ -144,7 +136,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<label>$LOCALIZE[19148]</label>
 				</control>
 				<control type="label">
@@ -155,7 +147,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<label>$LOCALIZE[369]</label>
 				</control>
 				<control type="list" id="16">
@@ -176,9 +168,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
@@ -197,9 +187,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
@@ -210,9 +198,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
@@ -233,7 +219,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
+							<include>TVLabel</include>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
@@ -252,7 +238,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
+							<include>TVLabel</include>
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
@@ -263,7 +249,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
- 							<textcolor>SettingsDetail</textcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
@@ -291,9 +277,9 @@
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
 				<posx>70</posx>
-				<posy>81</posy>
+				<posy>60</posy>
 				<width>1140</width>
-				<height>450</height>
+				<height>456</height>
 				<pagecontrol>10</pagecontrol>
 				<scrolltime>350</scrolltime>
 				<timeblocks>40</timeblocks>
@@ -302,15 +288,15 @@
 				<onright>31</onright>
 				<onup>10</onup>
 				<ondown>10</ondown>
-				<rulerlayout height="35" width="40">
+				<rulerlayout height="50" width="50">
 					<control type="label" id="2">
 						<posx>10</posx>
-						<posy>1</posy>
-						<width>34</width>
-						<height>29</height>
-						<aligny>center</aligny>
+						<posy>0</posy>
+						<width>40</width>
+						<height>45</height>
 						<align>left</align>
-						<include>SettingsLabel</include>
+						<aligny>center</aligny>
+						<include>TVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</rulerlayout>
@@ -323,23 +309,23 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label" id="1">
-						<posx>59</posx>
+						<posx>60</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>52</height>
-						<aligny>center</aligny>
 						<align>left</align>
-						<include>SettingsLabel</include>
+						<aligny>center</aligny>
+						<include>TVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</channellayout>
 				<focusedchannellayout height="52" width="220">
 					<description>Channel focus selection</description>
 					<control type="image">
-						<width>210</width>
-						<height>52</height>
 						<posx>0</posx>
 						<posy>0</posy>
+						<width>210</width>
+						<height>52</height>
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
@@ -350,25 +336,25 @@
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label" id="1">
-						<posx>59</posx>
+						<posx>60</posx>
 						<posy>0</posy>
 						<width>160</width>
 						<height>52</height>
 						<aligny>center</aligny>
 						<align>left</align>
-						<include>SettingsLabel</include>
+						<include>TVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</focusedchannellayout>
 				<itemlayout height="52" width="40">
 					<control type="label" id="1">
-						<posx>6</posx>
-						<posy>3</posy>
-						<width>30</width>
-						<height>25</height>
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>20</width>
+						<height>52</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>SettingsLabel</include>
+						<include>TVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -377,18 +363,17 @@
 					<control type="image" id="14">
 						<width>40</width>
 						<height>52</height>
-						<posx>0</posx>
-						<posy>0</posy>
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="label" id="1">
-						<posx>6</posx>
-						<posy>3</posy>
-						<width>30</width>
-						<height>25</height>
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>20</width>
+						<height>52</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>SettingsLabel</include>
+						<align>left</align>
+						<include>TVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>

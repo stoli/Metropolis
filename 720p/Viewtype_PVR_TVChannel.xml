@@ -26,9 +26,7 @@
 							<height>35</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.ChannelNumber</info>
 						</control>
 						<control type="label">
@@ -39,9 +37,7 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
@@ -52,9 +48,7 @@
 							<height>20</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Title</info>
 						</control>
 						<control type="image">
@@ -92,9 +86,7 @@
 							<height>35</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-	 						<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.ChannelNumber</info>
 						</control>
 						<control type="label">
@@ -105,22 +97,18 @@
 							<height>25</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-	 					<description>Channel title label</description>
+		 					<description>Channel title label</description>
 							<posx>65</posx>
 							<posy>29</posy>
 							<width>270</width>
 							<height>20</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<textcolor>SettingsDetail</textcolor>
-							<font>METF_ContextValue</font>
-							<focusedcolor>ButtonText</focusedcolor>
+							<include>TVLabel</include>
 							<info>ListItem.Title</info>
 						</control>
 						<control type="image">
@@ -170,7 +158,6 @@
 					<height>430</height>
 					<texture background="true" diffuse="maskfanart.png" fallback="special://skin/extras/home1/tv.jpg">$INFO[Skin.String(CustomLiveTV)]</texture>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<include>VisibleFadeEffect</include>
 					<visible>!Player.HasVideo</visible>
 				</control>
 				<control type="videowindow">
@@ -187,18 +174,18 @@
 					<description>Channel start time label</description>
 					<posx>100</posx>
 					<posy>440</posy>
-					<width>130</width>
+					<width>110</width>
 					<height>20</height>
 					<align>right</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<info>ListItem.StartTime</info>
 				</control>
 				<control type="progress">
 					<description>Channel progress bar</description>
-					<posx>95</posx>
+					<posx>110</posx>
 					<posy>448</posy>
-					<width>510</width>
+					<width>480</width>
 					<height>8</height>
 					<info>ListItem.Progress</info>
 				</control>
@@ -206,11 +193,11 @@
 					<description>Channel end time label</description>
 					<posx>600</posx>
 					<posy>440</posy>
-					<width>130</width>
+					<width>110</width>
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
 					<info>ListItem.EndTime</info>
 				</control>
 			</control>

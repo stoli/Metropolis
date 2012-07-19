@@ -331,6 +331,7 @@
   
 	<!-- PVR Resources -->
 	<string id="31600">Activer l'affichage des paramètres TV</string>
+	<string id="31601">Live TV</string>
 	<string id="31605">Ajouter Groupe</string>
 	<string id="31606">Renommer Groupe</string>
 	<string id="31607">Supprimer Groupe</string>  
