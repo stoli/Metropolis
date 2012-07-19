@@ -1926,4 +1926,9 @@
 			</control>
 		</control>
 	</include>
+	<include name="TVLabel">
+		<font>METF_ContextValue</font>
+		<textcolor>SettingsDetail</textcolor>
+		<focusedcolor>ButtonText</focusedcolor>
+	</include>
 </includes>

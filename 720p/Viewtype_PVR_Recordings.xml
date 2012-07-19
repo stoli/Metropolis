@@ -31,9 +31,7 @@
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>SettingsDetail</textcolor>
-						<font>METF_ContextValue</font>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>TVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -44,9 +42,7 @@
 						<height>40</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>SettingsDetail</textcolor>
-						<font>METF_ContextValue</font>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>TVLabel</include>
 						<info>ListItem.Date</info>
 					</control>
 				</itemlayout>
@@ -55,8 +51,6 @@
 						<description>Focus selection</description>
 						<width>1210</width>
 						<height>40</height>
-						<posx>0</posx>
-						<posy>0</posy>
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
@@ -75,9 +69,7 @@
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>SettingsDetail</textcolor>
-						<font>METF_ContextValue</font>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>TVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -88,9 +80,7 @@
 						<height>40</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>SettingsDetail</textcolor>
-						<font>METF_ContextValue</font>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>TVLabel</include>
 						<info>ListItem.Date</info>
 					</control>
 				</focusedlayout>
@@ -125,11 +115,11 @@
 					<posy>290</posy>
 					<width>380</width>
 					<height>25</height>
-					<info>ListItem.Title</info>
 					<scroll>true</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>SettingsLabel</include>
+					<include>TVLabel</include>
+					<info>ListItem.Title</info>
 				</control>
 			</control>
 			<!-- TV Channel Plot (Bottom) -->
