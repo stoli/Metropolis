@@ -14,8 +14,8 @@
 			<width>740</width>
 			<height>440</height>
 			<itemgap>-1</itemgap>
-			<onleft>7</onleft>
-			<onright>7</onright>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -46,7 +46,7 @@
 		</control>
     
 		<!-- Menu group -->
-		<control type="grouplist" id="9001">
+		<control type="grouplist" id="9000">
 			<posx>-80</posx>
 			<posy>200</posy>
 			<itemgap>20</itemgap>
@@ -71,7 +71,7 @@
 			<posy>10</posy>
 			<include>Animation_SlideDownFadeOut</include>
 			<control type="label">
-				<label>$LOCALIZE[5]</label>
+				<label>$LOCALIZE[31601]</label>
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label" id="2">
