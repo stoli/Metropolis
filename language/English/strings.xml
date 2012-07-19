@@ -328,6 +328,7 @@
 	<string id="31450"> - changing the options below requires a restart -</string>
 	<string id="31451">Recommended</string>
 	<string id="31452">Visualization: Use Slim Info Overlay</string>
+	<string id="31453">Show Date instead of Day of Week</string>
 	
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
