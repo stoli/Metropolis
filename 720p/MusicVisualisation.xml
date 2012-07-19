@@ -160,6 +160,33 @@
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<overlaytexture>-</overlaytexture>
+				<visible>!Skin.HasSetting(ShowMusicTime)</visible>
+			</control>
+			<control type="progress" id="23">
+				<description>Progressbar</description>
+				<posx>395</posx>
+				<posy>660</posy>
+				<width>400</width>
+				<height>15</height>
+				<align>center</align>
+				<info>Player.Progress</info>
+				<texturebg>osd/osd_progress_back.png</texturebg>
+				<lefttexture>osd/osd_progress_left.png</lefttexture>
+				<midtexture>osd/osd_progress_mid.png</midtexture>
+				<righttexture>osd/osd_progress_right.png</righttexture>
+				<colordiffuse>OSDProgressBar</colordiffuse>
+				<overlaytexture>-</overlaytexture>
+				<visible>Skin.HasSetting(ShowMusicTime)</visible>
+			</control>
+			<control type="fadelabel">
+				<posx>808</posx>
+				<posy>648</posy>
+				<width>90</width>
+				<align>center</align>
+				<info>MusicPlayer.Time</info>
+				<font>Font_Bartowski_Episodes</font>
+				<textcolor>NowPlayingTitle</textcolor>
+				<visible>Skin.HasSetting(ShowMusicTime)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>290</posx>
