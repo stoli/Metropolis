@@ -1,5 +1,5 @@
 <window id="604">
-	<defaultcontrol always="true">13</defaultcontrol>
+	<defaultcontrol always="true">29</defaultcontrol>
 	<controls>
 		<!-- This hack is trying to clear the screen in-between each instance of the window -->
 		<control type="image">
@@ -38,9 +38,7 @@
 						<width>200</width>
 						<height>38</height>
 						<aligny>center</aligny>
-						<textcolor>SettingsDetail</textcolor>
-						<font>METF_ContextValue</font>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -51,15 +49,14 @@
 						<height>38</height>
 						<width>240</width>
 						<texture>ButtonFo.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(13)">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>18</posx>
 						<width>200</width>
 						<height>38</height>
 						<aligny>center</aligny>
-						<font>METF_ContextValue</font>
-						<textcolor>ButtonText</textcolor>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
@@ -116,9 +113,7 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>METF_ContextValue</font>
-						<textcolor>ButtonText</textcolor>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 					</control>
 				</itemlayout>
@@ -129,6 +124,7 @@
 						<height>38</height>
 						<width>300</width>
 						<texture>ButtonFo.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(11)">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>18</posx>
@@ -144,9 +140,7 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>METF_ContextValue</font>
-						<textcolor>ButtonText</textcolor>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 					</control>
 				</focusedlayout>
@@ -206,9 +200,7 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>METF_ContextValue</font>
-						<textcolor>ButtonText</textcolor>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 					</control>
 				</itemlayout>
@@ -219,6 +211,7 @@
 						<height>38</height>
 						<width>300</width>
 						<texture>ButtonFo.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(12)">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>18</posx>
@@ -234,9 +227,7 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>METF_ContextValue</font>
-						<textcolor>ButtonText</textcolor>
-						<focusedcolor>ButtonText</focusedcolor>
+						<include>SettingsLabel</include>
 						<label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
 					</control>
 				</focusedlayout>
@@ -258,7 +249,7 @@
 		<!-- Menu group -->
 		<control type="grouplist">
 			<posx>-110</posx>
-			<posy>200</posy>
+			<posy>180</posy>
 			<itemgap>20</itemgap>
 			<orientation>vertical</orientation>
 			<onleft>72</onleft>
