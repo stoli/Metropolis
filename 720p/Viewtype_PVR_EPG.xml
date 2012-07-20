@@ -228,7 +228,7 @@
 							<posy>5</posy>
 							<width>32</width>
 							<height>32</height>
-  						<texture>$INFO[ListItem.Icon]</texture>
+  							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<description>Channel name label</description>
@@ -378,8 +378,8 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<!-- TV Channel Plot (Bottom) -->
+			<include>TVChannelPlot</include>
 		</control>
-		<!-- TV Channel Plot (Bottom) -->
-		<include>TVChannelPlot</include>
 	</include>
 </includes>
