@@ -518,23 +518,22 @@
 				<control type="button" id="90200">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[19023]</label>
-					<onclick>ActivateWindow(PVR)</onclick>
-					<onclick>Setfocus(32)</onclick>
-					<onclick>Setfocus(11)</onclick>
+					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
 				</control>
 				<control type="button" id="90202">
 					<include>Submenu_Button</include>
-					<label>$LOCALIZE[19163]</label>
-					<onclick>ActivateWindow(PVR)</onclick>
-					<onclick>Setfocus(34)</onclick>
-					<onclick>Setfocus(13)</onclick>
+					<label>$LOCALIZE[19069]</label>
+					<onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
 				</control>
 				<control type="button" id="90203">
 					<include>Submenu_Button</include>
+					<label>$LOCALIZE[19163]</label>
+					<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
+				</control>
+				<control type="button" id="90204">
+					<include>Submenu_Button</include>
 					<label>$LOCALIZE[19040]</label>
-					<onclick>ActivateWindow(PVR)</onclick>
-					<onclick>Setfocus(35)</onclick>
-					<onclick>Setfocus(14)</onclick>
+					<onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
 				</control>
 			</control>
 			<!-- Music Submenu (note: overflows into 9018) -->

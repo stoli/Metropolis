@@ -119,8 +119,8 @@
 						<onclick>ActivateWindow(VideosSettings)</onclick>
 					</item>
 					<item id="15">
-						<description>TV</description>
-						<label>$LOCALIZE[19020]</label>
+						<description>Live TV</description>
+						<label>$LOCALIZE[31601]</label>
 						<icon>settings/settings_tv.png</icon>
 						<onclick>ActivateWindow(PVRSettings)</onclick>
 						<visible>Skin.HasSetting(LiveTV)</visible>
@@ -179,7 +179,7 @@
 				<include>Animation_CommonFadeNoHide</include>
 				<control type="label">
 					<include>SettingsHeadingVars</include>
-					<label>$LOCALIZE[19020]</label>
+					<label>$LOCALIZE[31601]</label>
 				</control>
 				<control type="label">
 					<include>SettingsDetailVars</include>

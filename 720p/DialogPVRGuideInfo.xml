@@ -34,7 +34,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[552]:</label>
+				<label>$LOCALIZE[552] :</label>
 			</control>
 			<control type="label">
 				<description>Start Date Label</description>
@@ -78,7 +78,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[19148]:</label>
+				<label>$LOCALIZE[19148] :</label>
 			</control>
 			<control type="fadelabel">
 				<description>Channel Name Label</description>
@@ -100,7 +100,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[180]:</label>
+				<label>$LOCALIZE[180] :</label>
 			</control>
 			<control type="label">
 				<description>Duration Label</description>
@@ -111,7 +111,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<info>ListItem.Duration]</info>
+				<info>ListItem.Duration</info>
 			</control>
 			<control type="label">
 				<description>Genre Header Label</description>
@@ -122,7 +122,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[135]:</label>
+				<label>$LOCALIZE[135] :</label>
 			</control>
 			<control type="label">
 				<description>Genre Label</description>
@@ -144,14 +144,14 @@
 				<align>justify</align>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
-				<label>$INFO[ListItem.Plot]</label>
+				<info>ListItem.Plot</info>
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 		</control>
 
 		<!-- Menu group -->
 		<control type="grouplist" id="9000">
-			<posx>-110</posx>
+			<posx>0</posx>
 			<posy>200</posy>
 			<itemgap>20</itemgap>
 			<orientation>vertical</orientation>

@@ -34,6 +34,7 @@
 	<include file="Viewtype_PVR_EPG.xml" />
 	<include file="Viewtype_PVR_Timers.xml" />
 	<include file="Viewtype_PVR_Recordings.xml" />
+	<include file="Viewtype_PVR_EPGSearch.xml" />
 
 	<!-- Global dimensions -->
 	<include name="Dimensions_Fullscreen">
@@ -1878,7 +1879,7 @@
 		<control type="group">
 			<posx>30</posx>
 			<posy>560</posy>
-			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16)</visible>
+			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
 			<control type="image">
 				<description>TV Channel Icon</description>
 				<posx>0</posx>
