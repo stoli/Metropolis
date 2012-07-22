@@ -44,6 +44,33 @@
 				<colordiffuse>OSDBackgroundColor</colordiffuse>
 				<visible>!Skin.HasSetting(SlimMusicInfo)</visible>
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>546</posy>
+				<width>1280</width>
+				<height>174</height>
+				<texture>black.png</texture>
+				<colordiffuse>dd909090</colordiffuse>
+				<visible>Skin.HasSetting(SlimMusicInfo) + !Skin.HasSetting(HideVisClock) + !Skin.HasSetting(HideClockTemp)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>580</posy>
+				<width>1280</width>
+				<height>140</height>
+				<texture>black.png</texture>
+				<colordiffuse>dd909090</colordiffuse>
+				<visible>Skin.HasSetting(SlimMusicInfo) + !Skin.HasSetting(HideVisClock) + Skin.HasSetting(HideClockTemp)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>606</posy>
+				<width>1280</width>
+				<height>114</height>
+				<texture>black.png</texture>
+				<colordiffuse>dd909090</colordiffuse>
+				<visible>Skin.HasSetting(SlimMusicInfo) + Skin.HasSetting(HideVisClock)</visible>
+			</control>
 			<control type="group">
 				<posx>-20</posx>
 				<posy>555</posy>
@@ -272,7 +299,7 @@
 		</control>
 		<control type="group">
 			<include>Global_Time</include>
-			<visible>Player.ShowInfo + !Window.IsVisible(120)</visible>	
+			<visible>Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)</visible>
 		</control>
 	</controls>
 </window>

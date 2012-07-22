@@ -1961,6 +1961,13 @@
 					</control>
 					<control type="radiobutton" id="907">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31455]</label>
+						<onclick>Skin.ToggleSetting(HideVisClock)</onclick>
+						<selected>Skin.HasSetting(HideVisClock)</selected>
+						<visible>Skin.HasSetting(SlimMusicInfo)</visible>
+					</control>
+					<control type="radiobutton" id="908">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
 						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
