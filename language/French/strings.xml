@@ -330,7 +330,8 @@
 	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string>
 	<string id="31453">Afficher la Date à la place du Jour de la Semaine</string>
 	<string id="31454">Visualisation: Afficher la durée de la chanson</string> 
-  
+ 	<string id="31455">Visualisation: Masquer Horlorge et Température dans Info en Surimpression</string>
+ 
 	<!-- PVR Resources -->
 	<string id="31600">Activer l'affichage des paramètres TV</string>
 	<string id="31601">Live TV</string>
