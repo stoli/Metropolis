@@ -148,32 +148,39 @@
  			<!-- TV Channel Display and Information (Left) -->
 			<control type="group">
 				<description>TV Channel information</description>
-				<posx>70</posx>
-				<posy>60</posy>
+				<posx>40</posx>
+				<posy>40</posy>
 				<control type="image">
 					<description>PVR Display Picture</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>700</width>
-					<height>430</height>
+					<posx>22</posx>
+					<posy>20</posy>
+					<width>704</width>
+					<height>396</height>
 					<texture background="true" diffuse="maskfanart.png" fallback="special://skin/extras/home1/tv.jpg">$INFO[Skin.String(CustomLiveTV)]</texture>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<visible>!Player.HasVideo</visible>
 				</control>
 				<control type="videowindow">
 					<description>PVR Display Window</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>700</width>
-					<height>430</height>
+					<posx>22</posx>
+					<posy>20</posy>
+					<width>704</width>
+					<height>396</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture background="true" diffuse="maskfanart.png"></texture>
 					<visible>Player.HasVideo</visible>
 				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>746</width>
+					<height>442</height>
+					<texture>frames/ClassicFrame_Fanart.png</texture>
+				</control>
 				<control type="label">
 					<description>Channel start time label</description>
-					<posx>100</posx>
-					<posy>440</posy>
+					<posx>120</posx>
+					<posy>434</posy>
 					<width>110</width>
 					<height>20</height>
 					<align>right</align>
@@ -183,16 +190,16 @@
 				</control>
 				<control type="progress">
 					<description>Channel progress bar</description>
-					<posx>110</posx>
-					<posy>448</posy>
+					<posx>130</posx>
+					<posy>442</posy>
 					<width>480</width>
 					<height>8</height>
 					<info>ListItem.Progress</info>
 				</control>
 				<control type="label">
 					<description>Channel end time label</description>
-					<posx>600</posx>
-					<posy>440</posy>
+					<posx>620</posx>
+					<posy>434</posy>
 					<width>110</width>
 					<height>20</height>
 					<align>left</align>
@@ -200,6 +207,17 @@
 					<include>TVLabel</include>
 					<info>ListItem.EndTime</info>
 				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>468</posy>
+					<width>746</width>
+					<height>20</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<include>TVLabel</include>
+					<label>$LOCALIZE[19031] : $INFO[ListItem.NextTitle]</label>
+				</control>
+
 			</control>
 			<!-- TV Channel Plot (Bottom) -->
 			<include>TVChannelPlot</include>
