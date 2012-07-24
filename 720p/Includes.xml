@@ -1908,7 +1908,7 @@
 				<posy>0</posy>
 				<width>430</width>
 				<height>30</height>
-				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, , /]$INFO[ListItem.Duration, ,)]</label>
+				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, ,]$INFO[ListItem.Duration, / ,])</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
