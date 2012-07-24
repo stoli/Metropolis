@@ -194,7 +194,7 @@
 					<posy>442</posy>
 					<width>480</width>
 					<height>8</height>
-					<info>ListItem.Progress</info>
+					<info>Container(11).ListItem.Progress</info>
 				</control>
 				<control type="label">
 					<description>Channel end time label</description>
