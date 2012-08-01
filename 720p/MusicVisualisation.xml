@@ -204,11 +204,21 @@
 				<overlaytexture>-</overlaytexture>
 				<visible>!Skin.HasSetting(ShowMusicTime)</visible>
 			</control>
+			<control type="fadelabel">
+				<posx>395</posx>
+				<posy>648</posy>
+				<width>90</width>
+				<align>center</align>
+				<info>MusicPlayer.Time</info>
+				<font>Font_Bartowski_Episodes</font>
+				<textcolor>NowPlayingTitle</textcolor>
+				<visible>Skin.HasSetting(ShowMusicTime)</visible>
+			</control>
 			<control type="progress" id="23">
 				<description>Progressbar</description>
-				<posx>395</posx>
+				<posx>495</posx>
 				<posy>660</posy>
-				<width>400</width>
+				<width>320</width>
 				<height>15</height>
 				<align>center</align>
 				<info>Player.Progress</info>
@@ -225,7 +235,7 @@
 				<posy>648</posy>
 				<width>90</width>
 				<align>center</align>
-				<info>MusicPlayer.Time</info>
+				<info>MusicPlayer.Duration</info>
 				<font>Font_Bartowski_Episodes</font>
 				<textcolor>NowPlayingTitle</textcolor>
 				<visible>Skin.HasSetting(ShowMusicTime)</visible>
@@ -239,7 +249,7 @@
 				<scrollout>false</scrollout>
 				<scrollspeed>1000</scrollspeed>
 				<pauseatend>10000</pauseatend>
-				<label>[COLOR=NowPlayingTitle]$LOCALIZE[209][/COLOR]: $INFO[MusicPlayer.offset(1).Artist]: $INFO[MusicPlayer.offset(1).Title]</label>
+				<label>[COLOR=NowPlayingTitle]$LOCALIZE[209]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist]: $INFO[MusicPlayer.offset(1).Title]</label>
 				<font>Font_Bartowski_Episodes</font>
 				<textcolor>50FFFFFF</textcolor>
 				<align>center</align>
