@@ -26,6 +26,21 @@
 			<visible>Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="group">
+			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + !Window.IsVisible(120)</visible>
+			<include>Animation_CommonFade</include>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>10</posy>
+				<width>150</width>
+				<height>40</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<font>METF_OSDTime</font>
+				<textcolor>OSDFinishTime</textcolor>
+				<label>$INFO[MusicPlayer.PlaylistPosition]$INFO[MusicPlayer.PlaylistLength,/]</label>
+			</control>
+		</control>
+		<control type="group">
 			<visible>Player.ShowInfo + !Window.IsVisible(120)</visible>
 			<animation type="Visible">
 				<effect type="fade" time="200" start="0" end="100" />

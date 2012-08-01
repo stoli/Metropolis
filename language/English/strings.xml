@@ -183,8 +183,8 @@
 	<string id="31451">Recommended</string>
 	<string id="31452">Visualization: Use Slim Info Overlay</string>
 	<string id="31453">Show Date instead of Day of Week</string>
-	<string id="31454">Visualization: Show current time in song</string>
-	<string id="31455">Visualization: Hide Clock and Temp in Info overlay</string>
+	<string id="31454">Visualization: Show player position and time in Info Overlay</string>
+	<string id="31455">Visualization: Hide Clock and Temp in Info Overlay</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
