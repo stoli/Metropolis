@@ -561,12 +561,6 @@
 				</control>
 				<control type="button" id="90106">
 					<include>Submenu_Button</include>
-					<label>$LOCALIZE[10004]</label>
-					<onclick>ActivateWindow(VideosSettings)</onclick>
-					<visible>!Skin.HasSetting(nosettings)</visible>
-				</control>
-				<control type="button" id="90107">
-					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
 				</control>
@@ -669,12 +663,6 @@
 					<visible>!Library.HasContent(Music) | Skin.HasSetting(HomeMusic_Genres) | Skin.HasSetting(HomeMusic_Artists) | Skin.HasSetting(HomeMusic_Albums) | Skin.HasSetting(HomeMusic_Songs) | Skin.HasSetting(HomeMusic_Videos) | Skin.HasSetting(HomeMusic_Playlists) | !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
 				</control>
 				<control type="button" id="90182">
-					<include>Submenu_Button</include>
-					<label>$LOCALIZE[10004]</label>
-					<onclick>ActivateWindow(MusicSettings)</onclick>
-					<visible>!Skin.HasSetting(nosettings)</visible>
-				</control>
-				<control type="button" id="90183">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(music)</onclick>
