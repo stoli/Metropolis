@@ -18,7 +18,7 @@
 	<string id="31054">Logo</string>
 	<string id="31055">Use TV Show Logos</string>
 	<string id="31056">Enable Cover Art overlay</string>
-	<string id="31060">Show Recently Added Items</string>
+	<string id="31060">Show Recently Added Items:</string>
 	<string id="31108">Enable Debug Mode</string>
 	<string id="31109">Enable Debug Grid</string>
 	<string id="31118">Filemanager</string>
@@ -78,7 +78,7 @@
 	<string id="31320">Default Subtitles script</string>
 	<string id="31322">Show Media Totals</string>
 	<string id="31324">Home Options</string>
-	<string id="31328">Show Random Items</string>
+	<string id="31328">Show Random Items:</string>
 	<string id="31329">Select item to set up:</string>
 	<string id="31330">Scripts/Extras</string>
 	<string id="31331">Home Items</string>
@@ -178,13 +178,14 @@
 	<string id="31446">Fullscreen</string>
 	<string id="31447">Use Realistic Weather Icons</string>
 	<string id="31448">Show Plot only in Info dialog</string>
-	<string id="31449">Show Recommended Items</string>
+	<string id="31449">Show Recommended Items:</string>
 	<string id="31450"> - changing the options below requires a restart -</string>
 	<string id="31451">Recommended</string>
 	<string id="31452">Visualization: Use Slim Info Overlay</string>
 	<string id="31453">Show Date instead of Day of Week</string>
 	<string id="31454">Visualization: Show player position and time in Info Overlay</string>
 	<string id="31455">Visualization: Hide Clock and Temp in Info Overlay</string>
+	<string id="31456">- Override default link:</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
