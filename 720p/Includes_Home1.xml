@@ -338,7 +338,15 @@
 					<icon>special://skin/extras/home1/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<visible>!Skin.HasSetting(NoPictures)</visible>
+					<visible>!Skin.HasSetting(NoPictures) + IsEmpty(Skin.String(HomePictures_Addon))</visible>
+				</item>
+				<item id="6">
+					<description>Pictures (Addon)</description>
+					<label>$LOCALIZE[1]</label>
+					<icon>special://skin/extras/home1/pictures.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon)])</onclick>
+					<visible>!Skin.HasSetting(NoPictures) + !IsEmpty(Skin.String(HomePictures_Addon))</visible>
 				</item>
 				<item id="1">
 					<description>Add-ons</description>
@@ -682,6 +690,12 @@
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+				</control>
+				<control type="button" id="90161">
+					<include>Submenu_Button</include>
+					<label>$LOCALIZE[31289]</label>
+					<onclick>ActivateWindow(Pictures)</onclick>
+					<visible>!IsEmpty(Skin.String(HomePictures_Addon))</visible>
 				</control>
 			</control>
 			<!-- Programs/Addons Submenu -->
