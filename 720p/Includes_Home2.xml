@@ -185,15 +185,29 @@
 					<description>Movies</description>
 					<label>$LOCALIZE[342]</label>
 					<icon>special://skin/extras/home2/icon_movies.png</icon>
-					<onclick>ActivateWindow(Videos,movietitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies)</visible>
+					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + Library.HasContent(Movies)</visible>
+				</item>
+				<item id="4">
+					<description>Movies (Empty library)</description>
+					<label>$LOCALIZE[342]</label>
+					<icon>special://skin/extras/home2/icon_movies.png</icon>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + !Library.HasContent(Movies)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows</description>
 					<label>$LOCALIZE[20343]</label>
 					<icon>special://skin/extras/home2/icon_tvshows.png</icon>
-					<onclick>ActivateWindow(Videos,tvshowtitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows)</visible>
+					<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + Library.HasContent(TVShows)</visible>
+				</item>
+				<item id="5">
+					<description>TV Shows (Empty library)</description>
+					<label>$LOCALIZE[20343]</label>
+					<icon>special://skin/extras/home2/icon_tvshows.png</icon>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + !Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="2">
 					<description>Videos</description>

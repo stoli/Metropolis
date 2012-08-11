@@ -234,7 +234,15 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Library.HasContent(Movies)</visible>
+				</item>
+				<item id="4">
+					<description>Movies (Empty library)</description>
+					<label>$LOCALIZE[342]</label>
+					<icon>special://skin/extras/home1/movies.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + !Library.HasContent(Movies)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows</description>
@@ -242,7 +250,15 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Library.HasContent(TVShows)</visible>
+				</item>
+				<item id="5">
+					<description>TV Shows (Empty library)</description>
+					<label>$LOCALIZE[20343]</label>
+					<icon>special://skin/extras/home1/tvshows.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
+					<onclick>ActivateWindow(Videos,Files)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + !Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="2">
 					<description>Videos</description>
