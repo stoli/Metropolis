@@ -694,23 +694,23 @@
 				<visible>Container(9000).HasFocus(1)</visible>
 				<control type="button" id="90150">
 					<include>Submenu_Button</include>
-					<label>Browser</label>
-					<onclick>ActivateWindow(AddonBrowser)</onclick>
-				</control>
-				<control type="button" id="90151">
-					<include>Submenu_Button</include>
 					<label>$LOCALIZE[1212]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90152">
+				<control type="button" id="90151">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[1211]</label>
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90153">
+				<control type="button" id="90152">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[1213]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+				</control>
+				<control type="button" id="90153">
+					<include>Submenu_Button</include>
+					<label>Browser</label>
+					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
 			</control>
 			<!-- Settings Submenu -->
