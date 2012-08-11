@@ -724,11 +724,6 @@
 					<label>$LOCALIZE[1213]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90159">
-					<include>Submenu_Button</include>
-					<label>$LOCALIZE[1036]</label>
-					<onclick>ActivateWindow(Favourites)</onclick>
-				</control>
 			</control>
 			<!-- Settings Submenu -->
 			<control type="grouplist" id="9014">
