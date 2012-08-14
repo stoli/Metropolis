@@ -95,7 +95,7 @@
 				<control type="image" id="7026">
 					<width>180</width>
 					<height>180</height>
-					<posx>55</posx>
+					<posx>64</posx>
 					<posy>-70</posy>
 					<include>Animation_SpinningCD</include>
 				</control>
@@ -108,7 +108,7 @@
 					<fadetime>200</fadetime>
 					<texture background="true">$INFO[MusicPlayer.cover]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture border="8">thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 			</control>
