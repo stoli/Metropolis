@@ -425,8 +425,8 @@
 
 		<!-- Submenus -->
 		<control type="group" id="9001">
-			<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus">conditional</animation>
-			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(HomeStats)">conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(HomeStats)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus">WindowClose</animation>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
