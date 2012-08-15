@@ -483,25 +483,70 @@
 						<onclick>Skin.ToggleSetting(NoPrograms)</onclick>
 						<selected>Skin.HasSetting(NoPrograms)</selected>
 					</control>
-					<control type="radiobutton" id="418">
+					<control type="label" id="418">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[31457]:</label>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="button" id="419">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomePrograms_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="button" id="420">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomePrograms_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="button" id="421">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomePrograms_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="button" id="422">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomePrograms_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="button" id="423">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomePrograms_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPrograms)</visible>
+					</control>
+					<control type="radiobutton" id="424">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[8]</label>
 						<onclick>Skin.ToggleSetting(NoWeather)</onclick>
 						<selected>Skin.HasSetting(NoWeather)</selected>
 					</control>
-					<control type="radiobutton" id="419">
+					<control type="radiobutton" id="425">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[5]</label>
 						<onclick>Skin.ToggleSetting(NoSettings)</onclick>
 						<selected>Skin.HasSetting(NoSettings)</selected>
 					</control>
-					<control type="radiobutton" id="420">
+					<control type="radiobutton" id="426">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[1036]</label>
 						<onclick>Skin.ToggleSetting(NoFavourites)</onclick>
 						<selected>Skin.HasSetting(NoFavourites)</selected>
 					</control>
-					<control type="radiobutton" id="421">
+					<control type="radiobutton" id="427">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[13005]</label>
 						<onclick>Skin.ToggleSetting(NoShutdown)</onclick>

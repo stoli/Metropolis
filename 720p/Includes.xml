@@ -4,7 +4,7 @@
 	<include file="Includes_MusicOverlay.xml" />
 	<include file="Includes_Home1.xml" />
 	<include file="Includes_Home2.xml" />
-	<include file="Includes_HomeRecentlyAdded.xml" />
+	<include file="Includes_HomeDeck.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_MediaFlags2.xml" />
 	<include file="Includes_MediaFlagsVideoPlayer.xml" />

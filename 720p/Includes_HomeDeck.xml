@@ -1,5 +1,5 @@
 <includes>
-	<include name="HomeRecentlyAddedInfo">
+	<include name="HomeDeck">
 		<control type="group">
 			<!-- Submenu title for default home view -->
 			<control type="group">
@@ -13,8 +13,8 @@
 					<height>30</height>
 					<texture>ArrowLeft.png</texture>
 					<colordiffuse>HelpArrowDiffuse</colordiffuse>
-					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]]</visible>
-					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] | [Container(9000).HasFocus(1) + ![IsEmpty(Skin.String(HomePrograms_Addon1)) + IsEmpty(Skin.String(HomePrograms_Addon2)) + IsEmpty(Skin.String(HomePrograms_Addon3)) + IsEmpty(Skin.String(HomePrograms_Addon4)) + IsEmpty(Skin.String(HomePrograms_Addon5))]]</visible>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 				</control>
 				<!-- Recently Added Movies -->
 				<control type="label">
@@ -132,6 +132,31 @@
 					<textcolor>HomeMenuText</textcolor>
 					<label>[B]$LOCALIZE[31451] $LOCALIZE[132][/B]</label>
 					<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowMusicWatchlist)</visible>
+				</control>
+				<!-- Addon Shortcuts -->
+				<control type="label">
+					<posx>270</posx>
+					<posy>513</posy>
+					<width>570</width>
+					<height>25</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>METF_RecentlyAddedTitle</font>
+					<textcolor>HomeMenuText</textcolor>
+					<label>[B]$LOCALIZE[31457][/B]</label>
+					<visible>!Control.HasFocus(8003) + Container(9000).HasFocus(1) + ![IsEmpty(Skin.String(HomePrograms_Addon1)) + IsEmpty(Skin.String(HomePrograms_Addon2)) + IsEmpty(Skin.String(HomePrograms_Addon3)) + IsEmpty(Skin.String(HomePrograms_Addon4)) + IsEmpty(Skin.String(HomePrograms_Addon5))]</visible>
+				</control>
+				<control type="label">
+					<posx>270</posx>
+					<posy>513</posy>
+					<width>570</width>
+					<height>25</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>METF_RecentlyAddedTitle</font>
+					<textcolor>HomeMenuText</textcolor>
+					<label>[B]$INFO[Container(8003).ListItem.Label][/B]</label>
+					<visible>Control.HasFocus(8003)</visible>
 				</control>
 			</control>
 			<!-- Submenu title for icon home view -->
@@ -146,8 +171,8 @@
 					<height>30</height>
 					<texture>ArrowUp.png</texture>
 					<colordiffuse>HelpArrowDiffuse</colordiffuse>
-					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]]</visible>
-					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002)]</visible>
+					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] | [Container(9000).HasFocus(1) + ![IsEmpty(Skin.String(HomePrograms_Addon1)) + IsEmpty(Skin.String(HomePrograms_Addon2)) + IsEmpty(Skin.String(HomePrograms_Addon3)) + IsEmpty(Skin.String(HomePrograms_Addon4)) + IsEmpty(Skin.String(HomePrograms_Addon5))]]</visible>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 				</control>
 				<!-- Recently Added Movies -->
 				<control type="label">
@@ -265,6 +290,31 @@
 					<textcolor>HomeMenuText</textcolor>
 					<label>[B]$LOCALIZE[31451] $LOCALIZE[132][/B]</label>
 					<visible>Container(9000).HasFocus(3) + Skin.HasSetting(ShowMusicWatchlist)</visible>
+				</control>
+				<!-- Addon Shortcuts -->
+				<control type="label">
+					<posx>355</posx>
+					<posy>75</posy>
+					<width>570</width>
+					<height>25</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_RecentlyAddedTitle</font>
+					<textcolor>HomeMenuText</textcolor>
+					<label>[B]$LOCALIZE[31457][/B]</label>
+					<visible>!Control.HasFocus(8003) + Container(9000).HasFocus(1) + ![IsEmpty(Skin.String(HomePrograms_Addon1)) + IsEmpty(Skin.String(HomePrograms_Addon2)) + IsEmpty(Skin.String(HomePrograms_Addon3)) + IsEmpty(Skin.String(HomePrograms_Addon4)) + IsEmpty(Skin.String(HomePrograms_Addon5))]</visible>
+				</control>
+				<control type="label">
+					<posx>355</posx>
+					<posy>75</posy>
+					<width>570</width>
+					<height>25</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_RecentlyAddedTitle</font>
+					<textcolor>HomeMenuText</textcolor>
+					<label>[B]$INFO[Container(8003).ListItem.Label][/B]</label>
+					<visible>Control.HasFocus(8003)</visible>
 				</control>
 			</control>
 
@@ -280,11 +330,10 @@
 						<posy>560</posy>
 						<width>250</width>
 						<height>140</height>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8000).ListItem.Thumb]</texture>
 						<aspectratio aligny="center">stretch</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<fadetime>100</fadetime>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8000).ListItem.Thumb]</texture>
 						<visible>Container(9000).HasFocus(4) + Library.HasContent(Movies) + [!Skin.HasSetting(home2) | Control.HasFocus(8000)]</visible>
 					</control>
 				</control>
@@ -296,11 +345,10 @@
 						<posy>560</posy>
 						<width>250</width>
 						<height>140</height>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8001).ListItem.Thumb]</texture>
 						<aspectratio aligny="center">stretch</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<fadetime>100</fadetime>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8001).ListItem.Thumb]</texture>
 						<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows) + [!Skin.HasSetting(home2) | Control.HasFocus(8001)]</visible>
 					</control>
 				</control>
@@ -312,11 +360,10 @@
 						<posy>560</posy>
 						<width>140</width>
 						<height>140</height>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8002).ListItem.Thumb]</texture>
 						<aspectratio aligny="center">stretch</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<fadetime>100</fadetime>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8002).ListItem.Thumb]</texture>
 						<visible>Container(9000).HasFocus(3) + Library.HasContent(Music) + [!Skin.HasSetting(home2) | Control.HasFocus(8002)]</visible>
 					</control>
 				</control>
@@ -380,6 +427,111 @@
 						<include condition="Skin.HasSetting(ShowMusicRecentlyAdded)">RecentlyAddedAlbumContents</include>
 						<include condition="Skin.HasSetting(ShowMusicRandomItems)">RandomAlbumContents</include>
 						<include condition="Skin.HasSetting(ShowMusicWatchlist)">WatchlistAlbumContents</include>
+					</control>
+				</control>
+				<control type="group">
+					<posx>265</posx>
+					<posy>560</posy>
+					<control type="fixedlist" id="8003">
+						<include>Animation_CommonFade</include>
+						<include>Animation_FadedByMenu</include>
+						<animation effect="slide" start="0,0"  end="76,0" time="0" condition="StringCompare(Container(8003).NumItems,4)">conditional</animation>
+						<animation effect="slide" start="0,0" end="152,0" time="0" condition="StringCompare(Container(8003).NumItems,3)">conditional</animation>
+						<animation effect="slide" start="0,0" end="228,0" time="0" condition="StringCompare(Container(8003).NumItems,2)">conditional</animation>
+						<animation effect="slide" start="0,0" end="304,0" time="0" condition="StringCompare(Container(8003).NumItems,1)">conditional</animation>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>760</width>
+						<height>152</height>
+						<onup>9000</onup>
+						<ondown>9000</ondown>
+						<onleft>8003</onleft>
+						<onright>8003</onright>
+						<pagecontrol>-</pagecontrol>
+						<orientation>horizontal</orientation>
+						<focusposition>0</focusposition>
+						<movement>5</movement>
+						<scrolltime>200</scrolltime>
+						<!-- Setting preloaditems to anything greater than zero currently causes -->
+						<!-- flickering/slowdown if any home items are hidden.  -->
+						<!-- See http://trac.xbmc.org/ticket/12145 and https://github.com/stoli/Metropolis/issues/21 -->
+						<!--<preloaditems>2</preloaditems>-->
+						<preloaditems>0</preloaditems>
+						<visible>Container(9000).HasFocus(1)</visible>
+						<itemlayout height="152" width="152">
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>152</width>
+								<height>152</height>
+								<aspectratio aligny="top">keep</aspectratio>
+								<bordertexture border="6">frames/thumb_border.png</bordertexture>
+								<bordersize>6</bordersize>
+								<texture diffuse="frames/EpisodeMatte.png">$INFO[ListItem.Icon]</texture>
+							</control>
+						</itemlayout>
+						<focusedlayout height="152" width="152">
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>152</width>
+								<height>152</height>
+								<aspectratio aligny="top">keep</aspectratio>
+								<bordertexture border="6">frames/thumb_border.png</bordertexture>
+								<bordersize>6</bordersize>
+								<texture diffuse="frames/EpisodeMatte.png">$INFO[ListItem.Icon]</texture>
+								<visible>!Control.HasFocus(8003)</visible>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>152</width>
+								<height>152</height>
+								<aspectratio aligny="top">keep</aspectratio>
+								<colordiffuse>PosterDiffuse</colordiffuse>
+								<bordertexture border="6">frames/thumb_border.png</bordertexture>
+								<bordersize>6</bordersize>
+								<texture diffuse="frames/EpisodeMatte.png">$INFO[ListItem.Icon]</texture>
+								<visible>Control.HasFocus(8003)</visible>
+							</control>
+						</focusedlayout>
+						<content>
+							<item id="1">
+								<label>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon1))]</label>
+								<onclick>RunAddon($INFO[Skin.String(HomePrograms_Addon1)])</onclick>
+								<icon>$INFO[System.AddonIcon(Skin.String(HomePrograms_Addon1))]</icon>
+								<thumb>-</thumb>
+								<visible>!IsEmpty(Skin.String(HomePrograms_Addon1))</visible>
+							</item>
+							<item id="2">
+								<label>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon2))]</label>
+								<onclick>RunAddon($INFO[Skin.String(HomePrograms_Addon2)])</onclick>
+								<icon>$INFO[System.AddonIcon(Skin.String(HomePrograms_Addon2))]</icon>
+								<thumb>-</thumb>
+								<visible>!IsEmpty(Skin.String(HomePrograms_Addon2))</visible>
+							</item>
+							<item id="3">
+								<label>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon3))]</label>
+								<onclick>RunAddon($INFO[Skin.String(HomePrograms_Addon3)])</onclick>
+								<icon>$INFO[System.AddonIcon(Skin.String(HomePrograms_Addon3))]</icon>
+								<thumb>-</thumb>
+								<visible>!IsEmpty(Skin.String(HomePrograms_Addon3))</visible>
+							</item>
+							<item id="4">
+								<label>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon4))]</label>
+								<onclick>RunAddon($INFO[Skin.String(HomePrograms_Addon4)])</onclick>
+								<icon>$INFO[System.AddonIcon(Skin.String(HomePrograms_Addon4))]</icon>
+								<thumb>-</thumb>
+								<visible>!IsEmpty(Skin.String(HomePrograms_Addon4))</visible>
+							</item>
+							<item id="5">
+								<label>$INFO[System.AddonTitle(Skin.String(HomePrograms_Addon5))]</label>
+								<onclick>RunAddon($INFO[Skin.String(HomePrograms_Addon5)])</onclick>
+								<icon>$INFO[System.AddonIcon(Skin.String(HomePrograms_Addon5))]</icon>
+								<thumb>-</thumb>
+								<visible>!IsEmpty(Skin.String(HomePrograms_Addon5))</visible>
+							</item>
+						</content>
 					</control>
 				</control>
 			</control>
