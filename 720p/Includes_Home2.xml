@@ -378,46 +378,52 @@
 				<visible>Container(9000).HasFocus(4)</visible>
 				<control type="button" id="90111">
 					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[24001]</label>
+					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<visible>Skin.HasSetting(NoPrograms) + Skin.HasSetting(NoVideos)</visible>
+				</control>
+				<control type="button" id="90112">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
-				<control type="button" id="90112">
+				<control type="button" id="90113">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 				</control>
-				<control type="button" id="90113">
+				<control type="button" id="90114">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 				</control>
-				<control type="button" id="90114">
+				<control type="button" id="90115">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 				</control>
-				<control type="button" id="90115">
+				<control type="button" id="90116">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20348]</label>
 					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 				</control>
-				<control type="button" id="90116">
+				<control type="button" id="90117">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,moviestudios,return)</onclick>
 				</control>
-				<control type="button" id="90117">
+				<control type="button" id="90118">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 				</control>
-				<control type="button" id="90118">
+				<control type="button" id="90119">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90119">
+				<control type="button" id="90120">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -432,47 +438,53 @@
 				<visible>Container(9000).HasFocus(5)</visible>
 				<control type="button" id="90121">
 					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[24001]</label>
+					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<visible>Skin.HasSetting(NoPrograms) + Skin.HasSetting(NoVideos)</visible>
+				</control>
+				<control type="button" id="90122">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 				</control>
-				<control type="button" id="90122">
+				<control type="button" id="90123">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 				</control>
-				<control type="button" id="90123">
+				<control type="button" id="90124">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 				</control>
-				<control type="button" id="90124">
+				<control type="button" id="90125">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 				</control>
-				<control type="button" id="90125">
+				<control type="button" id="90126">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,TVShowstudios,return)</onclick>
 				</control>
-				<control type="button" id="90126">
+				<control type="button" id="90127">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31428]</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
 				</control>
-				<control type="button" id="90127">
+				<control type="button" id="90128">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31443]</label>
 					<onclick>RunScript(script.pseudotv)</onclick>
 					<visible>System.HasAddon(script.pseudotv)</visible>
 				</control>
-				<control type="button" id="90128">
+				<control type="button" id="90129">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90129">
+				<control type="button" id="90130">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -489,6 +501,7 @@
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
 				<control type="button" id="90102">
 					<include>Submenu_Button2</include>
@@ -562,6 +575,7 @@
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
+					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
 				<control type="button" id="90173">
 					<include>Submenu_Button2</include>
@@ -632,6 +646,7 @@
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
 				<control type="button" id="90161">
 					<include>Submenu_Button2</include>
