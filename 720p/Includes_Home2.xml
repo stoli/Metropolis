@@ -362,7 +362,7 @@
 				<onup>9019</onup>
 				<ondown>9019</ondown>
 				<visible>Container(9000).HasFocus(9)</visible>
-				<control type="button" id="90191">
+				<control type="button" id="91901">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[13391]</label>
 					<onclick>SetFocus(9000)</onclick>
@@ -376,54 +376,54 @@
 				<onup>9011</onup>
 				<ondown>9011</ondown>
 				<visible>Container(9000).HasFocus(4)</visible>
-				<control type="button" id="90111">
+				<control type="button" id="91101">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms) + Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90112">
+				<control type="button" id="91102">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
-				<control type="button" id="90113">
+				<control type="button" id="91103">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 				</control>
-				<control type="button" id="90114">
+				<control type="button" id="91104">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 				</control>
-				<control type="button" id="90115">
+				<control type="button" id="91105">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 				</control>
-				<control type="button" id="90116">
+				<control type="button" id="91106">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20348]</label>
 					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 				</control>
-				<control type="button" id="90117">
+				<control type="button" id="91107">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,moviestudios,return)</onclick>
 				</control>
-				<control type="button" id="90118">
+				<control type="button" id="91108">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 				</control>
-				<control type="button" id="90119">
+				<control type="button" id="91109">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90120">
+				<control type="button" id="91110">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -436,55 +436,55 @@
 				<onup>9012</onup>
 				<ondown>9012</ondown>
 				<visible>Container(9000).HasFocus(5)</visible>
-				<control type="button" id="90121">
+				<control type="button" id="91201">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms) + Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90122">
+				<control type="button" id="91202">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 				</control>
-				<control type="button" id="90123">
+				<control type="button" id="91203">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 				</control>
-				<control type="button" id="90124">
+				<control type="button" id="91204">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 				</control>
-				<control type="button" id="90125">
+				<control type="button" id="91205">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 				</control>
-				<control type="button" id="90126">
+				<control type="button" id="91206">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,TVShowstudios,return)</onclick>
 				</control>
-				<control type="button" id="90127">
+				<control type="button" id="91207">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31428]</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
 				</control>
-				<control type="button" id="90128">
+				<control type="button" id="91208">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31443]</label>
 					<onclick>RunScript(script.pseudotv)</onclick>
 					<visible>System.HasAddon(script.pseudotv)</visible>
 				</control>
-				<control type="button" id="90129">
+				<control type="button" id="91209">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="90130">
+				<control type="button" id="91210">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -497,36 +497,36 @@
 				<onup>9010</onup>
 				<ondown>9010</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
-				<control type="button" id="90101">
+				<control type="button" id="91001">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
-				<control type="button" id="90102">
+				<control type="button" id="91002">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20342]</label>
 					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 					<visible>Library.HasContent(Movies)</visible>
 				</control>
-				<control type="button" id="90103">
+				<control type="button" id="91003">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20343]</label>
 					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</control>
-				<control type="button" id="90104">
+				<control type="button" id="91004">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20389]</label>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
-				<control type="button" id="90105">
+				<control type="button" id="91005">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="90106">
+				<control type="button" id="91006">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -538,22 +538,22 @@
 				<onup>9020</onup>
 				<ondown>9020</ondown>
 				<visible>Container(9000).HasFocus(15)</visible>
-				<control type="button" id="90200">
+				<control type="button" id="92001">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19023]</label>
 					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
 				</control>
-				<control type="button" id="90202">
+				<control type="button" id="92002">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19069]</label>
 					<onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
 				</control>
-				<control type="button" id="90203">
+				<control type="button" id="92003">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19163]</label>
 					<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
 				</control>
-				<control type="button" id="90204">
+				<control type="button" id="92004">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19040]</label>
 					<onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
@@ -565,72 +565,72 @@
 				<onup>9017</onup>
 				<ondown>9017</ondown>
 				<visible>Container(9000).HasFocus(3)</visible>
-				<control type="button" id="90171">
+				<control type="button" id="91701">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31438]</label>
 					<onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90172">
+				<control type="button" id="91702">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
-				<control type="button" id="90173">
+				<control type="button" id="91703">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90174">
+				<control type="button" id="91704">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[133]</label>
 					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90175">
+				<control type="button" id="91705">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[132]</label>
 					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90176">
+				<control type="button" id="91706">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[134]</label>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90177">
+				<control type="button" id="91707">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[3]</label>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
-				<control type="button" id="90178">
+				<control type="button" id="91708">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="90179">
+				<control type="button" id="91709">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[589]</label>
 					<onclick>PlayerControl(Partymode(music))</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="90180">
+				<control type="button" id="91710">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31446]</label>
 					<onclick>fullscreen</onclick>
 					<visible>Player.HasAudio</visible>
 				</control>
-				<control type="button" id="90181">
+				<control type="button" id="91711">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 					<visible>!Library.HasContent(Music) | Skin.HasSetting(HomeMusic_Genres) | Skin.HasSetting(HomeMusic_Artists) | Skin.HasSetting(HomeMusic_Albums) | Skin.HasSetting(HomeMusic_Songs) | Skin.HasSetting(HomeMusic_Videos) | Skin.HasSetting(HomeMusic_Playlists) | !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
 				</control>
-				<control type="button" id="90182">
+				<control type="button" id="91712">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(music)</onclick>
@@ -642,13 +642,13 @@
 				<onup>9016</onup>
 				<ondown>9016</ondown>
 				<visible>Container(9000).HasFocus(6)</visible>
-				<control type="button" id="90160">
+				<control type="button" id="91601">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms)</visible>
 				</control>
-				<control type="button" id="90161">
+				<control type="button" id="91602">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
@@ -661,22 +661,22 @@
 				<onup>9015</onup>
 				<ondown>9015</ondown>
 				<visible>Container(9000).HasFocus(1)</visible>
-				<control type="button" id="90150">
+				<control type="button" id="91501">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1212]</label>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90151">
+				<control type="button" id="91502">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1211]</label>
 					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90152">
+				<control type="button" id="91503">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1213]</label>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 				</control>
-				<control type="button" id="90153">
+				<control type="button" id="91504">
 					<include>Submenu_Button2</include>
 					<label>Browser</label>
 					<onclick>ActivateWindow(addonbrowser)</onclick>
@@ -688,22 +688,22 @@
 				<onup>9014</onup>
 				<ondown>9014</ondown>
 				<visible>Container(9000).HasFocus(8)</visible>
-				<control type="button" id="90141">
+				<control type="button" id="91401">
 					<include>Submenu_Button2</include>
 					<label>13000</label>
 					<onclick>ActivateWindow(SystemSettings)</onclick>
 				</control>
-				<control type="button" id="90142">
+				<control type="button" id="91402">
 					<include>Submenu_Button2</include>
 					<label>7</label>
 					<onclick>ActivateWindow(FileManager)</onclick>
 				</control>
-				<control type="button" id="90143">
+				<control type="button" id="91403">
 					<include>Submenu_Button2</include>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
-				<control type="button" id="90144">
+				<control type="button" id="91404">
 					<include>Submenu_Button2</include>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
@@ -715,45 +715,45 @@
 				<onup>9090</onup>
 				<ondown>9090</ondown>
 				<visible>Container(9000).HasFocus(11)</visible>
-				<control type="button" id="90901">
+				<control type="button" id="99001">
 					<include>Submenu_Button2</include>
 					<label>Set Timer</label>
 					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>>
 				</control>
-				<control type="button" id="90902">
+				<control type="button" id="99002">
 					<include>Submenu_Button2</include>
 					<label>Cancel Timer</label>
 					<visible>System.HasAlarm(ShutdownTimer)</visible>
 					<onclick>CancelAlarm(ShutdownTimer)</onclick>
 				</control>
-				<control type="button" id="90903">
+				<control type="button" id="99003">
 					<include>Submenu_Button2</include>
 					<label>13011</label>
 					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
 					<onclick>Suspend()</onclick>
 				</control>
-				<control type="button" id="90904">
+				<control type="button" id="99004">
 					<include>Submenu_Button2</include>
 					<label>13010</label>
 					<onclick>Hibernate()</onclick>
 				</control>
-				<control type="button" id="90905">
+				<control type="button" id="99005">
 					<include>Submenu_Button2</include>
 					<label>13313</label>
 					<onclick>RestartApp()</onclick>
 				</control>
-				<control type="button" id="90906">
+				<control type="button" id="99006">
 					<include>Submenu_Button2</include>
 					<label>13005</label>
 					<onclick>ShutDown()</onclick>
 				</control>
-				<control type="button" id="90907">
+				<control type="button" id="99007">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20126]</label>
 					<onclick>System.LogOff</onclick>
 					<visible>System.HasLoginScreen</visible>
 				</control>
-				<control type="button" id="90908">
+				<control type="button" id="99008">
 					<include>Submenu_Button2</include>
 					<label>13012</label>
 					<onclick>XBMC.Quit()</onclick>
