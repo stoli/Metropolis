@@ -631,47 +631,65 @@
 				</control>
 				<control type="button" id="91103">
 					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeMovies_Playlist1_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist1_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Playlist1)</visible>
+				</control>
+				<control type="button" id="91104">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist2_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Playlist2)</visible>
+				</control>
+				<control type="button" id="91105">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist3_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Playlist3)</visible>
+				</control>
+				<control type="button" id="91106">
+					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 				</control>
-				<control type="button" id="91104">
+				<control type="button" id="91107">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 				</control>
-				<control type="button" id="91105">
+				<control type="button" id="91108">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 				</control>
-				<control type="button" id="91106">
+				<control type="button" id="91109">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20348]</label>
 					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 				</control>
-				<control type="button" id="91107">
+				<control type="button" id="91110">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 				</control>
-				<control type="button" id="91108">
+				<control type="button" id="91111">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 				</control>
-				<control type="button" id="91109">
+				<control type="button" id="91112">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="91110">
+				<control type="button" id="91113">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[14022]</label>
 					<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
 					<visible>Library.HasContent(Movies) + [Skin.HasSetting(HomeMovies_Recent) | Skin.HasSetting(HomeMovies_Genres) | Skin.HasSetting(HomeMovies_Years) | Skin.HasSetting(HomeMovies_Actors) | Skin.HasSetting(HomeMovies_Directors) | Skin.HasSetting(HomeMovies_Studios) | Skin.HasSetting(HomeMovies_Addons) | !IsEmpty(Skin.String(HomeMovies_Addon))]</visible>
 				</control>
-				<control type="button" id="91111">
+				<control type="button" id="91114">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -697,49 +715,67 @@
 				</control>
 				<control type="button" id="91203">
 					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeTVShows_Playlist1_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist1_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeTVShows_Playlist1)</visible>
+				</control>
+				<control type="button" id="91204">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeTVShows_Playlist2_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist2_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeTVShows_Playlist2)</visible>
+				</control>
+				<control type="button" id="91205">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeTVShows_Playlist3_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist3_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeTVShows_Playlist3)</visible>
+				</control>
+				<control type="button" id="91206">
+					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
 				</control>
-				<control type="button" id="91204">
+				<control type="button" id="91207">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
 				</control>
-				<control type="button" id="91205">
+				<control type="button" id="91208">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
 				</control>
-				<control type="button" id="91206">
+				<control type="button" id="91209">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
 				</control>
-				<control type="button" id="91207">
+				<control type="button" id="91210">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31428]</label>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
 					<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 				</control>
-				<control type="button" id="91208">
+				<control type="button" id="91211">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31443]</label>
 					<onclick>RunScript(script.pseudotv)</onclick>
 					<visible>System.HasAddon(script.pseudotv)</visible>
 				</control>
-				<control type="button" id="91209">
+				<control type="button" id="91212">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="91210">
+				<control type="button" id="91213">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[14022]</label>
 					<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
 					<visible>Library.HasContent(TVShows) + [Skin.HasSetting(HomeTVShows_Recent) | Skin.HasSetting(HomeTVShows_Genres) | Skin.HasSetting(HomeTVShows_Years) | Skin.HasSetting(HomeTVShows_Actors) | Skin.HasSetting(HomeTVShows_Studios) | Skin.HasSetting(HomeTVShows_TVGuide) | Skin.HasSetting(HomeTVShows_Addons) | !IsEmpty(Skin.String(HomeTVShows_Addon))]</visible>
 				</control>
-				<control type="button" id="91211">
+				<control type="button" id="91214">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
@@ -760,35 +796,53 @@
 				</control>
 				<control type="button" id="91002">
 					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeVideos_Playlist1_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist1_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeVideos_Playlist1)</visible>
+				</control>
+				<control type="button" id="91003">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeVideos_Playlist2_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist2_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeVideos_Playlist2)</visible>
+				</control>
+				<control type="button" id="91004">
+					<include>Submenu_Button</include>
+					<label>$INFO[Skin.String(HomeVideos_Playlist3_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist3_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeVideos_Playlist3)</visible>
+				</control>
+				<control type="button" id="91005">
+					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20342]</label>
 					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 					<visible>Library.HasContent(Movies)</visible>
 				</control>
-				<control type="button" id="91003">
+				<control type="button" id="91006">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20343]</label>
 					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</control>
-				<control type="button" id="91004">
+				<control type="button" id="91007">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20389]</label>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
-				<control type="button" id="91005">
+				<control type="button" id="91008">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 					<visible>!Skin.HasSetting(HomeVideos_Playlists)</visible>
 				</control>
-				<control type="button" id="91006">
+				<control type="button" id="91009">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(HomeVideos_Playlists) | Skin.HasSetting(HomeVideos_Addons) | !IsEmpty(Skin.String(HomeVideos_Addon))</visible>
 				</control>
-				<control type="button" id="91007">
+				<control type="button" id="91010">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
