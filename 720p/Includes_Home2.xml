@@ -747,58 +747,76 @@
 				</control>
 				<control type="button" id="91703">
 					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist1_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMusic_Playlist1)</visible>
+				</control>
+				<control type="button" id="91704">
+					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist2_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMusic_Playlist2)</visible>
+				</control>
+				<control type="button" id="91705">
+					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist3_Path)],return)</onclick>
+					<visible>Skin.HasSetting(HomeMusic_Playlist3)</visible>
+				</control>
+				<control type="button" id="91706">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91704">
+				<control type="button" id="91707">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[133]</label>
 					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91705">
+				<control type="button" id="91708">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[132]</label>
 					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91706">
+				<control type="button" id="91709">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[134]</label>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91707">
+				<control type="button" id="91710">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[3]</label>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Library.HasContent(MusicVideos)</visible>
 				</control>
-				<control type="button" id="91708">
+				<control type="button" id="91711">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="91709">
+				<control type="button" id="91712">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[589]</label>
 					<onclick>PlayerControl(Partymode(music))</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91710">
+				<control type="button" id="91713">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31446]</label>
 					<onclick>fullscreen</onclick>
 					<visible>Player.HasAudio</visible>
 				</control>
-				<control type="button" id="91711">
+				<control type="button" id="91714">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 					<visible>!Library.HasContent(Music) | Skin.HasSetting(HomeMusic_Genres) | Skin.HasSetting(HomeMusic_Artists) | Skin.HasSetting(HomeMusic_Albums) | Skin.HasSetting(HomeMusic_Songs) | Skin.HasSetting(HomeMusic_Videos) | Skin.HasSetting(HomeMusic_Playlists) | Skin.HasSetting(HomeMusic_Addons) | !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
 				</control>
-				<control type="button" id="91712">
+				<control type="button" id="91715">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(music)</onclick>
