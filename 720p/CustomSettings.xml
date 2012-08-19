@@ -332,7 +332,7 @@
 					<onright>9000</onright>
 					<control type="radiobutton" id="401">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[342]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[342][/B]</label>
 						<onclick>Skin.ToggleSetting(NoMovies)</onclick>
 						<selected>Skin.HasSetting(NoMovies)</selected>
 					</control>
@@ -353,7 +353,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Recent)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Recent)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="404">
 						<include>SettingsLabel</include>
@@ -367,7 +367,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Genres)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Genres)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="405">
 						<include>SettingsLabel</include>
@@ -381,7 +381,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Years)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Years)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="406">
 						<include>SettingsLabel</include>
@@ -395,7 +395,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Actors)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Actors)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="407">
 						<include>SettingsLabel</include>
@@ -409,7 +409,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Directors)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Directors)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="408">
 						<include>SettingsLabel</include>
@@ -423,7 +423,7 @@
 						<onclick>Skin.Reset(HomeMovies_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Studios)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Studios)</selected>
-						<visible>!Skin.HasSetting(NoTVShows)</visible>
+						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
 					<control type="radiobutton" id="409">
 						<include>SettingsLabel</include>
@@ -456,7 +456,7 @@
 					</control>
 					<control type="radiobutton" id="411">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[20343]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[20343][/B]</label>
 						<onclick>Skin.ToggleSetting(NoTVShows)</onclick>
 						<selected>Skin.HasSetting(NoTVShows)</selected>
 					</control>
@@ -580,7 +580,7 @@
 					</control>
 					<control type="radiobutton" id="421">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[3]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[3][/B]</label>
 						<onclick>Skin.ToggleSetting(NoVideos)</onclick>
 						<selected>Skin.HasSetting(NoVideos)</selected>
 					</control>
@@ -619,14 +619,14 @@
 					</control>
 					<control type="radiobutton" id="426">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[31334]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[31334][/B]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
 						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 					</control>
 					<control type="radiobutton" id="427">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[2][/B]</label>
 						<onclick>Skin.ToggleSetting(NoMusic)</onclick>
 						<selected>Skin.HasSetting(NoMusic)</selected>
 					</control>
@@ -824,7 +824,7 @@
 					</control>
 					<control type="radiobutton" id="447">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[1]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[1][/B]</label>
 						<onclick>Skin.ToggleSetting(NoPictures)</onclick>
 						<selected>Skin.HasSetting(NoPictures)</selected>
 					</control>
@@ -852,7 +852,7 @@
 					</control>
 					<control type="radiobutton" id="451">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[24001]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[24001][/B]</label>
 						<onclick>Skin.ToggleSetting(NoPrograms)</onclick>
 						<selected>Skin.HasSetting(NoPrograms)</selected>
 					</control>
@@ -903,25 +903,25 @@
 					</control>
 					<control type="radiobutton" id="458">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[8]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[8][/B]</label>
 						<onclick>Skin.ToggleSetting(NoWeather)</onclick>
 						<selected>Skin.HasSetting(NoWeather)</selected>
 					</control>
 					<control type="radiobutton" id="459">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[5]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[5][/B]</label>
 						<onclick>Skin.ToggleSetting(NoSettings)</onclick>
 						<selected>Skin.HasSetting(NoSettings)</selected>
 					</control>
 					<control type="radiobutton" id="460">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[1036]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[1036][/B]</label>
 						<onclick>Skin.ToggleSetting(NoFavourites)</onclick>
 						<selected>Skin.HasSetting(NoFavourites)</selected>
 					</control>
 					<control type="radiobutton" id="461">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[13005]</label>
+						<label>[B]$LOCALIZE[31441] $LOCALIZE[13005][/B]</label>
 						<onclick>Skin.ToggleSetting(NoShutdown)</onclick>
 						<selected>Skin.HasSetting(NoShutdown)</selected>
 					</control>
