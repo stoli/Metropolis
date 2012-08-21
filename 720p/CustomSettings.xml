@@ -474,7 +474,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist1_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMovies_Playlist1_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMovies_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 					</control>
 					<control type="button" id="1514">
@@ -497,7 +496,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist2_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMovies_Playlist2_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMovies_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 					</control>
 					<control type="button" id="1517">
@@ -520,7 +518,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist3_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMovies_Playlist3_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMovies_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 					</control>
 					<control type="button" id="1520">
@@ -674,7 +671,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist1_Path)]</label2>
 						<onclick>Skin.SetFile(HomeTVShows_Playlist1_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeTVShows_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist1)</visible>
 					</control>
 					<control type="button" id="1544">
@@ -697,7 +693,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist2_Path)]</label2>
 						<onclick>Skin.SetFile(HomeTVShows_Playlist2_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeTVShows_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist2)</visible>
 					</control>
 					<control type="button" id="1547">
@@ -720,7 +715,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist3_Path)]</label2>
 						<onclick>Skin.SetFile(HomeTVShows_Playlist3_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeTVShows_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist3)</visible>
 					</control>
 					<control type="button" id="1550">
@@ -789,7 +783,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist1_Path)]</label2>
 						<onclick>Skin.SetFile(HomeVideos_Playlist1_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeVideos_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist1)</visible>
 					</control>
 					<control type="button" id="1569">
@@ -812,7 +805,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist2_Path)]</label2>
 						<onclick>Skin.SetFile(HomeVideos_Playlist2_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeVideos_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist2)</visible>
 					</control>
 					<control type="button" id="1572">
@@ -835,7 +827,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist3_Path)]</label2>
 						<onclick>Skin.SetFile(HomeVideos_Playlist3_Path,,special://videoplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeVideos_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist3)</visible>
 					</control>
 					<control type="button" id="1575">
@@ -998,7 +989,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist1_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist1_Path,,special://musicplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMusic_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 					</control>
 					<control type="button" id="1634">
@@ -1021,7 +1011,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist2_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist2_Path,,special://musicplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMusic_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 					</control>
 					<control type="button" id="1637">
@@ -1044,7 +1033,6 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist3_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist3_Path,,special://musicplaylists/)</onclick>
-						<selected>Skin.HasSetting(HomeMusic_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 					</control>
 					<control type="button" id="1640">
