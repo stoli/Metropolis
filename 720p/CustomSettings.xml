@@ -330,18 +330,20 @@
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<control type="radiobutton" id="401">
+
+					<!-- Movies item (1501-1530) -->
+					<control type="radiobutton" id="1501">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[342][/B]</label>
 						<onclick>Skin.ToggleSetting(NoMovies)</onclick>
 						<selected>Skin.HasSetting(NoMovies)</selected>
 					</control>
-					<control type="label" id="402">
+					<control type="label" id="1502">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31456]</label>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="403">
+					<control type="radiobutton" id="1503">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[31438]</label>
 						<onclick>Skin.Reset(HomeMovies_Genres)</onclick>
@@ -355,7 +357,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Recent)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="404">
+					<control type="radiobutton" id="1504">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[135]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -369,7 +371,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Genres)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="405">
+					<control type="radiobutton" id="1505">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[652]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -383,7 +385,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Years)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="406">
+					<control type="radiobutton" id="1506">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[344]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -397,7 +399,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Actors)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="407">
+					<control type="radiobutton" id="1507">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[20348]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -411,7 +413,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Directors)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="408">
+					<control type="radiobutton" id="1508">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[20388]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -425,7 +427,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Studios)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="409">
+					<control type="radiobutton" id="1509">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomeMovies_Recent)</onclick>
@@ -439,7 +441,7 @@
 						<selected>Skin.HasSetting(HomeMovies_Addons)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="button" id="410">
+					<control type="button" id="1510">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -454,19 +456,19 @@
 						<onclick>Skin.SetAddon(HomeMovies_Addon,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="label" id="411">
+					<control type="label" id="1511">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]:</label>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="radiobutton" id="412">
+					<control type="radiobutton" id="1512">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="button" id="413">
+					<control type="button" id="1513">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -475,21 +477,21 @@
 						<selected>Skin.HasSetting(HomeMovies_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 					</control>
-					<control type="button" id="414">
+					<control type="button" id="1514">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeMovies_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="415">
+					<control type="radiobutton" id="1515">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="button" id="416">
+					<control type="button" id="1516">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -498,21 +500,21 @@
 						<selected>Skin.HasSetting(HomeMovies_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 					</control>
-					<control type="button" id="417">
+					<control type="button" id="1517">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMovies_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="418">
+					<control type="radiobutton" id="1518">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoMovies)</visible>
 					</control>
-					<control type="button" id="419">
+					<control type="button" id="1519">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -521,25 +523,27 @@
 						<selected>Skin.HasSetting(HomeMovies_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 					</control>
-					<control type="button" id="420">
+					<control type="button" id="1520">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeMovies_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 					</control>
-					<control type="radiobutton" id="421">
+
+					<!-- TV Shows item (1531-1560) -->
+					<control type="radiobutton" id="1531">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[20343][/B]</label>
 						<onclick>Skin.ToggleSetting(NoTVShows)</onclick>
 						<selected>Skin.HasSetting(NoTVShows)</selected>
 					</control>
-					<control type="label" id="422">
+					<control type="label" id="1532">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31456]</label>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="423">
+					<control type="radiobutton" id="1533">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[31438]</label>
 						<onclick>Skin.Reset(HomeTVShows_Genres)</onclick>
@@ -553,7 +557,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Recent)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="424">
+					<control type="radiobutton" id="1534">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[135]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -567,7 +571,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Genres)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="425">
+					<control type="radiobutton" id="1535">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[652]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -581,7 +585,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Years)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="426">
+					<control type="radiobutton" id="1536">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[344]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -595,7 +599,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Actors)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="427">
+					<control type="radiobutton" id="1537">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[20388]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -609,7 +613,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Studios)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="428">
+					<control type="radiobutton" id="1538">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[31428]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -623,7 +627,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_TVGuide)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="429">
+					<control type="radiobutton" id="1539">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomeTVShows_Recent)</onclick>
@@ -637,7 +641,7 @@
 						<selected>Skin.HasSetting(HomeTVShows_Addons)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="button" id="430">
+					<control type="button" id="1540">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -652,19 +656,19 @@
 						<onclick>Skin.SetAddon(HomeTVShows_Addon,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="label" id="431">
+					<control type="label" id="1541">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]:</label>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="radiobutton" id="432">
+					<control type="radiobutton" id="1542">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="button" id="433">
+					<control type="button" id="1543">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -673,21 +677,21 @@
 						<selected>Skin.HasSetting(HomeTVShows_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist1)</visible>
 					</control>
-					<control type="button" id="434">
+					<control type="button" id="1544">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeTVShows_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="435">
+					<control type="radiobutton" id="1545">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="button" id="436">
+					<control type="button" id="1546">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -696,21 +700,21 @@
 						<selected>Skin.HasSetting(HomeTVShows_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist2)</visible>
 					</control>
-					<control type="button" id="437">
+					<control type="button" id="1547">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeTVShows_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="438">
+					<control type="radiobutton" id="1548">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoTVShows)</visible>
 					</control>
-					<control type="button" id="439">
+					<control type="button" id="1549">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -719,25 +723,27 @@
 						<selected>Skin.HasSetting(HomeTVShows_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist3)</visible>
 					</control>
-					<control type="button" id="440">
+					<control type="button" id="1550">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeTVShows_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeTVShows_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Playlist3)</visible>
 					</control>
-					<control type="radiobutton" id="441">
+
+					<!-- Videos item (1561-1590) -->
+					<control type="radiobutton" id="1561">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[3][/B]</label>
 						<onclick>Skin.ToggleSetting(NoVideos)</onclick>
 						<selected>Skin.HasSetting(NoVideos)</selected>
 					</control>
-					<control type="label" id="442">
+					<control type="label" id="1562">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31456]</label>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="radiobutton" id="443">
+					<control type="radiobutton" id="1563">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[136]</label>
 						<onclick>Skin.Reset(HomeVideos_Addons)</onclick>
@@ -746,7 +752,7 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlists)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="radiobutton" id="444">
+					<control type="radiobutton" id="1564">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomeVideos_Playlists)</onclick>
@@ -755,7 +761,7 @@
 						<selected>Skin.HasSetting(HomeVideos_Addons)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="button" id="445">
+					<control type="button" id="1565">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -765,19 +771,19 @@
 						<onclick>Skin.SetAddon(HomeVideos_Addon,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="label" id="446">
+					<control type="label" id="1566">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]:</label>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="radiobutton" id="447">
+					<control type="radiobutton" id="1567">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="button" id="448">
+					<control type="button" id="1568">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -786,21 +792,21 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist1)</visible>
 					</control>
-					<control type="button" id="449">
+					<control type="button" id="1569">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="450">
+					<control type="radiobutton" id="1570">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="button" id="451">
+					<control type="button" id="1571">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -809,21 +815,21 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist2)</visible>
 					</control>
-					<control type="button" id="452">
+					<control type="button" id="1572">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="453">
+					<control type="radiobutton" id="1573">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="button" id="454">
+					<control type="button" id="1574">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -832,32 +838,36 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist3)</visible>
 					</control>
-					<control type="button" id="455">
+					<control type="button" id="1575">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlist3)</visible>
 					</control>
-					<control type="radiobutton" id="456">
+
+					<!-- Trailers item (1591-1620) -->
+					<control type="radiobutton" id="1591">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[31334][/B]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
 						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
 					</control>
-					<control type="radiobutton" id="457">
+
+					<!-- Music item (1621-1650) -->
+					<control type="radiobutton" id="1621">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[2][/B]</label>
 						<onclick>Skin.ToggleSetting(NoMusic)</onclick>
 						<selected>Skin.HasSetting(NoMusic)</selected>
 					</control>
-					<control type="label" id="458">
+					<control type="label" id="1622">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31456]</label>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="459">
+					<control type="radiobutton" id="1623">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[135]</label>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
@@ -871,7 +881,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Genres)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="460">
+					<control type="radiobutton" id="1624">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[133]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -885,7 +895,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Artists)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="461">
+					<control type="radiobutton" id="1625">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[132]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -899,7 +909,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Albums)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="462">
+					<control type="radiobutton" id="1626">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[134]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -913,7 +923,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Songs)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="463">
+					<control type="radiobutton" id="1627">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[3]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -927,7 +937,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Videos)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="464">
+					<control type="radiobutton" id="1628">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[136]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -941,7 +951,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Playlists)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="465">
+					<control type="radiobutton" id="1629">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
@@ -955,7 +965,7 @@
 						<selected>Skin.HasSetting(HomeMusic_Addons)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="button" id="466">
+					<control type="button" id="1630">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -970,19 +980,19 @@
 						<onclick>Skin.SetAddon(HomeMusic_Addon,xbmc.addon.audio)</onclick>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="label" id="467">
+					<control type="label" id="1631">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]:</label>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="468">
+					<control type="radiobutton" id="1632">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="button" id="469">
+					<control type="button" id="1633">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -991,21 +1001,21 @@
 						<selected>Skin.HasSetting(HomeMusic_Playlist1_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 					</control>
-					<control type="button" id="470">
+					<control type="button" id="1634">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="471">
+					<control type="radiobutton" id="1635">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="button" id="472">
+					<control type="button" id="1636">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1014,21 +1024,21 @@
 						<selected>Skin.HasSetting(HomeMusic_Playlist2_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 					</control>
-					<control type="button" id="473">
+					<control type="button" id="1637">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="474">
+					<control type="radiobutton" id="1638">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="button" id="475">
+					<control type="button" id="1639">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1037,25 +1047,27 @@
 						<selected>Skin.HasSetting(HomeMusic_Playlist3_Path)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 					</control>
-					<control type="button" id="476">
+					<control type="button" id="1640">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 					</control>
-					<control type="radiobutton" id="477">
+
+					<!-- Pictures item (1651-1680) -->
+					<control type="radiobutton" id="1651">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[1][/B]</label>
 						<onclick>Skin.ToggleSetting(NoPictures)</onclick>
 						<selected>Skin.HasSetting(NoPictures)</selected>
 					</control>
-					<control type="label" id="478">
+					<control type="label" id="1652">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31456]</label>
 						<visible>!Skin.HasSetting(NoPictures)</visible>
 					</control>
-					<control type="radiobutton" id="479">
+					<control type="radiobutton" id="1653">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomePictures_Addon)</onclick>
@@ -1063,7 +1075,7 @@
 						<selected>Skin.HasSetting(HomePictures_Addons)</selected>
 						<visible>!Skin.HasSetting(NoPictures)</visible>
 					</control>
-					<control type="button" id="480">
+					<control type="button" id="1654">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -1072,18 +1084,20 @@
 						<onclick>Skin.SetAddon(HomePictures_Addon,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPictures)</visible>
 					</control>
-					<control type="radiobutton" id="481">
+
+					<!-- Addons item (1681-1710) -->
+					<control type="radiobutton" id="1681">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[24001][/B]</label>
 						<onclick>Skin.ToggleSetting(NoPrograms)</onclick>
 						<selected>Skin.HasSetting(NoPrograms)</selected>
 					</control>
-					<control type="label" id="482">
+					<control type="label" id="1682">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[31457]:</label>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="button" id="483">
+					<control type="button" id="1683">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 1</label>
@@ -1091,7 +1105,7 @@
 						<onclick>Skin.SetAddon(HomePrograms_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="button" id="484">
+					<control type="button" id="1684">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 2</label>
@@ -1099,7 +1113,7 @@
 						<onclick>Skin.SetAddon(HomePrograms_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="button" id="485">
+					<control type="button" id="1685">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 3</label>
@@ -1107,7 +1121,7 @@
 						<onclick>Skin.SetAddon(HomePrograms_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="button" id="486">
+					<control type="button" id="1686">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 4</label>
@@ -1115,7 +1129,7 @@
 						<onclick>Skin.SetAddon(HomePrograms_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="button" id="487">
+					<control type="button" id="1687">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 5</label>
@@ -1123,25 +1137,33 @@
 						<onclick>Skin.SetAddon(HomePrograms_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPrograms)</visible>
 					</control>
-					<control type="radiobutton" id="488">
+
+					<!-- Weather item (1711-1740) -->
+					<control type="radiobutton" id="1711">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[8][/B]</label>
 						<onclick>Skin.ToggleSetting(NoWeather)</onclick>
 						<selected>Skin.HasSetting(NoWeather)</selected>
 					</control>
-					<control type="radiobutton" id="489">
+
+					<!-- Settings item (1741-1770) -->
+					<control type="radiobutton" id="1741">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[5][/B]</label>
 						<onclick>Skin.ToggleSetting(NoSettings)</onclick>
 						<selected>Skin.HasSetting(NoSettings)</selected>
 					</control>
-					<control type="radiobutton" id="490">
+
+					<!-- Favourites item (1771-1800) -->
+					<control type="radiobutton" id="1771">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[1036][/B]</label>
 						<onclick>Skin.ToggleSetting(NoFavourites)</onclick>
 						<selected>Skin.HasSetting(NoFavourites)</selected>
 					</control>
-					<control type="radiobutton" id="491">
+
+					<!-- Shutdown item (1801-1830) -->
+					<control type="radiobutton" id="1801">
 						<include>SettingsLabel</include>
 						<label>[B]$LOCALIZE[31441] $LOCALIZE[13005][/B]</label>
 						<onclick>Skin.ToggleSetting(NoShutdown)</onclick>
@@ -2736,7 +2758,7 @@
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<control type="radiobutton" id="1101">
+					<control type="radiobutton" id="401">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31033]</label>
 						<onclick>Skin.ToggleSetting(HidePictureFanart)</onclick>
