@@ -234,7 +234,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + !Library.HasContent(Movies) + ![Skin.HasSetting(HomeMovies_Recent) | Skin.HasSetting(HomeMovies_Genres) | Skin.HasSetting(HomeMovies_Years) | Skin.HasSetting(HomeMovies_Actors) | Skin.HasSetting(HomeMovies_Directors) | Skin.HasSetting(HomeMovies_Studios) | Skin.HasSetting(HomeMovies_Addons) | !IsEmpty(Skin.String(HomeMovies_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoMovies) + !Library.HasContent(Movies) + !Skin.HasSetting(HomeMovies_Override)</visible>
 				</item>
 				<item id="4">
 					<description>Movies</description>
@@ -242,7 +242,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Library.HasContent(Movies) + ![Skin.HasSetting(HomeMovies_Recent) | Skin.HasSetting(HomeMovies_Genres) | Skin.HasSetting(HomeMovies_Years) | Skin.HasSetting(HomeMovies_Actors) | Skin.HasSetting(HomeMovies_Directors) | Skin.HasSetting(HomeMovies_Studios) | Skin.HasSetting(HomeMovies_Addons) | !IsEmpty(Skin.String(HomeMovies_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Library.HasContent(Movies) + !Skin.HasSetting(HomeMovies_Override)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Recent)</description>
@@ -250,7 +250,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Recent)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Recent)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Genres)</description>
@@ -258,7 +258,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Genres)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Genres)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Years)</description>
@@ -266,7 +266,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Years)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Years)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Actors)</description>
@@ -274,7 +274,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Actors)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Actors)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Directors)</description>
@@ -282,7 +282,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Directors)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Directors)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Studios)</description>
@@ -290,7 +290,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Studios)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Studios)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Addons)</description>
@@ -298,7 +298,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>ActivateWindow(VideoFiles,Addons,Return)</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Addons)</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Addons)</visible>
 				</item>
 				<item id="4">
 					<description>Movies (Addon)</description>
@@ -306,7 +306,7 @@
 					<icon>special://skin/extras/home1/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomeMovies_Addon)])</onclick>
-					<visible>!Skin.HasSetting(NoMovies) + !IsEmpty(Skin.String(HomeMovies_Addon))</visible>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + !IsEmpty(Skin.String(HomeMovies_Addon))</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Empty library)</description>
@@ -314,7 +314,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + !Library.HasContent(TVShows) + ![Skin.HasSetting(HomeTVShows_Recent) | Skin.HasSetting(HomeTVShows_Genres) | Skin.HasSetting(HomeTVShows_Years) | Skin.HasSetting(HomeTVShows_Actors) | Skin.HasSetting(HomeTVShows_Studios) | Skin.HasSetting(HomeTVShows_TVGuide) | Skin.HasSetting(HomeTVShows_Addons) | !IsEmpty(Skin.String(HomeTVShows_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + !Library.HasContent(TVShows) + !Skin.HasSetting(HomeTVShows_Override)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows</description>
@@ -322,7 +322,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Library.HasContent(TVShows) + ![Skin.HasSetting(HomeTVShows_Recent) | Skin.HasSetting(HomeTVShows_Genres) | Skin.HasSetting(HomeTVShows_Years) | Skin.HasSetting(HomeTVShows_Actors) | Skin.HasSetting(HomeTVShows_Studios) | Skin.HasSetting(HomeTVShows_TVGuide) | Skin.HasSetting(HomeTVShows_Addons) | !IsEmpty(Skin.String(HomeTVShows_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Library.HasContent(TVShows) + !Skin.HasSetting(HomeTVShows_Override)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Recent)</description>
@@ -330,7 +330,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Recent)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Recent)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Genres)</description>
@@ -338,7 +338,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Genres)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Genres)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Years)</description>
@@ -346,7 +346,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Years)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Years)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Actors)</description>
@@ -354,7 +354,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Actors)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Actors)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Studios)</description>
@@ -362,7 +362,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(Videos,TVShowStudios,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Studios)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Studios)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Guide)</description>
@@ -370,7 +370,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>RunScript(script.tv.show.next.aired)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_TVGuide)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_TVGuide)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Addons)</description>
@@ -378,7 +378,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Addons)</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_Addons)</visible>
 				</item>
 				<item id="5">
 					<description>TV Shows (Addon)</description>
@@ -386,7 +386,7 @@
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomeTVShows_Addon)])</onclick>
-					<visible>!Skin.HasSetting(NoTVShows) + !IsEmpty(Skin.String(HomeTVShows_Addon))</visible>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + !IsEmpty(Skin.String(HomeTVShows_Addon))</visible>
 				</item>
 				<item id="2">
 					<description>Videos</description>
@@ -394,7 +394,7 @@
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
-					<visible>!Skin.HasSetting(NoVideos) + ![Skin.HasSetting(HomeVideos_Playlists) | Skin.HasSetting(HomeVideos_Addons) | !IsEmpty(Skin.String(HomeVideos_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoVideos) + !Skin.HasSetting(HomeVideos_Override)</visible>
 				</item>
 				<item id="2">
 					<description>Videos (Playlists)</description>
@@ -402,7 +402,7 @@
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,Playlists,return)</onclick>
-					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Playlists)</visible>
+					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + Skin.HasSetting(HomeVideos_Playlists)</visible>
 				</item>
 				<item id="2">
 					<description>Videos (Addons)</description>
@@ -410,7 +410,7 @@
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
-					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Addons)</visible>
+					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + Skin.HasSetting(HomeVideos_Addons)</visible>
 				</item>
 				<item id="2">
 					<description>Videos (Addon)</description>
@@ -418,7 +418,7 @@
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomeVideos_Addon)])</onclick>
-					<visible>!Skin.HasSetting(NoVideos) + !IsEmpty(Skin.String(HomeVideos_Addon))</visible>
+					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + !IsEmpty(Skin.String(HomeVideos_Addon))</visible>
 				</item>
 				<item id="13">
 					<description>Movie Trailers</description>
@@ -442,7 +442,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + ![Skin.HasSetting(HomeMusic_Genres) | Skin.HasSetting(HomeMusic_Artists) | Skin.HasSetting(HomeMusic_Albums) | Skin.HasSetting(HomeMusic_Songs) | Skin.HasSetting(HomeMusic_Videos) | Skin.HasSetting(HomeMusic_Playlists) | Skin.HasSetting(HomeMusic_Addons) | !IsEmpty(Skin.String(HomeMusic_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoMusic) + !Skin.HasSetting(HomeMusic_Override)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Genres)</description>
@@ -450,7 +450,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Genres)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Genres)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Artists)</description>
@@ -458,7 +458,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Artists)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Artists)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Albums)</description>
@@ -466,7 +466,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Albums)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Albums)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Songs)</description>
@@ -474,7 +474,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Songs)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Songs)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Videos)</description>
@@ -482,7 +482,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Videos)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Videos)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Playlists)</description>
@@ -490,7 +490,7 @@
 					<icon>special://skin/extras/home1/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Playlists)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Playlists)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Addons)</description>
@@ -498,7 +498,7 @@
 					<icon>special://skin/extras/home1/music.png</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Addons)</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Addons)</visible>
 				</item>
 				<item id="3">
 					<description>Music (Addon)</description>
@@ -506,7 +506,7 @@
 					<icon>special://skin/extras/home1/music.png</icon>
 					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomeMusic_Addon)])</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
@@ -514,7 +514,7 @@
 					<icon>special://skin/extras/home1/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<visible>!Skin.HasSetting(NoPictures) + ![Skin.HasSetting(HomePictures_Addons) | !IsEmpty(Skin.String(HomePictures_Addon))]</visible>
+					<visible>!Skin.HasSetting(NoPictures) + !Skin.HasSetting(HomePictures_Override)</visible>
 				</item>
 				<item id="6">
 					<description>Pictures (Addons)</description>
@@ -522,7 +522,7 @@
 					<icon>special://skin/extras/home1/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
-					<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Addons)</visible>
+					<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Override) + Skin.HasSetting(HomePictures_Addons)</visible>
 				</item>
 				<item id="6">
 					<description>Pictures (Addon)</description>
@@ -530,7 +530,7 @@
 					<icon>special://skin/extras/home1/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon)])</onclick>
-					<visible>!Skin.HasSetting(NoPictures) + !IsEmpty(Skin.String(HomePictures_Addon))</visible>
+					<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Override) + !IsEmpty(Skin.String(HomePictures_Addon))</visible>
 				</item>
 				<item id="1">
 					<description>Add-ons</description>
@@ -633,19 +633,19 @@
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Playlist1_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist1_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMovies_Playlist1)</visible>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 				</control>
 				<control type="button" id="91104">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist2_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMovies_Playlist2)</visible>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 				</control>
 				<control type="button" id="91105">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist3_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMovies_Playlist3)</visible>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 				</control>
 				<control type="button" id="91106">
 					<include>Submenu_Button</include>
@@ -717,19 +717,19 @@
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeTVShows_Playlist1_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist1_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeTVShows_Playlist1)</visible>
+					<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist1)</visible>
 				</control>
 				<control type="button" id="91204">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeTVShows_Playlist2_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist2_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeTVShows_Playlist2)</visible>
+					<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist2)</visible>
 				</control>
 				<control type="button" id="91205">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeTVShows_Playlist3_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist3_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeTVShows_Playlist3)</visible>
+					<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist3)</visible>
 				</control>
 				<control type="button" id="91206">
 					<include>Submenu_Button</include>
@@ -798,19 +798,19 @@
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeVideos_Playlist1_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist1_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeVideos_Playlist1)</visible>
+					<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist1)</visible>
 				</control>
 				<control type="button" id="91003">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeVideos_Playlist2_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist2_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeVideos_Playlist2)</visible>
+					<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist2)</visible>
 				</control>
 				<control type="button" id="91004">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeVideos_Playlist3_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist3_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeVideos_Playlist3)</visible>
+					<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist3)</visible>
 				</control>
 				<control type="button" id="91005">
 					<include>Submenu_Button</include>
@@ -898,19 +898,19 @@
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist1_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMusic_Playlist1)</visible>
+					<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 				</control>
 				<control type="button" id="91704">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist2_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMusic_Playlist2)</visible>
+					<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 				</control>
 				<control type="button" id="91705">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist3_Path)],return)</onclick>
-					<visible>Skin.HasSetting(HomeMusic_Playlist3)</visible>
+					<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 				</control>
 				<control type="button" id="91706">
 					<include>Submenu_Button</include>
