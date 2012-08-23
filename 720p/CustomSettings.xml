@@ -235,6 +235,7 @@
 						<label>$LOCALIZE[31450]</label>
 					</control>
 					<control type="label" id="207">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31060]</label>
 					</control>
@@ -263,6 +264,7 @@
 						<selected>Skin.HasSetting(ShowMusicRecentlyAdded)</selected>
 					</control>
 					<control type="label" id="211">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31328]</label>
 					</control>
@@ -291,6 +293,7 @@
 						<selected>Skin.HasSetting(ShowMusicRandomItems)</selected>
 					</control>
 					<control type="label" id="215">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31449]</label>
 					</control>
@@ -333,8 +336,9 @@
 
 					<!-- Movies item (1501-1530) -->
 					<control type="radiobutton" id="1501">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[342][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[342]</label>
 						<onclick>Skin.ToggleSetting(NoMovies)</onclick>
 						<selected>Skin.HasSetting(NoMovies)</selected>
 					</control>
@@ -534,8 +538,9 @@
 
 					<!-- TV Shows item (1531-1560) -->
 					<control type="radiobutton" id="1531">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[20343][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[20343]</label>
 						<onclick>Skin.ToggleSetting(NoTVShows)</onclick>
 						<selected>Skin.HasSetting(NoTVShows)</selected>
 					</control>
@@ -735,8 +740,9 @@
 
 					<!-- Videos item (1561-1590) -->
 					<control type="radiobutton" id="1561">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[3][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[3]</label>
 						<onclick>Skin.ToggleSetting(NoVideos)</onclick>
 						<selected>Skin.HasSetting(NoVideos)</selected>
 					</control>
@@ -851,8 +857,9 @@
 
 					<!-- Trailers item (1591-1620) -->
 					<control type="radiobutton" id="1591">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[31334][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[31334]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
 						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
@@ -860,8 +867,9 @@
 
 					<!-- Music item (1621-1650) -->
 					<control type="radiobutton" id="1621">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[2][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
 						<onclick>Skin.ToggleSetting(NoMusic)</onclick>
 						<selected>Skin.HasSetting(NoMusic)</selected>
 					</control>
@@ -1061,8 +1069,9 @@
 
 					<!-- Pictures item (1651-1680) -->
 					<control type="radiobutton" id="1651">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[1][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[1]</label>
 						<onclick>Skin.ToggleSetting(NoPictures)</onclick>
 						<selected>Skin.HasSetting(NoPictures)</selected>
 					</control>
@@ -1093,8 +1102,9 @@
 
 					<!-- Addons item (1681-1710) -->
 					<control type="radiobutton" id="1681">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[24001][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[24001]</label>
 						<onclick>Skin.ToggleSetting(NoPrograms)</onclick>
 						<selected>Skin.HasSetting(NoPrograms)</selected>
 					</control>
@@ -1148,32 +1158,36 @@
 
 					<!-- Weather item (1711-1740) -->
 					<control type="radiobutton" id="1711">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[8][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[8]</label>
 						<onclick>Skin.ToggleSetting(NoWeather)</onclick>
 						<selected>Skin.HasSetting(NoWeather)</selected>
 					</control>
 
 					<!-- Settings item (1741-1770) -->
 					<control type="radiobutton" id="1741">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[5][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[5]</label>
 						<onclick>Skin.ToggleSetting(NoSettings)</onclick>
 						<selected>Skin.HasSetting(NoSettings)</selected>
 					</control>
 
 					<!-- Favourites item (1771-1800) -->
 					<control type="radiobutton" id="1771">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[1036][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[1036]</label>
 						<onclick>Skin.ToggleSetting(NoFavourites)</onclick>
 						<selected>Skin.HasSetting(NoFavourites)</selected>
 					</control>
 
 					<!-- Shutdown item (1801-1830) -->
 					<control type="radiobutton" id="1801">
+						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
-						<label>[B]$LOCALIZE[31441] $LOCALIZE[13005][/B]</label>
+						<label>$LOCALIZE[31441] $LOCALIZE[13005]</label>
 						<onclick>Skin.ToggleSetting(NoShutdown)</onclick>
 						<selected>Skin.HasSetting(NoShutdown)</selected>
 					</control>
