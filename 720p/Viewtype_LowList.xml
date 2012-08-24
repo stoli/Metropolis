@@ -351,24 +351,6 @@
 					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<!-- Addon Description -->
-				<control type="textbox">
-					<posx>300</posx>
-					<posy>650</posy>
-					<width>840</width>
-					<height>135</height>
-					<align>left</align>
-					<font>METF_PlotText</font>
-					<textcolor>TextNF</textcolor>
-					<info>ListItem.Property(Addon.Description)</info>
-					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<include>Animation_OpenCloseFade</include>
-					<include>Animation_FadedByMenu</include>
-					<include>Animation_HiddenByInfo</include>
-					<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-				</control>
 
 				<!-- LEFT SIDE OF SCREEN -->
 				<!-- Default Poster Image  -->

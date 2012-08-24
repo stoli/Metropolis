@@ -69,6 +69,11 @@
 			<include>Animation_FadedByMenu</include>
 			<include condition="!Skin.HasSetting(Hide_Plot)">Global_VideoPlot</include>
 		</control>
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Global_AddonInfo</include>
+		</control>
 		<!-- Video Navigation Menu -->		
 		<control type="group">
 			<include>Animation_NavMenu</include>

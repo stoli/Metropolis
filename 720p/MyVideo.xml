@@ -23,6 +23,11 @@
 		<include>Global_ContextFilter</include>
 		<include>Viewtype_LowList</include>
 		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Global_AddonInfo</include>
+		</control>
+		<control type="group">
 			<include>Animation_NavMenu</include>
 			<include>NavMenuBackground</include>
 			<control type="grouplist" id="7000">

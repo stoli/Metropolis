@@ -13,6 +13,11 @@
 		</control>
 		<include>Viewtype_Files</include>
 		<include>Global_ContextFilter</include>
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Global_AddonInfo</include>
+		</control>
 		<!-- Navigation Menu -->
 		<control type="group">
 			<include>Animation_NavMenu</include>
