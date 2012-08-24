@@ -412,6 +412,69 @@
 					<onclick>RunAddon($INFO[Skin.String(HomeMusic_Addon)])</onclick>
 					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + !IsEmpty(Skin.String(HomeMusic_Addon))</visible>
 				</item>
+				<item id="16">
+					<description>Music Videos</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Library.HasContent(MusicVideos) + !Skin.HasSetting(HomeMusicVideos_Override)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Recent)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Recent)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Genres)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Genres)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Years)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoYears,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Years)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Artists)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Artists)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Albums)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoAlbums,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Albums)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Directors)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoDirectors,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Directors)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Studios)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>ActivateWindow(Videos,MusicVideoStudios,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Studios)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Addon)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home2/icon_musicvideos.png</icon>
+					<onclick>RunAddon($INFO[Skin.String(HomeMusicVideos_Addon)])</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + !IsEmpty(Skin.String(HomeMusicVideos_Addon))</visible>
+				</item>
 				<item id="6">
 					<description>Pictures</description>
 					<label>$LOCALIZE[1]</label>
