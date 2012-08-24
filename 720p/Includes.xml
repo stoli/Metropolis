@@ -261,6 +261,44 @@
 		</control>
 	</include>
 
+	<include name="Global_AddonInfo">
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>Animation_HiddenByInfo</include>
+		<!-- Addon Description -->
+		<control type="textbox">
+			<posx>340</posx>
+			<posy>565</posy>
+			<width>600</width>
+			<!-- shorter height to avoid overlapping Now Playing overlay if music is playing -->
+			<height>72</height>
+			<align>left</align>
+			<aligny>top</aligny>
+			<font>METF_PlotText</font>
+			<textcolor>TextNF</textcolor>
+			<info>ListItem.Property(Addon.Description)</info>
+			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<font>METF_PlotTextMedium</font>
+			<textcolor>LowerText</textcolor>
+			<visible>![Window.IsActive(AddonBrowser) | Window.IsActive(Pictures)] + !IsEmpty(ListItem.Property(Addon.Description))</visible>
+		</control>
+		<control type="textbox">
+			<posx>340</posx>
+			<posy>565</posy>
+			<width>600</width>
+			<height>135</height>
+			<align>left</align>
+			<aligny>top</aligny>
+			<font>METF_PlotText</font>
+			<textcolor>TextNF</textcolor>
+			<info>ListItem.Property(Addon.Description)</info>
+			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<font>METF_PlotTextMedium</font>
+			<textcolor>LowerText</textcolor>
+			<visible>Window.IsActive(AddonBrowser) + !IsEmpty(ListItem.Property(Addon.Description))</visible>
+		</control>
+	</include>
+
 	<include name="Global_PictureInfo">
 		<posx>0</posx>
 		<posy>0</posy>

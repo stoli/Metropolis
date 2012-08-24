@@ -32,6 +32,11 @@
 			<include>Animation_FadedByMenu</include>
 			<include>Global_PictureInfo</include>
 		</control>
+		<control type="group">
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Global_AddonInfo</include>
+		</control>
 		<!-- Navigation Menu -->
 		<control type="group">
 			<include>Animation_NavMenu</include>
