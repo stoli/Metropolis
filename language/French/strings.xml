@@ -89,7 +89,7 @@
 	<string id="31118">Gestionnaire de Fichiers</string>
 	<string id="31124">Masquer le Dossier Racine Musique</string>
 	<string id="31125">Masquer le Dossier Racine Vidéo</string>
-	<string id="31126">Cliquer pour télécharger les logos TV, images en mode paysage et bannières</string>
+	<string id="31126">Télécharger les logos TV, images en mode paysage et bannières</string>
 	<string id="31127"> - Nécessaire pour les options ci-dessous -</string>
 	<string id="31133">Muet</string>
 	<string id="31146">Dirigé Par:</string>
@@ -296,12 +296,12 @@
 <!-- New String from stoli -->
 	<string id="31419">Paramètres Musique</string>
 	<string id="31420">Paramètres Vidéo</string>
-	<string id="31421">Utiliser les Clearart dans l'OSD Vidéo</string>
-	<string id="31422">Utiliser le Logo TV dans l'OSD Vidéo</string>
+	<string id="31421">OSD: Afficher les Clearart</string>
+	<string id="31422">OSD: Afficher le Logo TV</string>
 	<string id="31423">Auteur</string>
 	<string id="31424">Affiche &amp; Fanart</string> 
-	<string id="31425">Utiliser les Vignettes pour l'OSD Vidéo</string>
-	<string id="31426">Activer l'affichage de la Date de Prochaine Diffusion</string>
+	<string id="31425">OSD: Afficher les Vignettes</string>
+	<string id="31426">Activer l'affichage de la Date de Prochaine Diffusion des Séries TV</string>
 	<string id="31427">Prochain Épisode</string>
 	<string id="31428">TV Guide</string>
 	<string id="31429">Afficher le Chemin dans Info Vidéo au lieu des détails sur la Note</string>
@@ -329,11 +329,13 @@
 	<string id="31451">Recommandations</string>
 	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string>
 	<string id="31453">Afficher la Date à la place du Jour de la Semaine</string>
-	<string id="31454">Visualisation: Afficher la durée de la chanson</string> 
+	<string id="31454">Visualisation: Afficher la position du lecteur et l'heure dans Info en Surimpression</string> 
  	<string id="31455">Visualisation: Masquer Horlorge et Température dans Info en Surimpression</string>
- 
+ 	<string id="31456">- Ecraser le lien par défaut</string>
+ 	<string id="31457">Raccourcis</string>
+  
 	<!-- PVR Resources -->
-	<string id="31600">Activer l'affichage des paramètres TV</string>
+	<string id="31600">Activer le support Live TV (PVR)</string>
 	<string id="31601">Live TV</string>
 	<string id="31605">Ajouter Groupe</string>
 	<string id="31606">Renommer Groupe</string>
