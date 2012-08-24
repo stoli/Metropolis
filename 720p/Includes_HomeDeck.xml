@@ -14,7 +14,7 @@
 					<texture>ArrowLeft.png</texture>
 					<colordiffuse>HelpArrowDiffuse</colordiffuse>
 					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] | [Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)]</visible>
-					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)]</visible>
 				</control>
 				<!-- Recently Added Movies -->
 				<control type="label">
@@ -144,7 +144,7 @@
 					<font>METF_RecentlyAddedTitle</font>
 					<textcolor>HomeMenuText</textcolor>
 					<label>[B]$LOCALIZE[31457][/B]</label>
-					<visible>!Control.HasFocus(8003) + Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)</visible>
+					<visible>!Control.HasFocus(8004) + Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)</visible>
 				</control>
 				<control type="label">
 					<posx>270</posx>
@@ -155,8 +155,8 @@
 					<aligny>center</aligny>
 					<font>METF_RecentlyAddedTitle</font>
 					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$INFO[Container(8003).ListItem.Label][/B]</label>
-					<visible>Control.HasFocus(8003)</visible>
+					<label>[B]$INFO[Container(8004).ListItem.Label][/B]</label>
+					<visible>Control.HasFocus(8004)</visible>
 				</control>
 			</control>
 			<!-- Submenu title for icon home view -->
@@ -172,7 +172,7 @@
 					<texture>ArrowUp.png</texture>
 					<colordiffuse>HelpArrowDiffuse</colordiffuse>
 					<visible>[Container(9000).HasFocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] | [Container(9000).HasFocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] | [Container(9000).HasFocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] | [Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)]</visible>
-					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
+					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)]</visible>
 				</control>
 				<!-- Recently Added Movies -->
 				<control type="label">
@@ -302,7 +302,7 @@
 					<font>METF_RecentlyAddedTitle</font>
 					<textcolor>HomeMenuText</textcolor>
 					<label>[B]$LOCALIZE[31457][/B]</label>
-					<visible>!Control.HasFocus(8003) + Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)</visible>
+					<visible>!Control.HasFocus(8004) + Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)</visible>
 				</control>
 				<control type="label">
 					<posx>355</posx>
@@ -313,8 +313,8 @@
 					<aligny>center</aligny>
 					<font>METF_RecentlyAddedTitle</font>
 					<textcolor>HomeMenuText</textcolor>
-					<label>[B]$INFO[Container(8003).ListItem.Label][/B]</label>
-					<visible>Control.HasFocus(8003)</visible>
+					<label>[B]$INFO[Container(8004).ListItem.Label][/B]</label>
+					<visible>Control.HasFocus(8004)</visible>
 				</control>
 			</control>
 
@@ -432,21 +432,21 @@
 				<control type="group">
 					<posx>265</posx>
 					<posy>560</posy>
-					<control type="fixedlist" id="8003">
+					<control type="fixedlist" id="8004">
 						<include>Animation_CommonFade</include>
 						<include>Animation_FadedByMenu</include>
-						<animation effect="slide" start="0,0"  end="76,0" time="0" condition="StringCompare(Container(8003).NumItems,4)">conditional</animation>
-						<animation effect="slide" start="0,0" end="152,0" time="0" condition="StringCompare(Container(8003).NumItems,3)">conditional</animation>
-						<animation effect="slide" start="0,0" end="228,0" time="0" condition="StringCompare(Container(8003).NumItems,2)">conditional</animation>
-						<animation effect="slide" start="0,0" end="304,0" time="0" condition="StringCompare(Container(8003).NumItems,1)">conditional</animation>
+						<animation effect="slide" start="0,0"  end="76,0" time="0" condition="StringCompare(Container(8004).NumItems,4)">conditional</animation>
+						<animation effect="slide" start="0,0" end="152,0" time="0" condition="StringCompare(Container(8004).NumItems,3)">conditional</animation>
+						<animation effect="slide" start="0,0" end="228,0" time="0" condition="StringCompare(Container(8004).NumItems,2)">conditional</animation>
+						<animation effect="slide" start="0,0" end="304,0" time="0" condition="StringCompare(Container(8004).NumItems,1)">conditional</animation>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>760</width>
 						<height>152</height>
 						<onup>9000</onup>
 						<ondown>9000</ondown>
-						<onleft>8003</onleft>
-						<onright>8003</onright>
+						<onleft>8004</onleft>
+						<onright>8004</onright>
 						<pagecontrol>-</pagecontrol>
 						<orientation>horizontal</orientation>
 						<focusposition>0</focusposition>
@@ -480,7 +480,7 @@
 								<bordertexture border="6">frames/thumb_border.png</bordertexture>
 								<bordersize>6</bordersize>
 								<texture diffuse="frames/EpisodeMatte.png">$INFO[ListItem.Icon]</texture>
-								<visible>!Control.HasFocus(8003)</visible>
+								<visible>!Control.HasFocus(8004)</visible>
 							</control>
 							<control type="image">
 								<posx>0</posx>
@@ -492,7 +492,7 @@
 								<bordertexture border="6">frames/thumb_border.png</bordertexture>
 								<bordersize>6</bordersize>
 								<texture diffuse="frames/EpisodeMatte.png">$INFO[ListItem.Icon]</texture>
-								<visible>Control.HasFocus(8003)</visible>
+								<visible>Control.HasFocus(8004)</visible>
 							</control>
 						</focusedlayout>
 						<content>
