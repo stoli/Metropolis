@@ -423,7 +423,18 @@
 					<texture>$INFO[ListItem.Icon]</texture>
 					<visible>[[!Window.IsActive(videolibrary) + !Container.Content(genres)] | [Window.IsActive(videolibrary) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(genres)]] + substring(ListItem.Icon,default)</visible>
 				</control>
-				<!-- Music Genre Images - To be removed in lieu of TallGenre viewtype -->
+				<control type="image">
+					<posx>37</posx>
+					<posy>45</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture fallback="DefaultMovieGenre.jpg">moviegenres/$INFO[ListItem.Label].jpg</texture>
+					<bordertexture border="8">border.png</bordertexture>
+					<bordersize>4</bordersize>
+					<visible>Window.IsActive(videolibrary) + !SubString(Container.FolderPath,videodb://3/) + Container.Content(genres)</visible>
+				</control>
 				<control type="image">
 					<posx>37</posx>
 					<posy>45</posy>
@@ -434,7 +445,7 @@
 					<texture fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
 					<bordertexture border="8">border.png</bordertexture>
 					<bordersize>4</bordersize>
-					<visible>Window.IsActive(musiclibrary) + Container.Content(genres)</visible>
+					<visible>[Window.IsActive(musiclibrary) | [Window.IsActive(videolibrary) + SubString(Container.FolderPath,videodb://3/)]] + Container.Content(genres)</visible>
 				</control>
 			</control>
 			<!-- Episode Info -->
