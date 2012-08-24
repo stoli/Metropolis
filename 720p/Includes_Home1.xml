@@ -469,14 +469,6 @@
 					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Songs)</visible>
 				</item>
 				<item id="3">
-					<description>Music (Videos)</description>
-					<label>$LOCALIZE[2]</label>
-					<icon>special://skin/extras/home1/music.jpg</icon>
-					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
-					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Videos)</visible>
-				</item>
-				<item id="3">
 					<description>Music (Playlists)</description>
 					<label>$LOCALIZE[2]</label>
 					<icon>special://skin/extras/home1/music.jpg</icon>
