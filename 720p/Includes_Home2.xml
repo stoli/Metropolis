@@ -371,6 +371,13 @@
 					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Genres)</visible>
 				</item>
 				<item id="3">
+					<description>Music (Years)</description>
+					<label>$LOCALIZE[2]</label>
+					<icon>special://skin/extras/home2/icon_music.png</icon>
+					<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Years)</visible>
+				</item>
+				<item id="3">
 					<description>Music (Artists)</description>
 					<label>$LOCALIZE[2]</label>
 					<icon>special://skin/extras/home2/icon_music.png</icon>
@@ -869,52 +876,58 @@
 				</control>
 				<control type="button" id="91707">
 					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[652]</label>
+					<onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
+					<visible>Library.HasContent(Music)</visible>
+				</control>
+				<control type="button" id="91708">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[133]</label>
 					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91708">
+				<control type="button" id="91709">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[132]</label>
 					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91709">
+				<control type="button" id="91710">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[134]</label>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91710">
+				<control type="button" id="91711">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[3]</label>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>Skin.HasSetting(NoMusicVideos) + Library.HasContent(MusicVideos)</visible>
 				</control>
-				<control type="button" id="91711">
+				<control type="button" id="91712">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="91712">
+				<control type="button" id="91713">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[589]</label>
 					<onclick>PlayerControl(Partymode(music))</onclick>
 					<visible>Library.HasContent(Music)</visible>
 				</control>
-				<control type="button" id="91713">
+				<control type="button" id="91714">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31446]</label>
 					<onclick>fullscreen</onclick>
 					<visible>Player.HasAudio</visible>
 				</control>
-				<control type="button" id="91714">
+				<control type="button" id="91715">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 					<visible>!Library.HasContent(Music) | Skin.HasSetting(HomeMusic_Override)</visible>
 				</control>
-				<control type="button" id="91715">
+				<control type="button" id="91716">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(music)</onclick>

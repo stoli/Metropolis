@@ -856,6 +856,7 @@
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[31438]</label>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
@@ -870,6 +871,7 @@
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[135]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
@@ -882,9 +884,25 @@
 					</control>
 					<control type="radiobutton" id="1625">
 						<include>SettingsLabel</include>
+						<label>  - $LOCALIZE[652]</label>
+						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Playlists)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Addons)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Addon)</onclick>
+						<onclick>Skin.ToggleSetting(HomeMusic_Years)</onclick>
+						<selected>Skin.HasSetting(HomeMusic_Years)</selected>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
+					</control>
+					<control type="radiobutton" id="1626">
+						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[133]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Playlists)</onclick>
@@ -894,11 +912,12 @@
 						<selected>Skin.HasSetting(HomeMusic_Artists)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1626">
+					<control type="radiobutton" id="1627">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[132]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Playlists)</onclick>
@@ -908,11 +927,12 @@
 						<selected>Skin.HasSetting(HomeMusic_Albums)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1627">
+					<control type="radiobutton" id="1628">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[134]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Playlists)</onclick>
@@ -922,11 +942,12 @@
 						<selected>Skin.HasSetting(HomeMusic_Songs)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1628">
+					<control type="radiobutton" id="1629">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[136]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
@@ -936,11 +957,12 @@
 						<selected>Skin.HasSetting(HomeMusic_Playlists)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1629">
+					<control type="radiobutton" id="1630">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
@@ -950,13 +972,14 @@
 						<selected>Skin.HasSetting(HomeMusic_Addons)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="button" id="1630">
+					<control type="button" id="1631">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusic_Addon))]</label2>
 						<onclick>Skin.Reset(HomeMusic_Recent)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Genres)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Albums)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Songs)</onclick>
@@ -965,21 +988,21 @@
 						<onclick>Skin.SetAddon(HomeMusic_Addon,xbmc.addon.audio)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1631">
+					<control type="radiobutton" id="1632">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Shortcuts)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Shortcuts)</selected>
 						<visible>!Skin.HasSetting(NoMusic)</visible>
 					</control>
-					<control type="radiobutton" id="1632">
+					<control type="radiobutton" id="1633">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts)</visible>
 					</control>
-					<control type="button" id="1633">
+					<control type="button" id="1634">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -987,21 +1010,21 @@
 						<onclick>Skin.SetFile(HomeMusic_Playlist1_Path,,special://musicplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 					</control>
-					<control type="button" id="1634">
+					<control type="button" id="1635">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="1635">
+					<control type="radiobutton" id="1636">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts)</visible>
 					</control>
-					<control type="button" id="1636">
+					<control type="button" id="1637">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1009,21 +1032,21 @@
 						<onclick>Skin.SetFile(HomeMusic_Playlist2_Path,,special://musicplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 					</control>
-					<control type="button" id="1637">
+					<control type="button" id="1638">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="1638">
+					<control type="radiobutton" id="1639">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts)</visible>
 					</control>
-					<control type="button" id="1639">
+					<control type="button" id="1640">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1031,7 +1054,7 @@
 						<onclick>Skin.SetFile(HomeMusic_Playlist3_Path,,special://musicplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 					</control>
-					<control type="button" id="1640">
+					<control type="button" id="1641">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label2>
