@@ -293,6 +293,14 @@
 					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + Skin.HasSetting(HomeMovies_Studios)</visible>
 				</item>
 				<item id="4">
+					<description>Movies (Playlist)</description>
+					<label>$LOCALIZE[342]</label>
+					<icon>special://skin/extras/home1/movies.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist)],return)</onclick>
+					<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + !IsEmpty(Skin.String(HomeMovies_Playlist))</visible>
+				</item>
+				<item id="4">
 					<description>Movies (Addon)</description>
 					<label>$LOCALIZE[342]</label>
 					<icon>special://skin/extras/home1/movies.jpg</icon>
@@ -365,6 +373,14 @@
 					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + Skin.HasSetting(HomeTVShows_TVGuide)</visible>
 				</item>
 				<item id="5">
+					<description>TV Shows (Playlist)</description>
+					<label>$LOCALIZE[20343]</label>
+					<icon>special://skin/extras/home1/tvshows.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist)],return)</onclick>
+					<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + !IsEmpty(Skin.String(HomeTVShows_Playlist))</visible>
+				</item>
+				<item id="5">
 					<description>TV Shows (Addon)</description>
 					<label>$LOCALIZE[20343]</label>
 					<icon>special://skin/extras/home1/tvshows.jpg</icon>
@@ -387,6 +403,14 @@
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,Playlists,return)</onclick>
 					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + Skin.HasSetting(HomeVideos_Playlists)</visible>
+				</item>
+				<item id="2">
+					<description>Videos (Playlist)</description>
+					<label>$LOCALIZE[3]</label>
+					<icon>special://skin/extras/home1/videos.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist)],return)</onclick>
+					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + !IsEmpty(Skin.String(HomeVideos_Playlist))</visible>
 				</item>
 				<item id="2">
 					<description>Videos (Addons)</description>
@@ -485,6 +509,14 @@
 					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + Skin.HasSetting(HomeMusic_Playlists)</visible>
 				</item>
 				<item id="3">
+					<description>Music (Playlist)</description>
+					<label>$LOCALIZE[2]</label>
+					<icon>special://skin/extras/home1/music.png</icon>
+					<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist)],return)</onclick>
+					<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + !IsEmpty(Skin.String(HomeMusic_Playlist))</visible>
+				</item>
+				<item id="3">
 					<description>Music (Addons)</description>
 					<label>$LOCALIZE[2]</label>
 					<icon>special://skin/extras/home1/music.png</icon>
@@ -571,6 +603,14 @@
 					<thumb>$INFO[Skin.String(CustomMusicVideos)]</thumb>
 					<onclick>ActivateWindow(Videos,MusicVideoStudios,return)</onclick>
 					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Studios)</visible>
+				</item>
+				<item id="16">
+					<description>Music Videos (Playlist)</description>
+					<label>$LOCALIZE[20389]</label>
+					<icon>special://skin/extras/home1/musicvideos.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomMusicVideos)]</thumb>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist)],return)</onclick>
+					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + !IsEmpty(Skin.String(HomeMusicVideos_Playlist))</visible>
 				</item>
 				<item id="16">
 					<description>Music Videos (Addon)</description>
