@@ -1486,6 +1486,133 @@
 						<onclick>Skin.ToggleSetting(NoFavourites)</onclick>
 						<selected>Skin.HasSetting(NoFavourites)</selected>
 					</control>
+					<control type="radiobutton" id="1802">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeFavourites_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeFavourites_Shortcuts)</selected>
+						<visible>!Skin.HasSetting(NoFavourites)</visible>
+					</control>
+					<control type="button" id="1803">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1804">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1805">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1806">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1807">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1808">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 6</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite6_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite6_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite6_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite6_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite6_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1809">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 7</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite7_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite7_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite7_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite7_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite7_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1810">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 8</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite8_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite8_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite8_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite8_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite8_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1811">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 9</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite9_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite9_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite9_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite9_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite9_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1812">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 10</label>
+						<label2>$INFO[Skin.String(HomeFavourites_Favourite10_Label)]</label2>
+						<onclick>Skin.Reset(HomeFavourites_Favourite10_Label)</onclick>
+						<onclick>Skin.Reset(HomeFavourites_Favourite10_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeFavourites_Favourite10_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeFavourites_Favourite10_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoFavourites) + Skin.HasSetting(HomeFavourites_Shortcuts)</visible>
+					</control>
 
 					<!-- Shutdown item (1831-1860) -->
 					<control type="radiobutton" id="1831">
