@@ -489,7 +489,7 @@
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite1_Path)</visible>
 					</control>
 					<control type="button" id="1513">
 						<include>SettingsLabel</include>
@@ -506,14 +506,26 @@
 						<onclick>Skin.SetString(HomeMovies_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 					</control>
-					<control type="radiobutton" id="1515">
+					<control type="button" id="1515">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeMovies_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeMovies_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeMovies_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeMovies_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeMovies_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + !Skin.HasSetting(HomeMovies_Playlist1)</visible>
+					</control>
+					<control type="radiobutton" id="1516">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite2_Path)</visible>
 					</control>
-					<control type="button" id="1516">
+					<control type="button" id="1517">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -521,21 +533,33 @@
 						<onclick>Skin.SetFile(HomeMovies_Playlist2_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 					</control>
-					<control type="button" id="1517">
+					<control type="button" id="1518">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMovies_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 					</control>
-					<control type="radiobutton" id="1518">
+					<control type="button" id="1519">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeMovies_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeMovies_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeMovies_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeMovies_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeMovies_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + !Skin.HasSetting(HomeMovies_Playlist2)</visible>
+					</control>
+					<control type="radiobutton" id="1520">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite3_Path)</visible>
 					</control>
-					<control type="button" id="1519">
+					<control type="button" id="1521">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -543,12 +567,24 @@
 						<onclick>Skin.SetFile(HomeMovies_Playlist3_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 					</control>
-					<control type="button" id="1520">
+					<control type="button" id="1522">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeMovies_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
+					</control>
+					<control type="button" id="1523">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeMovies_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeMovies_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeMovies_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeMovies_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeMovies_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + !Skin.HasSetting(HomeMovies_Playlist3)</visible>
 					</control>
 
 					<!-- TV Shows item (1531-1560) -->
