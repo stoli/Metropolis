@@ -30,7 +30,7 @@
 			<onfocus>SetFocus(40)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>![Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems)]</visible>
+			<visible>![Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicVideosRandomItems)]</visible>
 		</control>
 		<control type="button" id="30">
 			<description>RandomItems</description>
@@ -38,7 +38,7 @@
 			<onfocus>SetFocus(40)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems)</visible>
+			<visible>Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicVideosRandomItems)</visible>
 		</control>
 		<control type="button" id="40">
 			<description>Passthrough</description>
