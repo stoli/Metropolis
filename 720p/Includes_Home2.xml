@@ -1060,6 +1060,24 @@
 				</control>
 				<control type="button" id="91602">
 					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomePictures_Favourite1_Label)]</label>
+					<onclick>$INFO[Skin.String(HomePictures_Favourite1_Path)]</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Favourite1_Path))</visible>
+				</control>
+				<control type="button" id="91603">
+					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomePictures_Favourite2_Label)]</label>
+					<onclick>$INFO[Skin.String(HomePictures_Favourite2_Path)]</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Favourite2_Path))</visible>
+				</control>
+				<control type="button" id="91604">
+					<include>Submenu_Button2</include>
+					<label>$INFO[Skin.String(HomePictures_Favourite3_Label)]</label>
+					<onclick>$INFO[Skin.String(HomePictures_Favourite3_Path)]</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Favourite3_Path))</visible>
+				</control>
+				<control type="button" id="91605">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>Skin.HasSetting(HomePictures_Addons) | !IsEmpty(Skin.String(HomePictures_Addon))</visible>

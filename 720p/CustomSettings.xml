@@ -1403,6 +1403,49 @@
 						<onclick>Skin.SetAddon(HomePictures_Addon,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Override)</visible>
 					</control>
+					<control type="radiobutton" id="1685">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomePictures_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomePictures_Shortcuts)</selected>
+						<visible>!Skin.HasSetting(NoPictures)</visible>
+					</control>
+					<control type="button" id="1686">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomePictures_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1687">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomePictures_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1688">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomePictures_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+					</control>
 
 					<!-- Addons item (1711-1740) -->
 					<control type="radiobutton" id="1711">
