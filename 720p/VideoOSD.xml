@@ -163,7 +163,7 @@
 					<enable>Player.CanRecord</enable>
 					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + !Player.Recording</visible>
 				</control>				
-				<control type="button" id="21">
+				<control type="button" id="22">
 					<description>Record</description>
 					<include>Animation_ButtonFocus</include>
 					<height>60</height>
