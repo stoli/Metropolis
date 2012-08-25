@@ -3461,28 +3461,34 @@
 						<onclick>Skin.ToggleSetting(MusicCoverArtOverlay)</onclick>
 						<selected>Skin.HasSetting(MusicCoverArtOverlay)</selected>
 					</control>
-					<control type="image" id="904">
+					<control type="radiobutton" id="904">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31057]</label>
+						<onclick>Skin.ToggleSetting(MusicSongInfoOverlay)</onclick>
+						<selected>Skin.HasSetting(MusicSongInfoOverlay)</selected>
+					</control>
+					<control type="image" id="905">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="905">
+					<control type="radiobutton" id="906">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31452]</label>
 						<onclick>Skin.ToggleSetting(SlimMusicInfo)</onclick>
 						<selected>Skin.HasSetting(SlimMusicInfo)</selected>
 					</control>
-					<control type="radiobutton" id="906">
+					<control type="radiobutton" id="907">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31454]</label>
 						<onclick>Skin.ToggleSetting(ShowMusicTime)</onclick>
 						<selected>Skin.HasSetting(ShowMusicTime)</selected>
 					</control>
-					<control type="radiobutton" id="907">
+					<control type="radiobutton" id="908">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31455]</label>
 						<onclick>Skin.ToggleSetting(HideVisClock)</onclick>
 						<selected>Skin.HasSetting(HideVisClock)</selected>
 					</control>
-					<control type="radiobutton" id="908">
+					<control type="radiobutton" id="909">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
 						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
