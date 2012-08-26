@@ -52,7 +52,7 @@
 							<info>ListItem.Title</info>
 						</control>
 						<control type="image">
-						<description>Channel icon</description>
+							<description>Channel icon</description>
 							<posx>370</posx>
 							<posy>8</posy>
 							<width>50</width>
@@ -70,8 +70,8 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="60" width="500">
-						<description>Channel focus selection</description>
 						<control type="image">
+							<description>Channel focus selection</description>
 							<posx>0</posx>
 							<posy>4</posy>
 							<width>435</width>
