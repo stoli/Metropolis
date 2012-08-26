@@ -61,6 +61,37 @@
 					<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
+				<control type="button" id="30">
+					<description>Telext</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_teletext_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_teletext_nf.png</texturenofocus>
+					<onclick>ActivateWindow(Teletext)</onclick>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="button" id="31">
+					<description>OSD EPG</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_epg_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_epg_nf.png</texturenofocus>
+					<onclick>ActivateWindow(PVROSDGuide)</onclick>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="button" id="32">
+					<description>OSD Channel</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_channel_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_channel_nf.png</texturenofocus>
+					<font>METF_PVRChannelList</font>
+					<onclick>ActivateWindow(PVROSDChannels)</onclick>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>
 				<control type="button" id="7">
 					<description>DVD MENU</description>
 					<include>Animation_ButtonFocus</include>
@@ -80,6 +111,7 @@
 					<texturefocus>osd/osd_button_prev_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_prev_nf.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="3">
 					<description>Rewind</description>
@@ -89,6 +121,7 @@
 					<texturefocus>osd/osd_button_rew_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_rew_nf.png</texturenofocus>
 					<onclick>PlayerControl(rewind)</onclick>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="5">
 					<description>Stop</description>
@@ -121,6 +154,7 @@
 					<texturefocus>osd/osd_button_ff_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_ff_nf.png</texturenofocus>
 					<onclick>PlayerControl(forward)</onclick>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="10">
 					<description>Next</description>
@@ -130,8 +164,30 @@
 					<texturefocus>osd/osd_button_next_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_next_nf.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
-				
+				<control type="button" id="21">
+					<description>Record</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_record_off_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_record_off_nf.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + !Player.Recording</visible>
+				</control>
+				<control type="button" id="22">
+					<description>Record</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_record_on_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_record_on_nf.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(record)</onclick>
+					<enable>Player.CanRecord</enable>
+					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + Player.Recording</visible>
+				</control>
 				<control type="button" id="13">
 					<description>Video Settings</description>
 					<include>Animation_ButtonFocus</include>
@@ -148,33 +204,8 @@
 					<width>60</width>
 					<texturefocus>osd/osd_button_audio_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
-					<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
-				</control>				
-				<control type="button" id="21">
-					<description>Record</description>
-					<include>Animation_ButtonFocus</include>
-					<height>60</height>
-					<width>60</width>
-					<texturefocus>osd/osd_button_record_off_fo.png</texturefocus>
-					<texturenofocus>osd/osd_button_record_off_nf.png</texturenofocus>
-					<texturenofocus>osd/osd_button_record_off_nf.png</texturenofocus>
-					<onclick>XBMC.PlayerControl(record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + !Player.Recording</visible>
-				</control>				
-				<control type="button" id="22">
-					<description>Record</description>
-					<include>Animation_ButtonFocus</include>
-					<height>60</height>
-					<width>60</width>
-					<texturefocus>osd/osd_button_record_on_fo.png</texturefocus>
-					<texturenofocus>osd/osd_button_record_on_nf.png</texturenofocus>
-					<texturenofocus>osd/osd_button_record_on_nf.png</texturenofocus>
-					<onclick>XBMC.PlayerControl(record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + Player.Recording</visible>
-				</control>				
+				</control>
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
