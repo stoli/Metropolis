@@ -37,7 +37,8 @@
 				<font>METF_TitleTextLarge</font>
 				<textcolor>TextNF</textcolor>
 				<info>ListItem.Label</info>
-				<visible>!Container.Content(episodes)</visible>
+				<!-- Title was overlapping progress dialog.  this is probably not the best way to fix this, but it works.-->
+				<visible>!Container.Content(episodes) + !Window.IsActive(videoscan) + !Window.IsActive(musicscan)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>-325</posx>
@@ -50,11 +51,9 @@
 				<scrollspeed>20</scrollspeed>
 				<font>METF_TitleTextLarge</font>
 				<textcolor>TextNF</textcolor>
-				<!--
-				<label>$INFO[ListItem.Season] x $INFO[ListItem.Label]</label>
-				-->
 				<label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
-				<visible>Container.Content(episodes)</visible>
+				<!-- Title was overlapping progress dialog.  this is probably not the best way to fix this, but it works.-->
+				<visible>Container.Content(episodes) + !Window.IsActive(videoscan) + !Window.IsActive(musicscan)</visible>
 			</control>
 			<!-- Tagline -->
 			<control type="label">
