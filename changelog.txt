@@ -1,3 +1,30 @@
+2.0.0 - 2012xxxx
+- Customization options for Home items.
+- Customizable submenu items for most Home items.
+- Move Music Videos to Home main menu.
+- PVR support.
+- Major rework of Music section.
+- Adjust Music Fullscreen Overlay.
+- Clean up animations.
+- Rework Skin Settings.
+- Icon shortcuts for Addons Home item.
+- RandomItems script support.
+- Watchlist script support.
+- RSS Editor script support.
+- Peripherals dialog.
+- Fix Slim Seekbar.
+- Slim Music Info Overlay option.
+- Fix TV Shows Next Aired script.
+- Show Files submenu link in Movies, TV Shows, Music Videos if Videos is hidden.
+- Option to hide Plot in Library views.
+- Fix Music Lyrics button.
+- Fix hang when adding new media source.
+- Disable Busy Dialog when Cinema Experience script is running.
+- Fix miscellaneous overlay issues.
+- Various aesthetic issues resolved.
+- More localization.
+- French translation updated.
+
 1.1.0 - 20120423
 - Fix slideshows for pictures.
 - Fix navigation errors for recently added items.
