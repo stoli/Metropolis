@@ -58,27 +58,6 @@
 							<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 							<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
 						</control>
-						<!-- Bullet -->
-						<control type="image">
-							<width>8</width>
-							<height>36</height>
-							<texture>Dot.png</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<colordiffuse>BulletDiffuse</colordiffuse>
-							<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Genre)]</visible>
-						</control>				
-						<!-- Genre -->
-						<control type="label">
-							<posx>200</posx>
-							<posy>35</posy>
-							<width>auto</width>
-							<height>30</height>
-							<aligny>center</aligny>
-							<font>METF_MediaDetailsSmall</font>
-							<textcolor>MediaDetailsGenre</textcolor>
-							<label>$INFO[ListItem.Genre]</label>
-							<visible>!IsEmpty(ListItem.Genre) + !Container.Content(tvshows)</visible>
-						</control>
 						<!-- Duration -->
 						<control type="label">
 							<width min="25" max="1200">auto</width>
@@ -88,6 +67,25 @@
 							<textcolor>MediaDetailsDuration</textcolor>
 							<label>$INFO[ListItem.Duration]</label>
 							<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
+						</control>
+						<!-- Bullet -->
+						<control type="image">
+							<width>8</width>
+							<height>36</height>
+							<texture>Dot.png</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<colordiffuse>BulletDiffuse</colordiffuse>
+							<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Genre)]</visible>
+						</control>
+						<!-- Genre -->
+						<control type="label">
+							<width min="25" max="1200">auto</width>
+							<height>30</height>
+							<aligny>center</aligny>
+							<font>METF_MediaDetailsSmall</font>
+							<textcolor>MediaDetailsGenre</textcolor>
+							<label>$INFO[ListItem.Genre]</label>
+							<visible>!IsEmpty(ListItem.Genre) + !Container.Content(tvshows)</visible>
 						</control>
 						<!-- Bullet -->
 						<control type="image">

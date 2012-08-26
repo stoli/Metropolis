@@ -58,6 +58,16 @@
 							<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 							<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
 						</control>
+						<!-- Duration -->
+						<control type="label">
+							<width min="25" max="1200">auto</width>
+							<height>30</height>
+							<aligny>center</aligny>
+							<font>METF_MediaDetailsSmall</font>
+							<textcolor>MediaDetailsDuration</textcolor>
+							<label>$INFO[ListItem.Duration]</label>
+							<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
+						</control>
 						<!-- Bullet -->
 						<control type="image">
 							<width>8</width>
@@ -69,25 +79,13 @@
 						</control>				
 						<!-- Genre -->
 						<control type="label">
-							<posx>200</posx>
-							<posy>35</posy>
-							<width>auto</width>
+							<width min="25" max="1200">auto</width>
 							<height>30</height>
 							<aligny>center</aligny>
 							<font>METF_MediaDetailsSmall</font>
 							<textcolor>MediaDetailsGenre</textcolor>
 							<label>$INFO[ListItem.Genre]</label>
 							<visible>!IsEmpty(ListItem.Genre) + !Container.Content(tvshows)</visible>
-						</control>
-						<!-- Duration -->
-						<control type="label">
-							<width min="25" max="1200">auto</width>
-							<height>30</height>
-							<aligny>center</aligny>
-							<font>METF_MediaDetailsSmall</font>
-							<textcolor>MediaDetailsDuration</textcolor>
-							<label>$INFO[ListItem.Duration]</label>
-							<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
 						</control>
 						<!-- Bullet -->
 						<control type="image">
