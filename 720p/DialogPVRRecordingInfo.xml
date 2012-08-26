@@ -1,5 +1,5 @@
-<window id="601">
-	<defaultcontrol always="true">7</defaultcontrol>
+<window id="602">
+	<defaultcontrol always="true">10</defaultcontrol>
 	<controls>
 		<!-- This hack is trying to clear the screen in-between each instance of the window -->
 		<control type="image">
@@ -34,7 +34,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[552] :</label>
+				<label>$LOCALIZE[552]:</label>
 			</control>
 			<control type="label">
 				<description>Start Date Label</description>
@@ -78,10 +78,10 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[19148] :</label>
+				<label>$LOCALIZE[19148]:</label>
 			</control>
 			<control type="label">
-				<description>Channel Name Label</description>
+				<description>Channel Name Header Label</description>
 				<posx>130</posx>
 				<posy>120</posy>
 				<width>470</width>
@@ -100,7 +100,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[180] :</label>
+				<label>$LOCALIZE[180]:</label>
 			</control>
 			<control type="label">
 				<description>Duration Label</description>
@@ -122,7 +122,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<include>SettingsLabel</include>
-				<label>$LOCALIZE[135] :</label>
+				<label>$LOCALIZE[135]:</label>
 			</control>
 			<control type="label">
 				<description>Genre Label</description>
@@ -155,20 +155,10 @@
 			<posy>200</posy>
 			<itemgap>20</itemgap>
 			<orientation>vertical</orientation>
-			<control type="button" id="7">
+			<control type="button" id="10">
 				<description>OK Button</description>
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[186]</label>
-			</control>
-			<control type="button" id="5">
-				<description>Switch To Channel Button</description>
-				<include>SettingsLabelLeft</include>
-				<label>$LOCALIZE[19165]</label>
-			</control>
-			<control type="button" id="6">
-				<description>Record Button</description>
-				<include>SettingsLabelLeft</include>
-				<label>-</label>
 			</control>
 		</control>
 
@@ -182,7 +172,7 @@
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-				<label>$LOCALIZE[19047]</label>
+				<label>$LOCALIZE[19053]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 		</control>
