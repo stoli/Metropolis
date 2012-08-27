@@ -581,7 +581,7 @@
 			<posy>2</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(6) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(15) | Container(9000).HasFocus(16)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | [Container(9000).HasFocus(6) + [Skin.HasSetting(HomePictures_Override) | Skin.HasSetting(HomePictures_Shortcuts)]] | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(15) | Container(9000).HasFocus(16)]</visible>
 			<control type="image">
 				<posx>625</posx>
 				<posy>505</posy>
@@ -1246,21 +1246,39 @@
 				</control>
 				<control type="button" id="91603">
 					<include>Submenu_Button2</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon1)])</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Addon1))</visible>
+				</control>
+				<control type="button" id="91604">
+					<include>Submenu_Button2</include>
 					<label>$INFO[Skin.String(HomePictures_Favourite2_Label)]</label>
 					<onclick>$INFO[Skin.String(HomePictures_Favourite2_Path)]</onclick>
 					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Favourite2_Path))</visible>
 				</control>
-				<control type="button" id="91604">
+				<control type="button" id="91605">
+					<include>Submenu_Button2</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon2)])</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Addon2))</visible>
+				</control>
+				<control type="button" id="91606">
 					<include>Submenu_Button2</include>
 					<label>$INFO[Skin.String(HomePictures_Favourite3_Label)]</label>
 					<onclick>$INFO[Skin.String(HomePictures_Favourite3_Path)]</onclick>
 					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Favourite3_Path))</visible>
 				</control>
-				<control type="button" id="91605">
+				<control type="button" id="91607">
+					<include>Submenu_Button2</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon3)])</onclick>
+					<visible>Skin.HasSetting(HomePictures_Shortcuts) + !IsEmpty(Skin.String(HomePictures_Addon3))</visible>
+				</control>
+				<control type="button" id="91608">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<visible>Skin.HasSetting(HomePictures_Addons) | !IsEmpty(Skin.String(HomePictures_Addon))</visible>
+					<visible>Skin.HasSetting(HomePictures_Override)</visible>
 				</control>
 			</control>
 			<!-- Programs/Addons Submenu -->

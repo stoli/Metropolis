@@ -1835,36 +1835,69 @@
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 1</label>
 						<label2>$INFO[Skin.String(HomePictures_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Addon1)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite1_Label)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite1_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite1_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite1_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Addon1))</visible>
 					</control>
 					<control type="button" id="1687">
 						<include>SettingsLabel</include>
 						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon1))]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite1_Path)</onclick>
+						<onclick>Skin.SetAddon(HomePictures_Addon1,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite1_Path))</visible>
+					</control>
+					<control type="button" id="1688">
+						<include>SettingsLabel</include>
+						<width>370</width>
 						<label>  - $LOCALIZE[31271] 2</label>
 						<label2>$INFO[Skin.String(HomePictures_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Addon2)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite2_Label)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite2_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite2_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite2_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Addon2))</visible>
 					</control>
-					<control type="button" id="1688">
+					<control type="button" id="1689">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon2))]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite2_Path)</onclick>
+						<onclick>Skin.SetAddon(HomePictures_Addon2,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite2_Path))</visible>
+					</control>
+					<control type="button" id="1690">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 3</label>
 						<label2>$INFO[Skin.String(HomePictures_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Addon3)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite3_Label)</onclick>
 						<onclick>Skin.Reset(HomePictures_Favourite3_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite3_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite3_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Addon3))</visible>
+					</control>
+					<control type="button" id="1691">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon3))]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite3_Path)</onclick>
+						<onclick>Skin.SetAddon(HomePictures_Addon3,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite3_Path))</visible>
 					</control>
 
 					<!-- Addons item (1711-1740) -->
