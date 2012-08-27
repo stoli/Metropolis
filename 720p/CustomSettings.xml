@@ -1333,9 +1333,12 @@
 					<control type="radiobutton" id="1634">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
+						<onclick>Skin.Reset(HomeMusic_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite1_Path)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite1_Path) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
 					</control>
 					<control type="button" id="1635">
 						<include>SettingsLabel</include>
@@ -1343,94 +1346,139 @@
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist1_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist1_Path,,special://musicplaylists/)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
 					</control>
 					<control type="button" id="1636">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist1_Label)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
 					</control>
 					<control type="button" id="1637">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 1</label>
 						<label2>$INFO[Skin.String(HomeMusic_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist1)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Addon1)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite1_Label)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite1_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomeMusic_Favourite1_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomeMusic_Favourite1_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist1)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist1) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
 					</control>
-					<control type="radiobutton" id="1638">
+					<control type="button" id="1638">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusic_Addon1))]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist1)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite1_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeMusic_Addon1,xbmc.addon.audio)</onclick>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist1) + IsEmpty(Skin.String(HomeMusic_Favourite1_Path))</visible>
+					</control>
+					<control type="radiobutton" id="1639">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
+						<onclick>Skin.Reset(HomeMusic_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite2_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite2_Path)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite2_Path) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
 					</control>
-					<control type="button" id="1639">
+					<control type="button" id="1640">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist2_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist2_Path,,special://musicplaylists/)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
 					</control>
-					<control type="button" id="1640">
+					<control type="button" id="1641">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist2_Label)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
 					</control>
-					<control type="button" id="1641">
+					<control type="button" id="1642">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 2</label>
 						<label2>$INFO[Skin.String(HomeMusic_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist2)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Addon2)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite2_Label)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite2_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomeMusic_Favourite2_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomeMusic_Favourite2_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist2)</visible>
-					</control>
-					<control type="radiobutton" id="1642">
-						<include>SettingsLabel</include>
-						<label>  - $LOCALIZE[559] 3</label>
-						<onclick>Skin.ToggleSetting(HomeMusic_Playlist3)</onclick>
-						<selected>Skin.HasSetting(HomeMusic_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite3_Path)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist2) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
 					</control>
 					<control type="button" id="1643">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusic_Addon2))]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist2)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite2_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeMusic_Addon2,xbmc.addon.audio)</onclick>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist2) + IsEmpty(Skin.String(HomeMusic_Favourite2_Path))</visible>
+					</control>
+					<control type="radiobutton" id="1644">
+						<include>SettingsLabel</include>
+						<label>  - $LOCALIZE[559] 3</label>
+						<onclick>Skin.Reset(HomeMusic_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite3_Path)</onclick>
+						<onclick>Skin.ToggleSetting(HomeMusic_Playlist3)</onclick>
+						<selected>Skin.HasSetting(HomeMusic_Playlist3)</selected>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite3_Path) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
+					</control>
+					<control type="button" id="1645">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist3_Path)]</label2>
 						<onclick>Skin.SetFile(HomeMusic_Playlist3_Path,,special://musicplaylists/)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
 					</control>
-					<control type="button" id="1644">
+					<control type="button" id="1646">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusic_Playlist3_Label)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
 					</control>
-					<control type="button" id="1645">
+					<control type="button" id="1647">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 3</label>
 						<label2>$INFO[Skin.String(HomeMusic_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist3)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Addon3)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite3_Label)</onclick>
 						<onclick>Skin.Reset(HomeMusic_Favourite3_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouritePath,HomeMusic_Favourite3_Path)</onclick>
 						<onclick>Skin.SetString(CustomFavouriteName,HomeMusic_Favourite3_Label)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist3)</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist3) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
+					</control>
+					<control type="button" id="1648">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusic_Addon3))]</label2>
+						<onclick>Skin.Reset(HomeMusic_Playlist3)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusic_Favourite3_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeMusic_Addon3,xbmc.addon.audio)</onclick>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + !Skin.HasSetting(HomeMusic_Playlist3) + IsEmpty(Skin.String(HomeMusic_Favourite3_Path))</visible>
 					</control>
 
 					<!-- Music Videos item (1651-1680) -->
