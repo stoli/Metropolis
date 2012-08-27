@@ -749,71 +749,89 @@
 				</control>
 				<control type="button" id="91104">
 					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeMovies_Addon1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMovies_Addon1)])</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + !IsEmpty(Skin.String(HomeMovies_Addon1))</visible>
+				</control>
+				<control type="button" id="91105">
+					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist2_Path)],return)</onclick>
 					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 				</control>
-				<control type="button" id="91105">
+				<control type="button" id="91106">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Favourite2_Label)]</label>
 					<onclick>$INFO[Skin.String(HomeMovies_Favourite2_Path)]</onclick>
 					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + !IsEmpty(Skin.String(HomeMovies_Favourite2_Path))</visible>
 				</control>
-				<control type="button" id="91106">
+				<control type="button" id="91107">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeMovies_Addon2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMovies_Addon2)])</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + !IsEmpty(Skin.String(HomeMovies_Addon2))</visible>
+				</control>
+				<control type="button" id="91108">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label>
 					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist3_Path)],return)</onclick>
 					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 				</control>
-				<control type="button" id="91107">
+				<control type="button" id="91109">
 					<include>Submenu_Button</include>
 					<label>$INFO[Skin.String(HomeMovies_Favourite3_Label)]</label>
 					<onclick>$INFO[Skin.String(HomeMovies_Favourite3_Path)]</onclick>
 					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + !IsEmpty(Skin.String(HomeMovies_Favourite3_Path))</visible>
 				</control>
-				<control type="button" id="91108">
+				<control type="button" id="91110">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeMovies_Addon3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeMovies_Addon3)])</onclick>
+					<visible>Skin.HasSetting(HomeMovies_Shortcuts) + !IsEmpty(Skin.String(HomeMovies_Addon3))</visible>
+				</control>
+				<control type="button" id="91111">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[556]</label>
 					<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
 					<visible>Library.HasContent(Movies) + Skin.HasSetting(HomeMovies_Override)</visible>
 				</control>
-				<control type="button" id="91109">
+				<control type="button" id="91112">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
 				</control>
-				<control type="button" id="91110">
+				<control type="button" id="91113">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 				</control>
-				<control type="button" id="91111">
+				<control type="button" id="91114">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
 				</control>
-				<control type="button" id="91112">
+				<control type="button" id="91115">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20348]</label>
 					<onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
 				</control>
-				<control type="button" id="91113">
+				<control type="button" id="91116">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(Videos,MovieStudios,return)</onclick>
 				</control>
-				<control type="button" id="91114">
+				<control type="button" id="91117">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
 				</control>
-				<control type="button" id="91115">
+				<control type="button" id="91118">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="91116">
+				<control type="button" id="91119">
 					<include>Submenu_Button</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
