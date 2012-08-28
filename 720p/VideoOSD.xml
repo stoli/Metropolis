@@ -141,7 +141,7 @@
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
 				<control type="button" id="800">
-					<description>audio Settings</description>
+					<description>Audio Settings</description>
 					<include>Animation_ButtonFocus</include>
 					<height>60</height>
 					<width>60</width>
@@ -159,11 +159,6 @@
 			<include>Animation_FadedByOSDSettings</include>
 			<include>OSD_Progress_Bar2</include>
 			<include>OSD_Player_Details</include>
-
-			<control type="button" id="420">
-				<onfocus>Dialog.Close(fullscreeninfo)</onfocus>
-				<onfocus>SetFocus(4)</onfocus>
-			</control>
 
 			<control type="image">
 				<description>TV Channel Icon</description>
