@@ -3,9 +3,9 @@
 		<posx>220</posx>
 		<posy>565</posy>
 		<width>840</width>
-		<height>135</height>
+		<height>72</height>
 		<align>left</align>
-		<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+		<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 		<font>METF_PlotTextMedium</font>
 		<textcolor>LowerText</textcolor>
 	</include>

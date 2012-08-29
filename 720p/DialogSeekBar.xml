@@ -24,7 +24,7 @@
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
 				<label>$INFO[VideoPlayer.Plot]</label>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!IsEmpty(VideoPlayer.Plot) + Player.Paused + !Skin.HasSetting(Slim_Seekbar)</visible>
 			</control>
 		</control>

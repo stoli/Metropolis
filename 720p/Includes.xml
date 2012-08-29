@@ -197,36 +197,11 @@
 			<posy>0</posy>
 			<include>Animation_HiddenByInfo</include>
 			<visible>!Skin.HasSetting(Hide_Plot) + [!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)]</visible>
-			<!-- Big Plot (Extra Media Info flags disabled) -->
 			<control type="group">
-				<visible>Skin.HasSetting(Hide_ExtraMediaFlags) | [!Skin.HasSetting(Hide_ExtraMediaFlags) + Container.Content(tvshows)] | [!Skin.HasSetting(Hide_ExtraMediaFlags) + SubString(Container.FolderPath,plugin)]</visible>
+				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)</visible>
 				<control type="textbox">
 					<width>840</width>
-					<height>135</height>
-					<align>justify</align>
-					<info>ListItem.Plot</info>
-					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
-				</control>
-				<control type="textbox">
-					<width>840</width>
-					<height>135</height>
-					<align>justify</align>
-					<info>ListItem.PlotOutline</info>
-					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline)</visible>
-				</control>
-			</control>
-			<!-- Small Plot (Extra Media Info flags enabled) -->
-			<control type="group">
-				<visible>!Skin.HasSetting(Hide_ExtraMediaFlags) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos)] + !SubString(Container.FolderPath,plugin)</visible>
-				<control type="textbox">
-					<width>840</width>
-					<height>67</height>
+					<height>68</height>
 					<align>justify</align>
 					<info>ListItem.Plot</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -236,7 +211,7 @@
 				</control>
 				<control type="textbox">
 					<width>840</width>
-					<height>67</height>
+					<height>68</height>
 					<align>justify</align>
 					<info>ListItem.PlotOutline</info>
 					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -270,32 +245,16 @@
 			<posx>340</posx>
 			<posy>565</posy>
 			<width>600</width>
-			<!-- shorter height to avoid overlapping Now Playing overlay if music is playing -->
 			<height>72</height>
 			<align>left</align>
 			<aligny>top</aligny>
 			<font>METF_PlotText</font>
 			<textcolor>TextNF</textcolor>
 			<info>ListItem.Property(Addon.Description)</info>
-			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 			<font>METF_PlotTextMedium</font>
 			<textcolor>LowerText</textcolor>
-			<visible>![Window.IsActive(AddonBrowser) | Window.IsActive(Pictures)] + !IsEmpty(ListItem.Property(Addon.Description))</visible>
-		</control>
-		<control type="textbox">
-			<posx>340</posx>
-			<posy>565</posy>
-			<width>600</width>
-			<height>135</height>
-			<align>left</align>
-			<aligny>top</aligny>
-			<font>METF_PlotText</font>
-			<textcolor>TextNF</textcolor>
-			<info>ListItem.Property(Addon.Description)</info>
-			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<font>METF_PlotTextMedium</font>
-			<textcolor>LowerText</textcolor>
-			<visible>Window.IsActive(AddonBrowser) + !IsEmpty(ListItem.Property(Addon.Description))</visible>
+			<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
 		</control>
 	</include>
 
@@ -393,7 +352,7 @@
 				<posx>300</posx>
 				<posy>565</posy>
 				<width>750</width>
-				<height>135</height>
+				<height>72</height>
 				<align>justify</align>
 				<info>ListItem.Property(Artist_Description)</info>
 				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -405,12 +364,13 @@
 				<posx>300</posx>
 				<posy>565</posy>
 				<width>750</width>
-				<height>135</height>
+				<height>72</height>
 				<align>justify</align>
 				<info>ListItem.Property(Album_Description)</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<font>METF_PlotTextMedium</font>
 				<textcolor>LowerText</textcolor>
+				<visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
 			</control>
 		</control>
 	</include>
