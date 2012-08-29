@@ -632,6 +632,7 @@
                 <ondown>112</ondown>
             </control>
 		</control>
+		<include>Global_Weather</include>
 		<include>Global_Time</include>
     </controls>
 </window>

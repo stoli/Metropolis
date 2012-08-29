@@ -72,17 +72,17 @@
 		<align>right</align>
 		<textcolor>Date</textcolor>
 	</include>
-	<include name="Global_Time">
+	<include name="Global_Weather">
 		<control type="group">
 			<posx>12</posx>
 			<posy>40</posy>
+			<visible>Weather.IsFetched + [!Skin.HasSetting(HideClockTemp) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]]</visible>
 			<control type="image">
 				<posx>1145</posx>
 				<posy>517</posy>
 				<width>30</width>
 				<height>30</height>
 				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
-				<visible>!Skin.HasSetting(HideClockTemp) + Weather.IsFetched</visible>
 			</control>
 			<control type="label">
 				<description>Temperature</description>
@@ -94,8 +94,14 @@
 				<align>right</align>
 				<textcolor>Temp</textcolor>
 				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
-				<visible>!Skin.HasSetting(HideClockTemp)</visible>
 			</control>
+		</control>
+	</include>
+	<include name="Global_Time">
+		<control type="group">
+			<posx>12</posx>
+			<posy>40</posy>
+			<visible>!Skin.HasSetting(HideClock) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
 			<control type="label">
 				<description>Hours</description>
 				<posx>1182</posx>

@@ -181,6 +181,7 @@
 			<ondown>3</ondown>
 		</control>
 		<include>Global_ContextFilter</include>
+		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>

@@ -179,6 +179,7 @@
 				</control>
 			</control>
 		</control>
+		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
 		<include>GlobalMusic</include>

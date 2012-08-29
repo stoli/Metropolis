@@ -321,10 +321,8 @@
 					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
 				</control>
 			</control>
-			<control type="group">
-				<include>Global_Time</include>
-				<visible>Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)</visible>
-			</control>
+			<include>Global_Weather</include>
+			<include>Global_Time</include>
 		</control>
 	</controls>
 </window>

@@ -327,6 +327,7 @@
 				</control>
 			</control>
 		</control>
+		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>GlobalMusic</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>

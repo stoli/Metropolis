@@ -72,6 +72,7 @@
 			</control>
 		</control>
 		<include>Global_ContextFilter</include>
+		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>GlobalMusic</include>
 		<include>Setting_Heading</include>
