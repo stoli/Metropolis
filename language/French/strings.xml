@@ -276,6 +276,7 @@
 	<string id="31398">Les films qui n'ont aucune bande sonore synchronisée et aucun dialogue parlé, jusqu'à l'aube du cinéma parlant dans la fin des années 1920. Les films sans dialogue utilisaient des titres pour les portions de dialogue et étaient souvent accompagnés par de la musique.</string>
 	<string id="31399">Masquer la Fenêtre de Connexion</string>
 	<string id="31400">Masquer la Température Actuelle et les Conditions Météo</string>
+	<string id="31401">Masquer l'horloge</string>
 	<string id="31402">Utiliser le Résumé dans d'autres vues</string>
 	<string id="31403">Afficher seulement les Marques Média supplémentaires dans la boîte Info</string>
 	<string id="31404">Vue Genre Large : Masquer les Descriptions</string>
@@ -331,7 +332,7 @@
 	<string id="31453">Afficher la Date à la place du Jour de la Semaine</string>
 	<string id="31454">Visualisation: Afficher la position du lecteur et l'heure dans Info en Surimpression</string> 
  	<string id="31455">Visualisation: Masquer Horlorge et Température dans Info en Surimpression</string>
- 	<string id="31456">- Ecraser le lien par défaut</string>
+ 	<string id="31456">- Écraser le lien par défaut</string>
  	<string id="31457">Raccourcis</string>
   
 	<!-- PVR Resources -->
