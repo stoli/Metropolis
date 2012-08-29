@@ -401,7 +401,7 @@
 					<label>$LOCALIZE[3]</label>
 					<icon>special://skin/extras/home1/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,Playlists,return)</onclick>
+					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + Skin.HasSetting(HomeVideos_Playlists)</visible>
 				</item>
 				<item id="2">
