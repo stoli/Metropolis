@@ -18,6 +18,7 @@
 	<string id="31054">Logo</string>
 	<string id="31055">Usar Logos en Series</string>
 	<string id="31056">Habilitar Carátula</string>
+	<string id="31057">Activar texto de información de la canción</string>
 	<string id="31060">Mostrar Añadidos Recientemente</string>
 	<string id="31108">Activar Modo Depuración</string>
 	<string id="31109">Activar Rejilla de Depuración</string>
@@ -183,7 +184,7 @@
 	<string id="31451">Recomendado</string>
 	<string id="31452">Visualización: Usar Información Reducida</string>
 	<string id="31453">Mostrar Fecha en lugar del Día de la Semana</string>
-	<string id="31454">Visualización: Mostrar posición del reproductor y tiempo para Ocultar la Info</string>
+	<string id="31454">Visualización: Mostrar posición del reproductor y reloj de tiempo</string>
 	<string id="31455">Visualización: Ocultar Reloj y Temperatura en Info</string>
 	<string id="31456">- Anular enlace predeterminado</string>
 	<string id="31457">Atajos</string>
