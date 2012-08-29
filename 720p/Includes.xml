@@ -1086,6 +1086,16 @@
 			<label>$INFO[VideoPlayer.Tagline]</label>
 			<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
 		</control>
+		<!-- LiveTV Channel Icon -->
+		<control type="image">
+			<posx>70</posx>
+			<posy>560</posy>
+			<width>150</width>
+			<height>150</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<info>VideoPlayer.Cover</info>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
+		</control>    
 		<!-- Studios -->
 		<control type="image">
 			<posx>1154</posx>
