@@ -160,15 +160,6 @@
 			<include>OSD_Progress_Bar2</include>
 			<include>OSD_Player_Details</include>
 
-			<control type="image">
-				<description>TV Channel Icon</description>
-				<posx>70</posx>
-				<posy>560</posy>
-				<width>150</width>
-				<height>150</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<info>VideoPlayer.Cover</info>
-			</control>
 			<control type="grouplist" id="2002">
 				<posx>292</posx>
 				<posy>650</posy>

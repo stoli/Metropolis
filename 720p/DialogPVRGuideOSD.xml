@@ -39,7 +39,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>METF_PVRChannelList</font>
-			<info>ListItem.StartDate</info>
+			<label>$INFO[Container(11).ListItem.StartDate]</label>
 		</control>
 
 		<control type="list" id="11">
