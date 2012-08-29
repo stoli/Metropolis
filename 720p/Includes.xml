@@ -225,7 +225,7 @@
 				<visible>Container.Content(seasons)</visible>
 				<control type="textbox">
 					<width>840</width>
-					<height>135</height>
+					<height>72</height>
 					<align>justify</align>
 					<info>Container.ShowPlot</info>
 					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
