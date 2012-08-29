@@ -6,6 +6,8 @@
 - Major rework of Music section.
 - Adjust Music Fullscreen Overlay.
 - Clean up animations.
+- Show sort letter popup when scrolling through lists quickly.
+- Option to hide global clock.
 - Rework Skin Settings.
 - Icon shortcuts for Addons Home item.
 - RandomItems script support.
@@ -24,6 +26,7 @@
 - Various aesthetic issues resolved.
 - More localization.
 - French translation updated.
+- Spanish translation updated.
 
 1.1.0 - 20120423
 - Fix slideshows for pictures.
