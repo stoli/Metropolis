@@ -169,7 +169,7 @@
 			</control>
 			<!-- Subtitles -->
 			<control type="group">
-				<posx>727</posx>
+				<posx>728</posx>
 				<posy>645</posy>
 				<control type="image">
 					<posx>5</posx>
@@ -192,7 +192,7 @@
 			</control>
 			<!-- IMDB Flag -->
 			<control type="group">
-				<posx>875</posx>
+				<posx>770</posx>
 				<posy>640</posy>
 				<control type="image">
 					<posx>22</posx>

@@ -6,7 +6,6 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<include>Animation_CommonFade</include>
@@ -74,6 +73,7 @@
 			<include>Animation_FadedByMenu</include>
 			<include>Global_AddonInfo</include>
 		</control>
+		<include>ScrollOffsetLabel</include>
 		<!-- Video Navigation Menu -->		
 		<control type="group">
 			<include>Animation_NavMenu</include>
