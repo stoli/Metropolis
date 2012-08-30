@@ -2,7 +2,7 @@
 	<include name="MediaInfo2">
 		<!-- Additional Media Flags -->
 		<control type="group" id="9902">
-			<posx>40</posx>
+			<posx>140</posx>
 			<posy>3</posy>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>

@@ -17,11 +17,7 @@
 		<include>Viewtype_List</include>
 		<include>Viewtype_Gallery_Square</include>
 		<include>Global_ContextFilter</include>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include>Global_AddonInfo</include>
-		</control>
+		<include>Global_AddonInfo</include>
 		<include>ScrollOffsetLabel</include>
 		<!-- Navigation Menu -->
 		<control type="group">

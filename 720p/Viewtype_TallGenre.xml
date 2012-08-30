@@ -1,15 +1,4 @@
 ﻿<includes>
-	<include name="Genre_Description">
-		<posx>220</posx>
-		<posy>565</posy>
-		<width>840</width>
-		<height>72</height>
-		<align>left</align>
-		<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-		<font>METF_PlotTextMedium</font>
-		<textcolor>LowerText</textcolor>
-	</include>
-
 	<include name="Viewtype_TallGenre">
 		<control type="group">
 			<visible>Control.IsVisible(501)</visible>
@@ -110,7 +99,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<visible>Control.IsVisible(501) + Container.Content(genres)</visible>
 			</control>
-			<include>GenreDescriptions</include>
+			<include>Global_GenreInfo</include>
 			<include>ScrollBar_Horizontal</include>
 		</control>
 	</include>

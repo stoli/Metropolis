@@ -6,6 +6,9 @@
 			<control type="group">
 				<posx>3</posx>
 				<posy>5</posy>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_CommonFade</include>
+				<include>Animation_OpenCloseFade</include>
 				<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<!-- MPAA Flags -->
 				<control type="group">

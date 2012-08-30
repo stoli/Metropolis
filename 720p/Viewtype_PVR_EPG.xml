@@ -14,7 +14,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[21820]</label>
 				</control>
 				<control type="label">
@@ -25,7 +25,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[369]</label>
 				</control>
 				<control type="list" id="15">
@@ -46,7 +46,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
@@ -57,7 +57,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
@@ -78,7 +78,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label2</info>
 						</control>
 						<control type="label">
@@ -89,7 +89,7 @@
 							<height>40</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
@@ -125,7 +125,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[555]</label>
 				</control>
 				<control type="label">
@@ -136,7 +136,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[19148]</label>
 				</control>
 				<control type="label">
@@ -147,7 +147,7 @@
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[369]</label>
 				</control>
 				<control type="list" id="16">
@@ -168,7 +168,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
@@ -187,7 +187,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
@@ -198,7 +198,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
@@ -219,7 +219,7 @@
 							<height>36</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.StartTime</info>
 						</control>
 						<control type="image">
@@ -238,7 +238,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
@@ -249,7 +249,7 @@
 							<height>36</height>
 							<align>left</align>
 							<aligny>center</aligny>
-							<include>TVLabel</include>
+							<include>LiveTVLabel</include>
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
@@ -296,7 +296,7 @@
 						<height>45</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</rulerlayout>
@@ -315,7 +315,7 @@
 						<height>52</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</channellayout>
@@ -342,7 +342,7 @@
 						<height>52</height>
 						<aligny>center</aligny>
 						<align>left</align>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</focusedchannellayout>
@@ -354,7 +354,7 @@
 						<height>52</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -373,13 +373,13 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<align>left</align>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
 			</control>
 			<!-- TV Channel Plot (Bottom) -->
-			<include>TVChannelPlot</include>
+			<include>LiveTVPlot</include>
 		</control>
 	</include>
 </includes>

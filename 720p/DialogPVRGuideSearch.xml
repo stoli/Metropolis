@@ -45,7 +45,7 @@
 				<width>840</width>
 				<height>70</height>
 				<align>left</align>
-				<include>TVLabel</include>
+				<include>LiveTVLabel</include>
 				<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
 			</control>
 			<control type="group">

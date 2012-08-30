@@ -1,12 +1,12 @@
 ﻿<includes>
 	<include name="Global_Music">
 		<control type="group">
-			<visible>Player.HasAudio + !Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + ![Control.IsVisible(9900) | Control.IsVisible(9901) | Control.IsVisible(9902) | Control.IsVisible(9903)]</visible>
-			<control type="group">
+			<visible>Player.HasAudio + !Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<control type="group" id="9904">
 				<posx>20</posx>
 				<posy>560</posy>
 				<animation effect="slide" start="0,0" end="-186,0" time="600" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
-				<visible>Skin.HasSetting(MusicCoverArtOverlay)</visible>
+				<visible>Skin.HasSetting(MusicCoverArtOverlay) + !Control.IsVisible(9901)</visible>
 				<control type="image">
 					<posx>18</posx>
 					<posy>8</posy>
@@ -24,12 +24,11 @@
 					<bordersize>6</bordersize>
 				</control>
 			</control>
-			<control type="group">
+			<control type="group" id="9905">
 				<posx>20</posx>
 				<posy>560</posy>
 				<animation effect="slide" start="0,0" end="-186,0" time="600" condition="Window.IsActive(filemanager) | Window.IsActive(musicplaylisteditor)">Conditional</animation>
-				<!-- This has gotten massively unweildy.. -->
-				<visible>[![Container.Content(albums) | Container.Content(artists)] | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Artist_Description))]] + [!Window.IsActive(home) | [!Skin.HasSetting(Home2) + ![Container(9000).Hasfocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] + ![Container(9000).Hasfocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] + ![Container(9000).Hasfocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] + ![Container(9000).Hasfocus(16) + [Skin.HasSetting(ShowMusicVideosRecentlyAdded) | Skin.HasSetting(ShowMusicVideosRandomItems)]] + ![Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)]] | [Skin.HasSetting(Home2) + ![Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(16)]]]</visible>
+				<visible>![Control.IsVisible(9901) | Control.IsVisible(9902)] + [!Window.IsActive(home) | [!Skin.HasSetting(Home2) + ![Container(9000).Hasfocus(3) + [Skin.HasSetting(ShowMusicRecentlyAdded) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicWatchlist)]] + ![Container(9000).Hasfocus(4) + [Skin.HasSetting(ShowMoviesRecentlyAdded) | Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowMoviesWatchlist)]] + ![Container(9000).Hasfocus(5) + [Skin.HasSetting(ShowTVShowsRecentlyAdded) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowTVShowsWatchlist)]] + ![Container(9000).Hasfocus(16) + [Skin.HasSetting(ShowMusicVideosRecentlyAdded) | Skin.HasSetting(ShowMusicVideosRandomItems)]] + ![Container(9000).HasFocus(1) + Skin.HasSetting(HomePrograms_IconShortcuts)]] | [Skin.HasSetting(Home2) + ![Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(16)]]]</visible>
 				<control type="group">
 					<visible>Skin.HasSetting(MusicCoverArtOverlay) + Skin.HasSetting(MusicSongInfoOverlay)</visible>
 					<control type="fadelabel">

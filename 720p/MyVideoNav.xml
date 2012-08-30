@@ -57,22 +57,10 @@
 		<include>Viewtype_Logo</include>				<!-- 56 -->
 		<include>Viewtype_TallGenre</include>			<!-- 501 -->
 		<include>Global_ContextFilter</include>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include>MediaInfo</include>
-			<include condition="!Skin.HasSetting(Hide_ExtraMediaFlags)">MediaInfo2</include>
-		</control>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include condition="!Skin.HasSetting(Hide_Plot)">Global_VideoPlot</include>
-		</control>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include>Global_AddonInfo</include>
-		</control>
+		<include condition="!Skin.HasSetting(Hide_MediaFlags)">MediaInfo</include>
+		<include condition="![Skin.HasSetting(Hide_MediaFlags) | Skin.HasSetting(Hide_ExtraMediaFlags)]">MediaInfo2</include>
+		<include>Global_VideoPlot</include>
+		<include>Global_AddonInfo</include>
 		<include>ScrollOffsetLabel</include>
 		<!-- Video Navigation Menu -->		
 		<control type="group">

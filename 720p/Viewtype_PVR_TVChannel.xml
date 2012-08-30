@@ -185,7 +185,7 @@
 					<height>20</height>
 					<align>right</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<info>ListItem.StartTime</info>
 				</control>
 				<control type="progress">
@@ -204,7 +204,7 @@
 					<height>20</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<info>ListItem.EndTime</info>
 				</control>
 				<control type="label">
@@ -214,13 +214,13 @@
 					<height>20</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[19031] : $INFO[ListItem.NextTitle]</label>
 				</control>
 
 			</control>
 			<!-- TV Channel Plot (Bottom) -->
-			<include>TVChannelPlot</include>
+			<include>LiveTVPlot</include>
 		</control>
 	</include>
 </includes>

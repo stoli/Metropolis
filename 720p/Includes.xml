@@ -195,33 +195,47 @@
 		</control>
 	</include>
 
+	<include name="PlotBox_Small">
+		<height>68</height>
+		<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+		<font>METF_PlotTextSmall</font>
+	</include>
+	<include name="PlotBox_Large">
+		<height>135</height>
+		<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+		<font>METF_PlotTextMedium</font>
+	</include>
+	<include name="PlotBox">
+		<posx>300</posx>
+		<posy>565</posy>
+		<width>750</width>
+		<textcolor>LowerText</textcolor>
+		<!--<include condition="Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)">PlotBox_Small</include>
+		<include condition="![Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)]">PlotBox_Large</include>-->
+		<include>PlotBox_Small</include>
+	</include>
+
 	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
 	<include name="Global_VideoPlot">
 		<control type="group" id="9900">
-			<posx>200</posx>
-			<posy>565</posy>
+			<posx>0</posx>
 			<posy>0</posy>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
 			<include>Animation_HiddenByInfo</include>
 			<visible>!Skin.HasSetting(Hide_Plot) + [!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)]</visible>
 			<control type="group">
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)</visible>
 				<control type="textbox">
-					<width>840</width>
-					<height>68</height>
+					<include>PlotBox</include>
 					<align>justify</align>
 					<info>ListItem.Plot</info>
-					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextSmall</font>
-					<textcolor>LowerText</textcolor>
 					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
 				</control>
 				<control type="textbox">
-					<width>840</width>
-					<height>68</height>
-					<align>justify</align>
+					<include>PlotBox</include>
 					<info>ListItem.PlotOutline</info>
-					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextSmall</font>
+					<align>justify</align>
 					<textcolor>LowerText</textcolor>
 					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline) + Container.Content(movies)</visible>
 				</control>
@@ -230,156 +244,473 @@
 			<control type="group">
 				<visible>Container.Content(seasons)</visible>
 				<control type="textbox">
-					<width>840</width>
-					<height>72</height>
+					<include>PlotBox</include>
 					<align>justify</align>
 					<info>Container.ShowPlot</info>
-					<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
 				</control>
 			</control>
 		</control>
 	</include>
 
+	<!-- Live TV Plot -->
+	<include name="LiveTVPlot">
+		<!-- Plot (Bottom) -->
+		<control type="group">
+			<posx>30</posx>
+			<posy>560</posy>
+			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
+			<control type="image">
+				<description>TV Channel Icon</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<info>ListItem.Icon</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Title</description>
+				<posx>120</posx>
+				<posy>0</posy>
+				<width>640</width>
+				<height>30</height>
+				<scroll>true</scroll>
+				<align>false</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<include>SettingsLabel</include>
+				<info>ListItem.Title</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Timing</description>
+				<posx>1040</posx>
+				<posy>0</posy>
+				<width>430</width>
+				<height>30</height>
+				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, ,]$INFO[ListItem.Duration, / ,])</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<include>SettingsLabel</include>
+			</control>
+			<control type="textbox">
+				<description>TV Channel Plot</description>
+				<posx>140</posx>
+				<posy>40</posy>
+				<width>880</width>
+				<height>110</height>
+				<align>justify</align>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>TextNF</textcolor>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			</control>
+		</control>
+	</include>
+	<include name="LiveTVLabel">
+		<font>METF_ContextValue</font>
+		<textcolor>SettingsDetail</textcolor>
+		<focusedcolor>ButtonText</focusedcolor>
+	</include>
+
 	<include name="Global_AddonInfo">
-		<posx>0</posx>
-		<posy>0</posy>
-		<include>Animation_HiddenByInfo</include>
-		<!-- Addon Description -->
-		<control type="textbox">
-			<posx>340</posx>
-			<posy>565</posy>
-			<width>600</width>
-			<height>72</height>
-			<align>left</align>
-			<aligny>top</aligny>
-			<font>METF_PlotText</font>
-			<textcolor>TextNF</textcolor>
-			<info>ListItem.Property(Addon.Description)</info>
-			<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-			<font>METF_PlotTextMedium</font>
-			<textcolor>LowerText</textcolor>
-			<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<!-- Addon Description -->
+			<control type="textbox">
+				<include>PlotBox</include>
+				<align>justify</align>
+				<info>ListItem.Property(Addon.Description)</info>
+				<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
+			</control>
 		</control>
 	</include>
 
 	<include name="Global_PictureInfo">
-		<posx>0</posx>
-		<posy>0</posy>
-		<include>Animation_HiddenByInfo</include>
-		<control type="grouplist">
-			<visible>Window.IsActive(pictures)</visible>
-			<posx>340</posx>
-			<posy>565</posy>
-			<width>600</width>
-			<height>72</height>
-			<align>center</align>
-			<aligny>top</aligny>
-			<orientation>vertical</orientation>
-			<!-- Camera Info -->
-			<control type="label">
-				<width>600</width>
-				<height>20</height>
-				<align>center</align>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
-				<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
-				<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
-			</control>
-			<!-- Focus and Aperture -->
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_HiddenByInfo</include>
 			<control type="grouplist">
+				<visible>Window.IsActive(pictures)</visible>
+				<posx>340</posx>
+				<posy>565</posy>
 				<width>600</width>
-				<height>20</height>
+				<height>72</height>
 				<align>center</align>
-				<itemgap>10</itemgap>
-				<orientation>horizontal</orientation>
+				<aligny>top</aligny>
+				<orientation>vertical</orientation>
+				<!-- Camera Info -->
 				<control type="label">
-					<width min="25" max="600">auto</width>
+					<width>600</width>
 					<height>20</height>
+					<align>center</align>
 					<font>METF_PlotTextMedium</font>
 					<textcolor>LowerText</textcolor>
-					<label>$INFO[ListItem.PictureFocalLen]</label>
-					<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
+					<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
+					<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
 				</control>
-				<control type="image">
-					<width>8</width>
-					<height>24</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
-				</control>
-				<control type="label">
-					<width min="25" max="600">auto</width>
+				<!-- Focus and Aperture -->
+				<control type="grouplist">
+					<width>600</width>
 					<height>20</height>
+					<align>center</align>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<width min="25" max="600">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextMedium</font>
+						<textcolor>LowerText</textcolor>
+						<label>$INFO[ListItem.PictureFocalLen]</label>
+						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
+					</control>
+					<control type="image">
+						<width>8</width>
+						<height>24</height>
+						<texture>Dot.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>BulletDiffuse</colordiffuse>
+						<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
+					</control>
+					<control type="label">
+						<width min="25" max="600">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextMedium</font>
+						<textcolor>LowerText</textcolor>
+						<label>f/$INFO[ListItem.PictureAperture]</label>
+						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
+					</control>
+					<control type="image">
+						<width>8</width>
+						<height>24</height>
+						<texture>Dot.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>BulletDiffuse</colordiffuse>
+						<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
+					</control>
+					<control type="label">
+						<width min="25" max="600">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextMedium</font>
+						<textcolor>LowerText</textcolor>
+						<label>$INFO[ListItem.PictureFocusDist]</label>
+						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
+					</control>
+					<visible>!IsEmpty(ListItem.PictureFocalLen) | !IsEmpty(ListItem.PictureAperture) | !IsEmpty(ListItem.PictureFocusDist)</visible>
+				</control>
+				<!-- Exposure -->
+				<control type="label">
+					<width>600</width>
+					<height>20</height>
+					<align>center</align>
 					<font>METF_PlotTextMedium</font>
 					<textcolor>LowerText</textcolor>
-					<label>f/$INFO[ListItem.PictureAperture]</label>
-					<visible>!IsEmpty(ListItem.PictureAperture)</visible>
+					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
+					<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
 				</control>
-				<control type="image">
-					<width>8</width>
-					<height>24</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
-				</control>
-				<control type="label">
-					<width min="25" max="600">auto</width>
-					<height>20</height>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<label>$INFO[ListItem.PictureFocusDist]</label>
-					<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
-				</control>
-				<visible>!IsEmpty(ListItem.PictureFocalLen) | !IsEmpty(ListItem.PictureAperture) | !IsEmpty(ListItem.PictureFocusDist)</visible>
-			</control>
-			<!-- Exposure -->
-			<control type="label">
-				<width>600</width>
-				<height>20</height>
-				<align>center</align>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
-				<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
-				<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
 			</control>
 		</control>
 	</include>
 
 	<include name="Global_MusicInfo">
-		<posx>0</posx>
-		<posy>0</posy>
-		<include>Animation_HiddenByInfo</include>
 		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<visible>Container.Content(albums) | Container.Content(artists)</visible>
 			<control type="textbox">
-				<posx>300</posx>
-				<posy>565</posy>
-				<width>750</width>
-				<height>72</height>
+				<include>PlotBox</include>
 				<align>justify</align>
 				<info>ListItem.Property(Artist_Description)</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
 				<visible>IsEmpty(ListItem.Property(Album_Description))</visible>
 			</control>
 			<control type="textbox">
-				<posx>300</posx>
-				<posy>565</posy>
-				<width>750</width>
-				<height>72</height>
+				<include>PlotBox</include>
 				<align>justify</align>
 				<info>ListItem.Property(Album_Description)</info>
-				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>LowerText</textcolor>
 				<visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
 			</control>
 		</control>
 	</include>
+
+	<!-- Genre Descriptions -->
+	<include name="Global_GenreInfo">
+		<control type="group" id="9903">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<visible>Control.IsVisible(501) + Window.IsActive(videolibrary) + Container.Content(genres)</visible>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31343]</label>
+				<visible>StringCompare(ListItem.Label,Action)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31344]</label>
+				<visible>StringCompare(ListItem.Label,Adventure)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31345]</label>
+				<visible>StringCompare(ListItem.Label,Action And Adventure)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31346]</label>
+				<visible>StringCompare(ListItem.Label,Adult)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31347]</label>
+				<visible>StringCompare(ListItem.Label,Animation)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31348]</label>
+				<visible>StringCompare(ListItem.Label,Anime)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31349]</label>
+				<visible>StringCompare(ListItem.Label,Biography)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31350]</label>
+				<visible>StringCompare(ListItem.Label,Bollywood)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31351]</label>
+				<visible>StringCompare(ListItem.Label,Children)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31352]</label>
+				<visible>StringCompare(ListItem.Label,Christmas)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31353]</label>
+				<visible>StringCompare(ListItem.Label,Comedy)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31354]</label>
+				<visible>StringCompare(ListItem.Label,Concert)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31355]</label>
+				<visible>StringCompare(ListItem.Label,Crime)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31356]</label>
+				<visible>StringCompare(ListItem.Label,Disaster)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31357]</label>
+				<visible>StringCompare(ListItem.Label,Documentary)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31358]</label>
+				<visible>StringCompare(ListItem.Label,Drama)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31359]</label>
+				<visible>StringCompare(ListItem.Label,Family)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31360]</label>
+				<visible>StringCompare(ListItem.Label,Fantasy)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31361]</label>
+				<visible>StringCompare(ListItem.Label,Film Noir)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31362]</label>
+				<visible>StringCompare(ListItem.Label,Game Show)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31364]</label>
+				<visible>StringCompare(ListItem.Label,Hentai)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31365]</label>
+				<visible>StringCompare(ListItem.Label,History)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31367]</label>
+				<visible>StringCompare(ListItem.Label,Horror)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31368]</label>
+				<visible>StringCompare(ListItem.Label,Independent)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31369]</label>
+				<visible>StringCompare(ListItem.Label,Interview)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31370]</label>
+				<visible>StringCompare(ListItem.Label,Martial Arts)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31371]</label>
+				<visible>StringCompare(ListItem.Label,Mini-Series) | StringCompare(ListItem.Label,Mini-TV-Series)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31372]</label>
+				<visible>StringCompare(ListItem.Label,Monster)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31373]</label>
+				<visible>StringCompare(ListItem.Label,Music)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31374]</label>
+				<visible>StringCompare(ListItem.Label,Musical)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31375]</label>
+				<visible>StringCompare(ListItem.Label,Mystery)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31376]</label>
+				<visible>StringCompare(ListItem.Label,Nature)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31377]</label>
+				<visible>StringCompare(ListItem.Label,News)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31378]</label>
+				<visible>StringCompare(ListItem.Label,Post-Apocalypse)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31379]</label>
+				<visible>StringCompare(ListItem.Label,Reality)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31381]</label>
+				<visible>StringCompare(ListItem.Label,Romance)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31382]</label>
+				<visible>StringCompare(ListItem.Label,Sci-Fi) | StringCompare(ListItem.Label,Science Fiction) | StringCompare(ListItem.Label,Science-Fiction)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31383]</label>
+				<visible>StringCompare(ListItem.Label,Short)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31384]</label>
+				<visible>StringCompare(ListItem.Label,Soap)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31386]</label>
+				<visible>StringCompare(ListItem.Label,Sport)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31387]</label>
+				<visible>StringCompare(ListItem.Label,Spy)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31388]</label>
+				<visible>StringCompare(ListItem.Label,Stageplay)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31389]</label>
+				<visible>StringCompare(ListItem.Label,Stand-Up)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31390]</label>
+				<visible>StringCompare(ListItem.Label,Superhero) | StringCompare(ListItem.Label,Comics)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31391]</label>
+				<visible>StringCompare(ListItem.Label,Supernatural)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31392]</label>
+				<visible>StringCompare(ListItem.Label,Talk Show)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31393]</label>
+				<visible>StringCompare(ListItem.Label,Thriller)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31394]</label>
+				<visible>StringCompare(ListItem.Label,War)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31395]</label>
+				<visible>StringCompare(ListItem.Label,Western)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31396]</label>
+				<visible>StringCompare(ListItem.Label,Wrestling)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31397]</label>
+				<visible>StringCompare(ListItem.Label,Epic)</visible>
+			</control>
+			<control type="textbox">
+				<include>PlotBox</include>
+				<label>$LOCALIZE[31398]</label>
+				<visible>StringCompare(ListItem.Label,Silent)</visible>
+			</control>
+		</control>
+	</include>
+  
 	<!-- Video Info Screen Buttons and Text -->
 	<include name="VideoInfoButton">
 		<label>-</label>
@@ -1613,342 +1944,9 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
-	<!-- Genre Descriptions -->
-	<include name="GenreDescriptions">
-		<control type="group" id="9903">
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_HiddenByInfo</include>
-			<visible>Control.IsVisible(501) + Window.IsActive(videolibrary) + Container.Content(genres)</visible>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31343]</label>
-				<visible>StringCompare(ListItem.Label,Action)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31344]</label>
-				<visible>StringCompare(ListItem.Label,Adventure)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31345]</label>
-				<visible>StringCompare(ListItem.Label,Action And Adventure)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31346]</label>
-				<visible>StringCompare(ListItem.Label,Adult)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31347]</label>
-				<visible>StringCompare(ListItem.Label,Animation)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31348]</label>
-				<visible>StringCompare(ListItem.Label,Anime)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31349]</label>
-				<visible>StringCompare(ListItem.Label,Biography)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31350]</label>
-				<visible>StringCompare(ListItem.Label,Bollywood)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31351]</label>
-				<visible>StringCompare(ListItem.Label,Children)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31352]</label>
-				<visible>StringCompare(ListItem.Label,Christmas)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31353]</label>
-				<visible>StringCompare(ListItem.Label,Comedy)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31354]</label>
-				<visible>StringCompare(ListItem.Label,Concert)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31355]</label>
-				<visible>StringCompare(ListItem.Label,Crime)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31356]</label>
-				<visible>StringCompare(ListItem.Label,Disaster)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31357]</label>
-				<visible>StringCompare(ListItem.Label,Documentary)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31358]</label>
-				<visible>StringCompare(ListItem.Label,Drama)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31359]</label>
-				<visible>StringCompare(ListItem.Label,Family)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31360]</label>
-				<visible>StringCompare(ListItem.Label,Fantasy)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31361]</label>
-				<visible>StringCompare(ListItem.Label,Film Noir)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31362]</label>
-				<visible>StringCompare(ListItem.Label,Game Show)</visible>
-			</control>
-			
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31364]</label>
-				<visible>StringCompare(ListItem.Label,Hentai)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31365]</label>
-				<visible>StringCompare(ListItem.Label,History)</visible>
-			</control>
-			
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31367]</label>
-				<visible>StringCompare(ListItem.Label,Horror)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31368]</label>
-				<visible>StringCompare(ListItem.Label,Independent)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31369]</label>
-				<visible>StringCompare(ListItem.Label,Interview)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31370]</label>
-				<visible>StringCompare(ListItem.Label,Martial Arts)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31371]</label>
-				<visible>StringCompare(ListItem.Label,Mini-Series) | StringCompare(ListItem.Label,Mini-TV-Series)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31372]</label>
-				<visible>StringCompare(ListItem.Label,Monster)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31373]</label>
-				<visible>StringCompare(ListItem.Label,Music)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31374]</label>
-				<visible>StringCompare(ListItem.Label,Musical)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31375]</label>
-				<visible>StringCompare(ListItem.Label,Mystery)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31376]</label>
-				<visible>StringCompare(ListItem.Label,Nature)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31377]</label>
-				<visible>StringCompare(ListItem.Label,News)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31378]</label>
-				<visible>StringCompare(ListItem.Label,Post-Apocalypse)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31379]</label>
-				<visible>StringCompare(ListItem.Label,Reality)</visible>
-			</control>
-
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31381]</label>
-				<visible>StringCompare(ListItem.Label,Romance)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31382]</label>
-				<visible>StringCompare(ListItem.Label,Sci-Fi) | StringCompare(ListItem.Label,Science Fiction) | StringCompare(ListItem.Label,Science-Fiction)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31383]</label>
-				<visible>StringCompare(ListItem.Label,Short)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31384]</label>
-				<visible>StringCompare(ListItem.Label,Soap)</visible>
-			</control>
-			
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31386]</label>
-				<visible>StringCompare(ListItem.Label,Sport)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31387]</label>
-				<visible>StringCompare(ListItem.Label,Spy)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31388]</label>
-				<visible>StringCompare(ListItem.Label,Stageplay)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31389]</label>
-				<visible>StringCompare(ListItem.Label,Stand-Up)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31390]</label>
-				<visible>StringCompare(ListItem.Label,Superhero) | StringCompare(ListItem.Label,Comics)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31391]</label>
-				<visible>StringCompare(ListItem.Label,Supernatural)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31392]</label>
-				<visible>StringCompare(ListItem.Label,Talk Show)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31393]</label>
-				<visible>StringCompare(ListItem.Label,Thriller)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31394]</label>
-				<visible>StringCompare(ListItem.Label,War)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31395]</label>
-				<visible>StringCompare(ListItem.Label,Western)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31396]</label>
-				<visible>StringCompare(ListItem.Label,Wrestling)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31397]</label>
-				<visible>StringCompare(ListItem.Label,Epic)</visible>
-			</control>
-			<control type="textbox">
-				<include>Genre_Description</include>
-				<label>$LOCALIZE[31398]</label>
-				<visible>StringCompare(ListItem.Label,Silent)</visible>
-			</control>
-		</control>
-	</include>
-  
-	<!-- TV Channel Plot -->
-	<include name="TVChannelPlot">
-		<!-- Plot (Bottom) -->
-		<control type="group">
-			<posx>30</posx>
-			<posy>560</posy>
-			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
-			<control type="image">
-				<description>TV Channel Icon</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>100</width>
-				<height>100</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<info>ListItem.Icon</info>
-			</control>
-			<control type="label">
-				<description>TV Channel Title</description>
-				<posx>120</posx>
-				<posy>0</posy>
-				<width>640</width>
-				<height>30</height>
-				<scroll>true</scroll>
-				<align>false</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
- 				<include>SettingsLabel</include>
-				<info>ListItem.Title</info>
-			</control>
-			<control type="label">
-				<description>TV Channel Timing</description>
-				<posx>1040</posx>
-				<posy>0</posy>
-				<width>430</width>
-				<height>30</height>
-				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, ,]$INFO[ListItem.Duration, / ,])</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<include>SettingsLabel</include>
-			</control>
-			<control type="textbox">
-				<description>TV Channel Plot</description>
-				<posx>140</posx>
-				<posy>40</posy>
-				<width>880</width>
-				<height>110</height>
-				<align>justify</align>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>TextNF</textcolor>
-				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-			</control>
-		</control>
-	</include>
-	<include name="TVLabel">
-		<font>METF_ContextValue</font>
-		<textcolor>SettingsDetail</textcolor>
-		<focusedcolor>ButtonText</focusedcolor>
-	</include>
 
 	<include name="ScrollOffsetLabel">
-		<control type="group">
+		<control type="group" id="9906">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
 			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>
 			<animation effect="slide" start="0,-69" end="0,0" delay="800" time="100">Hidden</animation>

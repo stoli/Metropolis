@@ -19,11 +19,7 @@
 		<include>Viewtype_Panel_Square</include>
 		<include>Viewtype_TallGenre</include>		
 		<include>Global_ContextFilter</include>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include>Global_AddonInfo</include>
-		</control>
+		<include>Global_AddonInfo</include>
 		<include>ScrollOffsetLabel</include>
 		<!-- Navigation Menu -->
 		<control type="group">
@@ -197,12 +193,7 @@
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
 		<include>Global_Music</include>
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-	 		<include>Global_MusicInfo</include> 
-			<visible>Container.Content(albums) | Container.Content(artists)</visible>
-		</control>
+		<include>Global_MusicInfo</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>

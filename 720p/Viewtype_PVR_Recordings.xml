@@ -31,7 +31,7 @@
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -42,7 +42,7 @@
 						<height>40</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Date</info>
 					</control>
 				</itemlayout>
@@ -69,7 +69,7 @@
 						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -80,7 +80,7 @@
 						<height>40</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<include>TVLabel</include>
+						<include>LiveTVLabel</include>
 						<info>ListItem.Date</info>
 					</control>
 				</focusedlayout>
@@ -118,12 +118,12 @@
 					<scroll>true</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
-					<include>TVLabel</include>
+					<include>LiveTVLabel</include>
 					<info>ListItem.Title</info>
 				</control>
 			</control>
 			<!-- TV Channel Plot (Bottom) -->
-			<include>TVChannelPlot</include>
+			<include>LiveTVPlot</include>
 		</control>
 	</include>
 </includes>
