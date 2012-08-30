@@ -3,6 +3,7 @@
 		<control type="group" id="9901">
 			<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
 			<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
+			<visible>!Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)</visible>
 			<control type="group">
 				<posx>3</posx>
 				<posy>5</posy>
