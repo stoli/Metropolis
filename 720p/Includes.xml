@@ -196,7 +196,7 @@
 	</include>
 
 	<include name="PlotBox_Small">
-		<height>68</height>
+		<height>66</height>
 		<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 		<font>METF_PlotTextSmall</font>
 	</include>
