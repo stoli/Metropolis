@@ -550,7 +550,7 @@
 			</control>
 		</control>
 
-		<include condition="![Skin.HasSetting(Hide_MediaFlags) | Skin.HasSetting(Hide_ExtraMediaFlags)]">MediaInfo2</include>
+		<include>MediaInfo2</include>
 		<include>Global_ContextFilter</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>

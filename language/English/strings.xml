@@ -142,7 +142,8 @@
 	<string id="31400">Hide Current Temperature and Weather Conditions</string>
 	<string id="31401">Hide Clock</string>
 	<string id="31402">Use Plot Summary in other views</string>
-	<string id="31403">Show extra Media Flags only in Info dialog</string>
+	<string id="31403">Hide Media Flags</string>
+	<string id="31404">Hide Rating and Studio Flags</string>
 	<string id="31406">Fanart Views: Classic Frame</string>
 	<string id="31407">*Press UP for full cast and photos*</string>
 	<string id="31408">Cinema Experience</string>

@@ -2167,14 +2167,20 @@
 					</control>
 					<control type="radiobutton" id="506">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31404]</label>
+						<onclick>Skin.ToggleSetting(Hide_MediaFlags)</onclick>
+						<selected>Skin.HasSetting(Hide_MediaFlags)</selected>
+					</control>
+					<control type="radiobutton" id="507">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31403]</label>
 						<onclick>Skin.ToggleSetting(Hide_ExtraMediaFlags)</onclick>
 						<selected>Skin.HasSetting(Hide_ExtraMediaFlags)</selected>
 					</control>
-					<control type="image" id="507">
+					<control type="image" id="508">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="508">
+					<control type="radiobutton" id="509">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31406]</label>
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>

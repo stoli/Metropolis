@@ -334,6 +334,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>Animation_HiddenByInfo</include>
+			<!-- Total height of this grouplist should not exceed the height of PlotBox_Small or it will overlap the overlays! -->
 			<control type="grouplist">
 				<visible>Window.IsActive(pictures)</visible>
 				<posx>300</posx>

@@ -1,4 +1,5 @@
 2.0.0 - 2012xxxx
+- Option to hide all media flags.
 - Clean up PictureGrid view type.
 - Customization options for Home items.
 - Customizable submenu items for most Home items.

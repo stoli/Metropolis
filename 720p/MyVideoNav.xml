@@ -58,7 +58,7 @@
 		<include>Viewtype_TallGenre</include>			<!-- 501 -->
 		<include>Global_ContextFilter</include>
 		<include condition="!Skin.HasSetting(Hide_MediaFlags)">MediaInfo</include>
-		<include condition="![Skin.HasSetting(Hide_MediaFlags) | Skin.HasSetting(Hide_ExtraMediaFlags)]">MediaInfo2</include>
+		<include condition="!Skin.HasSetting(Hide_ExtraMediaFlags)">MediaInfo2</include>
 		<include>Global_VideoPlot</include>
 		<include>Global_AddonInfo</include>
 		<include>Global_ScrollOffsetLabel</include>
