@@ -8,7 +8,7 @@
 		<include>Viewtype_Poster_Fixed</include>
 		<include>Viewtype_Files</include>
 		<include>Global_ContextFilter</include>
-		<include>ScrollOffsetLabel</include>
+		<include>Global_ScrollOffsetLabel</include>
 		<control type="grouplist" id="7000">
 			<include>WindowMenuVars_5</include>
 			<posy>330</posy>

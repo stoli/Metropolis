@@ -18,7 +18,7 @@
 		<include>Viewtype_Gallery_Square</include>
 		<include>Global_ContextFilter</include>
 		<include>Global_AddonInfo</include>
-		<include>ScrollOffsetLabel</include>
+		<include>Global_ScrollOffsetLabel</include>
 		<!-- Navigation Menu -->
 		<control type="group">
 			<include>Animation_NavMenu</include>

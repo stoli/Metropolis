@@ -1945,7 +1945,7 @@
 		</control>
 	</include>
 
-	<include name="ScrollOffsetLabel">
+	<include name="Global_ScrollOffsetLabel">
 		<control type="group" id="9906">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
 			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>

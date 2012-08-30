@@ -61,7 +61,7 @@
 		<include condition="![Skin.HasSetting(Hide_MediaFlags) | Skin.HasSetting(Hide_ExtraMediaFlags)]">MediaInfo2</include>
 		<include>Global_VideoPlot</include>
 		<include>Global_AddonInfo</include>
-		<include>ScrollOffsetLabel</include>
+		<include>Global_ScrollOffsetLabel</include>
 		<!-- Video Navigation Menu -->		
 		<control type="group">
 			<include>Animation_NavMenu</include>

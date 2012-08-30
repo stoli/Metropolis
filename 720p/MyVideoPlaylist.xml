@@ -8,7 +8,7 @@
 		<include>Viewtype_Poster_Fixed</include>
 		<include>Viewtype_Poster_Wrap</include>
 		<include>Global_ContextFilter</include>
-		<include>ScrollOffsetLabel</include>
+		<include>Global_ScrollOffsetLabel</include>
 		<!-- Navigation Menu -->
 		<control type="group">
 			<include>Animation_NavMenu</include>
