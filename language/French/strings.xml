@@ -240,7 +240,7 @@
 	<string id="31362">Un jeu télévisé est un type de programme radiophonique ou télévisé dans lequel les membres du public ou des célébrités, parfois comme membres d'une équipe, jouent à un jeu qui propose des questions auxquelles il faut répondre ou des énigmes à résoudre habituellement pour de l'argent et-ou des prix. Dans quelques émissions, les concurrents rivalisent contre d'autres joueurs ou une autre équipe tandis que d'autres émissions impliquent des concurrents jouant seuls pour obtenir un bon résultat ou un score élevé.</string>
 	<string id="31363">Halloween</string>
 	<string id="31364">Contient du contenu qui est destiné seulement à des adultes. Les titres dans cette catégorie peuvent inclure des scènes prolongées de violence intense et-ou de contenu sexuel et de nudité.</string>
-	<string id="31365">Des épopées historiques sont des films épiques qui ont lieu dans un passé historique, se concentrant souvent sur des personnes qui changent le cours de l'histoire. Un certain nombre d'épopées historiques, particulièrement celles des années 1950 et des années 1960, ont lieu dans le passé, particulièrement à Rome, en Grèce, ou en Égypte. Les épopées historiques sont typiquement à plus grande échelle que d'autres types d'épopées incluant assi un grand nombre de dépenses supplémentaires.</string>
+	<string id="31365">Des épopées historiques sont des films épiques qui ont lieu dans un passé historique, se concentrant souvent sur des personnes qui changent le cours de l'histoire. Un certain nombre d'épopées historiques, particulièrement celles des années 1950 et des années 1960, ont lieu dans le passé, particulièrement à Rome, en Grèce, ou en Égypte. Les épopées historiques sont typiquement à plus grande échelle que d'autres types d'épopées incluant aussi un grand nombre de dépenses supplémentaires.</string>
 	<string id="31366">Maison et Jardinage</string>
 	<string id="31367">Les films d'épouvante sont conçus pour effrayer et invoquer nos pires craintes cachées, souvent avec un final terrifiant, choquant, tandis qu'ils nous captivent et nous amusent en même temps. Les films d'épouvante représentent une vaste gamme de styles, du tout premier classique Nosferatu, aux monstres CGI d'aujourd'hui et de gens dérangés. Ils sont souvent en relation avec la science-fiction quand la menace ou le monstre sont liés à une corruption de la technologie, ou quand des aliens menacent la Terre.</string>
 	<string id="31368">Un film indépendant, ou film indie, est un long métrage qui est produit surtout à l'extérieur d'un studio connu. Le terme se réfère aussi aux films d'art qui diffèrent remarquablement de la plupart des films commercialisés massivement. Des films indépendants sont parfois différentiables par leur contenu, leur style et la façon dont la vision et artistique personnelle des cinéastes est présentée.</string>
@@ -278,9 +278,8 @@
 	<string id="31400">Masquer la Température Actuelle et les Conditions Météo</string>
 	<string id="31401">Masquer l'horloge</string>
 	<string id="31402">Utiliser le Résumé dans d'autres vues</string>
-	<string id="31403">Afficher seulement les Marques Média supplémentaires dans la boîte Info</string>
-	<string id="31404">Vue Genre Large : Masquer les Descriptions</string>
-	<string id="31405">Vue Genre Large : Masquer les Libellés Icône</string>
+	<string id="31403">Masquer les Indicateurs Média</string>
+	<string id="31404">Masquer la Note et les Indicateurs Studio</string>
 	<string id="31406">Vues Fanart : Affichage Classique</string>
 	<string id="31407">*Appuyer sur HAUT pour le casting et les photos*</string>
 	<string id="31408">Expérience Cinéma</string>
@@ -294,7 +293,7 @@
 	<string id="31416">Genre Large</string>
 	<string id="31417">*texte d'aide*</string>
 	<string id="31418">Masquer tout</string>
-<!-- New String from stoli -->
+	<!-- New String from stoli -->
 	<string id="31419">Paramètres Musique</string>
 	<string id="31420">Paramètres Vidéo</string>
 	<string id="31421">OSD: Afficher les Clearart</string>
@@ -331,7 +330,7 @@
 	<string id="31452">Visualisation: Utiliser Info Réduite en Surimpression</string>
 	<string id="31453">Afficher la Date à la place du Jour de la Semaine</string>
 	<string id="31454">Visualisation: Afficher la position du lecteur et l'heure dans Info en Surimpression</string> 
- 	<string id="31455">Visualisation: Masquer Horlorge et Température dans Info en Surimpression</string>
+ 	<string id="31455">Visualisation: Masquer Horloge et Température dans Info en Surimpression</string>
  	<string id="31456">- Écraser le lien par défaut</string>
  	<string id="31457">Raccourcis</string>
   

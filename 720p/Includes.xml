@@ -272,7 +272,7 @@
 				<description>TV Channel Title</description>
 				<posx>120</posx>
 				<posy>0</posy>
-				<width>640</width>
+				<width>620</width>
 				<height>30</height>
 				<scroll>true</scroll>
 				<align>false</align>
