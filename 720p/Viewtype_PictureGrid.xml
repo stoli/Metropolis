@@ -67,7 +67,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<!-- Picture (3:2 aspect viewing window) -->
+				<!-- Picture (3:2 aspect viewing window on a 16:9 monitor ) -->
 				<control type="image">
 					<posx>95</posx>
 					<posy>113</posy>

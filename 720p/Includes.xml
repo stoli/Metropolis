@@ -336,16 +336,16 @@
 			<include>Animation_HiddenByInfo</include>
 			<control type="grouplist">
 				<visible>Window.IsActive(pictures)</visible>
-				<posx>340</posx>
+				<posx>300</posx>
 				<posy>565</posy>
-				<width>600</width>
+				<width>750</width>
 				<height>72</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<orientation>vertical</orientation>
 				<!-- Camera Info -->
 				<control type="label">
-					<width>600</width>
+					<width>750</width>
 					<height>20</height>
 					<align>center</align>
 					<font>METF_PlotTextMedium</font>
@@ -355,13 +355,13 @@
 				</control>
 				<!-- Focus and Aperture -->
 				<control type="grouplist">
-					<width>600</width>
+					<width>750</width>
 					<height>20</height>
 					<align>center</align>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="label">
-						<width min="25" max="600">auto</width>
+						<width min="25" max="750">auto</width>
 						<height>20</height>
 						<font>METF_PlotTextMedium</font>
 						<textcolor>LowerText</textcolor>
@@ -377,7 +377,7 @@
 						<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
 					</control>
 					<control type="label">
-						<width min="25" max="600">auto</width>
+						<width min="25" max="750">auto</width>
 						<height>20</height>
 						<font>METF_PlotTextMedium</font>
 						<textcolor>LowerText</textcolor>
@@ -393,7 +393,7 @@
 						<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
 					</control>
 					<control type="label">
-						<width min="25" max="600">auto</width>
+						<width min="25" max="750">auto</width>
 						<height>20</height>
 						<font>METF_PlotTextMedium</font>
 						<textcolor>LowerText</textcolor>
@@ -404,7 +404,7 @@
 				</control>
 				<!-- Exposure -->
 				<control type="label">
-					<width>600</width>
+					<width>750</width>
 					<height>20</height>
 					<align>center</align>
 					<font>METF_PlotTextMedium</font>
