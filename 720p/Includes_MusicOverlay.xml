@@ -1,5 +1,5 @@
 ﻿<includes>
-	<include name="GlobalMusic">
+	<include name="Global_Music">
 		<control type="group">
 			<visible>Player.HasAudio + !Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True) + ![Control.IsVisible(9900) | Control.IsVisible(9901) | Control.IsVisible(9902) | Control.IsVisible(9903)]</visible>
 			<control type="group">

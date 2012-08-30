@@ -265,7 +265,7 @@
 		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
-		<include>GlobalMusic</include>
+		<include>Global_Music</include>
 		<include>NextAiredInfo</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>

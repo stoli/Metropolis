@@ -196,7 +196,7 @@
 		<include>Global_Weather</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>
-		<include>GlobalMusic</include>
+		<include>Global_Music</include>
 		<control type="group">
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>

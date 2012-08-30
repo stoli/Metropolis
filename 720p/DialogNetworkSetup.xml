@@ -159,6 +159,7 @@
 		</control>
 		<include>Global_Weather</include>
 		<include>Global_Time</include>
+		<include>Global_Music</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>
 </window>
