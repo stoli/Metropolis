@@ -99,7 +99,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<visible>Control.IsVisible(501) + Container.Content(genres)</visible>
 			</control>
-			<include>Global_GenreInfo</include>
+			<include>Global_VideoGenreInfo</include>
 			<include>ScrollBar_Horizontal</include>
 		</control>
 	</include>
