@@ -367,7 +367,7 @@
 					<description>Live TV</description>
 					<label>$LOCALIZE[31601]</label>
 					<icon>special://skin/extras/home2/icon_tv.png</icon>
-					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
+					<onclick>ActivateWindow(TV)</onclick>
 					<visible>Skin.HasSetting(LiveTV)</visible>
 				</item>
 				<item id="3">
@@ -955,15 +955,20 @@
 				<visible>Container(9000).HasFocus(15)</visible>
 				<control type="button" id="92001">
 					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[19023]</label>
+					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
+				</control>
+				<control type="button" id="92002">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19069]</label>
 					<onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
 				</control>
-				<control type="button" id="92002">
+				<control type="button" id="92003">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19163]</label>
 					<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
 				</control>
-				<control type="button" id="92003">
+				<control type="button" id="92004">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19040]</label>
 					<onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
