@@ -2,7 +2,7 @@
 	<include name="Viewtype_Poster_Large">
 		<control type="group">
 			<visible>Control.IsVisible(551)</visible>
-			<control type="group">			
+			<control type="group">
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
@@ -125,16 +125,16 @@
 							<label>$INFO[ListItem.Property(UnwatchedEpisodes)] $LOCALIZE[16101]</label>
 							<visible>!IsEmpty(ListItem.Episode) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
 						</control>
-					</control>			
+					</control>
 				</control>
-			</control>			
+			</control>
 			<!-- Browser -->
 			<control type="wraplist" id="551">
 				<viewtype label="31430">bigwrap</viewtype>
 				<posx>-100</posx>
 				<posy>40</posy>
 				<height>500</height>
-				<width>1500</width>				
+				<width>1500</width>
 				<include condition="!Skin.HasSetting(ViewLockdown)">OnUp7000</include>
 				<ondown>60</ondown>
 				<onleft>550</onleft>
@@ -239,7 +239,7 @@
 								<effect type="fade" start="0" end="100" time="300" />
 							</animation>
 							<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
-						</control>						
+						</control>
 					</control>
 				</focusedlayout>
 			</control>

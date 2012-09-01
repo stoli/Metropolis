@@ -153,7 +153,7 @@
 					<posx>-8</posx>
 					<posy>138</posy>
 					<width>515</width>
-					<height>325</height>
+					<height>339</height>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
 					<align>justify</align>
@@ -297,7 +297,7 @@
 					<posx>-8</posx>
 					<posy>138</posy>
 					<width>515</width>
-					<height>325</height>
+					<height>339</height>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
 					<align>justify</align>
