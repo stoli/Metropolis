@@ -204,7 +204,7 @@
 			<include>Animation_HiddenByInfo</include>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<width>750</width>
-			<height>66</height>
+			<height>64</height>
 			<font>METF_PlotTextSmall</font>
 			<textcolor>LowerText</textcolor>
 			<label>$VAR[PlotBox_Text]</label>
@@ -344,7 +344,7 @@
 					<width>750</width>
 					<height>20</height>
 					<align>center</align>
-					<font>METF_PlotTextMedium</font>
+					<font>METF_PlotTextSmall</font>
 					<textcolor>LowerText</textcolor>
 					<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
 					<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
@@ -359,7 +359,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
-						<font>METF_PlotTextMedium</font>
+						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>$INFO[ListItem.PictureFocalLen]</label>
 						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
@@ -375,7 +375,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
-						<font>METF_PlotTextMedium</font>
+						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>f/$INFO[ListItem.PictureAperture]</label>
 						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
@@ -391,7 +391,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
-						<font>METF_PlotTextMedium</font>
+						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>$INFO[ListItem.PictureFocusDist]</label>
 						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
@@ -403,7 +403,7 @@
 					<width>750</width>
 					<height>20</height>
 					<align>center</align>
-					<font>METF_PlotTextMedium</font>
+					<font>METF_PlotTextSmall</font>
 					<textcolor>LowerText</textcolor>
 					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
 					<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
