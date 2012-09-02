@@ -1,5 +1,5 @@
 <window id="600">
-	<defaultcontrol always="true">32</defaultcontrol>
+	<defaultcontrol always="false">32</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
