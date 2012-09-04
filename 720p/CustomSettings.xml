@@ -2125,6 +2125,13 @@
 						<onclick>Skin.ToggleSetting(NoShutdown)</onclick>
 						<selected>Skin.HasSetting(NoShutdown)</selected>
 					</control>
+					<control type="radiobutton" id="1832">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[31337]</label>
+						<onclick>Skin.ToggleSetting(NoShutdownDestructive)</onclick>
+						<selected>Skin.HasSetting(NoShutdownDestructive)</selected>
+						<visible>!Skin.HasSetting(NoShutdown)</visible>
+					</control>
 				</control>
 				<!-- View Options -->
 				<control type="grouplist" id="9007">
