@@ -1,4 +1,6 @@
 2.0.0 - 2012xxxx
+- Option to limit Shutdown submenu to non-destructive operations only.
+- Add Reboot item to Shutdown submenu.
 - More Music Genre icons.
 - Option to hide all media flags.
 - Clean up PictureGrid view type.

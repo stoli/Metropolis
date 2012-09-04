@@ -1562,8 +1562,9 @@
 				</control>
 				<control type="button" id="99005">
 					<include>Submenu_Button</include>
-					<label>13313</label>
-					<onclick>RestartApp()</onclick>
+					<label>13013</label>
+					<onclick>Reboot()</onclick>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99006">
 					<include>Submenu_Button</include>
@@ -1578,6 +1579,11 @@
 					<visible>System.HasLoginScreen</visible>
 				</control>
 				<control type="button" id="99008">
+					<include>Submenu_Button</include>
+					<label>13313</label>
+					<onclick>RestartApp()</onclick>
+				</control>
+				<control type="button" id="99009">
 					<include>Submenu_Button</include>
 					<label>13012</label>
 					<onclick>XBMC.Quit()</onclick>
