@@ -1426,16 +1426,16 @@
 				<visible>Container(9000).HasFocus(11)</visible>
 				<control type="button" id="99001">
 					<include>Submenu_Button2</include>
-					<label>Set Timer</label>
-					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>>
+					<label>31458</label>
+					<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>>
+					<visible>!System.HasAlarm(ShutdownTimer)</visible>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99002">
 					<include>Submenu_Button2</include>
-					<label>Cancel Timer</label>
-					<visible>System.HasAlarm(ShutdownTimer)</visible>
+					<label>31459</label>
 					<onclick>CancelAlarm(ShutdownTimer)</onclick>
-					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
+					<visible>System.HasAlarm(ShutdownTimer)</visible>
 				</control>
 				<control type="button" id="99003">
 					<include>Submenu_Button2</include>
@@ -1454,12 +1454,13 @@
 					<include>Submenu_Button2</include>
 					<label>13013</label>
 					<onclick>Reboot()</onclick>
+					<visible>System.CanReboot</visible>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99006">
 					<include>Submenu_Button2</include>
 					<label>13005</label>
-					<onclick>ShutDown()</onclick>
+					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99007">
@@ -1470,8 +1471,9 @@
 				</control>
 				<control type="button" id="99008">
 					<include>Submenu_Button2</include>
-					<label>13313</label>
-					<onclick>RestartApp()</onclick>
+					<label>20183</label>
+					<onclick>ReloadSkin()</onclick>
+					<visible>Skin.HasSetting(DebugMode)</visible>
 				</control>
 				<control type="button" id="99009">
 					<include>Submenu_Button2</include>
