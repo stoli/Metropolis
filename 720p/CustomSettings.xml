@@ -3725,6 +3725,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
 				</control>
