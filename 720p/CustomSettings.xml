@@ -3822,6 +3822,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31108]</label>
 						<onclick>Skin.ToggleSetting(DebugMode)</onclick>
+						<onclick>XBMC.ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(DebugMode)</selected>
 					</control>
 					<control type="radiobutton" id="1002">

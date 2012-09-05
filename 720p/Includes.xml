@@ -7,7 +7,6 @@
 	<include file="Includes_HomeDeck.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_MediaFlags2.xml" />
-	<include file="Includes_MediaFlagsVideoPlayer.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Viewtype_Banner.xml" />
 	<include file="Viewtype_BannerPoster.xml" />
@@ -51,7 +50,6 @@
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
-	
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -63,15 +61,216 @@
 		</control>
 	</include>
 
-	<include name="Global_TimeWeekdayDetails">
-		<posx>1241</posx>
-		<posy>546</posy>
-		<width>200</width>
-		<height>30</height>
-		<font>METF_Date</font>
-		<align>right</align>
-		<textcolor>Date</textcolor>
+	<!--  Navigation Menu Background Panel -->
+	<include name="NavMenuBackground">
+		<control type="image">
+			<description>background image</description>
+			<posx>440</posx>
+			<posy>65</posy>
+			<width>400</width>
+			<height>580</height>
+			<texture>frames/Menu_Glass2b.png</texture>
+			<colordiffuse>DialogBackgroundColor</colordiffuse>
+			<visible>ControlGroup(7000).HasFocus</visible>
+		</control>
 	</include>
+
+	<!-- View Lockdowns -->
+	<include name="OnUp7000">
+		<onup>7000</onup>
+	</include>
+	<include name="OnLeft7000">
+		<onleft>7000</onleft>
+	</include>
+
+	<!-- Heading info for various screens -->
+	<include name="Global_HeadingSectionVars">
+		<width>750</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
+	<include name="Global_HeadingDetailVars">
+		<posx>1220</posx>
+		<width>450</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>right</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
+	<include name="Global_Heading">
+		<control type="group">
+			<posx>30</posx>
+			<posy>10</posy>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_HiddenByInfo</include>
+
+			<!-- Left side title -->
+			<control type="label">
+				<label>$LOCALIZE[342]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[20343]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Container.Content(episodes) + !SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[3]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin) + !Window.IsActive(favourites)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[157] $LOCALIZE[559]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(videoplaylist)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[2]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)]</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[2] $LOCALIZE[559]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(musicplaylist)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[1213]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(pictures) + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[1037]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[1038]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[1039]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(pictures) + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[24001]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(programs) | Window.IsActive(AddonBrowser)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[130]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(systeminfo)</visible>
+			</control>
+			<control type="label">
+				<label>$LOCALIZE[20096]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(LoginScreen)</visible>
+			</control>
+
+			<!-- Right side details -->
+			<control type="label">
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>!IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20360]]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Artist]$INFO[ListItem.Album,] - $INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>!substring(ListItem.Label,*) + Window.IsActive(musiclibrary) + Control.IsVisible(50)</visible>
+			</control>
+			<control type="label" id="52">
+				<description>Build Version</description>
+				<label>$LOCALIZE[144]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(systeminfo)</visible>
+			</control>
+		</control>
+	</include>
+	<!-- Next Aired Date -->
+	<include name="Global_NextAired">
+		<width>1920</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
+	<include name="NextAiredInfo">
+		<control type="group">
+			<include>Global_NextAired</include>
+			<posx>0</posx>
+			<posy>-7</posy>
+			<!--<include>Window_OpenClose_Animation</include>-->
+			<visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes)]] + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font-20</font>
+				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+			</control>
+		</control>
+	</include>
+	<!-- SortLetter popup when scrolling through lists quickly -->
+	<include name="Global_ScrollOffsetLabel">
+		<control type="group" id="9906">
+			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
+			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>
+			<animation effect="slide" start="0,-69" end="0,0" delay="800" time="100">Hidden</animation>
+			<posx>290r</posx>
+			<posy>720</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>54</height>
+				<texture>flags/flag_framesquare.png</texture>
+				<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>1</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>50</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>METF_DialogLargeBold</font>
+				<textcolor>MediaFlagDiffuse</textcolor>
+			</control>
+		</control>
+	</include>
+
 	<include name="Global_Weather">
 		<control type="group">
 			<posx>12</posx>
@@ -96,6 +295,15 @@
 				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
 			</control>
 		</control>
+	</include>
+	<include name="Global_TimeWeekdayDetails">
+		<posx>1241</posx>
+		<posy>546</posy>
+		<width>200</width>
+		<height>30</height>
+		<font>METF_Date</font>
+		<align>right</align>
+		<textcolor>Date</textcolor>
 	</include>
 	<include name="Global_Time">
 		<control type="group">
@@ -193,6 +401,27 @@
 				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[17])</visible>
 			</control>
 		</control>
+	</include>
+
+	<!-- Used in Includes_MediaFlags?.xml -->
+	<include name="MediaFlagsVarsWide">
+		<posx>12</posx>
+		<posy>8</posy>
+		<width>80</width>
+		<height>40</height>
+	</include>
+	<include name="MediaFlagsVarsSquare">
+		<posx>14</posx>
+		<posy>8</posy>
+		<width>44</width>
+		<height>36</height>
+	</include>
+	<include name="MediaFlagsVarsMPAA">
+		<posx>1</posx>
+		<posy>2</posy>
+		<width>45</width>
+		<height>45</height>
+		<colordiffuse>MediaFlagDiffuse</colordiffuse>
 	</include>
 
 	<include name="PlotBox">
@@ -437,210 +666,7 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
-	<!-- Login Screen Buttons and Text -->
-	<include name="LoginButton">
-		<onup>52</onup>
-		<ondown>52</ondown>
-		<height>60</height>
-		<width>60</width>
-		<align>center</align>
-		<aligny>center</aligny>
-		<textoffsetx>20</textoffsetx>
-		<font>METF_Button</font>
-		<textcolor>ButtonText</textcolor>
-		<disabledcolor>-</disabledcolor>
-		<focusedcolor>-</focusedcolor>
-		<selectedcolor>-</selectedcolor>
-		<pulseonselect>false</pulseonselect>
-	</include>
-	<include name="LoginButtonLabel">
-		<posx>505</posx>
-		<posy>600</posy>
-		<width>270</width>
-		<height>30</height>
-		<font>METF_Button</font>
-		<textcolor>ButtonText</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-	</include>
-	<!-- Used in Includes_MediaFlags2.xml file -->
-	<include name="MediaFlagsVarsWide">
-		<posx>12</posx>
-		<posy>8</posy>
-		<width>80</width>
-		<height>40</height>
-	</include>
-	<include name="MediaFlagsVarsSquare">
-		<posx>14</posx>
-		<posy>8</posy>
-		<width>44</width>
-		<height>36</height>
-	</include>
-	<include name="MediaFlagsVarsMPAA">
-		<posx>1</posx>
-		<posy>2</posy>
-		<width>45</width>
-		<height>45</height>
-		<colordiffuse>MediaFlagDiffuse</colordiffuse>
-	</include>
-	<!-- Heading info for various screens -->
-	<include name="Global_NextAired">
-		<width>1920</width>
-		<height>30</height>
-		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-		<include>Animation_HiddenByInfo</include>
-	</include>
-	<include name="Global_HeadingSectionVars">
-		<width>750</width>
-		<height>30</height>
-		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
-		<align>left</align>
-		<aligny>center</aligny>
-		<include>Animation_HiddenByInfo</include>
-	</include>
-	<include name="Global_HeadingDetailVars">
-		<posx>1220</posx>
-		<width>450</width>
-		<height>30</height>
-		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
-		<align>right</align>
-		<aligny>center</aligny>
-		<include>Animation_HiddenByInfo</include>
-	</include>
-	<include name="Global_Heading">
-		<control type="group">
-			<posx>30</posx>
-			<posy>10</posy>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_HiddenByInfo</include>
 
-			<!-- Left side title -->
-			<control type="label">
-				<label>$LOCALIZE[342]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Container.Content(movies) + !SubString(Container.FolderPath,plugin)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[20343]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !SubString(Container.FolderPath,plugin)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Container.Content(episodes) + !SubString(Container.FolderPath,plugin)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[3]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>[[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin) + !Window.IsActive(favourites)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[157] $LOCALIZE[559]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(videoplaylist)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[2]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)]</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[2] $LOCALIZE[559]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(musicplaylist)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[1213]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(pictures) + !SubString(Container.FolderPath,addons) + !SubString(Container.FolderPath,plugin)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[1037]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(videofiles) | Window.IsActive(videolibrary)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[1038]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[1039]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(pictures) + [SubString(Container.FolderPath,addons) | SubString(Container.FolderPath,plugin)]</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[24001]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(programs) | Window.IsActive(AddonBrowser)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[130]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(systeminfo)</visible>
-			</control>
-			<control type="label">
-				<label>$LOCALIZE[20096]</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(LoginScreen)</visible>
-			</control>
-
-			<!-- Right side details -->
-			<control type="label">
-				<label>$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
-			</control>
-			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>!IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
-			</control>
-			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20360]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
-			</control>
-			<control type="label">
-				<label>$INFO[ListItem.Artist]$INFO[ListItem.Album,] - $INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>!substring(ListItem.Label,*) + Window.IsActive(musiclibrary) + Control.IsVisible(50)</visible>
-			</control>
-			<control type="label" id="52">
-				<description>Build Version</description>
-				<label>$LOCALIZE[144]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(systeminfo)</visible>
-			</control>
-		</control>
-	</include>
-	<!-- Next Aired Date -->
-	<include name="NextAiredInfo">
-		<control type="group">
-			<include>Global_NextAired</include>
-			<posx>0</posx>
-			<posy>-7</posy>
-			<!--<include>Window_OpenClose_Animation</include>-->
-			<visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes)]] + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
-			<control type="label">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>60</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
-			</control>
-		</control>
-	</include>
 	<include name="Object_InfoLines">
 		<control type="group">
 			<posx>0</posx>
@@ -706,11 +732,39 @@
 			</control>
 		</control>
 	</include>
+
+	<!-- Login Screen Buttons and Text -->
+	<include name="LoginButton">
+		<onup>52</onup>
+		<ondown>52</ondown>
+		<height>60</height>
+		<width>60</width>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textoffsetx>20</textoffsetx>
+		<font>METF_Button</font>
+		<textcolor>ButtonText</textcolor>
+		<disabledcolor>-</disabledcolor>
+		<focusedcolor>-</focusedcolor>
+		<selectedcolor>-</selectedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="LoginButtonLabel">
+		<posx>505</posx>
+		<posy>600</posy>
+		<width>270</width>
+		<height>30</height>
+		<font>METF_Button</font>
+		<textcolor>ButtonText</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>DebugGrid.png</texture>
+			<texture>debuggrid.png</texture>
 		</control>
 	</include>
 	<include name="Debug">
@@ -732,6 +786,7 @@
 			<label>$INFO[Window.Property(xmlfile)] / $INFO[System.Screenresolution] / $LOCALIZE[158] - $INFO[System.FreeMemory]$INFO[System.CurrentWindow / ]$INFO[System.CurrentControl, / ]</label>
 		</control>
 	</include>
+
 	<!-- Settings Headings -->
 	<include name="Setting_Heading">
 		<control type="group">
@@ -838,7 +893,6 @@
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
-
 	<include name="SettingsLabel">
 		<width>840</width>
 		<height>38</height>
@@ -873,8 +927,36 @@
 		
 		<font>METF_TitleTextMedium</font>
 		<textcolor>SettingsDetail</textcolor>
-		
 	</include>
+	<include name="Settings_Line">
+		<height>8</height>
+		<width>840</width>
+		<texture border="2">settings_line.png</texture>
+		<colordiffuse>SettingsLine</colordiffuse>
+	</include>
+	<include name="SettingsAddons_List1">
+		<posx>440</posx>
+		<posy>240</posy>
+		<width>840</width>
+		<height>380</height>
+		<itemgap>0</itemgap>
+		<onleft>10</onleft>
+		<onright>10</onright>
+		<onup>10</onup>
+		<ondown>10</ondown>
+	</include>
+	<include name="SettingsAddons_List2">
+		<posx>440</posx>
+		<posy>438</posy>
+		<width>840</width>
+		<height>162</height>
+		<itemgap>0</itemgap>
+		<onleft>10</onleft>
+		<onright>10</onright>
+		<onup>10</onup>
+		<ondown>10</ondown>
+	</include>
+
 	<!-- Shutdown Menu Buttons -->
 	<include name="SettingsShutdownMenu">
 		<width>340</width>
@@ -899,81 +981,7 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 
-	<include name="Settings_Line">
-		<height>8</height>
-		<width>840</width>
-		<texture border="2">settings_line.png</texture>
-		<colordiffuse>SettingsLine</colordiffuse>
-	</include>
-		
-	<!-- Window menus -->
-	<include name="WindowMenuVars_5">
-		<width>1050</width>
-		<height>80</height>
-		<posx>115</posx>
-		<onup>55</onup>
-		<ondown>55</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-	<include name="WindowMenuVars_6">
-		<width>1260</width>
-		<height>80</height>
-		<posx>10</posx>
-		<onup>55</onup>
-		<ondown>55</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-
-	<include name="DialogMenuVars_4">
-		<width>840</width>
-		<height>80</height>
-		<posx>220</posx>
-		<onup>7050</onup>
-		<ondown>7050</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-
-	<include name="WindowMenuButton">
-		<posx>0</posx>
-		<posy>30</posy>
-		<width>210</width>
-		<height>60</height>
-		<align>center</align>
-		<aligny>top</aligny>
-		<font>METF_TitleTextLarge</font>
-		<textcolor>TextNF</textcolor>
-		<focusedcolor>TextFO</focusedcolor>
-		<disabledcolor>TextDisabled</disabledcolor>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<textureradiofocus>-</textureradiofocus>
-		<textureradionofocus>-</textureradionofocus>
-		<wrapmultiline>true</wrapmultiline>
-	</include>
-
-	<include name="WindowMenuLabel">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>210</width>
-		<height>30</height>
-		<align>center</align>
-		<font>METF_TitleTextLarge</font>
-		<textcolor>TextNF</textcolor>
-		<disabledcolor>TextDisabled</disabledcolor>
-		<aligny>bottom</aligny>
-	</include>
-	
+	<!-- Onscreen Displays -->
 	<include name="OSD_Progress_Bar">
 		<control type="image">
 			<posx>0</posx>
@@ -1201,7 +1209,6 @@
 			<visible>VideoPlayer.Content(movies) + !substring(VideoPlayer.Cover,default)</visible>
 		</control>
 	</include>
-
 	<include name="OSD_Progress_Bar3">
 		<control type="progress" id="23">
 			<description>Progressbar</description>
@@ -1271,7 +1278,6 @@
 		<control type="label" id="0">
 			<include>OSD_Player_Labels_Left</include>
 			<label>$INFO[System.Time]</label>
-			
 		</control>
 	</include>
 	<include name="OSD_Player_Details">
@@ -1343,29 +1349,8 @@
 			</control>
 		</control>
 	</include>
-	<include name="Plugin_List_1">
-		<posx>440</posx>
-		<posy>240</posy>
-		<width>840</width>
-		<height>380</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
-	<include name="Plugin_List_2">
-		<posx>440</posx>
-		<posy>438</posy>
-		<width>840</width>
-		<height>162</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
 
+	<!-- Scrollbars -->
 	<include name="ScrollBar_Horizontal">		
 		<!-- Scroll Bar -->
 		<control type="scrollbar" id="60">
@@ -1406,266 +1391,37 @@
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(61) | Container.Scrolling">Conditional</animation>
 		</control>
 	</include>
-	<!-- View Lockdowns -->
-	<include name="OnUp7000">
-		<onup>7000</onup>
+
+	<!-- XXX: Names are too generic.  Used only in MyMusicPlaylist.xml -->
+	<include name="WindowMenuButton">
+		<posx>0</posx>
+		<posy>30</posy>
+		<width>210</width>
+		<height>60</height>
+		<align>center</align>
+		<aligny>top</aligny>
+		<font>METF_TitleTextLarge</font>
+		<textcolor>TextNF</textcolor>
+		<focusedcolor>TextFO</focusedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<textureradiofocus>-</textureradiofocus>
+		<textureradionofocus>-</textureradionofocus>
+		<wrapmultiline>true</wrapmultiline>
 	</include>
-	<include name="OnLeft7000">
-		<onleft>7000</onleft>
-	</include>
-	<!--  Navigation Menu Background Panel -->
-	<include name="NavMenuBackground">
-		<control type="image">
-			<description>background image</description>
-			<posx>440</posx>
-			<posy>65</posy>
-			<width>400</width>
-			<height>580</height>
-			<texture>frames/Menu_Glass2b.png</texture>
-			<colordiffuse>DialogBackgroundColor</colordiffuse>
-			<visible>ControlGroup(7000).HasFocus</visible>
-		</control>
-	</include>
-	
-	<!-- Video and Music OSD -->
-	<include name="SmallMusicInfo">
-		<control type="image">
-			<description>Cover image</description>
-			<posx>20</posx>
-			<posy>17</posy>
-			<width>130</width>
-			<height>130</height>
-			<texture>$INFO[MusicPlayer.Cover]</texture>
-		</control>
-		<control type="label">
-			<description>Artist label</description>
-			<posx>160</posx>
-			<posy>15</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Artist]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleTextMedium</font>
-			<textcolor>NowPlayingTitle</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="fadelabel">
-			<description>Title label</description>
-			<posx>160</posx>
-			<posy>43</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="label">
-			<description>Album Label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Time Label</description>
-			<posx>160</posx>
-			<posy>95</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Next Label</description>
-			<posx>160</posx>
-			<posy>120</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>[COLOR=NowPlayingTitle]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>grey</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>Player.HasAudio</visible>
-		</control>
-	</include>
-	<include name="SmallVideoInfo">
-		<control type="image">
-			<description>gradient</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>500</width>
-			<height>165</height>
-			<colordiffuse>DDFFFFFF</colordiffuse>
-			<texture border="20">OverlayDialogBackground.png</texture>
-		</control>
-		<control type="image">
-			<description>Cover image</description>
-			<posx>20</posx>
-			<posy>17</posy>
-			<width>130</width>
-			<height>130</height>
-			<aspectratio>keep</aspectratio>
-			<texture>$INFO[VideoPlayer.cover]</texture>
-		</control>
-		<control type="label">
-			<description>Studio label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Studio]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<description>TV Show Title label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.tvshowtitle]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>NowPlayingTitle</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(episodes)</visible>
-		</control>
-		<control type="fadelabel">
-			<description>Music Video Artist label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Artist]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(musicvideos)</visible>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="fadelabel">
-			<description>Title label</description>
-			<posx>160</posx>
-			<posy>43</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font13_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="label">
-			<description>Genre label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Genre]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Album]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<description>Season and Episode label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(episodes)</visible>
-		</control>
-		<control type="label">
-			<description>Time Label</description>
-			<posx>160</posx>
-			<posy>95</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
+	<include name="WindowMenuLabel">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>210</width>
+		<height>30</height>
+		<align>center</align>
+		<font>METF_TitleTextLarge</font>
+		<textcolor>TextNF</textcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
+		<aligny>bottom</aligny>
 	</include>
 
-	<include name="Global_ScrollOffsetLabel">
-		<control type="group" id="9906">
-			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
-			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>
-			<animation effect="slide" start="0,-69" end="0,0" delay="800" time="100">Hidden</animation>
-			<posx>290r</posx>
-			<posy>720</posy>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>64</width>
-				<height>54</height>
-				<texture>flags/flag_framesquare.png</texture>
-				<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-			</control>
-			<control type="label">
-				<posx>1</posx>
-				<posy>0</posy>
-				<width>64</width>
-				<height>50</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.SortLetter]</label>
-				<font>METF_DialogLargeBold</font>
-				<textcolor>MediaFlagDiffuse</textcolor>
-			</control>
-		</control>
-	</include>
 </includes>
