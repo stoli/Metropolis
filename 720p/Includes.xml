@@ -473,7 +473,7 @@
 	<include name="MediaFlagsVarsSquare">
 		<posx>14</posx>
 		<posy>8</posy>
-		<width>36</width>
+		<width>44</width>
 		<height>36</height>
 	</include>
 	<include name="MediaFlagsVarsMPAA">
