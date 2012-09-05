@@ -7,11 +7,10 @@
 			<width>765</width>
 			<height>62</height>
 			<align>left</align>
-			<itemgap>6</itemgap>
+			<itemgap>8</itemgap>
 			<orientation>horizontal</orientation>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
-			<include>Animation_OpenCloseFade</include>
 			<visible>!SubString(Container.FolderPath,plugin)</visible>
 			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(MusicVideos) | Window.IsActive(fullscreeninfo) | Window.IsActive(115)</visible>
 			<visible>![Container.Content(movies) + IsEmpty(ListItem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
@@ -164,7 +163,7 @@
 
 			<!-- Subtitles -->
 			<control type="group">
-				<width>50</width>
+				<width>58</width>
 				<height>62</height>
 				<visible>!IsEmpty(ListItem.SubtitleLanguage) | [IsEmpty(ListItem.SubtitleLanguage) + !IsEmpty(VideoPlayer.SubtitleLanguage)]</visible>
 				<control type="image">
@@ -174,7 +173,7 @@
 				</control>
 				<control type="image">
 					<posx>2</posx>
-					<width>58</width>
+					<width>66</width>
 					<height>54</height>
 					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
 					<texture>flags/flag_framesquare.png</texture>
@@ -186,17 +185,17 @@
 				XXX: this doesn't really belong with the other media flags.
 				commenting out for now until people complain about it.
 			<control type="group">
-				<width>50</width>
+				<width>58</width>
 				<height>62</height>
 				<visible>IsEmpty(ListItem.mpaa) + !IsEmpty(VideoPlayer.mpaa)</visible>
 				<control type="image">
 					<include>MediaFlagsVarsSquare</include>
-					<colordiffuse>MediaFlagDiffuse</colordiffuse>
 					<texture>$VAR[MediaFlag_MPAA]</texture>
+					<colordiffuse>MediaFlagDiffuse</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>2</posx>
-					<width>58</width>
+					<width>66</width>
 					<height>54</height>
 					<texture>flags/flag_framesquare.png</texture>
 					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
@@ -209,7 +208,7 @@
 				XXX: this doesn't really belong with the other media flags.
 				commenting out for now until people complain about it.
 			<control type="group">
-				<width>50</width>
+				<width>58</width>
 				<height>62</height>
 				<visible>IsEmpty(ListItem.Rating) + !IsEmpty(VideoPlayer.Rating)</visible>
 				<control type="image">
@@ -227,7 +226,7 @@
 				</control>
 				<control type="image">
 					<posx>2</posx>
-					<width>58</width>
+					<width>66</width>
 					<height>54</height>
 					<texture>flags/flag_framesquare.png</texture>
 					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
