@@ -17,7 +17,7 @@
 					<posy>560</posy>
 					<control type="image">
 						<include>MediaFlagsVarsMPAA</include>
-						<texture>$VAR[Flag_MPAA]</texture>
+						<texture>$VAR[MediaFlag_MPAA]</texture>
 					</control>
 					<control type="image">
 						<posx>-10</posx>

@@ -102,8 +102,28 @@
 		<value condition="StringCompare(ListItem.Label,Western)">$LOCALIZE[31395]</value>
 		<value condition="StringCompare(ListItem.Label,Wrestling)">$LOCALIZE[31396]</value>
 	</variable>
-	<variable name="Flag_MPAA">
-		<!-- US/MPAA -->
+	<variable name="MediaFlag_VideoResolution">
+		<value condition="IsEmpty(ListItem.VideoResolution)">$INFO[VideoPlayer.VideoResolution,flags/VideoResolution/,.png]</value>
+		<value>$INFO[ListItem.VideoResolution,flags/VideoResolution/,.png]</value>
+	</variable>
+	<variable name="MediaFlag_VideoAspect">
+		<value condition="IsEmpty(ListItem.VideoAspect)">$INFO[VideoPlayer.VideoAspect,flags/VideoAspect/,.png]</value>
+		<value>$INFO[ListItem.VideoAspect,flags/VideoAspect/,.png]</value>
+	</variable>
+	<variable name="MediaFlag_VideoCodec">
+		<value condition="IsEmpty(ListItem.VideoCodec)">$INFO[VideoPlayer.VideoCodec,flags/VideoCodec/,.png]</value>
+		<value>$INFO[ListItem.VideoCodec,flags/VideoCodec/,.png]</value>
+	</variable>
+	<variable name="MediaFlag_AudioCodec">
+		<value condition="IsEmpty(ListItem.AudioCodec)">$INFO[VideoPlayer.AudioCodec,flags/AudioCodec/,.png]</value>
+		<value>$INFO[ListItem.AudioCodec,flags/AudioCodec/,.png]</value>
+	</variable>
+	<variable name="MediaFlag_AudioChannels">
+		<value condition="IsEmpty(ListItem.AudioChannels)">$INFO[VideoPlayer.AudioChannels,flags/AudioChannels/,ch.png]</value>
+		<value>$INFO[ListItem.AudioChannels,flags/AudioChannels/,ch.png]</value>
+	</variable>
+	<variable name="MediaFlag_MPAA">
+		<!-- US -->
 		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated R,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated R,Left)]">flags/Rating/mpaa_r.png</value>
 		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated PG-13,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated PG-13,Left)]">flags/Rating/mpaa_pg13.png</value>
 		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated PG,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated PG,Left)]">flags/Rating/mpaa_pg.png</value>

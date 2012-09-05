@@ -464,12 +464,17 @@
 		<aligny>center</aligny>
 	</include>
 	<!-- Used in Includes_MediaFlags2.xml file -->
-	<include name="PosterMediaFlagsVars">
-		<posx>22</posx>
-		<posy>16</posy>
+	<include name="MediaFlagsVarsWide">
+		<posx>12</posx>
+		<posy>8</posy>
 		<width>80</width>
 		<height>40</height>
-		<colordiffuse>MediaFlagDiffuse</colordiffuse>
+	</include>
+	<include name="MediaFlagsVarsSquare">
+		<posx>14</posx>
+		<posy>8</posy>
+		<width>36</width>
+		<height>36</height>
 	</include>
 	<include name="MediaFlagsVarsMPAA">
 		<posx>1</posx>
@@ -477,16 +482,6 @@
 		<width>45</width>
 		<height>45</height>
 		<colordiffuse>MediaFlagDiffuse</colordiffuse>
-	</include>
-	<include name="MediaFlagsAudio">
-		<control type="image">
-			<posx>8</posx>
-			<posy>8</posy>
-			<width>104</width>
-			<height>54</height>
-			<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-			<texture>flags/flag_frame.png</texture>
-		</control>
 	</include>
 	<!-- Heading info for various screens -->
 	<include name="Global_NextAired">
