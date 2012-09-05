@@ -1024,7 +1024,6 @@
 			<midtexture>osd/osd_progress_mid.png</midtexture>
 			<righttexture>osd/osd_progress_right.png</righttexture>
 			<colordiffuse>OSDFinishTime</colordiffuse>
-			
 		</control>
 		<control type="progress" id="23">
 			<description>Progressbar</description>

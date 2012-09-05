@@ -3,147 +3,17 @@
 		<control type="group">
 			<posx>3</posx>
 			<posy>5</posy>
-			<visible>[Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)] | [Window.IsActive(115) + !SubString(Container.FolderPath,plugin)]</visible>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_OpenCloseFade</include>
+			<visible>[Window.IsActive(fullscreeninfo) + !SubString(Container.FolderPath,plugin)] | [Window.IsActive(115) + !SubString(Container.FolderPath,plugin)]</visible>
 			<!-- MPAA Flags -->
 			<control type="group">
 				<posx>300</posx>
 				<posy>650</posy>
 				<control type="image">
 					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/NoRating.png</texture>
-					<visible>IsEmpty(VideoPlayer.mpaa)</visible>
-				</control>
-				<!-- US/MPAA -->
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/mpaa_r.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Rated R,Left)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/mpaa_pg13.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Rated PG-13,Left)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/mpaa_pg.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Rated PG,Left) + !substring(VideoPlayer.mpaa,Rated PG-13,Left)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/mpaa_nc17.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Rated NC,Left)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/mpaa_general.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Rated G,Left)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>$INFO[VideoPlayer.mpaa,flags/Rating/,.png]</texture>
-					<visible>substring(VideoPlayer.mpaa,TV-)</visible>
-				</control>
-				<!-- Germany -->
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/germany_0.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Germany:0)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>t>
-					<texture>flags/Rating/germany_6.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Germany:6)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/germany_12.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Germany:12)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/germany_16.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Germany:16)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/germany_18.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Germany:18)</visible>
-				</control>
-				<!-- Australia -->
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_r.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:R)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_m.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:M) + !substring(VideoPlayer.mpaa,Australia:MA)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_ma.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:MA)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_pg.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:PG)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_g.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:G)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_e.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:E)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/australia_x.png</texture>
-					<visible>substring(VideoPlayer.mpaa,Australia:X)</visible>
-				</control>
-				<!-- United Kingdom -->
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_u.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:U)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_pg.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:PG)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_12.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:12)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_12a.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:12A)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_15.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:15)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_18.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:18)</visible>
-				</control>
-				<control type="image">
-					<include>MediaFlagsVarsMPAA</include>
-					<texture>flags/Rating/bbfc_r18.png</texture>
-					<visible>substring(VideoPlayer.mpaa,UK:X)</visible>
+					<texture>$VAR[Flag_MPAA]</texture>
 				</control>
 				<control type="image">
 					<posx>-10</posx>

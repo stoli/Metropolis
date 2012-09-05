@@ -102,4 +102,37 @@
 		<value condition="StringCompare(ListItem.Label,Western)">$LOCALIZE[31395]</value>
 		<value condition="StringCompare(ListItem.Label,Wrestling)">$LOCALIZE[31396]</value>
 	</variable>
+	<variable name="Flag_MPAA">
+		<!-- US/MPAA -->
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated R,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated R,Left)]">flags/Rating/mpaa_r.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated PG-13,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated PG-13,Left)]">flags/Rating/mpaa_pg13.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated PG,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated PG,Left)]">flags/Rating/mpaa_pg.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated NC,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated NC,Left)]">flags/Rating/mpaa_nc17.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Rated G,Left)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Rated G,Left)]">flags/Rating/mpaa_general.png</value>
+		<value condition="!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,TV-)">$INFO[ListItem.mpaa,flags/Rating/,.png]</value>
+		<value condition="IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$INFO[VideoPlayer.mpaa,flags/Rating/,.png]</value>
+		<!-- Germany -->
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:0)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:0)]">flags/Rating/germany_0.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:6)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:6)]">flags/Rating/germany_6.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:12)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:12)]">flags/Rating/germany_12.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:16)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:16)]">flags/Rating/germany_16.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:18)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:18)]">flags/Rating/germany_18.png</value>
+		<!-- Australia -->
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:R)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:R)]">flags/Rating/australia_r.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:MA)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:MA)]">flags/Rating/australia_ma.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:M)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:M)]">flags/Rating/australia_m.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:PG)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:PG)]">flags/Rating/australia_pg.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:G)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:G)]">flags/Rating/australia_g.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:E)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:E)]">flags/Rating/australia_e.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Australia:X)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Australia:X)]">flags/Rating/australia_x.png</value>
+		<!-- United Kingdom -->
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:U)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:U)]">flags/Rating/bbfc_u.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:PG)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:PG)]">flags/Rating/bbfc_pg.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:12A)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:12A)]">flags/Rating/bbfc_12a.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:12)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:12)]">flags/Rating/bbfc_12.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:15)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:15)]">flags/Rating/bbfc_15.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:18)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:18)]">flags/Rating/bbfc_18.png</value>
+		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:X)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:X)]">flags/Rating/bbfc_r18.png</value>
+		<value>flags/Rating/NoRating.png</value>
+	</variable>
 </includes>
