@@ -21,7 +21,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewGallery)</visible>
-				<visible>[Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(MusicVideos)]]</visible>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<itemlayout width="170" height="210">
 					<control type="image">
 						<posx>24</posx>
