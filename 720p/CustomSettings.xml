@@ -499,7 +499,7 @@
 						<onclick>Skin.Reset(HomeMovies_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite1_Path) + IsEmpty(Skin.String(HomeMovies_Addon1))</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite1_Path)) + IsEmpty(Skin.String(HomeMovies_Addon1))</visible>
 					</control>
 					<control type="button" id="1513">
 						<include>SettingsLabel</include>
@@ -549,7 +549,7 @@
 						<onclick>Skin.Reset(HomeMovies_Favourite2_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite2_Path) + IsEmpty(Skin.String(HomeMovies_Addon2))</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite2_Path)) + IsEmpty(Skin.String(HomeMovies_Addon2))</visible>
 					</control>
 					<control type="button" id="1518">
 						<include>SettingsLabel</include>
@@ -599,7 +599,7 @@
 						<onclick>Skin.Reset(HomeMovies_Favourite3_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMovies_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMovies_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite3_Path) + IsEmpty(Skin.String(HomeMovies_Addon3))</visible>
+						<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Shortcuts) + IsEmpty(Skin.String(HomeMovies_Favourite3_Path)) + IsEmpty(Skin.String(HomeMovies_Addon3))</visible>
 					</control>
 					<control type="button" id="1523">
 						<include>SettingsLabel</include>
@@ -785,7 +785,7 @@
 						<onclick>Skin.Reset(HomeTVShows_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite1_Path) + IsEmpty(Skin.String(HomeTVShows_Addon1))</visible>
+						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite1_Path)) + IsEmpty(Skin.String(HomeTVShows_Addon1))</visible>
 					</control>
 					<control type="button" id="1543">
 						<include>SettingsLabel</include>
@@ -835,7 +835,7 @@
 						<onclick>Skin.Reset(HomeTVShows_Favourite2_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite2_Path) + IsEmpty(Skin.String(HomeTVShows_Addon2))</visible>
+						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite2_Path)) + IsEmpty(Skin.String(HomeTVShows_Addon2))</visible>
 					</control>
 					<control type="button" id="1548">
 						<include>SettingsLabel</include>
@@ -885,7 +885,7 @@
 						<onclick>Skin.Reset(HomeTVShows_Favourite3_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeTVShows_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeTVShows_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite3_Path) + IsEmpty(Skin.String(HomeTVShows_Addon3))</visible>
+						<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Shortcuts) + IsEmpty(Skin.String(HomeTVShows_Favourite3_Path)) + IsEmpty(Skin.String(HomeTVShows_Addon3))</visible>
 					</control>
 					<control type="button" id="1553">
 						<include>SettingsLabel</include>
@@ -1000,7 +1000,7 @@
 						<onclick>Skin.Reset(HomeVideos_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite1_Path) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
+						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite1_Path)) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
 					</control>
 					<control type="button" id="1569">
 						<include>SettingsLabel</include>
@@ -1050,7 +1050,7 @@
 						<onclick>Skin.Reset(HomeVideos_Favourite2_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite2_Path) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
+						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite2_Path)) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
 					</control>
 					<control type="button" id="1574">
 						<include>SettingsLabel</include>
@@ -1100,7 +1100,7 @@
 						<onclick>Skin.Reset(HomeVideos_Favourite3_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeVideos_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite3_Path) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
+						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite3_Path)) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
 					</control>
 					<control type="button" id="1579">
 						<include>SettingsLabel</include>
@@ -1345,7 +1345,7 @@
 						<onclick>Skin.Reset(HomeMusic_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite1_Path) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite1_Path)) + IsEmpty(Skin.String(HomeMusic_Addon1))</visible>
 					</control>
 					<control type="button" id="1635">
 						<include>SettingsLabel</include>
@@ -1395,7 +1395,7 @@
 						<onclick>Skin.Reset(HomeMusic_Favourite2_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist2)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist2)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite2_Path) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite2_Path)) + IsEmpty(Skin.String(HomeMusic_Addon2))</visible>
 					</control>
 					<control type="button" id="1640">
 						<include>SettingsLabel</include>
@@ -1445,7 +1445,7 @@
 						<onclick>Skin.Reset(HomeMusic_Favourite3_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusic_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMusic_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite3_Path) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
+						<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Shortcuts) + IsEmpty(Skin.String(HomeMusic_Favourite3_Path)) + IsEmpty(Skin.String(HomeMusic_Addon3))</visible>
 					</control>
 					<control type="button" id="1645">
 						<include>SettingsLabel</include>
@@ -1655,7 +1655,7 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Favourite1_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Playlist1)</onclick>
 						<selected>Skin.HasSetting(HomeMusicVideos_Playlist1)</selected>
-						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite1_Path) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite1_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
 					</control>
 					<control type="button" id="1664">
 						<include>SettingsLabel</include>
@@ -1755,7 +1755,7 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Favourite3_Path)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Playlist3)</onclick>
 						<selected>Skin.HasSetting(HomeMusicVideos_Playlist3)</selected>
-						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite3_Path) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite3_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
 					<control type="button" id="1674">
 						<include>SettingsLabel</include>
