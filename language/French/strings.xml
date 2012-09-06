@@ -333,7 +333,9 @@
  	<string id="31455">Visualisation: Masquer Horloge et Température dans Info en Surimpression</string>
  	<string id="31456">- Écraser le lien par défaut</string>
  	<string id="31457">Raccourcis</string>
-  
+ 	<string id="31458">Mettre Temporisation</string>
+ 	<string id="31459">Annuler Temporisation</string>
+	
 	<!-- PVR Resources -->
 	<string id="31600">Activer le support Live TV (PVR)</string>
 	<string id="31601">Live TV</string>

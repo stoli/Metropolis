@@ -2423,7 +2423,7 @@
 							</control>
 							<control type="label">
 								<posx>20</posx>
-								<width>840</width>
+								<width>470</width>
 								<height>38</height>
 								<aligny>center</aligny>
 								<font>METF_ContextValue</font>
@@ -2433,7 +2433,7 @@
 							</control>
 							<control type="label">
 								<posx>20</posx>
-								<width>840</width>
+								<width>470</width>
 								<height>38</height>
 								<aligny>center</aligny>
 								<font>METF_ContextValue</font>
@@ -2443,7 +2443,7 @@
 							</control>
 							<control type="label">
 								<posx>730</posx>
-								<width>200</width>
+								<width>260</width>
 								<height>38</height>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -2454,7 +2454,7 @@
 							</control>
 							<control type="label">
 								<posx>730</posx>
-								<width>200</width>
+								<width>260</width>
 								<height>38</height>
 								<align>right</align>
 								<aligny>center</aligny>
