@@ -428,6 +428,7 @@
 		<width>44</width>
 		<height>18</height>
 	</include>
+	<!-- XXX: Used currently in PseudoTV 2.1.0 - delete once removed -->
 	<include name="MediaFlagsVarsMPAA">
 		<posx>1</posx>
 		<posy>2</posy>
