@@ -86,6 +86,31 @@
 						<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
 					</control>
 				</control>
+				<!-- IMDb Top250 Flag -->
+				<control type="group">
+					<width>58</width>
+					<height>62</height>
+					<visible>!SubString(ListItem.Top250,0,Left) + !IsEmpty(ListItem.Top250)</visible>
+					<control type="image">
+						<include>MediaFlagsVarsSquareHalfTop</include>
+						<texture>flags/IMDB-Logo.png</texture>
+						<colordiffuse>IMDbDiffuse</colordiffuse>
+					</control>
+					<control type="label">
+						<include>MediaFlagsVarsSquareHalfBottom</include>
+						<align>center</align>
+						<label>$INFO[ListItem.Top250]</label>
+						<textcolor>MediaFlagDiffuse</textcolor>
+						<font>METF_DialogSmallBold</font>
+					</control>
+					<control type="image">
+						<posx>2</posx>
+						<width>66</width>
+						<height>54</height>
+						<texture>flags/flag_framesquare.png</texture>
+						<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>

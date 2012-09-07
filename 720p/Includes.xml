@@ -416,6 +416,18 @@
 		<width>44</width>
 		<height>36</height>
 	</include>
+	<include name="MediaFlagsVarsSquareHalfTop">
+		<posx>14</posx>
+		<posy>8</posy>
+		<width>44</width>
+		<height>18</height>
+	</include>
+	<include name="MediaFlagsVarsSquareHalfBottom">
+		<posx>14</posx>
+		<posy>26</posy>
+		<width>44</width>
+		<height>18</height>
+	</include>
 	<include name="MediaFlagsVarsMPAA">
 		<posx>1</posx>
 		<posy>2</posy>
