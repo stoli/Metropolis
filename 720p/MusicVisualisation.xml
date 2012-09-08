@@ -3,15 +3,7 @@
 	<onload condition="Skin.HasSetting(Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
-		<control type="visualisation" id="2">
-			<description>visualisation</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<include>Animation_BackdropFade</include>
-			<visible>!Skin.HasSetting(Artist_Slideshow)</visible>
-		</control>
+		
 		<control type="multiimage" id="99">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -24,6 +16,39 @@
 			<randomize>true</randomize>
 			<include>Animation_BackdropFade</include>
 			<visible>Skin.HasSetting(Artist_Slideshow)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true" fallback="special://skin/backgrounds/music.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<include>VisibleFadeEffect</include>
+			<include>Animation_BackdropFade</include>
+			<visible>!Skin.HasSetting(Artist_Slideshow) | ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)]</visible>
+		</control>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
+			<timeperimage>7000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>Animation_BackdropFade</include>
+			<visible>Skin.HasSetting(FanartNoVisualisation) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+		</control>
+		<control type="visualisation" id="2">
+			<description>visualisation</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<include>Animation_BackdropFade</include>
+			<visible>!Skin.HasSetting(Artist_Slideshow)</visible>
 		</control>
 		<control type="group">
 			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + !Window.IsVisible(120)</visible>
@@ -106,7 +131,7 @@
 					<width>340</width>
 					<height>200</height>
 					<fadetime>200</fadetime>
-					<texture background="true">$INFO[MusicPlayer.cover]</texture>
+					<texture background="true">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<bordertexture border="8">thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>

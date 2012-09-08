@@ -178,7 +178,7 @@
 			<effect type="fade" start="0" end="100" time="400" delay="400"/>
 		</animation>
 		<animation effect="fade" start="100" end="0">WindowClose</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
