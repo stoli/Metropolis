@@ -525,7 +525,6 @@
 					<orientation>vertical</orientation>
 					<include>Animation_CommonFade</include>
 					<animation effect="fade" start="60" end="100" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(998)">Conditional</animation>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(addons)</visible>
 				</control>
 			</control>
 			<!-- Movies/TVShows - Year/Duration/Number of Episodes -->

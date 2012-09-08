@@ -1,5 +1,10 @@
 2.0.0 - 2012xxxx
-- Option to hide all media flags.
+- Add IMDb Top250 Media Flag.
+- Clean up VideoInfo dialog for Music Videos.
+- Option to limit Shutdown submenu to non-destructive operations only.
+- Add Reboot item to Shutdown submenu.
+- More Music Genre icons.
+- Option to hide all Media Flags.
 - Clean up PictureGrid view type.
 - Customization options for Home items.
 - Customizable submenu items for most Home items.

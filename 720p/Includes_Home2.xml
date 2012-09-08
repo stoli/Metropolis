@@ -166,6 +166,15 @@
 					<icon>special://skin/extras/home2/icon_shutdown.png</icon>
 					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(NoShutdown)</visible>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
+				</item>
+				<item id="11">
+					<description>Shutdown</description>
+					<label>$LOCALIZE[13005]</label>
+					<icon>special://skin/extras/home2/icon_shutdown.png</icon>
+					<onclick>XBMC.Quit()</onclick>
+					<visible>!Skin.HasSetting(NoShutdown)</visible>
+					<visible>Skin.HasSetting(NoShutdownDestructive)</visible>
 				</item>
 				<item id="12">
 					<description>Logoff</description>
@@ -367,7 +376,7 @@
 					<description>Live TV</description>
 					<label>$LOCALIZE[31601]</label>
 					<icon>special://skin/extras/home2/icon_tv.png</icon>
-					<onclick>ActivateWindow(TV)</onclick>
+					<onclick>ActivateWindow(PVR)</onclick>
 					<visible>Skin.HasSetting(LiveTV)</visible>
 				</item>
 				<item id="3">
@@ -956,22 +965,30 @@
 				<control type="button" id="92001">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19023]</label>
-					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>Setfocus(32)</onclick>
+					<onclick>Setfocus(11)</onclick>
 				</control>
 				<control type="button" id="92002">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19069]</label>
-					<onclick>ActivateWindowAndFocus(PVR, 31,0, 10,0)</onclick>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>Setfocus(31)</onclick>
+					<onclick>Setfocus(10)</onclick>
 				</control>
 				<control type="button" id="92003">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19163]</label>
-					<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>Setfocus(34)</onclick>
+					<onclick>Setfocus(13)</onclick>
 				</control>
 				<control type="button" id="92004">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[19040]</label>
-					<onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
+					<onclick>ActivateWindow(PVR)</onclick>
+					<onclick>Setfocus(35)</onclick>
+					<onclick>Setfocus(14)</onclick>
 				</control>
 			</control>
 			<!-- Music Submenu -->
@@ -1409,35 +1426,42 @@
 				<visible>Container(9000).HasFocus(11)</visible>
 				<control type="button" id="99001">
 					<include>Submenu_Button2</include>
-					<label>Set Timer</label>
-					<onclick>AlarmClock(shutdowntimer,Shutdown)</onclick>>
+					<label>31458</label>
+					<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>>
+					<visible>!System.HasAlarm(ShutdownTimer)</visible>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99002">
 					<include>Submenu_Button2</include>
-					<label>Cancel Timer</label>
-					<visible>System.HasAlarm(ShutdownTimer)</visible>
+					<label>31459</label>
 					<onclick>CancelAlarm(ShutdownTimer)</onclick>
+					<visible>System.HasAlarm(ShutdownTimer)</visible>
 				</control>
 				<control type="button" id="99003">
 					<include>Submenu_Button2</include>
 					<label>13011</label>
 					<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
 					<onclick>Suspend()</onclick>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99004">
 					<include>Submenu_Button2</include>
 					<label>13010</label>
 					<onclick>Hibernate()</onclick>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99005">
 					<include>Submenu_Button2</include>
-					<label>13313</label>
-					<onclick>RestartApp()</onclick>
+					<label>13013</label>
+					<onclick>Reboot()</onclick>
+					<visible>System.CanReboot</visible>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99006">
 					<include>Submenu_Button2</include>
 					<label>13005</label>
-					<onclick>ShutDown()</onclick>
+					<onclick>Shutdown()</onclick>
+					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
 				<control type="button" id="99007">
 					<include>Submenu_Button2</include>
@@ -1446,6 +1470,12 @@
 					<visible>System.HasLoginScreen</visible>
 				</control>
 				<control type="button" id="99008">
+					<include>Submenu_Button2</include>
+					<label>20183</label>
+					<onclick>ReloadSkin()</onclick>
+					<visible>Skin.HasSetting(DebugMode)</visible>
+				</control>
+				<control type="button" id="99009">
 					<include>Submenu_Button2</include>
 					<label>13012</label>
 					<onclick>XBMC.Quit()</onclick>

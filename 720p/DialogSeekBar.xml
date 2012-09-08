@@ -91,7 +91,7 @@
 		<include condition="Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar3</include>
 		<include>OSD_Player_Details</include>
 		<include>OSD_Player_Time</include>
-		<include condition="!Skin.HasSetting(Slim_Seekbar)">MediaInfoVideoPlayer</include>
+		<include condition="!Skin.HasSetting(Slim_Seekbar)">MediaInfo2</include>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>

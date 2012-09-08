@@ -7,7 +7,6 @@
 	<include file="Includes_HomeDeck.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_MediaFlags2.xml" />
-	<include file="Includes_MediaFlagsVideoPlayer.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Viewtype_Banner.xml" />
 	<include file="Viewtype_BannerPoster.xml" />
@@ -51,7 +50,6 @@
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
-	
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -63,741 +61,29 @@
 		</control>
 	</include>
 
-	<include name="Global_TimeWeekdayDetails">
-		<posx>1241</posx>
-		<posy>546</posy>
-		<width>200</width>
-		<height>30</height>
-		<font>METF_Date</font>
-		<align>right</align>
-		<textcolor>Date</textcolor>
-	</include>
-	<include name="Global_Weather">
-		<control type="group">
-			<posx>12</posx>
-			<posy>40</posy>
-			<visible>Weather.IsFetched + [!Skin.HasSetting(HideClockTemp) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]]</visible>
-			<control type="image">
-				<posx>1145</posx>
-				<posy>517</posy>
-				<width>30</width>
-				<height>30</height>
-				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
-			</control>
-			<control type="label">
-				<description>Temperature</description>
-				<posx>1241</posx>
-				<posy>517</posy>
-				<width>200</width>
-				<height>30</height>
-				<font>METF_Temp</font>
-				<align>right</align>
-				<textcolor>Temp</textcolor>
-				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
-			</control>
-		</control>
-	</include>
-	<include name="Global_Time">
-		<control type="group">
-			<posx>12</posx>
-			<posy>40</posy>
-			<visible>!Skin.HasSetting(HideClock) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
-			<control type="label">
-				<description>Hours</description>
-				<posx>1182</posx>
-				<posy>550</posy>
-				<width>150</width>
-				<font>METF_Hours</font>
-				<align>right</align>
-				<textcolor>Time</textcolor>
-				<label>$INFO[System.Time(hh)]</label>
-			</control>
-			<control type="label">
-				<description>Minutes</description>
-				<posx>1195</posx>
-				<posy>569</posy>
-				<width>80</width>
-				<font>METF_Minutes</font>
-				<align>left</align>
-				<textcolor>Time</textcolor>
-				<label>$INFO[System.Time(mm)]</label>
-			</control>
-			<control type="label">
-				<description>AM</description>
-				<posx>1188</posx>
-				<posy>615</posy>
-				<width>80</width>
-				<font>METF_FontAMPM</font>
-				<textcolor>TimeAMPM</textcolor>
-				<label>[B]AM[/B]</label>
-				<align>left</align>
-				<visible>substring(system.time,AM,right)</visible>
-			</control>
-			<control type="label">
-				<description>PM</description>
-				<posx>1188</posx>
-				<posy>615</posy>
-				<width>80</width>
-				<font>METF_FontAMPM</font>
-				<textcolor>TimeAMPM</textcolor>
-				<label>[B]PM[/B]</label>
-				<align>left</align>
-				<visible>substring(system.time,PM,right)</visible>
-			</control>
-			<control type="label">
-				<description>Date</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$INFO[System.Date(yyyy.mm.dd)]</label>
-				<visible>Skin.HasSetting(ShowDate)</visible>
-			</control>
-			<control type="label">
-				<description>Monday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[11]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[11])</visible>
-			</control>
-			<control type="label">
-				<description>Tuesday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[12]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[12])</visible>
-			</control>
-			<control type="label">
-				<description>Wednesday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[13]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[13])</visible>
-			</control>
-			<control type="label">
-				<description>Thursday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[14]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[14])</visible>
-			</control>
-			<control type="label">
-				<description>Friday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[15]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[15])</visible>
-			</control>
-			<control type="label">
-				<description>Saturday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[16]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[16])</visible>
-			</control>
-			<control type="label">
-				<description>Sunday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[17]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[17])</visible>
-			</control>
-		</control>
-	</include>
-
-	<include name="PlotBox_Small">
-		<height>68</height>
-		<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-		<font>METF_PlotTextSmall</font>
-	</include>
-	<include name="PlotBox_Large">
-		<height>135</height>
-		<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-		<font>METF_PlotTextMedium</font>
-	</include>
-	<include name="PlotBox">
-		<posx>300</posx>
-		<posy>565</posy>
-		<width>750</width>
-		<textcolor>LowerText</textcolor>
-		<!--<include condition="Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)">PlotBox_Small</include>
-		<include condition="![Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)]">PlotBox_Large</include>-->
-		<include>PlotBox_Small</include>
-	</include>
-
-	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
-	<include name="Global_VideoPlot">
-		<control type="group" id="9900">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_HiddenByInfo</include>
-			<visible>!Skin.HasSetting(Hide_Plot) + [!IsEmpty(ListItem.Plot) | !IsEmpty(ListItem.PlotOutline) | !IsEmpty(Container.ShowPlot)]</visible>
-			<control type="group">
-				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)</visible>
-				<control type="textbox">
-					<include>PlotBox</include>
-					<align>justify</align>
-					<info>ListItem.Plot</info>
-					<visible>!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)</visible>
-				</control>
-				<control type="textbox">
-					<include>PlotBox</include>
-					<info>ListItem.PlotOutline</info>
-					<align>justify</align>
-					<textcolor>LowerText</textcolor>
-					<visible>Skin.HasSetting(Show_PlotOutline) + !IsEmpty(ListItem.PlotOutline) + Container.Content(movies)</visible>
-				</control>
-			</control>
-			<!-- Seasons - TV Show Plot -->
-			<control type="group">
-				<visible>Container.Content(seasons)</visible>
-				<control type="textbox">
-					<include>PlotBox</include>
-					<align>justify</align>
-					<info>Container.ShowPlot</info>
-				</control>
-			</control>
-		</control>
-	</include>
-
-	<!-- Live TV Plot -->
-	<include name="LiveTVPlot">
-		<!-- Plot (Bottom) -->
-		<control type="group">
-			<posx>30</posx>
-			<posy>560</posy>
-			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
-			<control type="image">
-				<description>TV Channel Icon</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>100</width>
-				<height>100</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<info>ListItem.Icon</info>
-			</control>
-			<control type="label">
-				<description>TV Channel Title</description>
-				<posx>120</posx>
-				<posy>0</posy>
-				<width>640</width>
-				<height>30</height>
-				<scroll>true</scroll>
-				<align>false</align>
-				<aligny>center</aligny>
-				<scroll>true</scroll>
-				<include>SettingsLabel</include>
-				<info>ListItem.Title</info>
-			</control>
-			<control type="label">
-				<description>TV Channel Timing</description>
-				<posx>1040</posx>
-				<posy>0</posy>
-				<width>430</width>
-				<height>30</height>
-				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, ,]$INFO[ListItem.Duration, / ,])</label>
-				<align>right</align>
-				<aligny>center</aligny>
-				<include>SettingsLabel</include>
-			</control>
-			<control type="textbox">
-				<description>TV Channel Plot</description>
-				<posx>140</posx>
-				<posy>40</posy>
-				<width>880</width>
-				<height>110</height>
-				<align>justify</align>
-				<font>METF_PlotTextMedium</font>
-				<textcolor>TextNF</textcolor>
-				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-			</control>
-		</control>
-	</include>
-	<include name="LiveTVLabel">
-		<font>METF_ContextValue</font>
-		<textcolor>SettingsDetail</textcolor>
-		<focusedcolor>ButtonText</focusedcolor>
-	</include>
-
-	<include name="Global_AddonInfo">
-		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_HiddenByInfo</include>
-			<!-- Addon Description -->
-			<control type="textbox">
-				<include>PlotBox</include>
-				<align>justify</align>
-				<info>ListItem.Property(Addon.Description)</info>
-				<visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-			</control>
-		</control>
-	</include>
-
-	<include name="Global_PictureInfo">
-		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_HiddenByInfo</include>
-			<!-- Total height of this grouplist should not exceed the height of PlotBox_Small or it will overlap the overlays! -->
-			<control type="grouplist">
-				<visible>Window.IsActive(pictures)</visible>
-				<posx>300</posx>
-				<posy>565</posy>
-				<width>750</width>
-				<height>72</height>
-				<align>center</align>
-				<aligny>top</aligny>
-				<orientation>vertical</orientation>
-				<!-- Camera Info -->
-				<control type="label">
-					<width>750</width>
-					<height>20</height>
-					<align>center</align>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
-					<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
-				</control>
-				<!-- Focus and Aperture -->
-				<control type="grouplist">
-					<width>750</width>
-					<height>20</height>
-					<align>center</align>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
-					<control type="label">
-						<width min="25" max="750">auto</width>
-						<height>20</height>
-						<font>METF_PlotTextMedium</font>
-						<textcolor>LowerText</textcolor>
-						<label>$INFO[ListItem.PictureFocalLen]</label>
-						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
-					</control>
-					<control type="image">
-						<width>8</width>
-						<height>24</height>
-						<texture>Dot.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<colordiffuse>BulletDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
-					</control>
-					<control type="label">
-						<width min="25" max="750">auto</width>
-						<height>20</height>
-						<font>METF_PlotTextMedium</font>
-						<textcolor>LowerText</textcolor>
-						<label>f/$INFO[ListItem.PictureAperture]</label>
-						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
-					</control>
-					<control type="image">
-						<width>8</width>
-						<height>24</height>
-						<texture>Dot.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<colordiffuse>BulletDiffuse</colordiffuse>
-						<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
-					</control>
-					<control type="label">
-						<width min="25" max="750">auto</width>
-						<height>20</height>
-						<font>METF_PlotTextMedium</font>
-						<textcolor>LowerText</textcolor>
-						<label>$INFO[ListItem.PictureFocusDist]</label>
-						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
-					</control>
-					<visible>!IsEmpty(ListItem.PictureFocalLen) | !IsEmpty(ListItem.PictureAperture) | !IsEmpty(ListItem.PictureFocusDist)</visible>
-				</control>
-				<!-- Exposure -->
-				<control type="label">
-					<width>750</width>
-					<height>20</height>
-					<align>center</align>
-					<font>METF_PlotTextMedium</font>
-					<textcolor>LowerText</textcolor>
-					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
-					<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
-				</control>
-			</control>
-		</control>
-	</include>
-
-	<include name="Global_MusicInfo">
-		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_HiddenByInfo</include>
-			<visible>Container.Content(albums) | Container.Content(artists)</visible>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<align>justify</align>
-				<info>ListItem.Property(Artist_Description)</info>
-				<visible>IsEmpty(ListItem.Property(Album_Description))</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<align>justify</align>
-				<info>ListItem.Property(Album_Description)</info>
-				<visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
-			</control>
-		</control>
-	</include>
-
-	<!-- Genre Descriptions -->
-	<include name="Global_GenreInfo">
-		<control type="group" id="9903">
-			<posx>0</posx>
-			<posy>0</posy>
-			<include>Animation_FadedByMenu</include>
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_HiddenByInfo</include>
-			<visible>Control.IsVisible(501) + Window.IsActive(videolibrary) + Container.Content(genres)</visible>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31343]</label>
-				<visible>StringCompare(ListItem.Label,Action)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31344]</label>
-				<visible>StringCompare(ListItem.Label,Adventure)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31345]</label>
-				<visible>StringCompare(ListItem.Label,Action And Adventure)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31346]</label>
-				<visible>StringCompare(ListItem.Label,Adult)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31347]</label>
-				<visible>StringCompare(ListItem.Label,Animation)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31348]</label>
-				<visible>StringCompare(ListItem.Label,Anime)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31349]</label>
-				<visible>StringCompare(ListItem.Label,Biography)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31350]</label>
-				<visible>StringCompare(ListItem.Label,Bollywood)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31351]</label>
-				<visible>StringCompare(ListItem.Label,Children)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31352]</label>
-				<visible>StringCompare(ListItem.Label,Christmas)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31353]</label>
-				<visible>StringCompare(ListItem.Label,Comedy)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31354]</label>
-				<visible>StringCompare(ListItem.Label,Concert)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31355]</label>
-				<visible>StringCompare(ListItem.Label,Crime)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31356]</label>
-				<visible>StringCompare(ListItem.Label,Disaster)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31357]</label>
-				<visible>StringCompare(ListItem.Label,Documentary)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31358]</label>
-				<visible>StringCompare(ListItem.Label,Drama)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31359]</label>
-				<visible>StringCompare(ListItem.Label,Family)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31360]</label>
-				<visible>StringCompare(ListItem.Label,Fantasy)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31361]</label>
-				<visible>StringCompare(ListItem.Label,Film Noir)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31362]</label>
-				<visible>StringCompare(ListItem.Label,Game Show)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31364]</label>
-				<visible>StringCompare(ListItem.Label,Hentai)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31365]</label>
-				<visible>StringCompare(ListItem.Label,History)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31367]</label>
-				<visible>StringCompare(ListItem.Label,Horror)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31368]</label>
-				<visible>StringCompare(ListItem.Label,Independent)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31369]</label>
-				<visible>StringCompare(ListItem.Label,Interview)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31370]</label>
-				<visible>StringCompare(ListItem.Label,Martial Arts)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31371]</label>
-				<visible>StringCompare(ListItem.Label,Mini-Series) | StringCompare(ListItem.Label,Mini-TV-Series)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31372]</label>
-				<visible>StringCompare(ListItem.Label,Monster)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31373]</label>
-				<visible>StringCompare(ListItem.Label,Music)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31374]</label>
-				<visible>StringCompare(ListItem.Label,Musical)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31375]</label>
-				<visible>StringCompare(ListItem.Label,Mystery)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31376]</label>
-				<visible>StringCompare(ListItem.Label,Nature)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31377]</label>
-				<visible>StringCompare(ListItem.Label,News)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31378]</label>
-				<visible>StringCompare(ListItem.Label,Post-Apocalypse)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31379]</label>
-				<visible>StringCompare(ListItem.Label,Reality)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31381]</label>
-				<visible>StringCompare(ListItem.Label,Romance)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31382]</label>
-				<visible>StringCompare(ListItem.Label,Sci-Fi) | StringCompare(ListItem.Label,Science Fiction) | StringCompare(ListItem.Label,Science-Fiction)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31383]</label>
-				<visible>StringCompare(ListItem.Label,Short)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31384]</label>
-				<visible>StringCompare(ListItem.Label,Soap)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31386]</label>
-				<visible>StringCompare(ListItem.Label,Sport)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31387]</label>
-				<visible>StringCompare(ListItem.Label,Spy)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31388]</label>
-				<visible>StringCompare(ListItem.Label,Stageplay)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31389]</label>
-				<visible>StringCompare(ListItem.Label,Stand-Up)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31390]</label>
-				<visible>StringCompare(ListItem.Label,Superhero) | StringCompare(ListItem.Label,Comics)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31391]</label>
-				<visible>StringCompare(ListItem.Label,Supernatural)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31392]</label>
-				<visible>StringCompare(ListItem.Label,Talk Show)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31393]</label>
-				<visible>StringCompare(ListItem.Label,Thriller)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31394]</label>
-				<visible>StringCompare(ListItem.Label,War)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31395]</label>
-				<visible>StringCompare(ListItem.Label,Western)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31396]</label>
-				<visible>StringCompare(ListItem.Label,Wrestling)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31397]</label>
-				<visible>StringCompare(ListItem.Label,Epic)</visible>
-			</control>
-			<control type="textbox">
-				<include>PlotBox</include>
-				<label>$LOCALIZE[31398]</label>
-				<visible>StringCompare(ListItem.Label,Silent)</visible>
-			</control>
-		</control>
-	</include>
-  
-	<!-- Video Info Screen Buttons and Text -->
-	<include name="VideoInfoButton">
-		<label>-</label>
-		<altlabel>-</altlabel>
-		<height>60</height>
-		<width>60</width>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>-</font>
-		<textcolor>-</textcolor>
-		<disabledcolor>-</disabledcolor>
-		<focusedcolor>-</focusedcolor>
-		<selectedcolor>-</selectedcolor>
-		<pulseonselect>false</pulseonselect>
-	</include>
-	<include name="VideoInfoButtonLabel">
-		<posx>352</posx>
-		<posy>616</posy>
-		<width>515</width>
-		<height>30</height>
-		<font>METF_Button</font>
-		<textcolor>LowerText</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-	</include>
-	<!-- Login Screen Buttons and Text -->
-	<include name="LoginButton">
-		<onup>52</onup>
-		<ondown>52</ondown>
-		<height>60</height>
-		<width>60</width>
-		<align>center</align>
-		<aligny>center</aligny>
-		<textoffsetx>20</textoffsetx>
-		<font>METF_Button</font>
-		<textcolor>ButtonText</textcolor>
-		<disabledcolor>-</disabledcolor>
-		<focusedcolor>-</focusedcolor>
-		<selectedcolor>-</selectedcolor>
-		<pulseonselect>false</pulseonselect>
-	</include>
-	<include name="LoginButtonLabel">
-		<posx>505</posx>
-		<posy>600</posy>
-		<width>270</width>
-		<height>30</height>
-		<font>METF_Button</font>
-		<textcolor>ButtonText</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-	</include>
-	<!-- Used in Includes_MediaFlags2.xml file -->
-	<include name="PosterMediaFlagsVars">
-		<posx>22</posx>
-		<posy>16</posy>
-		<width>80</width>
-		<height>40</height>
-		<colordiffuse>MediaFlagDiffuse</colordiffuse>
-	</include>
-	<include name="MediaFlagsVarsMPAA">
-		<posx>1</posx>
-		<posy>2</posy>
-		<width>45</width>
-		<height>45</height>
-		<colordiffuse>MediaFlagDiffuse</colordiffuse>
-	</include>
-	<include name="MediaFlagsAudio">
+	<!--  Navigation Menu Background Panel -->
+	<include name="NavMenuBackground">
 		<control type="image">
-			<posx>8</posx>
-			<posy>8</posy>
-			<width>104</width>
-			<height>54</height>
-			<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-			<texture>flags/flag_frame.png</texture>
+			<description>background image</description>
+			<posx>440</posx>
+			<posy>65</posy>
+			<width>400</width>
+			<height>580</height>
+			<texture>frames/Menu_Glass2b.png</texture>
+			<colordiffuse>DialogBackgroundColor</colordiffuse>
+			<visible>ControlGroup(7000).HasFocus</visible>
 		</control>
 	</include>
-	<!-- Heading info for various screens -->
-	<include name="Global_NextAired">
-		<width>1920</width>
-		<height>30</height>
-		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-		<include>Animation_HiddenByInfo</include>
+
+	<!-- View Lockdowns -->
+	<include name="OnUp7000">
+		<onup>7000</onup>
 	</include>
+	<include name="OnLeft7000">
+		<onleft>7000</onleft>
+	</include>
+
+	<!-- Heading info for various screens -->
 	<include name="Global_HeadingSectionVars">
 		<width>750</width>
 		<height>30</height>
@@ -927,6 +213,15 @@
 		</control>
 	</include>
 	<!-- Next Aired Date -->
+	<include name="Global_NextAired">
+		<width>1920</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
 	<include name="NextAiredInfo">
 		<control type="group">
 			<include>Global_NextAired</include>
@@ -946,6 +241,445 @@
 			</control>
 		</control>
 	</include>
+	<!-- SortLetter popup when scrolling through lists quickly -->
+	<include name="Global_ScrollOffsetLabel">
+		<control type="group" id="9906">
+			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
+			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>
+			<animation effect="slide" start="0,-69" end="0,0" delay="800" time="100">Hidden</animation>
+			<posx>290r</posx>
+			<posy>720</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>54</height>
+				<texture>flags/flag_framesquare.png</texture>
+				<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>1</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>50</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>METF_DialogLargeBold</font>
+				<textcolor>MediaFlagDiffuse</textcolor>
+			</control>
+		</control>
+	</include>
+
+	<include name="Global_Weather">
+		<control type="group">
+			<posx>12</posx>
+			<posy>40</posy>
+			<visible>Weather.IsFetched + [!Skin.HasSetting(HideClockTemp) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]]</visible>
+			<control type="image">
+				<posx>1145</posx>
+				<posy>517</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
+			</control>
+			<control type="label">
+				<description>Temperature</description>
+				<posx>1241</posx>
+				<posy>517</posy>
+				<width>200</width>
+				<height>30</height>
+				<font>METF_Temp</font>
+				<align>right</align>
+				<textcolor>Temp</textcolor>
+				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
+			</control>
+		</control>
+	</include>
+	<include name="Global_TimeWeekdayDetails">
+		<posx>1241</posx>
+		<posy>546</posy>
+		<width>200</width>
+		<height>30</height>
+		<font>METF_Date</font>
+		<align>right</align>
+		<textcolor>Date</textcolor>
+	</include>
+	<include name="Global_Time">
+		<control type="group">
+			<posx>12</posx>
+			<posy>40</posy>
+			<visible>!Skin.HasSetting(HideClock) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
+			<control type="label">
+				<description>Hours</description>
+				<posx>1182</posx>
+				<posy>550</posy>
+				<width>150</width>
+				<font>METF_Hours</font>
+				<align>right</align>
+				<textcolor>Time</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<description>Minutes</description>
+				<posx>1195</posx>
+				<posy>569</posy>
+				<width>80</width>
+				<font>METF_Minutes</font>
+				<align>left</align>
+				<textcolor>Time</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+			<control type="label">
+				<description>AM</description>
+				<posx>1188</posx>
+				<posy>615</posy>
+				<width>80</width>
+				<font>METF_FontAMPM</font>
+				<textcolor>TimeAMPM</textcolor>
+				<label>[B]AM[/B]</label>
+				<align>left</align>
+				<visible>substring(system.time,AM,right)</visible>
+			</control>
+			<control type="label">
+				<description>PM</description>
+				<posx>1188</posx>
+				<posy>615</posy>
+				<width>80</width>
+				<font>METF_FontAMPM</font>
+				<textcolor>TimeAMPM</textcolor>
+				<label>[B]PM[/B]</label>
+				<align>left</align>
+				<visible>substring(system.time,PM,right)</visible>
+			</control>
+			<control type="label">
+				<description>Date</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$INFO[System.Date(yyyy.mm.dd)]</label>
+				<visible>Skin.HasSetting(ShowDate)</visible>
+			</control>
+			<control type="label">
+				<description>Monday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[11]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[11])</visible>
+			</control>
+			<control type="label">
+				<description>Tuesday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[12]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[12])</visible>
+			</control>
+			<control type="label">
+				<description>Wednesday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[13]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[13])</visible>
+			</control>
+			<control type="label">
+				<description>Thursday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[14]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[14])</visible>
+			</control>
+			<control type="label">
+				<description>Friday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[15]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[15])</visible>
+			</control>
+			<control type="label">
+				<description>Saturday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[16]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[16])</visible>
+			</control>
+			<control type="label">
+				<description>Sunday</description>
+				<include>Global_TimeWeekdayDetails</include>
+				<label>$LOCALIZE[17]</label>
+				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[17])</visible>
+			</control>
+		</control>
+	</include>
+
+	<!-- Used in Includes_MediaFlags?.xml -->
+	<include name="MediaFlagsVarsWide">
+		<posx>12</posx>
+		<posy>8</posy>
+		<width>80</width>
+		<height>40</height>
+	</include>
+	<include name="MediaFlagsVarsSquare">
+		<posx>14</posx>
+		<posy>8</posy>
+		<width>44</width>
+		<height>36</height>
+	</include>
+	<include name="MediaFlagsVarsSquareHalfTop">
+		<posx>14</posx>
+		<posy>8</posy>
+		<width>44</width>
+		<height>18</height>
+	</include>
+	<include name="MediaFlagsVarsSquareHalfBottom">
+		<posx>14</posx>
+		<posy>26</posy>
+		<width>44</width>
+		<height>18</height>
+	</include>
+	<!-- XXX: Used currently in PseudoTV 2.1.0 - delete once removed -->
+	<include name="MediaFlagsVarsMPAA">
+		<posx>1</posx>
+		<posy>2</posy>
+		<width>45</width>
+		<height>45</height>
+		<colordiffuse>MediaFlagDiffuse</colordiffuse>
+	</include>
+
+	<include name="PlotBox">
+		<posx>300</posx>
+		<posy>565</posy>
+		<control type="textbox">
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<width>750</width>
+			<height>64</height>
+			<font>METF_PlotTextSmall</font>
+			<textcolor>LowerText</textcolor>
+			<label>$VAR[PlotBox_Text]</label>
+			<align>justify</align>
+			<visible>Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)</visible>
+		</control>
+		<control type="textbox">
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<width>750</width>
+			<!-- XXX: larger font is more legible, but transition to and from the small font is jarring.
+			<height>135</height>
+			<font>METF_PlotTextMedium</font>
+			-->
+			<height>128</height>
+			<font>METF_PlotTextSmall</font>
+			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<textcolor>LowerText</textcolor>
+			<label>$VAR[PlotBox_Text]</label>
+			<align>justify</align>
+			<visible>![Control.IsVisible(9902) | Control.IsVisible(9905) | Control.IsVisible(9906)]</visible>
+		</control>
+	</include>
+
+	<!-- Plot to show in all video viewtypes but NOT Video Info screen -->
+	<include name="Global_VideoPlot">
+		<control type="group" id="9900">
+			<visible>!Skin.HasSetting(Hide_Plot) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)]</visible>
+			<include>PlotBox</include>
+		</control>
+	</include>
+
+	<!-- Video Genre Descriptions for TallGenre view -->
+	<include name="Global_VideoGenreInfo">
+		<control type="group">
+			<visible>Container.Content(Genres)</visible>
+			<include>PlotBox</include>
+		</control>
+	</include>
+
+	<!-- Addon Description -->
+	<include name="Global_AddonInfo">
+		<control type="group">
+			<visible>Container.Content(Addons)</visible>
+			<include>PlotBox</include>
+		</control>
+	</include>
+
+	<!-- Album and Artist Descriptions -->
+	<include name="Global_MusicInfo">
+		<control type="group">
+			<visible>Container.Content(Artists) | Container.Content(Albums)</visible>
+			<include>PlotBox</include>
+		</control>
+	</include>
+
+	<!-- Live TV Plot -->
+	<include name="LiveTVPlot">
+		<!-- Plot (Bottom) -->
+		<control type="group">
+			<posx>30</posx>
+			<posy>560</posy>
+			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
+			<control type="image">
+				<description>TV Channel Icon</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<info>ListItem.Icon</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Title</description>
+				<posx>120</posx>
+				<posy>0</posy>
+				<width>620</width>
+				<height>30</height>
+				<scroll>true</scroll>
+				<align>false</align>
+				<aligny>center</aligny>
+				<scroll>true</scroll>
+				<include>SettingsLabel</include>
+				<info>ListItem.Title</info>
+			</control>
+			<control type="label">
+				<description>TV Channel Timing</description>
+				<posx>1040</posx>
+				<posy>0</posy>
+				<width>430</width>
+				<height>30</height>
+				<label>$INFO[ListItem.StartTime,(, -]$INFO[ListItem.EndTime, ,]$INFO[ListItem.Duration, / ,])</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<include>SettingsLabel</include>
+			</control>
+			<control type="textbox">
+				<description>TV Channel Plot</description>
+				<posx>140</posx>
+				<posy>40</posy>
+				<width>880</width>
+				<height>110</height>
+				<align>justify</align>
+				<font>METF_PlotTextMedium</font>
+				<textcolor>TextNF</textcolor>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			</control>
+		</control>
+	</include>
+	<include name="LiveTVLabel">
+		<font>METF_ContextValue</font>
+		<textcolor>SettingsDetail</textcolor>
+		<focusedcolor>ButtonText</focusedcolor>
+	</include>
+
+	<include name="Global_PictureInfo">
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>Animation_FadedByMenu</include>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_HiddenByInfo</include>
+			<!-- Total height of this grouplist should not exceed the height of PlotBox (small) or it will overlap the overlays! -->
+			<control type="grouplist">
+				<visible>Window.IsActive(pictures)</visible>
+				<posx>300</posx>
+				<posy>565</posy>
+				<width>750</width>
+				<height>72</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<orientation>vertical</orientation>
+				<!-- Camera Info -->
+				<control type="label">
+					<width>750</width>
+					<height>20</height>
+					<align>center</align>
+					<font>METF_PlotTextSmall</font>
+					<textcolor>LowerText</textcolor>
+					<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
+					<visible>!IsEmpty(ListItem.PictureCamMake) + !IsEmpty(ListItem.PictureCamModel)</visible>
+				</control>
+				<!-- Focus and Aperture -->
+				<control type="grouplist">
+					<width>750</width>
+					<height>20</height>
+					<align>center</align>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<width min="25" max="750">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextSmall</font>
+						<textcolor>LowerText</textcolor>
+						<label>$INFO[ListItem.PictureFocalLen]</label>
+						<visible>!IsEmpty(ListItem.PictureFocalLen)</visible>
+					</control>
+					<control type="image">
+						<width>8</width>
+						<height>24</height>
+						<texture>Dot.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>BulletDiffuse</colordiffuse>
+						<visible>!IsEmpty(ListItem.PictureFocalLen) + ![IsEmpty(ListItem.PictureAperture) + IsEmpty(ListItem.PictureFocusDist)]</visible>
+					</control>
+					<control type="label">
+						<width min="25" max="750">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextSmall</font>
+						<textcolor>LowerText</textcolor>
+						<label>f/$INFO[ListItem.PictureAperture]</label>
+						<visible>!IsEmpty(ListItem.PictureAperture)</visible>
+					</control>
+					<control type="image">
+						<width>8</width>
+						<height>24</height>
+						<texture>Dot.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<colordiffuse>BulletDiffuse</colordiffuse>
+						<visible>![IsEmpty(ListItem.PictureFocalLen) + IsEmpty(ListItem.PictureAperture)] + !IsEmpty(ListItem.PictureFocusDist)</visible>
+					</control>
+					<control type="label">
+						<width min="25" max="750">auto</width>
+						<height>20</height>
+						<font>METF_PlotTextSmall</font>
+						<textcolor>LowerText</textcolor>
+						<label>$INFO[ListItem.PictureFocusDist]</label>
+						<visible>!IsEmpty(ListItem.PictureFocusDist)</visible>
+					</control>
+					<visible>!IsEmpty(ListItem.PictureFocalLen) | !IsEmpty(ListItem.PictureAperture) | !IsEmpty(ListItem.PictureFocusDist)</visible>
+				</control>
+				<!-- Exposure -->
+				<control type="label">
+					<width>750</width>
+					<height>20</height>
+					<align>center</align>
+					<font>METF_PlotTextSmall</font>
+					<textcolor>LowerText</textcolor>
+					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
+					<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<!-- Video Info Screen Buttons and Text -->
+	<include name="VideoInfoButton">
+		<label>-</label>
+		<altlabel>-</altlabel>
+		<height>60</height>
+		<width>60</width>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>-</font>
+		<textcolor>-</textcolor>
+		<disabledcolor>-</disabledcolor>
+		<focusedcolor>-</focusedcolor>
+		<selectedcolor>-</selectedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="VideoInfoButtonLabel">
+		<posx>352</posx>
+		<posy>616</posy>
+		<width>515</width>
+		<height>30</height>
+		<font>METF_Button</font>
+		<textcolor>LowerText</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+
 	<include name="Object_InfoLines">
 		<control type="group">
 			<posx>0</posx>
@@ -1011,11 +745,39 @@
 			</control>
 		</control>
 	</include>
+
+	<!-- Login Screen Buttons and Text -->
+	<include name="LoginButton">
+		<onup>52</onup>
+		<ondown>52</ondown>
+		<height>60</height>
+		<width>60</width>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textoffsetx>20</textoffsetx>
+		<font>METF_Button</font>
+		<textcolor>ButtonText</textcolor>
+		<disabledcolor>-</disabledcolor>
+		<focusedcolor>-</focusedcolor>
+		<selectedcolor>-</selectedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="LoginButtonLabel">
+		<posx>505</posx>
+		<posy>600</posy>
+		<width>270</width>
+		<height>30</height>
+		<font>METF_Button</font>
+		<textcolor>ButtonText</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>DebugGrid.png</texture>
+			<texture>debuggrid.png</texture>
 		</control>
 	</include>
 	<include name="Debug">
@@ -1037,6 +799,7 @@
 			<label>$INFO[Window.Property(xmlfile)] / $INFO[System.Screenresolution] / $LOCALIZE[158] - $INFO[System.FreeMemory]$INFO[System.CurrentWindow / ]$INFO[System.CurrentControl, / ]</label>
 		</control>
 	</include>
+
 	<!-- Settings Headings -->
 	<include name="Setting_Heading">
 		<control type="group">
@@ -1143,7 +906,6 @@
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
-
 	<include name="SettingsLabel">
 		<width>840</width>
 		<height>38</height>
@@ -1178,8 +940,36 @@
 		
 		<font>METF_TitleTextMedium</font>
 		<textcolor>SettingsDetail</textcolor>
-		
 	</include>
+	<include name="Settings_Line">
+		<height>8</height>
+		<width>840</width>
+		<texture border="2">settings_line.png</texture>
+		<colordiffuse>SettingsLine</colordiffuse>
+	</include>
+	<include name="SettingsAddons_List1">
+		<posx>440</posx>
+		<posy>240</posy>
+		<width>840</width>
+		<height>380</height>
+		<itemgap>0</itemgap>
+		<onleft>10</onleft>
+		<onright>10</onright>
+		<onup>10</onup>
+		<ondown>10</ondown>
+	</include>
+	<include name="SettingsAddons_List2">
+		<posx>440</posx>
+		<posy>438</posy>
+		<width>840</width>
+		<height>162</height>
+		<itemgap>0</itemgap>
+		<onleft>10</onleft>
+		<onright>10</onright>
+		<onup>10</onup>
+		<ondown>10</ondown>
+	</include>
+
 	<!-- Shutdown Menu Buttons -->
 	<include name="SettingsShutdownMenu">
 		<width>340</width>
@@ -1204,81 +994,7 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 
-	<include name="Settings_Line">
-		<height>8</height>
-		<width>840</width>
-		<texture border="2">settings_line.png</texture>
-		<colordiffuse>SettingsLine</colordiffuse>
-	</include>
-		
-	<!-- Window menus -->
-	<include name="WindowMenuVars_5">
-		<width>1050</width>
-		<height>80</height>
-		<posx>115</posx>
-		<onup>55</onup>
-		<ondown>55</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-	<include name="WindowMenuVars_6">
-		<width>1260</width>
-		<height>80</height>
-		<posx>10</posx>
-		<onup>55</onup>
-		<ondown>55</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-
-	<include name="DialogMenuVars_4">
-		<width>840</width>
-		<height>80</height>
-		<posx>220</posx>
-		<onup>7050</onup>
-		<ondown>7050</ondown>
-		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
-		<include>Animation_ZoomInMenu</include>
-		<orientation>horizontal</orientation>
-	</include>
-
-	<include name="WindowMenuButton">
-		<posx>0</posx>
-		<posy>30</posy>
-		<width>210</width>
-		<height>60</height>
-		<align>center</align>
-		<aligny>top</aligny>
-		<font>METF_TitleTextLarge</font>
-		<textcolor>TextNF</textcolor>
-		<focusedcolor>TextFO</focusedcolor>
-		<disabledcolor>TextDisabled</disabledcolor>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<textureradiofocus>-</textureradiofocus>
-		<textureradionofocus>-</textureradionofocus>
-		<wrapmultiline>true</wrapmultiline>
-	</include>
-
-	<include name="WindowMenuLabel">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>210</width>
-		<height>30</height>
-		<align>center</align>
-		<font>METF_TitleTextLarge</font>
-		<textcolor>TextNF</textcolor>
-		<disabledcolor>TextDisabled</disabledcolor>
-		<aligny>bottom</aligny>
-	</include>
-	
+	<!-- Onscreen Displays -->
 	<include name="OSD_Progress_Bar">
 		<control type="image">
 			<posx>0</posx>
@@ -1324,7 +1040,6 @@
 			<midtexture>osd/osd_progress_mid.png</midtexture>
 			<righttexture>osd/osd_progress_right.png</righttexture>
 			<colordiffuse>OSDFinishTime</colordiffuse>
-			
 		</control>
 		<control type="progress" id="23">
 			<description>Progressbar</description>
@@ -1507,7 +1222,6 @@
 			<visible>VideoPlayer.Content(movies) + !substring(VideoPlayer.Cover,default)</visible>
 		</control>
 	</include>
-
 	<include name="OSD_Progress_Bar3">
 		<control type="progress" id="23">
 			<description>Progressbar</description>
@@ -1577,7 +1291,6 @@
 		<control type="label" id="0">
 			<include>OSD_Player_Labels_Left</include>
 			<label>$INFO[System.Time]</label>
-			
 		</control>
 	</include>
 	<include name="OSD_Player_Details">
@@ -1649,29 +1362,8 @@
 			</control>
 		</control>
 	</include>
-	<include name="Plugin_List_1">
-		<posx>440</posx>
-		<posy>240</posy>
-		<width>840</width>
-		<height>380</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
-	<include name="Plugin_List_2">
-		<posx>440</posx>
-		<posy>438</posy>
-		<width>840</width>
-		<height>162</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
 
+	<!-- Scrollbars -->
 	<include name="ScrollBar_Horizontal">		
 		<!-- Scroll Bar -->
 		<control type="scrollbar" id="60">
@@ -1712,266 +1404,37 @@
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(61) | Container.Scrolling">Conditional</animation>
 		</control>
 	</include>
-	<!-- View Lockdowns -->
-	<include name="OnUp7000">
-		<onup>7000</onup>
+
+	<!-- XXX: Names are too generic.  Used only in MyMusicPlaylist.xml -->
+	<include name="WindowMenuButton">
+		<posx>0</posx>
+		<posy>30</posy>
+		<width>210</width>
+		<height>60</height>
+		<align>center</align>
+		<aligny>top</aligny>
+		<font>METF_TitleTextLarge</font>
+		<textcolor>TextNF</textcolor>
+		<focusedcolor>TextFO</focusedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<textureradiofocus>-</textureradiofocus>
+		<textureradionofocus>-</textureradionofocus>
+		<wrapmultiline>true</wrapmultiline>
 	</include>
-	<include name="OnLeft7000">
-		<onleft>7000</onleft>
-	</include>
-	<!--  Navigation Menu Background Panel -->
-	<include name="NavMenuBackground">
-		<control type="image">
-			<description>background image</description>
-			<posx>440</posx>
-			<posy>65</posy>
-			<width>400</width>
-			<height>580</height>
-			<texture>frames/Menu_Glass2b.png</texture>
-			<colordiffuse>DialogBackgroundColor</colordiffuse>
-			<visible>ControlGroup(7000).HasFocus</visible>
-		</control>
-	</include>
-	
-	<!-- Video and Music OSD -->
-	<include name="SmallMusicInfo">
-		<control type="image">
-			<description>Cover image</description>
-			<posx>20</posx>
-			<posy>17</posy>
-			<width>130</width>
-			<height>130</height>
-			<texture>$INFO[MusicPlayer.Cover]</texture>
-		</control>
-		<control type="label">
-			<description>Artist label</description>
-			<posx>160</posx>
-			<posy>15</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Artist]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleTextMedium</font>
-			<textcolor>NowPlayingTitle</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="fadelabel">
-			<description>Title label</description>
-			<posx>160</posx>
-			<posy>43</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="label">
-			<description>Album Label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Time Label</description>
-			<posx>160</posx>
-			<posy>95</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<description>Next Label</description>
-			<posx>160</posx>
-			<posy>120</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>[COLOR=NowPlayingTitle]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>grey</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>Player.HasAudio</visible>
-		</control>
-	</include>
-	<include name="SmallVideoInfo">
-		<control type="image">
-			<description>gradient</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>500</width>
-			<height>165</height>
-			<colordiffuse>DDFFFFFF</colordiffuse>
-			<texture border="20">OverlayDialogBackground.png</texture>
-		</control>
-		<control type="image">
-			<description>Cover image</description>
-			<posx>20</posx>
-			<posy>17</posy>
-			<width>130</width>
-			<height>130</height>
-			<aspectratio>keep</aspectratio>
-			<texture>$INFO[VideoPlayer.cover]</texture>
-		</control>
-		<control type="label">
-			<description>Studio label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Studio]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>grey2</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<description>TV Show Title label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.tvshowtitle]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>NowPlayingTitle</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(episodes)</visible>
-		</control>
-		<control type="fadelabel">
-			<description>Music Video Artist label</description>
-			<posx>160</posx>
-			<posy>20</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Artist]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(musicvideos)</visible>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="fadelabel">
-			<description>Title label</description>
-			<posx>160</posx>
-			<posy>43</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Title]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>font13_title</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<scrollout>false</scrollout>
-			<pauseatend>2000</pauseatend>
-		</control>
-		<control type="label">
-			<description>Genre label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Genre]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Album]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(musicvideos)</visible>
-		</control>
-		<control type="label">
-			<description>Season and Episode label</description>
-			<posx>160</posx>
-			<posy>70</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<visible>videoplayer.content(episodes)</visible>
-		</control>
-		<control type="label">
-			<description>Time Label</description>
-			<posx>160</posx>
-			<posy>95</posy>
-			<height>30</height>
-			<width>325</width>
-			<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<font>METF_TitleText</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-		</control>
+	<include name="WindowMenuLabel">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>210</width>
+		<height>30</height>
+		<align>center</align>
+		<font>METF_TitleTextLarge</font>
+		<textcolor>TextNF</textcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
+		<aligny>bottom</aligny>
 	</include>
 
-	<include name="Global_ScrollOffsetLabel">
-		<control type="group" id="9906">
-			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[556]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[558])]</visible>
-			<animation effect="slide" start="0,0" end="0,-69" time="100">Visible</animation>
-			<animation effect="slide" start="0,-69" end="0,0" delay="800" time="100">Hidden</animation>
-			<posx>300r</posx>
-			<posy>720</posy>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>64</width>
-				<height>54</height>
-				<texture>flags/flag_framesquare.png</texture>
-				<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-			</control>
-			<control type="label">
-				<posx>1</posx>
-				<posy>0</posy>
-				<width>64</width>
-				<height>50</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.SortLetter]</label>
-				<font>METF_DialogLargeBold</font>
-				<textcolor>MediaFlagDiffuse</textcolor>
-			</control>
-		</control>
-	</include>
 </includes>

@@ -28,8 +28,8 @@
 			</control>
 			<control type="grouplist" id="2">
 				<description>Control Area</description>
-				<include condition="!Window.IsActive(ContentSettings)">Plugin_List_1</include>
-				<include condition="Window.IsActive(ContentSettings)">Plugin_List_2</include>
+				<include condition="!Window.IsActive(ContentSettings)">SettingsAddons_List1</include>
+				<include condition="Window.IsActive(ContentSettings)">SettingsAddons_List2</include>
 			</control>
 			<control type="button" id="3">
 				<description>Default Button</description>

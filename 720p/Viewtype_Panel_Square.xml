@@ -122,7 +122,7 @@
 						<height>155</height>
 						<texture>frames/ClassicFrame_Background.png</texture>
 						<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-						<visible>!substring(ListItem.Icon,default)</visible>
+						<visible>!SubString(ListItem.Icon,default) + !IsEmpty(ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>25</posx>
@@ -138,7 +138,6 @@
 						<width>195</width>
 						<height>197</height>
 						<texture>frames/ClassicFrame_SquareSmall.png</texture>
-						<visible>!substring(ListItem.Icon,default)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="205" height="205">
@@ -152,7 +151,7 @@
 							<height>155</height>
 							<texture>frames/ClassicFrame_Background.png</texture>
 							<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-							<visible>!substring(ListItem.Icon,default)</visible>
+							<visible>!SubString(ListItem.Icon,default) + !IsEmpty(ListItem.Icon)</visible>
 						</control>
 						<control type="image">
 							<posx>25</posx>
@@ -168,7 +167,6 @@
 							<width>195</width>
 							<height>197</height>
 							<texture>frames/ClassicFrame_SquareSmall.png</texture>
-							<visible>!substring(ListItem.Icon,default)</visible>
 						</control>
 					</control>					
 				</focusedlayout>

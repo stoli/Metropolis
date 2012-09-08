@@ -3,18 +3,18 @@
 <strings>
 	<!-- strings 31000 thru 31999 reserved for skins -->
 	<string id="31001">Vistas</string>
-	<string id="31002">Artwork de Inicio</string>
+	<string id="31002">Fondos de Inicio</string>
 	<string id="31004">Depurar</string>
-	<string id="31005">Activar desplazamiento automático de texto</string>
+	<string id="31005">Activar desplazamiento de texto automático</string>
 	<string id="31007">ENCENDIDO</string>
 	<string id="31011">Metrópolis</string>
 	<string id="31012">Aumentar Puntuación</string>
 	<string id="31021">Disminuir Puntuación</string>
-	<string id="31024">Iconos de Inicio</string>
+	<string id="31024">Vista de Inicio como Iconos</string>
 	<string id="31031">Ocultar Estado de Películas Vistas</string>
-	<string id="31032">Ocultar estado de Series Vistas</string>
+	<string id="31032">Ocultar Estado de Series Vistas</string>
 	<string id="31033">Ocultar Fanart de Fondo</string>
-	<string id="31034">Habilitar Artwork Dinámico del Clima</string>
+	<string id="31034">Habilitar Fondo Dinámico del Clima</string>
 	<string id="31054">Logo</string>
 	<string id="31055">Usar Logos en Series</string>
 	<string id="31056">Habilitar Carátula</string>
@@ -77,7 +77,7 @@
 	<string id="31313">Colección Películas</string>
 	<string id="31319">Script de Letras por defecto</string>
 	<string id="31320">Script de Subtítulos por defecto</string>
-	<string id="31322">Ver todas las Banderas</string>
+	<string id="31322">Mostrar todas las Banderas</string>
 	<string id="31324">Opciones de Inicio</string>
 	<string id="31328">Mostrar Objetos al Azar</string>
 	<string id="31329">Seleccionar objeto a configurar:</string>
@@ -139,9 +139,11 @@
 	<string id="31396">La lucha libre es un arte marcial que utiliza técnicas de agarre, tales como lucha, tiros y desarmes, llaves comunes y otros agarre. Un combate de lucha libre es una competencia física, entre dos (a veces más) competidores o compañeros de batalla, que tratan de obtener y mantener una posición superior. Hay una gran variedad de estilos con las diversas normas con ambos estilos tradicionales históricos y modernos.</string>
 	<string id="31397">Las épicas incluyen dramas de época, dramas históricos, de guerra, medievales, o de "épocas" que a menudo cubren una gran extensión de tiempo establecido en un contexto amplio, con vistas panorámicas. Las épicas a menudo comparten elementos con el género de aventuras. Toman un acontecimiento histórico o imaginario, figuras míticas, legendarias, o heroicas, agregan unos ambientes extravagantes y con suntuosos trajes, acompañados de grandeza y espectacularidad al ámbito dramático, los altos gastos en producción, y una gran composición musical.</string>
 	<string id="31398">Las películas que no tienen banda sonora y sin diálogos. Hasta finales de 1920, las películas mudas ofrecian subtítulos y a menudo iban acompañadas de música en vivo.</string>
-	<string id="31400">Ocultar las Condiciones Actuales de Temperatura y Tiempo</string>
+	<string id="31400">Ocultar Temperatura Actual y Condición del Clima</string>
+	<string id="31401">Ocultar Reloj</string>
 	<string id="31402">Usar Resumen en otras vistas</string>
-	<string id="31403">Mostrar banderas solo en diálogo de información</string>
+	<string id="31403">Ocultar Banderas de Medios</string>
+	<string id="31404">Ocultar Clasificación y Banderas de Estudio</string>
 	<string id="31406">Vista Fanart: Clásico</string>
 	<string id="31407">*Pulsa ARRIBA para ver reparto y fotos*</string>
 	<string id="31408">Cinema Experience</string>
@@ -163,7 +165,7 @@
 	<string id="31426">Activar en Series fecha de la próxima emisión</string>
 	<string id="31427">Siguiente Episodio</string>
 	<string id="31428">Guía TV</string>
-	<string id="31429">Mostrar Ruta en Información del Video en lugar de Clasificación</string>
+	<string id="31429">Mostrar en Información Ruta del Video en lugar de Clasificación</string>
 	<string id="31430">Poster Amplio</string>
 	<string id="31431">Clic para restablecer los valores predeterminados de Metrópolis</string>
 	<string id="31435">Visualización: Usar Artist Slideshow</string>
@@ -184,10 +186,10 @@
 	<string id="31451">Recomendado</string>
 	<string id="31452">Visualización: Usar Información Reducida</string>
 	<string id="31453">Mostrar Fecha en lugar del Día de la Semana</string>
-	<string id="31454">Visualización: Mostrar posición del reproductor y reloj de tiempo</string>
-	<string id="31455">Visualización: Ocultar Reloj y Temperatura en Info</string>
+	<string id="31454">Visualización: Mostrar contador del reproductor y número de pista en Información</string>
+	<string id="31455">Visualización: Ocultar Reloj y Temperatura en Información</string>
 	<string id="31456">- Anular enlace predeterminado</string>
-	<string id="31457">Atajos</string>
+	<string id="31457">Enlaces</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Activar soporte de TV en Vivo (PVR)</string>

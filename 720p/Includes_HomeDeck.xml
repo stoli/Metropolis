@@ -410,9 +410,9 @@
 						<include>Animation_FadedByMenu</include>
 						<posx>265</posx>
 						<posy>560</posy>
-						<width>140</width>
+						<width>250</width>
 						<height>140</height>
-						<aspectratio aligny="center">stretch</aspectratio>
+						<aspectratio align="right" aligny="center">keep</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
 						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8002).ListItem.Thumb]</texture>
@@ -427,7 +427,7 @@
 						<posy>560</posy>
 						<width>250</width>
 						<height>140</height>
-						<aspectratio aligny="center">stretch</aspectratio>
+						<aspectratio align="right" aligny="center">keep</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
 						<!-- Probably should be ListItem.Thumb (Fanart) but it doesn't seem to be filled in by the scraper -->
@@ -478,12 +478,12 @@
 					</control>
 				</control>
 				<control type="group">
-					<posx>413</posx>
+					<posx>522</posx>
 					<posy>563</posy>
 					<control type="list" id="8002">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>619</width>
+						<width>519</width>
 						<height>135</height>
 						<onup>8002</onup>
 						<ondown>8002</ondown>
@@ -729,7 +729,7 @@
 			<control type="label">
 				<posx>10</posx>
 				<posy>-2</posy>
-				<width>609</width>
+				<width>500</width>
 				<height>27</height>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -746,7 +746,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>619</width>
+				<width>510</width>
 				<height>27</height>
 				<aligny>center</aligny>
 				<texture>FocusLine.png</texture>
@@ -756,7 +756,7 @@
 			<control type="label">
 				<posx>10</posx>
 				<posy>-2</posy>
-				<width>609</width>
+				<width>500</width>
 				<height>27</height>
 				<align>left</align>
 				<aligny>center</aligny>
