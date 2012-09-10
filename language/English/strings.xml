@@ -169,7 +169,9 @@
 	<string id="31429">Display Path in Video Info instead of Rating details</string>
 	<string id="31430">Poster Large</string>
 	<string id="31431">Click to reset Metropolis to defaults</string>
-	<string id="31435">Visualization: Use Artist Slideshow</string>
+	<string id="31433">Visualization Background: Fanart</string>
+	<string id="31434">Visualization Background: Extra Fanart</string>
+	<string id="31435">Visualization Background: Artist Slideshow</string>
 	<string id="31436">Use Slim Seekbar</string>
 	<string id="31437">Enable TV Tunes script</string>
 	<string id="31438">Recent</string>

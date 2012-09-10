@@ -3784,9 +3784,27 @@
 					</control>
 					<control type="radiobutton" id="909">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31433]</label>
+						<onclick>Skin.Reset(VisBgArtistSlideshow)</onclick>
+						<onclick>Skin.Reset(VisBgExtraFanart)</onclick>
+						<onclick>Skin.ToggleSetting(VisBgFanart)</onclick>
+						<selected>Skin.HasSetting(VisBgFanart)</selected>
+					</control>
+					<control type="radiobutton" id="910">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31434]</label>
+						<onclick>Skin.Reset(VisBgArtistSlideshow)</onclick>
+						<onclick>Skin.Reset(VisBgFanart)</onclick>
+						<onclick>Skin.ToggleSetting(VisBgExtraFanart)</onclick>
+						<selected>Skin.HasSetting(VisBgExtraFanart)</selected>
+					</control>
+					<control type="radiobutton" id="911">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31435]</label>
-						<onclick>Skin.ToggleSetting(Artist_Slideshow)</onclick>
-						<selected>Skin.HasSetting(Artist_Slideshow)</selected>
+						<onclick>Skin.Reset(VisBgFanart)</onclick>
+						<onclick>Skin.Reset(VisBgExtraFanart)</onclick>
+						<onclick>Skin.ToggleSetting(VisBgArtistSlideshow)</onclick>
+						<selected>Skin.HasSetting(VisBgArtistSlideshow)</selected>
 					</control>
 				</control>
 				<!-- Picture Settings -->

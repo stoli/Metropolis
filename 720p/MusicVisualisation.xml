@@ -1,6 +1,6 @@
 ﻿<window id="2006">
 	<allowoverlay>no</allowoverlay>
-	<onload condition="Skin.HasSetting(Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
+	<onload condition="Skin.HasSetting(VisBgArtistSlideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
 		
@@ -15,7 +15,7 @@
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
 			<include>Animation_BackdropFade</include>
-			<visible>Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(VisBgArtistSlideshow)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -27,7 +27,7 @@
 			<fadetime>400</fadetime>
 			<include>VisibleFadeEffect</include>
 			<include>Animation_BackdropFade</include>
-			<visible>!Skin.HasSetting(Artist_Slideshow) | ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)]</visible>
+			<visible>Skin.HasSetting(VisBgFanart)</visible>
 		</control>
 		<control type="multiimage">
 			<posx>0</posx>
@@ -39,7 +39,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>Animation_BackdropFade</include>
-			<visible>Skin.HasSetting(FanartNoVisualisation) + ![Skin.HasSetting(vis_photos_backdrops) | Skin.HasSetting(vis_music_backdrops)] + !Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>Skin.HasSetting(VisBgExtraFanart)</visible>
 		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
@@ -48,7 +48,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<include>Animation_BackdropFade</include>
-			<visible>!Skin.HasSetting(Artist_Slideshow)</visible>
+			<visible>!Skin.HasSetting(VisBgArtistSlideshow)</visible>
 		</control>
 		<control type="group">
 			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + !Window.IsVisible(120)</visible>
@@ -88,7 +88,7 @@
 				<posx>0</posx>
 				<posy>546</posy>
 				<width>1280</width>
-				<height>174</height>
+				<height>194</height>
 				<texture>black.png</texture>
 				<colordiffuse>dd909090</colordiffuse>
 				<visible>Skin.HasSetting(SlimMusicInfo) + !Skin.HasSetting(HideVisClock) + !Skin.HasSetting(HideClockTemp)</visible>
@@ -97,7 +97,7 @@
 				<posx>0</posx>
 				<posy>580</posy>
 				<width>1280</width>
-				<height>140</height>
+				<height>160</height>
 				<texture>black.png</texture>
 				<colordiffuse>dd909090</colordiffuse>
 				<visible>Skin.HasSetting(SlimMusicInfo) + !Skin.HasSetting(HideVisClock) + Skin.HasSetting(HideClockTemp)</visible>
@@ -106,7 +106,7 @@
 				<posx>0</posx>
 				<posy>606</posy>
 				<width>1280</width>
-				<height>114</height>
+				<height>134</height>
 				<texture>black.png</texture>
 				<colordiffuse>dd909090</colordiffuse>
 				<visible>Skin.HasSetting(SlimMusicInfo) + Skin.HasSetting(HideVisClock)</visible>
