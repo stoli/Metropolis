@@ -43,6 +43,12 @@
 					<visible>System.HasLocks</visible>
 				</control>
 				<control type="button" id="3111">
+					<description>Settings</description>
+					<include>SettingsShutdownMenu</include>
+					<label>$LOCALIZE[5]</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</control>
+				<control type="button" id="3112">
 					<description>Set Shutdown Timer</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[31458]</label>
@@ -50,39 +56,39 @@
 					<visible>!System.HasAlarm(ShutdownTimer)</visible>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
-				<control type="button" id="3112">
+				<control type="button" id="3113">
 					<description>Cancel Shutdown Timer</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[31459]</label>
 					<onclick>CancelAlarm(ShutdownTimer)</onclick>
 					<visible>System.HasAlarm(ShutdownTimer)</visible>
 				</control>
-				<control type="button" id="3113">
+				<control type="button" id="3114">
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[13011]</label>
 					<onclick>Suspend()</onclick>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
-				<control type="button" id="3114">
+				<control type="button" id="3115">
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[13010]</label>
 					<onclick>Hibernate()</onclick>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
-				<control type="button" id="3115">
+				<control type="button" id="3116">
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[13013]</label>
 					<onclick>Reboot()</onclick>
 					<visible>System.CanReboot</visible>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
-				<control type="button" id="3116">
+				<control type="button" id="3117">
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[13005]</label>
 					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 				</control>
-				<control type="button" id="3117">
+				<control type="button" id="3118">
 					<description>LogOff</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[20126]</label>
@@ -90,14 +96,14 @@
 					<onclick>System.LogOff</onclick>
 					<visible>System.HasLoginScreen</visible>
 				</control>
-				<control type="button" id="3118">
+				<control type="button" id="3119">
 					<description>Reload Skin</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[20183]</label>
 					<onclick>ReloadSkin()</onclick>
 					<visible>Skin.HasSetting(DebugMode)</visible>
 				</control>
-				<control type="button" id="3119">
+				<control type="button" id="3120">
 					<description>Quit</description>
 					<include>SettingsShutdownMenu</include>
 					<label>$LOCALIZE[13012]</label>
