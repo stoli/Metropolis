@@ -34,6 +34,7 @@
 - More localization.
 - French translation updated.
 - Spanish translation updated.
+- Korean translation updated.
 
 1.1.0 - 20120423
 - Fix slideshows for pictures.
