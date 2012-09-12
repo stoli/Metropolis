@@ -281,7 +281,7 @@
 				<posy>517</posy>
 				<width>30</width>
 				<height>30</height>
-				<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
+				<texture>$VAR[Weather_Icons_Current]</texture>
 			</control>
 			<control type="label">
 				<description>Temperature</description>

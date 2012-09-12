@@ -1737,7 +1737,7 @@
 					<posy>350</posy>
 					<width>193</width>
 					<height>80</height>
-					<texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</texture>
+					<texture>$VAR[Weather_Icons_Current]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<fadetime>200</fadetime>
 				</control>
