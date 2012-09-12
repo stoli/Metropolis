@@ -945,7 +945,19 @@
 					</control>
 					<control type="radiobutton" id="1563">
 						<include>SettingsLabel</include>
+						<label>  - $LOCALIZE[31289]</label>
+						<onclick>Skin.Reset(HomeVideos_Playlists)</onclick>
+						<onclick>Skin.Reset(HomeVideos_Playlist)</onclick>
+						<onclick>Skin.Reset(HomeVideos_Addons)</onclick>
+						<onclick>Skin.Reset(HomeVideos_Addon)</onclick>
+						<onclick>Skin.ToggleSetting(HomeVideos_Files)</onclick>
+						<selected>Skin.HasSetting(HomeVideos_Files)</selected>
+						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override)</visible>
+					</control>
+					<control type="radiobutton" id="1564">
+						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[136]</label>
+						<onclick>Skin.Reset(HomeVideos_Files)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addons)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addon)</onclick>
@@ -953,20 +965,22 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlists)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override)</visible>
 					</control>
-					<control type="button" id="1564">
+					<control type="button" id="1565">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[559]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist)]</label2>
+						<onclick>Skin.Reset(HomeVideos_Files)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlists)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addons)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addon)</onclick>
 						<onclick>Skin.SetFile(HomeVideos_Playlist,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1565">
+					<control type="radiobutton" id="1566">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[24001]</label>
+						<onclick>Skin.Reset(HomeVideos_Files)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlists)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addon)</onclick>
@@ -974,25 +988,26 @@
 						<selected>Skin.HasSetting(HomeVideos_Addons)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override)</visible>
 					</control>
-					<control type="button" id="1566">
+					<control type="button" id="1567">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeVideos_Addon))]</label2>
+						<onclick>Skin.Reset(HomeVideos_Files)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlists)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeVideos_Addons)</onclick>
 						<onclick>Skin.SetAddon(HomeVideos_Addon,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1567">
+					<control type="radiobutton" id="1568">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
 						<onclick>Skin.ToggleSetting(HomeVideos_Shortcuts)</onclick>
 						<selected>Skin.HasSetting(HomeVideos_Shortcuts)</selected>
 						<visible>!Skin.HasSetting(NoVideos)</visible>
 					</control>
-					<control type="radiobutton" id="1568">
+					<control type="radiobutton" id="1569">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.Reset(HomeVideos_Addon1)</onclick>
@@ -1002,7 +1017,7 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite1_Path)) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1569">
+					<control type="button" id="1570">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1010,14 +1025,14 @@
 						<onclick>Skin.SetFile(HomeVideos_Playlist1_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist1) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1570">
+					<control type="button" id="1571">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist1) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1571">
+					<control type="button" id="1572">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 1</label>
@@ -1031,7 +1046,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + !Skin.HasSetting(HomeVideos_Playlist1) + IsEmpty(Skin.String(HomeVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1572">
+					<control type="button" id="1573">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 1</label>
@@ -1042,7 +1057,7 @@
 						<onclick>Skin.SetAddon(HomeVideos_Addon1,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + !Skin.HasSetting(HomeVideos_Playlist1) + IsEmpty(Skin.String(HomeVideos_Favourite1_Path))</visible>
 					</control>
-					<control type="radiobutton" id="1573">
+					<control type="radiobutton" id="1574">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.Reset(HomeVideos_Addon2)</onclick>
@@ -1052,7 +1067,7 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite2_Path)) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1574">
+					<control type="button" id="1575">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1060,14 +1075,14 @@
 						<onclick>Skin.SetFile(HomeVideos_Playlist2_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist2) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1575">
+					<control type="button" id="1576">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist2) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1576">
+					<control type="button" id="1577">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 2</label>
@@ -1081,7 +1096,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + !Skin.HasSetting(HomeVideos_Playlist2) + IsEmpty(Skin.String(HomeVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1577">
+					<control type="button" id="1578">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 2</label>
@@ -1092,7 +1107,7 @@
 						<onclick>Skin.SetAddon(HomeVideos_Addon2,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + !Skin.HasSetting(HomeVideos_Playlist2) + IsEmpty(Skin.String(HomeVideos_Favourite2_Path))</visible>
 					</control>
-					<control type="radiobutton" id="1578">
+					<control type="radiobutton" id="1579">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.Reset(HomeVideos_Addon3)</onclick>
@@ -1102,7 +1117,7 @@
 						<selected>Skin.HasSetting(HomeVideos_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + IsEmpty(Skin.String(HomeVideos_Favourite3_Path)) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1579">
+					<control type="button" id="1580">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1110,14 +1125,14 @@
 						<onclick>Skin.SetFile(HomeVideos_Playlist3_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist3) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1580">
+					<control type="button" id="1581">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeVideos_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeVideos_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist3) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1581">
+					<control type="button" id="1582">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 3</label>
@@ -1131,7 +1146,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Shortcuts) + !Skin.HasSetting(HomeVideos_Playlist3) + IsEmpty(Skin.String(HomeVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1582">
+					<control type="button" id="1583">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 3</label>
