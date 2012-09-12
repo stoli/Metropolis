@@ -288,88 +288,88 @@
 				<onright>31</onright>
 				<onup>10</onup>
 				<ondown>10</ondown>
-				<rulerlayout height="50" width="50">
+				<rulerlayout height="42" width="220">
 					<control type="label" id="2">
-						<posx>10</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>40</width>
-						<height>45</height>
+						<width>200</width>
+						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</rulerlayout>
-				<channellayout height="52" width="220">
+				<channellayout height="42" width="220">
 					<control type="image">
-						<posx>7</posx>
+						<posx>5</posx>
 						<posy>5</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label" id="1">
-						<posx>60</posx>
+						<posx>50</posx>
 						<posy>0</posy>
-						<width>160</width>
-						<height>52</height>
+						<width>155</width>
+						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>LiveTVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</channellayout>
-				<focusedchannellayout height="52" width="220">
+				<focusedchannellayout height="42" width="220">
 					<description>Channel focus selection</description>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>210</width>
-						<height>52</height>
+						<height>40</height>
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="image">
-						<posx>7</posx>
+						<posx>5</posx>
 						<posy>5</posy>
-						<width>40</width>
-						<height>40</height>
+						<width>32</width>
+						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label" id="1">
-						<posx>60</posx>
+						<posx>50</posx>
 						<posy>0</posy>
-						<width>160</width>
-						<height>52</height>
+						<width>155</width>
+						<height>40</height>
 						<aligny>center</aligny>
 						<align>left</align>
 						<include>LiveTVLabel</include>
 						<info>ListItem.ChannelName</info>
 					</control>
 				</focusedchannellayout>
-				<itemlayout height="52" width="40">
+				<itemlayout height="42" width="40">
 					<control type="label" id="1">
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>20</width>
-						<height>52</height>
+						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>LiveTVLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="52" width="40">
+				<focusedlayout height="42" width="40">
 					<description>Focus selection</description>
 					<control type="image" id="14">
 						<width>40</width>
-						<height>52</height>
+						<height>40</height>
 						<texture>ButtonFo.png</texture>
 					</control>
 					<control type="label" id="1">
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>20</width>
-						<height>52</height>
+						<height>40</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<align>left</align>

@@ -308,9 +308,9 @@
 	<string id="31430">Affiche Large</string>
 	<string id="31431">Cliquer pour Revenir aux Paramètres par Défaut de Metropolis</string>
 	<string id="31432">Chemin de la Médiathèque Musique</string>
-	<string id="31433">Visualisation: Utiliser le Fanart</string>
-	<string id="31434">Options Visualisation Musique</string>
-	<string id="31435">Visualisation: Utiliser le Diaporama Artiste</string>
+	<string id="31433">Visualisation - Fond d'Écran : Fanart</string>
+	<string id="31434">Visualisation - Fond d'Écran : Extra Fanart</string>
+	<string id="31435">Visualisation - Fond d'Écran : Diaporama Artiste</string>
 	<string id="31436">Utiliser la Barre de Recherche Réduite pour les Vidéos</string>
 	<string id="31437">Activer le script TV Tunes</string>
 	<string id="31438">Récent</string>
@@ -342,5 +342,6 @@
 	<string id="31605">Ajouter Groupe</string>
 	<string id="31606">Renommer Groupe</string>
 	<string id="31607">Supprimer Groupe</string>  
+	<string id="31608">Chaînes cachées</string>
 	<string id="31610">Temps programmé</string>
 </strings>
