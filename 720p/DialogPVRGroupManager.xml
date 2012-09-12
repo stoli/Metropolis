@@ -11,31 +11,31 @@
 		</control>
 		<include>Global_Background</include>
 
-    		<!-- TV Channels Groups list -->
+		<!-- TV Channels Groups list -->
 		<control type="group">
 			<posx>290</posx>
-			<posy>55</posy>
+			<posy>70</posy>
 			<control type="label">
 				<description>Group Name</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1080</width>
-				<height>70</height>
+				<width>240</width>
+				<height>38</height>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[19207]</label>
 			</control>
 			<control type="list" id="13">
 				<posx>5</posx>
-				<posy>66</posy>
-				<width>330</width>
+				<posy>50</posy>
+				<width>240</width>
 				<height>400</height>
 				<scrolltime>0</scrolltime>
 				<onleft>29</onleft>
 				<onright>73</onright>
 				<itemlayout height="38">
 					<control type="label">
-						<posx>18</posx>
-						<width>200</width>
+						<posx>5</posx>
+						<width>235</width>
 						<height>38</height>
 						<aligny>center</aligny>
 						<include>SettingsLabel</include>
@@ -52,19 +52,19 @@
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(13)">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>18</posx>
-						<width>200</width>
+						<posx>5</posx>
+						<width>235</width>
 						<height>38</height>
 						<aligny>center</aligny>
 						<include>SettingsLabel</include>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
-			</control>          
-          
- 			<control type="scrollbar" id="73">
+			</control>
+
+			<control type="scrollbar" id="73">
 				<posx>250</posx>
-				<posy>54</posy>
+				<posy>40</posy>
 				<width>25</width>
 				<height>422</height>
 				<onleft>13</onleft>
@@ -73,43 +73,43 @@
 				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-  		</control>
- 		</control>
+			</control>
+		</control>
 
-		<!-- Unused TV Channels list -->
+		<!-- Hidden TV Channels list -->
 		<control type="group">
 			<description>Channels List</description>
 			<posx>580</posx>
-			<posy>55</posy>
+			<posy>70</posy>
 			<control type="label">
-				<description>TV Channel Name</description>
+				<description>Hidden TV Channel Label</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>340</width>
-				<height>70</height>
+				<width>300</width>
+				<height>38</height>
 				<include>SettingsLabel</include>
-				<label></label>
+				<label>$LOCALIZE[31608] :</label>
 			</control>
 			<control type="list" id="11">
 				<posx>5</posx>
-				<posy>66</posy>
-				<width>330</width>
+				<posy>50</posy>
+				<width>300</width>
 				<height>400</height>
 				<onleft>73</onleft>
 				<onright>71</onright>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="image">
-						<posx>18</posx>
+						<posx>10</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>45</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>250</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -127,16 +127,16 @@
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(11)">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>18</posx>
+						<posx>10</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>45</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>250</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -147,7 +147,7 @@
 			</control>
 			<control type="scrollbar" id="71">
 				<posx>310</posx>
-				<posy>54</posy>
+				<posy>40</posy>
 				<width>25</width>
 				<height>422</height>
 				<onleft>11</onleft>
@@ -163,7 +163,7 @@
  		<control type="group">
 			<description>TV Channels list for current group</description>
 			<posx>925</posx>
-			<posy>55</posy>
+			<posy>70</posy>
 			<control type="label" id="20">
 				<description>Hidden Label used to store current group name</description>
 				<visible>false</visible>
@@ -172,31 +172,31 @@
 				<description>TV Channel Name</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>340</width>
-				<height>70</height>
+				<width>300</width>
+				<height>38</height>
 				<include>SettingsLabel</include>
 				<label>$INFO[Control.GetLabel(20),, :]</label>
 			</control>
 			<control type="list" id="12">
 				<posx>5</posx>
-				<posy>66</posy>
-				<width>330</width>
+				<posy>50</posy>
+				<width>300</width>
 				<height>400</height>
 				<onleft>71</onleft>
 				<onright>72</onright>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="image">
-						<posx>18</posx>
+						<posx>10</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>45</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>250</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -214,16 +214,16 @@
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(12)">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>18</posx>
+						<posx>10</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>45</posx>
 						<posy>0</posy>
-						<width>270</width>
+						<width>250</width>
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -234,7 +234,7 @@
 			</control>
 			<control type="scrollbar" id="72">
 				<posx>310</posx>
-				<posy>54</posy>
+				<posy>40</posy>
 				<width>25</width>
 				<height>422</height>
 				<onleft>12</onleft>
@@ -249,8 +249,8 @@
 		<!-- Menu group -->
 		<control type="grouplist">
 			<posx>-110</posx>
-			<posy>180</posy>
-			<itemgap>20</itemgap>
+			<posy>186</posy>
+			<itemgap>12</itemgap>
 			<orientation>vertical</orientation>
 			<onleft>72</onleft>
 			<onright>13</onright>

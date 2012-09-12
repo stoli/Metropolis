@@ -201,6 +201,7 @@
 	<string id="31601">Live TV</string>
 	<string id="31605">Add Group</string>
 	<string id="31606">Rename Group</string>
-	<string id="31607">Delete Group</string>   
+	<string id="31607">Delete Group</string>
+	<string id="31608">Hidden Channels</string>
 	<string id="31610">Scheduled Time</string>
 </strings>
