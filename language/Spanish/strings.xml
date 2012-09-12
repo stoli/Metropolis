@@ -85,6 +85,7 @@
 	<string id="31331">Objetos de Inicio</string>
 	<string id="31334">Trailers</string>
 	<string id="31336">Bloquear Cambio de vistas (Modo Kiosco)</string>
+	<string id="31337">Deshabilitar elementos destructivos de Apagado</string>
 	<string id="31341">Ver información de su ordenador, tales como gráficos de red, hardware y espacio en discos</string>
 	<string id="31342">Crear y modificar varios perfiles de usuarios en XBMC para que cada miembro de su familia tenga su propia biblioteca</string>
 	<string id="31343">Las películas de acción por lo general incluyen mucha energía, de gran presupuesto en acrobacias físicas y persecuciones, posiblemente con rescates, batallas, luchas, fugas, crisis destructivas (inundaciones, explosiones, catástrofes naturales, incendios, etc.), la acción no para, con mucho ritmo, aventureros, en diferentes dimensiones 'el buenos de la película' heroes (o recientemente, heroinas) luchando 'con los chicos malos' - todo diseñado para dar espectáculo.</string>
@@ -168,7 +169,9 @@
 	<string id="31429">Mostrar en Información Ruta del Video en lugar de Clasificación</string>
 	<string id="31430">Poster Amplio</string>
 	<string id="31431">Clic para restablecer los valores predeterminados de Metrópolis</string>
-	<string id="31435">Visualización: Usar Artist Slideshow</string>
+	<string id="31433">Visualización: Fanart</string>
+	<string id="31434">Visualización: Extra Fanart</string>
+	<string id="31435">Visualización: Artista Slideshow</string>
 	<string id="31436">Usar Seekbar más estrecha</string>
 	<string id="31437">Activar script TV Tunes</string>
 	<string id="31438">Recientes</string>
@@ -190,6 +193,8 @@
 	<string id="31455">Visualización: Ocultar Reloj y Temperatura en Información</string>
 	<string id="31456">- Anular enlace predeterminado</string>
 	<string id="31457">Enlaces</string>
+	<string id="31458">Ajustar Temporizador</string>
+	<string id="31459">Cancelar Temporizador</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Activar soporte de TV en Vivo (PVR)</string>
