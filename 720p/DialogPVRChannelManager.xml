@@ -1,5 +1,6 @@
 <window id="605">
 	<defaultcontrol always="true">4</defaultcontrol>
+
 	<controls>
 		<!-- This hack is trying to clear the screen in-between each instance of the window -->
 		<control type="image">
@@ -10,7 +11,7 @@
 			<texture background="true">black.png</texture>
 		</control>
 		<include>Global_Background</include>
-    
+
 		<!-- Channel information -->
 		<control type="group">
 			<posx>870</posx>
@@ -97,7 +98,7 @@
 			</control>
 		</control>
 
-    		<!-- Action Buttons group -->
+		<!-- Action Buttons group -->
 		<control type="group">
 			<posx>870</posx>
 			<posy>340</posy>
@@ -115,7 +116,7 @@
 				<ondown>34</ondown>
 			</control>
 			<control type="button" id ="34">
-				<description>TV/Radio Button</description>
+				<description>Radio Switch Button</description>
 				<posx>0</posx>
 				<posy>35</posy>
 				<width>380</width>
@@ -128,7 +129,21 @@
 				<onup>30</onup>
 				<ondown>31</ondown>
 			</control>
- 			<control type="button" id ="31">
+			<control type="button" id ="34">
+				<description>TV Channel Switch Button</description>
+				<posx>0</posx>
+				<posy>35</posy>
+				<width>380</width>
+				<height>35</height>
+				<include>SettingsLabel</include>
+				<label>$LOCALIZE[19023]</label>
+				<visible>!IsEmpty(Window.Property(IsRadio))</visible>
+				<onleft>60</onleft>
+				<onright>4</onright>
+				<onup>30</onup>
+				<ondown>31</ondown>
+			</control> 
+			<control type="button" id ="31">
 				<description>Edit Channel Button</description>
 				<posx>0</posx>
 				<posy>70</posy>
@@ -138,7 +153,7 @@
 				<label>$LOCALIZE[19203]</label>
 				<onleft>60</onleft>
 				<onright>4</onright>
-				<onup>30</onup>
+				<onup>34</onup>
 				<ondown>32</ondown>
 			</control>
 			<control type="button" id ="32">
@@ -168,7 +183,7 @@
 				<ondown>7</ondown>
 			</control>
 		</control>
-    
+
 		<!-- TV Channel list-->
 		<control type="group">
 			<posx>450</posx>
@@ -184,17 +199,17 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="image">
-						<posx>18</posx>
+						<posx>15</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<info>ListItem.Property(Icon)</info>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>50</posx>
 						<posy>0</posy>
-						<width>270</width>
-						<height>35</height>
+						<width>290</width>
+						<height>38</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>SettingsLabel</include>
@@ -211,17 +226,17 @@
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>18</posx>
+						<posx>15</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>32</height>
 						<info>ListItem.Property(Icon)</info>
 					</control>
 					<control type="label">
-						<posx>60</posx>
+						<posx>50</posx>
 						<posy>0</posy>
-						<width>270</width>
-						<height>35</height>
+						<width>290</width>
+						<height>38</height>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>SettingsLabel</include>
@@ -229,7 +244,7 @@
 					</control>
 				</focusedlayout>
 			</control>
- 
+
 			<control type="scrollbar" id="60">
 				<posx>364</posx>
 				<posy>0</posy>
@@ -243,12 +258,12 @@
 				<orientation>vertical</orientation>
 			</control>    
 		</control>
-    
+
 		<!-- Default Menu -->
 		<control type="grouplist">
 			<posx>0</posx>
-			<posy>220</posy>
-			<itemgap>20</itemgap>
+			<posy>236</posy>
+			<itemgap>12</itemgap>
 			<orientation>vertical</orientation>
 			<onleft>7</onleft>
 			<onright>20</onright>
@@ -268,7 +283,7 @@
 				<label>$LOCALIZE[222]</label>
 			</control>
 		</control>
-   
+
 		<!-- Header group --> 
 		<control type="group">
 			<posx>30</posx>

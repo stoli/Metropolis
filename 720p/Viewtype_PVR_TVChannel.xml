@@ -76,7 +76,8 @@
 							<posy>4</posy>
 							<width>435</width>
 							<height>62</height>
-							<texture>ButtonFo.png</texture>
+							<texture>FocusLine.png</texture>
+							<colordiffuse>FocusBar</colordiffuse>
 						</control>
 						<control type="label">
 							<description>Channel number label</description>
@@ -216,6 +217,7 @@
 					<aligny>center</aligny>
 					<include>LiveTVLabel</include>
 					<label>$LOCALIZE[19031] : $INFO[ListItem.NextTitle]</label>
+					<visible>!IsEmpty(ListItem.NextTitle)</visible>
 				</control>
 
 			</control>
