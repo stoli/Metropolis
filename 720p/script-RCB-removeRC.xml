@@ -1,0 +1,207 @@
+<window id="5400">
+	<defaultcontrol>5411</defaultcontrol>
+	<controls>
+		<include>Global_Background</include>
+		<control type="group">
+			<posx>420</posx>
+			<posy>115</posy>
+		
+			<!-- Rom Collection List -->
+			<control type="list" id="5410">
+				<hitrect x="0" y="0" w="0" h="0" />
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>836</width>
+				<height>34</height>
+				<onleft>5410</onleft>
+				<onright>5410</onright>
+				<onup>5410</onup>
+				<ondown>5410</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>0</scrolltime>
+				<itemlayout height="1" width="750">
+				</itemlayout>
+				<focusedlayout height="34" width="836">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>34</height>
+						<width>836</width>
+						<texture>ButtonFo.png</texture>
+						<visible>Control.HasFocus(5411) | Control.HasFocus(5412)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>34</height>
+						<include>SettingsLabel</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Rom Collection</label>
+					</control>
+					<control type="label">
+						<posx>700</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>34</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button" id="5411">
+				<description>Menu Item Next Button</description>
+				<posx>750</posx>
+				<posy>0</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowDownNF.png</texturenofocus>
+				<texturefocus>ArrowDownFo.png</texturefocus>
+				<onclick>Control.Move(5410,1)</onclick>
+				<onleft>6000</onleft>
+				<onright>5412</onright>
+				<onup>5491</onup>
+				<ondown>5491</ondown>
+			</control>
+			<control type="button" id="5412">
+				<description>Menu Item Prev Button</description>
+				<posx>784</posx>
+				<posy>0</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowUpNF.png</texturenofocus>
+				<texturefocus>ArrowUpFo.png</texturefocus>
+				<onclick>Control.Move(5410,-1)</onclick>
+				<onleft>5411</onleft>
+				<onright>6000</onright>
+				<onup>5492</onup>
+				<ondown>5492</ondown>
+			</control>
+		
+			<!-- Delete Options -->
+			<control type="list" id="5490">
+				<hitrect x="0" y="0" w="0" h="0" />
+				<posx>0</posx>
+				<posy>36</posy>
+				<width>836</width>
+				<height>34</height>
+				<onleft>5490</onleft>
+				<onright>5490</onright>
+				<onup>5490</onup>
+				<ondown>5490</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>0</scrolltime>
+				<itemlayout height="1" width="750">
+				</itemlayout>
+				<focusedlayout height="34" width="836">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>34</height>
+						<width>836</width>
+						<texture>ButtonFo.png</texture>
+						<visible>Control.HasFocus(5491) | Control.HasFocus(5492)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>34</height>
+						<include>SettingsLabel</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Removal Option</label>
+					</control>
+					<control type="label">
+						<posx>700</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>34</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button" id="5491">
+				<description>Menu Item Next Button</description>
+				<posx>750</posx>
+				<posy>36</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowDownNF.png</texturenofocus>
+				<texturefocus>ArrowDownFO.png</texturefocus>
+				<onclick>Control.Move(5490,1)</onclick>
+				<onleft>6000</onleft>
+				<onright>5492</onright>
+				<onup>5411</onup>
+				<ondown>5411</ondown>
+			</control>
+			<control type="button" id="5492">
+				<description>Menu Item Prev Button</description>
+				<posx>784</posx>
+				<posy>36</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowUpNF.png</texturenofocus>
+				<texturefocus>ArrowUpFO.png</texturefocus>
+				<onclick>Control.Move(5490,-1)</onclick>
+				<onleft>5491</onleft>
+				<onright>6000</onright>
+				<onup>5412</onup>
+				<ondown>5412</ondown>
+			</control>
+		</control>
+			
+		<!-- Menu group -->
+		<control type="grouplist" id="9000">
+			<posx>0</posx>
+			<posy>200</posy>
+			<itemgap>20</itemgap>
+			<orientation>vertical</orientation>
+			<onleft>5411</onleft>
+			<onright>5411</onright>
+			<control type="button" id="6000">
+				<description>Delete Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Delete</label>
+			</control>
+			<control type="button" id="6010">
+				<description>Cancel Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Cancel</label>
+			</control>
+		</control>
+
+		<!-- Header group --> 
+		<control type="group">
+			<posx>30</posx>
+			<posy>10</posy>
+			<include>Animation_SlideDownFadeOut</include>
+			<control type="label">
+				<label>Rom Collection Browser</label>
+				<include>Global_HeadingSectionVars</include>
+			</control>
+			<control type="label">
+				<label>Delete Rom Collection</label>
+				<include>Global_HeadingDetailVars</include>
+			</control>
+		</control>
+
+		<!-- Time, weather and debug options -->
+		<include>Global_Weather</include>
+ 		<include>Global_Time</include>
+		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
+	</controls>
+</window>
