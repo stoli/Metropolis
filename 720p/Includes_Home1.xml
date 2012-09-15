@@ -106,7 +106,7 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<visible>!Skin.HasSetting(HideHelpText)</visible>
-			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | [Container(9000).HasFocus(6) + [Skin.HasSetting(HomePictures_Override) | Skin.HasSetting(HomePictures_Shortcuts)]] | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(15) | Container(9000).HasFocus(16)]</visible>
+			<visible>!ControlGroup(9001).HasFocus() + ![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003) | Control.HasFocus(8004)] + [Container(9000).HasFocus(1) | Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(4) | Container(9000).HasFocus(5) | [Container(9000).HasFocus(6) + [Skin.HasSetting(HomePictures_Override) | Skin.HasSetting(HomePictures_Shortcuts)]] | [Container(9000).HasFocus(17) + Skin.HasSetting(HomeGames_Shortcuts)] | Container(9000).HasFocus(8) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(10) + Skin.HasSetting(HomeFavourites_Shortcuts)] | Container(9000).HasFocus(11) | Container(9000).HasFocus(15) | Container(9000).HasFocus(16)]</visible>
 			<control type="image">
 				<posx>190</posx>
 				<posy>475</posy>
@@ -651,6 +651,14 @@
 					<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 					<onclick>RunAddon($INFO[Skin.String(HomePictures_Addon)])</onclick>
 					<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Override) + !IsEmpty(Skin.String(HomePictures_Addon))</visible>
+				</item>
+				<item id="17">
+					<description>Games</description>
+					<label>$LOCALIZE[31460]</label>
+					<icon>special://skin/extras/home1/games.jpg</icon>
+					<thumb>$INFO[Skin.String(CustomGames)]</thumb>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames)])</onclick>
+					<visible>!Skin.HasSetting(NoGames) + !IsEmpty(Skin.String(HomeGames))</visible>
 				</item>
 				<item id="1">
 					<description>Add-ons</description>
@@ -1413,6 +1421,43 @@
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>Skin.HasSetting(HomePictures_Override)</visible>
+				</control>
+			</control>
+			<!-- Games Submenu -->
+			<control type="grouplist" id="9023">
+				<include>Submenu_VerticalDetails</include>
+				<onup>9023</onup>
+				<ondown>9023</ondown>
+				<visible>Container(9000).HasFocus(17)</visible>
+				<control type="button" id="92301">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames_Addon1)])</onclick>
+					<visible>Skin.HasSetting(HomeGames_Shortcuts) + !IsEmpty(Skin.String(HomeGames_Addon1))</visible>
+				</control>
+				<control type="button" id="92302">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames_Addon2)])</onclick>
+					<visible>Skin.HasSetting(HomeGames_Shortcuts) + !IsEmpty(Skin.String(HomeGames_Addon2))</visible>
+				</control>
+				<control type="button" id="92303">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames_Addon3)])</onclick>
+					<visible>Skin.HasSetting(HomeGames_Shortcuts) + !IsEmpty(Skin.String(HomeGames_Addon3))</visible>
+				</control>
+				<control type="button" id="92304">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon4))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames_Addon4)])</onclick>
+					<visible>Skin.HasSetting(HomeGames_Shortcuts) + !IsEmpty(Skin.String(HomeGames_Addon4))</visible>
+				</control>
+				<control type="button" id="92305">
+					<include>Submenu_Button</include>
+					<label>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon5))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeGames_Addon5)])</onclick>
+					<visible>Skin.HasSetting(HomeGames_Shortcuts) + !IsEmpty(Skin.String(HomeGames_Addon5))</visible>
 				</control>
 			</control>
 			<!-- Programs/Addons Submenu -->

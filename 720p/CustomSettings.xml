@@ -1922,6 +1922,69 @@
 						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite3_Path))</visible>
 					</control>
 
+					<!-- Games item (1861-1890) -->
+					<control type="radiobutton" id="1861">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] $LOCALIZE[31460]</label>
+						<onclick>Skin.ToggleSetting(NoGames)</onclick>
+						<selected>Skin.HasSetting(NoGames)</selected>
+					</control>
+					<control type="button" id="1862">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[24000]</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames))]</label2>
+						<onclick>Skin.SetAddon(HomeGames,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames)</visible>
+					</control>
+					<control type="radiobutton" id="1863">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeGames_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeGames_Shortcuts)</selected>
+						<visible>!Skin.HasSetting(NoGames)</visible>
+					</control>
+					<control type="button" id="1864">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomeGames_Addon1,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1865">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomeGames_Addon2,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1866">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomeGames_Addon3,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1867">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomeGames_Addon4,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+					</control>
+					<control type="button" id="1868">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomeGames_Addon5,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+					</control>
+
 					<!-- Addons item (1711-1740) -->
 					<control type="radiobutton" id="1711">
 						<font>METF_Menu</font>
@@ -2511,12 +2574,6 @@
 								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 								<visible>Skin.HasSetting(LiveTV)</visible>
 							</item>
-							<item id="5">
-								<label>1</label>
-								<onclick>-</onclick>
-								<icon>home/pictures.jpg</icon>
-								<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
-							</item>
 							<item id="3">
 								<label>2</label>
 								<onclick>-</onclick>
@@ -2528,6 +2585,18 @@
 								<onclick>-</onclick>
 								<icon>home/musicvideos.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomMusicVideos)]</thumb>
+							</item>
+							<item id="5">
+								<label>1</label>
+								<onclick>-</onclick>
+								<icon>home/pictures.jpg</icon>
+								<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+							</item>
+							<item id="17">
+								<label>31460</label>
+								<onclick>-</onclick>
+								<icon>home/games.jpg</icon>
+								<thumb>$INFO[Skin.String(CustomGames)]</thumb>
 							</item>
 							<item id="13">
 								<label>31334</label>
@@ -3039,6 +3108,66 @@
 								<aligny>center</aligny>
 								<texturefocus>ButtonFo.png</texturefocus>
 								<onclick>Skin.Reset(CustomPictures)</onclick>
+								<onleft>301</onleft>
+								<onright>300</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9003).HasFocus(17)</visible>
+							<control type="button" id="300">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>31275</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.SetPath(CustomGames)</onclick>
+								<onleft>302</onleft>
+								<onright>301</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="301">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>31284</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.SetImage(CustomGames)</onclick>
+								<onleft>300</onleft>
+								<onright>302</onright>
+								<onup>304</onup>
+								<ondown>304</ondown>
+							</control>
+							<control type="button" id="302">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>38</height>
+								<label>192</label>
+								<font>METF_ContextValue</font>
+								<textcolor>SettingsDetail</textcolor>
+								<focusedcolor>ButtonText</focusedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<texturefocus>ButtonFo.png</texturefocus>
+								<onclick>Skin.Reset(CustomGames)</onclick>
 								<onleft>301</onleft>
 								<onright>300</onright>
 								<onup>304</onup>
