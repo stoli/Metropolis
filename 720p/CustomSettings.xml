@@ -1921,6 +1921,52 @@
 						<onclick>Skin.SetAddon(HomePictures_Addon3,xbmc.addon.image)</onclick>
 						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite3_Path))</visible>
 					</control>
+					<control type="button" id="1692">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomePictures_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Addon4)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Addon4))</visible>
+					</control>
+					<control type="button" id="1693">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon4))]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite4_Path)</onclick>
+						<onclick>Skin.SetAddon(HomePictures_Addon4,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite4_Path))</visible>
+					</control>
+					<control type="button" id="1694">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomePictures_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomePictures_Addon5)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomePictures_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomePictures_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Addon5))</visible>
+					</control>
+					<control type="button" id="1695">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomePictures_Addon5))]</label2>
+						<onclick>Skin.Reset(HomePictures_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomePictures_Favourite5_Path)</onclick>
+						<onclick>Skin.SetAddon(HomePictures_Addon5,xbmc.addon.image)</onclick>
+						<visible>!Skin.HasSetting(NoPictures) + Skin.HasSetting(HomePictures_Shortcuts) + IsEmpty(Skin.String(HomePictures_Favourite5_Path))</visible>
+					</control>
 
 					<!-- Games item (1861-1890) -->
 					<control type="radiobutton" id="1861">
