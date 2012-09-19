@@ -196,6 +196,9 @@
 	<string id="31458">Set Timer</string>
 	<string id="31459">Cancel Timer</string>
 	<string id="31460">Games</string>
+	<string id="31461">Games Tall</string>
+	<string id="31462">Games Square</string>
+	<string id="31463">Games Wide</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>

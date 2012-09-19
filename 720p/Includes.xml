@@ -8,32 +8,35 @@
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_MediaFlags2.xml" />
 	<include file="Includes_Animations.xml" />
-	<include file="Viewtype_Banner.xml" />
-	<include file="Viewtype_BannerPoster.xml" />
-	<include file="Viewtype_Coverflow.xml" />
-	<include file="Viewtype_Fanart.xml" />
-	<include file="Viewtype_FanartBanner.xml" />
-	<include file="Viewtype_FanartList.xml" />
-	<include file="Viewtype_Files.xml" /> <!-- 55 -->
-	<include file="Viewtype_Gallery.xml" />
-	<include file="Viewtype_Gallery_Fanart.xml" />
-	<include file="Viewtype_Gallery_Square.xml" />
-	<include file="Viewtype_Landscape.xml" />
-	<include file="Viewtype_List.xml" /> <!-- 503 -->
-	<include file="Viewtype_Logo.xml" />
-	<include file="Viewtype_LowList.xml" /> <!-- 905 -->
-	<include file="Viewtype_PictureGrid.xml" />
-	<include file="Viewtype_Poster_Fixed.xml" />
-	<include file="Viewtype_Poster_Wrap.xml" />
-	<include file="Viewtype_TallGenre.xml" />
-	<include file="Viewtype_PosterAndFanart.xml" />
-	<include file="Viewtype_Poster_Large.xml" />
-	<include file="Viewtype_Panel_Square.xml" /> <!-- 559 -->
+	<include file="Viewtype_Banner.xml" />			<!-- 511 -->
+	<include file="Viewtype_BannerPoster.xml" />		<!-- 510 -->
+	<include file="Viewtype_Coverflow.xml" />		<!-- 512 -->
+	<include file="Viewtype_Fanart.xml" />			<!-- 504 -->
+	<include file="Viewtype_FanartBanner.xml" />		<!-- 508 -->
+	<include file="Viewtype_FanartList.xml" />		<!-- 509 -->
+	<include file="Viewtype_Files.xml" />			<!-- 55  -->
+	<include file="Viewtype_Gallery.xml" />			<!-- 54  -->
+	<include file="Viewtype_Gallery_Fanart.xml" />		<!-- 59  -->
+	<include file="Viewtype_Gallery_Square.xml" />		<!-- 58  -->
+	<include file="Viewtype_Games_Tall.xml" />		<!-- 950 -->
+	<include file="Viewtype_Games_Square.xml" />		<!-- 951 -->
+	<include file="Viewtype_Games_Wide.xml" />		<!-- 952 -->
+	<include file="Viewtype_Landscape.xml" />		<!-- 52  -->
+	<include file="Viewtype_List.xml" />			<!-- 503 -->
+	<include file="Viewtype_Logo.xml" />			<!-- 56  -->
+	<include file="Viewtype_LowList.xml" />			<!-- 905 -->
 	<include file="Viewtype_PVR_TVChannel.xml" />
 	<include file="Viewtype_PVR_EPG.xml" />
 	<include file="Viewtype_PVR_Timers.xml" />
 	<include file="Viewtype_PVR_Recordings.xml" />
 	<include file="Viewtype_PVR_EPGSearch.xml" />
+	<include file="Viewtype_Panel_Square.xml" />		<!-- 559 -->
+	<include file="Viewtype_PictureGrid.xml" />		<!-- 500 -->
+	<include file="Viewtype_PosterAndFanart.xml" />		<!-- 550 -->
+	<include file="Viewtype_Poster_Fixed.xml" />		<!-- 53  -->
+	<include file="Viewtype_Poster_Large.xml" />		<!-- 551 -->
+	<include file="Viewtype_Poster_Wrap.xml" />		<!-- 57  -->
+	<include file="Viewtype_TallGenre.xml" />		<!-- 501 -->
 
 	<!-- Global dimensions -->
 	<include name="Dimensions_Fullscreen">
@@ -491,7 +494,7 @@
 	<!-- Addon Description -->
 	<include name="Global_AddonInfo">
 		<control type="group">
-			<visible>Container.Content(Addons)</visible>
+			<visible>Container.Content(Addons) | SubString(Container.FolderPath,advanced.launcher)</visible>
 			<include>PlotBox</include>
 		</control>
 	</include>

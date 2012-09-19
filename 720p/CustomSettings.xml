@@ -2489,6 +2489,15 @@
 						<onclick>Skin.ToggleSetting(NoViewTallGenre)</onclick>
 						<selected>Skin.HasSetting(NoViewTallGenre)</selected>
 					</control>
+					<!-- View 950 -->
+					<control type="radiobutton" id="621">
+						<description>Games</description>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] $LOCALIZE[31460]</label>
+						<onclick>Skin.ToggleSetting(NoViewGames)</onclick>
+						<selected>Skin.HasSetting(NoViewGames)</selected>
+						<visible>System.HasAddon(plugin.program.advanced.launcher)</visible>
+					</control>
 				</control>
 				<!-- Home Artwork -->
 				<control type="group">

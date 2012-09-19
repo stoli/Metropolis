@@ -1,12 +1,15 @@
 ﻿<window id="1">
-	<views>55,503,58</views>
+	<views>55,503,58,950,951,952</views>
 	<defaultcontrol>55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		<include>Viewtype_Files</include>			<!-- 55 -->
+		<include>Viewtype_Files</include>		<!-- 55 -->
 		<include>Viewtype_Gallery_Square</include>	<!-- 58 -->
-		<include>Viewtype_List</include>			<!-- 503 -->
+		<include>Viewtype_List</include>		<!-- 503 -->
+		<include>Viewtype_Games_Tall</include>		<!-- 950 -->
+		<include>Viewtype_Games_Square</include>	<!-- 951 -->
+		<include>Viewtype_Games_Wide</include>		<!-- 952 -->
 		<include>Global_ContextFilter</include>
 		<include>Global_AddonInfo</include>
 		<include>Global_ScrollOffsetLabel</include>
