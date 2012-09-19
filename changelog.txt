@@ -1,6 +1,7 @@
 2.0.0 - 2012xxxx
 - Add Games to Home main menu.
 - Music Visualiser options: Fanart, Extra Fanart, Artist_Slideshow, or None.
+- Use Realistic Weather Icons on global overlay as well (if configured).
 - Add IMDb Top250 Media Flag.
 - Clean up VideoInfo dialog for Music Videos.
 - Option to limit Shutdown submenu to non-destructive operations only.
