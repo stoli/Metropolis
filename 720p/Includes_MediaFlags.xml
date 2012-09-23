@@ -3,11 +3,12 @@
 		<control type="group" id="9901">
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_CommonFade</include>
-			<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
-			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+			<visible>!IsEmpty(ListItem.Title)</visible>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | SubString(Container.FolderPath,plugin)</visible>
+			<!-- limiting this to Advanced Launcher add-on only for now -->
+			<visible>!SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,advanced.launcher)</visible>
 			<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
 			<visible>![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]</visible>
-
 			<!-- Studio -->
 			<control type="group">
 				<posx>6</posx>
@@ -17,7 +18,14 @@
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture fallback="flags/default.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
 					<colordiffuse>MediaFlagDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.Studio)</visible>
+					<visible>!IsEmpty(ListItem.Studio) + !SubString(Container.FolderPath,advanced.launcher)</visible>
+				</control>
+				<control type="image">
+					<height>70</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture fallback="flags/default.png">special://skin/extras/games/studios/$INFO[ListItem.Studio,,.png]</texture>
+					<colordiffuse>MediaFlagDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.Studio) + SubString(Container.FolderPath,advanced.launcher)</visible>
 				</control>
 				<control type="image">
 					<height>70</height>
@@ -43,8 +51,7 @@
 				<align>left</align>
 				<itemgap>8</itemgap>
 				<orientation>horizontal</orientation>
-
-				<!-- MPAA Flag -->
+				<!-- MPAA Flag (or Game Platform when in Advanced Launcher addon) -->
 				<control type="group">
 					<width>58</width>
 					<height>62</height>
@@ -52,6 +59,13 @@
 						<include>MediaFlagsVarsSquare</include>
 						<texture>$VAR[MediaFlag_MPAA]</texture>
 						<colordiffuse>MediaFlagDiffuse</colordiffuse>
+						<visible>!SubString(Container.FolderPath,advanced.launcher)</visible>
+					</control>
+					<control type="image">
+						<include>MediaFlagsVarsSquare</include>
+						<texture>special://skin/extras/games/platforms/$INFO[ListItem.writer,,.png]</texture>
+						<colordiffuse>MediaFlagDiffuse</colordiffuse>
+						<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>2</posx>
@@ -61,7 +75,7 @@
 						<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
 					</control>
 				</control>
-				<!-- Star Rating -->
+				<!-- Star Rating (or Game Genre when in Advanced Launcher addon) -->
 				<control type="group">
 					<width>58</width>
 					<height>62</height>
@@ -69,6 +83,7 @@
 						<include>MediaFlagsVarsSquare</include>
 						<texture>Star.png</texture>
 						<colordiffuse>RatingStarDiffuse</colordiffuse>
+						<visible>!SubString(Container.FolderPath,advanced.launcher)</visible>
 					</control>
 					<control type="label">
 						<include>MediaFlagsVarsSquare</include>
@@ -77,6 +92,13 @@
 						<label fallback="NA">$INFO[ListItem.Rating]</label>
 						<textcolor>MediaFlagDiffuse</textcolor>
 						<font>METF_StarRating</font>
+						<visible>!SubString(Container.FolderPath,advanced.launcher)</visible>
+					</control>
+					<control type="image">
+						<include>MediaFlagsVarsSquare</include>
+						<texture>special://skin/extras/games/genres/$INFO[ListItem.genre,,.png]</texture>
+						<colordiffuse>MediaFlagDiffuse</colordiffuse>
+						<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>2</posx>
