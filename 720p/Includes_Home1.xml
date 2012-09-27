@@ -25,17 +25,15 @@
 		<colordiffuse>FocusBar</colordiffuse>
 	</include>
 	<include name="HomeStatsDetails">
-		<posx>1130</posx>
-		<height>25</height>
 		<width>130</width>
+		<height>24</height>
 		<align>left</align>
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsCategory</textcolor>
 	</include>
 	<include name="HomeStatsDetailsNumber">
-		<posx>1122</posx>
-		<height>25</height>
-		<width>60</width>
+		<width>50</width>
+		<height>24</height>
 		<align>right</align>
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsNumber</textcolor>
@@ -1672,8 +1670,6 @@
 
 		<!-- Home Stats/Media Totals -->
 		<control type="group">
-			<posx>0</posx>
-			<posy>20</posy>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<animation effect="fade" start="100" end="0" delay="200" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
@@ -1681,148 +1677,168 @@
 			<animation effect="slide" start="180,0" end="0,0" tween="back" easing="out" time="300">Visible</animation>
 			<animation effect="slide" start="0,0" end="180,0" tween="quadratic" easing="in" time="300">Hidden</animation>
 			<visible>!ControlGroup(9001).HasFocus() + Skin.HasSetting(HomeStats)</visible>
-			<control type="group">
-				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
+			<control type="grouplist">
+				<posx>1070</posx>
+				<posy>45</posy>
+				<width>220</width>
+				<height>416</height>
+				<orientation>vertical</orientation>
+				<align>left</align>
+				<aligny>top</aligny>
+				<itemgap>25</itemgap>
 				<control type="label">
 					<description>Profile Name</description>
-					<posx>1062</posx>
-					<posy>25</posy>
-					<height>50</height>
-					<width>188</width>
+					<height>25</height>
 					<label>$INFO[System.ProfileName]</label>
-					<align>center</align>
-					<aligny>center</aligny>
+					<align>left</align>
+					<aligny>top</aligny>
 					<font>METF_HomeStatsTitle</font>
 					<textcolor>TimeAMPM</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 					<visible>System.HasLoginScreen</visible>
 				</control>
-				<control type="label">
-					<posy>75</posy>
-					<label>$LOCALIZE[20342]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Movies.Count))</visible>
+				<!-- Movies -->
+				<control type="grouplist">
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<visible>IntegerGreaterThan(Window.Property(Movies.Count),0)</visible>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[20342]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Movies.Count))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Movies.Count)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[16101]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Movies.UnWatched))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Movies.UnWatched)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
 				</control>
-				<control type="label">
-					<posy>75</posy>
-					<label>$INFO[Window.Property(Movies.Count)]</label>
-					<include>HomeStatsDetailsNumber</include>
+				<!-- TV Shows -->
+				<control type="grouplist">
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0)</visible>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[20343]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(TVShows.Count))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(TVShows.Count)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[20360]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Episodes.Count))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Episodes.Count)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[16101]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Episodes.UnWatched))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Episodes.UnWatched)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
 				</control>
-				<control type="label">
-					<posy>100</posy>
-					<label>$LOCALIZE[16101]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Movies.UnWatched))</visible>
+				<!-- Music -->
+				<control type="grouplist">
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0)</visible>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[133]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Music.ArtistsCount))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Music.ArtistsCount)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[132]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Music.AlbumsCount))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Music.AlbumsCount)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[134]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(Music.SongsCount))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(Music.SongsCount)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
 				</control>
-				<control type="label">
-					<posy>100</posy>
-					<label>$INFO[Window.Property(Movies.UnWatched)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>145</posy>
-					<label>$LOCALIZE[20343]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(TVShows.Count))</visible>
-				</control>
-				<control type="label">
-					<posy>145</posy>
-					<label>$INFO[Window.Property(TVShows.Count)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>170</posy>
-					<label>$LOCALIZE[20360]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Episodes.Count))</visible>
-				</control>
-				<control type="label">
-					<posy>170</posy>
-					<label>$INFO[Window.Property(Episodes.Count)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>195</posy>
-					<label>$LOCALIZE[16101]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Episodes.UnWatched))</visible>
-				</control>
-				<control type="label">
-					<posy>195</posy>
-					<label>$INFO[Window.Property(Episodes.UnWatched)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>240</posy>
-					<label>$LOCALIZE[133]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Music.ArtistsCount))</visible>
-				</control>
-				<control type="label">
-					<posy>240</posy>
-					<label>$INFO[Window.Property(Music.ArtistsCount)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>265</posy>
-					<label>$LOCALIZE[132]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Music.AlbumsCount))</visible>
-				</control>
-				<control type="label">
-					<posy>265</posy>
-					<label>$INFO[Window.Property(Music.AlbumsCount)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>290</posy>
-					<label>$LOCALIZE[134]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(Music.SongsCount))</visible>
-				</control>
-				<control type="label">
-					<posy>290</posy>
-					<label>$INFO[Window.Property(Music.SongsCount)]</label>
-					<include>HomeStatsDetailsNumber</include>
-				</control>
-				<control type="label">
-					<posy>315</posy>
-					<label>$LOCALIZE[20389]</label>
-					<include>HomeStatsDetails</include>
-					<visible>!IsEmpty(Window.Property(MusicVideos.Count))</visible>
-				</control>
-				<control type="label">
-					<posy>315</posy>
-					<label>$INFO[Window.Property(MusicVideos.Count)]</label>
-					<include>HomeStatsDetailsNumber</include>
+				<!-- Music Videos -->
+				<control type="grouplist">
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0)</visible>
+					<control type="grouplist">
+						<height>24</height>
+						<orientation>horizontal</orientation>
+						<control type="label">
+							<label>$LOCALIZE[20389]</label>
+							<include>HomeStatsDetails</include>
+							<visible>!IsEmpty(Window.Property(MusicVideos.Count))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window.Property(MusicVideos.Count)]</label>
+							<include>HomeStatsDetailsNumber</include>
+						</control>
+					</control>
 				</control>
 			</control>
-			<!-- Weather Stats
-			<control type="group">
-				<animation effect="slide" start="0,0" end="0,-40" time="0" condition="!System.HasLoginScreen">Conditional</animation>
-				<visible>Container(9000).HasFocus(7) + System.HasNetwork</visible>
-				<control type="image">
-					<posx>1062</posx>
-					<posy>350</posy>
-					<width>193</width>
-					<height>80</height>
-					<texture>$VAR[Weather_Icons_Current]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<fadetime>200</fadetime>
-				</control>
-				<control type="label">
-					<posx>1130</posx>
-					<posy>430</posy>
-					<height>80</height>
-					<width>130</width>
-					<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-					<align>left</align>
-					<wrapmultiline>true</wrapmultiline>
-					<font>METF_HomeStatsText</font>
-					<textcolor>HomeStatsCategory</textcolor>
-				</control>
-			</control>
-			-->
 		</control>
 	</include>
 </includes>
