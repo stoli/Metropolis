@@ -25,14 +25,14 @@
 		<colordiffuse>FocusBar</colordiffuse>
 	</include>
 	<include name="HomeStatsDetails">
-		<width>130</width>
+		<width>120</width>
 		<height>24</height>
 		<align>left</align>
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsCategory</textcolor>
 	</include>
 	<include name="HomeStatsDetailsNumber">
-		<width>50</width>
+		<width>60</width>
 		<height>24</height>
 		<align>right</align>
 		<font>METF_HomeStatsText</font>
