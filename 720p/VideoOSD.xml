@@ -2,16 +2,17 @@
 	<defaultcontrol always="true">410</defaultcontrol>
 	<controls>
 		<control type="button" id="410">
-			<onfocus>Dialog.Close(fullscreeninfo)</onfocus>
+			<onfocus>Dialog.Close(FullscreenInfo)</onfocus>
 			<onfocus>SetFocus(4)</onfocus>
 		</control>
 
 		<control type="group">
-			<visible>!VideoPlayer.Content(LiveTV) + ![Window.IsVisible(sliderdialog) | Window.IsVisible(videobookmarks)]</visible>
+			<visible>!VideoPlayer.Content(LiveTV) + ![Window.IsVisible(SliderDialog) | Window.IsVisible(VideoBookmarks)]</visible>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByOSDSettings</include>
 			<include>OSD_Progress_Bar2</include>
 			<include>OSD_Player_Details</include>
+			<include>OSD_Player_Time</include>
 			<control type="grouplist" id="2001">
 				<posx>292</posx>
 				<posy>650</posy>
@@ -63,7 +64,7 @@
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="button" id="7">
-					<description>DVD MENU</description>
+					<description>DVD Menu</description>
 					<include>Animation_ButtonFocus</include>
 					<height>60</height>
 					<width>60</width>
