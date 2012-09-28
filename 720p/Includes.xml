@@ -1126,6 +1126,23 @@
 				<animation effect="slide" end="0,25" condition="IsEmpty(VideoPlayer.Tagline)">Conditional</animation>
 				<visible>IsEmpty(VideoPlayer.Year)</visible>
 			</control>
+			<!-- Movie Tagline -->
+			<control type="fadelabel">
+				<posx>300</posx>
+				<posy>590</posy>
+				<width>850</width>
+				<height>30</height>
+				<font>METF_PlotText</font>
+				<textcolor>TextFO</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scrollout>false</scrollout>
+				<pauseatend>3800</pauseatend>
+				<scrollspeed>40</scrollspeed>
+				<scroll>true</scroll>
+				<label>$INFO[VideoPlayer.Tagline]</label>
+				<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
+			</control>
 			<!-- Episode Image / Logo / Clearart -->
 			<control type="image">
 				<description>TV Show Logo</description>
