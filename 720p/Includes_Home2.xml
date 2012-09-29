@@ -384,7 +384,9 @@
 					<label>$LOCALIZE[31601]</label>
 					<icon>special://skin/extras/home2/icon_tv.png</icon>
 					<onclick>ActivateWindow(PVR)</onclick>
-					<visible>System.GetBool(pvrmanager.enabled)</visible>
+					<!-- for frodo
+					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+					<visible>Skin.HasSetting(LiveTV)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
