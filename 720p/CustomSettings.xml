@@ -3922,6 +3922,12 @@
 					</control>
 					<control type="radiobutton" id="808">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31464]</label>
+						<onclick>Skin.ToggleSetting(ShowVideoPlotFullscreen)</onclick>
+						<selected>Skin.HasSetting(ShowVideoPlotFullscreen)</selected>
+					</control>
+					<control type="radiobutton" id="809">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
 						<onclick>ReloadSkin()</onclick>
