@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
-	id="skin.metropolis" 
-	version="1.9.3" 
-	name="Metropolis" 
+	id="skin.metropolis"
+	version="1.9.4"
+	name="Metropolis"
 	provider-name="Amra">
 	<requires>
 		<import addon="xbmc.gui" version="3.00"/>

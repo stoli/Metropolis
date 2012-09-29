@@ -1,4 +1,7 @@
 2.0.0 - 2012xxxx
+- Add option to show Plot or Director/Genre in Fullscreen Info.
+- Fix occasional hang in Fullscreen Info.
+- Hide Media Totals for media types that have no items in library.
 - Advanced Launcher integration.
 - Add Games to Home main menu.
 - Music Visualiser options: Fanart, Extra Fanart, Artist_Slideshow, or None.
