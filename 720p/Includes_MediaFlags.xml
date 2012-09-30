@@ -63,9 +63,9 @@
 					</control>
 					<control type="image">
 						<include>MediaFlagsVarsSquare</include>
-						<texture>special://skin/extras/games/platforms/$INFO[ListItem.writer,,.png]</texture>
+						<texture>special://skin/extras/games/platforms/$INFO[ListItem.Writer,,.png]</texture>
 						<colordiffuse>MediaFlagDiffuse</colordiffuse>
-						<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
+						<visible>!IsEmpty(ListItem.Writer) + SubString(Container.FolderPath,advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>2</posx>
@@ -96,9 +96,9 @@
 					</control>
 					<control type="image">
 						<include>MediaFlagsVarsSquare</include>
-						<texture>special://skin/extras/games/genres/$INFO[ListItem.genre,,.png]</texture>
+						<texture>special://skin/extras/games/genres/$INFO[ListItem.Genre,,.png]</texture>
 						<colordiffuse>MediaFlagDiffuse</colordiffuse>
-						<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
+						<visible>!IsEmpty(ListItem.Genre) + SubString(Container.FolderPath,advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>2</posx>
@@ -112,7 +112,7 @@
 				<control type="group">
 					<width>58</width>
 					<height>62</height>
-					<visible>!SubString(ListItem.Top250,0,Left) + !IsEmpty(ListItem.Top250)</visible>
+					<visible>!IsEmpty(ListItem.Top250) + !SubString(ListItem.Top250,0,Left)</visible>
 					<control type="image">
 						<include>MediaFlagsVarsSquareHalfTop</include>
 						<texture>flags/IMDB-Logo.png</texture>
