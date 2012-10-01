@@ -15,6 +15,7 @@
 	<string id="31032">Hide TV Watched Status</string>
 	<string id="31033">Hide Background Fanart</string>
 	<string id="31034">Enable Dynamic Weather Artwork</string>
+	<string id="31035">Show Clean Library SubMenu items</string>
 	<string id="31054">Logo</string>
 	<string id="31055">Use TV Show Logos</string>
 	<string id="31056">Enable Cover Art overlay</string>
@@ -200,6 +201,7 @@
 	<string id="31462">Games Square</string>
 	<string id="31463">Games Wide</string>
 	<string id="31464">Show Plot in Fullscreen Info</string>
+	<string id="31465">Clean Library</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
