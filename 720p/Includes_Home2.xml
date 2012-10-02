@@ -382,7 +382,7 @@
 				<item id="15">
 					<description>Live TV</description>
 					<label>$LOCALIZE[31601]</label>
-					<icon>special://skin/extras/home2/icon_tv.png</icon>
+					<icon>special://skin/extras/home2/icon_livetv.png</icon>
 					<onclick>ActivateWindow(PVR)</onclick>
 					<!-- for frodo
 					<visible>System.GetBool(pvrmanager.enabled)</visible>-->

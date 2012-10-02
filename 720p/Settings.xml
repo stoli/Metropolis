@@ -121,7 +121,7 @@
 					<item id="15">
 						<description>Live TV</description>
 						<label>$LOCALIZE[31601]</label>
-						<icon>settings/settings_tv.png</icon>
+						<icon>settings/settings_livetv.png</icon>
 						<onclick>ActivateWindow(PVRSettings)</onclick>
 						<visible>Skin.HasSetting(LiveTV)</visible>
 					</item>
