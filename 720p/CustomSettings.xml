@@ -2631,7 +2631,7 @@
 							<item id="15">
 								<label>31601</label>
 								<onclick>-</onclick>
-								<icon>home/tv.jpg</icon>
+								<icon>home/livetv.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 								<visible>Skin.HasSetting(LiveTV)</visible>
 							</item>

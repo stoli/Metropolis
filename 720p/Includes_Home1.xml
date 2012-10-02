@@ -445,7 +445,7 @@
 				<item id="15">
 					<description>Live TV</description>
 					<label>$LOCALIZE[31601]</label>
-					<icon>special://skin/extras/home1/tv.jpg</icon>
+					<icon>special://skin/extras/home1/livetv.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 					<onclick>ActivateWindow(PVR)</onclick>
 					<!-- for frodo
