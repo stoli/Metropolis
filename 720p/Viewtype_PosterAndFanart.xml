@@ -277,7 +277,7 @@
 							<posy>21</posy>
 							<width>646</width>
 							<height>362</height>
-							<texture fallback="home/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+							<texture fallback="home_art/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<animation type="Focus" reversible="false">
@@ -303,7 +303,7 @@
 							<posy>21</posy>
 							<width>646</width>
 							<height>362</height>
-							<texture fallback="home/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+							<texture fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<animation type="Focus" reversible="false">
