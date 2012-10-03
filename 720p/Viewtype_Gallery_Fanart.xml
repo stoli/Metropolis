@@ -56,7 +56,7 @@
 						<posy>27</posy>
 						<width>260</width>
 						<height>146</height>
-						<texture background="true" fallback="home/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Icon)</visible>
 					</control>
@@ -65,7 +65,7 @@
 						<posy>27</posy>
 						<width>260</width>
 						<height>146</height>
-						<texture background="true" fallback="home/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<visible>Container.Content(movies) | [Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)]</visible>
 					</control>
@@ -138,7 +138,7 @@
 						<posy>27</posy>
 						<width>260</width>
 						<height>146</height>
-						<texture background="true" fallback="home/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="70" end="125" time="300" tween="back" easing="out" />
 							<effect type="fade" start="70" end="100" time="300" />

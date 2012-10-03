@@ -19,7 +19,7 @@
 						<posy>49</posy>
 						<width>324</width>
 						<height>180</height>
-						<texture fallback="home/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture fallback="home_art/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 					<control type="image">

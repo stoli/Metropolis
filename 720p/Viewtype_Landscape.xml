@@ -82,7 +82,7 @@
 						<posy>40</posy>
 						<width>272</width>
 						<height>152</height>
-						<texture background="true" fallback="home/movies.jpg" diffuse="landscapematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/movies.jpg" diffuse="landscapematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -171,7 +171,7 @@
 						<posy>20</posy>
 						<width>320</width>
 						<height>180</height>
-						<texture background="true" fallback="home/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation type="Focus" reversible="false">

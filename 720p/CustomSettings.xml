@@ -2613,98 +2613,98 @@
 							<item id="4">
 								<label>3</label>
 								<onclick>-</onclick>
-								<icon>home/videos.jpg</icon>
+								<icon>home_art/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
 							</item>
 							<item id="1">
 								<label>342</label>
 								<onclick>-</onclick>
-								<icon>home/movies.jpg</icon>
+								<icon>home_art/movies.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
 							</item>
 							<item id="2">
 								<label>20343</label>
 								<onclick>-</onclick>
-								<icon>home/tvshows.jpg</icon>
+								<icon>home_art/tvshows.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomTVShows)]</thumb>
 							</item>
 							<item id="15">
 								<label>31601</label>
 								<onclick>-</onclick>
-								<icon>home/livetv.jpg</icon>
+								<icon>home_art/livetv.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 								<visible>Skin.HasSetting(LiveTV)</visible>
 							</item>
 							<item id="3">
 								<label>2</label>
 								<onclick>-</onclick>
-								<icon>home/music.jpg</icon>
+								<icon>home_art/music.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
 							</item>
 							<item id="16">
 								<label>20389</label>
 								<onclick>-</onclick>
-								<icon>home/musicvideos.jpg</icon>
+								<icon>home_art/musicvideos.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomMusicVideos)]</thumb>
 							</item>
 							<item id="5">
 								<label>1</label>
 								<onclick>-</onclick>
-								<icon>home/pictures.jpg</icon>
+								<icon>home_art/pictures.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 							</item>
 							<item id="17">
 								<label>31460</label>
 								<onclick>-</onclick>
-								<icon>home/games.jpg</icon>
+								<icon>home_art/games.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomGames)]</thumb>
 							</item>
 							<item id="13">
 								<label>31334</label>
 								<onclick>-</onclick>
-								<icon>home/trailers.jpg</icon>
+								<icon>home_art/trailers.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomTrailers)]</thumb>
 							</item>
 							<item id="7">
 								<label>24001</label>
 								<onclick>-</onclick>
-								<icon>home/programs.jpg</icon>
+								<icon>home_art/programs.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomPrograms)]</thumb>
 							</item>
 							<item id="6">
 								<label>8</label>
 								<onclick>-</onclick>
-								<icon>home/weather.jpg</icon>
+								<icon>home_art/weather.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
 							</item>
 							<item id="8">
 								<label>5</label>
 								<onclick>-</onclick>
-								<icon>home/settings.jpg</icon>
+								<icon>home_art/settings.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
 							</item>
 							<item id="9">
 								<label>1036</label>
 								<onclick>-</onclick>
-								<icon>home/favourites.jpg</icon>
+								<icon>home_art/favourites.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomFavourites)]</thumb>
 							</item>
 							<item id="11">
 								<label>13005</label>
 								<onclick>-</onclick>
-								<icon>home/shutdown.jpg</icon>
+								<icon>home_art/shutdown.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomShutdown)]</thumb>
 							</item>
 							<item id="10">
 								<label>20126</label>
 								<onclick>-</onclick>
-								<icon>home/logoff.jpg</icon>
+								<icon>home_art/logoff.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomLogoff)]</thumb>
 							</item>
 							<item id="14">
 								<label>341</label>
 								<onclick>-</onclick>
-								<icon>home/playdisc.jpg</icon>
+								<icon>home_art/playdisc.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomPlayDisc)]</thumb>
 							</item>
 						</content>
