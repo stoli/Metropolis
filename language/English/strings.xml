@@ -140,7 +140,7 @@
 	<string id="31395">Westerns are the major defining genre of the American film industry - a eulogy to the early days of the expansive American frontier. They are one of the oldest, most enduring genres with very recognizable plots, elements, and characters (six-guns, horses, dusty towns and trails, cowboys, Indians, etc.). Over time, westerns have been re-defined, re-invented and expanded, dismissed, re-discovered, and spoofed.</string>
 	<string id="31396">Wrestling is a martial art that uses grappling type techniques such as clinch fighting, throws and takedowns, joint locks, pins and other grappling holds. A wrestling bout is a physical competition, between two (occasionally more) competitors or sparring partners, who attempt to gain and maintain a superior position. There are a wide range of styles with varying rules with both traditional historic and modern styles.</string>
 	<string id="31397">Epics include costume dramas, historical dramas, war films, medieval romps, or 'period pictures' that often cover a large expanse of time set against a vast, panoramic backdrop. Epics often share elements of the elaborate adventure films genre. Epics take an historical or imagined event, mythic, legendary, or heroic figure, and add an extravagant setting and lavish costumes, accompanied by grandeur and spectacle, dramatic scope, high production values, and a sweeping musical score.</string>
-	<string id="31398">Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music. </string>
+	<string id="31398">Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music.</string>
 	<string id="31400">Hide Current Temperature and Weather Conditions</string>
 	<string id="31401">Hide Clock</string>
 	<string id="31402">Use Plot Summary in other views</string>
@@ -202,6 +202,8 @@
 	<string id="31463">Games Wide</string>
 	<string id="31464">Show Plot in Fullscreen Info</string>
 	<string id="31465">Clean Library</string>
+	<string id="31466">Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer.</string>
+	<string id="31467">Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc.</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>
