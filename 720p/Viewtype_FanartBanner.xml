@@ -167,7 +167,7 @@
 					<posy>66</posy>
 					<width>600</width>
 					<height>338</height>
-					<texture background="true" fallback="home/tvshows.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 				</control>
 				<control type="image">
