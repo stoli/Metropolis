@@ -278,7 +278,7 @@
 		<control type="group">
 			<posx>12</posx>
 			<posy>40</posy>
-			<visible>Weather.IsFetched + [!Skin.HasSetting(HideClockTemp) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]]</visible>
+			<visible>Weather.IsFetched + [[!Window.IsActive(visualisation) + !Skin.HasSetting(HideClockTemp)] | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]]</visible>
 			<control type="image">
 				<posx>1145</posx>
 				<posy>517</posy>
@@ -312,7 +312,7 @@
 		<control type="group">
 			<posx>12</posx>
 			<posy>40</posy>
-			<visible>!Skin.HasSetting(HideClock) | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
+			<visible>[!Window.IsActive(visualisation) + !Skin.HasSetting(HideClock)] | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
 			<control type="label">
 				<description>Hours</description>
 				<posx>1182</posx>
