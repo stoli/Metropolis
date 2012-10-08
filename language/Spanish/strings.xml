@@ -15,10 +15,11 @@
 	<string id="31032">Ocultar Estado de Series Vistas</string>
 	<string id="31033">Ocultar Fanart de Fondo</string>
 	<string id="31034">Habilitar Fondo Dinámico del Clima</string>
+	<string id="31035">Mostrar Limpiar Biblioteca en Objetos del Submenú</string>
 	<string id="31054">Logo</string>
 	<string id="31055">Usar Logos en Series</string>
 	<string id="31056">Habilitar Carátula</string>
-	<string id="31057">Activar texto de información de la canción</string>
+	<string id="31057">Activar Texto de Información de la Canción</string>
 	<string id="31060">Mostrar Añadidos Recientemente</string>
 	<string id="31108">Activar Modo Depuración</string>
 	<string id="31109">Activar Rejilla de Depuración</string>
@@ -85,7 +86,7 @@
 	<string id="31331">Objetos de Inicio</string>
 	<string id="31334">Trailers</string>
 	<string id="31336">Bloquear Cambio de vistas (Modo Kiosco)</string>
-	<string id="31337">Deshabilitar elementos destructivos de Apagado</string>
+	<string id="31337">Desactivar Opciones de Apagado</string>
 	<string id="31341">Ver información de su ordenador, tales como gráficos de red, hardware y espacio en discos</string>
 	<string id="31342">Crear y modificar varios perfiles de usuarios en XBMC para que cada miembro de su familia tenga su propia biblioteca</string>
 	<string id="31343">Las películas de acción por lo general incluyen mucha energía, de gran presupuesto en acrobacias físicas y persecuciones, posiblemente con rescates, batallas, luchas, fugas, crisis destructivas (inundaciones, explosiones, catástrofes naturales, incendios, etc.), la acción no para, con mucho ritmo, aventureros, en diferentes dimensiones 'el buenos de la película' heroes (o recientemente, heroinas) luchando 'con los chicos malos' - todo diseñado para dar espectáculo.</string>
@@ -142,7 +143,7 @@
 	<string id="31398">Las películas que no tienen banda sonora y sin diálogos. Hasta finales de 1920, las películas mudas ofrecian subtítulos y a menudo iban acompañadas de música en vivo.</string>
 	<string id="31400">Ocultar Temperatura Actual y Condición del Clima</string>
 	<string id="31401">Ocultar Reloj</string>
-	<string id="31402">Usar Resumen en otras vistas</string>
+	<string id="31402">Usar Argumento Resumido en otras vistas</string>
 	<string id="31403">Ocultar Banderas de Medios</string>
 	<string id="31404">Ocultar Clasificación y Banderas de Estudio</string>
 	<string id="31406">Vista Fanart: Clásico</string>
@@ -195,12 +196,21 @@
 	<string id="31457">Enlaces</string>
 	<string id="31458">Ajustar Temporizador</string>
 	<string id="31459">Cancelar Temporizador</string>
+	<string id="31460">Juegos</string>
+	<string id="31461">Juegos Tall</string>
+	<string id="31462">Juegos Square</string>
+	<string id="31463">Juegos Wide</string>
+	<string id="31464">Mostrar Argumento en Información a Pantalla Completa</string>
+	<string id="31465">Limpiar Biblioteca</string>
+	<string id="31466">Extranjeras no es técnicamente un género, pero probablemente incluye películas con diálogo en un idioma no nativo para el espectador.</string>
+	<string id="31467">Vacaciones es un género muy amplio que abarca las películas que se centran en un día de fiesta, tales como Navidad, Halloween, Pascua, etc.</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Activar soporte de TV en Vivo (PVR)</string>
 	<string id="31601">TV en Vivo</string>
 	<string id="31605">Añadir Grupo</string>
 	<string id="31606">Renombrar Grupo</string>
-	<string id="31607">Borrar Grupo</string>   
+	<string id="31607">Borrar Grupo</string>
+	<string id="31608">Canales Ocultos</string>
 	<string id="31610">Programador</string>
 </strings>
