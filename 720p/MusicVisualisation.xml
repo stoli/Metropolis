@@ -87,7 +87,7 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>546</posy>
-				<width>1280</width>
+				<width>1300</width>
 				<height>194</height>
 				<texture>black.png</texture>
 				<colordiffuse>dd909090</colordiffuse>
@@ -146,6 +146,7 @@
 				<width>230</width>
 				<height>89</height>
 				<texture>$INFO[Player.FolderPath,,../logo.png]</texture>
+				<visible>!Skin.HasSetting(SlimMusicInfo) + !IsEmpty(Control.GetLabel(1))</visible>
 			</control>
 			<control type="image" id="2">
 				<posx>525</posx>
@@ -156,7 +157,7 @@
 				<width>230</width>
 				<height>89</height>
 				<texture>$INFO[Player.FolderPath,,../../logo.png]</texture>
-				<visible>IsEmpty(Control.GetLabel(1))</visible>
+				<visible>!Skin.HasSetting(SlimMusicInfo) + IsEmpty(Control.GetLabel(1))</visible>
 			</control>
 			<control type="label">
 				<posx>315</posx>
