@@ -1641,20 +1641,43 @@
 				<visible>Container(9000).HasFocus(8)</visible>
 				<control type="button" id="91401">
 					<include>Submenu_Button</include>
+					<label>$LOCALIZE[31011]</label>
+					<onclick>Skin.Reset(ProgramItems)</onclick>
+					<onclick>Skin.Reset(VideoItems)</onclick>
+					<onclick>Skin.Reset(MusicItems)</onclick>
+					<onclick>Skin.Reset(MovieItems)</onclick>
+					<onclick>Skin.Reset(TVItems)</onclick>
+					<onclick>Skin.Reset(PictureItems)</onclick>
+					<onclick>Skin.Reset(WeatherItems)</onclick>
+					<onclick>Skin.Reset(SettingItems)</onclick>
+					<onclick>ActivateWindow(56)</onclick>
+				</control>
+				<control type="button" id="91402">
+					<include>Submenu_Button</include>
 					<label>13000</label>
 					<onclick>ActivateWindow(SystemSettings)</onclick>
 				</control>
-				<control type="button" id="91402">
+				<control type="button" id="91403">
+					<include>Submenu_Button</include>
+					<label>31468</label>
+					<onclick>ActivateWindow(NetworkSettings)</onclick>
+				</control>
+				<control type="button" id="91404">
+					<include>Submenu_Button</include>
+					<label>31469</label>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+				</control>
+				<control type="button" id="91405">
 					<include>Submenu_Button</include>
 					<label>7</label>
 					<onclick>ActivateWindow(FileManager)</onclick>
 				</control>
-				<control type="button" id="91403">
+				<control type="button" id="91406">
 					<include>Submenu_Button</include>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
-				<control type="button" id="91404">
+				<control type="button" id="91407">
 					<include>Submenu_Button</include>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
