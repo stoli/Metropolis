@@ -8,7 +8,7 @@
 				<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<colordiffuse>FanartDiffuse</colordiffuse>
 				<include>Animation_CommonFade</include>
-				<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
+				<visible>[!Skin.HasSetting(HideMusicFanart) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]] | SubString(Container.FolderPath,advanced.launcher)</visible>
 			</control>
 			<visible>Control.IsVisible(55)</visible>
 			<!-- Browser -->
