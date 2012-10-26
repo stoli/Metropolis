@@ -78,7 +78,7 @@
 				<aligny>center</aligny>
 				<font>METF_InfoTextLarger</font>
 				<textcolor>MediaDetailsEpisodes</textcolor>
-				<label>$INFO[ListItem.Episode] $LOCALIZE[20161] $LOCALIZE[20360]</label>
+				<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20161] $LOCALIZE[20360]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<!-- Episode Watched Status -->
