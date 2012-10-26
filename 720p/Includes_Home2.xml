@@ -362,7 +362,7 @@
 					<description>Videos (Addons)</description>
 					<label>$LOCALIZE[3]</label>
 					<icon>home_icons/videos.png</icon>
-					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + Skin.HasSetting(HomeVideos_Addons)</visible>
 				</item>
 				<item id="2">
@@ -392,7 +392,7 @@
 					<description>Music</description>
 					<label>$LOCALIZE[2]</label>
 					<icon>home_icons/music.png</icon>
-					<onclick>ActivateWindow(MusicFiles)</onclick>
+					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(NoMusic) + !Skin.HasSetting(HomeMusic_Override)</visible>
 				</item>
 				<item id="3">
@@ -891,7 +891,7 @@
 				<control type="button" id="91001">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
-					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms) + !Skin.HasSetting(HomeVideos_Addons)</visible>
 				</control>
 				<control type="button" id="91002">
@@ -1040,7 +1040,7 @@
 				<control type="button" id="91701">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[24001]</label>
-					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 					<visible>Skin.HasSetting(NoPrograms) + !Skin.HasSetting(HomeMusic_Addons)</visible>
 				</control>
 				<control type="button" id="91702">
@@ -1425,12 +1425,12 @@
 				<control type="button" id="91501">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1212]</label>
-					<onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 				</control>
 				<control type="button" id="91502">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[1211]</label>
-					<onclick>ActivateWindow(musicfiles,Addons,return)</onclick>
+					<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 				</control>
 				<control type="button" id="91503">
 					<include>Submenu_Button2</include>

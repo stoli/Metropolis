@@ -1,6 +1,6 @@
 ﻿<window id="502">
 	<views>55,905,58,559,501</views>
-	<defaultcontrol>55</defaultcontrol>
+	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
@@ -31,6 +31,7 @@
 				<width>340</width>
 				<height>548</height>
 				<itemgap>2</itemgap>
+				<onback>55</onback>
 				<onleft>55</onleft>
 				<onright>55</onright>
 				<onup>7000</onup>
@@ -104,7 +105,6 @@
 					<label>$LOCALIZE[29800]</label>
 					<onclick>ReplaceWindow(MusicFiles)</onclick>
 					<selected>Window.IsVisible(MusicLibrary)</selected>
-					<onclick>SetFocus(55)</onclick>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
