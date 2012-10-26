@@ -1,4 +1,6 @@
 2.0.0 - 2012xxxx
+- Fix Episode counts in all views.
+- Update fonts.
 - New icons for Addons, LiveTV, and Games.
 - Option to show Clean Library in Videos and Music SubMenus.
 - New Music Genre icons.
