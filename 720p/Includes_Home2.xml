@@ -515,20 +515,6 @@
 					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Albums)</visible>
 				</item>
 				<item id="16">
-					<description>Music Videos (Directors)</description>
-					<label>$LOCALIZE[20389]</label>
-					<icon>home_icons/musicvideos.png</icon>
-					<onclick>ActivateWindow(Videos,MusicVideoDirectors,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Directors)</visible>
-				</item>
-				<item id="16">
-					<description>Music Videos (Studios)</description>
-					<label>$LOCALIZE[20389]</label>
-					<icon>home_icons/musicvideos.png</icon>
-					<onclick>ActivateWindow(Videos,MusicVideoStudios,return)</onclick>
-					<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + Skin.HasSetting(HomeMusicVideos_Studios)</visible>
-				</item>
-				<item id="16">
 					<description>Music Videos (Playlist)</description>
 					<label>$LOCALIZE[20389]</label>
 					<icon>home_icons/musicvideos.png</icon>
@@ -1273,21 +1259,11 @@
 				</control>
 				<control type="button" id="92116">
 					<include>Submenu_Button2</include>
-					<label>$LOCALIZE[20348]</label>
-					<onclick>ActivateWindow(Videos,MusicVideoDirectors,return)</onclick>
-				</control>
-				<control type="button" id="92117">
-					<include>Submenu_Button2</include>
-					<label>$LOCALIZE[20388]</label>
-					<onclick>ActivateWindow(Videos,MusicVideoStudios,return)</onclick>
-				</control>
-				<control type="button" id="92118">
-					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="92119">
+				<control type="button" id="92117">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>

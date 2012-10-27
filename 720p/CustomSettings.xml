@@ -1531,8 +1531,6 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Recent)</onclick>
@@ -1546,8 +1544,6 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Genres)</onclick>
@@ -1561,8 +1557,6 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Genres)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Years)</onclick>
@@ -1576,8 +1570,6 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Genres)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Artists)</onclick>
@@ -1591,45 +1583,13 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Genres)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Albums)</onclick>
 						<selected>Skin.HasSetting(HomeMusicVideos_Albums)</selected>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1658">
-						<include>SettingsLabel</include>
-						<label>  - $LOCALIZE[20348]</label>
-						<onclick>Skin.Reset(HomeMusicVideos_Recent)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Genres)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
-						<onclick>Skin.ToggleSetting(HomeMusicVideos_Directors)</onclick>
-						<selected>Skin.HasSetting(HomeMusicVideos_Directors)</selected>
-						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override)</visible>
-					</control>
-					<control type="radiobutton" id="1659">
-						<include>SettingsLabel</include>
-						<label>  - $LOCALIZE[20388]</label>
-						<onclick>Skin.Reset(HomeMusicVideos_Recent)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Genres)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
-						<onclick>Skin.ToggleSetting(HomeMusicVideos_Studios)</onclick>
-						<selected>Skin.HasSetting(HomeMusicVideos_Studios)</selected>
-						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override)</visible>
-					</control>
-					<control type="button" id="1660">
+					<control type="button" id="1658">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[559]</label>
@@ -1639,13 +1599,11 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon)</onclick>
 						<onclick>Skin.SetFile(HomeMusicVideos_Playlist,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override)</visible>
 					</control>
-					<control type="button" id="1661">
+					<control type="button" id="1659">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000]</label>
@@ -1655,20 +1613,18 @@
 						<onclick>Skin.Reset(HomeMusicVideos_Years)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Artists)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Albums)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Directors)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Studios)</onclick>
 						<onclick>Skin.Reset(HomeMusicVideos_Playlist)</onclick>
 						<onclick>Skin.SetAddon(HomeMusicVideos_Addon,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override)</visible>
 					</control>
-					<control type="radiobutton" id="1662">
+					<control type="radiobutton" id="1660">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
 						<onclick>Skin.ToggleSetting(HomeMusicVideos_Shortcuts)</onclick>
 						<selected>Skin.HasSetting(HomeMusicVideos_Shortcuts)</selected>
 						<visible>!Skin.HasSetting(NoMusicVideos)</visible>
 					</control>
-					<control type="radiobutton" id="1663">
+					<control type="radiobutton" id="1661">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 1</label>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon1)</onclick>
@@ -1678,7 +1634,7 @@
 						<selected>Skin.HasSetting(HomeMusicVideos_Playlist1)</selected>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite1_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1664">
+					<control type="button" id="1662">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1686,14 +1642,14 @@
 						<onclick>Skin.SetFile(HomeMusicVideos_Playlist1_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist1) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1665">
+					<control type="button" id="1663">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusicVideos_Playlist1_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusicVideos_Playlist1_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist1) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1666">
+					<control type="button" id="1664">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 1</label>
@@ -1707,7 +1663,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist1) + IsEmpty(Skin.String(HomeMusicVideos_Addon1))</visible>
 					</control>
-					<control type="button" id="1667">
+					<control type="button" id="1665">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 1</label>
@@ -1718,7 +1674,7 @@
 						<onclick>Skin.SetAddon(HomeMusicVideos_Addon1,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist1) + IsEmpty(Skin.String(HomeMusicVideos_Favourite1_Path))</visible>
 					</control>
-					<control type="radiobutton" id="1668">
+					<control type="radiobutton" id="1666">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 2</label>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon2)</onclick>
@@ -1728,7 +1684,7 @@
 						<selected>Skin.HasSetting(HomeMusicVideos_Playlist2)</selected>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite2_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1669">
+					<control type="button" id="1667">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1736,14 +1692,14 @@
 						<onclick>Skin.SetFile(HomeMusicVideos_Playlist2_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist2) + IsEmpty(Skin.String(HomeMusicVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1670">
+					<control type="button" id="1668">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusicVideos_Playlist2_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusicVideos_Playlist2_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist2) + IsEmpty(Skin.String(HomeMusicVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1671">
+					<control type="button" id="1669">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 2</label>
@@ -1757,7 +1713,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist2) + IsEmpty(Skin.String(HomeMusicVideos_Addon2))</visible>
 					</control>
-					<control type="button" id="1672">
+					<control type="button" id="1670">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 2</label>
@@ -1768,7 +1724,7 @@
 						<onclick>Skin.SetAddon(HomeMusicVideos_Addon2,xbmc.addon.video)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist2) + IsEmpty(Skin.String(HomeMusicVideos_Favourite2_Path))</visible>
 					</control>
-					<control type="radiobutton" id="1673">
+					<control type="radiobutton" id="1671">
 						<include>SettingsLabel</include>
 						<label>  - $LOCALIZE[559] 3</label>
 						<onclick>Skin.Reset(HomeMusicVideos_Addon3)</onclick>
@@ -1778,7 +1734,7 @@
 						<selected>Skin.HasSetting(HomeMusicVideos_Playlist3)</selected>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite3_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1674">
+					<control type="button" id="1672">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>    - $LOCALIZE[559]</label>
@@ -1786,14 +1742,14 @@
 						<onclick>Skin.SetFile(HomeMusicVideos_Playlist3_Path,,special://videoplaylists/)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist3) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1675">
+					<control type="button" id="1673">
 						<include>SettingsLabel</include>
 						<label>    - $LOCALIZE[21899]</label>
 						<label2>$INFO[Skin.String(HomeMusicVideos_Playlist3_Label)]</label2>
 						<onclick>Skin.SetString(HomeMusicVideos_Playlist3_Label)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist3) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1676">
+					<control type="button" id="1674">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[31271] 3</label>
@@ -1807,7 +1763,7 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist3) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1677">
+					<control type="button" id="1675">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>  - $LOCALIZE[24000] 3</label>
