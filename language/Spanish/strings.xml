@@ -78,7 +78,7 @@
 	<string id="31313">Colección Películas</string>
 	<string id="31319">Script de Letras por defecto</string>
 	<string id="31320">Script de Subtítulos por defecto</string>
-	<string id="31322">Mostrar todas las Banderas</string>
+	<string id="31322">Mostrar todas las Estadísticas</string>
 	<string id="31324">Opciones de Inicio</string>
 	<string id="31328">Mostrar Objetos al Azar</string>
 	<string id="31329">Seleccionar objeto a configurar:</string>
@@ -160,10 +160,10 @@
 	<string id="31419">Ajustes de Música</string>
 	<string id="31420">Ajustes de Video</string>
 	<string id="31421">OSD: Mostrar Clearart</string>
-	<string id="31422">OSD: Mostrar logo de TV</string>
+	<string id="31422">OSD: Mostrar logo de Series de TV</string>
 	<string id="31423">Autor</string>
 	<string id="31424">Poster &amp; Fanart</string> 
-	<string id="31425">OSD: Mostrar Thumbnail</string>
+	<string id="31425">OSD: Mostrar Miniatura</string>
 	<string id="31426">Activar en Series fecha de la próxima emisión</string>
 	<string id="31427">Siguiente Episodio</string>
 	<string id="31428">Guía TV</string>
@@ -200,10 +200,12 @@
 	<string id="31461">Juegos Tall</string>
 	<string id="31462">Juegos Square</string>
 	<string id="31463">Juegos Wide</string>
-	<string id="31464">Mostrar Argumento en Información a Pantalla Completa</string>
+	<string id="31464">Mostrar Argumento en Información durante la Reproducción de Video</string>
 	<string id="31465">Limpiar Biblioteca</string>
 	<string id="31466">Extranjeras no es técnicamente un género, pero probablemente incluye películas con diálogo en un idioma no nativo para el espectador.</string>
 	<string id="31467">Vacaciones es un género muy amplio que abarca las películas que se centran en un día de fiesta, tales como Navidad, Halloween, Pascua, etc.</string>
+	<string id="31468">Red</string>
+	<string id="31469">Apariencia</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Activar soporte de TV en Vivo (PVR)</string>
