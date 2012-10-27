@@ -1763,16 +1763,55 @@
 						<onclick>ActivateWindow(1114)</onclick>
 						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist3) + IsEmpty(Skin.String(HomeMusicVideos_Addon3))</visible>
 					</control>
-					<control type="button" id="1675">
+					<control type="radiobutton" id="1675">
+						<include>SettingsLabel</include>
+						<label>  - $LOCALIZE[559] 4</label>
+						<onclick>Skin.Reset(HomeMusicVideos_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Path)</onclick>
+						<onclick>Skin.ToggleSetting(HomeMusicVideos_Playlist4)</onclick>
+						<selected>Skin.HasSetting(HomeMusicVideos_Playlist4)</selected>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + IsEmpty(Skin.String(HomeMusicVideos_Favourite4_Path)) + IsEmpty(Skin.String(HomeMusicVideos_Addon4))</visible>
+					</control>
+					<control type="button" id="1676">
 						<include>SettingsLabel</include>
 						<width>370</width>
-						<label>  - $LOCALIZE[24000] 3</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusicVideos_Addon3))]</label2>
-						<onclick>Skin.Reset(HomeMusicVideos_Playlist3)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Favourite3_Label)</onclick>
-						<onclick>Skin.Reset(HomeMusicVideos_Favourite3_Path)</onclick>
-						<onclick>Skin.SetAddon(HomeMusicVideos_Addon3,xbmc.addon.video)</onclick>
-						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist3) + IsEmpty(Skin.String(HomeMusicVideos_Favourite3_Path))</visible>
+						<label>    - $LOCALIZE[559]</label>
+						<label2>$INFO[Skin.String(HomeMusicVideos_Playlist4_Path)]</label2>
+						<onclick>Skin.SetFile(HomeMusicVideos_Playlist4_Path,,special://videoplaylists/)</onclick>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist4) + IsEmpty(Skin.String(HomeMusicVideos_Addon4))</visible>
+					</control>
+					<control type="button" id="1677">
+						<include>SettingsLabel</include>
+						<label>    - $LOCALIZE[21899]</label>
+						<label2>$INFO[Skin.String(HomeMusicVideos_Playlist4_Label)]</label2>
+						<onclick>Skin.SetString(HomeMusicVideos_Playlist4_Label)</onclick>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist4) + IsEmpty(Skin.String(HomeMusicVideos_Addon4))</visible>
+					</control>
+					<control type="button" id="1678">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeMusicVideos_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeMusicVideos_Playlist4)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeMusicVideos_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeMusicVideos_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist4) + IsEmpty(Skin.String(HomeMusicVideos_Addon4))</visible>
+					</control>
+					<control type="button" id="1679">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeMusicVideos_Addon4))]</label2>
+						<onclick>Skin.Reset(HomeMusicVideos_Playlist4)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeMusicVideos_Favourite4_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeMusicVideos_Addon4,xbmc.addon.video)</onclick>
+						<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Shortcuts) + !Skin.HasSetting(HomeMusicVideos_Playlist4) + IsEmpty(Skin.String(HomeMusicVideos_Favourite4_Path))</visible>
 					</control>
 
 					<!-- Pictures item (1681-1710) -->
