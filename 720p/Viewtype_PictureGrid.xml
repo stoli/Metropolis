@@ -82,7 +82,7 @@
 					<posy>113</posy>
 					<width>558</width>
 					<height>372</height>
-					<texture background="true">$INFO[ListItem.FilenameAndPath]</texture>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 				</control>
 				<control type="image">
