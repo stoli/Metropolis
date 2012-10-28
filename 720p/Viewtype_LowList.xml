@@ -169,7 +169,7 @@
 						<pauseatend>1800</pauseatend>
 						<scrollspeed>40</scrollspeed>
 						<scroll>true</scroll>
-						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360])</label>
+						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360])</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
 						<visible>Container.Content(seasons)</visible>
@@ -593,7 +593,7 @@
 					<aligny>center</aligny>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsEpisodes</textcolor>
-					<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
+					<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 					<visible>Container.Content(tvshows)</visible>
 				</control>
 			</control>

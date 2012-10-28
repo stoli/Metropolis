@@ -145,10 +145,10 @@
 						<height>35</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 						<font>METF_InfoText</font>
 						<textcolor>MediaDetailsEpisodes</textcolor>
-						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
+						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 					<!-- Episode Count for Seasons -->
 					<control type="label">
@@ -158,10 +158,10 @@
 						<height>35</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 						<font>METF_InfoText</font>
 						<textcolor>MediaDetailsEpisodes</textcolor>
-						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="0" height="35">
@@ -294,10 +294,10 @@
 						<height>35</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 						<font>METF_InfoText</font>
 						<textcolor>MediaDetailsEpisodes</textcolor>
-						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
+						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 					<!-- Episode Count for Seasons -->
 					<control type="label">
@@ -307,10 +307,10 @@
 						<height>35</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 						<font>METF_InfoText</font>
 						<textcolor>MediaDetailsEpisodes</textcolor>
-						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(TotalEpisodes))</visible>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 				</focusedlayout>
 			</control>
