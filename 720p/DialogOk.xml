@@ -69,8 +69,7 @@
 				<aligny>center</aligny>
 				<label>-</label>
 			</control>
-			
-			<control type="button" id="11">
+			<control type="button" id="10">
 				<description>ok</description>
 				<posx>195</posx>
 				<posy>215</posy>
