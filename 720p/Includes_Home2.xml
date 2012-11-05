@@ -726,6 +726,7 @@
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[20434]</label>
 					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
+					<visible>Library.HasContent(MovieSets)</visible>
 				</control>
 				<control type="button" id="91118">
 					<include>Submenu_Button2</include>
