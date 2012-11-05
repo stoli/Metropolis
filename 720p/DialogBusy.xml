@@ -10,8 +10,8 @@
 	<controls>
 		<control type="group">
 			<visible>!SubString(Window(Videos).Property(CinemaExperienceRunning),True)</visible>
-			<posx>480</posx>
-			<posy>300</posy>
+			<posx>484</posx>
+			<posy>484</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
