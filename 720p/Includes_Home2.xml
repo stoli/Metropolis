@@ -730,17 +730,22 @@
 				</control>
 				<control type="button" id="91118">
 					<include>Submenu_Button2</include>
+					<label>$LOCALIZE[20459]</label>
+					<onclick>ActivateWindow(Videos,MovieTags,return)</onclick>
+				</control>
+				<control type="button" id="91119">
+					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31289]</label>
 					<onclick>ActivateWindow(Videos,Files)</onclick>
 					<visible>Skin.HasSetting(NoVideos)</visible>
 				</control>
-				<control type="button" id="91119">
+				<control type="button" id="91120">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31465]</label>
 					<onclick>CleanLibrary(video)</onclick>
 					<visible>Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeCleanLibrary)</visible>
 				</control>
-				<control type="button" id="91120">
+				<control type="button" id="91121">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[653]</label>
 					<onclick>UpdateLibrary(video)</onclick>
