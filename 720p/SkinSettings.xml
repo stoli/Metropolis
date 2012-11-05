@@ -188,12 +188,6 @@
 						<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u|.xsp)</onclick>
 						<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
 					</control>
-					<control type="radiobutton" id="110">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31600]</label>
-						<onclick>Skin.ToggleSetting(LiveTV)</onclick>
-						<selected>Skin.HasSetting(LiveTV)</selected>
-					</control>
 				</control>
 				<!-- Home Options -->
 				<control type="grouplist" id="9002">
@@ -2628,7 +2622,6 @@
 								<onclick>-</onclick>
 								<icon>home_art/livetv.jpg</icon>
 								<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
-								<visible>Skin.HasSetting(LiveTV)</visible>
 							</item>
 							<item id="3">
 								<label>2</label>

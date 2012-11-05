@@ -448,9 +448,7 @@
 					<icon>home_art/livetv.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomLiveTV)]</thumb>
 					<onclick>ActivateWindow(PVR)</onclick>
-					<!-- for frodo
-					<visible>System.GetBool(pvrmanager.enabled)</visible>-->
-					<visible>Skin.HasSetting(LiveTV)</visible>
+					<visible>System.GetBool(pvrmanager.enabled)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
