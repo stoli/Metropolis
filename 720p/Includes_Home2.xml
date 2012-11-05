@@ -1532,15 +1532,7 @@
 				<control type="button" id="91401">
 					<include>Submenu_Button2</include>
 					<label>$LOCALIZE[31011]</label>
-					<onclick>Skin.Reset(ProgramItems)</onclick>
-					<onclick>Skin.Reset(VideoItems)</onclick>
-					<onclick>Skin.Reset(MusicItems)</onclick>
-					<onclick>Skin.Reset(MovieItems)</onclick>
-					<onclick>Skin.Reset(TVItems)</onclick>
-					<onclick>Skin.Reset(PictureItems)</onclick>
-					<onclick>Skin.Reset(WeatherItems)</onclick>
-					<onclick>Skin.Reset(SettingItems)</onclick>
-					<onclick>ActivateWindow(56)</onclick>
+					<onclick>ActivateWindow(SkinSettings)</onclick>
 				</control>
 				<control type="button" id="91402">
 					<include>Submenu_Button2</include>

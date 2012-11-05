@@ -92,20 +92,6 @@
 						<icon>settings/settings_profiles.png</icon>
 						<onclick>activatewindow(Profiles)</onclick>
 					</item>
-					<item id="9">
-						<description>Skin Custom Settings</description>
-						<label>$LOCALIZE[31210]</label>
-						<icon>settings/settings_skin.png</icon>
-						<onclick>Skin.Reset(ProgramItems)</onclick>
-						<onclick>Skin.Reset(VideoItems)</onclick>
-						<onclick>Skin.Reset(MusicItems)</onclick>
-						<onclick>Skin.Reset(MovieItems)</onclick>
-						<onclick>Skin.Reset(TVItems)</onclick>
-						<onclick>Skin.Reset(PictureItems)</onclick>
-						<onclick>Skin.Reset(WeatherItems)</onclick>
-						<onclick>Skin.Reset(SettingItems)</onclick>
-						<onclick>ActivateWindow(56)</onclick>
-					</item>
 					<item id="8">
 						<description>Appearance</description>
 						<label>$LOCALIZE[480]</label>
