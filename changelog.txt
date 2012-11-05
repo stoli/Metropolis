@@ -1,4 +1,5 @@
-2.0.0 - 2012xxxx
+2.0.0 - 20121105
+- Add shuttle controls in PVR OSD.
 - Fix Episode counts in all views.
 - Update fonts.
 - New icons for Addons, LiveTV, and Games.
