@@ -1544,7 +1544,7 @@
 				<control type="button" id="91403">
 					<include>Submenu_Button2</include>
 					<label>31468</label>
-					<onclick>ActivateWindow(NetworkSettings)</onclick>
+					<onclick>ActivateWindow(ServiceSettings)</onclick>
 				</control>
 				<control type="button" id="91404">
 					<include>Submenu_Button2</include>

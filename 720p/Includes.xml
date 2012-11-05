@@ -841,10 +841,10 @@
 				<visible>Window.IsActive(appearancesettings)</visible>
 			</control>
 			<control type="label">
-				<description>Network</description>
-				<label>$LOCALIZE[705]</label>
+				<description>Services</description>
+				<label>$LOCALIZE[31468]</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(networksettings)</visible>
+				<visible>Window.IsActive(servicesettings)</visible>
 			</control>
 			<control type="label">
 				<description>System</description>

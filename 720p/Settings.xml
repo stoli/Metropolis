@@ -150,10 +150,10 @@
 						<onclick>ActivateWindow(AddonBrowser)</onclick>
 					</item>
 					<item id="6">
-						<description>Network</description>
-						<label>$LOCALIZE[705]</label>
+						<description>Services</description>
+						<label>$LOCALIZE[31468]</label>
 						<icon>settings/settings_network.png</icon>
-						<onclick>ActivateWindow(NetworkSettings)</onclick>
+						<onclick>ActivateWindow(ServiceSettings)</onclick>
 					</item>
 				</content>
 			</control>
@@ -277,7 +277,7 @@
 				<include>Animation_CommonFadeNoHide</include>
 				<control type="label">
 					<include>SettingsHeadingVars</include>
-					<label>705</label>
+					<label>$LOCALIZE[31468]</label>
 				</control>
 				<control type="label">
 					<include>SettingsDetailVars</include>
