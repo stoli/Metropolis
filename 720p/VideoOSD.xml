@@ -217,6 +217,16 @@
 					<font>METF_PVRChannelList</font>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 				</control>
+				<control type="button" id="115">
+					<description>Rewind</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_rew_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_rew_nf.png</texturenofocus>
+					<onclick>PlayerControl(Rewind)</onclick>
+					<enable>Player.SeekEnabled</enable>
+				</control>
 				<control type="button" id="110">
 					<description>Stop</description>
 					<include>Animation_ButtonFocus</include>
@@ -239,6 +249,16 @@
 					<disabledcolor>-</disabledcolor>
 					<colordiffuse>-</colordiffuse>
 					<onclick>PlayerControl(play)</onclick>
+				</control>
+				<control type="button" id="114">
+					<description>Forward</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_ff_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_ff_nf.png</texturenofocus>
+					<onclick>PlayerControl(Forward)</onclick>
+					<enable>Player.SeekEnabled</enable>
 				</control>
 				<control type="button" id="112">
 					<description>Record</description>
@@ -272,7 +292,7 @@
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
 				<control type="button" id="121">
-					<description>audio Settings</description>
+					<description>Audio Settings</description>
 					<include>Animation_ButtonFocus</include>
 					<height>60</height>
 					<width>60</width>
