@@ -47,6 +47,19 @@
 				<font>METF_DialogLargeBold</font>
 				<textcolor>DialogTextFO</textcolor>
 				<label>20186</label>
+				<visible>!Control.IsVisible(10)</visible>
+			</control>
+			<control type="progress" id="10">
+				<description>Progress Bar</description>
+				<posx>96</posx>
+				<posy>66</posy>
+				<width>196</width>
+				<height>17</height>
+				<texturebg>osd/osd_progress_back3.png</texturebg>
+				<lefttexture>osd/osd_progress_left3.png</lefttexture>
+				<midtexture>osd/osd_progress_mid3.png</midtexture>
+				<righttexture>osd/osd_progress_right3.png</righttexture>
+				<colordiffuse>DialogProgressBar</colordiffuse>
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
