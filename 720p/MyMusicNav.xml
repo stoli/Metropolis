@@ -106,6 +106,40 @@
 					<onclick>ReplaceWindow(MusicFiles)</onclick>
 					<selected>Window.IsVisible(MusicLibrary)</selected>
 				</control>
+				<control type="edit" id="19">
+					<description>Filter</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Advanced Filter</description>
+					<width>340</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Container.Filtered</selected>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+					<visible>Container.CanFilterAdvanced</visible>
+				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<width>340</width>
@@ -122,20 +156,6 @@
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="19">
-					<description>Filter</description>
-					<width>340</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>587</label>
-					<font>METF_DialogLarge</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
 					<width>340</width>
@@ -150,7 +170,6 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-
 				<control type="button" id="98">
 					<description>Open Player Controls</description>
 					<width>340</width>

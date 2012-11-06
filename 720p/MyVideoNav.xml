@@ -145,12 +145,46 @@
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="7">
-					<description>Stack</description>
+				<control type="edit" id="19">
+					<description>Filter</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Advanced Filter</description>
 					<width>340</width>
 					<align>left</align>
-					<label>14000</label>
-					<altlabel>14001</altlabel>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Container.Filtered</selected>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+					<visible>Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="button" id="8">
+					<description>Search</description>
+					<label>137</label>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
 					<aligny>center</aligny>
 					<font>METF_DialogLarge</font>
 					<textoffsetx>20</textoffsetx>
@@ -159,23 +193,14 @@
 					<disabledcolor>TextDisabled</disabledcolor>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
+					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="11">
-					<description>Unlock Shares</description>
+				<control type="radiobutton" id="7">
+					<description>Stack</description>
 					<width>340</width>
 					<align>left</align>
-					<label>20336</label>
-					<onclick>xbmc.mastermode</onclick>
-					<selected>system.ismaster</selected>
-					<visible>system.haslocks</visible>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-				</control>
-				<control type="radiobutton" id="16">
-					<description>PartyMode</description>
-					<width>340</width>
-					<align>left</align>
-					<label>589</label>
+					<label>14000</label>
+					<altlabel>14001</altlabel>
 					<aligny>center</aligny>
 					<font>METF_DialogLarge</font>
 					<textoffsetx>20</textoffsetx>
@@ -199,27 +224,11 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-				<control type="button" id="8">
-					<description>Search</description>
-					<label>137</label>
-					<width>340</width>
-					<height>40</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_DialogLarge</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<pulseonselect>false</pulseonselect>
-				</control>
-				<control type="radiobutton" id="19">
-					<description>Filter</description>
+				<control type="radiobutton" id="16">
+					<description>PartyMode</description>
 					<width>340</width>
 					<align>left</align>
-					<label>587</label>
+					<label>589</label>
 					<aligny>center</aligny>
 					<font>METF_DialogLarge</font>
 					<textoffsetx>20</textoffsetx>
@@ -229,7 +238,17 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-
+				<control type="radiobutton" id="11">
+					<description>Unlock Shares</description>
+					<width>340</width>
+					<align>left</align>
+					<label>20336</label>
+					<onclick>xbmc.mastermode</onclick>
+					<selected>system.ismaster</selected>
+					<visible>system.haslocks</visible>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+				</control>
 				<control type="button" id="98">
 					<description>Open Player Controls</description>
 					<label>$LOCALIZE[31441] $LOCALIZE[2]</label>

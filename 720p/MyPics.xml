@@ -97,6 +97,40 @@
 					<aligny>center</aligny>
 					<pulseonselect>false</pulseonselect>
 				</control>
+				<control type="edit" id="19">
+					<description>Filter</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Advanced Filter</description>
+					<width>340</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Container.Filtered</selected>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+					<visible>Container.CanFilterAdvanced</visible>
+				</control>
 				<control type="button" id="6">
 					<description>Slideshow</description>
 					<width>340</width>
@@ -112,7 +146,7 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
-					<visible>!ListItem.IsFolder</visible>
+					<visible>!ListItem.IsFolder + !SubString(Container.FolderPath,plugin)</visible>
 				</control>
 				<control type="button" id="7">
 					<description>Recursive Slideshow</description>
@@ -144,24 +178,7 @@
 					<disabledcolor>TextDisabled</disabledcolor>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-				</control>
-				<control type="button" id="98">
-					<description>Open Player Controls</description>
-					<width>340</width>
-					<height>40</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_DialogLarge</font>
-					<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<pulseonselect>false</pulseonselect>
-					<onclick>ActivateWindow(playercontrols)</onclick>
-					<visible>Player.HasMedia</visible>
+					<visible>!SubString(Container.FolderPath,plugin)</visible>
 				</control>
 			</control>
 		</control>

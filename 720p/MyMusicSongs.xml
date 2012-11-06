@@ -105,21 +105,39 @@
 					<onclick>SetFocus(55)</onclick>
 					<enable>Library.HasContent(Music)</enable>
 				</control>
-				<control type="button" id="7">
-					<description>Playlists</description>
+				<control type="edit" id="19">
+					<description>Filter</description>
 					<width>340</width>
 					<height>40</height>
 					<align>left</align>
 					<aligny>center</aligny>
+					<label>587</label>
 					<font>METF_DialogLarge</font>
-					<label>136</label>
 					<textoffsetx>20</textoffsetx>
 					<textcolor>TextNF</textcolor>
 					<focusedcolor>DialogTextFO</focusedcolor>
 					<disabledcolor>TextDisabled</disabledcolor>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<pulseonselect>false</pulseonselect>
+					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+				</control>
+				<control type="radiobutton" id="20">
+					<description>Advanced Filter</description>
+					<width>340</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>587</label>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Container.Filtered</selected>
+					<onclick>right</onclick>
+					<onclick>Filter</onclick>
+					<visible>Container.CanFilterAdvanced</visible>
 				</control>
 				<control type="button" id="11">
 					<description>Search</description>
@@ -129,6 +147,22 @@
 					<aligny>center</aligny>
 					<font>METF_DialogLarge</font>
 					<label>600</label>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<pulseonselect>false</pulseonselect>
+				</control>
+				<control type="button" id="7">
+					<description>Playlists</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>METF_DialogLarge</font>
+					<label>136</label>
 					<textoffsetx>20</textoffsetx>
 					<textcolor>TextNF</textcolor>
 					<focusedcolor>DialogTextFO</focusedcolor>
