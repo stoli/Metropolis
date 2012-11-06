@@ -230,25 +230,6 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-
-				<control type="button" id="98">
-					<description>Open Player Controls</description>
-					<label>$LOCALIZE[31441] $LOCALIZE[2]</label>
-					<onclick>ActivateWindow(playercontrols)</onclick>
-					<visible>Player.HasMedia</visible>
-					<width>340</width>
-					<height>40</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>METF_DialogLarge</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<pulseonselect>false</pulseonselect>
-				</control>
 			</control>
 		</control>
 		<include>Global_Weather</include>
