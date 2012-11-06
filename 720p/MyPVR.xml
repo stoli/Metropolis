@@ -103,6 +103,7 @@
 					<pulseonselect>false</pulseonselect>
 					<label>$LOCALIZE[137]</label>
 				</control>
+				<include>Nav_NowPlaying</include>
 			</control>
 		</control>
 		
