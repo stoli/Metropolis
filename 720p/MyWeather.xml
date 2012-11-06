@@ -537,6 +537,7 @@
 					<texturedownfocus>ArrowDownFo.png</texturedownfocus>
 					<reverse>yes</reverse>
 				</control>
+				<include>Nav_NowPlaying</include>
 			</control>
 			
 			<control type="label">

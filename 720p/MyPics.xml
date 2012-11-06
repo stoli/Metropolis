@@ -180,6 +180,7 @@
 					<texturenofocus>-</texturenofocus>
 					<visible>!SubString(Container.FolderPath,plugin)</visible>
 				</control>
+				<include>Nav_NowPlaying</include>
 			</control>
 		</control>
 		<include>Global_Weather</include>

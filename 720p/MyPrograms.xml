@@ -122,6 +122,7 @@
 					<onclick>Filter</onclick>
 					<visible>Container.CanFilterAdvanced + Skin.HasSetting(AdvancedMediaFilter)</visible>
 				</control>
+				<include>Nav_NowPlaying</include>
 			</control>
 		</control>
 		<include>Global_Weather</include>
