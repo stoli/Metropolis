@@ -122,9 +122,10 @@
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="19">
+				<control type="edit" id="19">
 					<description>Filter</description>
 					<width>340</width>
+					<height>40</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>587</label>
