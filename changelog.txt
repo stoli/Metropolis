@@ -1,3 +1,10 @@
+2.1.0 - 2012xxxx
+- Support for ListItem.Art(banner).
+- Support for Advanced Media Filter.
+- Replace Get Thumb and Get Fanart in Video Info Dialog with Choose Art.
+- Tags submenu item in Movies.
+- Option to hide addons not in user's native tongue.
+
 2.0.0 - 20121105
 - Add shuttle controls in PVR OSD.
 - Fix Episode counts in all views.
