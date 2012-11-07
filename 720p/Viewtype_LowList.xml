@@ -21,7 +21,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewLowList)</visible>
-				<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)] | Container.Content(addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
+				<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Window.IsActive(pictures)] + ![SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)]</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -220,7 +220,6 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons) | Window.IsActive(videolibrary)] | [Window.IsActive(musiclibrary) + Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]</visible>
 				<control type="image">
 					<posx>360</posx>
 					<posy>413</posy>
@@ -228,7 +227,7 @@
 					<height>3</height>
 					<texture>VideoInfoLine.png</texture>
 					<colordiffuse>LowListDivider</colordiffuse>
-					<visible>!Container.Content(Seasons) + [Window.IsActive(videolibrary) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(addons)]</visible>
+					<visible>!Container.Content(Seasons)</visible>
 				</control>
 				<control type="image">
 					<posx>360</posx>
@@ -273,7 +272,7 @@
 					<label fallback="416">[COLOR=MediaDetailsGenre]$LOCALIZE[31423]:[/COLOR] $INFO[ListItem.Property(Addon.Creator)]</label>
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsInfo</textcolor>
-					<visible>Container.Content(addons)</visible>
+					<visible>!IsEmpty(ListItem.Property(Addon.Creator) + Container.Content(addons)</visible>
 				</control>
 				<!-- Genre -->
 				<control type="label">
@@ -285,7 +284,18 @@
 					<label>$INFO[ListItem.Genre]</label>
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsGenre</textcolor>
-					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)]</visible>
+				</control>
+				<control type="label">
+					<posx>1245</posx>
+					<posy>380</posy>
+					<width>590</width>
+					<height>27</height>
+					<align>right</align>
+					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
+					<font>METF_MediaDetails</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<visible>IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Property(Artist_Genre))</visible>
 				</control>
 				<!-- Episode Duration -->
 				<control type="label">
@@ -362,41 +372,18 @@
 					<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>[Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes)]] | Container.Content(addons)</visible>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums)]</visible>
 				</control>
-				<!-- Poster Image for TV Show Episodes -->
+				<!-- Poster Image for TV Show Seasons and Episodes -->
 				<control type="image">
 					<posx>37</posx>
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[Container.SeasonThumb]</texture>
+					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Art(tvshow.poster)]</texture> 
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>!Container.Content(tvshows) + Container.Content(episodes) + !SubString(Container.FolderPath,-1) + !SubString(Container.FolderPath,videodb://5/)</visible>
-				</control>
-				<!-- Poster Image for TV Show Seasons -->
-				<control type="image">
-					<posx>37</posx>
-					<posy>160</posy>
-					<width>300</width>
-					<height>440</height>
-					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[Container.TvshowThumb]</texture> 
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<fadetime>300</fadetime>
-					<!-- Allows TV Show poster to show if Flattened -->
-					<visible>!Container.Content(tvshows) + [Container.Content(seasons) | [Container.Content(episodes) + SubString(Container.FolderPath,-1) + IsEmpty(ListItem.Property(SeasonThumb))]]</visible>
-				</control>
-				<!-- Poster Image for special subsections (RecentlyAddedEpisodes, etc) -->
-				<control type="image">
-					<posx>37</posx>
-					<posy>160</posy>
-					<width>300</width>
-					<height>440</height>
-					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Property(SeasonThumb)]</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<fadetime>300</fadetime>
-					<visible>!Container.Content(tvshows) + Container.Content(episodes) + [[SubString(Container.FolderPath,-1) + !IsEmpty(ListItem.Property(SeasonThumb))] | SubString(Container.FolderPath,videodb://5/)]</visible>
+					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<!-- Frame for poster -->
 				<control type="image">
@@ -409,7 +396,7 @@
 					<fadetime>300</fadetime>
 					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
-				<!-- Album and Artist Cover for Music -->
+				<!-- Pictures, Addons, Music Videos, and Album/Artist Cover -->
 				<control type="image">
 					<posx>37</posx>
 					<posy>165</posy>
@@ -420,41 +407,10 @@
 					<texture fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">border.png</bordertexture>
 					<bordersize>4</bordersize>
-					<visible>Window.IsActive(musiclibrary) + [Container.Content(songs) | Container.Content(artists) | Container.Content(albums)]</visible>
+					<visible>Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Window.IsActive(pictures) | Container.Content(addons)</visible>
 				</control>
 
 				<!-- RIGHT SIDE OF SCREEN -->
-				<!-- TV Show Episode, Fanart, or Landscape Image -->
-				<control type="image">
-					<posx>952</posx>
-					<posy>435</posy>
-					<width>293</width>
-					<height>165</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<visible>Container.Content(episodes)</visible>
-				</control>
-				<control type="image">
-					<posx>952</posx>
-					<posy>435</posy>
-					<width>293</width>
-					<height>165</height>
-					<texture fallback="MissingLandscapeJpeg.jpg" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + Skin.HasSetting(landscape_jpg)</visible>
-				</control>
-				<control type="image">
-					<posx>952</posx>
-					<posy>435</posy>
-					<width>293</width>
-					<height>165</height>
-					<texture fallback="home_art/tvshows.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)</visible>
-				</control>
 				<!-- Movie Fanart Image -->
 				<control type="image">
 					<posx>952</posx>
@@ -464,18 +420,91 @@
 					<texture fallback="home_art/movies.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>300</fadetime>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies) | Container.Content(addons)</visible>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
-				<!-- Season poster -->
+				<!-- TV Show Episode, Fanart, or Landscape Image -->
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="MissingLandscapeJpeg.jpg" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Container.Content(tvshows) + Skin.HasSetting(landscape_jpg)</visible>
+				</control>
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="home_art/tvshows.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)</visible>
+				</control>
 				<control type="image">
 					<posx>947</posx>
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
 					<visible>Container.Content(seasons)</visible>
+				</control>
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Container.Content(episodes)</visible>
+				</control>
+				<!-- Music Fanart Image -->
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="home_art/music.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<fadetime>300</fadetime>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(musiclibrary)</visible>
+				</control>
+				<!-- Pictures Fanart Image -->
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.Property(Fanart_Image)</visible>
+				</control>
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.filenameandpath]</texture>
+					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Property(Fanart_Image)</visible>
+				</control>
+				<!-- Addons Fanart Image -->
+				<control type="image">
+					<posx>952</posx>
+					<posy>435</posy>
+					<width>293</width>
+					<height>165</height>
+					<texture fallback="home_art/programs.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Container.Content(addons)</visible>
 				</control>
 				<!-- Frame for Episode, Landscape and Fanart images -->
 				<control type="image">
@@ -487,7 +516,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<colordiffuse>GlassDiffuse</colordiffuse>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons)</visible>
+					<visible>!Container.Content(seasons)</visible>
 				</control>
 				<control type="image">
 					<posx>935</posx>
@@ -496,7 +525,7 @@
 					<height>203</height>
 					<texture>frames/ClassicFrame_FanartSmall.png</texture>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons)</visible>
+					<visible>!Container.Content(seasons)</visible>
 				</control>
 				<!-- Frame for Season poster -->
 				<control type="image">
@@ -527,7 +556,7 @@
 					<animation effect="fade" start="60" end="100" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(998)">Conditional</animation>
 				</control>
 			</control>
-			<!-- Movies/TVShows - Year/Duration/Number of Episodes -->
+			<!-- Year/Duration/Number of Episodes -->
 			<control type="grouplist">
 				<posx>365</posx>
 				<posy>298</posy>
@@ -547,7 +576,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsYear</textcolor>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
+					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -556,7 +585,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + Container.Content(movies)</visible>
+					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -566,7 +595,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<control type="label">
 					<width min="25" max="300">auto</width>
@@ -575,7 +604,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
-					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">

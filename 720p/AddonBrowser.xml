@@ -1,5 +1,5 @@
 ﻿<window id="40">
-	<views>55</views>
+	<views>55,905</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -12,6 +12,7 @@
 			<include>Animation_CommonFade</include>
 		</control>
 		<include>Viewtype_Files</include>
+		<include>Viewtype_LowList</include>
 		<include>Global_ContextFilter</include>
 		<include>Global_AddonInfo</include>
 		<include>Global_ScrollOffsetLabel</include>

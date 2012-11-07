@@ -472,7 +472,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<animation effect="zoom" center="auto" start="40" end="100" time="400" tween="cubic" easing="inout">WindowOpen</animation>
 					<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
-					<visible>!Container.Content(tvshows) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<!-- Poster Image for Music Videos -->
 				<control type="image">
