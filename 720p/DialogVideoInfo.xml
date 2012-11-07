@@ -513,32 +513,31 @@
 
 				<!-- Default Fanart Image -->
 				<control type="image">
-					<posx>915</posx>
+					<posx>918</posx>
 					<posy>79</posy>
 					<width>324</width>
-					<height>180</height>
+					<height>182</height>
 					<texture fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
+					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 					<visible>!Container.Content(episodes)</visible>
 				</control>
 				<!-- TV Show Episode Fanart Image -->
 				<control type="image">
-					<posx>915</posx>
+					<posx>918</posx>
 					<posy>79</posy>
 					<width>324</width>
-					<height>180</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<height>182</height>
+					<texture>$INFO[ListItem.Thumb]</texture>
 					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 					<visible>Container.Content(episodes)</visible>
 				</control>
 				<!-- Frame for fanart -->
 				<control type="image">
-					<posx>894</posx>
-					<posy>59</posy>
+					<posx>896</posx>
+					<posy>60</posy>
 					<width>364</width>
 					<height>220</height>
 					<texture>frames/ClassicFrame_FanartSmall.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
 					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(MusicVideos)</visible>
 				</control>
 			</control>
