@@ -3824,42 +3824,27 @@
 					<control type="button" id="704">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.artwork.downloader,mediatype=tvshow, poster, fanart, extrafanart, clearart, clearlogo, tvthumb, banner, characterart, defaultthumb)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, clearart, clearlogo, tvthumb)</onclick>
+						<visible>System.HasAddon(script.artwork.downloader</visible>
 					</control>
-					<control type="label" id="705">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31127]</label>
-					</control>
-					<control type="radiobutton" id="706">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31055]</label>
-						<onclick>Skin.ToggleSetting(TV_Panel_Logo)</onclick>
-						<selected>Skin.HasSetting(TV_Panel_Logo)</selected>
-					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="705">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31296]</label>
 						<onclick>Skin.ToggleSetting(landscape_jpg)</onclick>
 						<selected>Skin.HasSetting(landscape_jpg)</selected>
 					</control>
-					<control type="radiobutton" id="708">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31297]</label>
-						<onclick>Skin.ToggleSetting(banner_jpg)</onclick>
-						<selected>Skin.HasSetting(banner_jpg)</selected>
-					</control>
-					<control type="image" id="709">
+					<control type="image" id="706">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.tv.show.next.aired) | System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="710">
+					<control type="radiobutton" id="707">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31426]</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="711">
+					<control type="radiobutton" id="708">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31437]</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>

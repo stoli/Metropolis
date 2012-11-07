@@ -17,7 +17,6 @@
 	<string id="31034">Enable Dynamic Weather Artwork</string>
 	<string id="31035">Show Clean Library SubMenu items</string>
 	<string id="31054">Logo</string>
-	<string id="31055">Use TV Show Logos</string>
 	<string id="31056">Enable Cover Art overlay</string>
 	<string id="31057">Enable Song Info text overlay</string>
 	<string id="31060">Show Recently Added Items</string>
@@ -25,8 +24,7 @@
 	<string id="31109">Enable Debug Grid</string>
 	<string id="31118">Filemanager</string>
 	<string id="31125">Hide Video Root</string>	
-	<string id="31126">Download TV logos, Landscape and Banner images</string>
-	<string id="31127"> - required for options below -</string>
+	<string id="31126">Download TV Show Logos, Clear Art, and Landscape images</string>
 	<string id="31133">Mute</string>
 	<string id="31159">ffx2</string>
 	<string id="31160">ffx4</string>
@@ -71,8 +69,7 @@
 	<string id="31289">Files</string>
 	<string id="31291">Landscape</string>
 	<string id="31293">Picture Grid</string>
-	<string id="31296">Use 'landscape.jpg' for TV Shows</string>
-	<string id="31297">Use 'banner.jpg' for Banner Views</string>
+	<string id="31296">Prefer Landscape over Fanart for TV Show icons</string>
 	<string id="31298">Panel Square</string>
 	<string id="31299">Min</string>
 	<string id="31313">Movie Set</string>

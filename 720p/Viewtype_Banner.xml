@@ -45,18 +45,9 @@
 						<posy>15</posy>
 						<width>375</width>
 						<height>70</height>
-						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Art(banner)]</texture>
 						<aspectratio scalediffuse="true">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(banner_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>15</posy>
-						<width>375</width>
-						<height>70</height>
-						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Path]banner.jpg</texture>
-						<aspectratio scalediffuse="true">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(banner_jpg)</visible>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>4</posx>
@@ -104,22 +95,11 @@
 						<posy>15</posy>
 						<width>375</width>
 						<height>70</height>
-						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Art(banner)]</texture>
 						<aspectratio scalediffuse="true">stretch</aspectratio>
 						<animation reversible="false" effect="zoom" center="auto" start="100" end="115" time="200" tween="sine" easing="inout">focus</animation>
 						<animation reversible="false" effect="zoom" center="auto" start="115" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(banner_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>15</posy>
-						<width>375</width>
-						<height>70</height>
-						<texture background="true" fallback="default_banner.png" diffuse="frames/banner_diffuse.png">$INFO[ListItem.Path]banner.jpg</texture>
-						<aspectratio scalediffuse="true">stretch</aspectratio>
-						<animation reversible="false" effect="zoom" center="auto" start="100" end="115" time="200" tween="sine" easing="inout">focus</animation>
-						<animation reversible="false" effect="zoom" center="auto" start="115" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-						<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(banner_jpg)</visible>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>4</posx>
