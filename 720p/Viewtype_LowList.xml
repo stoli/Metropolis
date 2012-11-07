@@ -41,34 +41,10 @@
 						<height>35</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
-						<font>METF_TitleText</font>
-						<textcolor>LowListTitle</textcolor>
-						<visible>!IsEmpty(ListItem.Episode) + Container.Content(episodes)</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
-						<width>475</width>
-						<height>35</height>
-						<align>left</align>
-						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>LowListTitle</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(music) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
-						<width>475</width>
-						<height>35</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<font>METF_TitleText</font>
-						<textcolor>LowListTitle</textcolor>
-						<visible>Container.Content(seasons)</visible>
+						<visible>Window.IsActive(videolibrary)</visible>
 					</control>
 					<!-- Watched Overlay for Items in Video Library -->
 					<control type="image">
@@ -137,42 +113,10 @@
 						<pauseatend>1800</pauseatend>
 						<scrollspeed>40</scrollspeed>
 						<scroll>true</scroll>
-						<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
-						<font>METF_TitleText</font>
-						<textcolor>FocusBarText</textcolor>
-						<visible>!IsEmpty(ListItem.Episode) + Container.Content(episodes)</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
-						<width>475</width>
-						<height>35</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>1800</pauseatend>
-						<scrollspeed>40</scrollspeed>
-						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<font>METF_TitleText</font>
 						<textcolor>FocusBarText</textcolor>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(addons) | [Window.IsActive(videolibrary) + !Container.Content(episodes)]</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>0</posy>
-						<width>475</width>
-						<height>35</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>1800</pauseatend>
-						<scrollspeed>40</scrollspeed>
-						<scroll>true</scroll>
-						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360])</label>
-						<font>METF_TitleText</font>
-						<textcolor>FocusBarText</textcolor>
-						<visible>Container.Content(seasons)</visible>
+						<visible>Window.IsActive(videolibrary)</visible>
 					</control>
 					<!-- Watched Overlay for Items in Video Library -->
 					<control type="image">
