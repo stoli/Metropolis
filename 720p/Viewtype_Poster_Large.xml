@@ -6,7 +6,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
-				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				<!-- Browser label and flags -->
 				<control type="group">
 					<posx>520</posx>
