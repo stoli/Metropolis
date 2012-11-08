@@ -457,6 +457,7 @@
 			<width>750</width>
 			<height>68</height>
 			<font>METF_PlotTextSmall</font>
+			<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 			<textcolor>LowerText</textcolor>
 			<label>$VAR[PlotBox_Text]</label>
 			<align>justify</align>
