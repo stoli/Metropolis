@@ -29,7 +29,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewGallerySquare)</visible>
-				<visible>Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums)</visible>
+				<visible>Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
 				<itemlayout width="205" height="205">
 					<control type="image">
 						<posx>25</posx>
@@ -96,7 +96,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums)</visible>
+				<visible>Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
 				<!-- Title -->
 				<control type="grouplist">
 					<posx>40</posx>
