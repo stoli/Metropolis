@@ -223,7 +223,7 @@
 				<!-- Genre -->
 				<control type="label">
 					<posx>200</posx>
-					<posy>35</posy>
+					<posy>36</posy>
 					<width>800</width>
 					<height>30</height>
 					<align>center</align>
@@ -236,7 +236,7 @@
 				<!-- Movie Sets -->
 				<control type="label">
 					<posx>200</posx>
-					<posy>35</posy>
+					<posy>36</posy>
 					<width>800</width>
 					<height>30</height>
 					<align>center</align>
@@ -300,7 +300,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -319,7 +319,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>

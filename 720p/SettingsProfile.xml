@@ -130,6 +130,7 @@
 						<textcolor>SettingsDetail</textcolor>
 						<font>METF_ContextValue</font>
 						<align>left</align>
+						<aligny>center</aligny>
 						<focusedcolor>ButtonText</focusedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>

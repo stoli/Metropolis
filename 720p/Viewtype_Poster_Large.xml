@@ -42,7 +42,7 @@
 						<!-- Bullet -->
 						<control type="image">
 							<width>8</width>
-							<height>36</height>
+							<height>32</height>
 							<texture>Dot.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>BulletDiffuse</colordiffuse>
@@ -71,7 +71,7 @@
 						<!-- Bullet -->
 						<control type="image">
 							<width>8</width>
-							<height>36</height>
+							<height>32</height>
 							<texture>Dot.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>BulletDiffuse</colordiffuse>
@@ -90,7 +90,7 @@
 						<!-- Bullet -->
 						<control type="image">
 							<width>8</width>
-							<height>36</height>
+							<height>32</height>
 							<texture>Dot.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>BulletDiffuse</colordiffuse>
@@ -109,7 +109,7 @@
 						<!-- Bullet -->
 						<control type="image">
 							<width>8</width>
-							<height>36</height>
+							<height>32</height>
 							<texture>Dot.png</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<colordiffuse>BulletDiffuse</colordiffuse>
@@ -148,7 +148,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewPosterLarge)</visible>
-				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				<itemlayout width="300" height="420">
 					<control type="group">
 						<posx>-30</posx>

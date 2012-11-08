@@ -185,7 +185,7 @@
 				<!-- Season - Unwatched Episode Number -->
 				<control type="label">
 					<posx>915</posx>
-					<posy>378</posy>
+					<posy>380</posy>
 					<width>550</width>
 					<height>27</height>
 					<align>right</align>
@@ -503,9 +503,8 @@
 			<!-- Year/Duration/Number of Episodes -->
 			<control type="grouplist">
 				<posx>365</posx>
-				<posy>298</posy>
+				<posy>300</posy>
 				<width>300</width>
-				<height>30</height>
 				<align>left</align>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
@@ -515,9 +514,8 @@
 				<!-- Year -->
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
+					<height>27</height>
+					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsYear</textcolor>
 					<label>$INFO[ListItem.Year]</label>
 					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
@@ -525,7 +523,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>38</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -534,18 +532,16 @@
 				<!-- Duration -->
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
+					<height>27</height>
+					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
+					<height>27</height>
+					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
@@ -553,7 +549,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>38</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -562,9 +558,8 @@
 				<!-- TV Shows - Number of Episodes -->
 				<control type="label">
 					<width min="25" max="300">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
+					<height>27</height>
+					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsEpisodes</textcolor>
 					<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
 					<visible>Container.Content(tvshows)</visible>

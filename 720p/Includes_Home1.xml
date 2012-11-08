@@ -28,6 +28,7 @@
 		<width>120</width>
 		<height>24</height>
 		<align>left</align>
+		<aligny>center</aligny>
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsCategory</textcolor>
 	</include>
@@ -35,6 +36,7 @@
 		<width>60</width>
 		<height>24</height>
 		<align>right</align>
+		<aligny>center</aligny>
 		<font>METF_HomeStatsText</font>
 		<textcolor>HomeStatsNumber</textcolor>
 	</include>

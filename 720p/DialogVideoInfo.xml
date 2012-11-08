@@ -97,10 +97,11 @@
 			<!-- Genre -->
 			<control type="label">
 				<posx>-8</posx>
-				<posy>100</posy>
+				<posy>96</posy>
 				<width>515</width>
 				<height>30</height>
 				<align>left</align>
+				<aligny>center</aligny>
 				<font>METF_InfoText</font>
 				<textcolor>MediaDetailsGenre</textcolor>
 				<label>$INFO[ListItem.Genre]</label>
@@ -109,10 +110,11 @@
 			<!-- Episode Air Date -->
 			<control type="label">
 				<posx>-8</posx>
-				<posy>100</posy>
+				<posy>96</posy>
 				<width>515</width>
 				<height>30</height>
 				<align>left</align>
+				<aligny>center</aligny>
 				<font>METF_InfoTextLarger</font>
 				<textcolor>MediaDetailsInfo</textcolor>
 				<label>$LOCALIZE[20416] $INFO[ListItem.Date]</label>
@@ -195,6 +197,7 @@
 					<width>340</width>
 					<height>25</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>METF_HelpText</font>
 					<textcolor>HelpText</textcolor>
 					<label>$LOCALIZE[31407]</label>
@@ -322,7 +325,7 @@
 			<!-- Bullet -->
 			<control type="image">
 				<width>8</width>
-				<height>36</height>
+				<height>32</height>
 				<texture>Dot.png</texture>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<colordiffuse>BulletDiffuse</colordiffuse>

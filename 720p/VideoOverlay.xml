@@ -107,7 +107,7 @@
 			</control>
 			<control type="label">
 				<posx>30</posx>
-				<posy>9</posy>
+				<posy>6</posy>
 				<width>460</width>
 				<font>METF_DialogSmallBold</font>
 				<label>13350</label>
@@ -115,11 +115,11 @@
 			</control>
 			<control type="grouplist">
 				<posx>30</posx>
-				<posy>28</posy>
+				<posy>26</posy>
 				<width>440</width>
 				<height>25</height>
 				<itemgap>10</itemgap>
-				<align>left</align>
+				<align>center</align>
 				<orientation>horizontal</orientation>
 				<control type="label">
 					<posx>0</posx>

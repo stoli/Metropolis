@@ -244,7 +244,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -273,7 +273,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -301,7 +301,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -320,7 +320,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>

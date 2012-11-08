@@ -294,6 +294,7 @@
 				<height>30</height>
 				<font>METF_Temp</font>
 				<align>right</align>
+				<aligny>center</aligny>
 				<textcolor>Temp</textcolor>
 				<label>[B]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/B]</label>
 			</control>
@@ -306,6 +307,7 @@
 		<height>30</height>
 		<font>METF_Date</font>
 		<align>right</align>
+		<aligny>center</aligny>
 		<textcolor>Date</textcolor>
 	</include>
 	<include name="Global_Time">
@@ -316,43 +318,47 @@
 			<control type="label">
 				<description>Hours</description>
 				<posx>1182</posx>
-				<posy>550</posy>
+				<posy>614</posy>
 				<width>150</width>
 				<font>METF_Hours</font>
 				<align>right</align>
+				<aligny>center</aligny>
 				<textcolor>Time</textcolor>
 				<label>$INFO[System.Time(hh)]</label>
 			</control>
 			<control type="label">
 				<description>Minutes</description>
-				<posx>1195</posx>
-				<posy>569</posy>
+				<posx>1196</posx>
+				<posy>596</posy>
 				<width>80</width>
 				<font>METF_Minutes</font>
 				<align>left</align>
+				<aligny>center</aligny>
 				<textcolor>Time</textcolor>
 				<label>$INFO[System.Time(mm)]</label>
 			</control>
 			<control type="label">
 				<description>AM</description>
-				<posx>1188</posx>
-				<posy>615</posy>
+				<posx>1185</posx>
+				<posy>640</posy>
 				<width>80</width>
 				<font>METF_FontAMPM</font>
 				<textcolor>TimeAMPM</textcolor>
 				<label>[B]AM[/B]</label>
 				<align>left</align>
+				<aligny>center</aligny>
 				<visible>substring(system.time,AM,right)</visible>
 			</control>
 			<control type="label">
 				<description>PM</description>
-				<posx>1188</posx>
-				<posy>615</posy>
+				<posx>1185</posx>
+				<posy>640</posy>
 				<width>80</width>
 				<font>METF_FontAMPM</font>
 				<textcolor>TimeAMPM</textcolor>
 				<label>[B]PM[/B]</label>
 				<align>left</align>
+				<aligny>center</aligny>
 				<visible>substring(system.time,PM,right)</visible>
 			</control>
 			<control type="label">
@@ -449,7 +455,7 @@
 			<include>Animation_HiddenByInfo</include>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<width>750</width>
-			<height>64</height>
+			<height>68</height>
 			<font>METF_PlotTextSmall</font>
 			<textcolor>LowerText</textcolor>
 			<label>$VAR[PlotBox_Text]</label>
@@ -465,7 +471,7 @@
 			<height>135</height>
 			<font>METF_PlotTextMedium</font>
 			-->
-			<height>128</height>
+			<height>130</height>
 			<font>METF_PlotTextSmall</font>
 			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 			<textcolor>LowerText</textcolor>
@@ -572,6 +578,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
+			<aligny>top</aligny>
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_HiddenByInfo</include>
@@ -590,6 +597,7 @@
 					<width>750</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>METF_PlotTextSmall</font>
 					<textcolor>LowerText</textcolor>
 					<label>$INFO[ListItem.PictureCamMake] $INFO[ListItem.PictureCamModel]</label>
@@ -605,6 +613,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
+						<aligny>center</aligny>
 						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>$INFO[ListItem.PictureFocalLen]</label>
@@ -621,6 +630,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
+						<aligny>center</aligny>
 						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>f/$INFO[ListItem.PictureAperture]</label>
@@ -629,6 +639,7 @@
 					<control type="image">
 						<width>8</width>
 						<height>24</height>
+						<aligny>center</aligny>
 						<texture>Dot.png</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<colordiffuse>BulletDiffuse</colordiffuse>
@@ -637,6 +648,7 @@
 					<control type="label">
 						<width min="25" max="750">auto</width>
 						<height>20</height>
+						<aligny>center</aligny>
 						<font>METF_PlotTextSmall</font>
 						<textcolor>LowerText</textcolor>
 						<label>$INFO[ListItem.PictureFocusDist]</label>
@@ -649,6 +661,7 @@
 					<width>750</width>
 					<height>20</height>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>METF_PlotTextSmall</font>
 					<textcolor>LowerText</textcolor>
 					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
@@ -1441,7 +1454,7 @@
 				<!-- Plot -->
 				<control type="textbox">
 					<width>830</width>
-					<height>64</height>
+					<height>68</height>
 					<align>justify</align>
 					<font>METF_PlotTextSmall</font>
 					<textcolor>TextNF</textcolor>
@@ -1501,7 +1514,7 @@
 	</include>
 
 	<!-- Scrollbars -->
-	<include name="ScrollBar_Horizontal">		
+	<include name="ScrollBar_Horizontal">
 		<!-- Scroll Bar -->
 		<control type="scrollbar" id="60">
 			<include>Animation_OpenCloseFade</include>

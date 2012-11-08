@@ -142,6 +142,7 @@
 					<posy>450</posy>
 					<width>760</width>
 					<height>30</height>
+					<aligny>center</aligny>
 					<scrollout>true</scrollout>
 					<pauseatend>400</pauseatend>
 					<font>METF_TitleTextLarge</font>
@@ -155,6 +156,7 @@
 					<posy>450</posy>
 					<width>760</width>
 					<height>30</height>
+					<aligny>center</aligny>
 					<scrollout>false</scrollout>
 					<pauseatend>400</pauseatend>
 					<font>METF_TitleTextLarge</font>
@@ -244,7 +246,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
@@ -272,7 +274,7 @@
 				<!-- Bullet -->
 				<control type="image">
 					<width>8</width>
-					<height>36</height>
+					<height>32</height>
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>

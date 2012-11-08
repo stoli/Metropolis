@@ -121,6 +121,7 @@
 					<control type="label">
 						<include>MediaFlagsVarsSquareHalfBottom</include>
 						<align>center</align>
+						<aligny>center</aligny>
 						<label>$INFO[ListItem.Top250]</label>
 						<textcolor>MediaFlagDiffuse</textcolor>
 						<font>METF_DialogSmallBold</font>
