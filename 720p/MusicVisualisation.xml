@@ -50,7 +50,7 @@
 			<visible>!Skin.HasSetting(VisBgArtistSlideshow)</visible>
 		</control>
 		<control type="group">
-			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + !Window.IsVisible(120)</visible>
+			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + ![Window.IsVisible(musicosd) | Window.IsVisible(seekbar)]</visible>
 			<include>Animation_CommonFade</include>
 			<control type="label">
 				<posx>1250</posx>
@@ -65,7 +65,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Player.ShowInfo + !Window.IsVisible(120)</visible>
+			<visible>Player.ShowInfo + !Window.IsVisible(musicosd)</visible>
 			<animation type="Visible">
 				<effect type="fade" time="200" start="0" end="100" />
 				<effect type="slide" time="600" start="0,151" end="0,0" easing="out" tween="cubic" />
