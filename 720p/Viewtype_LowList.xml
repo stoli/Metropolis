@@ -361,31 +361,21 @@
 					<posy>435</posy>
 					<width>293</width>
 					<height>165</height>
-					<texture fallback="home_art/movies.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/movies.jpg" background="true">$VAR[LandscapeFanart]</texture>
 					<fadetime>300</fadetime>
-					<aspectratio scalediffuse="false">scale</aspectratio>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
-				<!-- TV Show Episode, Fanart, or Landscape Image -->
+				<!-- TV Show Fanart Image -->
 				<control type="image">
 					<posx>952</posx>
 					<posy>435</posy>
 					<width>293</width>
 					<height>165</height>
-					<texture fallback="MissingLandscapeJpeg.jpg" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
+					<texture fallback="home_art/tvshows.jpg" background="true">$VAR[LandscapeFanart]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(tvshows) + Skin.HasSetting(landscape_jpg)</visible>
-				</control>
-				<control type="image">
-					<posx>952</posx>
-					<posy>435</posy>
-					<width>293</width>
-					<height>165</height>
-					<texture fallback="home_art/tvshows.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<fadetime>300</fadetime>
-					<visible>Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)</visible>
+					<visible>Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
 					<posx>947</posx>
@@ -413,7 +403,7 @@
 					<posy>435</posy>
 					<width>293</width>
 					<height>165</height>
-					<texture fallback="home_art/music.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/music.jpg" background="true">$VAR[LandscapeFanart]</texture>
 					<fadetime>300</fadetime>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<visible>Window.IsActive(musiclibrary)</visible>
@@ -445,12 +435,12 @@
 					<posy>435</posy>
 					<width>293</width>
 					<height>165</height>
-					<texture fallback="home_art/programs.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/programs.jpg" background="true">$VAR[LandscapeFanart]</texture>
 					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
 					<fadetime>300</fadetime>
 					<visible>Container.Content(addons)</visible>
 				</control>
-				<!-- Frame for Episode, Landscape and Fanart images -->
+				<!-- Frame for Fanart images -->
 				<control type="image">
 					<posx>952</posx>
 					<posy>435</posy>

@@ -157,4 +157,8 @@
 		<value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,UK:X)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,UK:X)]">flags/Rating/bbfc_r18.png</value>
 		<value>flags/Rating/NoRating.png</value>
 	</variable>
+	<variable name="LandscapeFanart">
+		<value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Property(Fanart_Image)]</value>
+	</variable>
 </includes>

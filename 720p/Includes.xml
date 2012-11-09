@@ -1199,58 +1199,36 @@
 				<label>$INFO[VideoPlayer.Tagline]</label>
 				<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
 			</control>
-			<!-- Episode Image / Logo / Clearart -->
-			<control type="image">
-				<description>TV Show Logo</description>
-				<posx>25</posx>
-				<posy>450</posy>
-				<width>250</width>
-				<height>230</height>
-				<texture background="true">$INFO[Player.FolderPath]../logo.png</texture>
-				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<visible>VideoPlayer.Content(Episodes) + !SubString(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDLogo)</visible>
-			</control>
-			<control type="image">
-				<description>TV Show Logo</description>
-				<posx>25</posx>
-				<posy>450</posy>
-				<width>250</width>
-				<height>230</height>
-				<texture background="true">$INFO[Player.FolderPath]logo.png</texture>
-				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<visible>VideoPlayer.Content(Episodes) + !SubString(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDLogo)</visible>
-			</control>
-			<control type ="image" id="7657">
-				<description>TV Show ClearArt</description>
-				<posx>25</posx>
-				<posy>515</posy>
-				<width>250</width>
-				<height>230</height>
-				<texture background="true">$INFO[Player.FolderPath]../clearart.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes) + ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
-			</control>
-			<control type ="image" id="7658">
-				<description>TV Show ClearArt</description>
-				<posx>25</posx>
-				<posy>515</posy>
-				<width>250</width>
-				<height>230</height>
-				<texture background="true">$INFO[Player.FolderPath]clearart.png</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes) + ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
-			</control>
+			<!-- TV Show Poster / Logo / Clearart -->
 			<control type="image">
 				<description>TV Show Thumbnail</description>
+				<posx>40</posx>
+				<posy>393</posy>
+				<width>204</width>
+				<height>300</height>
+				<texture background="true">$INFO[Player.Art(tvshow.poster)]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + ![Skin.HasSetting(Enable_OSDLogo) | Skin.HasSetting(Enable_OSDClearArt)]</visible>
+			</control>
+			<control type="image">
+				<description>TV Show Logo</description>
 				<posx>25</posx>
-				<posy>480</posy>
+				<posy>450</posy>
 				<width>250</width>
 				<height>230</height>
-				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<bordertexture border="8">thumb_border.png</bordertexture>
-				<bordersize>6</bordersize>
+				<texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + Skin.HasSetting(Enable_OSDThumbnail)</visible>
+				<visible>Skin.HasSetting(Enable_OSDLogo) + VideoPlayer.Content(Episodes)</visible>
+			</control>
+			<control type ="image">
+				<description>TV Show ClearArt</description>
+				<posx>25</posx>
+				<posy>515</posy>
+				<width>250</width>
+				<height>230</height>
+				<texture background="true">$INFO[Player.Art(tvshow.clearart)]</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes) + ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
 			</control>
 			<!-- Movie Poster -->
 			<control type="image">

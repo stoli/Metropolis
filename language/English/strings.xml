@@ -24,7 +24,7 @@
 	<string id="31109">Enable Debug Grid</string>
 	<string id="31118">Filemanager</string>
 	<string id="31125">Hide Video Root</string>	
-	<string id="31126">Download TV Show Logos, Clear Art, and Landscape images</string>
+	<string id="31126">Download extra TV Show artwork</string>
 	<string id="31133">Mute</string>
 	<string id="31159">ffx2</string>
 	<string id="31160">ffx4</string>
@@ -69,7 +69,6 @@
 	<string id="31289">Files</string>
 	<string id="31291">Landscape</string>
 	<string id="31293">Picture Grid</string>
-	<string id="31296">Prefer Landscape over Fanart for TV Show icons</string>
 	<string id="31298">Panel Square</string>
 	<string id="31299">Min</string>
 	<string id="31313">Movie Set</string>
@@ -157,11 +156,11 @@
 	<string id="31418">Hide all</string>
 	<string id="31419">Music Settings</string>
 	<string id="31420">Video Settings</string>
-	<string id="31421">OSD: Show Clearart</string>
-	<string id="31422">OSD: Show TV Logo</string>
+	<string id="31421">Video OSD: Show TV Show Clearart</string>
+	<string id="31422">Video OSD: Show TV Show Logo</string>
 	<string id="31423">Author</string>
 	<string id="31424">Poster &amp; Fanart</string> 
-	<string id="31425">OSD: Show Thumbnail</string>
+	<string id="31425">Video OSD: Show Thumbnail</string>
 	<string id="31426">Enable TV Show Next Aired Date display</string>
 	<string id="31427">Next Episode</string>
 	<string id="31428">TV Guide</string>

@@ -3820,31 +3820,42 @@
 					</control>
 					<control type="image" id="703">
 						<include>Settings_Line</include>
+						<visible>System.HasAddon(script.artwork.downloader</visible>
 					</control>
 					<control type="button" id="704">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, clearart, clearlogo, tvthumb)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, landscape, clearart, clearlogo, characterart)</onclick>
 						<visible>System.HasAddon(script.artwork.downloader</visible>
 					</control>
 					<control type="radiobutton" id="705">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31296]</label>
-						<onclick>Skin.ToggleSetting(landscape_jpg)</onclick>
-						<selected>Skin.HasSetting(landscape_jpg)</selected>
+						<label>$LOCALIZE[31421]</label>
+						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
+						<onclick>Skin.ToggleSetting(Enable_OSDClearArt)</onclick>
+						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
+						<visible>System.HasAddon(script.artwork.downloader</visible>
 					</control>
-					<control type="image" id="706">
+					<control type="radiobutton" id="706">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31422]</label>
+						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
+						<onclick>Skin.ToggleSetting(Enable_OSDLogo)</onclick>
+						<selected>Skin.HasSetting(Enable_OSDLogo)</selected>
+						<visible>System.HasAddon(script.artwork.downloader</visible>
+					</control>
+					<control type="image" id="707">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.tv.show.next.aired) | System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="708">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31426]</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="708">
+					<control type="radiobutton" id="709">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31437]</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
@@ -3869,49 +3880,19 @@
 						<onclick>Skin.ToggleSetting(HideVideoFanart)</onclick>
 						<selected>Skin.HasSetting(HideVideoFanart)</selected>
 					</control>
-					<control type="image" id="802">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="803">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31421]</label>
-						<onclick>Skin.SetBool(Enable_OSDClearArt)</onclick>
-						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
-						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
-						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
-					</control>
-					<control type="radiobutton" id="804">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31422]</label>
-						<onclick>Skin.SetBool(Enable_OSDLogo)</onclick>
-						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
-						<onclick>Skin.Reset(Enable_OSDThumbnail)</onclick>
-						<selected>Skin.HasSetting(Enable_OSDLogo)</selected>
-					</control>
-					<control type="radiobutton" id="805">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31425]</label>
-						<onclick>Skin.SetBool(Enable_OSDThumbnail)</onclick>
-						<onclick>Skin.Reset(Enable_OSDLogo)</onclick>
-						<onclick>Skin.Reset(Enable_OSDClearArt)</onclick>
-						<selected>Skin.HasSetting(Enable_OSDThumbnail)</selected>
-					</control>
-					<control type="image" id="806">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="807">
+					<control type="radiobutton" id="802">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31429]</label>
 						<onclick>Skin.ToggleSetting(ShowVideoPath)</onclick>
 						<selected>Skin.HasSetting(ShowVideoPath)</selected>
 					</control>
-					<control type="radiobutton" id="808">
+					<control type="radiobutton" id="803">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31464]</label>
 						<onclick>Skin.ToggleSetting(ShowVideoPlotFullscreen)</onclick>
 						<selected>Skin.HasSetting(ShowVideoPlotFullscreen)</selected>
 					</control>
-					<control type="radiobutton" id="809">
+					<control type="radiobutton" id="804">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>

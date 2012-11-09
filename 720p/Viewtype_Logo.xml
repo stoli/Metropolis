@@ -29,23 +29,12 @@
 						<posy>118</posy>
 						<width>272</width>
 						<height>153</height>
-						<texture background="true" fallback="special://skin/backgrounds/fallback.png">$INFO[ListItem.path]logo.png</texture>
+						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
 						<aspectratio aligny="center">keep</aspectratio>
 						<include>Animation_HiddenByInfo</include>
 					</control>
-				<!--	<control type="image">
-						<posx>9</posx>
-						<posy>148</posy>
-						<width>272</width>
-						<height>153</height>
-						<texture background="true" flipy="true" diffuse="logo_matte_reflect.png">$INFO[ListItem.path]logo.png</texture>
-						<fadetime>200</fadetime>
-						<colordiffuse>LandscapeDiffuse</colordiffuse>
-						<aspectratio aligny="center">keep</aspectratio>
-						<include>Animation_HiddenByInfo</include>
-					</control> -->
 				</itemlayout>
 				<focusedlayout width="318" height="178">
 					<control type="image">
@@ -53,25 +42,13 @@
 						<posy>108</posy>
 						<width>290</width>
 						<height>164</height>
-						<texture background="true" fallback="special://skin/backgrounds/fallback.png">$INFO[ListItem.path]logo.png</texture>
+						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio aligny="center">keep</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="50" end="100" time="400" tween="back" easing="out" />
 						</animation>
 					</control>
-				<!--	<control type="image">
-						<posx>12</posx>
-						<posy>148</posy>
-						<width>290</width>
-						<height>164</height>
-						<texture background="true" flipy="true" diffuse="logo_matte_reflect.png">$INFO[ListItem.path]logo.png</texture>
-						<fadetime>200</fadetime>
-						<aspectratio aligny="center">keep</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="50" end="100" time="400" tween="back" easing="out" />
-						</animation>
-					</control> -->
 				</focusedlayout>
 			</control>
 			<!-- Browser labels -->

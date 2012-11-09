@@ -142,8 +142,8 @@
 					<posy>66</posy>
 					<width>600</width>
 					<height>338</height>
-					<texture background="true" fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
+					<texture background="true" fallback="home_art/movies.jpg">$VAR[LandscapeFanart]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
 				</control>
 				<!-- TVShow Fanart Image -->
@@ -152,19 +152,9 @@
 					<posy>66</posy>
 					<width>600</width>
 					<height>338</height>
-					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>!IsEmpty(ListItem.Title) + [Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(landscape_jpg)</visible>
-				</control>
-				<!-- TVShow Landscape Image -->
-				<control type="image">
-					<posx>35</posx>
-					<posy>66</posy>
-					<width>600</width>
-					<height>338</height>
-					<texture fallback="MissingLandscapeJpeg.jpg" background="true">$INFO[ListItem.Path]landscape.jpg</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<visible>!IsEmpty(ListItem.Title) + [Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(landscape_jpg)</visible>
+					<texture background="true" fallback="home_art/tvshows.jpg">$VAR[LandscapeFanart]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<visible>!IsEmpty(ListItem.Title) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Episode Image -->
 				<control type="image">

@@ -49,28 +49,6 @@
 						<posy>40</posy>
 						<width>272</width>
 						<height>152</height>
-						<texture background="true" diffuse="landscapematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<fadetime>200</fadetime>
-						<colordiffuse>LandscapeDiffuse</colordiffuse>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>4</posx>
-						<posy>40</posy>
-						<width>272</width>
-						<height>152</height>
-						<texture background="true" diffuse="landscapematteNF.png">$INFO[ListItem.Path]landscape.jpg</texture>
-						<fadetime>200</fadetime>
-						<colordiffuse>LandscapeDiffuse</colordiffuse>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + Skin.HasSetting(landscape_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>4</posx>
-						<posy>40</posy>
-						<width>272</width>
-						<height>152</height>
 						<texture background="true" diffuse="landscapematteNF.png">$INFO[ListItem.Icon]</texture>
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
@@ -82,7 +60,18 @@
 						<posy>40</posy>
 						<width>272</width>
 						<height>152</height>
-						<texture background="true" fallback="home_art/movies.jpg" diffuse="landscapematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" diffuse="landscapematteNF.png">$VAR[LandscapeFanart]</texture>
+						<fadetime>200</fadetime>
+						<colordiffuse>LandscapeDiffuse</colordiffuse>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows)</visible>
+					</control>
+					<control type="image">
+						<posx>4</posx>
+						<posy>40</posy>
+						<width>272</width>
+						<height>152</height>
+						<texture background="true" fallback="home_art/movies.jpg" diffuse="landscapematteNF.png">$VAR[LandscapeFanart]</texture>
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -132,32 +121,6 @@
 						<posy>20</posy>
 						<width>320</width>
 						<height>180</height>
-						<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="70" end="100" time="300" tween="back" easing="out" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + !Skin.HasSetting(landscape_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>18</posx>
-						<posy>20</posy>
-						<width>320</width>
-						<height>180</height>
-						<texture background="true">$INFO[ListItem.Path]landscape.jpg</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="70" end="100" time="300" tween="back" easing="out" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows) + Skin.HasSetting(landscape_jpg)</visible>
-					</control>
-					<control type="image">
-						<posx>18</posx>
-						<posy>20</posy>
-						<width>320</width>
-						<height>180</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -171,7 +134,20 @@
 						<posy>20</posy>
 						<width>320</width>
 						<height>180</height>
-						<texture background="true" fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true">$VAR[LandscapeFanart]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="70" end="100" time="300" tween="back" easing="out" />
+						</animation>
+						<visible>!IsEmpty(ListItem.Title) + Container.Content(tvshows)</visible>
+					</control>
+					<control type="image">
+						<posx>18</posx>
+						<posy>20</posy>
+						<width>320</width>
+						<height>180</height>
+						<texture background="true" fallback="home_art/movies.jpg">$VAR[LandscapeFanart]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
@@ -179,7 +155,6 @@
 						</animation>
 						<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
 					</control>
-					
 					<control type="image">
 						<posx>-2</posx>
 						<posy>0</posy>

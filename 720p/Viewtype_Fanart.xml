@@ -102,56 +102,28 @@
 						<posy>31</posy>
 						<width>646</width>
 						<height>362</height>
-						<texture fallback="home_art/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture fallback="home_art/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$VAR[LandscapeFanart]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="70" end="100" time="400" tween="back" easing="out" />
 							<effect type="fade" start="0" end="100" time="300" />
 						</animation>
-						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
+						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
 					</control>
 					<control type="image">
 						<posx>32</posx>
 						<posy>31</posy>
 						<width>646</width>
 						<height>362</height>
-						<texture fallback="MissingLandscapeJpeg.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Path]landscape.jpg</texture>
+						<texture fallback="home_art/movies.jpg">$VAR[LandscapeFanart]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="70" end="100" time="400" tween="back" easing="out" />
 							<effect type="fade" start="0" end="100" time="300" />
 						</animation>
-						<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-					</control>
-					<control type="image">
-						<posx>32</posx>
-						<posy>31</posy>
-						<width>646</width>
-						<height>362</height>
-						<texture fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="70" end="100" time="400" tween="back" easing="out" />
-							<effect type="fade" start="0" end="100" time="300" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-					</control>
-					<control type="image">
-						<posx>32</posx>
-						<posy>31</posy>
-						<width>646</width>
-						<height>362</height>
-						<texture fallback="MissingLandscapeJpeg.jpg">$INFO[ListItem.Path]landscape.jpg</texture>
-						<fadetime>200</fadetime>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="70" end="100" time="400" tween="back" easing="out" />
-							<effect type="fade" start="0" end="100" time="300" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
+						<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
 					</control>
 					<control type="image">
 						<posx>9</posx>
