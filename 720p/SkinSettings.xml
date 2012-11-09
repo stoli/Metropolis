@@ -242,111 +242,133 @@
 					</control>
 					<control type="image" id="206">
 						<include>Settings_Line</include>
+						<visible>System.HasAddon(service.skin.widgets)</visible>
 					</control>
 					<control type="label" id="207">
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31450]</label>
-					</control>
-					<control type="label" id="208">
 						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31060]</label>
+						<!--<visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>-->
 					</control>
-					<control type="radiobutton" id="209">
+					<control type="radiobutton" id="208">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[342]</label>
 						<onclick>Skin.Reset(ShowMoviesRandomItems)</onclick>
 						<onclick>Skin.Reset(ShowMoviesWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMoviesRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowMoviesRecentlyAdded)</selected>
+						<!--<visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>-->
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="209">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[20343]</label>
 						<onclick>Skin.Reset(ShowTVShowsRandomItems)</onclick>
 						<onclick>Skin.Reset(ShowTVShowsWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowTVShowsRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowTVShowsRecentlyAdded)</selected>
+						<!--<visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>-->
 					</control>
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="210">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[2]</label>
 						<onclick>Skin.Reset(ShowMusicRandomItems)</onclick>
 						<onclick>Skin.Reset(ShowMusicWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMusicRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowMusicRecentlyAdded)</selected>
+						<!--<visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>-->
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="211">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[20389]</label>
 						<onclick>Skin.Reset(ShowMusicVideosRandomItems)</onclick>
+						<onclick>Skin.Reset(ShowMusicVideosWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMusicVideosRecentlyAdded)</onclick>
 						<selected>Skin.HasSetting(ShowMusicVideosRecentlyAdded)</selected>
+						<!--<visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>-->
 					</control>
-					<control type="label" id="213">
+					<control type="label" id="212">
 						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31328]</label>
+						<visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
 					</control>
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="213">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[342]</label>
 						<onclick>Skin.Reset(ShowMoviesRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowMoviesWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMoviesRandomItems)</onclick>
 						<selected>Skin.HasSetting(ShowMoviesRandomItems)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
 					</control>
-					<control type="radiobutton" id="215">
+					<control type="radiobutton" id="214">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[20343]</label>
 						<onclick>Skin.Reset(ShowTVShowsRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowTVShowsWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowTVShowsRandomItems)</onclick>
 						<selected>Skin.HasSetting(ShowTVShowsRandomItems)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
 					</control>
-					<control type="radiobutton" id="216">
+					<control type="radiobutton" id="215">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[2]</label>
 						<onclick>Skin.Reset(ShowMusicRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowMusicWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMusicRandomItems)</onclick>
 						<selected>Skin.HasSetting(ShowMusicRandomItems)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
 					</control>
-					<control type="radiobutton" id="217">
+					<control type="radiobutton" id="216">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[20389]</label>
 						<onclick>Skin.Reset(ShowMusicVideosRecentlyAdded)</onclick>
+						<onclick>Skin.Reset(ShowMusicVideosWatchlist)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMusicVideosRandomItems)</onclick>
 						<selected>Skin.HasSetting(ShowMusicVideosRandomItems)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
 					</control>
-					<control type="label" id="218">
+					<control type="label" id="217">
 						<font>METF_Menu</font>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31449]</label>
+						<visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
 					</control>
-					<control type="radiobutton" id="219">
+					<control type="radiobutton" id="218">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[342]</label>
 						<onclick>Skin.Reset(ShowMoviesRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowMoviesRandomItems)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMoviesWatchlist)</onclick>
 						<selected>Skin.HasSetting(ShowMoviesWatchlist)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
 					</control>
-					<control type="radiobutton" id="220">
+					<control type="radiobutton" id="219">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[20343]</label>
 						<onclick>Skin.Reset(ShowTVShowsRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowTVShowsRandomItems)</onclick>
 						<onclick>Skin.ToggleSetting(ShowTVShowsWatchlist)</onclick>
 						<selected>Skin.HasSetting(ShowTVShowsWatchlist)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
 					</control>
-					<control type="radiobutton" id="221">
+					<control type="radiobutton" id="220">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[2]</label>
 						<onclick>Skin.Reset(ShowMusicRecentlyAdded)</onclick>
 						<onclick>Skin.Reset(ShowMusicRandomItems)</onclick>
 						<onclick>Skin.ToggleSetting(ShowMusicWatchlist)</onclick>
 						<selected>Skin.HasSetting(ShowMusicWatchlist)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
+					</control>
+					<control type="radiobutton" id="221">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[20389]</label>
+						<onclick>Skin.Reset(ShowMusicVideosRecentlyAdded)</onclick>
+						<onclick>Skin.Reset(ShowMusicVideosRandomItems)</onclick>
+						<onclick>Skin.ToggleSetting(ShowMusicVideosWatchlist)</onclick>
+						<selected>Skin.HasSetting(ShowMusicVideosWatchlist)</selected>
+						<visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
 					</control>
 				</control>
 				<!-- Home Items -->

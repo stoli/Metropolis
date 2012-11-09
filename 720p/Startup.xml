@@ -12,7 +12,7 @@
 		</control>
 		<control type="button" id="20">
 			<description>Passthrough</description>
-			<onfocus>SetFocus(30)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
@@ -20,40 +20,10 @@
 		<control type="button" id="20">
 			<description>Startup Playlist</description>
 			<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
-			<onfocus>SetFocus(30)</onfocus>
+			<onfocus>SetFocus(50)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
-		</control>
-		<control type="button" id="30">
-			<description>Passthrough</description>
-			<onfocus>SetFocus(40)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>![Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicVideosRandomItems)]</visible>
-		</control>
-		<control type="button" id="30">
-			<description>RandomItems</description>
-			<onfocus>RunScript(script.randomitems,limit=10&amp;unplayed=True&amp;alarm=360)</onfocus>
-			<onfocus>SetFocus(40)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(ShowMoviesRandomItems) | Skin.HasSetting(ShowTVShowsRandomItems) | Skin.HasSetting(ShowMusicRandomItems) | Skin.HasSetting(ShowMusicVideosRandomItems)</visible>
-		</control>
-		<control type="button" id="40">
-			<description>Passthrough</description>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>![Skin.HasSetting(ShowMoviesWatchlist) | Skin.HasSetting(ShowTVShowsWatchlist) | Skin.HasSetting(ShowMusicWatchlist)]</visible>
-		</control>
-		<control type="button" id="40">
-			<description>Watchlist</description>
-			<onfocus>RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onfocus>
-			<onfocus>SetFocus(50)</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(ShowMoviesWatchlist) | Skin.HasSetting(ShowTVShowsWatchlist) | Skin.HasSetting(ShowMusicWatchlist)</visible>
 		</control>
 		<control type="button" id="50">
 			<description>Passthrough</description>
