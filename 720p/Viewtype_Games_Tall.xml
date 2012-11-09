@@ -236,20 +236,7 @@
 							<animation type="Focus" reversible="false">
 								<effect type="fade" start="0" end="100" time="300" />
 							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="MissingLandscapeJpeg.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$INFO[ListItem.Path]landscape.jpg</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
+							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<control type="image">
 							<posx>23</posx>
@@ -262,21 +249,7 @@
 							<animation type="Focus" reversible="false">
 								<effect type="fade" start="0" end="100" time="300" />
 							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + ![Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
-						</control>
-						<!-- Focused Item Landscape -->
-						<control type="image">
-							<posx>23</posx>
-							<posy>21</posy>
-							<width>646</width>
-							<height>362</height>
-							<texture fallback="MissingLandscapeJpeg.jpg">$INFO[ListItem.Path]landscape.jpg</texture>
-							<fadetime>200</fadetime>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
-							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart) + [Skin.HasSetting(landscape_jpg) + Container.Content(tvshows)]</visible>
+							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<!-- Focused Item Segmented Fanart Frame -->
 						<control type="image">
