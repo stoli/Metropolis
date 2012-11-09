@@ -411,7 +411,7 @@
 						<aspectratio aligny="center">stretch</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8000).ListItem.Thumb]</texture>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8000).ListItem.Icon]</texture>
 						<visible>Container(9000).HasFocus(4) + Library.HasContent(Movies) + [!Skin.HasSetting(home2) | Control.HasFocus(8000)]</visible>
 					</control>
 				</control>
@@ -426,7 +426,7 @@
 						<aspectratio aligny="center">stretch</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8001).ListItem.Thumb]</texture>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8001).ListItem.Icon]</texture>
 						<visible>Container(9000).HasFocus(5) + Library.HasContent(TVShows) + [!Skin.HasSetting(home2) | Control.HasFocus(8001)]</visible>
 					</control>
 				</control>
@@ -441,7 +441,7 @@
 						<aspectratio align="right" aligny="center">keep</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8002).ListItem.Thumb]</texture>
+						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8002).ListItem.Icon]</texture>
 						<visible>Container(9000).HasFocus(3) + Library.HasContent(Music) + [!Skin.HasSetting(home2) | Control.HasFocus(8002)]</visible>
 					</control>
 				</control>
@@ -456,7 +456,6 @@
 						<aspectratio align="right" aligny="center">keep</aspectratio>
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
-						<!-- Probably should be ListItem.Thumb (Fanart) but it doesn't seem to be filled in by the scraper -->
 						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8003).ListItem.Icon]</texture>
 						<visible>Container(9000).HasFocus(16) + Library.HasContent(MusicVideos) + [!Skin.HasSetting(home2) | Control.HasFocus(8003)]</visible>
 					</control>
