@@ -10,7 +10,6 @@
 			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<include>Animation_CommonFade</include>
-			<visible>!SubString(Container.FolderPath,advanced.launcher)</visible>
 		</control>
 		<include>Viewtype_Files</include>		<!-- 55 -->
 		<include>Viewtype_Gallery_Square</include>	<!-- 58 -->
