@@ -328,7 +328,7 @@
 			</control>
 			<control type="label">
 				<description>Minutes</description>
-				<posx>1196</posx>
+				<posx>1195</posx>
 				<posy>596</posy>
 				<width>80</width>
 				<font>METF_Minutes</font>
@@ -339,7 +339,7 @@
 			</control>
 			<control type="label">
 				<description>AM</description>
-				<posx>1185</posx>
+				<posx>1186</posx>
 				<posy>640</posy>
 				<width>80</width>
 				<font>METF_FontAMPM</font>
@@ -351,7 +351,7 @@
 			</control>
 			<control type="label">
 				<description>PM</description>
-				<posx>1185</posx>
+				<posx>1186</posx>
 				<posy>640</posy>
 				<width>80</width>
 				<font>METF_FontAMPM</font>
