@@ -17,7 +17,6 @@
 	<string id="31034">Habilitar Fondo Dinámico del Clima</string>
 	<string id="31035">Mostrar Limpiar Biblioteca en Objetos del Submenú</string>
 	<string id="31054">Logo</string>
-	<string id="31055">Usar Logos en Series</string>
 	<string id="31056">Habilitar Carátula</string>
 	<string id="31057">Activar Texto de Información de la Canción</string>
 	<string id="31060">Mostrar Añadidos Recientemente</string>
@@ -25,8 +24,7 @@
 	<string id="31109">Activar Rejilla de Depuración</string>
 	<string id="31118">Gestor de Archivos</string>
 	<string id="31125">Ocultar Raíz de Vídeos</string>	
-	<string id="31126">CLIC para descargar Logos, Banner y Landscape de Series</string>
-	<string id="31127"> - Imágenes necesarias para las opciones de abajo -</string>
+	<string id="31126">Descarga Imágenes extras de Series de TV</string>
 	<string id="31133">Mute</string>
 	<string id="31159">ffx2</string>
 	<string id="31160">ffx4</string>
@@ -71,8 +69,6 @@
 	<string id="31289">Archivos</string>
 	<string id="31291">Landscape</string>
 	<string id="31293">Rejilla</string>
-	<string id="31296">Usar 'landscape.jpg' para las Series</string>
-	<string id="31297">Usar 'banner.jpg' para la vista Banner</string>
 	<string id="31298">Panel Square</string>
 	<string id="31299">Min</string>
 	<string id="31313">Colección Películas</string>
@@ -87,6 +83,7 @@
 	<string id="31334">Trailers</string>
 	<string id="31336">Bloquear Cambio de vistas (Modo Kiosco)</string>
 	<string id="31337">Desactivar Opciones de Apagado</string>
+	<string id="31338">Activar Filtro Avanzado</string>
 	<string id="31341">Ver información de su ordenador, tales como gráficos de red, hardware y espacio en discos</string>
 	<string id="31342">Crear y modificar varios perfiles de usuarios en XBMC para que cada miembro de su familia tenga su propia biblioteca</string>
 	<string id="31343">Las películas de acción por lo general incluyen mucha energía, de gran presupuesto en acrobacias físicas y persecuciones, posiblemente con rescates, batallas, luchas, fugas, crisis destructivas (inundaciones, explosiones, catástrofes naturales, incendios, etc.), la acción no para, con mucho ritmo, aventureros, en diferentes dimensiones 'el buenos de la película' heroes (o recientemente, heroinas) luchando 'con los chicos malos' - todo diseñado para dar espectáculo.</string>
@@ -159,23 +156,23 @@
 	<string id="31418">Ocultar todo</string>
 	<string id="31419">Ajustes de Música</string>
 	<string id="31420">Ajustes de Video</string>
-	<string id="31421">OSD: Mostrar Clearart</string>
-	<string id="31422">OSD: Mostrar logo de Series de TV</string>
+	<string id="31421">OSD de Video: Mostrar Clearart de Series de TV</string>
+	<string id="31422">OSD de Video: Mostrar Logo de Series de TV</string>
 	<string id="31423">Autor</string>
 	<string id="31424">Poster &amp; Fanart</string> 
-	<string id="31425">OSD: Mostrar Miniatura</string>
+	<string id="31425">OSD de Video: Mostrar Miniatura</string>
 	<string id="31426">Activar en Series fecha de la próxima emisión</string>
 	<string id="31427">Siguiente Episodio</string>
 	<string id="31428">Guía TV</string>
 	<string id="31429">Mostrar en Información Ruta del Video en lugar de Clasificación</string>
 	<string id="31430">Poster Amplio</string>
 	<string id="31431">Clic para restablecer los valores predeterminados de Metrópolis</string>
-	<string id="31433">Visualización: Fanart</string>
-	<string id="31434">Visualización: Extra Fanart</string>
-	<string id="31435">Visualización: Artista Slideshow</string>
+	<string id="31433">Visualización de Fondo: Fanart</string>
+	<string id="31434">Visualización de Fondo: Extra Fanart</string>
+	<string id="31435">Visualización de Fondo: Artista Slideshow</string>
 	<string id="31436">Usar Seekbar más estrecha</string>
 	<string id="31437">Activar script TV Tunes</string>
-	<string id="31438">Recientes</string>
+	<string id="31438">Reciente</string>
 	<string id="31439">Banner &amp; Poster</string> 
 	<string id="31440">Tipos de Vistas</string>
 	<string id="31441">Ocultar</string>
@@ -204,7 +201,7 @@
 	<string id="31465">Limpiar Biblioteca</string>
 	<string id="31466">Extranjeras no es técnicamente un género, pero probablemente incluye películas con diálogo en un idioma no nativo para el espectador.</string>
 	<string id="31467">Vacaciones es un género muy amplio que abarca las películas que se centran en un día de fiesta, tales como Navidad, Halloween, Pascua, etc.</string>
-	<string id="31468">Red</string>
+	<string id="31468">Servicios</string>
 	<string id="31469">Apariencia</string>
 
 	<!-- PVR Resources -->
