@@ -10,6 +10,7 @@
 			<visible>!VideoPlayer.Content(LiveTV) + ![Window.IsVisible(SliderDialog) | Window.IsVisible(VideoBookmarks)]</visible>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByOSDSettings</include>
+			<include>OSD_Player_Banner</include>
 			<include>OSD_Progress_Bar2</include>
 			<include>OSD_Player_Details</include>
 			<include>OSD_Player_Time</include>
