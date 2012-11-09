@@ -6,7 +6,7 @@
 				<fadetime>400</fadetime>
 				<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>[!Skin.HasSetting(HideMusicFanart) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]] | SubString(Container.FolderPath,advanced.launcher)</visible>
+				<visible>SubString(Container.FolderPath,advanced.launcher)</visible>
 				<include>Animation_BackdropFade</include>
 			</control>
 			<visible>Control.IsVisible(55)</visible>
