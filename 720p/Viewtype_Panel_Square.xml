@@ -18,9 +18,9 @@
 						<posx>25</posx>
 						<posy>49</posy>
 						<width>324</width>
-						<height>180</height>
+						<height>182</height>
 						<texture fallback="home_art/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<aspectratio scalediffuse="false">scale</aspectratio>
+						<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 					</control>
 					<control type="image">
 						<posx>4</posx>
@@ -28,7 +28,6 @@
 						<width>364</width>
 						<height>220</height>
 						<texture>frames/ClassicFrame_FanartSmall.png</texture>
-						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 				</control>
 				<control type="group">
