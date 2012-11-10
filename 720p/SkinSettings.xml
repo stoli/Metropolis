@@ -170,23 +170,31 @@
 					</control>
 					<control type="radiobutton" id="107">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31006]</label>
+						<onclick>Skin.ToggleSetting(AutoScrollFast)</onclick>
+						<onclick>XBMC.ReloadSkin()</onclick>
+						<selected>Skin.HasSetting(AutoScrollFast)</selected>
+						<visible>Skin.HasSetting(AutoScroll)</visible>
+					</control>
+					<control type="radiobutton" id="108">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31336]</label>
 						<onclick>Skin.ToggleSetting(ViewLockdown)</onclick>
 						<selected>Skin.HasSetting(ViewLockdown)</selected>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="109">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31338]</label>
 						<onclick>Skin.ToggleSetting(AdvancedMediaFilter)</onclick>
 						<selected>Skin.HasSetting(AdvancedMediaFilter)</selected>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[21398]</label>
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="110">
+					<control type="button" id="111">
 						<include>SettingsLabel</include>
 						<width>370</width>
 						<label>$LOCALIZE[15311]</label>
@@ -3923,7 +3931,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
-						<onclick>ReloadSkin()</onclick>
+						<onclick>XBMC.ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
 				</control>
@@ -4055,7 +4063,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31431]</label>
 						<onclick>Skin.ResetSettings</onclick>
-						<onclick>ReloadSkin()</onclick> 
+						<onclick>XBMC.ReloadSkin()</onclick>
 					</control>
 				</control>
 			</control>

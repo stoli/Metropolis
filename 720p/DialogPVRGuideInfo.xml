@@ -137,7 +137,8 @@
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
 				<info>ListItem.Plot</info>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
+				<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
 			</control>
 		</control>
 

@@ -446,6 +446,18 @@
 		<colordiffuse>MediaFlagDiffuse</colordiffuse>
 	</include>
 
+	<include name="AutoScrollShort">
+		<autoscroll time="2000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<include name="AutoScrollLong">
+		<autoscroll time="2000" delay="16000" repeat="12000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<include name="AutoScrollShortFast">
+		<autoscroll time="2000" delay="8000" repeat="4000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
+	<include name="AutoScrollLongFast">
+		<autoscroll time="2000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+	</include>
 	<include name="PlotBox">
 		<posx>300</posx>
 		<posy>565</posy>
@@ -457,7 +469,8 @@
 			<width>750</width>
 			<height>68</height>
 			<font>METF_PlotTextSmall</font>
-			<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollShort</include>
+			<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollShortFast</include>
 			<textcolor>LowerText</textcolor>
 			<label>$VAR[PlotBox_Text]</label>
 			<align>justify</align>
@@ -474,7 +487,8 @@
 			-->
 			<height>130</height>
 			<font>METF_PlotTextSmall</font>
-			<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+			<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
+			<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
 			<textcolor>LowerText</textcolor>
 			<label>$VAR[PlotBox_Text]</label>
 			<align>justify</align>
@@ -565,7 +579,8 @@
 				<font>METF_PlotTextMedium</font>
 				<textcolor>TextNF</textcolor>
 				<label>$INFO[ListItem.Plot]</label>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
+				<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
 			</control>
 		</control>
 	</include>
@@ -1450,7 +1465,8 @@
 					<font>METF_PlotTextSmall</font>
 					<textcolor>TextNF</textcolor>
 					<label>$INFO[VideoPlayer.Plot]</label>
-					<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollShort</include>
+					<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollShortFast</include>
 					<visible>Skin.HasSetting(ShowVideoPlotFullscreen) + !IsEmpty(VideoPlayer.Plot)</visible>
 				</control>
 				<control type="grouplist">

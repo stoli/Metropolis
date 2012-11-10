@@ -214,7 +214,8 @@
 				<font>METF_PlotText</font>
 				<textcolor>TextNF</textcolor>
 				<label fallback="161">$INFO[ListItem.Plot]</label>
-				<autoscroll time="4000" delay="16000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
+				<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
 				<visible>!Control.IsVisible(50)</visible>
 			</control>
 			<!-- Cast -->
