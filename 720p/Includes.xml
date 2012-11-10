@@ -1211,6 +1211,15 @@
 				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + !Skin.HasSetting(Enable_OSDClearArt)</visible>
 			</control>
 			<control type="image">
+				<description>TV Show Thumbnail Frame</description>
+				<posx>19</posx>
+				<posy>367</posy>
+				<width>253</width>
+				<height>343</height>
+				<texture>frames/ClassicFrame_PosterSmall.png</texture>
+				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + !Skin.HasSetting(Enable_OSDClearArt)</visible>
+			</control>
+			<control type="image">
 				<description>TV Show Clear Art/Logo</description>
 				<posx>25</posx>
 				<posy>450</posy>
