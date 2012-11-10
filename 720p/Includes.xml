@@ -1250,6 +1250,19 @@
 				<texture>frames/ClassicFrame_PosterSmall.png</texture>
 				<visible>VideoPlayer.Content(Movies) + !substring(VideoPlayer.Cover,default)</visible>
 			</control>
+			<!-- Music Video Thumbnail -->
+			<control type="image">
+				<description>Music Video Thumbnail</description>
+				<posx>25</posx>
+				<posy>564</posy>
+				<width>250</width>
+				<height>140</height>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<bordertexture border="6">frames/thumb_border.png</bordertexture>
+				<bordersize>6</bordersize>
+				<texture diffuse="frames/EpisodeMatte.png">$INFO[VideoPlayer.Cover]</texture>
+				<visible>VideoPlayer.Content(MusicVideos) + !substring(VideoPlayer.Cover,default)</visible>
+			</control>
 			<!-- LiveTV Channel Icon -->
 			<control type="image">
 				<description>LiveTV Channel</description>
