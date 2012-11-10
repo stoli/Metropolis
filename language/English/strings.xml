@@ -157,8 +157,7 @@
 	<string id="31418">Hide all</string>
 	<string id="31419">Music Settings</string>
 	<string id="31420">Video Settings</string>
-	<string id="31421">Video OSD: Show TV Show Clearart</string>
-	<string id="31422">Video OSD: Show TV Show Logo</string>
+	<string id="31421">Video OSD: Show ClearArt/Logo</string>
 	<string id="31423">Author</string>
 	<string id="31424">Poster &amp; Fanart</string> 
 	<string id="31425">Video OSD: Show Thumbnail</string>
@@ -204,6 +203,7 @@
 	<string id="31467">Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc.</string>
 	<string id="31468">Services</string>
 	<string id="31469">Appearance</string>
+	<string id="31470">Prefer ClearLogo to ClearArt</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Enable Live TV (PVR) support</string>

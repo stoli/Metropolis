@@ -1208,27 +1208,17 @@
 				<height>300</height>
 				<texture background="true">$INFO[Player.Art(tvshow.poster)]</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + ![Skin.HasSetting(Enable_OSDLogo) | Skin.HasSetting(Enable_OSDClearArt)]</visible>
+				<visible>VideoPlayer.Content(Episodes) + !substring(VideoPlayer.Cover,default) + !Skin.HasSetting(Enable_OSDClearArt)</visible>
 			</control>
 			<control type="image">
-				<description>TV Show Logo</description>
+				<description>TV Show Clear Art/Logo</description>
 				<posx>25</posx>
 				<posy>450</posy>
 				<width>250</width>
 				<height>230</height>
-				<texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
+				<texture background="true">$VAR[PlayerTVShowClearartClearlogo]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<visible>Skin.HasSetting(Enable_OSDLogo) + VideoPlayer.Content(Episodes)</visible>
-			</control>
-			<control type ="image">
-				<description>TV Show ClearArt</description>
-				<posx>25</posx>
-				<posy>515</posy>
-				<width>250</width>
-				<height>230</height>
-				<texture background="true">$INFO[Player.Art(tvshow.clearart)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(episodes) + ![[Player.Paused + Player.Caching] + !Player.Seeking]</visible>
+				<visible>Skin.HasSetting(Enable_OSDClearArt) + VideoPlayer.Content(Episodes)</visible>
 			</control>
 			<!-- Movie Poster -->
 			<control type="image">

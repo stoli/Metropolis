@@ -162,4 +162,12 @@
 		<value condition="!IsEmpty(ListItem.Art(landscape)) + [Skin.HasSetting(ViewPreferLandscape) | Control.IsVisible(52)]">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Property(Fanart_Image)]</value>
 	</variable>
+	<variable name="ListClearartClearlogo">
+		<value condition="!IsEmpty(ListItem.Art(clearlogo)) + Skin.HasSetting(ViewPreferClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
+		<value>$INFO[ListItem.Art(clearart)]</value>
+	</variable>
+	<variable name="PlayerTVShowClearartClearlogo">
+		<value condition="!IsEmpty(Player.Art(tvshow.clearlogo)) + Skin.HasSetting(ViewPreferClearLogo)">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value>$INFO[Player.Art(tvshow.clearart)]</value>
+	</variable>
 </includes>
