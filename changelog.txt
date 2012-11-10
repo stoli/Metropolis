@@ -1,5 +1,12 @@
 2.1.0 - 2012xxxx
+- Minor cosmetic fixups.
+- Allow ClearArt in Logo viewtype.
+- Show Music Video thumbnail in OSD.
+- Fallback images for HomeDeck items.
+- Support for Skin Widgets service addon.
+- Add option to prefer Landscape over Fanart.
 - Support for Artwork Downloader 12.x (Frodo compatible).
+- Fix text alignment issues in Frodo.
 - Support for ListItem.Art(banner).
 - Support for Advanced Media Filter.
 - Replace Get Thumb and Get Fanart in Video Info Dialog with Choose Art.
