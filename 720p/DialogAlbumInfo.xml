@@ -390,9 +390,9 @@
 				<posx>915</posx>
 				<posy>79</posy>
 				<width>324</width>
-				<height>180</height>
+				<height>182</height>
 				<texture fallback="home_art/movies.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio scalediffuse="false">scale</aspectratio>
+				<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
 				<posx>894</posx>
@@ -400,7 +400,6 @@
 				<width>364</width>
 				<height>220</height>
 				<texture>frames/ClassicFrame_FanartSmall.png</texture>
-				<aspectratio scalediffuse="false">scale</aspectratio>
 			</control>
 		</control>
 		<!-- Control Buttons -->
