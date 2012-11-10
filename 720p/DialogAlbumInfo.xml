@@ -436,13 +436,6 @@
 				<texturefocus>buttons/button_thumbFO.png</texturefocus>
 				<include>Animation_ButtonFocus</include>
 			</control>
-			<!-- Refresh -->
-			<control type="button" id="6">
-				<include>VideoInfoButton</include>
-				<texturenofocus>buttons/button_refresh.png</texturenofocus>
-				<texturefocus>buttons/button_refreshFO.png</texturefocus>
-				<include>Animation_ButtonFocus</include>
-			</control>
 			<!-- Fanart -->
 			<control type="button" id="12">
 				<include>VideoInfoButton</include>
@@ -450,6 +443,13 @@
 				<texturefocus>buttons/button_fanartFO.png</texturefocus>
 				<include>Animation_ButtonFocus</include>
 				<visible>!Container.Content(Albums)</visible>
+			</control>
+			<!-- Refresh -->
+			<control type="button" id="6">
+				<include>VideoInfoButton</include>
+				<texturenofocus>buttons/button_refresh.png</texturenofocus>
+				<texturefocus>buttons/button_refreshFO.png</texturefocus>
+				<include>Animation_ButtonFocus</include>
 			</control>
 		</control>
 		<!-- Control Button Text -->
