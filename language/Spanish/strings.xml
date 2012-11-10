@@ -147,6 +147,7 @@
 	<string id="31407">*Pulsa ARRIBA para ver reparto y fotos*</string>
 	<string id="31408">Cinema Experience</string>
 	<string id="31409">Fin</string>
+	<string id="31410">Landscape en lugar de Fanart (excepto fondo)</string>
 	<string id="31411">*Pulsa ABAJO para salir*</string>
 	<string id="31412">*Pulsa ARRIBA para elegir un perfil*</string>
 	<string id="31414">Galería</string>
@@ -172,7 +173,7 @@
 	<string id="31435">Visualización de Fondo: Artista Slideshow</string>
 	<string id="31436">Usar Seekbar más estrecha</string>
 	<string id="31437">Activar script TV Tunes</string>
-	<string id="31438">Reciente</string>
+	<string id="31438">Recientes</string>
 	<string id="31439">Banner &amp; Poster</string> 
 	<string id="31440">Tipos de Vistas</string>
 	<string id="31441">Ocultar</string>
