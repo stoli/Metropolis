@@ -170,4 +170,14 @@
 		<value condition="!IsEmpty(Player.Art(tvshow.clearlogo)) + Skin.HasSetting(ViewPreferClearLogo)">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value>$INFO[Player.Art(tvshow.clearart)]</value>
 	</variable>
+	<variable name="VideoPlayerTitle">
+		<value condition="!IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
+		<value condition="IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</value>
+		<value>$INFO[VideoPlayer.Title]</value>
+	</variable>
+	<variable name="VideoPlayerTitle2">
+		<value condition="!IsEmpty(VideoPlayer.Year) + [!IsEmpty(VideoPlayer.Artist) | !IsEmpty(VideoPlayer.Album)] + VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album] ($INFO[VideoPlayer.Year])</value>
+		<value condition="IsEmpty(VideoPlayer.Year) + [!IsEmpty(VideoPlayer.Artist) | !IsEmpty(VideoPlayer.Album)] + VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album]</value>
+		<value condition="!IsEmpty(VideoPlayer.Tagline) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Tagline]</value>
+	</variable>
 </includes>

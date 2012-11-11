@@ -1176,28 +1176,10 @@
 				<pauseatend>3800</pauseatend>
 				<scrollspeed>40</scrollspeed>
 				<scroll>true</scroll>
-				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</label>
-				<animation effect="slide" end="0,25" condition="IsEmpty(VideoPlayer.Tagline)">Conditional</animation>
-				<visible>!IsEmpty(VideoPlayer.Year)</visible>
+				<label>$VAR[VideoPlayerTitle]</label>
+				<animation effect="slide" end="0,25" condition="[!VideoPlayer.Content(MusicVideos) + IsEmpty(VideoPlayer.Tagline)] | [VideoPlayer.Content(MusicVideos) + IsEmpty(VideoPlayer.Artist) + IsEmpty(VideoPlayer.Album)]">Conditional</animation>
 			</control>
-			<control type="fadelabel">
-				<posx>300</posx>
-				<posy>555</posy>
-				<width>850</width>
-				<height>40</height>
-				<font>METF_TitleTextMedium</font>
-				<textcolor>TitleText</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<scrollout>false</scrollout>
-				<pauseatend>3800</pauseatend>
-				<scrollspeed>40</scrollspeed>
-				<scroll>true</scroll>
-				<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</label>
-				<animation effect="slide" end="0,25" condition="IsEmpty(VideoPlayer.Tagline)">Conditional</animation>
-				<visible>IsEmpty(VideoPlayer.Year)</visible>
-			</control>
-			<!-- Movie Tagline -->
+			<!-- Movie Tagline or Music Video Artist/Album -->
 			<control type="fadelabel">
 				<posx>300</posx>
 				<posy>590</posy>
@@ -1211,8 +1193,7 @@
 				<pauseatend>3800</pauseatend>
 				<scrollspeed>40</scrollspeed>
 				<scroll>true</scroll>
-				<label>$INFO[VideoPlayer.Tagline]</label>
-				<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
+				<label>$VAR[VideoPlayerTitle2]</label>
 			</control>
 			<!-- TV Show Poster / Logo / Clearart -->
 			<control type="image">
