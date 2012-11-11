@@ -5,8 +5,7 @@
 			<include>Animation_CommonFade</include>
 			<visible>!IsEmpty(ListItem.Title)</visible>
 			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | SubString(Container.FolderPath,plugin)</visible>
-			<!-- limiting this to Advanced Launcher add-on only for now -->
-			<visible>!SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,advanced.launcher)</visible>
+			<visible>!SubString(Container.FolderPath,plugin) | [SubString(Container.FolderPath,advanced.launcher) + ![IsEmpty(ListItem.Studio) | IsEmpty(ListItem.Writer) | IsEmpty(ListItem.Genre)]]</visible>
 			<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
 			<visible>![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]</visible>
 			<!-- Studio -->

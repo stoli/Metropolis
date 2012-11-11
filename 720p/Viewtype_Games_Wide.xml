@@ -6,7 +6,6 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
-				<include condition="!Skin.HasSetting(Hide_MediaFlags)">MediaInfo</include>
 				<visible>SubString(Container.FolderPath,plugin)</visible>
 				<!-- Browser label and flags -->
 				<control type="group">
