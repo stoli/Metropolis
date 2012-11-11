@@ -1528,9 +1528,9 @@
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
 			<posx>1270</posx>
-			<posy>110</posy>
+			<posy>46</posy>
 			<width>22</width>
-			<height>468</height>
+			<height>484</height>
 			<visible allowhiddenfocus="true">Control.HasFocus(61) | Container.Scrolling</visible>
 			<texturesliderbackground>-</texturesliderbackground>
 			<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
