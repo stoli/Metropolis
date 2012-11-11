@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.metropolis"
-	version="2.0.0"
+	version="2.5.0"
 	name="Metropolis"
 	provider-name="Amra">
 	<requires>
-		<import addon="xbmc.gui" version="3.00"/>
+		<import addon="xbmc.gui" version="3.0.1"/>
 		<import addon="service.skin.widgets" version="0.0.13"/>
 		<import addon="script.artwork.downloader" version="12.0.4"/>
 		<import addon="script.favourites" version="2.0.0"/>

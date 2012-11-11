@@ -1,4 +1,5 @@
 2.5.0 - 2012xxxx
+- More info in Seekbar for Music Videos.
 - Make auto-scroll speed for textboxes adjustable.
 - Minor cosmetic fixups.
 - Allow ClearArt in Logo viewtype.
