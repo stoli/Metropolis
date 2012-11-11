@@ -8,7 +8,11 @@
 			<include condition="!Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar2</include> 
 			<include condition="Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar3</include>
 			<include condition="!Skin.HasSetting(Slim_Seekbar)">MediaInfo2</include>
-			<visible>!Player.ShowInfo</visible>
+			<visible>!Player.ShowInfo + !Window.IsActive(Visualisation)</visible>
+		</control>
+		<control type="group">
+			<include>OSD_Progress_Bar3</include>
+			<visible>Window.IsActive(Visualisation)</visible>
 		</control>
 		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
