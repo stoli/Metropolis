@@ -1,5 +1,5 @@
 ﻿<window id="2">
-	<views>55,503,59,509,500</views>
+	<views>55,509,59,58,559,500</views>
 	<defaultcontrol>55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -22,9 +22,10 @@
 			<include>Animation_BackdropFade</include>
 		</control>
 		<include>Viewtype_Files</include>
-		<include>Viewtype_List</include>
 		<include>Viewtype_FanartList</include>
 		<include>Viewtype_Gallery_Fanart</include>
+		<include>Viewtype_Gallery_Square</include>
+		<include>Viewtype_Panel_Square</include>
 		<include>Viewtype_PictureGrid</include>
 		<include>Global_ContextFilter</include>
 		<include>Global_PictureInfo</include>

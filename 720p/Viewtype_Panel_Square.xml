@@ -2,96 +2,115 @@
 	<include name="Viewtype_Panel_Square">
 		<control type="group">
 			<visible>Control.IsVisible(559)</visible>
+			<!-- Fanart Image -->
 			<control type="group">
 				<include>Animation_ZoomInZoomOut</include>
 				<include>Animation_HiddenByInfo</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_CommonFade</include>
 				<posx>30</posx>
 				<posy>20</posy>
+				<control type="image">
+					<posx>25</posx>
+					<posy>49</posy>
+					<width>324</width>
+					<height>182</height>
+					<texture fallback="home_art/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
+					<visible>Window.IsActive(musiclibrary)</visible>
+				</control>
+				<control type="image">
+					<posx>25</posx>
+					<posy>49</posy>
+					<width>324</width>
+					<height>182</height>
+					<texture fallback="home_art/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
+					<visible>Window.IsActive(pictures)</visible>
+				</control>
+				<control type="image">
+					<posx>25</posx>
+					<posy>49</posy>
+					<width>324</width>
+					<height>182</height>
+					<texture fallback="home_art/programs.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
+					<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>29</posy>
+					<width>364</width>
+					<height>220</height>
+					<texture>frames/ClassicFrame_FanartSmall.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<include>Animation_ZoomInZoomOut</include>
+				<include>Animation_HiddenByInfo</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_OpenCloseFade</include>
+				<posx>44</posx>
+				<posy>256</posy>
 				<visible>Window.IsActive(musiclibrary)</visible>
-				<!-- Fanart Image -->
-				<control type="group">
-					<include>Animation_FadedByMenu</include>
-					<include>Animation_CommonFade</include>
-					<include>Animation_OpenCloseFade</include>
-					<visible>!Skin.HasSetting(HideMusicFanart) + [Container.Content(artists) | Container.Content(albums)]</visible>
-					<control type="image">
-						<posx>25</posx>
-						<posy>49</posy>
-						<width>324</width>
-						<height>182</height>
-						<texture fallback="home_art/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-						<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
-					</control>
-					<control type="image">
-						<posx>4</posx>
-						<posy>29</posy>
-						<width>364</width>
-						<height>220</height>
-						<texture>frames/ClassicFrame_FanartSmall.png</texture>
-					</control>
+				<!-- Album Genre -->
+				<control type="label">
+					<width>380</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<scrollsuffix>   |   </scrollsuffix>
+					<font>METF_TitleTextSmall</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<label>$INFO[ListItem.Genre]</label>
+					<visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
 				</control>
-				<control type="group">
-					<include>Animation_FadedByMenu</include>
-					<include>Animation_OpenCloseFade</include>
-					<posx>10</posx>
-					<posy>246</posy>
-					<!-- Artist -->
-					<control type="label">
-						<width>380</width>
-						<height>50</height>
-						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<scrollsuffix>   |   </scrollsuffix>
-						<font>METF_TitleTextLarge</font>
-						<textcolor>TextNF</textcolor>
-						<label>$INFO[ListItem.Artist]</label>
-					</control>
-					<!-- Album Genre -->
-					<control type="label">
-						<posy>32</posy>
-						<width>380</width>
-						<height>50</height>
-						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<scrollsuffix>   |   </scrollsuffix>
-						<font>METF_TitleTextSmall</font>
-						<textcolor>MediaDetailsGenre</textcolor>
-						<label>$INFO[ListItem.Genre]</label>
-						<visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
-					</control>
-					<!-- Artist Genre -->
-					<control type="label">
-						<posy>32</posy>
-						<width>380</width>
-						<height>50</height>
-						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<scrollsuffix>   |   </scrollsuffix>
-						<font>METF_TitleTextSmall</font>
-						<textcolor>MediaDetailsGenre</textcolor>
-						<label>$INFO[ListItem.Property(Artist_Genre)]</label>
-						<visible>!IsEmpty(ListItem.Property(Artist_Genre)) + Container.Content(artists)</visible>
-					</control>
+				<!-- Artist Genre -->
+				<control type="label">
+					<width>380</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<scrollsuffix>   |   </scrollsuffix>
+					<font>METF_TitleTextSmall</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
+					<visible>!IsEmpty(ListItem.Property(Artist_Genre)) + Container.Content(artists)</visible>
 				</control>
-				<control type="group">
-					<include>Animation_FadedByMenu</include>
-					<include>Animation_OpenCloseFade</include>
-					<!-- Album Name -->
-					<control type="fadelabel">
-						<posx>440</posx>
-						<posy>480</posy>
-						<width>820</width>
-						<height>50</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>600</pauseatend>
-						<scrollspeed>20</scrollspeed>
-						<font>METF_TitleText</font>
-						<textcolor>MediaDetailsGenre</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>Container.Content(Albums)</visible>
-					</control>
+			</control>
+			<control type="group">
+				<include>Animation_ZoomInZoomOut</include>
+				<include>Animation_HiddenByInfo</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_OpenCloseFade</include>
+				<posx>440</posx>
+				<posy>495</posy>
+				<!-- Title -->
+				<control type="fadelabel">
+					<width>820</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
+					<font>METF_TitleTextLarge</font>
+					<textcolor>TitleText</textcolor>
+					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+					<visible>!Window.IsActive(pictures)</visible>
+				</control>
+				<control type="fadelabel">
+					<width>820</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
+					<font>METF_TitleTextLarge</font>
+					<textcolor>TitleText</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Window.IsActive(pictures)</visible>
 				</control>
 			</control>
 			<!-- Browser -->
@@ -112,7 +131,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<visible>!Skin.HasSetting(NoViewPanelSquare)</visible>
-				<visible>Container.Content(Albums) | Container.Content(Artists)</visible>
+				<visible>Window.IsActive(pictures) | Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
 				<itemlayout width="205" height="205">
 					<control type="image">
 						<posx>25</posx>
