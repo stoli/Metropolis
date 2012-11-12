@@ -22,7 +22,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewLogo)</visible>
-				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
+				<visible>Window.IsActive(videolibrary) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
 				<itemlayout width="294" height="194">
 					<control type="image">
 						<posx>9</posx>
@@ -66,7 +66,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
+				<visible>Window.IsActive(videolibrary) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
 			</control>
 			<control type="grouplist">
 				<posx>40</posx>
@@ -79,7 +79,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
+				<visible>Window.IsActive(videolibrary) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
 				<!-- Genre -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>
