@@ -6,6 +6,7 @@
 	<string id="31002">Fondos de Inicio</string>
 	<string id="31004">Depurar</string>
 	<string id="31005">Activar desplazamiento de texto automático</string>
+	<string id="31006">Acortar retardo para desplazamiento automático</string>
 	<string id="31007">ENCENDIDO</string>
 	<string id="31011">Metrópolis</string>
 	<string id="31012">Aumentar Puntuación</string>
@@ -204,6 +205,7 @@
 	<string id="31467">Vacaciones es un género muy amplio que abarca las películas que se centran en un día de fiesta, tales como Navidad, Halloween, Pascua, etc.</string>
 	<string id="31468">Servicios</string>
 	<string id="31469">Apariencia</string>
+	<string id="31470">Preferir ClearLogo a ClearArt</string>
 
 	<!-- PVR Resources -->
 	<string id="31600">Activar soporte de TV en Vivo (PVR)</string>
