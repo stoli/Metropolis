@@ -156,6 +156,7 @@
 						<width>195</width>
 						<height>197</height>
 						<texture>frames/ClassicFrame_SquareSmall.png</texture>
+						<visible>!SubString(ListItem.Icon,default) + !IsEmpty(ListItem.Icon)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="205" height="205">
@@ -185,8 +186,9 @@
 							<width>195</width>
 							<height>197</height>
 							<texture>frames/ClassicFrame_SquareSmall.png</texture>
+							<visible>!SubString(ListItem.Icon,default) + !IsEmpty(ListItem.Icon)</visible>
 						</control>
-					</control>					
+					</control>
 				</focusedlayout>
 			</control>
 			<include>ScrollBar_Vertical</include>
