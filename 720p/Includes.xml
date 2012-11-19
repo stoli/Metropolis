@@ -467,7 +467,7 @@
 			<include>Animation_HiddenByInfo</include>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<width>750</width>
-			<height>68</height>
+			<height>66</height>
 			<font>METF_PlotTextSmall</font>
 			<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollShort</include>
 			<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollShortFast</include>
@@ -485,7 +485,7 @@
 			<height>135</height>
 			<font>METF_PlotTextMedium</font>
 			-->
-			<height>130</height>
+			<height>128</height>
 			<font>METF_PlotTextSmall</font>
 			<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
 			<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
@@ -1460,7 +1460,7 @@
 				<!-- Plot -->
 				<control type="textbox">
 					<width>830</width>
-					<height>68</height>
+					<height>66</height>
 					<align>justify</align>
 					<font>METF_PlotTextSmall</font>
 					<textcolor>TextNF</textcolor>

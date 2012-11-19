@@ -15,7 +15,7 @@
 					<posy>49</posy>
 					<width>324</width>
 					<height>182</height>
-					<texture fallback="home_art/music.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/music.jpg">$INFO[ListItem.Art(fanart)]</texture>
 					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 					<visible>Window.IsActive(musiclibrary)</visible>
 				</control>
@@ -24,8 +24,8 @@
 					<posy>49</posy>
 					<width>324</width>
 					<height>182</height>
-					<texture fallback="home_art/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
-					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
+					<texture fallback="home_art/pictures.jpg">$INFO[ListItem.Icon]</texture>
+					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 					<visible>Window.IsActive(pictures)</visible>
 				</control>
 				<control type="image">
@@ -33,7 +33,16 @@
 					<posy>49</posy>
 					<width>324</width>
 					<height>182</height>
-					<texture fallback="home_art/programs.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/pictures.jpg">$INFO[ListItem.Art(fanart)]</texture>
+					<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Icon)</visible>
+				</control>
+				<control type="image">
+					<posx>25</posx>
+					<posy>49</posy>
+					<width>324</width>
+					<height>182</height>
+					<texture fallback="home_art/programs.jpg">$INFO[ListItem.Art(fanart)]</texture>
 					<aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 					<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
 				</control>
@@ -148,7 +157,7 @@
 						<width>155</width>
 						<height>155</height>
 						<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 					<control type="image">
 						<posx>5</posx>
@@ -178,7 +187,7 @@
 							<width>155</width>
 							<height>155</height>
 							<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<aspectratio scalediffuse="false">scale</aspectratio>
 						</control>
 						<control type="image">
 							<posx>5</posx>

@@ -56,7 +56,7 @@
 						<posy>27</posy>
 						<width>260</width>
 						<height>146</height>
-						<texture background="true" fallback="home_art/pictures.jpg">$INFO[ListItem.Property(Fanart_Image)]</texture>
+						<texture background="true" fallback="home_art/pictures.jpg">$INFO[ListItem.Art(fanart)]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Icon)</visible>
 					</control>

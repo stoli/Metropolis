@@ -414,10 +414,10 @@
 					<posy>435</posy>
 					<width>293</width>
 					<height>165</height>
-					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.Property(Fanart_Image)</visible>
+					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.Art(fanart)</visible>
 				</control>
 				<control type="image">
 					<posx>952</posx>
@@ -427,7 +427,7 @@
 					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.filenameandpath]</texture>
 					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Property(Fanart_Image)</visible>
+					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Art(fanart)</visible>
 				</control>
 				<!-- Addons Fanart Image -->
 				<control type="image">
