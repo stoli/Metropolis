@@ -1196,7 +1196,7 @@
 				<label>$VAR[VideoPlayerTitle2]</label>
 			</control>
 			<control type="group">
-				<visible>!SubString(Player.FolderPath,http://)</visible>
+				<visible>!SubString(Player.FolderPath,http,Left)</visible>
 				<!-- TV Show Poster / Logo / Clearart -->
 				<control type="image">
 					<description>TV Show Thumbnail</description>
@@ -1273,7 +1273,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>SubString(Player.FolderPath,http://)</visible>
+				<visible>SubString(Player.FolderPath,http,Left)</visible>
 				<!-- Default Thumbnail -->
 				<control type="image">
 					<description>Default Thumbnail</description>

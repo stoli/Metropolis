@@ -216,7 +216,7 @@
 					<label fallback="416">[COLOR=MediaDetailsGenre]$LOCALIZE[31423]:[/COLOR] $INFO[ListItem.Property(Addon.Creator)]</label>
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsInfo</textcolor>
-					<visible>!IsEmpty(ListItem.Property(Addon.Creator) + Container.Content(addons)</visible>
+					<visible>!IsEmpty(ListItem.Property(Addon.Creator)) + Container.Content(addons)</visible>
 				</control>
 				<!-- Genre -->
 				<control type="label">
@@ -417,7 +417,7 @@
 					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.Art(fanart)]</texture>
 					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				<control type="image">
 					<posx>952</posx>
@@ -427,7 +427,7 @@
 					<texture fallback="home_art/pictures.jpg" background="true">$INFO[ListItem.filenameandpath]</texture>
 					<aspectratio scalediffuse="false" background="true">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Art(fanart)</visible>
+					<visible>Window.IsActive(pictures) + IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				<!-- Addons Fanart Image -->
 				<control type="image">
