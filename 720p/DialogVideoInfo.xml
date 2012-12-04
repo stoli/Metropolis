@@ -367,7 +367,7 @@
 			<ondown>Close</ondown>
 			<ondown>SetFocus(55)</ondown>
 			<!-- Play -->
-			<control type="togglebutton" id="8">
+			<control type="button" id="8">
 				<include>VideoInfoButton</include>
 				<texturenofocus>buttons/button_play.png</texturenofocus>
 				<texturefocus>buttons/button_playFO.png</texturefocus>
