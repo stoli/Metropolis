@@ -38,7 +38,7 @@
 				<textcolor>TextNF</textcolor>
 				<info>ListItem.Label</info>
 				<!-- Title was overlapping progress dialog.  this is probably not the best way to fix this, but it works.-->
-				<visible>!Container.Content(episodes) + !Window.IsActive(videoscan) + !Window.IsActive(musicscan)</visible>
+				<visible>!Container.Content(episodes) + !Window.IsActive(extprogress)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>-325</posx>
@@ -53,7 +53,7 @@
 				<textcolor>TextNF</textcolor>
 				<label>$INFO[ListItem.Season]x$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 				<!-- Title was overlapping progress dialog.  this is probably not the best way to fix this, but it works.-->
-				<visible>Container.Content(episodes) + !Window.IsActive(videoscan) + !Window.IsActive(musicscan)</visible>
+				<visible>Container.Content(episodes) + !Window.IsActive(extprogress)</visible>
 			</control>
 			<!-- Tagline -->
 			<control type="label">

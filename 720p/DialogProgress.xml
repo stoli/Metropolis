@@ -13,8 +13,7 @@
 		<posy>-15</posy>
 	</coordinates>
 	<controls>
-		<animation effect="slide" end="0,-300" time="300" reversible="false" condition="Window.IsActive(musicscan)">Conditional</animation>
-		<animation effect="slide" end="0,-300" time="300" reversible="false" condition="Window.IsActive(videoscan)">Conditional</animation>
+		<animation effect="slide" end="0,-300" time="300" reversible="false" condition="Window.IsActive(extprogress)">Conditional</animation>
 		<!-- Background Panel -->
 		<control type="image">
 			<description>background image</description>
