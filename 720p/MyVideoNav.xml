@@ -10,7 +10,7 @@
 			<include>Dimensions_Fullscreen</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_FadedByMenu</include>
-			<fadetime>400</fadetime>
+			<fadetime>200</fadetime>
 			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Art(fanart)]</texture>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
