@@ -146,7 +146,7 @@
 				<scroll>true</scroll>
 				<font>METF_MusicVizTitle</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
-				<visible>!Skin.HasSetting(SlimMusicInfo) + IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
+				<visible>!Skin.HasSetting(SlimMusicInfo)</visible>
 			</control>
 			<control type="label">
 				<posx>324</posx>
@@ -170,7 +170,7 @@
 				<scroll>true</scroll>
 				<font>METF_SettingsHeading</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
-				<visible>Skin.HasSetting(SlimMusicInfo) + IsEmpty(Control.GetLabel(1)) + IsEmpty(Control.GetLabel(2))</visible>
+				<visible>Skin.HasSetting(SlimMusicInfo)</visible>
 			</control>
 			<control type="label">
 				<posx>10</posx>
