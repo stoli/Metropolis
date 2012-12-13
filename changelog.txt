@@ -1,4 +1,4 @@
-2.5.0 - 2012xxxx
+2.5.0 - 20121210
 - Allow Gallery_Square and Panel_Square in more places.
 - More info in Seekbar for Music Videos.
 - Make auto-scroll speed for textboxes adjustable.
