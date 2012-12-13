@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.0
+# Addon version: 2.5.1
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -32,6 +32,10 @@ msgstr "디버그"
 msgctxt "#31005"
 msgid "Enable auto scrolling for text that does not fit on-screen"
 msgstr "줄거리 스크롤"
+
+msgctxt "#31006"
+msgid "Shorter delay before auto scrolling"
+msgstr "자동 스크롤 전의 지연시간 짧게"
 
 msgctxt "#31007"
 msgid "ON"
@@ -68,6 +72,10 @@ msgstr "팬아트 숨기기"
 msgctxt "#31034"
 msgid "Enable Dynamic Weather Artwork"
 msgstr "동적인 날씨 아트웍 보이기"
+
+msgctxt "#31035"
+msgid "Show Clean Library SubMenu items"
+msgstr "라이브러리 정리 하위 메뉴 항목 보기"
 
 msgctxt "#31054"
 msgid "Logo"
@@ -337,6 +345,10 @@ msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "시스템 종료 항목 숨기기"
 
+msgctxt "#31338"
+msgid "Enable Advanced Media Filter"
+msgstr "고급 미디어 필터 사용"
+
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
 msgstr "네트워크, 그래픽, 하드웨어, 사용가능한 저장 공간 등 컴퓨터 정보를 표시합니다"
@@ -589,6 +601,10 @@ msgctxt "#31409"
 msgid "Finish"
 msgstr "종료"
 
+msgctxt "#31410"
+msgid "Prefer Landscape to Fanart (except background)"
+msgstr "팬아트보다 랜드스케이프 선호 (배경화면 제외)"
+
 msgctxt "#31411"
 msgid "*Press DOWN to exit*"
 msgstr "*종료하려면 아래 화살표를 누르세요*"
@@ -769,6 +785,30 @@ msgctxt "#31459"
 msgid "Cancel Timer"
 msgstr "타이머 취소"
 
+msgctxt "#31460"
+msgid "Games"
+msgstr "게임"
+
+msgctxt "#31464"
+msgid "Show Plot in Fullscreen Info"
+msgstr "전체화면 정보에서 줄거리 보기"
+
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "라이브러리 정리"
+
+msgctxt "#31468"
+msgid "Services"
+msgstr "서비스"
+
+msgctxt "#31469"
+msgid "Appearance"
+msgstr "모양새"
+
+msgctxt "#31470"
+msgid "Prefer ClearLogo to ClearArt"
+msgstr "클리어아트보다 클리어로고 선호"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Live TV (PVR) 사용"
@@ -788,6 +828,10 @@ msgstr "그룹명 변경"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "그룹 삭제"
+
+msgctxt "#31608"
+msgid "Hidden Channels"
+msgstr "숨겨진 채널"
 
 msgctxt "#31610"
 msgid "Scheduled Time"

@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.0
+# Addon version: 2.5.1
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -628,3 +628,63 @@ msgstr "*help text*"
 msgctxt "#31418"
 msgid "Hide all"
 msgstr "Hide all"
+
+msgctxt "#31423"
+msgid "Author"
+msgstr "Автор"
+
+msgctxt "#31427"
+msgid "Next Episode"
+msgstr "Следующая серия"
+
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "ТВ-гид"
+
+msgctxt "#31438"
+msgid "Recent"
+msgstr "Последние"
+
+msgctxt "#31441"
+msgid "Hide"
+msgstr "Скрыть"
+
+msgctxt "#31446"
+msgid "Fullscreen"
+msgstr "Полный экран"
+
+msgctxt "#31457"
+msgid "Shortcuts"
+msgstr "Ярлыки"
+
+msgctxt "#31460"
+msgid "Games"
+msgstr "Игры"
+
+msgctxt "#31468"
+msgid "Services"
+msgstr "Службы"
+
+msgctxt "#31469"
+msgid "Appearance"
+msgstr "Внешний вид"
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "ТВ"
+
+msgctxt "#31605"
+msgid "Add Group"
+msgstr "Добавить группу"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "Переименовать группу"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "Удалить группу"
+
+msgctxt "#31610"
+msgid "Scheduled Time"
+msgstr "Запланированное время"
