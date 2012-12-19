@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.1
+# Addon version: 2.5.2
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -61,6 +61,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Liste"
 
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "Trailere"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Forfatter"
@@ -88,3 +92,19 @@ msgstr "Services"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "Utseende"
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31605"
+msgid "Add Group"
+msgstr "Legg til gruppe"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "Gi nytt navn på gruppe"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "Slett gruppe"

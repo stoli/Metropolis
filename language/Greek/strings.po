@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.1
+# Addon version: 2.5.2
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -95,7 +95,7 @@ msgstr "Εμφάνιση Αντικειμένων που Προστέθηκαν 
 
 msgctxt "#31108"
 msgid "Enable Debug Mode"
-msgstr "Ενεργοποίηση Εντοπισμόύ Σφαλμάτων"
+msgstr "Ενεργοποίηση Εντοπισμού Σφαλμάτων"
 
 msgctxt "#31109"
 msgid "Enable Debug Grid"
