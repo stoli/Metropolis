@@ -1,3 +1,6 @@
+2.5.2 - 20121213
+- Updated language files from Transifex.
+
 2.5.1 - 20121211
 - Updated language files from Transifex.
 
