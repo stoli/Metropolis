@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -76,6 +76,10 @@ msgstr "Listi"
 msgctxt "#31286"
 msgid "Banner"
 msgstr "Borði"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "Skrár"
 
 msgctxt "#31291"
 msgid "Landscape"

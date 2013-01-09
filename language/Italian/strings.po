@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -33,9 +33,53 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Logo"
 
+msgctxt "#31118"
+msgid "Filemanager"
+msgstr "Gestore file"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Muto"
+
+msgctxt "#31159"
+msgid "ffx2"
+msgstr "ffx2"
+
+msgctxt "#31160"
+msgid "ffx4"
+msgstr "ffx4"
+
+msgctxt "#31161"
+msgid "ffx8"
+msgstr "ffx8"
+
+msgctxt "#31162"
+msgid "ffx16"
+msgstr "ffx16"
+
+msgctxt "#31163"
+msgid "ffx32"
+msgstr "ffx32"
+
+msgctxt "#31164"
+msgid "rwx2"
+msgstr "rwx2"
+
+msgctxt "#31165"
+msgid "rwx4"
+msgstr "rwx4"
+
+msgctxt "#31166"
+msgid "rwx8"
+msgstr "rwx8"
+
+msgctxt "#31167"
+msgid "rwx16"
+msgstr "rwx16"
+
+msgctxt "#31168"
+msgid "rwx32"
+msgstr "rwx32"
 
 msgctxt "#31183"
 msgid "Viewtype"
@@ -45,6 +89,10 @@ msgctxt "#31207"
 msgid "Current"
 msgstr "Attuale"
 
+msgctxt "#31208"
+msgid "Last Updated:"
+msgstr "Ultimo Aggiornamento:"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "In Riproduzione"
@@ -53,6 +101,10 @@ msgctxt "#31250"
 msgid "Current Selected"
 msgstr "Selezione Corrente"
 
+msgctxt "#31251"
+msgid "Current Playlist"
+msgstr "Playlist Corrente"
+
 msgctxt "#31271"
 msgid "Favourite"
 msgstr "Preferito"
@@ -60,6 +112,18 @@ msgstr "Preferito"
 msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Multi-Immagine"
+
+msgctxt "#31278"
+msgid "Open Playlist"
+msgstr "Apri Playlist"
+
+msgctxt "#31279"
+msgid "Save Playlist"
+msgstr "Salva Playlist"
+
+msgctxt "#31280"
+msgid "Close Playlist"
+msgstr "Chiudi Playlist"
 
 msgctxt "#31281"
 msgid "Items"
@@ -81,9 +145,17 @@ msgctxt "#31286"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31289"
+msgid "Files"
+msgstr "Files"
+
 msgctxt "#31291"
 msgid "Landscape"
 msgstr "Paesaggio"
+
+msgctxt "#31313"
+msgid "Movie Set"
+msgstr "Set di film"
 
 msgctxt "#31334"
 msgid "Trailers"

@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -20,6 +20,10 @@ msgstr ""
 msgctxt "#31001"
 msgid "View Options"
 msgstr "Opcije Pregleda"
+
+msgctxt "#31006"
+msgid "Shorter delay before auto scrolling"
+msgstr "Sakri"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
@@ -56,6 +60,14 @@ msgstr "Jedna slika"
 msgctxt "#31285"
 msgid "List"
 msgstr "Popis"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "Datoteke"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "Najave"
 
 msgctxt "#31423"
 msgid "Author"

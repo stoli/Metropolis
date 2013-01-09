@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -20,6 +20,10 @@ msgstr ""
 msgctxt "#31001"
 msgid "View Options"
 msgstr "Visningsalternativer"
+
+msgctxt "#31004"
+msgid "Debug"
+msgstr "Feilsøk"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
@@ -61,9 +65,17 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Liste"
 
+msgctxt "#31289"
+msgid "Files"
+msgstr "Filer"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailere"
+
+msgctxt "#31409"
+msgid "Finish"
+msgstr "Ferdig kl."
 
 msgctxt "#31423"
 msgid "Author"
@@ -108,3 +120,7 @@ msgstr "Gi nytt navn på gruppe"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "Slett gruppe"
+
+msgctxt "#31610"
+msgid "Scheduled Time"
+msgstr "Planlagt tid"

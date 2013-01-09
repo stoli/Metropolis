@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -73,6 +73,10 @@ msgctxt "#31208"
 msgid "Last Updated:"
 msgstr "Naposledy aktualizováno:"
 
+msgctxt "#31244"
+msgid "Playing"
+msgstr "Přehrávání"
+
 msgctxt "#31250"
 msgid "Current Selected"
 msgstr "Aktuálně vybraný"
@@ -80,6 +84,10 @@ msgstr "Aktuálně vybraný"
 msgctxt "#31251"
 msgid "Current Playlist"
 msgstr "Aktuální seznam skladeb"
+
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "Oblíbené"
 
 msgctxt "#31275"
 msgid "Multi Image"

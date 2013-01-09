@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -29,6 +29,10 @@ msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Skryť Fanart na pozadí"
 
+msgctxt "#31054"
+msgid "Logo"
+msgstr "Logo"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "Prehráva sa"
@@ -36,6 +40,10 @@ msgstr "Prehráva sa"
 msgctxt "#31250"
 msgid "Current Selected"
 msgstr "Aktuálne zvolené"
+
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "Obľúbené"
 
 msgctxt "#31275"
 msgid "Multi Image"
@@ -57,13 +65,33 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Zoznam"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Transparent"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "Súbory"
+
 msgctxt "#31293"
 msgid "Picture Grid"
 msgstr "Obrazová mriežka"
 
+msgctxt "#31313"
+msgid "Movie Set"
+msgstr "Filmová sada"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "Upútavky na film"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
+
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "Televízny program"
 
 msgctxt "#31441"
 msgid "Hide"
@@ -72,6 +100,10 @@ msgstr "Skryť"
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
+
+msgctxt "#31451"
+msgid "Recommended"
+msgstr "Odporúčané"
 
 msgctxt "#31457"
 msgid "Shortcuts"

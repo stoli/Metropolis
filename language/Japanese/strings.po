@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -21,6 +21,10 @@ msgctxt "#31001"
 msgid "View Options"
 msgstr "表示オプション"
 
+msgctxt "#31004"
+msgid "Debug"
+msgstr "デバッグ"
+
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "背景のファンアートを隠す"
@@ -32,6 +36,10 @@ msgstr "再生中"
 msgctxt "#31250"
 msgid "Current Selected"
 msgstr "現在選択中"
+
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "お気に入り"
 
 msgctxt "#31275"
 msgid "Multi Image"
@@ -52,6 +60,14 @@ msgstr "単一イメージ"
 msgctxt "#31285"
 msgid "List"
 msgstr "リスト"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "ファイル"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "予告編"
 
 msgctxt "#31423"
 msgid "Author"
@@ -96,3 +112,7 @@ msgstr "グループの名称変更"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "グループの削除"
+
+msgctxt "#31610"
+msgid "Scheduled Time"
+msgstr "タイマー予約時間"

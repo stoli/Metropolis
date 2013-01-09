@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -209,6 +209,10 @@ msgctxt "#31219"
 msgid "Choose from a variety of advanced settings and customisation options to make the UI your own"
 msgstr "Choose from a variety of advanced settings and customisation options to make the UI your own"
 
+msgctxt "#31220"
+msgid "Set up TV display. Includes TV channels management options, recordings and tv guide display options."
+msgstr "Ustaw wyświetlanie na TV. Zawiera opcje zarządzania kanałami TV, nagraniami oraz opcje wyświetlania programu TV."
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "Playing"
@@ -255,11 +259,11 @@ msgstr "Items"
 
 msgctxt "#31282"
 msgid "Poster Wrap"
-msgstr "POSTER WRAP"
+msgstr "POSTER zawijany"
 
 msgctxt "#31283"
 msgid "Poster Fixed"
-msgstr "POSTER FIXED"
+msgstr "POSTER przytwierdzony"
 
 msgctxt "#31284"
 msgid "Single Image"
@@ -629,9 +633,33 @@ msgctxt "#31418"
 msgid "Hide all"
 msgstr "Hide all"
 
+msgctxt "#31419"
+msgid "Music Settings"
+msgstr "Ustawienia Muzyki"
+
+msgctxt "#31420"
+msgid "Video Settings"
+msgstr "Ustawienia Video"
+
+msgctxt "#31421"
+msgid "Video OSD: Show ClearArt/Logo"
+msgstr "OSD Video: pokaż ClearArt/Logo"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
+
+msgctxt "#31424"
+msgid "Poster & Fanart"
+msgstr "Poster i Fanart"
+
+msgctxt "#31425"
+msgid "Video OSD: Show Thumbnail"
+msgstr "OSD Video: Pokazuj miniatury"
+
+msgctxt "#31426"
+msgid "Enable TV Show Next Aired Date display"
+msgstr "Włącz wyświetlanie daty emisji Seriali TV"
 
 msgctxt "#31427"
 msgid "Next Episode"
@@ -641,29 +669,153 @@ msgctxt "#31428"
 msgid "TV Guide"
 msgstr "PROGRAM TV"
 
+msgctxt "#31429"
+msgid "Display Path in Video Info instead of Rating details"
+msgstr "Wyświetl ścieżkę w oknie Informacji Video zamiast szczegółow oceny"
+
+msgctxt "#31430"
+msgid "Poster Large"
+msgstr "Duży plakat"
+
+msgctxt "#31431"
+msgid "Click to reset Metropolis to defaults"
+msgstr "Kliknij aby zresetować Metropolis do ustawień domyślnych"
+
+msgctxt "#31433"
+msgid "Visualization Background: Fanart"
+msgstr "Tło Wizualizacji: Fanart"
+
+msgctxt "#31434"
+msgid "Visualization Background: Extra Fanart"
+msgstr "Tło Wizualizacji: Extra Fanart"
+
+msgctxt "#31435"
+msgid "Visualization Background: Artist Slideshow"
+msgstr "Tło Wizualizacji: Pokaz slajdów artystów"
+
+msgctxt "#31436"
+msgid "Use Slim Seekbar"
+msgstr "Użyj wąskiego baska przeszukiwania"
+
+msgctxt "#31437"
+msgid "Enable TV Tunes script"
+msgstr "Włącz skrypt TV Tunes"
+
 msgctxt "#31438"
 msgid "Recent"
 msgstr "Ostanie"
+
+msgctxt "#31439"
+msgid "Banner & Poster"
+msgstr "Banner i Poster"
+
+msgctxt "#31440"
+msgid "View Types"
+msgstr "Typy widoków"
 
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Ukryj"
 
+msgctxt "#31442"
+msgid "Banner & Fanart"
+msgstr "Banner i Fanart"
+
+msgctxt "#31443"
+msgid "Pseudo TV"
+msgstr "Pseudo TV"
+
+msgctxt "#31445"
+msgid "Picture Settings"
+msgstr "Ustawienia Zdjęć"
+
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Pełny ekran"
+
+msgctxt "#31447"
+msgid "Use Realistic Weather Icons"
+msgstr "Użyj realistycznych ikon pogody"
+
+msgctxt "#31448"
+msgid "Show Plot only in Info dialog"
+msgstr "Pokazuj fabułę jedynie w oknie Info"
+
+msgctxt "#31449"
+msgid "Show Recommended Items"
+msgstr "Pokaż elementy Rekomendowane"
+
+msgctxt "#31450"
+msgid " - changing the options below requires a restart -"
+msgstr "- zmiana poniższych opcji wymaga restartu -"
 
 msgctxt "#31451"
 msgid "Recommended"
 msgstr "Polecane"
 
+msgctxt "#31452"
+msgid "Visualization: Use Slim Info Overlay"
+msgstr "Wizualizacja: Użyj smukłej nakładki Info"
+
+msgctxt "#31453"
+msgid "Show Date instead of Day of Week"
+msgstr "Pokaż datę zamiast dnia tygodnia"
+
+msgctxt "#31454"
+msgid "Visualization: Show player position and time in Info Overlay"
+msgstr "Wizualizacja: Pokaż pozycję odtwarzacza i czas w nakładce Info"
+
+msgctxt "#31455"
+msgid "Visualization: Hide Clock and Temp in Info Overlay"
+msgstr "Wizualizacja: Ukryj zegar i temperaturę w nakładce Info"
+
+msgctxt "#31456"
+msgid "- Override default link"
+msgstr "- nadpisz domyślny link"
+
 msgctxt "#31457"
 msgid "Shortcuts"
 msgstr "Skróty"
 
+msgctxt "#31458"
+msgid "Set Timer"
+msgstr "Ustaw licznik czasu"
+
+msgctxt "#31459"
+msgid "Cancel Timer"
+msgstr "Anuluj licznik czasu"
+
 msgctxt "#31460"
 msgid "Games"
 msgstr "Gry"
+
+msgctxt "#31461"
+msgid "Games Tall"
+msgstr "Gry wysoko"
+
+msgctxt "#31462"
+msgid "Games Square"
+msgstr "Gry kwadraty"
+
+msgctxt "#31463"
+msgid "Games Wide"
+msgstr "Gry szeroko"
+
+msgctxt "#31464"
+msgid "Show Plot in Fullscreen Info"
+msgstr "Pokaż fabułę w Info Pełnego Ekranu"
+
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Wyczyść Bibliotekę"
+
+msgctxt "#31466"
+msgid "Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer."
+msgstr "Choć technicznie rzecz biorąc Zagraniczny to nie gatunek, ale zazwyczaj zawiera filmy w języku innym niż rodzimy osoby oglądającej."
+
+msgctxt "#31467"
+msgid "Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc."
+msgstr "Święto to bardzo szeroki gatunke, filmy koncentrujące się na konkretnych świętach, takich jak Boże Narodzenie, Halloween, Wielkanoc, itd."
 
 msgctxt "#31468"
 msgid "Services"
@@ -672,6 +824,14 @@ msgstr "Services"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "Wygląd"
+
+msgctxt "#31470"
+msgid "Prefer ClearLogo to ClearArt"
+msgstr "Preferuj ClearLogo nad ClearArt"
+
+msgctxt "#31600"
+msgid "Enable Live TV (PVR) support"
+msgstr "Włącz obsługę TV na żywo (PVR)"
 
 msgctxt "#31601"
 msgid "Live TV"
@@ -688,6 +848,10 @@ msgstr "Zmień nazwę Grupy"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "Usuń Grupę"
+
+msgctxt "#31608"
+msgid "Hidden Channels"
+msgstr "Ukryte Kanały"
 
 msgctxt "#31610"
 msgid "Scheduled Time"

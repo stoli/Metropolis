@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -55,7 +55,7 @@ msgstr "Verlaag beoordeling"
 
 msgctxt "#31024"
 msgid "Icon Home layout"
-msgstr "Beginscherm indeling iconen"
+msgstr "Beginschermlayout iconen"
 
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
@@ -67,7 +67,7 @@ msgstr "Verberg bekeken-status TV"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr "Verberg achtergrond en fanart"
+msgstr "Verberg fanart-achtergrond"
 
 msgctxt "#31034"
 msgid "Enable Dynamic Weather Artwork"
@@ -91,7 +91,7 @@ msgstr "Verberg profielen"
 
 msgctxt "#31060"
 msgid "Show Recently Added Items"
-msgstr "Show recent toegevoegd / Willekeurige items"
+msgstr "Toon recent toegevoegde items"
 
 msgctxt "#31108"
 msgid "Enable Debug Mode"
@@ -780,6 +780,10 @@ msgstr "Toon plot in fullscreen info"
 msgctxt "#31465"
 msgid "Clean Library"
 msgstr "Opschonen bibliotheek"
+
+msgctxt "#31466"
+msgid "Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer."
+msgstr "Buitenlands is technisch gesproken geen genre, maar dit betreft vaak films met dialogen die niet in de moedertaal van de kijker zijn."
 
 msgctxt "#31468"
 msgid "Services"

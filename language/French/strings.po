@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.2
+# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -788,6 +788,14 @@ msgstr "Annuler Temporisation"
 msgctxt "#31460"
 msgid "Games"
 msgstr "Jeux"
+
+msgctxt "#31464"
+msgid "Show Plot in Fullscreen Info"
+msgstr "Afficher le Résumé dans les Informations Plein Écran"
+
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Nettoyer la Médiathèque"
 
 msgctxt "#31468"
 msgid "Services"
