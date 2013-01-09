@@ -185,8 +185,11 @@
 					<control type="radiobutton" id="109">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31338]</label>
-						<onclick>Skin.ToggleSetting(AdvancedMediaFilter)</onclick>
-						<selected>Skin.HasSetting(AdvancedMediaFilter)</selected>
+						<onclick>Skin.ToggleSetting(SimpleMediaFilter)</onclick>
+						<selected>Skin.HasSetting(SimpleMediaFilter)</selected>
+						<!-- XXX: advanced media filter currently cannot be overridden -->
+						<!-- XXX: see http://forum.xbmc.org/showthread.php?tid=126502&pid=1231472#pid1231472 -->
+						<visible>false</visible>
 					</control>
 					<control type="radiobutton" id="110">
 						<include>SettingsLabel</include>

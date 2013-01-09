@@ -120,7 +120,7 @@
 					<disabledcolor>TextDisabled</disabledcolor>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<visible>[Container.CanFilterAdvanced + !Skin.HasSetting(AdvancedMediaFilter)] | Container.CanFilter</visible>
+					<visible>[Container.CanFilterAdvanced + Skin.HasSetting(SimpleMediaFilter)] | Container.CanFilter</visible>
 				</control>
 				<control type="radiobutton" id="20">
 					<description>Advanced Filter</description>
@@ -138,7 +138,7 @@
 					<selected>Container.Filtered</selected>
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
-					<visible>Container.CanFilterAdvanced + Skin.HasSetting(AdvancedMediaFilter)</visible>
+					<visible>Container.CanFilterAdvanced + !Skin.HasSetting(SimpleMediaFilter)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
