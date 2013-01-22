@@ -1,7 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -80,6 +79,10 @@ msgstr "Sakrij"
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Cijeli zaslon"
+
+msgctxt "#31451"
+msgid "Recommended"
+msgstr "Preporučeno"
 
 msgctxt "#31457"
 msgid "Shortcuts"

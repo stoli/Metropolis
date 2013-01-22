@@ -1,7 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -28,6 +27,10 @@ msgstr "除錯"
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "隱藏背景 Fanart"
+
+msgctxt "#31054"
+msgid "Logo"
+msgstr "標誌"
 
 msgctxt "#31244"
 msgid "Playing"
@@ -56,6 +59,10 @@ msgstr "單一圖片"
 msgctxt "#31285"
 msgid "List"
 msgstr "列表"
+
+msgctxt "#31286"
+msgid "Banner"
+msgstr "旗幟"
 
 msgctxt "#31289"
 msgid "Files"

@@ -1,7 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -344,10 +343,6 @@ msgstr "Activer le mode Kiosque"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Désactiver les options destructrices du menu 'Éteindre'"
-
-msgctxt "#31338"
-msgid "Enable Advanced Media Filter"
-msgstr "Masquer Vidéo de Musique"
 
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"

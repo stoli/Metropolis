@@ -1,7 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon version: 2.5.3
 # Addon Provider: Amra
 msgid ""
 msgstr ""
@@ -300,10 +299,6 @@ msgstr "Ativar Modo Quiosque"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Desativar Itens Desligar Destrutivo"
-
-msgctxt "#31338"
-msgid "Enable Advanced Media Filter"
-msgstr "Ativar Filtro de Mídia Avançado"
 
 msgctxt "#31350"
 msgid "Bollywood is the informal term popularly used for the Hindi-language film industry based in Mumbai, Maharashtra, India. The term is often incorrectly used to refer to the whole of Indian cinema; it is only a part of the total Indian film industry, which includes several regional film industries sorted by language. Bollywood is the largest film producer in India and one of the largest centers of film production in the world."
