@@ -1,3 +1,6 @@
+2.6.2 - 20130124
+- Fix Recently Added Music Video labels on home screen.
+
 2.6.1 - 20130117
 - Updated language files from Transifex.
 
