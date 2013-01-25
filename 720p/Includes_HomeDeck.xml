@@ -1122,7 +1122,7 @@
 			</item>
 			<item id="2">
 				<description>Recently Added Music Video 2</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.2.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
@@ -1130,7 +1130,7 @@
 			</item>
 			<item id="3">
 				<description>Recently Added Music Video 3</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.3.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
@@ -1138,7 +1138,7 @@
 			</item>
 			<item id="4">
 				<description>Recently Added Music Video 4</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.4.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
@@ -1146,7 +1146,7 @@
 			</item>
 			<item id="5">
 				<description>Recently Added Music Video 5</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.5.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.5.Path)])</onclick>
@@ -1154,7 +1154,7 @@
 			</item>
 			<item id="6">
 				<description>Recently Added Music Video 6</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.6.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.6.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.6.Path)])</onclick>
@@ -1162,7 +1162,7 @@
 			</item>
 			<item id="7">
 				<description>Recently Added Music Video 7</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.7.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.7.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.7.Path)])</onclick>
@@ -1170,7 +1170,7 @@
 			</item>
 			<item id="8">
 				<description>Recently Added Music Video 8</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.8.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.8.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.8.Path)])</onclick>
@@ -1178,7 +1178,7 @@
 			</item>
 			<item id="9">
 				<description>Recently Added Music Video 9</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.9.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.9.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.9.Path)])</onclick>
@@ -1186,7 +1186,7 @@
 			</item>
 			<item id="10">
 				<description>Recently Added Music Video 10</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(LatestMusicVideo.10.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
 				<icon>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.10.Fanart)]</thumb>
 				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.10.Path)])</onclick>
