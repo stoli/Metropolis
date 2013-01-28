@@ -27,7 +27,7 @@
 				<posy>215</posy>
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[222]</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>22</onright>
 				<onup>20</onup>
 				<ondown>20</ondown>
@@ -38,7 +38,7 @@
 				<posy>253</posy>
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[186]</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>22</onright>
 				<onup>21</onup>
 				<ondown>21</ondown>
@@ -50,7 +50,7 @@
 				<width>840</width>
 				<height>38</height>
 				<include>SettingsLabel</include>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>20</onleft>
 				<onup>9001</onup>
 				<ondown>12</ondown>
@@ -92,7 +92,7 @@
 				<label>-</label>
 				<onup>22</onup>
 				<onleft>20</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>10</ondown>
 			</control>
 			<control type="label">
@@ -129,7 +129,7 @@
 				<height>114</height>
 				<onup>12</onup>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>16</ondown>
 				<itemlayout height="38" width="840">
 					<control type="label">
@@ -178,7 +178,7 @@
 					<include>SettingsLabelLeft</include>
 					<label>$LOCALIZE[15019]</label>
 					<onup>15</onup>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>10</onright>
 					<ondown>14</ondown>
 				</control>
@@ -189,7 +189,7 @@
 					<include>SettingsLabelLeft</include>
 					<label>$LOCALIZE[1210]</label>
 					<onup>13</onup>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>10</onright>
 					<ondown>15</ondown>
 				</control>
@@ -200,7 +200,7 @@
 					<include>SettingsLabelLeft</include>
 					<label>$LOCALIZE[21435]</label>
 					<onup>14</onup>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>10</onright>
 					<ondown>13</ondown>
 				</control>

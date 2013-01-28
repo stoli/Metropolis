@@ -130,7 +130,7 @@
 					<posy>95</posy>
 					<include>SettingsLabelLeft</include>
 					<label>222</label>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>10</onright>
 					<onup>18</onup>
 					<ondown>18</ondown>
@@ -141,7 +141,7 @@
 					<posy>133</posy>
 					<include>SettingsLabelLeft</include>
 					<label>186</label>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>10</onright>
 					<onup>19</onup>
 					<ondown>19</ondown>

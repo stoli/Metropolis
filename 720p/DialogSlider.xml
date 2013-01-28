@@ -48,8 +48,8 @@
 				<posy>125</posy>
 				<width>500</width>
 				<height>15</height>
-				<onup>-</onup>
-				<ondown>-</ondown>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<texturefocus>-</texturefocus>

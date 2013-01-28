@@ -27,7 +27,7 @@
 				<height>304</height>
 				<itemgap>0</itemgap>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
@@ -49,7 +49,7 @@
 				<posy>234</posy>
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[222]</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>5</onright>
 				<onup>28</onup>
 				<ondown>28</ondown>
@@ -60,7 +60,7 @@
 				<posy>272</posy>
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[186]</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>5</onright>
 				<onup>29</onup>
 				<ondown>29</ondown>

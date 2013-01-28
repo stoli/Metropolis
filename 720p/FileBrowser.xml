@@ -93,7 +93,7 @@
 		<control type="grouplist" id="7001">
 			<posx>-110</posx>
 			<posy>230</posy>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>450</onright>
 			<onup>7001</onup>
 			<ondown>7001</ondown>
@@ -130,7 +130,7 @@
 			<texturesliderbackground>-</texturesliderbackground>
 			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 			<onleft>450</onleft>
-			<onright>-</onright>
+			<onright>noop</onright>
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
 			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60)">Conditional</animation>

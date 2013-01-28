@@ -39,7 +39,7 @@
 						<posy>0</posy>
 						<include>SettingsLabelLeft</include>
 						<label>$LOCALIZE[31278]</label>
-						<onleft>-</onleft>
+						<onleft>noop</onleft>
 						<onright>7</onright>
 						<onup>8</onup>
 						<ondown>7</ondown>
@@ -50,7 +50,7 @@
 						<posy>38</posy>
 						<include>SettingsLabelLeft</include>
 						<label>$LOCALIZE[31279]</label>
-						<onleft>-</onleft>
+						<onleft>noop</onleft>
 						<onright>50</onright>
 						<onup>6</onup>
 						<ondown>8</ondown>
@@ -61,7 +61,7 @@
 						<posy>76</posy>
 						<include>SettingsLabelLeft</include>
 						<label>$LOCALIZE[31280]</label>
-						<onleft>-</onleft>
+						<onleft>noop</onleft>
 						<onright>50</onright>
 						<onup>7</onup>
 						<ondown>6</ondown>
@@ -412,7 +412,7 @@
 					<width>390</width>
 					<height>380</height>
 					<onleft>50</onleft>
-					<onright>-</onright>
+					<onright>noop</onright>
 					<onup>100</onup>
 					<ondown>100</ondown>
 					<viewtype label="">list</viewtype>

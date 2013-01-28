@@ -86,7 +86,7 @@
 				<texturesliderbackground>-</texturesliderbackground>
 				<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 				<onleft>20</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60)">Conditional</animation>
