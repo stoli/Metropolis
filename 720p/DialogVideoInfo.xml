@@ -488,7 +488,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<animation effect="zoom" center="auto" start="40" end="100" time="400" tween="cubic" easing="inout">WindowOpen</animation>
 					<animation effect="fade" start="0" end="0" time="0">WindowClose</animation>
-					<visible>Container.Content(MusicVideos)]</visible>
+					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<!-- Frame for poster (except for Music Videos) -->
 				<control type="image">
