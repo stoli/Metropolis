@@ -1,4 +1,4 @@
-﻿<window id="2006">
+<window id="2006">
 	<allowoverlay>no</allowoverlay>
 	<onload condition="Skin.HasSetting(VisBgArtistSlideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol>-</defaultcontrol>

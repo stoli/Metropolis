@@ -1,4 +1,4 @@
-﻿<window>
+<window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<include>Animation_OpenCloseFade</include>
 	<coordinates>

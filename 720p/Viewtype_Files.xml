@@ -1,4 +1,4 @@
-﻿<includes>
+<includes>
 	<include name="Viewtype_Files">
 		<control type="group">
 			<visible>Control.IsVisible(55)</visible>
