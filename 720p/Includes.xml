@@ -338,29 +338,15 @@
 				<label>$INFO[System.Time(mm)]</label>
 			</control>
 			<control type="label">
-				<description>AM</description>
+				<description>AM/PM</description>
 				<posx>1186</posx>
 				<posy>640</posy>
 				<width>80</width>
 				<font>METF_FontAMPM</font>
 				<textcolor>TimeAMPM</textcolor>
-				<label>[B]$LOCALIZE[31008][/B]</label>
+				<label>[B]$INFO[System.Time(xx)][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<visible>substring(system.time,AM,right)</visible>
-			</control>
-			<control type="label">
-				<description>PM</description>
-				<posx>1186</posx>
-				<posy>640</posy>
-				<width>80</width>
-				<font>METF_FontAMPM</font>
-				<textcolor>TimeAMPM</textcolor>
-				<label>[B]PM[/B]</label>
-				<label>[B]$LOCALIZE[31009][/B]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<visible>substring(system.time,PM,right)</visible>
 			</control>
 			<control type="label">
 				<description>Date</description>

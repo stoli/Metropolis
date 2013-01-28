@@ -44,14 +44,6 @@ msgctxt "#31007"
 msgid "ON"
 msgstr ""
 
-msgctxt "#31008"
-msgid "AM"
-msgstr ""
-
-msgctxt "#31009"
-msgid "PM"
-msgstr ""
-
 msgctxt "#31010"
 msgid "N/A"
 msgstr ""
