@@ -344,7 +344,7 @@
 				<width>80</width>
 				<font>METF_FontAMPM</font>
 				<textcolor>TimeAMPM</textcolor>
-				<label>[B]AM[/B]</label>
+				<label>[B]$LOCALIZE[31008][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<visible>substring(system.time,AM,right)</visible>
@@ -357,6 +357,7 @@
 				<font>METF_FontAMPM</font>
 				<textcolor>TimeAMPM</textcolor>
 				<label>[B]PM[/B]</label>
+				<label>[B]$LOCALIZE[31009][/B]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<visible>substring(system.time,PM,right)</visible>
@@ -680,7 +681,7 @@
 					<aligny>center</aligny>
 					<font>METF_PlotTextSmall</font>
 					<textcolor>LowerText</textcolor>
-					<label>$INFO[ListItem.PictureExpTime] @ ISO $INFO[ListItem.PictureISO]</label>
+					<label>$INFO[ListItem.PictureExpTime] @ $LOCALIZE[21837] $INFO[ListItem.PictureISO]</label>
 					<visible>!IsEmpty(ListItem.PictureExpTime) + !IsEmpty(ListItem.PictureISO)</visible>
 				</control>
 			</control>

@@ -1546,7 +1546,7 @@
 				</control>
 				<control type="button" id="91504">
 					<include>Submenu_Button</include>
-					<label>Browser</label>
+					<label>$LOCALIZE[10040]</label>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
 			</control>

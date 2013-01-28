@@ -168,7 +168,7 @@
 					<visible>!IsEmpty(Window.Property(Day0.HighTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>260</posy>
 					<width>190</width>
@@ -190,7 +190,7 @@
 					<visible>!IsEmpty(Window.Property(Day0.LowTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>340</posy>
 					<width>190</width>
@@ -255,7 +255,7 @@
 					<visible>!IsEmpty(Window.Property(Day1.HighTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>260</posy>
 					<width>190</width>
@@ -277,7 +277,7 @@
 					<visible>!IsEmpty(Window.Property(Day1.LowTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>340</posy>
 					<width>190</width>
@@ -342,7 +342,7 @@
 					<visible>!IsEmpty(Window.Property(Day2.HighTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>260</posy>
 					<width>190</width>
@@ -364,7 +364,7 @@
 					<visible>!IsEmpty(Window.Property(Day2.LowTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>340</posy>
 					<width>190</width>
@@ -429,7 +429,7 @@
 					<visible>!IsEmpty(Window.Property(Day3.HighTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>260</posy>
 					<width>190</width>
@@ -451,7 +451,7 @@
 					<visible>!IsEmpty(Window.Property(Day3.LowTemp))</visible>
 				</control>
 				<control type="label">
-					<label>N/A</label>
+					<label>$LOCALIZE[31010]</label>
 					<posx>5</posx>
 					<posy>340</posy>
 					<width>190</width>

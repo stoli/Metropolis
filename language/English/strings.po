@@ -44,7 +44,17 @@ msgctxt "#31007"
 msgid "ON"
 msgstr ""
 
-#empty strings from id 31008 to 31010
+msgctxt "#31008"
+msgid "AM"
+msgstr ""
+
+msgctxt "#31009"
+msgid "PM"
+msgstr ""
+
+msgctxt "#31010"
+msgid "N/A"
+msgstr ""
 
 msgctxt "#31011"
 msgid "Metropolis"
