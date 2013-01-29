@@ -18,7 +18,7 @@ msgstr ""
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr "View Options"
+msgstr "Opcje widoku"
 
 msgctxt "#31002"
 msgid "Home Artwork"
@@ -343,6 +343,10 @@ msgstr "Enable Kiosk mode"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "SHOWCASE"
+
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Użyj prostego filtru mediów"
 
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"

@@ -88,6 +88,10 @@ msgctxt "#31291"
 msgid "Landscape"
 msgstr "Paisagem"
 
+msgctxt "#31293"
+msgid "Picture Grid"
+msgstr "Grelha de Fotos"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"

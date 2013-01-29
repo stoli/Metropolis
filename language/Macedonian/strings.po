@@ -56,6 +56,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Трејлер"
 
+msgctxt "#31423"
+msgid "Author"
+msgstr "Автор"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Сокриј"

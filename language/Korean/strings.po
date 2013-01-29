@@ -344,6 +344,10 @@ msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "시스템 종료 항목 숨기기"
 
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "간단 미디어 필터 사용"
+
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
 msgstr "네트워크, 그래픽, 하드웨어, 사용가능한 저장 공간 등 컴퓨터 정보를 표시합니다"

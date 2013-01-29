@@ -40,6 +40,10 @@ msgctxt "#31250"
 msgid "Current Selected"
 msgstr "目前的選擇"
 
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "我的最愛"
+
 msgctxt "#31275"
 msgid "Multi Image"
 msgstr "多張圖片"

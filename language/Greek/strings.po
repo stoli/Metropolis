@@ -344,6 +344,10 @@ msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Απενεργοποίηση καταστροφικών αντικειμένων Τερματισμού"
 
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Χρήση απλού Φίλτρου Πολυμέσων"
+
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
 msgstr "Δείτε πληροφορίες για τον υπολογιστή σας σχετικά με το δίκτυο, τα γραφικά, το υλικό και το διαθέσιμο αποθηκευτικό χώρο"

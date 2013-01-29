@@ -692,9 +692,21 @@ msgctxt "#31438"
 msgid "Recent"
 msgstr "Recent"
 
+msgctxt "#31439"
+msgid "Banner & Poster"
+msgstr "Banner & Poster"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Verberg"
+
+msgctxt "#31442"
+msgid "Banner & Fanart"
+msgstr "Banner & Fanart"
+
+msgctxt "#31443"
+msgid "Pseudo TV"
+msgstr "Pseudo TV"
 
 msgctxt "#31445"
 msgid "Picture Settings"
