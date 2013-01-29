@@ -1,3 +1,8 @@
+2.6.3 - 20130129
+- Update Record Label and Studio media flags.
+- Fix various minor issues for Frodo repo.
+- Updated language files from Transifex.
+
 2.6.2 - 20130124
 - Fix Recently Added Music Video labels on home screen.
 
