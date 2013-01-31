@@ -14,7 +14,7 @@
 	<include file="Viewtype_Fanart.xml" />			<!-- 504 -->
 	<include file="Viewtype_FanartBanner.xml" />		<!-- 508 -->
 	<include file="Viewtype_FanartList.xml" />		<!-- 509 -->
-	<include file="Viewtype_Files.xml" />			<!-- 55  -->
+	<include file="Viewtype_List.xml" />			<!-- 55  -->
 	<include file="Viewtype_Gallery.xml" />			<!-- 54  -->
 	<include file="Viewtype_Gallery_Fanart.xml" />		<!-- 59  -->
 	<include file="Viewtype_Gallery_Square.xml" />		<!-- 58  -->
@@ -22,7 +22,6 @@
 	<include file="Viewtype_Games_Square.xml" />		<!-- 951 -->
 	<include file="Viewtype_Games_Wide.xml" />		<!-- 952 -->
 	<include file="Viewtype_Landscape.xml" />		<!-- 52  -->
-	<include file="Viewtype_List.xml" />			<!-- 503 -->
 	<include file="Viewtype_Logo.xml" />			<!-- 56  -->
 	<include file="Viewtype_LowList.xml" />			<!-- 905 -->
 	<include file="Viewtype_PVR_TVChannel.xml" />

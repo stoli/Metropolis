@@ -2371,14 +2371,6 @@
 						<onclick>Skin.ToggleSetting(NoViewLowList)</onclick>
 						<selected>Skin.HasSetting(NoViewLowList)</selected>
 					</control>
-					<!-- View 503 -->
-					<control type="radiobutton" id="602">
-						<description>List</description>
-						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] $LOCALIZE[31285]</label>
-						<onclick>Skin.ToggleSetting(NoViewList)</onclick>
-						<selected>Skin.HasSetting(NoViewList)</selected>
-					</control>
 					<!-- View 54 -->
 					<control type="radiobutton" id="603">
 						<description>Gallery</description>

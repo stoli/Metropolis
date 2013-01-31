@@ -1,208 +1,563 @@
 <includes>
 	<include name="Viewtype_List">
 		<control type="group">
-			<visible>Control.IsVisible(503)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<!-- Browser -->
-			<control type="fixedlist" id="503">
-				<posx>350</posx>
-				<posy>40</posy>
-				<height>500</height>
-				<width>990</width>
-				<onup>503</onup>
-				<ondown>503</ondown>
+			<control type="fixedlist" id="55">
+				<animation type="Conditional" condition="Window.IsActive(addoninformation)">
+					<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="out" />
+					<effect type="fade" time="400" start="100" end="0" />
+				</animation>
+				<posx>380</posx>
+				<posy>60</posy>
+				<height>455</height>
+				<width>780</width>
+				<onup>55</onup>
+				<ondown>55</ondown>
 				<include condition="!Skin.HasSetting(ViewLockdown)">OnLeft7000</include>
 				<onright>61</onright>
-				<scrolltime>0</scrolltime>
-				<viewtype label="31285">biglist</viewtype>
+				<scrolltime>160</scrolltime>
+				<viewtype label="31285">list</viewtype>
 				<orientation>vertical</orientation>
 				<preloaditems>2</preloaditems>
-				<focusposition>4</focusposition>
+				<focusposition>6</focusposition>
+				<movement>6</movement>
 				<pagecontrol>61</pagecontrol>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>!Skin.HasSetting(NoViewList)</visible>
-				<visible>Container.Content(Addons) | SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)</visible>
-				<itemlayout width="885" height="49">
-					<control type="label">
-						<posx>91</posx>
-						<posy>0</posy>
-						<width>57</width>
-						<height>49</height>
+				<itemlayout width="0" height="35">
+					<!-- List Line Item Divider -->
+					<control type="image">
+						<posx>35</posx>
+						<posy>33</posy>
+						<width>745</width>
+						<height>2</height>
 						<aligny>center</aligny>
-						<align>right</align>
-						<font>METF_TitleTextMedium</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.TrackNumber]</label>
-						<visible>Container.Content(songs)</visible>
+						<texture>VideoInfoLine.png</texture>
+						<colordiffuse>FilesDividerDiffuse</colordiffuse>
 					</control>
+					<!-- Items in Video Library -->
 					<control type="label">
-						<posx>111</posx>
-						<posy>3</posy>
-						<width>780</width>
-						<height>25</height>
-						<aligny>center</aligny>
-						<font>METF_TitleText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>
-					</control>
-					<control type="label">
-						<posx>125</posx>
-						<posy>0</posy>
-						<width>780</width>
-						<height>49</height>
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>620</width>
+						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
 						<textcolor>TextNF</textcolor>
 						<selectedcolor>TextFO</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<scroll>false</scroll>
+						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows)</visible>
 					</control>
 					<control type="label">
-						<posx>111</posx>
-						<posy>26</posy>
-						<width>780</width>
-						<height>17</height>
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>540</width>
+						<height>35</height>
 						<aligny>center</aligny>
-						<font>METF_InfoText</font>
+						<font>METF_TitleText</font>
 						<textcolor>TextNF</textcolor>
 						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album,, • ]$INFO[ListItem.Duration]</label>
-						<visible>Container.Content(songs) + !IsEmpty(ListItem.Title)</visible>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
 					</control>
+					<!-- Watched Overlay for Items in Video Library -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Items NOT in Video Library -->
 					<control type="label">
-						<posx>125</posx>
-						<posy>36</posy>
-						<width>780</width>
-						<height>17</height>
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>670</width>
+						<height>35</height>
 						<aligny>center</aligny>
-						<font>METF_InfoText</font>
+						<font>METF_TitleText</font>
 						<textcolor>TextNF</textcolor>
 						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Label2]</label>
-						<visible>!Container.Content(songs) + IsEmpty(ListItem.Title)</visible>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+						<scroll>false</scroll>
+						<visible>!Window.IsActive(videolibrary)</visible>
+					</control>
+					<!-- Watched Overlay for Items NOT in Video Library -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					</control>
+					<!-- HD/SD icons -->
+					<control type="image">
+						<posx>675</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<!-- Star Rating -->
+					<control type="label">
+						<posx>755</posx>
+						<posy>-2</posy>
+						<width>45</width>
+						<height>35</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Rating]</label>
+						<font>METF_InfoText</font>
+						<textcolor>TextNF</textcolor>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<control type="image">
+						<posx>760</posx>
+						<posy>7</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>Star.png</texture>
+						<colordiffuse>FilesStarDiffuse</colordiffuse>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<!-- Episode Count for TVShows -->
+					<control type="label">
+						<posx>710</posx>
+						<posy>-2</posy>
+						<width>120</width>
+						<height>35</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
+						<font>METF_InfoText</font>
+						<textcolor>MediaDetailsEpisodes</textcolor>
+						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
+					</control>
+					<!-- Episode Count for Seasons -->
+					<control type="label">
+						<posx>780</posx>
+						<posy>-2</posy>
+						<width>120</width>
+						<height>35</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
+						<font>METF_InfoText</font>
+						<textcolor>MediaDetailsEpisodes</textcolor>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="828" height="104">
+				<focusedlayout width="0" height="35">
+					<!-- List Line Item Divider -->
 					<control type="image">
-						<posx>0</posx>
+						<posx>35</posx>
+						<posy>33</posy>
+						<width>745</width>
+						<height>2</height>
+						<aligny>center</aligny>
+						<texture>VideoInfoLine.png</texture>
+						<colordiffuse>FilesDividerDiffuse</colordiffuse>
+					</control>
+					<!-- Focus Bar -->
+					<control type="image">
+						<posx>35</posx>
 						<posy>0</posy>
-						<width>104</width>
-						<height>104</height>
-						<texture>list/listframe.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
-							<effect type="fade" start="0" end="100" time="200" />
-						</animation>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>80</width>
-						<height>80</height>
-						<texture fallback="DefaultThumb.png" diffuse="list/listmatte.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
-						</animation>
-						<visible>IsEmpty(ListItem.Title)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>80</width>
-						<height>80</height>
-						<texture fallback="DefaultThumb.png" diffuse="list/listmatte.png">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + !Container.Content(genres)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>80</width>
-						<height>80</height>
-						<texture diffuse="list/listmatte.png" fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(genres)</visible>
-					</control>
-					<control type="label">
-						<posx>120</posx>
-						<posy>36</posy>
-						<width>780</width>
-						<height>32</height>
+						<width>745</width>
+						<height>33</height>
 						<aligny>center</aligny>
-						<font>METF_TitleTextLarge</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
+						<texture>FocusLine.png</texture>
+						<colordiffuse>FocusBar</colordiffuse>
+					</control>
+					<!-- Items in Video Library -->
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>620</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
+						<font>METF_TitleText</font>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>[IsEmpty(ListItem.Title) + [IsEmpty(ListItem.Artist) | IsEmpty(ListItem.Album)]] | SubString(Container.FolderPath,plugin)</visible>
+						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows)</visible>
 					</control>
 					<control type="label">
-						<posx>120</posx>
-						<posy>14</posy>
-						<width>780</width>
-						<height>25</height>
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>540</width>
+						<height>35</height>
 						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
 						<font>METF_TitleText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
 					</control>
+					<!-- Watched Overlay -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Items NOT in Video Library -->
 					<control type="label">
-						<posx>120</posx>
-						<posy>14</posy>
-						<width>780</width>
-						<height>25</height>
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>670</width>
+						<height>35</height>
 						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
 						<font>METF_TitleText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Album]</label>
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+						<visible>!Window.IsActive(videolibrary)</visible>
 					</control>
+					<!-- Watched Overlay for Items NOT in Video Library -->
+					<control type="image">
+						<posx>4</posx>
+						<posy>5</posy>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					</control>
+					<!-- HD/SD icons -->
+					<control type="image">
+						<posx>675</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<!-- Star Rating -->
 					<control type="label">
-						<posx>120</posx>
-						<posy>44</posy>
-						<width>780</width>
-						<height>17</height>
+						<posx>755</posx>
+						<posy>-2</posy>
+						<width>45</width>
+						<height>35</height>
+						<align>right</align>
 						<aligny>center</aligny>
+						<label>$INFO[ListItem.Rating]</label>
 						<font>METF_InfoText</font>
 						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album,, • ]$INFO[ListItem.Duration]</label>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
-					</control>
-					<control type="label">
-						<posx>120</posx>
-						<posy>44</posy>
-						<width>780</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>METF_InfoText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Artist]</label>
-						<visible>IsEmpty(ListItem.Title) + [Container.Content(albums) | Container.Content(songs)]</visible>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="image">
-						<posx>120</posx>
-						<posy>66</posy>
-						<width>121</width>
-						<height>22</height>
-						<texture>$INFO[ListItem.StarRating]</texture>
-						<colordiffuse>MediaFlagDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.Title) + [Container.Content(albums) | Container.Content(songs)]</visible>
+						<posx>760</posx>
+						<posy>7</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>Star.png</texture>
+						<colordiffuse>FilesStarDiffuse</colordiffuse>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<!-- Episode Count for TVShows -->
+					<control type="label">
+						<posx>710</posx>
+						<posy>-2</posy>
+						<width>120</width>
+						<height>35</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
+						<font>METF_InfoText</font>
+						<textcolor>MediaDetailsEpisodes</textcolor>
+						<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
+					</control>
+					<!-- Episode Count for Seasons -->
+					<control type="label">
+						<posx>780</posx>
+						<posy>-2</posy>
+						<width>120</width>
+						<height>35</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
+						<font>METF_InfoText</font>
+						<textcolor>MediaDetailsEpisodes</textcolor>
+						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
 				</focusedlayout>
+			</control>
+			<!-- Thumbnails -->
+			<control type="group">
+				<animation type="Conditional" condition="Window.IsActive(addoninformation)">
+					<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="out" />
+					<effect type="fade" time="400" start="100" end="0" />
+				</animation>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<!-- Movie, TVShow and Season Posters -->
+				<control type="group">
+					<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+					<posx>20</posx>
+					<posy>45</posy>
+					<control type="image">
+						<posx>17</posx>
+						<posy>15</posy>
+						<width>300</width>
+						<height>440</height>
+						<fadetime>100</fadetime>
+						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="8">border.png</bordertexture>
+						<bordersize>4</bordersize>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>17</posx>
+						<posy>15</posy>
+						<width>300</width>
+						<height>440</height>
+						<fadetime>100</fadetime>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>-10</posy>
+						<width>335</width>
+						<height>490</height>
+						<texture>frames/ClassicFrame_PosterMedium.png</texture>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+				</control>
+				<!-- Episode Posters -->
+				<control type="group">
+					<visible>Window.IsActive(videolibrary) + Container.Content(episodes)</visible>
+					<posx>25</posx>
+					<posy>45</posy>
+					<control type="image">
+						<posx>22</posx>
+						<posy>112</posy>
+						<width>293</width>
+						<height>265</height>
+						<fadetime>100</fadetime>
+						<texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<bordertexture border="8">border.png</bordertexture>
+						<bordersize>4</bordersize>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>22</posx>
+						<posy>162</posy>
+						<width>293</width>
+						<height>165</height>
+						<fadetime>100</fadetime>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<fadetime>300</fadetime>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>22</posx>
+						<posy>162</posy>
+						<width>293</width>
+						<height>165</height>
+						<texture>frames/ClassicFrameGlass_Horizontal.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<colordiffuse>GlassDiffuse</colordiffuse>
+						<fadetime>100</fadetime>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>144</posy>
+						<width>328</width>
+						<height>203</height>
+						<texture>frames/ClassicFrame_FanartSmall.png</texture>
+						<fadetime>100</fadetime>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+				</control>
+				<!-- Images for All Items NOT in Video Library -->
+				<control type="image">
+					<posx>37</posx>
+					<posy>45</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="8">border.png</bordertexture>
+					<bordersize>4</bordersize>
+					<visible>[!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(genres)]] + !substring(ListItem.Icon,default)</visible>
+				</control>
+				<control type="image">
+					<posx>37</posx>
+					<posy>45</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<visible>[[!Window.IsActive(videolibrary) + !Container.Content(genres)] | [Window.IsActive(videolibrary) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(genres)]] + substring(ListItem.Icon,default)</visible>
+				</control>
+				<control type="image">
+					<posx>37</posx>
+					<posy>45</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture fallback="DefaultMovieGenre.jpg">moviegenres/$INFO[ListItem.Label].jpg</texture>
+					<bordertexture border="8">border.png</bordertexture>
+					<bordersize>4</bordersize>
+					<visible>Window.IsActive(videolibrary) + !SubString(Container.FolderPath,videodb://3/) + Container.Content(genres)</visible>
+				</control>
+				<control type="image">
+					<posx>37</posx>
+					<posy>45</posy>
+					<width>300</width>
+					<height>440</height>
+					<fadetime>100</fadetime>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
+					<bordertexture border="8">border.png</bordertexture>
+					<bordersize>4</bordersize>
+					<visible>[Window.IsActive(musiclibrary) | [Window.IsActive(videolibrary) + SubString(Container.FolderPath,videodb://3/)]] + Container.Content(genres)</visible>
+				</control>
+			</control>
+			<!-- Episode Info -->
+			<control type="grouplist">
+				<posx>37</posx>
+				<posy>511</posy>
+				<width>300</width>
+				<height>30</height>
+				<align>center</align>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<animation effect="slide" end="6,-120" time="0" condition="Window.IsActive(videolibrary) + Container.Content(episodes)">conditional</animation>
+				<!-- Year -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsYear</textcolor>
+					<label>$INFO[ListItem.Year]</label>
+					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
+				</control>
+				<!-- Episode Air Date -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsInfo</textcolor>
+					<label>$INFO[ListItem.Date]</label>
+					<visible>Container.Content(episodes)</visible>
+				</control>
+				<!-- Bullet -->
+				<control type="image">
+					<width>8</width>
+					<height>32</height>
+					<texture>Dot.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>BulletDiffuse</colordiffuse>
+					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(episodes)]</visible>
+				</control>
+				<!-- Duration -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsDuration</textcolor>
+					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + !Container.Content(tvshows) + !Container.Content(songs)</visible>
+				</control>
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>30</height>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsDuration</textcolor>
+					<label>$INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + !Container.Content(tvshows) + !Container.Content(songs)</visible>
+				</control>
+			</control>
+			<!-- Picture Info -->
+			<control type="grouplist">
+				<posx>37</posx>
+				<posy>600</posy>
+				<width>300</width>
+				<height>60</height>
+				<align>center</align>
+				<orientation>vertical</orientation>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<animation effect="slide" end="6,-120" time="0" condition="Window.IsActive(Pictures)">conditional</animation>
+				<!-- Picture Date -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>20</height>
+					<align>center</align>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<label>$INFO[ListItem.PictureDateTime]</label>
+					<visible>!IsEmpty(ListItem.PictureDateTime)</visible>
+				</control>
+				<!-- Resolution -->
+				<control type="label">
+					<width min="25" max="300">auto</width>
+					<height>20</height>
+					<align>center</align>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsInfo</textcolor>
+					<label>$INFO[ListItem.PictureResolution]</label>
+					<visible>!IsEmpty(ListItem.PictureResolution) + !StringCompare(ListItem.PictureResolution, 0 x 0)</visible>
+				</control>
+			</control>
+			<!-- Movie Sets -->
+			<control type="label">
+				<posx>37</posx>
+				<posy>511</posy>
+				<width>300</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_MediaDetailsSmall</font>
+				<textcolor>MediaDetailsInfo</textcolor>
+				<label>$LOCALIZE[31313]</label>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
 			</control>
 			<include>ScrollBar_Vertical</include>
 		</control>
