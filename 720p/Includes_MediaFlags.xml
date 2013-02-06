@@ -15,21 +15,21 @@
 				<control type="image">
 					<height>70</height>
 					<aspectratio aligny="center">keep</aspectratio>
-					<texture fallback="flags/default.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
+					<texture fallback="flags/default-studio.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
 					<colordiffuse>MediaFlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.Studio) + !SubString(Container.FolderPath,advanced.launcher)</visible>
 				</control>
 				<control type="image">
 					<height>70</height>
 					<aspectratio aligny="center">keep</aspectratio>
-					<texture fallback="flags/default.png">special://skin/extras/games/studios/$INFO[ListItem.Studio,,.png]</texture>
+					<texture fallback="flags/default-studio.png">special://skin/extras/games/studios/$INFO[ListItem.Studio,,.png]</texture>
 					<colordiffuse>MediaFlagDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.Studio) + SubString(Container.FolderPath,advanced.launcher)</visible>
 				</control>
 				<control type="image">
 					<height>70</height>
 					<aspectratio aligny="center">keep</aspectratio>
-					<texture>flags/default.png</texture>
+					<texture>flags/default-studio.png</texture>
 					<colordiffuse>MediaFlagDiffuse</colordiffuse>
 					<visible>IsEmpty(ListItem.Studio)</visible>
 				</control>
