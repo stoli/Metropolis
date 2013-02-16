@@ -20,6 +20,10 @@ msgctxt "#31001"
 msgid "View Options"
 msgstr "Opcions de la vista"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/A"
+
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Amaga el fanart del fons"

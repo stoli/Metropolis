@@ -24,9 +24,57 @@ msgctxt "#31004"
 msgid "Debug"
 msgstr "Debug"
 
+msgctxt "#31005"
+msgid "Enable auto scrolling for text that does not fit on-screen"
+msgstr "Attiva scorrimento automatico per i testi che non entrano nello schermo"
+
+msgctxt "#31006"
+msgid "Shorter delay before auto scrolling"
+msgstr "Piccolo ritardo prima dello scorrimento automatico"
+
+msgctxt "#31007"
+msgid "ON"
+msgstr "ON"
+
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/A"
+
+msgctxt "#31011"
+msgid "Metropolis"
+msgstr "Metropolis"
+
+msgctxt "#31012"
+msgid "Increase Star Rating"
+msgstr "Aumenta valutazione"
+
+msgctxt "#31021"
+msgid "Decrease Star Rating"
+msgstr "Diminuisci valutazione"
+
+msgctxt "#31024"
+msgid "Icon Home layout"
+msgstr "Layout icone della home"
+
+msgctxt "#31031"
+msgid "Hide Movie Watched Status"
+msgstr "Nascondi lo stato di riproduzione dei film"
+
+msgctxt "#31032"
+msgid "Hide TV Watched Status"
+msgstr "Nascondi lo stato di riproduzione delle serie tv"
+
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Nascondi i Fanart sullo sfondo"
+
+msgctxt "#31034"
+msgid "Enable Dynamic Weather Artwork"
+msgstr "Attiva sfondi meteo in base alle condizioni"
+
+msgctxt "#31035"
+msgid "Show Clean Library SubMenu items"
+msgstr "Mostra l'elemento \"pulisci libreria\" nei submenu"
 
 msgctxt "#31054"
 msgid "Logo"

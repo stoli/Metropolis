@@ -40,6 +40,10 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "켜기"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "정보 없음"
+
 msgctxt "#31011"
 msgid "Metropolis"
 msgstr "Metropolis"

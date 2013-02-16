@@ -40,6 +40,10 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "TIL"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "Ikke tilgængelig"
+
 msgctxt "#31011"
 msgid "Metropolis"
 msgstr "Metropolis"

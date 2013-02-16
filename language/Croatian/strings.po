@@ -24,9 +24,17 @@ msgctxt "#31006"
 msgid "Shorter delay before auto scrolling"
 msgstr "Sakri"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/A"
+
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Sakrij Pozadina Fanarta"
+
+msgctxt "#31054"
+msgid "Logo"
+msgstr "Logo"
 
 msgctxt "#31244"
 msgid "Playing"

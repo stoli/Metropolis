@@ -40,6 +40,14 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "ENCENDIDO"
 
+msgctxt "#31009"
+msgid "Browser"
+msgstr "Navegador"
+
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/A"
+
 msgctxt "#31011"
 msgid "Metropolis"
 msgstr "Metrópolis"

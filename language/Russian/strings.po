@@ -40,6 +40,10 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "ВКЛ"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "Н/Д"
+
 msgctxt "#31011"
 msgid "Metropolis"
 msgstr "Metropolis"

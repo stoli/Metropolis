@@ -28,6 +28,10 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "Zapnuto"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "Nedostupné"
+
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Skrýt Fanart na pozadí"
