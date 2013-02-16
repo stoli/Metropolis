@@ -63,7 +63,7 @@
 					<onleft>48</onleft>
 					<onright>49</onright>
 					<onup>307</onup>
-					<ondown>302</ondown>
+					<ondown>304</ondown>
 					<texturenofocus border="25,25,5,5">keyboard/KeyboardCornerTopNF.png</texturenofocus>
 					<texturefocus border="25,25,5,5">keyboard/KeyboardCornerTop.png</texturefocus>
 					<textoffsetx>0</textoffsetx>
@@ -219,13 +219,13 @@
 					<textoffsetx>0</textoffsetx>
 					<focusedcolor>black</focusedcolor>
 				</control>
-				<control type="radiobutton" id="302">
-					<description>SHIFT button</description>
+				<control type="radiobutton" id="304">
+					<description>SYMBOLS button</description>
 					<posx>0</posx>
 					<posy>50</posy>
 					<width>200</width>
 					<height>50</height>
-					<label>20178</label>
+					<label>20180</label>
 					<onleft>74</onleft>
 					<onright>65</onright>
 					<onup>8</onup>
@@ -242,7 +242,7 @@
 					<posy>50</posy>
 					<width>50</width>
 					<height>50</height>
-					<onleft>302</onleft>
+					<onleft>304</onleft>
 					<onright>66</onright>
 					<onup>49</onup>
 					<ondown>75</ondown>
@@ -378,7 +378,7 @@
 					<width>50</width>
 					<height>50</height>
 					<onleft>73</onleft>
-					<onright>302</onright>
+					<onright>304</onright>
 					<onup>48</onup>
 					<ondown>84</ondown>
 					<texturenofocus border="3">keyboard/KeyboardKeyNF.png</texturenofocus>
@@ -395,8 +395,8 @@
 					<label>20179</label>
 					<onleft>84</onleft>
 					<onright>75</onright>
-					<onup>302</onup>
-					<ondown>304</ondown>
+					<onup>304</onup>
+					<ondown>302</ondown>
 					<texturenofocus border="3">keyboard/KeyboardKeyNF.png</texturenofocus>
 					<texturefocus border="5">keyboard/KeyboardKey.png</texturefocus>
 					<radioposy>12</radioposy>
@@ -553,13 +553,13 @@
 					<textoffsetx>0</textoffsetx>
 					<focusedcolor>black</focusedcolor>
 				</control>
-				<control type="radiobutton" id="304">
-					<description>SYMBOLS button</description>
+				<control type="radiobutton" id="302">
+					<description>SHIFT button</description>
 					<posx>0</posx>
 					<posy>150</posy>
 					<width>200</width>
 					<height>50</height>
-					<label>20180</label>
+					<label>20178</label>
 					<onleft>300</onleft>
 					<onright>85</onright>
 					<onup>303</onup>
@@ -576,7 +576,7 @@
 					<posy>150</posy>
 					<width>50</width>
 					<height>50</height>
-					<onleft>304</onleft>
+					<onleft>302</onleft>
 					<onright>86</onright>
 					<onup>75</onup>
 					<ondown>32</ondown>
@@ -668,7 +668,7 @@
 					<height>50</height>
 					<label>20177</label>
 					<onleft>90</onleft>
-					<onright>304</onright>
+					<onright>302</onright>
 					<onup>81</onup>
 					<ondown>305</ondown>
 					<texturenofocus border="3">keyboard/KeyboardKeyNF.png</texturenofocus>
@@ -688,7 +688,7 @@
 					<textoffsetx>0</textoffsetx>
 					<onleft>306</onleft>
 					<onright>32</onright>
-					<onup>304</onup>
+					<onup>302</onup>
 					<ondown>8</ondown>
 					<focusedcolor>black</focusedcolor>
 				</control>
