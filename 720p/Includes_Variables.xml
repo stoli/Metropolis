@@ -179,8 +179,8 @@
 		<value>$INFO[Player.Art(tvshow.clearart)]</value>
 	</variable>
 	<variable name="VideoPlayerTitle">
-		<value condition="!IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
-		<value condition="IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</value>
+		<value condition="!IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
+		<value condition="IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title]</value>
 		<value>$INFO[VideoPlayer.Title]</value>
 	</variable>
 	<variable name="VideoPlayerTitle2">

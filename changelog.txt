@@ -1,5 +1,6 @@
 2.6.5 - 2013xxxx
 - Preserve thumbnail aspect ratio for recently added items.
+- Show season and episode number in fullscreen info for TV shows.
 
 2.6.4 - 20130214
 - Rework layout of virtual keyboard.
