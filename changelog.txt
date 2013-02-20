@@ -1,3 +1,6 @@
+2.6.5 - 2013xxxx
+- Preserve thumbnail aspect ratio for recently added items.
+
 2.6.4 - 20130214
 - Rework layout of virtual keyboard.
 - Add Tags submenu item to TV Shows.
