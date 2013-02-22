@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.metropolis"
-	version="2.6.4"
+	version="2.6.5"
 	name="Metropolis"
 	provider-name="Amra, Stoli, jingai">
 	<requires>
@@ -20,10 +20,10 @@
 	</extension>
 
 	<extension point="xbmc.addon.metadata">
-		<summary lang="be">A Mix of Retro and Modern.</summary>
+		<summary lang="be">A Mix of Retro and Modern. Original Metropolis skin by Amra - continued by Stoli</summary>
 		<summary lang="de">Für Eden angepasst, ein Mix aus Retro und Moderne. Original Metropolis-Skin von Amra - weiterentwickelt von Stoli</summary>
 		<summary lang="el">Ένα μείγμα Παλαιού και Νέου. Το αρχικό κέλυφος Metropolis από τον Amra - συντήρηση και εξέλιξη από τον Stoli</summary>
-		<summary lang="en">A Mix of Retro and Modern. Original Metropolis skin by Amra - continued by Stoli</summary>
+		<summary lang="en">A Mix of Retro and Modern.</summary>
 		<summary lang="es">Actualización para Eden, una mezcla de Retro y Moderno. Amra, autor original de Metrópolis - continuado por Stoli</summary>
 		<summary lang="fr">Mise à jour pour Eden, un mélange de Rétro et de Moderne. Thème originel de Metropolis par Amra - continué par Stoli</summary>
 		<summary lang="hu">Eden-re optimalizálva. A retro és modern stílus ötvözete. Az eredeti Metropolis felszín készítője: Amra -  Stoli folytatja.</summary>

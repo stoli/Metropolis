@@ -1,6 +1,7 @@
-2.6.5 - 2013xxxx
+2.6.5 - 20130221
 - Preserve thumbnail aspect ratio for recently added items.
 - Show season and episode number in fullscreen info for TV shows.
+- Update language files from Transifex.
 
 2.6.4 - 20130214
 - Rework layout of virtual keyboard.
