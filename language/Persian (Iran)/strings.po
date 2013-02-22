@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Provider: Amra, Stoli, jingai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -20,6 +20,10 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "لوگو"
 
+msgctxt "#31275"
+msgid "Multi Image"
+msgstr "چند تصویره"
+
 msgctxt "#31281"
 msgid "Items"
 msgstr "موضوعات"
@@ -28,9 +32,17 @@ msgctxt "#31282"
 msgid "Poster Wrap"
 msgstr "پوستر"
 
+msgctxt "#31284"
+msgid "Single Image"
+msgstr "تصویر تکی"
+
 msgctxt "#31286"
 msgid "Banner"
 msgstr "بنر"
+
+msgctxt "#31441"
+msgid "Hide"
+msgstr "مخفی کردن"
 
 msgctxt "#31446"
 msgid "Fullscreen"
@@ -39,3 +51,19 @@ msgstr "تمام صفحه"
 msgctxt "#31460"
 msgid "Games"
 msgstr "بازی ها"
+
+msgctxt "#31468"
+msgid "Services"
+msgstr "سرویس ها"
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "تلویزیون زنده"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "تغییر نام گروه"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "حذف گروه"

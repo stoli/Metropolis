@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Provider: Amra, Stoli, jingai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -351,6 +351,10 @@ msgstr "Bloquear Cambio de vistas (Modo Kiosco)"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Desactivar Opciones de Apagado"
+
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Usar Filtro de Medios simple"
 
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"

@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Provider: Amra, Stoli, jingai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -19,6 +19,10 @@ msgstr ""
 msgctxt "#31001"
 msgid "View Options"
 msgstr "Opcions de la vista"
+
+msgctxt "#31004"
+msgid "Debug"
+msgstr "Debug"
 
 msgctxt "#31010"
 msgid "N/A"

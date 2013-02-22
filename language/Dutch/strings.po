@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Provider: Amra, Stoli, jingai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -39,6 +39,10 @@ msgstr "Kortere wachttijd voor de autoscroll"
 msgctxt "#31007"
 msgid "ON"
 msgstr "AAN"
+
+msgctxt "#31009"
+msgid "Browser"
+msgstr "Verkenner"
 
 msgctxt "#31010"
 msgid "N/A"
@@ -347,6 +351,10 @@ msgstr "Schakel kioskmodus in"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "SHOWCASE"
+
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Gebruik Een simpel Media Filter"
 
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
@@ -692,6 +700,14 @@ msgctxt "#31435"
 msgid "Visualization Background: Artist Slideshow"
 msgstr "Visuele achtergrond: Diashow artiesten"
 
+msgctxt "#31436"
+msgid "Use Slim Seekbar"
+msgstr "Gebruik Kleine Zoekbalk"
+
+msgctxt "#31437"
+msgid "Enable TV Tunes script"
+msgstr "Activeer TV Tunes script"
+
 msgctxt "#31438"
 msgid "Recent"
 msgstr "Recent"
@@ -699,6 +715,10 @@ msgstr "Recent"
 msgctxt "#31439"
 msgid "Banner & Poster"
 msgstr "Banner & Poster"
+
+msgctxt "#31440"
+msgid "View Types"
+msgstr "Uiterlijk Types"
 
 msgctxt "#31441"
 msgid "Hide"
@@ -739,6 +759,10 @@ msgstr " - aanpassen van opties hieronder vereist een herstart"
 msgctxt "#31451"
 msgid "Recommended"
 msgstr "Aanbevolen"
+
+msgctxt "#31452"
+msgid "Visualization: Use Slim Info Overlay"
+msgstr "Visualisaties: Gebruik Kleine Info Overlay"
 
 msgctxt "#31453"
 msgid "Show Date instead of Day of Week"
@@ -795,6 +819,10 @@ msgstr "Opschonen bibliotheek"
 msgctxt "#31466"
 msgid "Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer."
 msgstr "Buitenlands is technisch gesproken geen genre, maar dit betreft vaak films met dialogen die niet in de moedertaal van de kijker zijn."
+
+msgctxt "#31467"
+msgid "Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc."
+msgstr "Holiday is een breed genre, bevat films die een specifieke feestdag centraal stellen, zoals kerst, Pasen, etc."
 
 msgctxt "#31468"
 msgid "Services"

@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: Metropolis
 # Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Provider: Amra, Stoli, jingai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -35,6 +35,10 @@ msgstr "N/A"
 msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Agochar o fondo do cartel"
+
+msgctxt "#31054"
+msgid "Logo"
+msgstr "Logo"
 
 msgctxt "#31244"
 msgid "Playing"
@@ -76,6 +80,10 @@ msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
 
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "Guía de TV"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Ocultar"
@@ -83,6 +91,10 @@ msgstr "Ocultar"
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Pantalla completa"
+
+msgctxt "#31451"
+msgid "Recommended"
+msgstr "Recomendado"
 
 msgctxt "#31457"
 msgid "Shortcuts"
