@@ -161,8 +161,18 @@
 							<height>362</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<fadetime>200</fadetime>
+							<aspectratio scalediffuse="false">keep</aspectratio>
+							<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
+						</control>
+						<control type="image">
+							<posx>20</posx>
+							<posy>21</posy>
+							<width>236</width>
+							<height>362</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<visible>!IsEmpty(ListItem.Title)</visible>
+							<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 						</control>
 						<!-- Unfocused Item - Frame -->
 						<control type="image">
@@ -174,16 +184,15 @@
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<colordiffuse>GlassDiffuse</colordiffuse>
-							<visible>!IsEmpty(ListItem.Title)</visible>
+							<visible>!SubString(ListItem.Icon,default)</visible>
 						</control>
-						<!-- Unfocused Item - Frame -->
 						<control type="image">
 							<width>285</width>
 							<height>408</height>
 							<texture>frames/ClassicFrame_PosterSmall.png</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<visible>!IsEmpty(ListItem.Title)</visible>
+							<visible>!SubString(ListItem.Icon,default)</visible>
 						</control>
 						<!-- Unfocused Item - Watched Overlay -->
 						<control type="image">
@@ -212,9 +221,19 @@
 							<width>290</width>
 							<height>443</height>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio scalediffuse="false">keep</aspectratio>
+							<fadetime>200</fadetime>
+							<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
+						</control>
+						<control type="image">
+							<posx>13</posx>
+							<posy>27</posy>
+							<width>290</width>
+							<height>443</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>200</fadetime>
-							<visible>!IsEmpty(ListItem.Title)</visible>
+							<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 						</control>
 						<!-- Focused Item - Poster Frame -->
 						<control type="image">
@@ -225,6 +244,7 @@
 							<fadetime>200</fadetime>
 							<texture>frames/ClassicFrame_PosterMedium.png</texture>
 							<aspectratio>stretch</aspectratio>
+							<visible>!SubString(ListItem.Icon,default)</visible>
 						</control>
 						<!-- Focused Item - Watched Overlay -->
 						<control type="image">

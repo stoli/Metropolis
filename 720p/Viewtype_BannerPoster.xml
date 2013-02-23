@@ -132,7 +132,17 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
-				<!-- TV Poster Image  -->
+				<!-- Poster Image  -->
+				<control type="image">
+					<posx>37</posx>
+					<posy>81</posy>
+					<width>300</width>
+					<height>440</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">keep</aspectratio>
+					<fadetime>200</fadetime>
+					<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
+				</control>
 				<control type="image">
 					<posx>37</posx>
 					<posy>81</posy>
@@ -141,6 +151,7 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>200</fadetime>
+					<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -149,7 +160,7 @@
 					<height>490</height>
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<fadetime>200</fadetime>
-					<visible>!IsEmpty(ListItem.Title)</visible>
+					<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 				</control>
 				<!-- Title -->
 				<control type="label">

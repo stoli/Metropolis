@@ -32,7 +32,7 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<fadetime>200</fadetime>
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>16</posx>
@@ -42,7 +42,7 @@
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<fadetime>200</fadetime>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -52,6 +52,7 @@
 						<fadetime>200</fadetime>
 						<texture>frames/ClassicFrame_PosterSmall.png</texture>
 						<aspectratio>stretch</aspectratio>
+						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>150</posx>
@@ -79,7 +80,7 @@
 							<effect type="fade" start="0" end="100" time="300" />
 							-->
 						</animation>
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>13</posx>
@@ -95,7 +96,7 @@
 							<effect type="fade" start="0" end="100" time="300" />
 							-->
 						</animation>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>-2</posx>
@@ -111,6 +112,7 @@
 							-->
 						</animation>
 						<aspectratio>stretch</aspectratio>
+						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>212</posx>

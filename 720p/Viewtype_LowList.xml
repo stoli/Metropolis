@@ -170,10 +170,20 @@
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + SubString(ListItem.Icon,default)</visible>
+				</control>
+				<control type="image">
+					<posx>37</posx>
+					<posy>160</posy>
+					<width>300</width>
+					<height>440</height>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)]</visible>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + !SubString(ListItem.Icon,default)</visible>
 				</control>
 				<!-- Poster Image for TV Show Seasons and Episodes -->
 				<control type="image">
@@ -184,7 +194,7 @@
 					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Art(tvshow.poster)]</texture> 
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
+					<visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Art(tvshow.poster))</visible>
 				</control>
 				<!-- Frame for poster -->
 				<control type="image">
@@ -195,7 +205,7 @@
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+					<visible>!SubString(ListItem.Icon,default) + [Container.Content(movies) | Container.Content(tvshows) | [[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Art(tvshow.poster))]]</visible>
 				</control>
 				<!-- Pictures, Addons, Music Videos, and Album/Artist Cover -->
 				<control type="image">
@@ -206,8 +216,6 @@
 					<fadetime>100</fadetime>
 					<aspectratio align="right" aligny="bottom">keep</aspectratio>
 					<texture fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">border.png</bordertexture>
-					<bordersize>4</bordersize>
 					<visible>Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Window.IsActive(pictures) | Container.Content(addons)</visible>
 				</control>
 
@@ -327,7 +335,7 @@
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Container.Content(seasons)</visible>
+					<visible>Container.Content(seasons) + !SubString(ListItem.Icon,default)</visible>
 				</control>
 			</control>
 			<!-- Info Details -->
