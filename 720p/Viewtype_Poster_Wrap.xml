@@ -223,6 +223,18 @@
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>[IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min)] + Container.Content(movies)</visible>
 				</control>
+				<!-- Tagline -->
+				<control type="textbox">
+					<posx>500</posx>
+					<posy>130</posy>
+					<width>760</width>
+					<height>50</height>
+					<align>left</align>
+					<font>METF_PlotText</font>
+					<textcolor>TextNF</textcolor>
+					<label>$INFO[ListItem.Tagline]</label>
+					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline)</visible>
+				</control>
 			</control>
 			<control type="grouplist">
 				<posx>206</posx>
