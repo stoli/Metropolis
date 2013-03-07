@@ -496,10 +496,6 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Exibir Caminho nas informações de Vídeo ao invés de detalhes de Classificação"
 
-msgctxt "#31430"
-msgid "Poster Large"
-msgstr "Cartaz Grande"
-
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Clique para redefinir Metropolis para o padrão"

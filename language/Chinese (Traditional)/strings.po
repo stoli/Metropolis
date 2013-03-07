@@ -88,6 +88,14 @@ msgctxt "#31427"
 msgid "Next Episode"
 msgstr "下一集"
 
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "電視節目指南"
+
+msgctxt "#31438"
+msgid "Recent"
+msgstr "最近"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "隱藏"

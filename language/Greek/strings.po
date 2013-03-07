@@ -680,10 +680,6 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Εμφάνιση της Διαδρομής στις πληροφορίες Βίντεο αντί της αξιολόγησης"
 
-msgctxt "#31430"
-msgid "Poster Large"
-msgstr "Μεγάλες Αφίσες"
-
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Πιέστε για επαναφορά του Metropolis στις προεπιλογές"

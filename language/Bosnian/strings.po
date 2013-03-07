@@ -20,6 +20,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Spisak"
 
+msgctxt "#31289"
+msgid "Files"
+msgstr "Datoteke"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"

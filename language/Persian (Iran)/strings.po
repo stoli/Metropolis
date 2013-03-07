@@ -36,9 +36,17 @@ msgctxt "#31284"
 msgid "Single Image"
 msgstr "تصویر تکی"
 
+msgctxt "#31285"
+msgid "List"
+msgstr "لیست"
+
 msgctxt "#31286"
 msgid "Banner"
 msgstr "بنر"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "فایل ها "
 
 msgctxt "#31441"
 msgid "Hide"

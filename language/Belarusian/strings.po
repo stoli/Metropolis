@@ -672,10 +672,6 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Display Path in Video Info instead of Rating details"
 
-msgctxt "#31430"
-msgid "Poster Large"
-msgstr "Poster Large"
-
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Click to reset Metropolis to defaults"

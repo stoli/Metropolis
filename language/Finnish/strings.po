@@ -72,6 +72,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Lista"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Banneri"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Tiedostot"

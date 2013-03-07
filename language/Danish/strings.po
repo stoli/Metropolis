@@ -480,10 +480,6 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Vis mappesti i Videoinfo i stedet for detajler om Bedømmelse"
 
-msgctxt "#31430"
-msgid "Poster Large"
-msgstr "Stor Plakat"
-
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "tryk for at nulstille Metropolis til standarder"

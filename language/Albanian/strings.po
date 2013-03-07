@@ -52,6 +52,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Skeda"
 
+msgctxt "#31423"
+msgid "Author"
+msgstr "Autori"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Fsheh"
@@ -63,6 +67,10 @@ msgstr "Ekran i Plotë"
 msgctxt "#31457"
 msgid "Shortcuts"
 msgstr "Shkurtor"
+
+msgctxt "#31460"
+msgid "Games"
+msgstr "Lojra"
 
 msgctxt "#31468"
 msgid "Services"
@@ -79,6 +87,14 @@ msgstr "Live TV"
 msgctxt "#31605"
 msgid "Add Group"
 msgstr "Shto Grup"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "Riemro Grupet"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "Fshij Grupet"
 
 msgctxt "#31610"
 msgid "Scheduled Time"
