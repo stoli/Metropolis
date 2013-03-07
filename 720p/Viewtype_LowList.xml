@@ -194,7 +194,7 @@
 					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Art(tvshow.poster)]</texture> 
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Art(tvshow.poster))</visible>
+					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
 				</control>
 				<!-- Frame for poster -->
 				<control type="image">
@@ -205,7 +205,7 @@
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>!SubString(ListItem.Icon,default) + [Container.Content(movies) | Container.Content(tvshows) | [[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(ListItem.Art(tvshow.poster))]]</visible>
+					<visible>[!SubString(ListItem.Icon,default) + [Container.Content(movies) | Container.Content(tvshows)]] | [Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<!-- Pictures, Addons, Music Videos, and Album/Artist Cover -->
 				<control type="image">
