@@ -20,6 +20,10 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "لوگو"
 
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "مورد علاقه"
+
 msgctxt "#31275"
 msgid "Multi Image"
 msgstr "چند تصویره"

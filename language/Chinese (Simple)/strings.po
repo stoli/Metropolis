@@ -92,6 +92,10 @@ msgctxt "#31291"
 msgid "Landscape"
 msgstr "横向"
 
+msgctxt "#31293"
+msgid "Picture Grid"
+msgstr "图片格"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "预告片"

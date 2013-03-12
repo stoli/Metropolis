@@ -266,11 +266,11 @@ msgstr "Items"
 
 msgctxt "#31282"
 msgid "Poster Wrap"
-msgstr "POSTER zawijany"
+msgstr "Plakat zawijany"
 
 msgctxt "#31283"
 msgid "Poster Fixed"
-msgstr "POSTER przytwierdzony"
+msgstr "Plakat przytwierdzony"
 
 msgctxt "#31284"
 msgid "Single Image"
@@ -282,7 +282,7 @@ msgstr "LIST"
 
 msgctxt "#31286"
 msgid "Banner"
-msgstr "BANNER"
+msgstr "Baner"
 
 msgctxt "#31289"
 msgid "Files"
@@ -658,7 +658,7 @@ msgstr "Autor"
 
 msgctxt "#31424"
 msgid "Poster & Fanart"
-msgstr "Poster i Fanart"
+msgstr "Plakat i Fanart"
 
 msgctxt "#31425"
 msgid "Video OSD: Show Thumbnail"
@@ -679,6 +679,10 @@ msgstr "PROGRAM TV"
 msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Wyświetl ścieżkę w oknie Informacji Video zamiast szczegółow oceny"
+
+msgctxt "#31430"
+msgid "Poster Wrap Large"
+msgstr "Duży plakat zawijany"
 
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
@@ -710,7 +714,7 @@ msgstr "Ostanie"
 
 msgctxt "#31439"
 msgid "Banner & Poster"
-msgstr "Banner i Poster"
+msgstr "Baner i plakat"
 
 msgctxt "#31440"
 msgid "View Types"
@@ -722,7 +726,7 @@ msgstr "Ukryj"
 
 msgctxt "#31442"
 msgid "Banner & Fanart"
-msgstr "Banner i Fanart"
+msgstr "Baner i Fanart"
 
 msgctxt "#31443"
 msgid "Pseudo TV"

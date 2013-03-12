@@ -76,6 +76,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "檔案"
 
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "橫向"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "預告片"

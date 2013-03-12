@@ -20,6 +20,10 @@ msgctxt "#31001"
 msgid "View Options"
 msgstr "ምርጫዎችን መመልከቻ"
 
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/A"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "በማጫወት ላይ"
