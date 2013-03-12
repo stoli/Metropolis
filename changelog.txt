@@ -1,4 +1,4 @@
-2.0.1 - 20130312
+2.0.2 - 20130312
 - Fix autoscroll on small PlotBox.
 - Fix Artist label on Music Visualization.
 - Fix disappearing Play button in Video Info.
