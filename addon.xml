@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
 	id="skin.metropolis"
-	version="2.6.6"
+	version="2.6.7"
 	name="Metropolis"
 	provider-name="Amra, Stoli, jingai">
 	<requires>
@@ -26,10 +26,12 @@
 		<summary lang="en">A Mix of Retro and Modern.</summary>
 		<summary lang="es">Actualización para Eden, una mezcla de Retro y Moderno. Amra, autor original de Metrópolis - continuado por Stoli</summary>
 		<summary lang="fr">Mise à jour pour Eden, un mélange de Rétro et de Moderne. Thème originel de Metropolis par Amra - continué par Stoli</summary>
+		<summary lang="gl">Unha Mestura do Retro e o Moderno.</summary>
 		<summary lang="hu">Eden-re optimalizálva. A retro és modern stílus ötvözete. Az eredeti Metropolis felszín készítője: Amra -  Stoli folytatja.</summary>
 		<summary lang="nl">Bijgewerkt voor Eden, een mix van retro en modern. Originele Metropolis skin door Amra - voortgezet door Stoli</summary>
 		<summary lang="pl">Mieszanka Metro i Modern. Oryginalnie skóra Metropolis stworzona przez Amra - kontynuowana przez Stoli</summary>
 		<summary lang="pt_BR">Atualizada para Eden, um Mix de Retro e Modern. Skin Original Metropolis por Amra - continuada por Stoli</summary>
+		<summary lang="ru">Смесь ретро и модерна</summary>
 		<summary lang="sv">En blandning av Retro och Modernt. Original Metropolisskalet gjordes av Amra - Utvecklas av Stoli</summary>
 		<description lang="be">Metropolis is designed to show as much media info as possible with easy to read text and icons. All while trying to keep the skin smooth and simple to use for all family members with multiple themes and customizable menus and views. Credit to Hitcher for Alaska Revisited which was used as a base for Metropolis.</description>
 		<description lang="da">Metropolis er designet til at vise så mange medier som muligt med læsbar tekst og ikoner. Alt sammen mens skin'et holdes strømlinet og simpelt at bruge for alle familiemedlemmer, med flere temaer og justerbare menuer og visninger. Tak til Hitcher for Alaska Revisited, det er blevet brugt som grundlag for Metropolis.</description>
