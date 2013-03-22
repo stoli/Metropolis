@@ -53,7 +53,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>590</width>
+						<width>520</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
@@ -104,7 +104,15 @@
 						<width>32</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + !IsEmpty(ListItem.VideoResolution)</visible>
+						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<control type="image">
+						<posx>586</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<!-- Star Rating -->
 					<control type="label">
@@ -196,7 +204,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>590</width>
+						<width>520</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
@@ -253,7 +261,15 @@
 						<width>32</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + !IsEmpty(ListItem.VideoResolution)</visible>
+						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<control type="image">
+						<posx>586</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<!-- Star Rating -->
 					<control type="label">
