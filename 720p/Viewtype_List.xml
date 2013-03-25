@@ -40,7 +40,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>640</width>
+						<width>708</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
@@ -48,12 +48,25 @@
 						<selectedcolor>TextFO</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
-						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows)</visible>
+						<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]</visible>
 					</control>
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>520</width>
+						<width>635</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)]</visible>
+					</control>
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>526</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
@@ -62,6 +75,19 @@
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
 						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
+					</control>
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>580</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<visible>Window.IsActive(videolibrary) + Container.Content(seasons)</visible>
 					</control>
 					<!-- Watched Overlay for Items in Video Library -->
 					<control type="image">
@@ -99,12 +125,20 @@
 					</control>
 					<!-- HD/SD icons -->
 					<control type="image">
+						<posx>768</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)] + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<control type="image">
 						<posx>695</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)] + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<control type="image">
 						<posx>586</posx>
@@ -113,28 +147,6 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
 						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
-					</control>
-					<!-- Star Rating -->
-					<control type="label">
-						<posx>775</posx>
-						<posy>-2</posy>
-						<width>45</width>
-						<height>35</height>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Rating]</label>
-						<font>METF_InfoText</font>
-						<textcolor>TextNF</textcolor>
-						<visible>!IsEmpty(ListItem.Rating)</visible>
-					</control>
-					<control type="image">
-						<posx>780</posx>
-						<posy>7</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>Star.png</texture>
-						<colordiffuse>FilesStarDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<!-- Episode Count for TVShows -->
 					<control type="label">
@@ -162,6 +174,31 @@
 						<textcolor>MediaDetailsEpisodes</textcolor>
 						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
 					</control>
+					<!-- Star Rating -->
+					<control type="group">
+						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
+						<control type="label">
+							<posx>775</posx>
+							<posy>-2</posy>
+							<width>45</width>
+							<height>35</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Rating]</label>
+							<font>METF_InfoText</font>
+							<textcolor>TextNF</textcolor>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
+						<control type="image">
+							<posx>780</posx>
+							<posy>7</posy>
+							<width>20</width>
+							<height>20</height>
+							<texture>Star.png</texture>
+							<colordiffuse>FilesStarDiffuse</colordiffuse>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
+					</control>
 				</itemlayout>
 				<focusedlayout width="0" height="35">
 					<!-- List Line Item Divider -->
@@ -188,7 +225,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>640</width>
+						<width>708</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
@@ -199,12 +236,28 @@
 						<textcolor>FocusBarText</textcolor>
 						<selectedcolor>FocusBarText</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows)</visible>
+						<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]</visible>
 					</control>
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>520</width>
+						<width>635</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
+						<font>METF_TitleText</font>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)]</visible>
+					</control>
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>526</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
@@ -216,6 +269,22 @@
 						<selectedcolor>FocusBarText</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
+					</control>
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>580</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
+						<font>METF_TitleText</font>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>Window.IsActive(videolibrary) + Container.Content(seasons)</visible>
 					</control>
 					<!-- Watched Overlay -->
 					<control type="image">
@@ -256,12 +325,20 @@
 					</control>
 					<!-- HD/SD icons -->
 					<control type="image">
+						<posx>768</posx>
+						<posy>5</posy>
+						<width>32</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
+						<visible>Window.IsActive(videolibrary) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(episodes)] + !IsEmpty(ListItem.VideoResolution)</visible>
+					</control>
+					<control type="image">
 						<posx>695</posx>
 						<posy>5</posy>
 						<width>32</width>
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + !Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)] + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<control type="image">
 						<posx>586</posx>
@@ -270,28 +347,6 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
 						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
-					</control>
-					<!-- Star Rating -->
-					<control type="label">
-						<posx>775</posx>
-						<posy>-2</posy>
-						<width>45</width>
-						<height>35</height>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Rating]</label>
-						<font>METF_InfoText</font>
-						<textcolor>TextNF</textcolor>
-						<visible>!IsEmpty(ListItem.Rating)</visible>
-					</control>
-					<control type="image">
-						<posx>780</posx>
-						<posy>7</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>Star.png</texture>
-						<colordiffuse>FilesStarDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<!-- Episode Count for TVShows -->
 					<control type="label">
@@ -318,6 +373,31 @@
 						<font>METF_InfoText</font>
 						<textcolor>MediaDetailsEpisodes</textcolor>
 						<visible>Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))</visible>
+					</control>
+					<!-- Star Rating -->
+					<control type="group">
+						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
+						<control type="label">
+							<posx>775</posx>
+							<posy>-2</posy>
+							<width>45</width>
+							<height>35</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Rating]</label>
+							<font>METF_InfoText</font>
+							<textcolor>TextNF</textcolor>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
+						<control type="image">
+							<posx>780</posx>
+							<posy>7</posy>
+							<width>20</width>
+							<height>20</height>
+							<texture>Star.png</texture>
+							<colordiffuse>FilesStarDiffuse</colordiffuse>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
 					</control>
 				</focusedlayout>
 			</control>
