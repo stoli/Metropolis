@@ -554,7 +554,7 @@
 			<!-- Scroll Bar -->
 			<control type="scrollbar" id="998">
 				<posx>902</posx>
-				<posy>420</posy>
+				<posy>342</posy>
 				<width>24</width>
 				<height>190</height>
 				<onleft>905</onleft>
