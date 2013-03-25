@@ -2817,7 +2817,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsYear</textcolor>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>!IsEmpty(ListItem.Year) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>!IsEmpty(ListItem.Year) + !Container.Content(seasons)</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -2826,7 +2826,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)]</visible>
+					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + !Container.Content(seasons)</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -2854,7 +2854,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] | Container.Content(tvshows)</visible>
+					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
 				</control>
 				<!-- Episode Count -->
 				<control type="label">

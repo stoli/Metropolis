@@ -248,7 +248,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsYear</textcolor>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>!IsEmpty(ListItem.Year) + !Container.Content(episodes)</visible>
+					<visible>!IsEmpty(ListItem.Year) + ![Container.Content(episodes) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -257,7 +257,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + ![Container.Content(episodes) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -267,7 +267,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + !Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<control type="label">
 					<width min="25" max="1200">auto</width>
@@ -276,7 +276,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
-					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + !Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -285,7 +285,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + !Container.Content(episodes) | Container.Content(tvshows)</visible>
+					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Episode Count -->
 				<control type="label">

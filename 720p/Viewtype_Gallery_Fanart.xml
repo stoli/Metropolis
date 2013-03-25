@@ -254,7 +254,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(tvshows)] | ![IsEmpty(ListItem.Date) | IsEmpty(ListItem.Duration)] + Container.Content(episodes)</visible>
+					<visible>[![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(tvshows)]] | [![IsEmpty(ListItem.Date) | IsEmpty(ListItem.Duration)] + Container.Content(episodes)]</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -282,7 +282,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + !Container.Content(episodes) | Container.Content(tvshows)</visible>
+					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + !Container.Content(tvshows)</visible>
 				</control>
 				<!-- Episode Count -->
 				<control type="label">
@@ -301,7 +301,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
+					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + Container.Content(tvshows)</visible>
 				</control>
 				<!-- Unwatched Episode Count -->
 				<control type="label">
@@ -311,7 +311,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsEpisodes</textcolor>
 					<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
-					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
+					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + Container.Content(tvshows)</visible>
 				</control>
 			</control>
 			<!-- Movie Sets -->

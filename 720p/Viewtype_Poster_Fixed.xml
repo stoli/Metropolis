@@ -200,29 +200,6 @@
 					<label>$LOCALIZE[31313]</label>
 					<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
 				</control>
-				<!-- Movies - If the Year Info is empty -->
-				<control type="label">
-					<posx>206</posx>
-					<posy>509</posy>
-					<width>290</width>
-					<height>30</height>
-					<align>center</align>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>[IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min)] + Container.Content(movies)</visible>
-				</control>
-				<control type="label">
-					<posx>206</posx>
-					<posy>509</posy>
-					<width>290</width>
-					<height>30</height>
-					<align>center</align>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration]</label>
-					<visible>[IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min)] + Container.Content(movies)</visible>
-				</control>
 				<!-- Tagline -->
 				<control type="textbox">
 					<posx>500</posx>
@@ -255,7 +232,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsYear</textcolor>
 					<label>$INFO[ListItem.Year]</label>
-					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
+					<visible>!IsEmpty(ListItem.Year) + !Container.Content(seasons)</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -264,7 +241,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(tvshows) | Container.Content(movies)]</visible>
+					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + !Container.Content(seasons)</visible>
 				</control>
 				<!-- Duration -->
 				<control type="label">
@@ -274,7 +251,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<control type="label">
 					<width min="25" max="260">auto</width>
@@ -283,7 +260,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsDuration</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
-					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Bullet -->
 				<control type="image">
@@ -292,7 +269,7 @@
 					<texture>Dot.png</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(NumEpisodes))] | [IsEmpty(ListItem.Duration) + Container.Content(tvshows)]</visible>
+					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(NumEpisodes))] + ![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				</control>
 				<!-- Episode Count -->
 				<control type="label">
