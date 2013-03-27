@@ -66,7 +66,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>526</width>
+						<width>576</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<font>METF_TitleText</font>
@@ -74,20 +74,7 @@
 						<selectedcolor>TextFO</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<scroll>false</scroll>
-						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>-2</posy>
-						<width>580</width>
-						<height>35</height>
-						<aligny>center</aligny>
-						<font>METF_TitleText</font>
-						<textcolor>TextNF</textcolor>
-						<selectedcolor>TextFO</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<scroll>false</scroll>
-						<visible>Window.IsActive(videolibrary) + Container.Content(seasons)</visible>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
 					<!-- Watched Overlay for Items in Video Library -->
 					<control type="image">
@@ -139,14 +126,6 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
 						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)] + !IsEmpty(ListItem.VideoResolution)</visible>
-					</control>
-					<control type="image">
-						<posx>586</posx>
-						<posy>5</posy>
-						<width>32</width>
-						<height>24</height>
-						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<!-- Episode Count for TVShows -->
 					<control type="label">
@@ -257,7 +236,7 @@
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
-						<width>526</width>
+						<width>576</width>
 						<height>35</height>
 						<aligny>center</aligny>
 						<scrollout>false</scrollout>
@@ -268,23 +247,7 @@
 						<textcolor>FocusBarText</textcolor>
 						<selectedcolor>FocusBarText</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows)</visible>
-					</control>
-					<control type="label">
-						<posx>45</posx>
-						<posy>-2</posy>
-						<width>580</width>
-						<height>35</height>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>1800</pauseatend>
-						<scrollspeed>40</scrollspeed>
-						<scroll>true</scroll>
-						<font>METF_TitleText</font>
-						<textcolor>FocusBarText</textcolor>
-						<selectedcolor>FocusBarText</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>Window.IsActive(videolibrary) + Container.Content(seasons)</visible>
+						<visible>Window.IsActive(videolibrary) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 					</control>
 					<!-- Watched Overlay -->
 					<control type="image">
@@ -339,14 +302,6 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
 						<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(episodes)] + !IsEmpty(ListItem.VideoResolution)</visible>
-					</control>
-					<control type="image">
-						<posx>586</posx>
-						<posy>5</posy>
-						<width>32</width>
-						<height>24</height>
-						<texture>$INFO[ListItem.VideoResolution,flags/VideoResolutionIcons/,.png]</texture>
-						<visible>Window.IsActive(videolibrary) + Container.Content(tvshows) + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<!-- Episode Count for TVShows -->
 					<control type="label">
