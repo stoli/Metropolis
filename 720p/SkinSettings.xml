@@ -4007,6 +4007,13 @@
 						<onclick>Skin.ToggleSetting(VisBgArtistSlideshow)</onclick>
 						<selected>Skin.HasSetting(VisBgArtistSlideshow)</selected>
 					</control>
+					<control type="radiobutton" id="912">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31432]</label>
+						<onclick>Skin.ToggleSetting(VisBgKenBurns)</onclick>
+						<selected>Skin.HasSetting(VisBgKenBurns)</selected>
+						<visible>Skin.HasSetting(VisBgFanart) | Skin.HasSetting(VisBgExtraFanart) | Skin.HasSetting(VisBgArtistSlideshow)</visible>
+					</control>
 				</control>
 				<!-- Picture Settings -->
 				<control type="grouplist" id="9013">

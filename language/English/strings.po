@@ -772,7 +772,9 @@ msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr ""
 
-#empty string with id 31432
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr ""
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"

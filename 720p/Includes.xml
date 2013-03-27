@@ -1548,6 +1548,19 @@
 		</control>
 	</include>
 
+	<include name="MusicVis_Background">
+		<include>Animation_BackdropFade</include>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<aspectratio align="center" aligny="top">scale</aspectratio>
+		<animation effect="zoom" start="110" end="130" center="auto" time="15000" pulse="true" condition="Skin.HasSetting(VisBgKenBurns)">Conditional</animation>
+		<animation effect="slide" start="-15,-15" end="15,15" time="7500" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(VisBgKenBurns)">Conditional</animation>
+		<timeperimage>10000</timeperimage>
+		<fadetime>1000</fadetime>
+	</include>
+
 	<!-- XXX: Names are too generic.  Used only in MyMusicPlaylist.xml -->
 	<include name="WindowMenuButton">
 		<posx>0</posx>
