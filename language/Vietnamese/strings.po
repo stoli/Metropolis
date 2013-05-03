@@ -60,6 +60,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Danh sách"
 
+msgctxt "#31289"
+msgid "Files"
+msgstr "Tập tin"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Phim giới thiệu"
@@ -79,6 +83,10 @@ msgstr "Đường tắt"
 msgctxt "#31468"
 msgid "Services"
 msgstr "Dịch vụ"
+
+msgctxt "#31469"
+msgid "Appearance"
+msgstr "Hiển thị"
 
 msgctxt "#31601"
 msgid "Live TV"

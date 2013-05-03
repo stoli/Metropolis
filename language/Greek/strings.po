@@ -250,15 +250,15 @@ msgstr "Πολλαπλές Εικόνες"
 
 msgctxt "#31278"
 msgid "Open Playlist"
-msgstr "Άνοιγμα λίστας αναπ/γής"
+msgstr "Άνοιγμα Λίστας Αναπ/γής"
 
 msgctxt "#31279"
 msgid "Save Playlist"
-msgstr "Αποθήκευση λίστας αναπ/γής"
+msgstr "Αποθήκευση Λίστας Αναπ/γής"
 
 msgctxt "#31280"
 msgid "Close Playlist"
-msgstr "Κλείσιμο λίστας αναπ/γής"
+msgstr "Κλείσιμο Λίστας Αναπ/γής"
 
 msgctxt "#31281"
 msgid "Items"
@@ -687,6 +687,10 @@ msgstr "Μεγάλες Αφίσες"
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Πιέστε για επαναφορά του Metropolis στις προεπιλογές"
+
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Οπτικοποίηση Υποβάθρου: Εφέ Ken Burns"
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"

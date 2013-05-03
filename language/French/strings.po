@@ -352,6 +352,10 @@ msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Désactiver les options destructrices du menu 'Éteindre'"
 
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Utiliser le Filtre Média simple"
+
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
 msgstr "Afficher les informations de votre configuration sur des éléments tels que votre réseau, la partie graphique, matérielle et l'espace de stockage disponible."
@@ -680,6 +684,10 @@ msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Cliquer pour Revenir aux Paramètres par Défaut de Metropolis"
 
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Vue de l'Arrière-plan: effet Ken Burns "
+
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"
 msgstr "Visualisation - Fond d'Écran : Fanart"
@@ -796,6 +804,14 @@ msgctxt "#31465"
 msgid "Clean Library"
 msgstr "Nettoyer la Médiathèque"
 
+msgctxt "#31466"
+msgid "Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer."
+msgstr "Etranger n'est pas à priori un genre, mais cela permet d'inclure des films dont les dialogues sont dans une langue différente de celle du spectateur."
+
+msgctxt "#31467"
+msgid "Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc."
+msgstr "Vacances est un genre spécial, dont la thématique est celle des vacances, telles que Noël, Halloween, Pâques, etc."
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "Services"
@@ -803,6 +819,10 @@ msgstr "Services"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "Apparence"
+
+msgctxt "#31470"
+msgid "Prefer ClearLogo to ClearArt"
+msgstr "Préférer ClearLogo au CleanArt"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"

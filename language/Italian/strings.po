@@ -240,6 +240,10 @@ msgctxt "#31460"
 msgid "Games"
 msgstr "Giochi"
 
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Pulisci Libreria"
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "Servizi"

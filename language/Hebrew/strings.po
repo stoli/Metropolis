@@ -84,6 +84,10 @@ msgctxt "#31423"
 msgid "Author"
 msgstr "מחבר"
 
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "מדריך תוכניות"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "הסתר"

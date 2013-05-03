@@ -688,6 +688,10 @@ msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Kliknij aby zresetować Metropolis do ustawień domyślnych"
 
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Wizualizacja tła: efekt \"Ken Burns\""
+
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"
 msgstr "Tło Wizualizacji: Fanart"

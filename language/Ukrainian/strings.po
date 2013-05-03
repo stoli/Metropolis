@@ -64,6 +64,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Файли"
 
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "Трейлери"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Автор"

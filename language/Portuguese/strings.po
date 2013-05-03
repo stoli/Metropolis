@@ -136,6 +136,10 @@ msgctxt "#31460"
 msgid "Games"
 msgstr "Jogos"
 
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Limpar Biblioteca"
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "Selecção de Serviços"

@@ -680,6 +680,10 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Toon videopad bij Video Info i.p.v. waarderingscijfers"
 
+msgctxt "#31430"
+msgid "Poster Wrap Large"
+msgstr "Post omvouwen groot"
+
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Klik voor Metropolis standaardwaarden"
