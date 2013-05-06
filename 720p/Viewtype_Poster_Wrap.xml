@@ -29,10 +29,10 @@
 						<posy>121</posy>
 						<width>164</width>
 						<height>241</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">keep</aspectratio>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<fadetime>200</fadetime>
-						<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>16</posx>
@@ -40,9 +40,9 @@
 						<width>164</width>
 						<height>241</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<aspectratio scalediffuse="false">keep</aspectratio>
 						<fadetime>200</fadetime>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
+						<visible>IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -52,7 +52,6 @@
 						<fadetime>200</fadetime>
 						<texture>frames/ClassicFrame_PosterSmall.png</texture>
 						<aspectratio>stretch</aspectratio>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>150</posx>
@@ -71,6 +70,22 @@
 						<posy>71</posy>
 						<width>240</width>
 						<height>353</height>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<fadetime>200</fadetime>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="68" end="100" time="300" tween="sine" easing="inout" />
+							<!--
+							<effect type="fade" start="0" end="100" time="300" />
+							-->
+						</animation>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>13</posx>
+						<posy>71</posy>
+						<width>240</width>
+						<height>353</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
 						<fadetime>200</fadetime>
@@ -80,23 +95,7 @@
 							<effect type="fade" start="0" end="100" time="300" />
 							-->
 						</animation>
-						<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
-					</control>
-					<control type="image">
-						<posx>13</posx>
-						<posy>71</posy>
-						<width>240</width>
-						<height>353</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<fadetime>200</fadetime>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="68" end="100" time="300" tween="sine" easing="inout" />
-							<!--
-							<effect type="fade" start="0" end="100" time="300" />
-							-->
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
+						<visible>IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>-2</posx>
@@ -112,7 +111,6 @@
 							-->
 						</animation>
 						<aspectratio>stretch</aspectratio>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>212</posx>

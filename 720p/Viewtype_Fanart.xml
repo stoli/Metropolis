@@ -29,7 +29,7 @@
 						<posy>60</posy>
 						<width>204</width>
 						<height>300</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<visible>!IsEmpty(ListItem.Title)</visible>

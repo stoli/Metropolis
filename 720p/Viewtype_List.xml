@@ -378,7 +378,7 @@
 						<fadetime>100</fadetime>
 						<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">keep</aspectratio>
-						<visible>IsEmpty(ListItem.Title) | SubString(ListItem.Icon,default)</visible>
+						<visible>IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>17</posx>
@@ -386,9 +386,9 @@
 						<width>300</width>
 						<height>440</height>
 						<fadetime>100</fadetime>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -396,7 +396,7 @@
 						<width>335</width>
 						<height>490</height>
 						<texture>frames/ClassicFrame_PosterMedium.png</texture>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 				</control>
 				<!-- Episode Posters -->

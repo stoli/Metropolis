@@ -173,17 +173,17 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + SubString(ListItem.Icon,default)</visible>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
 					<posx>37</posx>
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + !SubString(ListItem.Icon,default)</visible>
+					<visible>Window.IsActive(videolibrary) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<!-- Poster Image for TV Show Seasons and Episodes -->
 				<control type="image">
@@ -191,7 +191,7 @@
 					<posy>160</posy>
 					<width>300</width>
 					<height>440</height>
-					<texture background="true" fallback="home_art/tvshows.jpg">$INFO[ListItem.Art(tvshow.poster)]</texture> 
+					<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Art(tvshow.poster)]</texture> 
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<fadetime>300</fadetime>
 					<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
@@ -205,7 +205,7 @@
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>[!SubString(ListItem.Icon,default) + [Container.Content(movies) | Container.Content(tvshows)]] | [Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>[!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows)]] | [Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<!-- Pictures, Addons, Music Videos, and Album/Artist Cover -->
 				<control type="image">

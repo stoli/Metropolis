@@ -30,7 +30,6 @@
 						<height>180</height>
 						<texture>frames/ClassicFrame_Background.png</texture>
 						<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>24</posx>
@@ -39,6 +38,16 @@
 						<height>180</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<posx>24</posx>
+						<posy>15</posy>
+						<width>122</width>
+						<height>180</height>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<posx>24</posx>
@@ -48,7 +57,6 @@
 						<texture>frames/ClassicFrameGlass_Vertical.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<colordiffuse>GlassDiffuse</colordiffuse>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>10</posx>
@@ -56,7 +64,6 @@
 						<width>151</width>
 						<height>208</height>
 						<texture>frames/ClassicFrame_PosterSmall.png</texture>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<posx>112</posx>
@@ -81,7 +88,6 @@
 							<effect type="zoom" center="auto" start="70" end="115" time="400" tween="back" easing="out" />
 							<effect type="fade" start="70" end="100" time="300" />
 						</animation>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<include>Animation_GalleryFloat</include>
@@ -95,6 +101,21 @@
 							<effect type="zoom" center="auto" start="70" end="115" time="400" tween="back" easing="out" />
 							<effect type="fade" start="70" end="100" time="300" />
 						</animation>
+						<visible>IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<include>Animation_GalleryFloat</include>
+						<posx>24</posx>
+						<posy>15</posy>
+						<width>122</width>
+						<height>180</height>
+						<texture background="true" fallback="DefaultThumb.png">$VAR[PosterThumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="70" end="115" time="400" tween="back" easing="out" />
+							<effect type="fade" start="70" end="100" time="300" />
+						</animation>
+						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
 						<include>Animation_GalleryFloat</include>
@@ -109,7 +130,6 @@
 							<effect type="zoom" center="auto" start="70" end="115" time="400" tween="back" easing="out" />
 							<effect type="fade" start="100" end="0" time="400" />
 						</animation>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<include>Animation_GalleryFloat</include>
@@ -122,7 +142,6 @@
 							<effect type="zoom" center="auto" start="70" end="115" time="400" tween="back" easing="out" />
 							<effect type="fade" start="70" end="100" time="300" />
 						</animation>
-						<visible>!SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">
 						<include>Animation_GalleryFloat</include>
