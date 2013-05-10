@@ -471,7 +471,7 @@
 					<textcolor>TextNF</textcolor>
 					<label>$INFO[ListItem.Tagline]</label>
 					<autoscroll time="4000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
-					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline)</visible>
+					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline) + !Skin.HasSetting(Hide_MovieTagline)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<!-- Year/Duration/Number of Episodes -->

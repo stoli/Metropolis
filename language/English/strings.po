@@ -670,7 +670,9 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr ""
 
-#empty string with id 31405
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr ""
 
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"

@@ -207,7 +207,7 @@
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
 					<label>$INFO[ListItem.Tagline]</label>
-					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline)</visible>
+					<visible>Container.Content(movies) + !IsEmpty(ListItem.Tagline) + !Skin.HasSetting(Hide_MovieTagline)</visible>
 				</control>
 			</control>
 			<control type="grouplist">
