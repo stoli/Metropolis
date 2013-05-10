@@ -14,7 +14,7 @@
 			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Art(fanart)]</texture>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 			<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
-			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 		</control>
 		<include>Object_InfoLines</include>
 		<include>Viewtype_LowList</include>			<!-- 905 -->

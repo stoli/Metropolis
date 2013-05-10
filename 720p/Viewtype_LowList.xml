@@ -19,7 +19,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewLowList)</visible>
-				<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Window.IsActive(pictures)] + ![SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)]</visible>
+				<visible>[Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(addons) | Window.IsActive(pictures)] + ![SubString(Container.FolderPath,plugin) | SubString(Container.FolderPath,script)]</visible>
 				<itemlayout width="535" height="35">
 					<!-- List Line Item Divider -->
 					<control type="image">
@@ -52,7 +52,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>Window.IsActive(videolibrary) + [[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+						<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
 					<control type="label">
@@ -205,7 +205,7 @@
 					<texture>frames/ClassicFrame_PosterMedium.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>[!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows)]] | [Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<visible>[!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)]] | [Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<!-- Pictures, Addons, Music Videos, and Album/Artist Cover -->
 				<control type="image">
@@ -351,7 +351,7 @@
 					<height>3</height>
 					<texture>VideoInfoLine.png</texture>
 					<colordiffuse>LowListDivider</colordiffuse>
-					<visible>!Container.Content(Seasons)</visible>
+					<visible>![Container.Content(Seasons) | Container.Content(sets)]</visible>
 				</control>
 				<control type="image">
 					<posx>360</posx>

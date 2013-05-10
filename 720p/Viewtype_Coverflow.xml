@@ -2776,7 +2776,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<colordiffuse>WatchedOverlay</colordiffuse>
-					<visible>stringcompare(ListItem.Overlay,OverlayWatched.png) + [Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | stringcompare(ListItem.Overlay,OverlayWatched.png) + [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+					<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 				</control>
 			</control>
 			<!-- Browser label and flags -->
@@ -2790,6 +2790,7 @@
 				<orientation>horizontal</orientation>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				<!-- Genre -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>
@@ -2915,7 +2916,7 @@
 					<scrolltime>250</scrolltime>
 					<focusposition>3</focusposition>
 					<visible>!Skin.HasSetting(NoViewCoverflow)</visible>
-					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 					<itemlayout height="10" width="10"/>
 					<focusedlayout height="10" width="10"/>
 				</control>

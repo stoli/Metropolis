@@ -2,11 +2,11 @@
 	<include name="Viewtype_PosterAndFanart">
 		<control type="group">
 			<visible>Control.IsVisible(550)</visible>
-			<control type="group">			
+			<control type="group">
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
-				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 				<!-- Browser label and flags -->
 				<control type="group">
 					<posx>490</posx>
@@ -29,6 +29,7 @@
 						<height>30</height>
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
+						<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
 						<!-- Year -->
 						<control type="label">
 							<width min="25" max="1200">auto</width>
@@ -127,7 +128,7 @@
 						</control>
 					</control>			
 				</control>
-			</control>			
+			</control>
 			<!-- Browser -->
 			<control type="wraplist" id="550">
 				<viewtype label="31424">bigwrap</viewtype>
@@ -148,7 +149,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewPosterFanart)</visible>
-				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
 				<itemlayout width="260" height="420">
 					<control type="group">
 						<posx>-30</posx>
@@ -202,7 +203,7 @@
 							<fadetime>200</fadetime>
 							<texture>$INFO[ListItem.Overlay]</texture>
 							<colordiffuse>WatchedOverlay</colordiffuse>
-							<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+							<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -255,7 +256,7 @@
 							<animation type="Focus" reversible="false">
 								<effect type="fade" start="0" end="100" time="300" />
 							</animation>
-							<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+							<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 						</control>						
 					</control>
 					<!-- Focused Item Fanart -->

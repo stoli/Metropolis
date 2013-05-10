@@ -22,7 +22,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewLandscape)</visible>
-				<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+				<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 				<itemlayout width="284" height="234">
 					<control type="image">
 						<posx>4</posx>
@@ -75,7 +75,7 @@
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
+						<visible>!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<posx>2</posx>
@@ -91,7 +91,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="360" height="260">
@@ -153,7 +153,7 @@
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="auto" start="70" end="100" time="300" tween="back" easing="out" />
 						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
+						<visible>!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(sets)]</visible>
 					</control>
 					<control type="image">
 						<posx>-2</posx>
@@ -177,7 +177,7 @@
 							<effect type="zoom" center="152,92" start="70" end="100" time="300" tween="back" easing="out" />
 							<effect type="fade" start="50" end="100" time="300" />
 						</animation>
-						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -195,7 +195,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 			</control>
 			<control type="grouplist">
 				<posx>40</posx>
