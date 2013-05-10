@@ -224,6 +224,19 @@
 					<label>$INFO[ListItem.PictureDateTime]</label>
 					<visible>Window.IsActive(pictures) + !IsEmpty(ListItem.PictureDateTime)</visible>
 				</control>
+				<!-- Movie Sets -->
+				<control type="label">
+					<posx>35</posx>
+					<posy>459</posy>
+					<width>600</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_MediaDetailsSmall</font>
+					<textcolor>MediaDetailsGenre</textcolor>
+					<label>$LOCALIZE[31313]</label>
+					<include>VisibleIfMovieSet</include>
+				</control>
 			</control>
 			<!-- Info Details -->
 			<control type="grouplist">
@@ -238,6 +251,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+				<include>VisibleIfNotMovieSet</include>
 				<!-- Year -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>

@@ -188,15 +188,14 @@
 				</control>
 				<!-- Movie Sets -->
 				<control type="label">
-					<posx>206</posx>
-					<posy>509</posy>
-					<width>290</width>
+					<posx>500</posx>
+					<posy>481</posy>
+					<width>760</width>
 					<height>30</height>
-					<align>center</align>
 					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsInfo</textcolor>
+					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$LOCALIZE[31313]</label>
-					<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
+					<include>VisibleIfMovieSet</include>
 				</control>
 				<!-- Tagline -->
 				<control type="textbox">
@@ -223,6 +222,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<include>VisibleIfNotMovieSet</include>
 				<!-- Year -->
 				<control type="label">
 					<width min="25" max="260">auto</width>

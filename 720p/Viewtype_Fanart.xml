@@ -216,7 +216,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$LOCALIZE[31313]</label>
-					<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
+					<include>VisibleIfMovieSet</include>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -231,6 +231,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
 				<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+				<include>VisibleIfNotMovieSet</include>
 				<!-- Year -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>

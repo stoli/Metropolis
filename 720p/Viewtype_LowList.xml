@@ -344,6 +344,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
+				<include>VisibleIfNotMovieSet</include>
 				<control type="image">
 					<posx>360</posx>
 					<posy>413</posy>
@@ -458,18 +459,6 @@
 					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
 					<visible>!substring(listitem.Duration,min)</visible>
 					<visible>Container.Content(episodes) + !IsEmpty(listitem.Duration)</visible>
-				</control>
-				<!-- Movie Sets -->
-				<control type="label">
-					<posx>1245</posx>
-					<posy>380</posy>
-					<width>620</width>
-					<height>27</height>
-					<align>right</align>
-					<font>METF_MediaDetails</font>
-					<textcolor>MediaDetailsInfo</textcolor>
-					<label>$LOCALIZE[31313]</label>
-					<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
 				</control>
 				<!-- Tagline -->
 				<control type="textbox">

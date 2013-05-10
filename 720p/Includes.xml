@@ -1592,5 +1592,10 @@
 		<disabledcolor>TextDisabled</disabledcolor>
 		<aligny>bottom</aligny>
 	</include>
-
+	<include name="VisibleIfNotMovieSet">
+		<visible>![Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)]</visible>
+	</include>
+	<include name="VisibleIfMovieSet">
+		<visible>Container.Content(movies) + IsEmpty(listitem.Genre) + IsEmpty(ListItem.VideoResolution)</visible>
+	</include>
 </includes>

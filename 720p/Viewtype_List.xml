@@ -156,6 +156,7 @@
 					<!-- Star Rating -->
 					<control type="group">
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
+						<include>VisibleIfNotMovieSet</include>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
@@ -332,6 +333,7 @@
 					<!-- Star Rating -->
 					<control type="group">
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
+						<include>VisibleIfNotMovieSet</include>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
@@ -485,6 +487,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<posy>95</posy>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | [!IsEmpty(ListItem.Property(Addon.Creator)) + Container.Content(addons)]</visible>
+				<include>VisibleIfNotMovieSet</include>
 				<control type="image">
 					<posx>360</posx>
 					<posy>33</posy>
@@ -535,17 +538,6 @@
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<visible>IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Property(Artist_Genre))</visible>
-				</control>
-				<!-- Movie Sets -->
-				<control type="label">
-					<posx>1245</posx>
-					<width>620</width>
-					<height>27</height>
-					<align>right</align>
-					<font>METF_MediaDetails</font>
-					<textcolor>MediaDetailsInfo</textcolor>
-					<label>$LOCALIZE[31313]</label>
-					<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
 				</control>
 				<!-- Year/Duration/Number of Episodes -->
 				<control type="grouplist">

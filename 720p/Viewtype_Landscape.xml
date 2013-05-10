@@ -209,6 +209,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+				<include>VisibleIfNotMovieSet</include>
 				<!-- Genre -->
 				<control type="label">
 					<width min="25" max="1200">auto</width>
@@ -329,7 +330,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_OpenCloseFade</include>
-				<visible>Container.Content(movies) + IsEmpty(ListItem.path) + !StringCompare(ListItem.Label,..)</visible>
+				<include>VisibleIfMovieSet</include>
 			</control>
 			<include>ScrollBar_Horizontal</include>
 		</control>

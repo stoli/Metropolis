@@ -23,6 +23,16 @@
 						<textcolor>TitleText</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
+					<!-- Movie Sets -->
+					<control type="label">
+						<posy>42</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>METF_MediaDetailsSmall</font>
+						<textcolor>MediaDetailsGenre</textcolor>
+						<label>$LOCALIZE[31313]</label>
+						<include>VisibleIfMovieSet</include>
+					</control>
 					<control type="grouplist">
 						<posy>42</posy>
 						<width>1200</width>
@@ -30,6 +40,7 @@
 						<itemgap>10</itemgap>
 						<orientation>horizontal</orientation>
 						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+						<include>VisibleIfNotMovieSet</include>
 						<!-- Genre -->
 						<control type="label">
 							<width min="25" max="1200">auto</width>
