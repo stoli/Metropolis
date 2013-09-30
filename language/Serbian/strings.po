@@ -71,3 +71,15 @@ msgstr "Izbor Servisa"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "Prikazivanje"
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "Телевизија уживо"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "Преименуј групу"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "Обриши групу"

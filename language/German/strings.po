@@ -592,6 +592,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "Bewertung und Studio ausblenden"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "Verstecke Film-Taglines"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "Klassischen Rahmen in der Fanart Ansicht benutzen (Standard ist gegliedert)"
@@ -687,6 +691,10 @@ msgstr "große Posterhüllen "
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Metropolis auf Standard-Einstellungen zurücksetzen"
+
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Hintergrund-Visualisierung: Ken Burns-Effekt"
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"

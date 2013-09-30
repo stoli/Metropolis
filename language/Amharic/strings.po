@@ -48,6 +48,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "ፋይል"
 
+msgctxt "#31423"
+msgid "Author"
+msgstr "ደራሲው "
+
 msgctxt "#31428"
 msgid "TV Guide"
 msgstr "የቲቪ - መመሪያ"
@@ -64,6 +68,10 @@ msgctxt "#31457"
 msgid "Shortcuts"
 msgstr "አቋራጮች"
 
+msgctxt "#31460"
+msgid "Games"
+msgstr "ጨዋታዎች"
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "ግልጋሎቶች"
@@ -71,6 +79,10 @@ msgstr "ግልጋሎቶች"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "አቀራረብ "
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "ቲቪ በቀጥታ "
 
 msgctxt "#31605"
 msgid "Add Group"

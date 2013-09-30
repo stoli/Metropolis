@@ -72,6 +72,10 @@ msgctxt "#31468"
 msgid "Services"
 msgstr "سرویس ها"
 
+msgctxt "#31469"
+msgid "Appearance"
+msgstr "ظاهر"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "تلویزیون زنده"

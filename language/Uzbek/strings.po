@@ -20,6 +20,14 @@ msgctxt "#31001"
 msgid "View Options"
 msgstr "Ko'rish parametrlari"
 
+msgctxt "#31285"
+msgid "List"
+msgstr "Ro'yxat"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "Fayllar"
+
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "To'liq ekran"

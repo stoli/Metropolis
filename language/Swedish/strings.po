@@ -72,6 +72,10 @@ msgctxt "#31244"
 msgid "Playing"
 msgstr "Spelar"
 
+msgctxt "#31249"
+msgid "System Music Files"
+msgstr "System-musikfiler"
+
 msgctxt "#31250"
 msgid "Current Selected"
 msgstr "Nuvarande vald"
@@ -131,6 +135,10 @@ msgstr "Landscape"
 msgctxt "#31293"
 msgid "Picture Grid"
 msgstr "Bildrutnät"
+
+msgctxt "#31299"
+msgid "Min"
+msgstr "Min"
 
 msgctxt "#31334"
 msgid "Trailers"

@@ -592,6 +592,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "Убрать рейтинг и лого студий"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "Убрать слоганы фильмов"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "Режимы Fanart: Обычный кадр"

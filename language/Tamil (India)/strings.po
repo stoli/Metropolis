@@ -40,6 +40,18 @@ msgctxt "#31282"
 msgid "Poster Wrap"
 msgstr "படத்தை சுற்றமை"
 
+msgctxt "#31285"
+msgid "List"
+msgstr "பட்டியல்"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "கோப்புகள்"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "டிரெய்லர்கள்"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "ஆசிரியர்"

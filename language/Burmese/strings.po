@@ -16,6 +16,10 @@ msgstr ""
 "Language: my\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31004"
+msgid "Debug"
+msgstr "အပြစ်ရှာဖွေရန်"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "ဖွင့်နေပါသည်။"
@@ -31,6 +35,18 @@ msgstr "အမျိုးအစားများ"
 msgctxt "#31282"
 msgid "Poster Wrap"
 msgstr "ပိုစတာ"
+
+msgctxt "#31285"
+msgid "List"
+msgstr "စာရင်း"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "ဖိုင်များ"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "ကြော်ငြာများ"
 
 msgctxt "#31441"
 msgid "Hide"

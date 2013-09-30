@@ -32,6 +32,10 @@ msgctxt "#31033"
 msgid "Hide Background Fanart"
 msgstr "Arkaplan Fanartını Gizle"
 
+msgctxt "#31054"
+msgid "Logo"
+msgstr "Logo"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "Oynatılıyor"
@@ -64,9 +68,17 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Liste"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Afişler"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Dosyalar"
+
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "Yatay"
 
 msgctxt "#31334"
 msgid "Trailers"

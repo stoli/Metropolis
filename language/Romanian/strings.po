@@ -72,6 +72,10 @@ msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
 
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "Ghid TV"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Ascunde"

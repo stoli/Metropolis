@@ -592,6 +592,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "평점과 스튜디오 정보 숨기기"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "영화 태그라인 숨기기"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "팬아트 보기: 클래식 프레임"
