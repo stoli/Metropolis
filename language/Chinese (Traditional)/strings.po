@@ -36,6 +36,10 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "標誌"
 
+msgctxt "#31207"
+msgid "Current"
+msgstr "目前的"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "正在播放"

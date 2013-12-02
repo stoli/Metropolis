@@ -88,6 +88,10 @@ msgctxt "#31460"
 msgid "Games"
 msgstr "Игри"
 
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Почистване на библиотеката"
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "Услуги"

@@ -36,6 +36,14 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Logotip"
 
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "Opcions de vista"
+
+msgctxt "#31207"
+msgid "Current"
+msgstr "Actual"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "S'està reproduint"
@@ -68,9 +76,21 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Llista"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Banner"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Fitxers"
+
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "Horitzontal"
+
+msgctxt "#31293"
+msgid "Picture Grid"
+msgstr "Matriu d'Imatges"
 
 msgctxt "#31334"
 msgid "Trailers"
@@ -79,6 +99,18 @@ msgstr "Tràilers"
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
+
+msgctxt "#31427"
+msgid "Next Episode"
+msgstr "Episodi Següent"
+
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "Guía TV"
+
+msgctxt "#31438"
+msgid "Recent"
+msgstr "Recent"
 
 msgctxt "#31441"
 msgid "Hide"
