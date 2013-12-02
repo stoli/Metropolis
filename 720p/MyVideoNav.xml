@@ -175,35 +175,6 @@
 					<texturenofocus>-</texturenofocus>
 					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="7">
-					<description>Stack</description>
-					<width>340</width>
-					<align>left</align>
-					<label>14000</label>
-					<altlabel>14001</altlabel>
-					<aligny>center</aligny>
-					<font>METF_DialogLarge</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-				</control>
-				<control type="radiobutton" id="17">
-					<description>Flatten</description>
-					<width>340</width>
-					<align>left</align>
-					<label>20411</label>
-					<aligny>center</aligny>
-					<font>METF_DialogLarge</font>
-					<textoffsetx>20</textoffsetx>
-					<textcolor>TextNF</textcolor>
-					<focusedcolor>DialogTextFO</focusedcolor>
-					<disabledcolor>TextDisabled</disabledcolor>
-					<texturefocus>ButtonFO2Wide.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
-				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
 					<width>340</width>
