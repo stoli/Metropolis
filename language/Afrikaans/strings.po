@@ -64,6 +64,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Lêers"
 
+msgctxt "#31293"
+msgid "Picture Grid"
+msgstr "Prentjie Rooster"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Voorskoue"

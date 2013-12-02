@@ -592,6 +592,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "Ocultar Clasificación y Banderas de Estudio"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "Ocultar eslogan de las películas"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "Vista Fanart: Clásico"
