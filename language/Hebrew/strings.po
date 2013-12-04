@@ -20,6 +20,10 @@ msgctxt "#31001"
 msgid "View Options"
 msgstr "הצג אפשרויות"
 
+msgctxt "#31002"
+msgid "Home Artwork"
+msgstr "גרפיקה הבית"
+
 msgctxt "#31004"
 msgid "Debug"
 msgstr "קובץ שגיאה"
@@ -31,6 +35,14 @@ msgstr "מופעל"
 msgctxt "#31010"
 msgid "N/A"
 msgstr "לא זמין"
+
+msgctxt "#31012"
+msgid "Increase Star Rating"
+msgstr "להגדיל את הדירוג הכוכבים"
+
+msgctxt "#31021"
+msgid "Decrease Star Rating"
+msgstr "להנמיך את הדירוג הכוכבים"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"

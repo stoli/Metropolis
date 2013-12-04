@@ -36,6 +36,18 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Logo"
 
+msgctxt "#31133"
+msgid "Mute"
+msgstr "Stlmiť"
+
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "Štýl zobrazenia"
+
+msgctxt "#31207"
+msgid "Current"
+msgstr "Aktuálny"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "Prehráva sa"
@@ -76,6 +88,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Súbory"
 
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "Na šírku"
+
 msgctxt "#31293"
 msgid "Picture Grid"
 msgstr "Obrazová mriežka"
@@ -92,9 +108,17 @@ msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
 
+msgctxt "#31427"
+msgid "Next Episode"
+msgstr "Ďalšia epizóda"
+
 msgctxt "#31428"
 msgid "TV Guide"
 msgstr "Televízny program"
+
+msgctxt "#31438"
+msgid "Recent"
+msgstr "Nedávné"
 
 msgctxt "#31441"
 msgid "Hide"

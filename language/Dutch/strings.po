@@ -592,6 +592,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "Verberg videogenre beschrijving"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "Verberg film Labelnamen"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "Gebruik Classic Frame in Fanart View (Standaard is Segmented)"
@@ -687,6 +691,10 @@ msgstr "Post omvouwen groot"
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "Klik voor Metropolis standaardwaarden"
+
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Visualisering achtergrond: Ken Burns effect"
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"
