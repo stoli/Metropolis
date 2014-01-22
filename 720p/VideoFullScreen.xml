@@ -15,31 +15,34 @@
 			<control type="label" id="10">
 				<description>row 1 label</description>
 				<posx>20</posx>
-				<posy>12</posy>
+				<posy>10</posy>
 				<label>-</label>
 				<align>left</align>
 				<width>1240</width>
-				<font>METF_PlotTextMedium</font>
+				<height>36</height>
+				<font>METF_DialogVerySmall</font>
 				<textcolor>TextNF</textcolor>
 			</control>
 			<control type="label" id="11">
 				<description>row 2 label</description>
 				<posx>20</posx>
-				<posy>37</posy>
+				<posy>45</posy>
 				<label>-</label>
 				<align>left</align>
 				<width>1240</width>
-				<font>METF_PlotTextMedium</font>
+				<height>36</height>
+				<font>METF_DialogVerySmall</font>
 				<textcolor>TextNF</textcolor>
 			</control>
 			<control type="label" id="12">
 				<description>row 3 label</description>
 				<posx>20</posx>
-				<posy>62</posy>
+				<posy>80</posy>
 				<label>-</label>
 				<align>left</align>
 				<width>1240</width>
-				<font>METF_PlotTextMedium</font>
+				<height>36</height>
+				<font>METF_DialogVerySmall</font>
 				<textcolor>TextNF</textcolor>
 			</control>
 		</control>
