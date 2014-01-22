@@ -70,6 +70,21 @@
 				<alttexturenofocus>-</alttexturenofocus>
 				<pulseonselect>false</pulseonselect>
 			</control>
+			<control type="textbox" id="6">
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_HiddenByInfo</include>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<posx>300</posx>
+				<posy>565</posy>
+				<width>750</width>
+				<height>66</height>
+				<font>METF_PlotTextSmall</font>
+				<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollShort</include>
+				<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollShortFast</include>
+				<textcolor>LowerText</textcolor>
+				<align>justify</align>
+			</control>
 		</control>
 		<include>Global_ContextFilter</include>
 		<include>Global_Weather</include>
