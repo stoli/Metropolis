@@ -1773,6 +1773,7 @@
 				</control>
 				<!-- Movies -->
 				<control type="grouplist">
+					<height>52</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<visible>IntegerGreaterThan(Window.Property(Movies.Count),0)</visible>
@@ -1805,6 +1806,7 @@
 				</control>
 				<!-- TV Shows -->
 				<control type="grouplist">
+					<height>70</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0)</visible>
@@ -1850,6 +1852,7 @@
 				</control>
 				<!-- Music -->
 				<control type="grouplist">
+					<height>70</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0)</visible>
@@ -1895,6 +1898,7 @@
 				</control>
 				<!-- Music Videos -->
 				<control type="grouplist">
+					<height>26</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
 					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0)</visible>

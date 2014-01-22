@@ -153,6 +153,7 @@
 					<posx>0</posx>
 					<posy>76</posy>
 					<width>340</width>
+					<height>24</height>
 					<font>METF_InfoText</font>
 					<textcolor>MediaDetailsInfo</textcolor>
 					<align>center</align>
@@ -163,6 +164,7 @@
 					<posx>0</posx>
 					<posy>99</posy>
 					<width>340</width>
+					<height>24</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>METF_PlotText</font>
@@ -174,6 +176,7 @@
 					<posx>0</posx>
 					<posy>128</posy>
 					<width>340</width>
+					<height>24</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>METF_InfoText</font>
@@ -182,9 +185,9 @@
 				</control>
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>138</posy>
+					<posy>148</posy>
 					<width>340</width>
-					<height>143</height>
+					<height>140</height>
 					<align>center</align>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>

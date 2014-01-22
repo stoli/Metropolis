@@ -313,6 +313,8 @@
 		<control type="group">
 			<posx>12</posx>
 			<posy>40</posy>
+			<width>200</width>
+			<height>30</height>
 			<visible>[!Window.IsActive(visualisation) + !Skin.HasSetting(HideClock)] | [Window.IsActive(visualisation) + Player.ShowInfo + !Skin.HasSetting(HideVisClock) + !Window.IsVisible(120)]</visible>
 			<control type="label">
 				<description>Hours</description>
@@ -354,46 +356,10 @@
 				<visible>Skin.HasSetting(ShowDate)</visible>
 			</control>
 			<control type="label">
-				<description>Monday</description>
+				<description>Day of Week</description>
 				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[11]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[11])</visible>
-			</control>
-			<control type="label">
-				<description>Tuesday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[12]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[12])</visible>
-			</control>
-			<control type="label">
-				<description>Wednesday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[13]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[13])</visible>
-			</control>
-			<control type="label">
-				<description>Thursday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[14]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[14])</visible>
-			</control>
-			<control type="label">
-				<description>Friday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[15]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[15])</visible>
-			</control>
-			<control type="label">
-				<description>Saturday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[16]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[16])</visible>
-			</control>
-			<control type="label">
-				<description>Sunday</description>
-				<include>Global_TimeWeekdayDetails</include>
-				<label>$LOCALIZE[17]</label>
-				<visible>!Skin.HasSetting(ShowDate) + SubString(System.Date(DDD),$LOCALIZE[17])</visible>
+				<label>$INFO[System.Date(DDD)]</label>
+				<visible>!Skin.HasSetting(ShowDate)</visible>
 			</control>
 		</control>
 	</include>

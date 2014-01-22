@@ -12,6 +12,8 @@
 			<control type="group">
 				<posx>6</posx>
 				<posy>565</posy>
+				<width>160</width>
+				<height>90</height>
 				<control type="image">
 					<height>70</height>
 					<aspectratio aligny="center">keep</aspectratio>

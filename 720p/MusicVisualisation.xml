@@ -192,6 +192,7 @@
 				<posx>395</posx>
 				<posy>664</posy>
 				<width>90</width>
+				<height>8</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>MusicPlayer.Time</info>
@@ -219,6 +220,7 @@
 				<posx>824</posx>
 				<posy>664</posy>
 				<width>90</width>
+				<height>8</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>MusicPlayer.Duration</info>
@@ -230,6 +232,7 @@
 				<posx>306</posx>
 				<posy>670</posy>
 				<width>700</width>
+				<height>8</height>
 				<visible>true</visible>
 				<scroll>false</scroll>
 				<scrollout>false</scrollout>
