@@ -141,7 +141,7 @@
 					<texturenofocus>-</texturenofocus>
 					<visible>[Container.CanFilterAdvanced + Skin.HasSetting(SimpleMediaFilter)] | Container.CanFilter</visible>
 				</control>
-				<control type="radiobutton" id="20">
+				<control type="radiobutton" id="98">
 					<description>Advanced Filter</description>
 					<width>340</width>
 					<align>left</align>
@@ -199,6 +199,26 @@
 					<visible>system.haslocks</visible>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
+				</control>
+				<control type="togglebutton" id="20">
+					<description>Update Library</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<label>653</label>
+					<altlabel>13353</altlabel>
+					<textoffsetx>20</textoffsetx>
+					<font>METF_DialogLarge</font>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<alttexturenofocus border="2">-</alttexturenofocus>
+					<alttexturefocus border="5">ButtonFO2.png</alttexturefocus>
+					<usealttexture>library.isscanningvideo</usealttexture>
+					<aligny>center</aligny>
+					<pulseonselect>false</pulseonselect>
 				</control>
 				<include>Nav_NowPlaying</include>
 			</control>

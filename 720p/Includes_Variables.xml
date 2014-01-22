@@ -192,4 +192,8 @@
 		<value condition="IsEmpty(VideoPlayer.Year) + [!IsEmpty(VideoPlayer.Artist) | !IsEmpty(VideoPlayer.Album)] + VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album]</value>
 		<value condition="!IsEmpty(VideoPlayer.Tagline) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Tagline]</value>
 	</variable>
+	<variable name="GoPlaylist">
+		<value condition="Window.IsActive(videolibrary) + !StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
+		<value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !StringCompare(Playlist.Length(music),0)">ActivateWindow(musicplaylist)</value>
+	</variable>
 </includes>
