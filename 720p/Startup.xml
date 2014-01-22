@@ -27,7 +27,7 @@
 		</control>
 		<control type="button" id="50">
 			<description>Passthrough</description>
-			<onfocus>ReplaceWindow(Home)</onfocus>
+			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>!Skin.HasSetting(NextAired)</visible>
@@ -35,7 +35,7 @@
 		<control type="button" id="50">
 			<description>TV Show Next Aired</description>
 			<onfocus>RunScript(script.tv.show.next.aired,silent=True&amp;alarm=360)</onfocus>
-			<onfocus>ReplaceWindow(Home)</onfocus>
+			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>Skin.HasSetting(NextAired)</visible>
