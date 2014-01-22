@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- Home1 Default-->
 	<visible>!Skin.HasSetting(home2)</visible>

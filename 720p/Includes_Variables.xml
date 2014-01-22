@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="NextAiredFanart">
 		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>

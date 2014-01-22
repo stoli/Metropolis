@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu" id="111">
 	<defaultcontrol always="true">410</defaultcontrol>
 	<animation type="WindowOpen" reversible="false">

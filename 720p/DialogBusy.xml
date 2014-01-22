@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="136">
 	<animation type="WindowOpen" reversible="false">
 		<effect type="zoom" start="80" end="100" center="auto" delay="1800" easing="out" tween="back" time="300" />
