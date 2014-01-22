@@ -467,7 +467,7 @@
 					<fadetime>100</fadetime>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
 					<texture fallback="DefaultMovieGenre.jpg">moviegenres/$INFO[ListItem.Label].jpg</texture>
-					<visible>Window.IsActive(videolibrary) + !SubString(Container.FolderPath,videodb://3/) + Container.Content(genres)</visible>
+					<visible>Window.IsActive(videolibrary) + !SubString(Container.FolderPath,videodb://musicvideos/) + Container.Content(genres)</visible>
 				</control>
 				<control type="image">
 					<posx>37</posx>
@@ -477,7 +477,7 @@
 					<fadetime>100</fadetime>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
 					<texture fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
-					<visible>[Window.IsActive(musiclibrary) | [Window.IsActive(videolibrary) + SubString(Container.FolderPath,videodb://3/)]] + Container.Content(genres)</visible>
+					<visible>[Window.IsActive(musiclibrary) | [Window.IsActive(videolibrary) + SubString(Container.FolderPath,videodb://musicvideos/)]] + Container.Content(genres)</visible>
 				</control>
 			</control>
 			<!-- Info Details -->

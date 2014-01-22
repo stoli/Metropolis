@@ -126,7 +126,7 @@
 				<posx>440</posx>
 				<posy>310</posy>
 				<width>840</width>
-				<height>114</height>
+				<height>76</height>
 				<onup>12</onup>
 				<onleft>9000</onleft>
 				<onright>noop</onright>
@@ -208,18 +208,18 @@
 			<control type="label">
 				<description>header label</description>
 				<posx>460</posx>
-				<posy>443</posy>
+				<posy>405</posy>
 				<width>810</width>
 				<height>38</height>
 				<font>METF_TitleTextLarge</font>
 				<textcolor>SettingsTitle</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[559] $LOCALIZE[33063]:</label>
+				<label>$LOCALIZE[559] $LOCALIZE[33063]</label>
 			</control>
 			<control type="spincontrolex" id="16">
 				<posx>440</posx>
-				<posy>500</posy>
+				<posy>462</posy>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[21424]</label>
 				<onright>16</onright>
@@ -229,7 +229,7 @@
 			</control>
 			<control type="spincontrolex" id="17">
 				<posx>440</posx>
-				<posy>538</posy>
+				<posy>500</posy>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[21427]</label>
 				<onright>17</onright>
@@ -239,17 +239,17 @@
 			</control>
 			<control type="spincontrolex" id="18">
 				<posx>440</posx>
-				<posy>576</posy>
+				<posy>538</posy>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[21429]</label>
 				<onright>19</onright>
 				<onleft>19</onleft>
 				<onup>17</onup>
-				<ondown>22</ondown>
+				<ondown>23</ondown>
 			</control>
 			<control type="togglebutton" id="19">
 				<posx>440</posx>
-				<posy>576</posy>
+				<posy>538</posy>
 				<width>840</width>
 				<align>center</align>
 				<include>SettingsLabel</include>
@@ -258,6 +258,33 @@
 				<onright>18</onright>
 				<onleft>18</onleft>
 				<onup>17</onup>
+				<ondown>23</ondown>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>ButtonFo.png</texturefocus>
+				<alttexturenofocus>-</alttexturenofocus>
+				<alttexturefocus>ButtonFo.png</alttexturefocus>
+			</control>
+			<control type="spincontrolex" id="23">
+				<posx>440</posx>
+				<posy>576</posy>
+				<include>SettingsLabel</include>
+				<label>$LOCALIZE[21458]</label>
+				<onright>24</onright>
+				<onleft>24</onleft>
+				<onup>18</onup>
+				<ondown>22</ondown>
+			</control>
+			<control type="togglebutton" id="24">
+				<posx>440</posx>
+				<posy>576</posy>
+				<width>840</width>
+				<align>center</align>
+				<include>SettingsLabel</include>
+				<label>$LOCALIZE[21459]</label>
+				<altlabel>$LOCALIZE[31471]</altlabel>
+				<onright>23</onright>
+				<onleft>23</onleft>
+				<onup>18</onup>
 				<ondown>22</ondown>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>ButtonFo.png</texturefocus>
