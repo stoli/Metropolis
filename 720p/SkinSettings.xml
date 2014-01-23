@@ -3856,7 +3856,7 @@
 					<control type="button" id="704">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, landscape, clearart, clearlogo, characterart)</onclick>
+						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, seasonposter, landscape, clearart, clearlogo, characterart)</onclick>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
 					<control type="radiobutton" id="705">
