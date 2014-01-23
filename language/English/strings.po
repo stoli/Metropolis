@@ -929,10 +929,18 @@ msgid "Prefer ClearLogo to ClearArt"
 msgstr ""
 
 msgctxt "#31471"
+msgid "Show Status"
+msgstr ""
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#31473"
 msgid "unmixed"
 msgstr ""
 
-#empty strings from id 31472 to 31599
+#empty strings from id 31474 to 31599
 #PVR Resources
 
 msgctxt "#31600"

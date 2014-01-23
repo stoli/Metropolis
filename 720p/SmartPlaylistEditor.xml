@@ -282,7 +282,7 @@
 				<align>center</align>
 				<include>SettingsLabel</include>
 				<label>$LOCALIZE[21459]</label>
-				<altlabel>$LOCALIZE[31471]</altlabel>
+				<altlabel>$LOCALIZE[31473]</altlabel>
 				<onright>23</onright>
 				<onleft>23</onleft>
 				<onup>18</onup>
