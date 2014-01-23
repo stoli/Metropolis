@@ -229,8 +229,9 @@
 			<include>Global_NextAired</include>
 			<posx>0</posx>
 			<posy>-7</posy>
-			<!--<include>Window_OpenClose_Animation</include>-->
-			<visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + [Container.Content(TVShows) | Container.Content(Seasons) | [Container.Content(Episodes)]] + !IsEmpty(ListItem.TVShowTitle) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="fade" start="0" end="100" time="0" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="label">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -241,6 +242,7 @@
 				<font>font-20</font>
 				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
 			</control>
+			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 		</control>
 	</include>
 	<!-- SortLetter popup when scrolling through lists quickly -->

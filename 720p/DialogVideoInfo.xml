@@ -148,12 +148,13 @@
 			<control type="group">
 				<posx>550</posx>
 				<posy>225</posy>
-				<visible>!Control.IsVisible(50)</visible>
+				<visible>!Control.IsVisible(50) + [![Container.Content(tvshows) | Container.Content(seasons)] | !Skin.HasSetting(NextAired)]</visible>
 				<!-- Director -->
 				<control type="label">
 					<posx>0</posx>
 					<posy>76</posy>
 					<width>340</width>
+					<height>24</height>
 					<font>METF_InfoText</font>
 					<textcolor>MediaDetailsInfo</textcolor>
 					<align>center</align>
@@ -164,17 +165,52 @@
 					<posx>0</posx>
 					<posy>99</posy>
 					<width>340</width>
+					<height>24</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
 					<label fallback="161">$INFO[ListItem.Director]</label>
 				</control>
+			</control>
+			<control type="group">
+				<posx>550</posx>
+				<posy>225</posy>
+				<visible>!Control.IsVisible(50) + [Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(NextAired)</visible>
+				<!-- TV Show Status -->
+				<control type="label">
+					<posx>0</posx>
+					<posy>76</posy>
+					<width>340</width>
+					<height>24</height>
+					<font>METF_InfoText</font>
+					<textcolor>MediaDetailsInfo</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31471]</label>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>99</posy>
+					<width>340</width>
+					<height>24</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>METF_PlotText</font>
+					<textcolor>TextNF</textcolor>
+					<label>$VAR[TVShowStatus]</label>
+				</control>
+			</control>
+			<control type="group">
+				<posx>550</posx>
+				<posy>353</posy>
+				<visible>!Control.IsVisible(50)</visible>
 				<!-- Cast -->
 				<control type="label">
 					<posx>0</posx>
-					<posy>128</posy>
+					<posy>0</posy>
 					<width>340</width>
+					<height>24</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>METF_InfoText</font>
@@ -183,9 +219,9 @@
 				</control>
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>138</posy>
+					<posy>20</posy>
 					<width>340</width>
-					<height>143</height>
+					<height>140</height>
 					<align>center</align>
 					<font>METF_PlotText</font>
 					<textcolor>TextNF</textcolor>
@@ -194,7 +230,7 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>288</posy>
+					<posy>160</posy>
 					<width>340</width>
 					<height>25</height>
 					<align>center</align>

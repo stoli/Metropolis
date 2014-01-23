@@ -192,4 +192,8 @@
 		<value condition="IsEmpty(VideoPlayer.Year) + [!IsEmpty(VideoPlayer.Artist) | !IsEmpty(VideoPlayer.Album)] + VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album]</value>
 		<value condition="!IsEmpty(VideoPlayer.Tagline) + !VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Tagline]</value>
 	</variable>
+	<variable name="TVShowStatus">
+		<value condition="!IsEmpty(Window(Home).Property(NextAired.Label))">$INFO[Window(Home).Property(NextAired.Status)]</value>
+		<value>$LOCALIZE[31472]</value>
+	</variable>
 </includes>

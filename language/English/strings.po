@@ -928,7 +928,15 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr ""
 
-#empty strings from id 31471 to 31599
+msgctxt "#31471"
+msgid "Show Status"
+msgstr ""
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr ""
+
+#empty strings from id 31473 to 31599
 #PVR Resources
 
 msgctxt "#31600"
