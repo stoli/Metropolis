@@ -4,7 +4,7 @@
 	<controls>
 		<control type="button" id="410">
 			<onfocus>Dialog.Close(FullscreenInfo)</onfocus>
-			<onfocus>SetFocus(121)</onfocus>
+			<onfocus>SetFocus(800)</onfocus>
 		</control>
 
 		<control type="group">
