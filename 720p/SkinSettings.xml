@@ -3936,6 +3936,13 @@
 						<onclick>XBMC.ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
+					<control type="radiobutton" id="805">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31474]</label>
+						<onclick>Skin.ToggleSetting(OneButtonSubtitles)</onclick>
+						<onclick>XBMC.ReloadSkin()</onclick>
+						<selected>Skin.HasSetting(OneButtonSubtitles)</selected>
+					</control>
 				</control>
 				<!-- Music Settings -->
 				<control type="grouplist" id="9009">

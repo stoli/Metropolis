@@ -940,7 +940,11 @@ msgctxt "#31473"
 msgid "unmixed"
 msgstr ""
 
-#empty strings from id 31474 to 31599
+msgctxt "#31474"
+msgid "Use one button to turn subtitles on/off"
+msgstr ""
+
+#empty strings from id 31475 to 31599
 #PVR Resources
 
 msgctxt "#31600"

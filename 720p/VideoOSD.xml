@@ -4,7 +4,7 @@
 	<controls>
 		<control type="button" id="410">
 			<onfocus>Dialog.Close(FullscreenInfo)</onfocus>
-			<onfocus>SetFocus(4)</onfocus>
+			<onfocus>SetFocus(121)</onfocus>
 		</control>
 
 		<control type="group">
@@ -52,7 +52,7 @@
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
 					<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
-					<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
+					<visible>!Skin.HasSetting(OneButtonSubtitles) + IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="button" id="17">
 					<description>OSD Subtitles</description>
@@ -63,7 +63,29 @@
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
 					<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
-					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
+					<visible>!Skin.HasSetting(OneButtonSubtitles) + !IsEmpty(Skin.String(SubtitlesPath))</visible>
+				</control>
+				<control type="button" id="15">
+					<description>One Button OSD Subtitles</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
+					<onclick>Close</onclick>
+					<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
+					<visible>Skin.HasSetting(OneButtonSubtitles) + !VideoPlayer.HasSubtitles</visible>
+				</control>
+				<control type="button" id="16">
+					<description>One Button OSD Subtitles</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
+					<onclick>Close</onclick>
+					<onclick>ShowSubtitles</onclick>
+					<visible>Skin.HasSetting(OneButtonSubtitles) + VideoPlayer.HasSubtitles</visible>
 				</control>
 				<control type="button" id="7">
 					<description>DVD Menu</description>
