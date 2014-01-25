@@ -85,7 +85,17 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Watched Overlay for In-Progress Items in Video Library -->
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>circle/$INFO[ListItem.PercentPlayed].png</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
 					<control type="label">
@@ -259,7 +269,17 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Watched Overlay for In-Progress Items in Video Library -->
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>circle/$INFO[ListItem.PercentPlayed].png</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
 					<control type="label">
