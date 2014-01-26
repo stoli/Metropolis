@@ -4,7 +4,10 @@
 	<controls>
 		<control type="button" id="410">
 			<onfocus>Dialog.Close(FullscreenInfo)</onfocus>
-			<onfocus>SetFocus(800)</onfocus>
+			<onfocus condition="!Skin.HasSetting(OneButtonSubtitles) + IsEmpty(Skin.String(SubtitlesPath))">SetFocus(800)</onfocus>
+			<onfocus condition="!Skin.HasSetting(OneButtonSubtitles) + !IsEmpty(Skin.String(SubtitlesPath))">SetFocus(800)</onfocus>
+			<onfocus condition="Skin.HasSetting(OneButtonSubtitles) + !VideoPlayer.HasSubtitles">SetFocus(15)</onfocus>
+			<onfocus condition="Skin.HasSetting(OneButtonSubtitles) + VideoPlayer.HasSubtitles">SetFocus(16)</onfocus>
 		</control>
 
 		<control type="group">
@@ -83,7 +86,7 @@
 					<width>60</width>
 					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
-					<onclick>Close</onclick>
+					<onclick>Dialog.Close(VideoOSD,true)</onclick>
 					<onclick>ShowSubtitles</onclick>
 					<visible>Skin.HasSetting(OneButtonSubtitles) + VideoPlayer.HasSubtitles</visible>
 				</control>
