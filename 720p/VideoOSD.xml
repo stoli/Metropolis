@@ -79,6 +79,7 @@
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(SubtitleSearch)</onclick>
 					<visible>Skin.HasSetting(OneButtonSubtitles) + !VideoPlayer.HasSubtitles</visible>
 				</control>
 				<control type="button" id="16">
