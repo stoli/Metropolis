@@ -702,7 +702,9 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr ""
 
-#empty string with id 31413
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Local subtitle available"
 
 msgctxt "#31414"
 msgid "Gallery"
