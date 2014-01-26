@@ -54,7 +54,8 @@
 					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
-					<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
+					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(SubtitleSearch)</onclick>
 					<visible>!Skin.HasSetting(OneButtonSubtitles) + IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="button" id="17">
@@ -65,7 +66,8 @@
 					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
-					<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
+					<onclick>Dialog.Close(VideoOSD)</onclick>
+					<onclick>ActivateWindow(SubtitleSearch)</onclick>
 					<visible>!Skin.HasSetting(OneButtonSubtitles) + !IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="button" id="15">
@@ -76,7 +78,7 @@
 					<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
 					<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 					<onclick>Close</onclick>
-					<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
+					<onclick>Dialog.Close(VideoOSD)</onclick>
 					<visible>Skin.HasSetting(OneButtonSubtitles) + !VideoPlayer.HasSubtitles</visible>
 				</control>
 				<control type="button" id="16">
