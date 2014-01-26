@@ -152,6 +152,7 @@ msgstr ""
 
 #empty strings from id 31134 to 31158
 
+
 msgctxt "#31159"
 msgid "ffx2"
 msgstr ""
@@ -254,7 +255,11 @@ msgctxt "#31220"
 msgid "Set up TV display. Includes TV channels management options, recordings and tv guide display options."
 msgstr ""
 
-#empty strings from id 31221 to 31243
+msgctxt "#31221"
+msgid "Settings level"
+msgstr "Settings level"
+
+#empty strings from id 31222 to 31243
 
 msgctxt "#31244"
 msgid "Playing"

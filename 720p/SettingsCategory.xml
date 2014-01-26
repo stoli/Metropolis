@@ -23,8 +23,45 @@
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
-				<ondown>3</ondown>
+				<ondown>20</ondown>
 				<orientation>vertical</orientation>
+			</control>
+			<control type="button" id="20">
+				<description>Setting level button</description>
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_OpenCloseFade</include>
+				<include>Animation_CommonFadeNoHide</include>
+				<left>00</left>
+				<top>576</top>
+				<height>50</height>
+				<width>260</width>
+				<label>10037</label>
+				<textoffsetx>10</textoffsetx>
+				<textoffsety>20</textoffsety>
+				<align>right</align>
+				<aligny>bottom</aligny>
+				<font>METF_TitleTextMedium</font>
+				<textcolor>SettingsDetail</textcolor>
+				<focusedcolor>DialogTextFO</focusedcolor>
+				<texturefocus>ButtonFo.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>false</pulseonselect>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onclick>SettingsLevelChange</onclick>
+			</control>
+			<control type="label">
+				<left>00</left>
+				<top>576</top>
+				<height>50</height>
+				<width>250</width> 
+				<label>31221</label> 
+				<font>METF_PlotTextSmall</font>
+				<textcolor>SettingsDetail</textcolor>
+				<align>right</align> 
+				<aligny>top</aligny>
 			</control>
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
