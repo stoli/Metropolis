@@ -59,8 +59,8 @@
 					<font>font30_title</font>
 					<align>right</align>
 					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>White</textcolor>
+					<shadowcolor>Black</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Video label</description>
@@ -72,8 +72,8 @@
 					<label>$INFO[Player.Filename]</label>
 					<align>right</align>
 					<aligny>center</aligny>
-					<textcolor>grey</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>Grey</textcolor>
+					<shadowcolor>Black</shadowcolor>
 				</control>
 				<control type="image">
 					<left>30</left>
@@ -97,7 +97,7 @@
 					<width>780</width>
 					<height>40</height>
 					<font>font13</font>
-					<textcolor>white</textcolor>
+					<textcolor>White</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -145,7 +145,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
@@ -173,7 +173,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label2</info>
@@ -216,7 +216,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
@@ -244,7 +244,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label2</info>
@@ -268,7 +268,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<subtype>page</subtype>
-					<textcolor>white</textcolor>
+					<textcolor>White</textcolor>
 					<onleft>120</onleft>
 					<onright>120</onright>
 					<ondown>120</ondown>
@@ -300,7 +300,7 @@
 							<width min="10" max="260">auto</width>
 							<height>40</height>
 							<font>font13</font>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<label>31413</label>
 							<aligny>center</aligny>
 							<wrapmultiline>true</wrapmultiline>
@@ -330,12 +330,12 @@
 					<top>150</top>
 					<width>240</width>
 					<height>26</height>
-					<label>[B]$Name[/B]</label>
+					<label>[B]$LOCALIZE[24018][/B]</label>
 					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>blue</textcolor>
-					<shadowcolor>black</shadowcolor>
+					<textcolor>Blue</textcolor>
+					<shadowcolor>Black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="image">
@@ -372,7 +372,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
@@ -401,7 +401,7 @@
 							<height>38</height>
 							<font>font18</font>
 							<aligny>center</aligny>
-							<textcolor>white</textcolor>
+							<textcolor>White</textcolor>
 							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
@@ -418,10 +418,10 @@
 					<onright>120</onright>
 					<onup>150</onup>
 					<ondown>150</ondown>
-					<label>Manual search</label>
-					<font>font12_title</font>
-					<textcolor>white</textcolor>
-					<focusedcolor>white</focusedcolor>
+					<label>$LOCALIZE[24120]</label>
+					<font>METF_TitleText</font>
+					<textcolor>White</textcolor>
+					<focusedcolor>White</focusedcolor>
 					<align>center</align>
 				</control>
 			</control>
