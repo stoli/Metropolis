@@ -5,6 +5,7 @@
 	<color name="White">FFFFFFFF</color>
 	<color name="Red">FFFF0000</color>
 	<color name="Blue">FF0000FF</color>
+	<color name="Grey">50000000</color>
 
 	<!-- Metropolis Leather Colors -->
 	<!-- Global Colors -->

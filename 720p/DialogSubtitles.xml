@@ -146,7 +146,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -174,7 +174,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label2</info>
 						</control>
@@ -217,7 +217,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -245,7 +245,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label2</info>
 						</control>
@@ -330,7 +330,7 @@
 					<top>150</top>
 					<width>240</width>
 					<height>26</height>
-					<label>[B]$LOCALIZE[24018][/B]</label>
+					<label>[B]$Name[/B]</label>
 					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
@@ -373,7 +373,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -402,7 +402,7 @@
 							<font>font18</font>
 							<aligny>center</aligny>
 							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<selectedcolor>DialogTextFO</selectedcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
@@ -418,7 +418,7 @@
 					<onright>120</onright>
 					<onup>150</onup>
 					<ondown>150</ondown>
-					<label>$LOCALIZE[24120]</label>
+					<label>Manual search</label>
 					<font>font12_title</font>
 					<textcolor>white</textcolor>
 					<focusedcolor>white</focusedcolor>
