@@ -3940,7 +3940,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31474]</label>
 						<onclick>Skin.ToggleSetting(OneButtonSubtitles)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+				<!--		<onclick>XBMC.ReloadSkin()</onclick>   -->
 						<selected>Skin.HasSetting(OneButtonSubtitles)</selected>
 					</control>
 				</control>
