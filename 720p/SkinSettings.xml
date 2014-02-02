@@ -3833,7 +3833,7 @@
 					<posy>0</posy>
 					<width>840</width>
 					<height>718</height>
-					<itemgap>5</itemgap>
+					<itemgap>1</itemgap>
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
