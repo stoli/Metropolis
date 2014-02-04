@@ -96,6 +96,15 @@
 		<aligny>center</aligny>
 		<include>Animation_HiddenByInfo</include>
 	</include>
+	<include name="Global_HeadingLevelVars">
+		<width>1220</width>
+		<height>30</height>
+		<font>METF_Heading</font>
+		<textcolor>GlobalHeading</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<include>Animation_HiddenByInfo</include>
+	</include>
 	<include name="Global_HeadingDetailVars">
 		<posx>1220</posx>
 		<width>450</width>
@@ -799,6 +808,17 @@
 				<description>Settings</description>
 				<label>$LOCALIZE[5]</label>
 				<include>Global_HeadingSectionVars</include>
+			</control>
+			<control type="button" id="20">
+				<description>Settings Level</description>
+				<include>Global_HeadingLevelVars</include>
+				<label>10037</label>
+				<focusedcolor>DialogTextFO</focusedcolor>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onclick>SettingsLevelChange</onclick>
 			</control>
 			<control type="label">
 				<description>Settings Menu</description>

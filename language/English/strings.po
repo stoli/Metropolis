@@ -254,11 +254,7 @@ msgctxt "#31220"
 msgid "Set up TV display. Includes TV channels management options, recordings and tv guide display options."
 msgstr ""
 
-msgctxt "#31221"
-msgid "Settings Level"
-msgstr "Settings Level"
-
-#empty strings from id 31222 to 31243
+#empty strings from id 31221 to 31243
 
 msgctxt "#31244"
 msgid "Playing"
