@@ -3843,56 +3843,49 @@
 						<label2>$INFO[System.AddonTitle(Skin.String(LyricPath))]</label2>
 						<onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="702">
-						<include>SettingsLabel</include>
-						<width>370</width>
-						<label>$LOCALIZE[31320]</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(SubtitlePath))]</label2>
-						<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>
-					</control>
-					<control type="image" id="703">
+					<control type="image" id="702">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="button" id="704">
+					<control type="button" id="703">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
 						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, seasonposter, landscape, clearart, clearlogo, characterart)</onclick>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="radiobutton" id="705">
+					<control type="radiobutton" id="704">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31410]</label>
 						<onclick>Skin.ToggleSetting(ViewPreferLandscape)</onclick>
 						<selected>Skin.HasSetting(ViewPreferLandscape)</selected>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="radiobutton" id="706">
+					<control type="radiobutton" id="705">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31470]</label>
 						<onclick>Skin.ToggleSetting(ViewPreferClearLogo)</onclick>
 						<selected>Skin.HasSetting(ViewPreferClearLogo)</selected>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="706">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31421]</label>
 						<onclick>Skin.ToggleSetting(Enable_OSDClearArt)</onclick>
 						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="image" id="708">
+					<control type="image" id="707">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.tv.show.next.aired) | System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="709">
+					<control type="radiobutton" id="708">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31426]</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="710">
+					<control type="radiobutton" id="709">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31437]</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>

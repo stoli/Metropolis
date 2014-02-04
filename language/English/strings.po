@@ -372,9 +372,7 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr ""
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr ""
+#empty string with id 31320
 
 #empty string with id 31321
 
