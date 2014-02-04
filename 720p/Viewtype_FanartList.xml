@@ -54,7 +54,17 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>!ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Watched Overlay for In-Progress Items -->
+					<control type="image">
+						<posx>-2</posx>
+						<posy>0</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>flags/Progress/$INFO[ListItem.PercentPlayed].png</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="600" height="35">
@@ -95,7 +105,17 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<visible>!ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					</control>
+					<!-- Watched Overlay for In-Progress Items -->
+					<control type="image">
+						<posx>-2</posx>
+						<posy>0</posy>
+						<width>35</width>
+						<height>35</height>
+						<texture>flags/Progress/$INFO[ListItem.PercentPlayed].png</texture>
+						<colordiffuse>WatchedOverlay</colordiffuse>
+						<visible>ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
 				</focusedlayout>
 			</control>

@@ -68,7 +68,7 @@
 						<height>32</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!Skin.HasSetting(HideTVWatchedOverlays)</visible>
+						<visible>!ListItem.IsResumable + !Skin.HasSetting(HideTVWatchedOverlays)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="600" height="120">
