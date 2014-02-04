@@ -138,7 +138,7 @@
 							<top>5</top>
 							<width>26</width>
 							<height>26</height>
-							<texture>subtitles/flags/$INFO[ListItem.Thumb].png</texture>
+							<texture>flags/Subtitles/$INFO[ListItem.Thumb].png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
@@ -211,7 +211,7 @@
 							<top>5</top>
 							<width>26</width>
 							<height>26</height>
-							<texture>subtitles/flags/$INFO[ListItem.Thumb].png</texture>
+							<texture>flags/Subtitles/$INFO[ListItem.Thumb].png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>

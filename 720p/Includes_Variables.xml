@@ -20,7 +20,7 @@
 		<value condition="Control.HasFocus(181)">$INFO[Container(181).ListItem.Property(Fanart_Image)]</value>
 	</variable>	
 
-	<variable name="value_ratingcolor">
+	<variable name="RatingColor">
 		<value condition="!SubString(ListItem.Votes,$COMMA)">FFFF0000</value>
 		<value condition="SubString(ListItem.Votes,1$COMMA,Left)">FFFF5555</value>
 		<value condition="SubString(ListItem.Votes,2$COMMA,Left)">FFFFFF00</value>

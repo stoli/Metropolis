@@ -373,7 +373,7 @@
 							<width>20</width>
 							<height>20</height>
 							<texture>Star.png</texture>
-							<colordiffuse>$VAR[value_ratingcolor]</colordiffuse>
+							<colordiffuse>$VAR[RatingColor]</colordiffuse>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
 					</control>

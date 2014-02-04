@@ -1399,7 +1399,7 @@
 	<!-- OSD default -->
 	<include name="OSDdiffuse">
 		<colordiffuse>SubmenuTextFocused</colordiffuse>
-	</include>	
+	</include>
 	<include name="OSD_Player_Banner">
 		<control type="group">
 			<posx>0</posx>

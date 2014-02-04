@@ -3825,15 +3825,14 @@
 						<textcolor>ButtonText</textcolor>
 					</control>
 				</control>
-
 				<!-- Scripts/Extras -->
 				<control type="grouplist" id="9006">
 					<visible>Container(9000).Hasfocus(6)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>840</width>
-					<height>718</height>
-					<itemgap>1</itemgap>
+					<height>418</height>
+					<itemgap>0</itemgap>
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -3900,161 +3899,7 @@
 						<selected>Skin.HasSetting(TvTunes)</selected>
 						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
-					
-			<!--  OSD selection menu   -->
-					<control type="image" id="711">
-						<include>Settings_Line</include>
-					</control>
-					<control type="label" id="716">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>775</width>
-						<height>30</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<include>SettingsLabel</include>
-						<label>Set default OSD menu position: (Currently selected button is tinted)</label>
-					</control>
-					<control type="grouplist" id="725">
-					<left>0</left>
-					<top>0</top>
-						<width>775</width>
-						<height>70</height>
-						<itemgap>0</itemgap>
-						<orientation>horizontal</orientation>
-						<onleft>9000</onleft>
-						<onright>9000</onright>
-						<onup>9006</onup>
-						<ondown>9006</ondown>
-							<control type="image" id="726">
-								<height>60</height>
-								<width>60</width>
-								<texture>blank.png</texture>
-							</control>
-							<control type="button" id="712">
-								<description>Playlists</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_playlist_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_playlist_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),711)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,711)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="713">
-								<description>Bookmarks</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_book_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_book_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),712)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,712)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="714">
-								<description>OSD Subtitles</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_sub_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),714)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,714)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="717">
-								<description>Previous</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_prev_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_prev_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),79)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,79)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="718">
-								<description>Rewind</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_rew_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_rew_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),73)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,73)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="719">
-								<description>Stop</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_stop_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_stop_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),75)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,75)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="720">
-								<description>Play</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_pause_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_pause_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),74)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,74)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="721">
-								<description>Forward</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_ff_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_ff_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),76)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,76)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="722">
-								<description>Next</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_next_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_next_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),710)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,710)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="723">
-								<description>Video Settings</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_settings_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_settings_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),713)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,713)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-							<control type="button" id="724">
-								<description>Audio Settings</description>
-								<include>Animation_ButtonFocus</include>
-								<height>60</height>
-								<width>60</width>
-								<texturefocus colordiffuse="DialogTextFO">osd/osd_button_audio_fo.png</texturefocus>
-								<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
-								<include condition="SubString(Skin.String(DefaultOSD),800)">OSDdiffuse</include>
-								<onclick>Skin.SetString(DefaultOSD,800)</onclick>
-								<onclick>XBMC.ReloadSkin()</onclick>
-							</control>
-					</control>	
 				</control>
-				
 				<!-- Video Settings -->
 				<control type="grouplist" id="9011">
 					<visible>Container(9000).Hasfocus(7)</visible>
@@ -4098,6 +3943,156 @@
 						<onclick>Skin.SetString(DefaultOSD,714)</onclick>
 						<onclick>XBMC.ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(OneButtonSubtitles)</selected>
+					</control>
+					<control type="label" id="806">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31475]</label>
+						<visible>!Skin.HasSetting(OneButtonSubtitles)</visible>
+					</control>
+					<control type="grouplist" id="807">
+						<left>0</left>
+						<top>0</top>
+						<width>775</width>
+						<height>70</height>
+						<itemgap>0</itemgap>
+						<orientation>horizontal</orientation>
+						<onleft>9000</onleft>
+						<onright>9000</onright>
+						<onup>9006</onup>
+						<ondown>9006</ondown>
+						<visible>!Skin.HasSetting(OneButtonSubtitles)</visible>
+						<control type="image" id="808">
+							<height>60</height>
+							<width>60</width>
+							<texture>blank.png</texture>
+						</control>
+						<control type="button" id="809">
+							<description>Playlists</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_playlist_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_playlist_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),711)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,711)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="810">
+							<description>Bookmarks</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_book_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_book_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),712)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,712)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="811">
+							<description>OSD Subtitles</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_sub_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),714)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,714)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="812">
+							<description>Previous</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_prev_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_prev_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),79)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,79)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="813">
+							<description>Rewind</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_rew_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_rew_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),73)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,73)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="814">
+							<description>Stop</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_stop_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_stop_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),75)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,75)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="815">
+							<description>Play</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_pause_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_pause_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),74)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,74)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="816">
+							<description>Forward</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_ff_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_ff_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),76)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,76)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="817">
+							<description>Next</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_next_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_next_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),710)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,710)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="818">
+							<description>Video Settings</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_settings_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_settings_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),713)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,713)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="819">
+							<description>Audio Settings</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_audio_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),800)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,800)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
 					</control>
 				</control>
 				<!-- Music Settings -->
