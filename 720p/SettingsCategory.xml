@@ -28,10 +28,10 @@
 			</control>
 			<control type="button" id="20">
 				<description>Setting level button</description>
-				<include>Animation_FadedByMenu</include>  
+				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_CommonFadeNoHide</include>
- 				<left>00</left>
+				<left>00</left>
 				<top>576</top>
 				<height>50</height>
 				<width>260</width>
