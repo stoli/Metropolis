@@ -2130,6 +2130,14 @@
 						<onclick>Skin.ToggleSetting(NoWeather)</onclick>
 						<selected>Skin.HasSetting(NoWeather)</selected>
 					</control>
+					<control type="radiobutton" id="1742">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31711]</label>
+						<visible>!Skin.HasSetting(NoWeather)</visible>
+						<onclick>Skin.ToggleSetting(HomeWeather)</onclick>
+						<selected>Skin.HasSetting(HomeWeather)</selected>
+					</control>
 
 					<!-- Settings item (1771-1800) -->
 					<control type="radiobutton" id="1771">
@@ -3891,6 +3899,17 @@
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
 						<selected>Skin.HasSetting(TvTunes)</selected>
 						<visible>System.HasAddon(script.tvtunes)</visible>
+					</control>
+					<control type="image" id="711">
+						<include>Settings_Line</include>
+						<visible>System.HasAddon(weather.wunderground)</visible>
+					</control>
+					<control type="radiobutton" id="712">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31710]</label>
+						<onclick>Skin.ToggleSetting(UseExtendedWeather)</onclick>
+						<selected>Skin.HasSetting(UseExtendedWeather)</selected>
+						<visible>System.HasAddon(weather.wunderground)</visible>
 					</control>
 				</control>
 				<!-- Video Settings -->

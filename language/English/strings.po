@@ -982,3 +982,53 @@ msgstr ""
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr ""
+
+#empty strings from id 31611 to 31699
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr ""
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr ""
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr ""
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr ""
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr ""
+
+msgctxt "#31705"
+msgid "Average"
+msgstr ""
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr ""
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr ""
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr ""
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr ""
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr ""
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr ""

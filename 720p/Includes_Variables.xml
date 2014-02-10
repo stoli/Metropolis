@@ -50,6 +50,198 @@
 		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Day3.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
 		<value>$INFO[Window(Weather).Property(Day3.FanartCode),special://skin/extras/weather_icons/,.png]</value>
 	</variable>
+	<variable name="Weather_Icons_Day4">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Day4.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Day4.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Day5">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Day5.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Day5.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Day6">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Day6.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Day6.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour1">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.1.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.1.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour2">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.2.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.2.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour3">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.3.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.3.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour4">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.4.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.4.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour5">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.5.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.5.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour6">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.6.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.6.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour7">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.7.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.7.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour8">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.8.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.8.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour9">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.9.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.9.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour10">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.10.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.10.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour11">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.11.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.11.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour12">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.12.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.12.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour13">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.13.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.13.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour14">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.14.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.14.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour15">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.15.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.15.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour16">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.16.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.16.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour17">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.17.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.17.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour18">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.18.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.18.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour19">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.19.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.19.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour20">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.20.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.20.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour21">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.21.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.21.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour22">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.22.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.22.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour23">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.23.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.23.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour24">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.24.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.24.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour25">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.25.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.25.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour26">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.26.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.26.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour27">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.27.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.27.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour28">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.28.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.28.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour29">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.29.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.29.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour30">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.30.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.30.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour31">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.31.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.31.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour32">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.32.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.32.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour33">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.33.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.33.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour34">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.34.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.34.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour35">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.35.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.35.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Hour36">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Hourly.36.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Hourly.36.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_36Hr1">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(36Hour.1.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(36Hour.1.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_36Hr2">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(36Hour.2.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(36Hour.2.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_36Hr3">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(36Hour.3.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(36Hour.3.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Weekend1">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Weekend.1.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Weekend.1.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<variable name="Weather_Icons_Weekend2">
+		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Weekend.2.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
+		<value>$INFO[Window(Weather).Property(Weekend.2.FanartCode),special://skin/extras/weather_icons/,.png]</value>
+	</variable>
+	<constant name="WeatherHomeLeft">325</constant>
+	<constant name="WeatherHomeTop">555</constant>
+	<constant name="WeatherHomeHeight">160</constant>
+	<constant name="WeatherHomeWidth">150</constant>
+	<constant name="WeatherPanelLeft">210</constant>
+	<constant name="Weather7DayWidth">147</constant>
+	<constant name="Weather7DayHeight">485</constant>
+	<constant name="Weather12HourWidth">172</constant>
+	<constant name="Weather12HourHeight">235</constant>
+	<constant name="Weather36HourPanelLeft">300</constant>
+	<constant name="Weather36HourWidth">103</constant>
+	<constant name="Weather36HourHeight">120</constant>
+	<constant name="WeatherWeekendWidth">525</constant>
+	<constant name="WeatherWeekendHeight">485</constant>
+	<constant name="WeatherMapHeight">490</constant>
+	<constant name="WeatherMapWidth">1080</constant>
 	<variable name="PlotBox_Text">
 		<!-- Videos -->
 		<value condition="[Container.Content(Movies) + [!Skin.HasSetting(Show_PlotOutline) | IsEmpty(ListItem.PlotOutline)]] | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)">$INFO[ListItem.Plot]</value>

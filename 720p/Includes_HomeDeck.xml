@@ -648,6 +648,379 @@
 						</content>
 					</control>
 				</control>
+				<!-- 7 Day Forecast -->
+				<control type="grouplist">
+					<visible>Container(9000).HasFocus(7)</visible>
+					<visible>Skin.HasSetting(HomeWeather)</visible>
+					<top>WeatherHomeTop</top>
+					<!--left>WeatherHomeLeft</left-->
+					<left>0</left>
+					<align>center</align>
+					<height>WeatherHomeHeight</height>
+					<orientation>horizontal</orientation>
+					<itemgap>5</itemgap>
+					<!-- Current Day Forecast -->
+					<control type="group">
+						<width>WeatherHomeWidth</width>
+						<control type="image">
+							<posy>0</posy>
+							<texture>WeatherDayBG.png</texture>
+							<colordiffuse>WeatherBGDiffuse</colordiffuse>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<posy>5</posy>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[Weather_Icons_Day0]</texture>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[33006]</label>
+							<posy>35</posy>
+							<align>center</align>
+							<font>METF_WeatherDayName7Day</font>
+							<textcolor>WeatherDay</textcolor>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Daily.1.Outlook)</info>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!SubString(Window(2600).Property(Daily.1.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Daily.1.Outlook)] $INFO[Window(2600).Property(Daily.1.ChancePrecipitation)]</label>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>SubString(Window(2600).Property(Daily.1.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day0.HighTemp)]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day0.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day0.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day0.LowTemp)]</label>
+							<posy>125</posy>>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day0.LowTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>125</posy>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day0.LowTemp))</visible>
+						</control>
+					</control>
+					<!-- Next Day Forecast or One Day From Today -->
+					<control type="group">
+						<width>WeatherHomeWidth</width>
+						<control type="image">
+							<posy>0</posy>
+							<texture>WeatherDayBG.png</texture>
+							<colordiffuse>WeatherBGDiffuse</colordiffuse>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<posy>5</posy>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[Weather_Icons_Day1]</texture>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Day1.Title)</info>
+							<posy>35</posy>
+							<align>center</align>
+							<font>METF_WeatherDayName7Day</font>
+							<textcolor>WeatherDay</textcolor>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Daily.2.Outlook)</info>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!SubString(Window(2600).Property(Daily.2.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Daily.2.Outlook)] $INFO[Window(2600).Property(Daily.2.ChancePrecipitation)]</label>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>SubString(Window(2600).Property(Daily.2.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day1.HighTemp)]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day1.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day1.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day1.LowTemp)]</label>
+							<posy>125</posy>>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day1.LowTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>125</posy>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day1.LowTemp))</visible>
+						</control>
+					</control>
+					<!-- Two Days From Today -->
+					<control type="group">
+						<width>WeatherHomeWidth</width>
+						<control type="image">
+							<posy>0</posy>
+							<texture>WeatherDayBG.png</texture>
+							<colordiffuse>WeatherBGDiffuse</colordiffuse>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<posy>5</posy>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[Weather_Icons_Day2]</texture>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Day2.Title)</info>
+							<posy>35</posy>
+							<align>center</align>
+							<font>METF_WeatherDayName7Day</font>
+							<textcolor>WeatherDay</textcolor>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Daily.3.Outlook)</info>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!SubString(Window(2600).Property(Daily.3.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Daily.3.Outlook)] $INFO[Window(2600).Property(Daily.3.ChancePrecipitation)]</label>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>SubString(Window(2600).Property(Daily.3.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day2.HighTemp)]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day2.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day2.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day2.LowTemp)]</label>
+							<posy>125</posy>>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day2.LowTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>125</posy>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day2.LowTemp))</visible>
+						</control>
+					</control>
+					<!-- Three Days From Today -->
+					<control type="group">
+						<width>WeatherHomeWidth</width>
+						<control type="image">
+							<posy>0</posy>
+							<texture>WeatherDayBG.png</texture>
+							<colordiffuse>WeatherBGDiffuse</colordiffuse>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<posy>5</posy>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[Weather_Icons_Day3]</texture>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Day3.Title)</info>
+							<posy>35</posy>
+							<align>center</align>
+							<font>METF_WeatherDayName7Day</font>
+							<textcolor>WeatherDay</textcolor>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Daily.4.Outlook)</info>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!SubString(Window(2600).Property(Daily.4.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Daily.4.Outlook)] $INFO[Window(2600).Property(Daily.4.ChancePrecipitation)]</label>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>SubString(Window(2600).Property(Daily.4.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day3.HighTemp)]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day3.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day3.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day3.LowTemp)]</label>
+							<posy>125</posy>>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day3.LowTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>125</posy>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day3.LowTemp))</visible>
+						</control>
+					</control>
+					<!-- Four Days From Today -->
+					<control type="group">
+						<visible>Skin.HasSetting(UseExtendedWeather)</visible>
+						<width>WeatherHomeWidth</width>
+						<control type="image">
+							<posy>0</posy>
+							<texture>WeatherDayBG.png</texture>
+							<colordiffuse>WeatherBGDiffuse</colordiffuse>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<posy>5</posy>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[Weather_Icons_Day4]</texture>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Day4.Title)</info>
+							<posy>35</posy>
+							<align>center</align>
+							<font>METF_WeatherDayName7Day</font>
+							<textcolor>WeatherDay</textcolor>
+						</control>
+						<control type="label">
+							<info>Window(2600).Property(Daily.5.Outlook)</info>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>!SubString(Window(2600).Property(Daily.5.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Daily.5.Outlook)] $INFO[Window(2600).Property(Daily.5.ChancePrecipitation)]</label>
+							<posy>60</posy>
+							<font>METF_WeatherOutlookHome</font>
+							<align>center</align>
+							<textcolor>WeatherDetails</textcolor>
+							<wrapmultiline>true</wrapmultiline>
+							<visible>SubString(Window(2600).Property(Daily.5.Outlook),Chance)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day4.HighTemp)]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day4.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>100</posy>
+							<align>center</align>
+							<font>METF_WeatherHighHome</font>
+							<textcolor>WeatherHighTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day4.HighTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[Window(2600).Property(Day4.LowTemp)]</label>
+							<posy>125</posy>>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>!IsEmpty(Window(2600).Property(Day4.LowTemp))</visible>
+						</control>
+						<control type="label">
+							<label>$LOCALIZE[31010]</label>
+							<posy>125</posy>
+							<align>center</align>
+							<font>METF_WeatherLowHome</font>
+							<textcolor>WeatherLowTemp</textcolor>
+							<visible>IsEmpty(Window(2600).Property(Day4.LowTemp))</visible>
+						</control>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>
