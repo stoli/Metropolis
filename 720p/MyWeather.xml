@@ -2049,7 +2049,7 @@
 						<visible>SubString(Window.Property(Hourly.8.Outlook),Chance)</visible>
 					</control>
 					<control type="label">
-						<label>$INFO[Window.Property(Hourly.2.Temperature)]</label>
+						<label>$INFO[Window.Property(Hourly.8.Temperature)]</label>
 						<posy>145</posy>
 						<height>30</height>
 						<align>center</align>
