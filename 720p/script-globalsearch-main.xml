@@ -153,7 +153,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -243,7 +251,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -384,8 +400,17 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
 							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="label">
 							<control type="label">
 								<posx>110</posx>
 								<posy>10</posy>
@@ -442,7 +467,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -549,7 +582,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -598,7 +639,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -695,7 +744,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -753,7 +810,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -860,7 +925,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>
@@ -929,7 +1002,15 @@
 								<height>30</height>
 								<texture>OverlayWatched.png</texture>
 								<colordiffuse>WatchedOverlay</colordiffuse>
-								<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								<visible>!Skin.HasSetting(UnwatchedOverlays) + IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+							</control>
+							<control type="image">
+								<posx>70</posx>
+								<posy>70</posy>
+								<width>30</width>
+								<height>30</height>
+								<texture>OverlayUnwatched.png</texture>
+								<visible>Skin.HasSetting(UnwatchedOverlays) + IntegerEqual(ListItem.Property(PlayCount),0)</visible>
 							</control>
 							<control type="label">
 								<posx>110</posx>

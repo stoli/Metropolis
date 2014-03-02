@@ -88,7 +88,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+						<visible>!Window.IsActive(videolibrary) + [ [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png) ] | [ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayUnwatched.png) ] ]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="535" height="35">
@@ -173,7 +173,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+						<visible>!Window.IsActive(videolibrary) + [ [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png) ] | [ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayUnwatched.png) ] ]</visible>
 					</control>
 				</focusedlayout>
 			</control>

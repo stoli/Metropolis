@@ -85,7 +85,15 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+					<!--
+					show watch/unwatched overlay = 
+						((!hide_watched_movie and is_movie) or (!hide_watched_tv and is_tv)) 
+						and 
+						((show_unwatched and is_unwatched) or (!show_unwatched and is_watched))
+					watched = StringCompare(ListItem.Overlay, OverlayWatched.png)
+					unwatched = StringCompare(ListItem.Overlay, OverlayUnwatched.png)
+					-->
+						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideMovieWatchedOverlays) ] | [[ ![ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideTVWatchedOverlays) ]]] + [[ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayUnwatched.png) ] | [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayWatched.png) ]]</visible>
 					</control>
 					<!-- Watched Overlay for In-Progress Items in Video Library -->
 					<control type="image">
@@ -95,7 +103,7 @@
 						<height>35</height>
 						<texture>flags/Progress/$INFO[ListItem.PercentPlayed].png</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideMovieWatchedOverlays) ] | [[ ![ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideTVWatchedOverlays) ]]] + [[ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayUnwatched.png) ] | [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayWatched.png) ]]</visible>
 					</control>
 					<!-- Items NOT in Video Library -->
 					<control type="label">
@@ -119,7 +127,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+						<visible>!Window.IsActive(videolibrary) + [ [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png) ] | [ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayUnwatched.png) ] ]</visible> 
 					</control>
 					<!-- HD/SD icons -->
 					<control type="image">
@@ -277,7 +285,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
+						<visible>!ListItem.IsResumable + Window.IsActive(videolibrary) + [[[ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideMovieWatchedOverlays) ] | [[ ![ Container.Content(movies) | Container.Content(sets) ] + !Skin.HasSetting(HideTVWatchedOverlays) ]]] + [[ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayUnwatched.png) ] | [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay, OverlayWatched.png) ]]</visible>
 					</control>
 					<!-- Watched Overlay for In-Progress Items in Video Library -->
 					<control type="image">
@@ -314,7 +322,7 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
-						<visible>!Window.IsActive(videolibrary) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+						<visible>!Window.IsActive(videolibrary) + [ [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png) ] | [ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayUnwatched.png) ] ]</visible>
 					</control>
 					<!-- HD/SD icons -->
 					<control type="image">
