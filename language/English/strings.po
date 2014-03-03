@@ -96,7 +96,11 @@ msgctxt "#31035"
 msgid "Show Clean Library SubMenu items"
 msgstr ""
 
-#empty strings from id 31036 to 31053
+msgctxt "#31036"
+msgid "Highlight Unwatched Instead of Watched"
+msgstr ""
+
+#empty strings from id 31037 to 31053
 
 msgctxt "#31054"
 msgid "Logo"
@@ -1032,3 +1036,5 @@ msgstr ""
 msgctxt "#31711"
 msgid "Show weather forecast on home screen"
 msgstr ""
+
+

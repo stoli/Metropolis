@@ -2323,6 +2323,12 @@
 						<onclick>Skin.ToggleSetting(HideTVWatchedOverlays)</onclick>
 						<selected>Skin.HasSetting(HideTVWatchedOverlays)</selected>
 					</control>
+					<control type="radiobutton" id="511"> 
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31036]</label>
+						<onclick>Skin.ToggleSetting(UnwatchedOverlays)</onclick>
+						<selected>Skin.HasSetting(UnwatchedOverlays)</selected>
+					</control>
 					<control type="image" id="503">
 						<include>Settings_Line</include>
 					</control>

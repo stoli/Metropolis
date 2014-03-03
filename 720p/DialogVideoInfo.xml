@@ -94,7 +94,7 @@
 				<font>METF_InfoTextLarger</font>
 				<textcolor>MediaDetailsEpisodes</textcolor>
 				<label>$LOCALIZE[16102]</label>
-				<visible>Container.Content(episodes) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+				<visible>Container.Content(episodes) + [ [ !Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png) ] | [ Skin.HasSetting(UnwatchedOverlays) + StringCompare(ListItem.Overlay,OverlayUnwatched.png) ] ]</visible>
 			</control>
 			<!-- Genre -->
 			<control type="label">
