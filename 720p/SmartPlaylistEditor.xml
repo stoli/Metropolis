@@ -22,6 +22,7 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[21432]</label>
 			</control>
+
 			<control type="button" id="21">
 				<description>Cancel</description>
 				<posx>0</posx>
@@ -32,6 +33,7 @@
 				<onright>22</onright>
 				<onup>20</onup>
 				<ondown>20</ondown>
+				<visible>Control.HasFocus(22) | Control.HasFocus(12) | Control.HasFocus(20) | Control.HasFocus(21)</visible>
 			</control>
 			<control type="button" id="20">
 				<description>Ok</description>
@@ -43,6 +45,7 @@
 				<onright>22</onright>
 				<onup>21</onup>
 				<ondown>21</ondown>
+				<visible>Control.HasFocus(22) | Control.HasFocus(12) | Control.HasFocus(20) | Control.HasFocus(21)</visible>
 			</control>
 			<control type="spincontrolex" id="22">
 				<description>Set Playlist type</description>
@@ -154,6 +157,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<texture>ButtonFo.png</texture>
+				<visible>Control.Hasfocus(10)</visible>
 						<animation effect="fade" start="0" end="100" condition="True">Conditional</animation>
 					</control>
 					<control type="label">
@@ -205,6 +209,7 @@
 					<onright>10</onright>
 					<ondown>13</ondown>
 				</control>
+				<visible>Control.Hasfocus(10) | Control.Hasfocus(13) | Control.Hasfocus(14) | Control.Hasfocus(15)</visible>
 			</control>
 			<control type="label">
 				<description>header label</description>
