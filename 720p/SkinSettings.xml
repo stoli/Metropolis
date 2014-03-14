@@ -2366,6 +2366,12 @@
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
+					<control type="radiobutton" id="511">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31712]</label>
+						<onclick>Skin.ToggleSetting(CropMVGalleryIcon)</onclick>
+						<selected>Skin.HasSetting(CropMVGalleryIcon)</selected>
+					</control>
 				</control>
 				<!-- View Types -->
 				<control type="grouplist" id="9005">

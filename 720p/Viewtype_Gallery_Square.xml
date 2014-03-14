@@ -22,7 +22,7 @@
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>!Skin.HasSetting(NoViewGallerySquare)</visible>
-				<visible>Window.IsActive(pictures) | Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)</visible>
+				<visible>Window.IsActive(pictures) | Window.IsActive(programs) | Window.IsActive(videofiles) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(musicvideos)</visible>
 				<itemlayout width="205" height="205">
 					<control type="image">
 						<posx>25</posx>
@@ -39,7 +39,17 @@
 						<width>155</width>
 						<height>155</height>
 						<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">keep</aspectratio>
+						<visible>Container.Content(musicvideos) + !Skin.HasSetting(CropMVGalleryIcon)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>25</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
+						<visible>!Container.Content(musicvideos) | Skin.HasSetting(CropMVGalleryIcon)</visible>
 					</control>
 					<control type="image">
 						<posx>5</posx>
@@ -69,7 +79,17 @@
 							<width>155</width>
 							<height>155</height>
 							<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio scalediffuse="false">keep</aspectratio>
+						<visible>Container.Content(musicvideos) + !Skin.HasSetting(CropMVGalleryIcon)</visible>
+						</control>
+						<control type="image">
+							<posx>25</posx>
+							<posy>25</posy>
+							<width>155</width>
+							<height>155</height>
+							<texture background="true" fallback="DefaultThumb.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio scalediffuse="false">scale</aspectratio>
+						<visible>!Container.Content(musicvideos) | Skin.HasSetting(CropMVGalleryIcon)</visible>
 						</control>
 						<control type="image">
 							<posx>5</posx>

@@ -1032,3 +1032,7 @@ msgstr ""
 msgctxt "#31711"
 msgid "Show weather forecast on home screen"
 msgstr ""
+
+msgctxt "#31712"
+msgid "Crop Thumbnails in Music Video Gallery View"
+msgstr ""
