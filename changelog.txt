@@ -1,5 +1,12 @@
+2.7.0 - 20140319
+- Update language files from Transifex.
+- Full HD 1080p flag.
+- Add TV Show status to DialogVideoInfo.
+- Run TvTunes script from DialogVideoInfo onload.
+- Include seasonposter in Artwork Downloader link.
+
 2.6.9 - 20130914
-- Update language files from Transifex
+- Update language files from Transifex.
 
 2.6.8 - 20130502
 - Update language files from Transifex.
