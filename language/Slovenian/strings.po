@@ -68,9 +68,17 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Napovedniki"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Na voljo so krajevni podnapisi"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Avtor"
+
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "TV Vodič"
 
 msgctxt "#31441"
 msgid "Hide"
@@ -96,6 +104,10 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Izgled"
 
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Končano"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "TV v živo"
@@ -115,3 +127,11 @@ msgstr "Izbriši skupino"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Načrtovan čas"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36-urna napoved"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Najvišja"

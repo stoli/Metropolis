@@ -36,6 +36,10 @@ msgctxt "#31457"
 msgid "Shortcuts"
 msgstr "Xatcho'plar"
 
+msgctxt "#31468"
+msgid "Services"
+msgstr "Xizmatlar"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "TV"

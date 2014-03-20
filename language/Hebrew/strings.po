@@ -104,6 +104,14 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "כותרות"
 
+msgctxt "#31409"
+msgid "Finish"
+msgstr "סיום"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "כתובית מקומית זמינה"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "גלריה"
@@ -148,6 +156,10 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "מראה"
 
+msgctxt "#31472"
+msgid "Ended"
+msgstr "הסתיימה"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "טלוויזיה חיה"
@@ -167,3 +179,11 @@ msgstr "מחק קבוצה"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "זמן מתוזמן"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "תחזית ל36 שעות"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "מקסימום"

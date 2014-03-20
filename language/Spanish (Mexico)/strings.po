@@ -96,6 +96,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Subtitulo local disponible"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
@@ -136,6 +140,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Apariencia"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Mostrar Estado"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Terminado"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "TV en Vivo"
@@ -155,3 +167,19 @@ msgstr "Borrar Grupo"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Horario Programado"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Pronóstico de 36 Horas"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Presión"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Visibilidad"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Máximo"

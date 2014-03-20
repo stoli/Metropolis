@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Klik om het standaard Lyricsscript te wijzigen"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Klik om het standaard ondertitelscript te wijzigen"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Toon mediatotalen"
@@ -390,7 +386,7 @@ msgstr "Anime, or Japanese animation, covers a much wider range of genres than c
 
 msgctxt "#31349"
 msgid "Biographies are a sub-genre of the larger drama and epic film genres. These films depict the life of an important historical personage (or group) from the past or present era. They cross many genre types, since these films might showcase a western outlaw, a criminal, a musical composer, a religious figure, a war-time hero, an entertainer, an artist, an inventor or doctor, a politician or President, or an adventurer."
-msgstr "Biographies are a sub-genre of the larger drama and epic film genres. These films depict the life of an important historical personage (or group) from the past or present era. They cross many genre types, since these films might showcase a western outlaw, a criminal, a musical composer, a religious figure, a war-time hero, an entertainer, an artist, an inventor or doctor, a politician or President, or an adventurer."
+msgstr "Biografieën zijn een sub-genre van de grotere drama en epische filmgenres. Deze films tonen het leven van een belangrijk historisch persoon (of groep) uit het verleden of huidige tijdperk. Ze doorkruisen vele genretypen. Mogelijk kunnen deze films een westerse uitkomst, een crimineel, een componist, een religieuze figuur, een oorlog-tijd held, een entertainer, een kunstenaar, een uitvinder of arts, een politicus of president, of een misschien een avonturier tonen."
 
 msgctxt "#31350"
 msgid "Bollywood is the informal term popularly used for the Hindi-language film industry based in Mumbai, Maharashtra, India. The term is often incorrectly used to refer to the whole of Indian cinema; it is only a part of the total Indian film industry, which includes several regional film industries sorted by language. Bollywood is the largest film producer in India and one of the largest centers of film production in the world."
@@ -410,7 +406,7 @@ msgstr "Comedies are light-hearted plots consistently and deliberately designed 
 
 msgctxt "#31354"
 msgid "This is a sub-genre of Musical. It includes filmed concerts by either a musical group of individual."
-msgstr "This is a sub-genre of Musical. It includes filmed concerts by either a musical group of individual."
+msgstr "Dit is een Sub-genre van Musical. het omvat gefilmde concerten bij een musicalgroep of een individu."
 
 msgctxt "#31355"
 msgid "Crime films are developed around the sinister actions of criminals or mobsters, particularly bankrobbers, underworld figures, or ruthless hoodlums who operate outside the law, stealing and murdering their way through life. Criminal and gangster films are often categorized as film noir or detective-mystery films - because of underlying similarities between these cinematic forms."
@@ -478,11 +474,11 @@ msgstr "Monster movie (also can be referred to as a creature feature or monster 
 
 msgctxt "#31373"
 msgid "Music genre films will incorporate a lot of music but it will not necessarily be the focal point of the film, thus differentiating it from a Musical."
-msgstr "Music genre films will incorporate a lot of music but it will not necessarily be the focal point of the film, thus differentiating it from a Musical."
+msgstr "Music genre films zal veel muziek bevatten maar zal niet altijd de focus van de film zijn, dit onderscheid het van een musical."
 
 msgctxt "#31374"
 msgid "Musical/dance films are cinematic forms that emphasize full-scale scores or song and dance routines in a significant way (usually with a musical or dance performance integrated as part of the film narrative), or they are films that are centered on combinations of music, dance, song or choreography. Major subgenres include the musical comedy or the concert film."
-msgstr "Musical/dance films are cinematic forms that emphasize full-scale scores or song and dance routines in a significant way (usually with a musical or dance performance integrated as part of the film narrative), or they are films that are centered on combinations of music, dance, song or choreography. Major subgenres include the musical comedy or the concert film."
+msgstr "Musical/dans films zijn filmische vormen dat zang en dans routines benadrukt op een significante manier (meestal met een musical of dansvoorstelling geïntegreerd als deel van het filmverhaal), of het zijn films die zijn gericht op een combinatie van muziek, dans, zang of choreografie. Belangrijke subgenres omvat de muzikale komedie of de concert film."
 
 msgctxt "#31375"
 msgid "Mystery film is a sub-genre of the more general category of crime film. It focuses on the efforts of the detective, private investigator or amateur sleuth to solve the mysterious circumstances of a crime by means of clues, investigation, and clever deduction."
@@ -566,11 +562,11 @@ msgstr "Wrestling is a martial art that uses grappling type techniques such as c
 
 msgctxt "#31397"
 msgid "Epics include costume dramas, historical dramas, war films, medieval romps, or 'period pictures' that often cover a large expanse of time set against a vast, panoramic backdrop. Epics often share elements of the elaborate adventure films genre. Epics take an historical or imagined event, mythic, legendary, or heroic figure, and add an extravagant setting and lavish costumes, accompanied by grandeur and spectacle, dramatic scope, high production values, and a sweeping musical score."
-msgstr "Epics include costume dramas, historical dramas, war films, medieval romps, or 'period pictures' that often cover a large expanse of time set against a vast, panoramic backdrop. Epics often share elements of the elaborate adventure films genre. Epics take an historical or imagined event, mythic, legendary, or heroic figure, and add an extravagant setting and lavish costumes, accompanied by grandeur and spectacle, dramatic scope, high production values, and a sweeping musical score."
+msgstr "Epics omvatten kostuumdrama's, historische drama's, oorlogsfilms, middeleeuwse ravotten, of 'periode foto's' die vaak betrekking hebben op een grote uitgestrektheid van de tijd tegen een grote, panoramische achtergrond. Epics delen vaak elementen van het uitgebreide Avonturen films genre. Epics nemen een ​​historische of ingebeelde gebeurtenis, mythische, legendarische of heldhaftige figuur, en voegt een extravagante omgeving en weelderige kostuums, vergezeld van grandeur en spektakel, dramatische omvang, hoge productie waarden, en een ingrijpende muzikale score."
 
 msgctxt "#31398"
 msgid "Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music."
-msgstr "Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music. "
+msgstr "Fims die geen gesynchroniseerd soundtrack en geen gesproken dialoog hebben, tot de dageraad van de talkies in de late jaren 1920. Films zonder dialoog kenmerkte titels voor dialoog segmenten, en werden vaak begeleid door live muziek."
 
 msgctxt "#31400"
 msgid "Hide Current Temperature and Weather Conditions"
@@ -623,6 +619,10 @@ msgstr "*Druk DOWN om te sluiten*"
 msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Druk UP voor kiezen profiel*"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokale ondertitels beschikbaar"
 
 msgctxt "#31414"
 msgid "Gallery"
@@ -844,6 +844,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Prefereer ClearLogo boven ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Serie Status"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Beëindigd"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr " onmixed "
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Gebruik één knop om te schakelen tussen ondertitels"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Standaard OSD knop "
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Inschakelen televisie (PVR) support"
@@ -871,3 +891,51 @@ msgstr "Verborgen kanalen"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Opname starttijd"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "7 dagen voorspelling"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "12 uur voorspelling"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 Uur Voorspelling"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Luchtdruk"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Gemiddeld"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maximum"
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "minimum"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Maanfase"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Windstoten"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Gebruik uitgebreide weersvoorspelling"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Toon weersvooruitzichten op het startscherm"

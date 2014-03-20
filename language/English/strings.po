@@ -368,9 +368,7 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr ""
 
-#empty string with id 31320
-
-#empty string with id 31321
+#empty strings from id 31320 to 31321
 
 msgctxt "#31322"
 msgid "Show Media Totals"
@@ -702,7 +700,7 @@ msgstr ""
 
 msgctxt "#31413"
 msgid "Local subtitle available"
-msgstr "Local subtitle available"
+msgstr ""
 
 msgctxt "#31414"
 msgid "Gallery"

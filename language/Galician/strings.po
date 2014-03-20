@@ -28,6 +28,10 @@ msgctxt "#31004"
 msgid "Debug"
 msgstr "Depurar"
 
+msgctxt "#31005"
+msgid "Enable auto scrolling for text that does not fit on-screen"
+msgstr "Activar autodesprazamento do texto que non colle na pantalla"
+
 msgctxt "#31006"
 msgid "Shorter delay before auto scrolling"
 msgstr "Agochado"
@@ -47,6 +51,14 @@ msgstr "N/A"
 msgctxt "#31011"
 msgid "Metropolis"
 msgstr "Metropolis"
+
+msgctxt "#31012"
+msgid "Increase Star Rating"
+msgstr "Aumentar a Valoración"
+
+msgctxt "#31021"
+msgid "Decrease Star Rating"
+msgstr "Diminuír a Valoración"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
@@ -202,7 +214,7 @@ msgstr "Lista"
 
 msgctxt "#31286"
 msgid "Banner"
-msgstr "Cartaz"
+msgstr "Pancarta"
 
 msgctxt "#31289"
 msgid "Files"
@@ -227,10 +239,6 @@ msgstr "Conxunto de Filmes"
 msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Script Predefinido para as Letras"
-
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Script Predefinido para os Subtítulos"
 
 msgctxt "#31328"
 msgid "Show Random Items"
@@ -320,6 +328,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Premer ARRIBA para seleccionar un perfil*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "subtítulos locais dispoñíbeis"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Galeria"
@@ -374,7 +386,7 @@ msgstr "Recente"
 
 msgctxt "#31439"
 msgid "Banner & Poster"
-msgstr "Cartaz e Póster"
+msgstr "Pancarta e Póster"
 
 msgctxt "#31440"
 msgid "View Types"
@@ -386,7 +398,7 @@ msgstr "Ocultar"
 
 msgctxt "#31442"
 msgid "Banner & Fanart"
-msgstr "Cartaz e Fanart"
+msgstr "Pancarta e Fanart"
 
 msgctxt "#31443"
 msgid "Pseudo TV"
@@ -452,6 +464,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Apariencia"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Amosar Estado"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Rematado"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Habilitar o soporte para a TV ao vivo (PVR)"
@@ -479,3 +499,19 @@ msgstr "Canles Agochadas"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Hora programada"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Predición de 36 horas"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Presión"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Visibilidade"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Máxima"

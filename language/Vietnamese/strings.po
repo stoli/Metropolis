@@ -68,6 +68,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Phim giới thiệu"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Phụ đề đang có sẵn"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Giấu"
@@ -111,3 +115,11 @@ msgstr "Xoá nhóm"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Thời gian đã hẹn"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Thời Tiết - 36 Tiếng"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Max"

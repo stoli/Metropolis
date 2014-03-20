@@ -88,6 +88,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "預告片"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "找到本杝端的字幕"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "作者"
@@ -128,6 +132,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "外觀"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "顯示狀態"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "結束"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "電視"
@@ -147,3 +159,19 @@ msgstr "刪除群組"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "已排程的時間"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36小時預報"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "氣壓"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "可見度"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "最高"

@@ -75,3 +75,7 @@ msgstr "Server"
 msgctxt "#31469"
 msgid "Appearance"
 msgstr "Penampilan"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maksimum"

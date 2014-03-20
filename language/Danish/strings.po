@@ -40,6 +40,10 @@ msgctxt "#31007"
 msgid "ON"
 msgstr "TIL"
 
+msgctxt "#31009"
+msgid "Browser"
+msgstr "Browser"
+
 msgctxt "#31010"
 msgid "N/A"
 msgstr "Ikke tilgængelig"
@@ -308,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Standard add-on til Sangtekster"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Standard add-on til Undertekster"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Vis Totale Medier"
@@ -347,6 +347,10 @@ msgstr "Aktiver Kiosk-tilstand"
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
 msgstr "Deaktiver destruktive nedlukningsemner"
+
+msgctxt "#31338"
+msgid "Use simple Media Filter"
+msgstr "Brug simpelt mediafilter."
 
 msgctxt "#31341"
 msgid "View information for your computer on such items as your network, graphics, hardware and storage space available"
@@ -392,6 +396,10 @@ msgctxt "#31404"
 msgid "Hide Rating and Studio Flags"
 msgstr "Skjul Bedømmelse og Studie-mærkater"
 
+msgctxt "#31405"
+msgid "Hide Movie Taglines"
+msgstr "Skjul Filmtaglines"
+
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
 msgstr "Fankunst-Visninger: Klassisk Ramme"
@@ -419,6 +427,10 @@ msgstr "*Tryk NED for at forlade"
 msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Tryk OP for at vælge en profil"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokal undertekst tilgængelig"
 
 msgctxt "#31414"
 msgid "Gallery"
@@ -480,9 +492,17 @@ msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
 msgstr "Vis mappesti i Videoinfo i stedet for detajler om Bedømmelse"
 
+msgctxt "#31430"
+msgid "Poster Wrap Large"
+msgstr "Poster Wrap Stor"
+
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
 msgstr "tryk for at nulstille Metropolis til standarder"
+
+msgctxt "#31432"
+msgid "Visualization Background: Ken Burns effect"
+msgstr "Visualiseringsbaggrund: Ken Burns effekt"
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"
@@ -624,6 +644,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Foretræk ClearLogo frem for ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Vis Status"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Slut"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr "Ublandet"
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Brug en knap for at slå undertekster til og fra"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Standard OSD knap"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Aktiver understøttelse af TV (PVR)"
@@ -651,3 +691,51 @@ msgstr "Skjulte Kanaler"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Planlagt Tid"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "7 dages vejrudsigt"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "12 dages vejrudsigt"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 timers vejrudsigt"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Tryk"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Sigtbarhed"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Gennemsnit"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maximum"
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "Minimum"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Månefase"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Vindstød"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Brug udvidet vejrudsigt"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Vis vejrudsigten på hovedskærmen"

@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Προεπιλεγμένο script Στίχων"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Προεπιλεγμένο script Υποτίτλων"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Εμφάνιση Συνόλων Πολυμέσων"
@@ -624,6 +620,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Πιέστε ΠΑΝΩ για επιλογή προφίλ*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Υπάρχει διαθέσιμος υπότιτλος τοπικά"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Πινακοθήκη"
@@ -844,6 +844,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Προτίμηση Λογότυπων αντί ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Κατάσταση Σειράς"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Τελείωσε"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr "χωρίς ανάμιξη"
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Χρήση ενός πλήκτρου για εναλλαγή υποτίτλων"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Προεπιλεγμένο πλήκτρο OSD"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Ενεργοποίηση υποστήριξης Live TV (PVR)"
@@ -871,3 +891,51 @@ msgstr "Κρυφά Κανάλια"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Προγραμματισμένη Ώρα"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "Πρόγνωση 7 Ημερών"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "12ωρη Πρόγνωση"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36ωρη Πρόγνωση"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Πίεση"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Ορατότητα"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Μέσο"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Μέγ."
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "Ελάχιστο"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Φάση Σελήνης"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Ριπές ανέμου"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Χρήση εκτεταμένου καιρού"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Εμφάνιση Πρόγνωσης στην Αρχ. Οθόνη"

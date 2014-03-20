@@ -100,6 +100,10 @@ msgctxt "#31409"
 msgid "Finish"
 msgstr "Ferdig kl."
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokal undertekst tilgjengelig"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Forfatter"
@@ -140,6 +144,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Utseende"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Vis status"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Ferdig"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "Live TV"
@@ -159,3 +171,19 @@ msgstr "Slett gruppe"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Planlagt tid"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36-timersvarsel"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Lufttrykk"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Sikt"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maksimal"

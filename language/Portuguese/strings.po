@@ -292,10 +292,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Script Padrão para Letras"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Script Padrão para Legendas"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Exibir Totais de Média"
@@ -407,6 +403,10 @@ msgstr "*Premir BAIXO para sair*"
 msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Premir CIMA para seleccionar um perfil*"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Legenda local disponível"
 
 msgctxt "#31414"
 msgid "Gallery"
@@ -588,6 +588,14 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Preferir ClearLogo a ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Mostrar Estado"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Terminou a"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Activar suporte para TV ao Vivo (PVR)"
@@ -615,3 +623,19 @@ msgstr "Canais Ocultos"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Tempo Agendado"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Previsão de 36 Horas"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Pressão"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Visibilidade"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Máxima"

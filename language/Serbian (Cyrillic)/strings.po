@@ -48,6 +48,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Датотеке"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Локални превод доступан"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Аутор"

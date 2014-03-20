@@ -148,6 +148,30 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Viðmót"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Sýna stöðu"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Lokið"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "Sjónvarp bein útsending"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 klst veðurspá"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Þrýstingur"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Skyggni"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Hámark"

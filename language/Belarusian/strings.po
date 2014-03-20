@@ -308,10 +308,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Default Lyrics script"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Default Subtitles script"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Show Media Totals"
@@ -612,6 +608,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Press UP to select a profile*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Даступныя лакальныя субтытры"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Gallery"
@@ -824,6 +824,14 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Prefer ClearLogo to ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Show Status"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Ended"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Enable Live TV (PVR) support"
@@ -851,3 +859,19 @@ msgstr "Hidden Channels"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Scheduled Time"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Прагноз на 36 гадзінаў"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Pressure"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Visibility"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Максымальная"

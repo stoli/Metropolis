@@ -88,6 +88,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Najave"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Dostupan je lokalni podnaslov"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
@@ -128,6 +132,10 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Izgled"
 
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Završeno"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "TV u živo"
@@ -147,3 +155,11 @@ msgstr "Obriši Grupu"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Planirano Vrijeme"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Prognoza za 36 sati"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Najveća"

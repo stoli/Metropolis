@@ -60,6 +60,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "ملفات"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "ترجمة محلية متوفرة"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "الكاتب"
@@ -107,3 +111,11 @@ msgstr "حذف مجموعة"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "جدول الزمن"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 hour توقعات طقس"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "أقصى حد"

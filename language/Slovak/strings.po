@@ -104,6 +104,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Upútavky na film"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Sú k dispozícii lokálne titulky"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
@@ -148,6 +152,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Prostredie"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Zobraziť stav"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Ukončené"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "Živá TV"
@@ -167,3 +179,19 @@ msgstr "Vymazať skupinu"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Naplánovaný čas"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 Hodinová predpoveď"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Tlak"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Viditeľnosť"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maximálny"

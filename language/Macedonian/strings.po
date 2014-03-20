@@ -60,6 +60,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Трејлер"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Локален превод достапен"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Автор"
@@ -103,3 +107,11 @@ msgstr "Избриши група"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Закажано време"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 Часовна Прогноза"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Максимум"

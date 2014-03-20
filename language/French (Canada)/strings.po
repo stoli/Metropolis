@@ -1,0 +1,253 @@
+# XBMC Media Center language file
+# Addon Name: Metropolis
+# Addon id: skin.metropolis
+# Addon Provider: Amra, Stoli, jingai
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: French (Canada) (http://www.transifex.com/projects/p/xbmc-skins/language/fr_CA/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_CA\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgctxt "#31001"
+msgid "View Options"
+msgstr "Options d'affichage"
+
+msgctxt "#31004"
+msgid "Debug"
+msgstr "Débogage"
+
+msgctxt "#31010"
+msgid "N/A"
+msgstr "N/D"
+
+msgctxt "#31033"
+msgid "Hide Background Fanart"
+msgstr "Cacher le fanart d'arrière-plan"
+
+msgctxt "#31035"
+msgid "Show Clean Library SubMenu items"
+msgstr "Montrer les éléments de sous-menu de Nettoyer la médiathèque"
+
+msgctxt "#31054"
+msgid "Logo"
+msgstr "Logo"
+
+msgctxt "#31159"
+msgid "ffx2"
+msgstr "ffx2"
+
+msgctxt "#31160"
+msgid "ffx4"
+msgstr "ffx4"
+
+msgctxt "#31161"
+msgid "ffx8"
+msgstr "ffx8"
+
+msgctxt "#31162"
+msgid "ffx16"
+msgstr "ffx16"
+
+msgctxt "#31163"
+msgid "ffx32"
+msgstr "ffx32"
+
+msgctxt "#31164"
+msgid "rwx2"
+msgstr "rwx2"
+
+msgctxt "#31165"
+msgid "rwx4"
+msgstr "rwx4"
+
+msgctxt "#31166"
+msgid "rwx8"
+msgstr "rwx8"
+
+msgctxt "#31167"
+msgid "rwx16"
+msgstr "rwx16"
+
+msgctxt "#31168"
+msgid "rwx32"
+msgstr "rwx32"
+
+msgctxt "#31207"
+msgid "Current"
+msgstr "Actuel"
+
+msgctxt "#31211"
+msgid "Adjust how XBMC handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options"
+msgstr "Ajuster comment XBMC gère le contenu vidéo. Inclut les options d'empilement pour les fichiers en plusieurs parties, les options de la base de données de la médiathèque et les options de rendu et de lecture"
+
+msgctxt "#31214"
+msgid "Adjust how XBMC handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup"
+msgstr "Ajuster comment XBMC gère le contenu audio. Inclut les options de navigation, les  modes de la base de données de la médiathèque ainsi que le paramétrage du matériel audio"
+
+msgctxt "#31244"
+msgid "Playing"
+msgstr "Lecture en cours"
+
+msgctxt "#31250"
+msgid "Current Selected"
+msgstr "Sélectionné présentement"
+
+msgctxt "#31271"
+msgid "Favourite"
+msgstr "Favori"
+
+msgctxt "#31275"
+msgid "Multi Image"
+msgstr "Plusieurs images"
+
+msgctxt "#31278"
+msgid "Open Playlist"
+msgstr "Ouvrir la liste de lecture"
+
+msgctxt "#31279"
+msgid "Save Playlist"
+msgstr "Enregistrer la liste de lecture"
+
+msgctxt "#31280"
+msgid "Close Playlist"
+msgstr "Fermer la liste de lecture"
+
+msgctxt "#31281"
+msgid "Items"
+msgstr "Éléments"
+
+msgctxt "#31284"
+msgid "Single Image"
+msgstr "Une seule image"
+
+msgctxt "#31285"
+msgid "List"
+msgstr "Liste"
+
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Bannière"
+
+msgctxt "#31289"
+msgid "Files"
+msgstr "Fichiers"
+
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "Paysage"
+
+msgctxt "#31293"
+msgid "Picture Grid"
+msgstr "Grille d'images"
+
+msgctxt "#31299"
+msgid "Min"
+msgstr "Min"
+
+msgctxt "#31334"
+msgid "Trailers"
+msgstr "Bande-annonces"
+
+msgctxt "#31342"
+msgid "Create and modify multiple user profiles for XBMC so that each member of your household can have their own video or music library"
+msgstr "Créer et modifier des profiles multi-utilisateurs pour XBMC de façon à ce que chaque membre de la maison puisse avoir sa propre vidéothèque et audiothèque"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Sous-titres locaux disponibles"
+
+msgctxt "#31414"
+msgid "Gallery"
+msgstr "Galerie"
+
+msgctxt "#31427"
+msgid "Next Episode"
+msgstr "Prochain épisode"
+
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "Guide télé"
+
+msgctxt "#31438"
+msgid "Recent"
+msgstr "Récent"
+
+msgctxt "#31441"
+msgid "Hide"
+msgstr "Cacher"
+
+msgctxt "#31446"
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+msgctxt "#31451"
+msgid "Recommended"
+msgstr "Recommandé"
+
+msgctxt "#31457"
+msgid "Shortcuts"
+msgstr "Raccourcis"
+
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Nettoyer la médiathèque"
+
+msgctxt "#31468"
+msgid "Services"
+msgstr "Services"
+
+msgctxt "#31469"
+msgid "Appearance"
+msgstr "Apparence"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Terminé"
+
+msgctxt "#31601"
+msgid "Live TV"
+msgstr "Télé en direct"
+
+msgctxt "#31605"
+msgid "Add Group"
+msgstr "Ajouter un groupe"
+
+msgctxt "#31606"
+msgid "Rename Group"
+msgstr "Renommer le groupe"
+
+msgctxt "#31607"
+msgid "Delete Group"
+msgstr "Supprimer le groupe"
+
+msgctxt "#31610"
+msgid "Scheduled Time"
+msgstr "Heure planifiée"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "Prévisions pour 7 jours"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "Prévisions pour 12 heures"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Prévisions 36 heures"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Pression"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Afficher les prévisions météo sur l'écran d'accueil"

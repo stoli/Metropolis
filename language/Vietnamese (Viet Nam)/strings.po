@@ -60,6 +60,10 @@ msgctxt "#31299"
 msgid "Min"
 msgstr "Nhỏ nhất"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Phụ đề đã có sẵn trên máy bạn"
+
 msgctxt "#31438"
 msgid "Recent"
 msgstr "Gần đây"
@@ -103,3 +107,7 @@ msgstr "Xóa nhóm"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Thời gian được lập thời biểu"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Dự báo 36 giờ"

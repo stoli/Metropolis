@@ -72,6 +72,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "予告編"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "ローカルの字幕が利用可能"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "作者"
@@ -119,3 +123,11 @@ msgstr "グループの削除"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "タイマー予約時間"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36時間予報"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "最大"

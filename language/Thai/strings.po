@@ -96,6 +96,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "หนังตัวอย่าง"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "มีคำบรรยายในเครื่องใช้งานได้"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "ผู้แต่ง"
@@ -140,6 +144,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "การแสดงผล"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "แสดงสถานะ"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "จบแล้ว"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "ทีวี สด"
@@ -159,3 +171,15 @@ msgstr "ลบกลุ่ม"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "ระยะเวลาที่กำหนด"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "พยากรณ์ ใน 36 ชั่วโมง"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "ความกดอากาศ"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "ทัศนวิสัย"

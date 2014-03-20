@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Script de Letras por defecto"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Script de Subtítulos por defecto"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Mostrar todas las Estadísticas"
@@ -624,6 +620,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Pulsa ARRIBA para elegir un perfil*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Subtítulo local disponible"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Galería"
@@ -844,6 +844,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Preferir ClearLogo a ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Estado"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Fin"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr "Sin mezcla"
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Usar una tecla para intercambiar los subtitulos"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Botón por defecto para OSD"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Activar soporte de TV en Vivo (PVR)"
@@ -871,3 +891,47 @@ msgstr "Canales Ocultos"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Programador"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "Pronóstico de 7 días"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "Pronóstico de 12 horas"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Pronóstico de 36 hs"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Presión atmosférica"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Visibilidad"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Medio"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Máxima"
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "Minimo"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Fase Lunar"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Usar tiempo extendido"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Ver Pronóstico del Clima en la pantalla principal"

@@ -9,20 +9,16 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: Finnish (http://www.transifex.com/projects/p/xbmc-skins/language/fi/)\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/xbmc-skins/language/en_AU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fi\n"
+"Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr "Näytä valinnat"
-
-msgctxt "#31004"
-msgid "Debug"
-msgstr "Vianetsintä"
+msgstr "View Options"
 
 msgctxt "#31010"
 msgid "N/A"
@@ -30,7 +26,7 @@ msgstr "N/A"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr "Piilota taustan fanitaide"
+msgstr "Hide Background Fanart"
 
 msgctxt "#31054"
 msgid "Logo"
@@ -38,144 +34,128 @@ msgstr "Logo"
 
 msgctxt "#31133"
 msgid "Mute"
-msgstr "Mykistys"
+msgstr "Mute"
+
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "Viewtype"
+
+msgctxt "#31207"
+msgid "Current"
+msgstr "Current"
 
 msgctxt "#31244"
 msgid "Playing"
-msgstr "Toistaa"
+msgstr "Playing"
 
 msgctxt "#31250"
 msgid "Current Selected"
-msgstr "Nyt valittuna"
+msgstr "Current Selected"
 
 msgctxt "#31271"
 msgid "Favourite"
-msgstr "Suosikki"
+msgstr "Favourite"
 
 msgctxt "#31275"
 msgid "Multi Image"
-msgstr "Vaihtuva kuva"
+msgstr "Multi Image"
 
 msgctxt "#31281"
 msgid "Items"
-msgstr "Kohdetta"
+msgstr "Items"
 
 msgctxt "#31282"
 msgid "Poster Wrap"
-msgstr "Julistekierto"
+msgstr "Poster Wrap"
 
 msgctxt "#31284"
 msgid "Single Image"
-msgstr "Yksittäinen kuva"
-
-msgctxt "#31285"
-msgid "List"
-msgstr "Lista"
+msgstr "Single Image"
 
 msgctxt "#31286"
 msgid "Banner"
-msgstr "Banneri"
-
-msgctxt "#31289"
-msgid "Files"
-msgstr "Tiedostot"
+msgstr "Banner"
 
 msgctxt "#31291"
 msgid "Landscape"
-msgstr "Vaakakuva"
+msgstr "Landscape"
 
 msgctxt "#31334"
 msgid "Trailers"
-msgstr "Esittelyt"
+msgstr "Trailers"
 
 msgctxt "#31413"
 msgid "Local subtitle available"
-msgstr "Paikallisia tekstityksiä saatavilla"
-
-msgctxt "#31423"
-msgid "Author"
-msgstr "Tehnyt"
+msgstr "Local subtitle available"
 
 msgctxt "#31427"
 msgid "Next Episode"
-msgstr "Seuraava jakso"
+msgstr "Next Episode"
 
 msgctxt "#31428"
 msgid "TV Guide"
-msgstr "TV-Opas"
+msgstr "TV Guide"
 
 msgctxt "#31438"
 msgid "Recent"
-msgstr "Viimeisin"
+msgstr "Recent"
 
 msgctxt "#31441"
 msgid "Hide"
-msgstr "Piilota"
+msgstr "Hide"
 
 msgctxt "#31446"
 msgid "Fullscreen"
-msgstr "Koko näyttö"
+msgstr "Fullscreen"
 
 msgctxt "#31451"
 msgid "Recommended"
-msgstr "Suositellut"
+msgstr "Recommended"
 
 msgctxt "#31457"
 msgid "Shortcuts"
-msgstr "Pikakuvakkeet"
-
-msgctxt "#31460"
-msgid "Games"
-msgstr "Pelit"
+msgstr "Shortcuts"
 
 msgctxt "#31468"
 msgid "Services"
 msgstr "Services"
 
-msgctxt "#31469"
-msgid "Appearance"
-msgstr "Käyttöliittymä"
-
 msgctxt "#31471"
 msgid "Show Status"
-msgstr "Näytä tila"
+msgstr "Show Status"
 
 msgctxt "#31472"
 msgid "Ended"
-msgstr "Päättyi"
+msgstr "Ended"
 
 msgctxt "#31601"
 msgid "Live TV"
-msgstr "TV-lähetys"
+msgstr "Live TV"
 
 msgctxt "#31605"
 msgid "Add Group"
-msgstr "Lisää ryhmä"
+msgstr "Add Group"
 
 msgctxt "#31606"
 msgid "Rename Group"
-msgstr "Muuta ryhmän nimeä"
+msgstr "Rename Group"
 
 msgctxt "#31607"
 msgid "Delete Group"
-msgstr "Poista ryhmä"
+msgstr "Delete Group"
 
 msgctxt "#31610"
 msgid "Scheduled Time"
-msgstr "Kellonaika"
+msgstr "Scheduled Time"
 
 msgctxt "#31702"
 msgid "36 Hour Forecast"
-msgstr "36 tunnin ennuste"
+msgstr "36 Hour Forecast"
 
 msgctxt "#31703"
 msgid "Pressure"
-msgstr "Ilmanpaine"
+msgstr "Pressure"
 
 msgctxt "#31704"
 msgid "Visibility"
-msgstr "Näkyvyys"
-
-msgctxt "#31706"
-msgid "Maximum"
-msgstr "Maksimi"
+msgstr "Visibility"

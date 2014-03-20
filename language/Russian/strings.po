@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Дополнение текстов песен"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Дополнение субтитров"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Показывать количество медиа"
@@ -624,6 +620,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "Нажмите ВВЕРХ для выбора профиля"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Доступны локальные субтитры"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Галерея"
@@ -844,6 +844,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Выборать ClearLogo, а не ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Состояние"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Закончено"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr "неперемешанный"
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Использовать одну кнопку для включения субтитров"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Кнопка OSD по-умолчанию"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Включить ТВ (PVR) "
@@ -871,3 +891,51 @@ msgstr "Скрытые каналы"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Запланированное время"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "Прогноз на 7 дней"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "Прогноз на 12 часов"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Прогноз на 36 часов"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Давление"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Видимость"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Средняя"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Максимальное"
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "Минимум"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Фаза Луны"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Порывы"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Использовать расширенную погоду"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Показывать прогноз погоды в Главном меню"

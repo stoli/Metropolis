@@ -68,6 +68,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailere"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Există subtitrare locală"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Autor"
@@ -100,6 +104,10 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Aspect"
 
+msgctxt "#31472"
+msgid "Ended"
+msgstr "încheiat"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "TV Live"
@@ -119,3 +127,11 @@ msgstr "Șterge Grup"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Timpul Programat"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Previziune pe 36 de ore"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maximă"

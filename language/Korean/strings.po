@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "기본 가사 스크립트"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "기본 자막 스크립트"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "미디어 통계 보기"
@@ -624,6 +620,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*프로파일을 선택하려면 위 화살표를 누르세요*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "로컬 자막 있음"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "갤러리"
@@ -836,6 +836,14 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "클리어아트보다 클리어로고 선호"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "상태"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "종료"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Live TV (PVR) 사용"
@@ -863,3 +871,19 @@ msgstr "숨겨진 채널"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "예약 시간"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 시간 예보"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "기압"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "가시거리"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "최대"

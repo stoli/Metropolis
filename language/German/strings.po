@@ -312,10 +312,6 @@ msgctxt "#31319"
 msgid "Default Lyrics script"
 msgstr "Standard Liedtext script"
 
-msgctxt "#31320"
-msgid "Default Subtitles script"
-msgstr "Standard Untertitel script"
-
 msgctxt "#31322"
 msgid "Show Media Totals"
 msgstr "Zeige Medien-Zusammenfassung"
@@ -624,6 +620,10 @@ msgctxt "#31412"
 msgid "*Press UP to select a profile*"
 msgstr "*Drücke UP um ein Profil auszuwählen*"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokale Untertitel verfügbar"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Gallerie"
@@ -844,6 +844,26 @@ msgctxt "#31470"
 msgid "Prefer ClearLogo to ClearArt"
 msgstr "Bevorzuge ClearLogo vor ClearArt"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Status zeigen"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Beendet"
+
+msgctxt "#31473"
+msgid "unmixed"
+msgstr "ungemischt"
+
+msgctxt "#31474"
+msgid "Use one button to toggle subtitles"
+msgstr "Eine Schaltfläche zum Umschalten der Untertitel verwenden"
+
+msgctxt "#31475"
+msgid "Default OSD button"
+msgstr "Standard-OSD-Schaltfläche"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Live TV (PVR) Unterstützung einschalten"
@@ -871,3 +891,51 @@ msgstr "Versteckte Kanäle"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Geplante Zeit"
+
+msgctxt "#31700"
+msgid "7 Day Forecast"
+msgstr "7-Tage-Vorhersage"
+
+msgctxt "#31701"
+msgid "12 Hour Forecast"
+msgstr "12-Stunden-Vorhersage"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36-Stunden-Prognose"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Druck"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Blickdistanz"
+
+msgctxt "#31705"
+msgid "Average"
+msgstr "Mittel"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maximal"
+
+msgctxt "#31707"
+msgid "Minimum"
+msgstr "Minimal"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Mondphase"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Böen"
+
+msgctxt "#31710"
+msgid "Use extended weather"
+msgstr "Erweitertes Wetter verwenden"
+
+msgctxt "#31711"
+msgid "Show weather forecast on home screen"
+msgstr "Wettervorhersage auf dem Home-Bildschirm anzeigen"

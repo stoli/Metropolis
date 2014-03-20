@@ -144,6 +144,10 @@ msgctxt "#31409"
 msgid "Finish"
 msgstr "Dokončit"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Titulky jsou k dispozici lokálně"
+
 msgctxt "#31414"
 msgid "Gallery"
 msgstr "Galerie"
@@ -200,6 +204,14 @@ msgctxt "#31469"
 msgid "Appearance"
 msgstr "Vzhled"
 
+msgctxt "#31471"
+msgid "Show Status"
+msgstr "Zobrazit status"
+
+msgctxt "#31472"
+msgid "Ended"
+msgstr "Ukončeno"
+
 msgctxt "#31601"
 msgid "Live TV"
 msgstr "Televize"
@@ -219,3 +231,19 @@ msgstr "Smazat skupinu"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Plánovaný čas"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "Předpověď na 36 hodin"
+
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Tlak"
+
+msgctxt "#31704"
+msgid "Visibility"
+msgstr "Viditelnost"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Nejvyšší"

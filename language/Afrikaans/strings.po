@@ -72,6 +72,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Voorskoue"
 
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokale subtitel beskikbaar"
+
 msgctxt "#31423"
 msgid "Author"
 msgstr "Outeur"
@@ -119,3 +123,11 @@ msgstr "Wis Groep uit"
 msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr "Geskeduleerde Tyd"
+
+msgctxt "#31702"
+msgid "36 Hour Forecast"
+msgstr "36 Uur Voorspelling"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "Maksimum"
