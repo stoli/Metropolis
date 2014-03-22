@@ -820,7 +820,9 @@ msgctxt "#31443"
 msgid "Pseudo TV"
 msgstr ""
 
-#empty string with id 31444
+msgctxt "#31444"
+msgid "Auto Login"
+msgstr ""
 
 msgctxt "#31445"
 msgid "Picture Settings"
