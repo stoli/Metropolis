@@ -74,7 +74,11 @@ msgctxt "#31024"
 msgid "Icon Home layout"
 msgstr ""
 
-#empty strings from id 31025 to 31030
+msgctxt "#31025"
+msgid "Horizontal Text Home layout"
+msgstr ""
+
+#empty strings from id 31026 to 31030
 
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
@@ -948,7 +952,11 @@ msgctxt "#31475"
 msgid "Default OSD button"
 msgstr ""
 
-#empty strings from id 31476 to 31599
+msgctxt "#31476"
+msgid "Disable default Submenus"
+msgstr ""
+
+#empty strings from id 31477 to 31599
 #PVR Resources
 
 msgctxt "#31600"
