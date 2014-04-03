@@ -239,7 +239,6 @@
 			<include>Global_NextAired</include>
 			<posx>0</posx>
 			<posy>-7</posy>
-			<include>Window_OpenClose_Animation</include>
 			<animation effect="fade" start="0" end="100" time="0" delay="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			<control type="label">

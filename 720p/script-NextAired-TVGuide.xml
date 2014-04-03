@@ -2250,12 +2250,5 @@
 				<align>center</align>
 			</control>
 		</control>				
-		<control type="label">
-			<description>Header label</description>
-			<posx>30</posx>
-			<posy>10</posy>
-			<include>Global_HeadingSectionVars</include>
-			<label>$LOCALIZE[SCRIPT450]</label>
-		</control>		
 	</controls>
 </window>
