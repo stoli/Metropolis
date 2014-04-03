@@ -1,5 +1,24 @@
+2.8.0 - 20140403
+- Support for XBMC 13 (Gotham).
+- Add progress overlay icons for videos.
+- Add Gallery view for Music Videos.
+- Support for extended info in Weather Underground addon.
+- Fix for Movies displayed in TV Shows due to linking.
+- Make video OSD default position user-configurable.
+- New resolution media flags.
+
+2.7.1 - 20140401
+- Re-push to fix texture packs.
+
+2.7.0 - 20140319
+- Update language files from Transifex.
+- Full HD 1080p flag.
+- Add TV Show status to DialogVideoInfo.
+- Run TvTunes script from DialogVideoInfo onload.
+- Include seasonposter in Artwork Downloader link.
+
 2.6.9 - 20130914
-- Update language files from Transifex
+- Update language files from Transifex.
 
 2.6.8 - 20130502
 - Update language files from Transifex.
