@@ -464,6 +464,14 @@ msgctxt "#31370"
 msgid "A sub-genre of the action film, martial arts films contain numerous fights between characters, usually as the films' primary appeal and entertainment value, and often as a method of storytelling and character expression and development. Martial arts are frequently featured in training scenes and other sequences in addition to fights. Martial arts films commonly include other types of action, such as stuntwork, chases, and/or gunfights."
 msgstr "Merupakan sub-genre filem aksi, filem seni pertahankan diri mengandungi pelbagai perlawanan diantara karakter, biasanya sebagai penarik utama dan nilai hiburan filem, biasanya sebagai cara penceritaan dan ekspresi serta pembangunan karakter. Seni pertahankan diri kerap difiturkan di dalam adegan latihan dan lain-lain babak selain dari perlawanan. Filem seni pertahankan diri umumnya melibatkan lain-lain jenis aksi, seperti kerjasama berkumpulan, sesi kejar-mengejar, dan/atau aksi tembak-menembak."
 
+msgctxt "#31371"
+msgid "Multi-episode, fictional program of limited duration, shown on a daily or weekly schedule, usually lasting fifteen hours or less in total running time. A good television miniseries can make the small screen seem huge. These programs are the best that TV has to offer: an excuse to sink in and lose yourself in a story that isn't over in just a couple of hours. The sets, the plots, and the acting make each of these essential miniseries an exquisite television experience."
+msgstr "Episod-berbilang, program fiksyen dengan jangkamasa terhad, disiarkan secara harian atau mingguan, biasanya sehingga lima belas jam atau kurang dari sejumlah masa siaran. Siri mini televisyen yang baik menjadikan siri yang hebat. Program ini adalah terbaik yang mana TV dapat sediakan: untuk menikmati sebuah penceritaan tidaklah perlu mengambil masa beberapa jam. Set, plot dan lakonan menjadikan siri mini ini adalah salah satu siaran televisyen yang wajib ditonton."
+
+msgctxt "#31372"
+msgid "Monster movie (also can be referred to as a creature feature or monster film) is a name commonly given to movies, which centre on the struggle between human beings and one or more monsters. The term is usually applied to films sometimes labelled as horror, fantasy or science fiction genre that involve fictional creatures, in most cases it is applied to films that feature more oversized monsters despite its history starting with adaptations of horror folklore and literature."
+msgstr "Cereka raksaksa (juga dikenali sebagai filem berfiturkan makhluk atau raksaksa) adalah nama umum yang biasanya dilabelkan pada cereka tersebut, selalunya melibatkan perjuangan diantara manusia dengan satu atau lebih raksaksa. Istilah ini kadangkala dilabel sebagai genre seram, fantasi atau sains fiksyen yang melibatkan makhluk buatan, dalam kebanyakan kes ia difiturkan pada raksaksa bersaiz besar berbanding sejarahnya berdasarkan cerita dongeng atau penulisan dahulukala."
+
 msgctxt "#31373"
 msgid "Music genre films will incorporate a lot of music but it will not necessarily be the focal point of the film, thus differentiating it from a Musical."
 msgstr "Filem genre muzik melibatkan banyak elemen muzik tetapi tidak semestinya menjadi fokus utama filem, maka ia berbeza dengan Muzikal."
@@ -483,6 +491,14 @@ msgstr "Dokumentari alam ialah filem dokumentari mengenai haiwan, tumbuh-tumbuha
 msgctxt "#31377"
 msgid "Television news is considered by many to be the most influential medium for journalism. For most of the American public, local and national TV newscasts are the primary news sources."
 msgstr "Berita televisyen dianggap sebagai medium berpengaruh untuk jurnalisma. Kebanyakan siaran TV nasional dan tempatan serta awam di Amerika merupakan sumber berita utama."
+
+msgctxt "#31378"
+msgid "Apocalyptic fiction is a sub-genre of science fiction that is concerned with the end of civilization due to a catastrophe such as nuclear warfare, pandemic, impact event, cybernetic revolt, Technological Singularity, Dysgenics, supernatural phenomena, Ecological disaster, resource depletion or some other general disaster. Post-apocalyptic fiction is set in a world or civilization after such a disaster."
+msgstr "Fiksyen apokaliptik adalah sub-genre bagi sains fiksyen yang melibatkan penghujung tamadun yang disebabkan oleh malapetaka seperti perperangan nuklear, wabak besar, hentaman meteor, rusuhan sibernetik, Keluar biasaan Teknologi, fenomena aneh, Bencana alam, kehabisan sumber atau lain-lain bencana umum. Manakala, fiksyen pasca-apokaliptik biasanya berlaku pada dunia atau tamadun selepas bencana tersebut."
+
+msgctxt "#31379"
+msgid "Reality television is a genre of television programming that presents purportedly unscripted dramatic or humorous situations, documents actual events, and usually features ordinary people instead of professional actors, sometimes in a contest or other situation where a prize is awarded."
+msgstr "Televisyen realiti adalah sebuah genre siaran televisyen yang melibatkan situasi lawak atau dramatik tanpa skrip, peristiwa sebenar yang didokumenkan, dan biasanya berfiturkan individu biasa selain dari pelakon profesional, kadangkala dalam bentuk pertandingan atau lain-lain situasi yang menawarkan hadiah."
 
 msgctxt "#31383"
 msgid "A short film is any film not long enough to be considered a feature film. No consensus exists as to where that boundary is drawn: the Academy of Motion Picture Arts and Sciences defines a short film as \"an original motion picture that has a running time of 40 minutes or less, including all credits\". The Internet Movie Database draws the line at 45 minutes."

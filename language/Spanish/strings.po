@@ -18,7 +18,7 @@ msgstr ""
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr "Vistas"
+msgstr "Ver Opciones"
 
 msgctxt "#31002"
 msgid "Home Artwork"
@@ -927,6 +927,10 @@ msgstr "Minimo"
 msgctxt "#31708"
 msgid "Moon Phase"
 msgstr "Fase Lunar"
+
+msgctxt "#31709"
+msgid "Gusts"
+msgstr "Rafagas"
 
 msgctxt "#31710"
 msgid "Use extended weather"

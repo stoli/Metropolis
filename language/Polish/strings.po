@@ -74,7 +74,7 @@ msgstr "Hide TV Watched Status"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr "Hide Fanart"
+msgstr "Ukrywaj tło tapety"
 
 msgctxt "#31034"
 msgid "Enable Dynamic Weather Artwork"
@@ -222,7 +222,7 @@ msgstr "Ustaw wyświetlanie na TV. Zawiera opcje zarządzania kanałami TV, nagr
 
 msgctxt "#31244"
 msgid "Playing"
-msgstr "Playing"
+msgstr "Odtwarzanie w toku"
 
 msgctxt "#31249"
 msgid "System Music Files"
@@ -262,11 +262,11 @@ msgstr "Close Playlist"
 
 msgctxt "#31281"
 msgid "Items"
-msgstr "Items"
+msgstr "Pozycji"
 
 msgctxt "#31282"
 msgid "Poster Wrap"
-msgstr "Plakat zawijany"
+msgstr "Kolejka plakatów"
 
 msgctxt "#31283"
 msgid "Poster Fixed"
@@ -334,7 +334,7 @@ msgstr "Scripts/Extras"
 
 msgctxt "#31331"
 msgid "Home Items"
-msgstr "Home Items"
+msgstr "Pozycje ekranu startowego"
 
 msgctxt "#31334"
 msgid "Trailers"
@@ -346,7 +346,7 @@ msgstr "Enable Kiosk mode"
 
 msgctxt "#31337"
 msgid "Disable destructive Shutdown items"
-msgstr "SHOWCASE"
+msgstr "Dezaktywuj "
 
 msgctxt "#31338"
 msgid "Use simple Media Filter"
@@ -594,7 +594,7 @@ msgstr "Ukryj Tagi Filmów"
 
 msgctxt "#31406"
 msgid "Fanart Views: Classic Frame"
-msgstr "Use Classic Frame in Fanart View (Default is Segmented)"
+msgstr "Widoki tapety: Klasyczna ramka"
 
 msgctxt "#31407"
 msgid "*Press UP for full cast and photos*"
@@ -610,7 +610,7 @@ msgstr "Finish"
 
 msgctxt "#31410"
 msgid "Prefer Landscape to Fanart (except background)"
-msgstr "*Press ENTER to Play*"
+msgstr "Preferuj krajobraz jako tapetę (oprócz tła)"
 
 msgctxt "#31411"
 msgid "*Press DOWN to exit*"
@@ -662,7 +662,7 @@ msgstr "Autor"
 
 msgctxt "#31424"
 msgid "Poster & Fanart"
-msgstr "Plakat i Fanart"
+msgstr "Plakat i Tapeta"
 
 msgctxt "#31425"
 msgid "Video OSD: Show Thumbnail"
@@ -682,11 +682,11 @@ msgstr "PROGRAM TV"
 
 msgctxt "#31429"
 msgid "Display Path in Video Info instead of Rating details"
-msgstr "Wyświetl ścieżkę w oknie Informacji Video zamiast szczegółow oceny"
+msgstr "Wyświetlaj ścieżkę w oknie informacji wideo zamiast oceny"
 
 msgctxt "#31430"
 msgid "Poster Wrap Large"
-msgstr "Duży plakat zawijany"
+msgstr "Kolejka dużych plakatów"
 
 msgctxt "#31431"
 msgid "Click to reset Metropolis to defaults"
@@ -698,11 +698,11 @@ msgstr "Wizualizacja tła: efekt \"Ken Burns\""
 
 msgctxt "#31433"
 msgid "Visualization Background: Fanart"
-msgstr "Tło Wizualizacji: Fanart"
+msgstr "Tło wizualizacji: Tapeta"
 
 msgctxt "#31434"
 msgid "Visualization Background: Extra Fanart"
-msgstr "Tło Wizualizacji: Extra Fanart"
+msgstr "Tło wizualizacji: Dodatkowa tapeta"
 
 msgctxt "#31435"
 msgid "Visualization Background: Artist Slideshow"
@@ -734,7 +734,7 @@ msgstr "Ukryj"
 
 msgctxt "#31442"
 msgid "Banner & Fanart"
-msgstr "Baner i Fanart"
+msgstr "Baner i Tapeta"
 
 msgctxt "#31443"
 msgid "Pseudo TV"
@@ -818,7 +818,7 @@ msgstr "Gry szeroko"
 
 msgctxt "#31464"
 msgid "Show Plot in Fullscreen Info"
-msgstr "Pokaż fabułę w Info Pełnego Ekranu"
+msgstr "Pokazuj fabułę w menu ekranowym"
 
 msgctxt "#31465"
 msgid "Clean Library"
