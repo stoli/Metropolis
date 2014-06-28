@@ -107,7 +107,7 @@
 	</include>
 	<include name="Global_HeadingDetailVars">
 		<posx>1220</posx>
-		<width>450</width>
+		<width>720</width>
 		<height>30</height>
 		<font>METF_Heading</font>
 		<textcolor>GlobalHeading</textcolor>
