@@ -2074,44 +2074,119 @@
 					<control type="button" id="1864">
 						<include>SettingsLabel</include>
 						<width>370</width>
-						<label>  - $LOCALIZE[24000] 1</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon1))]</label2>
-						<onclick>Skin.SetAddon(HomeGames_Addon1,xbmc.addon.executable)</onclick>
-						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeGames_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeGames_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeGames_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeGames_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Addon1))</visible>
 					</control>
 					<control type="button" id="1865">
 						<include>SettingsLabel</include>
 						<width>370</width>
-						<label>  - $LOCALIZE[24000] 2</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon2))]</label2>
-						<onclick>Skin.SetAddon(HomeGames_Addon2,xbmc.addon.executable)</onclick>
-						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon1))]</label2>
+						<onclick>Skin.Reset(HomeGames_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite1_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeGames_Addon1,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Favourite1_Path))</visible>
 					</control>
 					<control type="button" id="1866">
 						<include>SettingsLabel</include>
 						<width>370</width>
-						<label>  - $LOCALIZE[24000] 3</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon3))]</label2>
-						<onclick>Skin.SetAddon(HomeGames_Addon3,xbmc.addon.executable)</onclick>
-						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeGames_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeGames_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeGames_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeGames_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Addon2))</visible>
 					</control>
 					<control type="button" id="1867">
 						<include>SettingsLabel</include>
 						<width>370</width>
-						<label>  - $LOCALIZE[24000] 4</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon4))]</label2>
-						<onclick>Skin.SetAddon(HomeGames_Addon4,xbmc.addon.executable)</onclick>
-						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon2))]</label2>
+						<onclick>Skin.Reset(HomeGames_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite2_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeGames_Addon2,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Favourite2_Path))</visible>
 					</control>
 					<control type="button" id="1868">
 						<include>SettingsLabel</include>
 						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeGames_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeGames_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeGames_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeGames_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Addon3))</visible>
+					</control>
+					<control type="button" id="1869">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon3))]</label2>
+						<onclick>Skin.Reset(HomeGames_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite3_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeGames_Addon3,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Favourite3_Path))</visible>
+					</control>
+					<control type="button" id="1870">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeGames_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeGames_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeGames_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeGames_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Addon4))</visible>
+					</control>
+					<control type="button" id="1871">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon4))]</label2>
+						<onclick>Skin.Reset(HomeGames_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite4_Path)</onclick>
+						<onclick>Skin.SetAddon(HomeGames_Addon4,xbmc.addon.executable)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Favourite4_Path))</visible>
+					</control>
+					<control type="button" id="1872">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeGames_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeGames_Addon5)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeGames_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeGames_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Addon5))</visible>
+					</control>
+					<control type="button" id="1873">
+						<include>SettingsLabel</include>
+						<width>370</width>
 						<label>  - $LOCALIZE[24000] 5</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeGames_Addon5))]</label2>
+						<onclick>Skin.Reset(HomeGames_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeGames_Favourite5_Path)</onclick>
 						<onclick>Skin.SetAddon(HomeGames_Addon5,xbmc.addon.executable)</onclick>
-						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts)</visible>
+						<visible>!Skin.HasSetting(NoGames) + Skin.HasSetting(HomeGames_Shortcuts) + IsEmpty(Skin.String(HomeGames_Favourite5_Path))</visible>
 					</control>
-					<control type="radiobutton" id="1869">
+					<control type="radiobutton" id="1874">
 						<include>SettingsLabel</include>
 						<label>- $LOCALIZE[31476]</label>
 						<onclick>Skin.ToggleSetting(NoGamesSubs)</onclick>
