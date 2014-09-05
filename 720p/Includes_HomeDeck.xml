@@ -3305,83 +3305,83 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Movie 1</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.1.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.1.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.1.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.1.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Path))</visible>
 			</item>
 			<item id="2">
 				<description>Recently Added Movie 2</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.2.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.2.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.2.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.2.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.2.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Path))</visible>
 			</item>
 			<item id="3">
 				<description>Recently Added Movie 3</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.3.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.3.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.3.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.3.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.3.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Path))</visible>
 			</item>
 			<item id="4">
 				<description>Recently Added Movie 4</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.4.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.4.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.4.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.4.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.4.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Path))</visible>
 			</item>
 			<item id="5">
 				<description>Recently Added Movie 5</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.5.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.5.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.5.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.5.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.5.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Path))</visible>
 			</item>
 			<item id="6">
 				<description>Recently Added Movie 6</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.6.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.6.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.6.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.6.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.6.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Path))</visible>
 			</item>
 			<item id="7">
 				<description>Recently Added Movie 7</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.7.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.7.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.7.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.7.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.7.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Path))</visible>
 			</item>
 			<item id="8">
 				<description>Recently Added Movie 8</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.8.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.8.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.8.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.8.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.8.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Path))</visible>
 			</item>
 			<item id="9">
 				<description>Recently Added Movie 9</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.9.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.9.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.9.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.9.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.9.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.9.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.9.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Path))</visible>
 			</item>
 			<item id="10">
 				<description>Recently Added Movie 10</description>
-				<label>$INFO[Window(Home).Property(LatestMovie.10.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMovie.10.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMovie.10.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.10.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMovie.10.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMovie.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(fanart))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMovie.10.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Path))</visible>
 			</item>
 		</content>
 	</include>
@@ -3390,83 +3390,83 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Episode 1</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.1.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.1.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.1.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.1.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.1.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.1.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.1.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.1.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Path))</visible>
 			</item>
 			<item id="2">
 				<description>Recently Added Episode 2</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.2.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.2.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.2.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.2.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.2.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.2.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.2.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.2.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.2.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.Path))</visible>
 			</item>
 			<item id="3">
 				<description>Recently Added Episode 3</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.3.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.3.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.3.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.3.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.3.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.3.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.3.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.3.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.3.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.Path))</visible>
 			</item>
 			<item id="4">
 				<description>Recently Added Episode 4</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.4.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.4.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.4.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.4.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.4.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.4.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.4.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.4.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.4.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.Path))</visible>
 			</item>
 			<item id="5">
 				<description>Recently Added Episode 5</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.5.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.5.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.5.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.5.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.5.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.5.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.5.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.5.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.5.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Path))</visible>
 			</item>
 			<item id="6">
 				<description>Recently Added Episode 6</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.6.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.6.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.6.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.6.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.6.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.6.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.6.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.6.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.6.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.6.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.Path))</visible>
 			</item>
 			<item id="7">
 				<description>Recently Added Episode 7</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.7.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.7.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.7.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.7.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.7.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.7.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.7.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.7.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.7.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.7.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.Path))</visible>
 			</item>
 			<item id="8">
 				<description>Recently Added Episode 8</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.8.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.8.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.8.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.8.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.8.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.8.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.8.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.8.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.8.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.8.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.8.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.Path))</visible>
 			</item>
 			<item id="9">
 				<description>Recently Added Episode 9</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.9.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.9.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.9.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.9.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.9.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.9.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.9.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.9.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.9.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.9.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.9.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Path))</visible>
 			</item>
 			<item id="10">
 				<description>Recently Added Episode 10</description>
-				<label>$INFO[Window(Home).Property(LatestEpisode.10.ShowTitle)] $INFO[Window(Home).Property(LatestEpisode.10.EpisodeNo)] - $INFO[Window(Home).Property(LatestEpisode.10.EpisodeTitle)]</label>
-				<icon>$INFO[Window(Home).Property(LatestEpisode.10.Fanart)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestEpisode.10.Thumb)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestEpisode.10.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestEpisode.10.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentEpisode.10.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.10.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.10.Art(fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentEpisode.10.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Path))</visible>
 			</item>
 		</content>
 	</include>
@@ -3475,93 +3475,93 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Album 1</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.1.Artist)] - $INFO[Window(Home).Property(LatestAlbum.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.1.Artist)] - $INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.1.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.1.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Path))</visible>
 			</item>
 			<item id="2">
 				<description>Recently Added Album 2</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.2.Artist)] - $INFO[Window(Home).Property(LatestAlbum.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.2.Artist)] - $INFO[Window(Home).Property(RecentAlbum.2.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.2.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.2.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Path))</visible>
 			</item>
 			<item id="3">
 				<description>Recently Added Album 3</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.3.Artist)] - $INFO[Window(Home).Property(LatestAlbum.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.3.Artist)] - $INFO[Window(Home).Property(RecentAlbum.3.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.3.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.3.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Path))</visible>
 			</item>
 			<item id="4">
 				<description>Recently Added Album 4</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.4.Artist)] - $INFO[Window(Home).Property(LatestAlbum.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.4.Artist)] - $INFO[Window(Home).Property(RecentAlbum.4.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.4.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.4.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Path))</visible>
 			</item>
 			<item id="5">
 				<description>Recently Added Album 5</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.5.Artist)] - $INFO[Window(Home).Property(LatestAlbum.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.5.Artist)] - $INFO[Window(Home).Property(RecentAlbum.5.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.5.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.5.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Path))</visible>
 			</item>
 			<item id="6">
 				<description>Recently Added Album 6</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.6.Artist)] - $INFO[Window(Home).Property(LatestAlbum.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.6.Artist)] - $INFO[Window(Home).Property(RecentAlbum.6.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.6.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.6.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Path))</visible>
 			</item>
 			<item id="7">
 				<description>Recently Added Album 7</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.7.Artist)] - $INFO[Window(Home).Property(LatestAlbum.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.7.Artist)] - $INFO[Window(Home).Property(RecentAlbum.7.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.7.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.7.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Path))</visible>
 			</item>
 			<item id="8">
 				<description>Recently Added Album 8</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.8.Artist)] - $INFO[Window(Home).Property(LatestAlbum.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.8.Artist)] - $INFO[Window(Home).Property(RecentAlbum.8.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.8.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.8.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Path))</visible>
 			</item>
 			<item id="9">
 				<description>Recently Added Album 9</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.9.Artist)] - $INFO[Window(Home).Property(LatestAlbum.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.9.Artist)] - $INFO[Window(Home).Property(RecentAlbum.9.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.9.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.9.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Path))</visible>
 			</item>
 			<item id="10">
 				<description>Recently Added Album 10</description>
-				<label>$INFO[Window(Home).Property(LatestAlbum.10.Artist)] - $INFO[Window(Home).Property(LatestAlbum.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.10.Artist)] - $INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
 				<icon>-</icon>
-				<thumb>$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</thumb>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestAlbum.10.Path))</visible>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Path))</visible>
 			</item>
 		</content>
 	</include>
@@ -3570,83 +3570,83 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Music Video 1</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.1.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.1.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Path))</visible>
 			</item>
 			<item id="2">
 				<description>Recently Added Music Video 2</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.2.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.2.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.2.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.2.Path))</visible>
 			</item>
 			<item id="3">
 				<description>Recently Added Music Video 3</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.3.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.3.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.3.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.3.Path))</visible>
 			</item>
 			<item id="4">
 				<description>Recently Added Music Video 4</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.4.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.4.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.4.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.4.Path))</visible>
 			</item>
 			<item id="5">
 				<description>Recently Added Music Video 5</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.5.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.5.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.5.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.5.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.5.Path))</visible>
 			</item>
 			<item id="6">
 				<description>Recently Added Music Video 6</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.6.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.6.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.6.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.6.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.6.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.6.Path))</visible>
 			</item>
 			<item id="7">
 				<description>Recently Added Music Video 7</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.7.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.7.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.7.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.7.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.7.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.7.Path))</visible>
 			</item>
 			<item id="8">
 				<description>Recently Added Music Video 8</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.8.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.8.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.8.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.8.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.8.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.8.Path))</visible>
 			</item>
 			<item id="9">
 				<description>Recently Added Music Video 9</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.9.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.9.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.9.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.9.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.9.Path))</visible>
 			</item>
 			<item id="10">
 				<description>Recently Added Music Video 10</description>
-				<label>$INFO[Window(Home).Property(LatestMusicVideo.10.Artist)] - $INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
-				<icon>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</icon>
-				<thumb>$INFO[Window(Home).Property(LatestMusicVideo.10.Fanart)]</thumb>
-				<onclick>PlayMedia($INFO[Window(Home).Property(LatestMusicVideo.10.Path)])</onclick>
-				<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.10.Path))</visible>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label>
+				<icon>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Fanart)]</thumb>
+				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.10.Play)]</onclick>
+				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.10.Path))</visible>
 			</item>
 		</content>
 	</include>
