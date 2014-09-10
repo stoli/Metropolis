@@ -1044,3 +1044,19 @@ msgstr ""
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr ""
+
+msgctxt "#31713"
+msgid "Custom Home Shortcut"
+msgstr ""
+
+msgctxt "#31714"
+msgid "Label and Shortcut"
+msgstr ""
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr ""
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr ""

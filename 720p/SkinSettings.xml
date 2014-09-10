@@ -2456,6 +2456,612 @@
 						<onclick>Skin.ToggleSetting(NoShutdownSubs)</onclick>
 						<selected>Skin.HasSetting(NoShutdownSubs)</selected>
 					</control>
+
+					<!-- Custom Home Shortcuts (2000-) -->
+
+					<!-- Custom Home Shortcut item 1 -->
+					<control type="radiobutton" id="2000">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31713] 1</label>
+						<onclick>Skin.ToggleSetting(DialogHome1Enable)</onclick>
+						<selected>Skin.HasSetting(DialogHome1Enable)</selected>
+					</control>
+					<control type="button" id="2001">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31714]</label>
+						<label2>$INFO[Skin.String(DialogHome1Title)]</label2>
+						<onclick>Skin.Reset(DialogHome1Title)</onclick>
+						<onclick>Skin.Reset(DialogHome1)</onclick>
+						<onclick>Skin.SetString(DialogHome1Title)</onclick>
+						<onclick>RunScript(script.favourites,property=DialogHome1)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable)</visible>
+					</control>
+					<control type="button" id="2002">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31715]</label>
+						<label2>$INFO[Skin.String(DialogHome1image)]</label2>
+						<onclick>Skin.Reset(DialogHome1image)</onclick>
+						<onclick>Skin.SetImage(DialogHome1image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable)</visible>
+					</control>
+					<control type="button" id="2003">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31716]</label>
+						<label2>$INFO[Skin.String(DialogHome1wallpaper)]</label2>
+						<onclick>Skin.Reset(DialogHome1wallpaper)</onclick>
+						<onclick>Skin.SetImage(DialogHome1wallpaper)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable)</visible>
+					</control>
+					<control type="radiobutton" id="2004">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeCustom1_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeCustom1_Shortcuts)</selected>
+						<visible>Skin.HasSetting(DialogHome1Enable)</visible>
+					</control>
+					<!-- Custom1 submenus -->
+					<control type="button" id="2005">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeCustom1_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom1_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom1_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom1_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Addon1))</visible>
+					</control>
+					<control type="button" id="2006">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom1_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite1_Path)</visible>
+					</control>
+					<control type="button" id="2007">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeCustom1_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom1_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom1_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom1_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Addon2))</visible>
+					</control>
+					<control type="button" id="2008">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom1_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite2_Path)</visible>
+					</control>
+					<control type="button" id="2009">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeCustom1_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom1_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom1_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom1_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Addon3))</visible>
+					</control>
+					<control type="button" id="2010">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom1_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite3_Path)</visible>
+					</control>
+					<control type="button" id="2011">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeCustom1_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom1_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom1_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom1_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Addon4))</visible>
+					</control>
+					<control type="button" id="2012">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom1_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite4_Path)</visible>
+					</control>
+					<control type="button" id="2013">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeCustom1_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom1_Addon5)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom1_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom1_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom1_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Addon5))</visible>
+					</control>
+					<control type="button" id="2014">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom1_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite5_Path)</visible>
+					</control>
+
+					<!-- Custom Home Shortcut item 2 -->
+					<control type="radiobutton" id="2015">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31713] 2</label>
+						<onclick>Skin.ToggleSetting(DialogHome2Enable)</onclick>
+						<selected>Skin.HasSetting(DialogHome2Enable)</selected>
+					</control>
+					<control type="button" id="2016">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31714]</label>
+						<label2>$INFO[Skin.String(DialogHome2Title)]</label2>
+						<onclick>Skin.Reset(DialogHome2Title)</onclick>
+						<onclick>Skin.Reset(DialogHome2)</onclick>
+						<onclick>Skin.SetString(DialogHome2Title)</onclick>
+						<onclick>RunScript(script.favourites,property=DialogHome2)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable)</visible>
+					</control>
+					<control type="button" id="2017">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31715]</label>
+						<label2>$INFO[Skin.String(DialogHome2image)]</label2>
+						<onclick>Skin.Reset(DialogHome2image)</onclick>
+						<onclick>Skin.SetImage(DialogHome2image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable)</visible>
+					</control>
+					<control type="button" id="2018">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31716]</label>
+						<label2>$INFO[Skin.String(DialogHome2wallpaper)]</label2>
+						<onclick>Skin.Reset(DialogHome2wallpaper)</onclick>
+						<onclick>Skin.SetImage(DialogHome2wallpaper)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable)</visible>
+					</control>
+					<control type="radiobutton" id="2019">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeCustom2_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeCustom2_Shortcuts)</selected>
+						<visible>Skin.HasSetting(DialogHome2Enable)</visible>
+					</control>
+					<!-- Custom2 submenus -->
+					<control type="button" id="2020">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeCustom2_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom2_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom2_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom2_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Addon1))</visible>
+					</control>
+					<control type="button" id="2021">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom2_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite1_Path)</visible>
+					</control>
+					<control type="button" id="2022">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeCustom2_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom2_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom2_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom2_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Addon2))</visible>
+					</control>
+					<control type="button" id="2023">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom2_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite2_Path)</visible>
+					</control>
+					<control type="button" id="2024">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeCustom2_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom2_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom2_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom2_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Addon3))</visible>
+					</control>
+					<control type="button" id="2025">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom2_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite3_Path)</visible>
+					</control>
+					<control type="button" id="2026">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeCustom2_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom2_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom2_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom2_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Addon4))</visible>
+					</control>
+					<control type="button" id="2027">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom2_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite4_Path)</visible>
+					</control>
+					<control type="button" id="2028">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeCustom2_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom2_Addon5)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom2_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom2_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom2_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Addon5))</visible>
+					</control>
+					<control type="button" id="2029">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom2_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite5_Path)</visible>
+					</control>
+
+					<!-- Custom Home Shortcut item 3 -->
+					<control type="radiobutton" id="2030">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31713] 3</label>
+						<onclick>Skin.ToggleSetting(DialogHome3Enable)</onclick>
+						<selected>Skin.HasSetting(DialogHome3Enable)</selected>
+					</control>
+					<control type="button" id="2031">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31714]</label>
+						<label2>$INFO[Skin.String(DialogHome3Title)]</label2>
+						<onclick>Skin.Reset(DialogHome3Title)</onclick>
+						<onclick>Skin.Reset(DialogHome3)</onclick>
+						<onclick>Skin.SetString(DialogHome3Title)</onclick>
+						<onclick>RunScript(script.favourites,property=DialogHome3)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable)</visible>
+					</control>
+					<control type="button" id="2032">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31715]</label>
+						<label2>$INFO[Skin.String(DialogHome3image)]</label2>
+						<onclick>Skin.Reset(DialogHome3image)</onclick>
+						<onclick>Skin.SetImage(DialogHome3image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable)</visible>
+					</control>
+					<control type="button" id="2033">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31716]</label>
+						<label2>$INFO[Skin.String(DialogHome3wallpaper)]</label2>
+						<onclick>Skin.Reset(DialogHome3wallpaper)</onclick>
+						<onclick>Skin.SetImage(DialogHome3wallpaper)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable)</visible>
+					</control>
+					<control type="radiobutton" id="2034">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeCustom3_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeCustom3_Shortcuts)</selected>
+						<visible>Skin.HasSetting(DialogHome3Enable)</visible>
+					</control>
+					<!-- Custom3 submenus -->
+					<control type="button" id="2035">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeCustom3_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom3_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom3_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom3_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Addon1))</visible>
+					</control>
+					<control type="button" id="2036">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom3_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite1_Path)</visible>
+					</control>
+					<control type="button" id="2037">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeCustom3_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom3_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom3_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom3_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Addon2))</visible>
+					</control>
+					<control type="button" id="2038">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom3_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite2_Path)</visible>
+					</control>
+					<control type="button" id="2039">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeCustom3_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom3_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom3_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom3_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Addon3))</visible>
+					</control>
+					<control type="button" id="2040">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom3_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite3_Path)</visible>
+					</control>
+					<control type="button" id="2041">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeCustom3_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom3_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom3_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom3_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Addon4))</visible>
+					</control>
+					<control type="button" id="2042">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom3_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite4_Path)</visible>
+					</control>
+					<control type="button" id="2043">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeCustom3_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom3_Addon5)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom3_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom3_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom3_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Addon5))</visible>
+					</control>
+					<control type="button" id="2044">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom3_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite5_Path)</visible>
+					</control>
+
+					<!-- Custom Home Shortcut item 4 -->
+					<control type="radiobutton" id="2045">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31713] 4</label>
+						<onclick>Skin.ToggleSetting(DialogHome4Enable)</onclick>
+						<selected>Skin.HasSetting(DialogHome4Enable)</selected>
+					</control>
+					<control type="button" id="2046">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31714]</label>
+						<label2>$INFO[Skin.String(DialogHome4Title)]</label2>
+						<onclick>Skin.Reset(DialogHome4Title)</onclick>
+						<onclick>Skin.Reset(DialogHome4)</onclick>
+						<onclick>Skin.SetString(DialogHome4Title)</onclick>
+						<onclick>RunScript(script.favourites,property=DialogHome4)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable)</visible>
+					</control>
+					<control type="button" id="2047">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31715]</label>
+						<label2>$INFO[Skin.String(DialogHome4image)]</label2>
+						<onclick>Skin.Reset(DialogHome4image)</onclick>
+						<onclick>Skin.SetImage(DialogHome4image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable)</visible>
+					</control>
+					<control type="button" id="2048">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>- $LOCALIZE[31716]</label>
+						<label2>$INFO[Skin.String(DialogHome4wallpaper)]</label2>
+						<onclick>Skin.Reset(DialogHome4wallpaper)</onclick>
+						<onclick>Skin.SetImage(DialogHome4wallpaper)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable)</visible>
+					</control>
+					<control type="radiobutton" id="2049">
+						<include>SettingsLabel</include>
+						<label>- $LOCALIZE[1034] $LOCALIZE[31457]</label>
+						<onclick>Skin.ToggleSetting(HomeCustom4_Shortcuts)</onclick>
+						<selected>Skin.HasSetting(HomeCustom4_Shortcuts)</selected>
+						<visible>Skin.HasSetting(DialogHome4Enable)</visible>
+					</control>
+					<!-- Custom4 submenus -->
+					<control type="button" id="2050">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 1</label>
+						<label2>$INFO[Skin.String(HomeCustom4_Favourite1_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom4_Addon1)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite1_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom4_Favourite1_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom4_Favourite1_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Addon1))</visible>
+					</control>
+					<control type="button" id="2051">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon1))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom4_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite1_Path)</visible>
+					</control>
+					<control type="button" id="2052">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 2</label>
+						<label2>$INFO[Skin.String(HomeCustom4_Favourite2_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom4_Addon2)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite2_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom4_Favourite2_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom4_Favourite2_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Addon2))</visible>
+					</control>
+					<control type="button" id="2053">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon2))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom4_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite2_Path)</visible>
+					</control>
+					<control type="button" id="2054">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 3</label>
+						<label2>$INFO[Skin.String(HomeCustom4_Favourite3_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom4_Addon3)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite3_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom4_Favourite3_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom4_Favourite3_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Addon3))</visible>
+					</control>
+					<control type="button" id="2055">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon3))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom4_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite3_Path)</visible>
+					</control>
+					<control type="button" id="2056">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 4</label>
+						<label2>$INFO[Skin.String(HomeCustom4_Favourite4_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom4_Addon4)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite4_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom4_Favourite4_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom4_Favourite4_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Addon4))</visible>
+					</control>
+					<control type="button" id="2057">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon4))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom4_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite4_Path)</visible>
+					</control>
+					<control type="button" id="2058">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[31271] 5</label>
+						<label2>$INFO[Skin.String(HomeCustom4_Favourite5_Label)]</label2>
+						<onclick>Skin.Reset(HomeCustom4_Addon5)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite5_Label)</onclick>
+						<onclick>Skin.Reset(HomeCustom4_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouritePath,HomeCustom4_Favourite5_Path)</onclick>
+						<onclick>Skin.SetString(CustomFavouriteName,HomeCustom4_Favourite5_Label)</onclick>
+						<onclick>ActivateWindow(1114)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Addon5))</visible>
+					</control>
+					<control type="button" id="2059">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>  - $LOCALIZE[24000] 5</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon5))]</label2>
+						<onclick>Skin.SetAddon(HomeCustom4_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite5_Path)</visible>
+					</control>
 				</control>
 				<!-- View Options -->
 				<control type="grouplist" id="9007">

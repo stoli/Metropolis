@@ -265,6 +265,50 @@
 		<thumb>$INFO[Skin.String(CustomShutdown)]</thumb>
 	</include>
 
+	<include name="HomeCustom1Icon">
+		<description>Custom1</description>
+		<label>$INFO[Skin.String(DialogHome1Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome1image)]</icon>
+	</include>
+	<include name="HomeCustom1Wallpaper">
+		<description>Custom1</description>
+		<label>$INFO[Skin.String(DialogHome1Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome1wallpaper)]</icon>
+	</include>
+
+	<include name="HomeCustom2Icon">
+		<description>Custom2</description>
+		<label>$INFO[Skin.String(DialogHome2Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome2image)]</icon>
+	</include>
+	<include name="HomeCustom2Wallpaper">
+		<description>Custom2</description>
+		<label>$INFO[Skin.String(DialogHome2Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome2wallpaper)]</icon>
+	</include>
+
+	<include name="HomeCustom3Icon">
+		<description>Custom3</description>
+		<label>$INFO[Skin.String(DialogHome3Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome3image)]</icon>
+	</include>
+	<include name="HomeCustom3Wallpaper">
+		<description>Custom3</description>
+		<label>$INFO[Skin.String(DialogHome3Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome3wallpaper)]</icon>
+	</include>
+
+	<include name="HomeCustom4Icon">
+		<description>Custom4</description>
+		<label>$INFO[Skin.String(DialogHome4Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome4image)]</icon>
+	</include>
+	<include name="HomeCustom4Wallpaper">
+		<description>Custom4</description>
+		<label>$INFO[Skin.String(DialogHome4Title)]</label>
+		<icon>$INFO[Skin.String(DialogHome4wallpaper)]</icon>
+	</include>
+
 	<!-- Main menu shared content list -->
 	<include name="HomeListContent">
 		<content>
@@ -702,6 +746,34 @@
 				<onclick>XBMC.Quit()</onclick>
 				<visible>!Skin.HasSetting(NoShutdown)</visible>
 				<visible>Skin.HasSetting(NoShutdownDestructive)</visible>
+			</item>
+			<item id="17">
+				<description>Custom1</description>
+				<include condition="Skin.HasSetting(Home2)">HomeCustom1Icon</include>
+				<include condition="!Skin.HasSetting(Home2)">HomeCustom1Wallpaper</include>
+				<onclick>$INFO[Skin.String(DialogHome1.path)]</onclick>
+				<visible>Skin.HasSetting(DialogHome1Enable)</visible>
+			</item>
+			<item id="18">
+				<description>Custom2</description>
+				<include condition="Skin.HasSetting(Home2)">HomeCustom2Icon</include>
+				<include condition="!Skin.HasSetting(Home2)">HomeCustom2Wallpaper</include>
+				<onclick>$INFO[Skin.String(DialogHome2.path)]</onclick>
+				<visible>Skin.HasSetting(DialogHome2Enable)</visible>
+			</item>
+			<item id="19">
+				<description>Custom3</description>
+				<include condition="Skin.HasSetting(Home2)">HomeCustom3Icon</include>
+				<include condition="!Skin.HasSetting(Home2)">HomeCustom3Wallpaper</include>
+				<onclick>$INFO[Skin.String(DialogHome3.path)]</onclick>
+				<visible>Skin.HasSetting(DialogHome3Enable)</visible>
+			</item>
+			<item id="20">
+				<description>Custom4</description>
+				<include condition="Skin.HasSetting(Home2)">HomeCustom4Icon</include>
+				<include condition="!Skin.HasSetting(Home2)">HomeCustom4Wallpaper</include>
+				<onclick>$INFO[Skin.String(DialogHome4.path)]</onclick>
+				<visible>Skin.HasSetting(DialogHome4Enable)</visible>
 			</item>
 		</content>
 	</include>
@@ -2130,6 +2202,358 @@
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>13012</label>
 				<onclick>XBMC.Quit()</onclick>
+			</control>
+		</control>
+		<!--Custom 1 Submenu -->
+		<control type="grouplist" id="9024">
+			<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_VerticalDetails1</include>
+			<include condition="Skin.HasSetting(Home2)">Submenu_VerticalDetails2</include>
+			<include condition="Skin.HasSetting(Home3)">Submenu_VerticalDetails3</include>
+			<onup>9024</onup>
+			<ondown>9024</ondown>
+			<visible>Container(9000).HasFocus(17)</visible>
+			<control type="button" id="92401">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom1_Favourite1_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom1_Favourite1_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Favourite1_Path))</visible>
+			</control>
+			<control type="button" id="92402">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon1))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon1)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon1))</visible>
+			</control>
+			<control type="button" id="92403">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom1_Favourite2_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom1_Favourite2_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Favourite2_Path))</visible>
+			</control>
+			<control type="button" id="92404">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon2))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon2)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon2))</visible>
+			</control>
+			<control type="button" id="92405">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom1_Favourite3_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom1_Favourite3_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Favourite3_Path))</visible>
+			</control>
+			<control type="button" id="92406">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon3))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon3)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon3))</visible>
+			</control>
+			<control type="button" id="92407">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom1_Favourite4_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom1_Favourite4_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Favourite4_Path))</visible>
+			</control>
+			<control type="button" id="92408">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon4))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon4)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon4))</visible>
+			</control>
+			<control type="button" id="92409">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom1_Favourite5_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom1_Favourite5_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Favourite5_Path))</visible>
+			</control>
+			<control type="button" id="92410">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon5)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon5))</visible>
+			</control>
+		</control>
+		<!--Custom 2 Submenu -->
+		<control type="grouplist" id="9025">
+			<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_VerticalDetails1</include>
+			<include condition="Skin.HasSetting(Home2)">Submenu_VerticalDetails2</include>
+			<include condition="Skin.HasSetting(Home3)">Submenu_VerticalDetails3</include>
+			<onup>9025</onup>
+			<ondown>9025</ondown>
+			<visible>Container(9000).HasFocus(18)</visible>
+			<control type="button" id="92501">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom2_Favourite1_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom2_Favourite1_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Favourite1_Path))</visible>
+			</control>
+			<control type="button" id="92502">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon1))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon1)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon1))</visible>
+			</control>
+			<control type="button" id="92503">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom2_Favourite2_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom2_Favourite2_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Favourite2_Path))</visible>
+			</control>
+			<control type="button" id="92504">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon2))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon2)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon2))</visible>
+			</control>
+			<control type="button" id="92505">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom2_Favourite3_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom2_Favourite3_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Favourite3_Path))</visible>
+			</control>
+			<control type="button" id="92506">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon3))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon3)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon3))</visible>
+			</control>
+			<control type="button" id="92507">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom2_Favourite4_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom2_Favourite4_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Favourite4_Path))</visible>
+			</control>
+			<control type="button" id="92508">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon4))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon4)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon4))</visible>
+			</control>
+			<control type="button" id="92509">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom2_Favourite5_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom2_Favourite5_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Favourite5_Path))</visible>
+			</control>
+			<control type="button" id="92510">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon5)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon5))</visible>
+			</control>
+		</control>
+		<!--Custom 3 Submenu -->
+		<control type="grouplist" id="9026">
+			<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_VerticalDetails1</include>
+			<include condition="Skin.HasSetting(Home2)">Submenu_VerticalDetails2</include>
+			<include condition="Skin.HasSetting(Home3)">Submenu_VerticalDetails3</include>
+			<onup>9026</onup>
+			<ondown>9026</ondown>
+			<visible>Container(9000).HasFocus(19)</visible>
+			<control type="button" id="92601">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom3_Favourite1_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom3_Favourite1_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Favourite1_Path))</visible>
+			</control>
+			<control type="button" id="92602">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon1))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon1)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon1))</visible>
+			</control>
+			<control type="button" id="92603">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom3_Favourite2_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom3_Favourite2_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Favourite2_Path))</visible>
+			</control>
+			<control type="button" id="92604">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon2))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon2)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon2))</visible>
+			</control>
+			<control type="button" id="92605">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom3_Favourite3_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom3_Favourite3_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Favourite3_Path))</visible>
+			</control>
+			<control type="button" id="92606">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon3))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon3)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon3))</visible>
+			</control>
+			<control type="button" id="92607">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom3_Favourite4_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom3_Favourite4_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Favourite4_Path))</visible>
+			</control>
+			<control type="button" id="92608">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon4))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon4)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon4))</visible>
+			</control>
+			<control type="button" id="92609">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom3_Favourite5_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom3_Favourite5_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Favourite5_Path))</visible>
+			</control>
+			<control type="button" id="92610">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon5)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon5))</visible>
+			</control>
+		</control>
+		<!--Custom 4 Submenu -->
+		<control type="grouplist" id="9027">
+			<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_VerticalDetails1</include>
+			<include condition="Skin.HasSetting(Home2)">Submenu_VerticalDetails2</include>
+			<include condition="Skin.HasSetting(Home3)">Submenu_VerticalDetails3</include>
+			<onup>9027</onup>
+			<ondown>9027</ondown>
+			<visible>Container(9000).HasFocus(20)</visible>
+			<control type="button" id="92701">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom4_Favourite1_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom4_Favourite1_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Favourite1_Path))</visible>
+			</control>
+			<control type="button" id="92702">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon1))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon1)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon1))</visible>
+			</control>
+			<control type="button" id="92703">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom4_Favourite2_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom4_Favourite2_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Favourite2_Path))</visible>
+			</control>
+			<control type="button" id="92704">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon2))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon2)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon2))</visible>
+			</control>
+			<control type="button" id="92705">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom4_Favourite3_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom4_Favourite3_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Favourite3_Path))</visible>
+			</control>
+			<control type="button" id="92706">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon3))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon3)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon3))</visible>
+			</control>
+			<control type="button" id="92707">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom4_Favourite4_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom4_Favourite4_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Favourite4_Path))</visible>
+			</control>
+			<control type="button" id="92708">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon4))]</label>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon4)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon4))</visible>
+			</control>
+			<control type="button" id="92709">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[Skin.String(HomeCustom4_Favourite5_Label)]</label>
+				<onclick>$INFO[Skin.String(HomeCustom4_Favourite5_Path)]</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Favourite5_Path))</visible>
+			</control>
+			<control type="button" id="92710">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon5)])</onclick>
+				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon5))</visible>
 			</control>
 		</control>
 	</include>
