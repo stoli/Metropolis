@@ -1524,7 +1524,6 @@
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$LOCALIZE[31289]</label>
 				<onclick>ActivateWindow(MusicFiles)</onclick>
-				<visible>Skin.HasSetting(HomeMusic_Override)</visible>
 				<visible>Container(9000).HasFocus(7) + !Skin.HasSetting(NoMusicSubs)</visible>
 			</control>
 			<control type="button" id="91722">
