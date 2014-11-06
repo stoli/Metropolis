@@ -173,6 +173,34 @@
 					<texturenofocus>osd/osd_button_next_nf.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
+				<control type="togglebutton" id="801">
+					<description>RepeatOne</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<label>-</label>
+					<texturefocus>osd/osd_button_repeat_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_repeat_nf.png</texturenofocus>
+					<usealttexture>Playlist.IsRepeatOne</usealttexture>
+					<alttexturefocus>osd/osd_button_repeat_one_fo.png</alttexturefocus>
+					<alttexturenofocus>osd/osd_button_repeat_one_nf.png</alttexturenofocus>
+					<onclick>PlayerControl(Repeat)</onclick>
+					<visible>Playlist.IsRepeatOne | !Playlist.IsRepeat</visible>
+				</control>
+				<control type="togglebutton" id="802">
+					<description>RepeatAll</description>
+					<include>Animation_ButtonFocus</include>
+					<height>60</height>
+					<width>60</width>
+					<label>-</label>
+					<texturefocus>osd/osd_button_repeat_fo.png</texturefocus>
+					<texturenofocus>osd/osd_button_repeat_nf.png</texturenofocus>
+					<usealttexture>Playlist.IsRepeat</usealttexture>
+					<alttexturefocus>osd/osd_button_repeat_all_fo.png</alttexturefocus>
+					<alttexturenofocus>osd/osd_button_repeat_all_nf.png</alttexturenofocus>
+					<onclick>PlayerControl(Repeat)</onclick>
+					<visible>Playlist.IsRepeat</visible>
+				</control>
 				<control type="button" id="13">
 					<description>Video Settings</description>
 					<include>Animation_ButtonFocus</include>
