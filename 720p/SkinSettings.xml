@@ -4683,14 +4683,12 @@
 					</control>
 					<control type="image" id="711">
 						<include>Settings_Line</include>
-						<visible>System.HasAddon(weather.wunderground)</visible>
 					</control>
 					<control type="radiobutton" id="712">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31710]</label>
 						<onclick>Skin.ToggleSetting(UseExtendedWeather)</onclick>
 						<selected>Skin.HasSetting(UseExtendedWeather)</selected>
-						<visible>System.HasAddon(weather.wunderground)</visible>
 					</control>
 				</control>
 				<!-- Video Settings -->
