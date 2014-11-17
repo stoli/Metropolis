@@ -3903,7 +3903,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Play))</visible>
 			</item>
 			<item id="2">
 				<description>Recently Added Album 2</description>
@@ -3912,7 +3912,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Play))</visible>
 			</item>
 			<item id="3">
 				<description>Recently Added Album 3</description>
@@ -3921,7 +3921,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Play))</visible>
 			</item>
 			<item id="4">
 				<description>Recently Added Album 4</description>
@@ -3930,7 +3930,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Play))</visible>
 			</item>
 			<item id="5">
 				<description>Recently Added Album 5</description>
@@ -3939,7 +3939,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Play))</visible>
 			</item>
 			<item id="6">
 				<description>Recently Added Album 6</description>
@@ -3948,7 +3948,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Play))</visible>
 			</item>
 			<item id="7">
 				<description>Recently Added Album 7</description>
@@ -3957,7 +3957,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Play))</visible>
 			</item>
 			<item id="8">
 				<description>Recently Added Album 8</description>
@@ -3966,7 +3966,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Play))</visible>
 			</item>
 			<item id="9">
 				<description>Recently Added Album 9</description>
@@ -3975,7 +3975,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Play))</visible>
 			</item>
 			<item id="10">
 				<description>Recently Added Album 10</description>
@@ -3984,7 +3984,7 @@
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
-				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Path))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Play))</visible>
 			</item>
 		</content>
 	</include>
