@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Ρυθμίστε πως να χειρίζεται το Kodi το περιεχόμενο βίντεο. Περιλαμβάνονται επιλογές για στοίβαγμα ταινιών χωρισμένων σε πολλαπλά μέρη, επιλογές βάσης δεδομένων συλλογής, και επιλογές απόδοσης και αναπαραγωγής"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Διαχείριση των εγκατεστημένων Πρόσθετων. Περιλαμβάνεται περιήγηση και εγκατάσταση από το XBMC.org, καθώς και τροποποιήσεις Πρόσθετων."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Διαχείριση των εγκατεστημένων Πρόσθετων. Περιλαμβάνεται περιήγηση και εγκατάσταση από το Kodi.tv, καθώς και τροποποιήσεις Πρόσθετων."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -947,3 +947,11 @@ msgstr "Εμφάνιση Πρόγνωσης στην Αρχ. Οθόνη"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Περικοπή Μικρογραφιών στη Συλλογή Μουσικών Βίντεο"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Υπόβαθρο"

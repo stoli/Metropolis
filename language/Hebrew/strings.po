@@ -184,6 +184,14 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "תחזית ל36 שעות"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "לחץ"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "מקסימום"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "אייקון"

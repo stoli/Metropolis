@@ -60,6 +60,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Список"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Карусель постерів"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Файли"

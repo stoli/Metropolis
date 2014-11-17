@@ -64,6 +64,10 @@ msgctxt "#31024"
 msgid "Icon Home layout"
 msgstr "Home-Menü Layout 'Symbole'"
 
+msgctxt "#31025"
+msgid "Horizontal Text Home layout"
+msgstr "Horizontaler Text Layout des Hauptmenü"
+
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
 msgstr "Filme mit Gesehen-Status verbergen"
@@ -185,7 +189,7 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Hier wird konfiguriert wie Kodi Video Inhalte behandelt. Dazu gehören u. a. die Stapel Optionen für Filme die aus mehreren Teilen bestehen und die Bibliotheks- und Rendering-Optionen."
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
 msgstr "Hier können Add-Ons durchsucht, installiert und konfiguriert werden."
 
 msgctxt "#31213"
@@ -868,6 +872,10 @@ msgctxt "#31475"
 msgid "Default OSD button"
 msgstr "Standard-OSD-Schaltfläche"
 
+msgctxt "#31476"
+msgid "Disable default Submenus"
+msgstr "Standarduntermenüs deaktivieren"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Live TV (PVR) Unterstützung einschalten"
@@ -947,3 +955,19 @@ msgstr "Wettervorhersage auf dem Home-Bildschirm anzeigen"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Vorschaubilder in der Musikvideo Sammlung zuschneiden"
+
+msgctxt "#31713"
+msgid "Custom Home Shortcut"
+msgstr "Benutzerdefinierte Hauptmenü Verknüpfung"
+
+msgctxt "#31714"
+msgid "Label and Shortcut"
+msgstr "Label und Verküpfung"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Symbol"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Hintergrund"

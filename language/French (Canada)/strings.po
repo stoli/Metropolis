@@ -64,6 +64,10 @@ msgctxt "#31024"
 msgid "Icon Home layout"
 msgstr "Disposition des icônes de l’accueil"
 
+msgctxt "#31025"
+msgid "Horizontal Text Home layout"
+msgstr "Agencement d'accueil en texte horizontal"
+
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
 msgstr "Cacher l'état de visionnement des films"
@@ -90,11 +94,11 @@ msgstr "Logo"
 
 msgctxt "#31056"
 msgid "Enable Cover Art overlay"
-msgstr "Activer la surcouche des illustrations"
+msgstr "Activer la superposition des illustrations"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
-msgstr "Activer la surcouche des textes d'info des chansons"
+msgstr "Activer la superposition des textes d'info des chansons"
 
 msgctxt "#31060"
 msgid "Show Recently Added Items"
@@ -185,8 +189,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Ajuster comment Kodi gère le contenu vidéo. Inclut les options d'empilement pour les fichiers en plusieurs parties, les options de la base de données de la médiathèque et les options de rendu et de lecture"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Gérer les addiciels installés. Inclut la navigation et l'installation à partir de XBMC.org et les modifications des addiciels."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Gérer les addiciels installés. Inclut la navigation et l'installation à partir de Kodi.tv et les modifications des addiciels."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -358,7 +362,7 @@ msgstr "Voir les informations de votre ordinateur sur des éléments tels que le
 
 msgctxt "#31342"
 msgid "Create and modify multiple user profiles for Kodi so that each member of your household can have their own video or music library"
-msgstr "Créer et modifier des profiles multi-utilisateurs pour Kodi de façon à ce que chaque membre de la maison puisse avoir sa propre vidéothèque et audiothèque"
+msgstr "Créer et modifier des profils multi-utilisateurs pour Kodi de façon à ce que chaque membre de la maison puisse avoir sa propre vidéothèque et audiothèque"
 
 msgctxt "#31343"
 msgid "Action films usually include high energy, big-budget physical stunts and chases, possibly with rescues, battles, fights, escapes, destructive crises (floods, explosions, natural disasters, fires, etc.), non-stop motion, spectacular rhythm and pacing, and adventurous, often two-dimensional 'good-guy' heroes (or recently, heroines) battling 'bad guys' - all designed for pure audience escapism."
@@ -706,7 +710,7 @@ msgstr "Arrière-plan de visualisation : fanart supplémentaire"
 
 msgctxt "#31435"
 msgid "Visualization Background: Artist Slideshow"
-msgstr "Arrière-plan de visualisation : diaporama des artistes"
+msgstr "Arrière-plan de visualisation : diaporama de l'artiste"
 
 msgctxt "#31436"
 msgid "Use Slim Seekbar"
@@ -774,7 +778,7 @@ msgstr "Recommandé"
 
 msgctxt "#31452"
 msgid "Visualization: Use Slim Info Overlay"
-msgstr "Visualisation : utiliser la surcouche réduite d'infos"
+msgstr "Visualisation : utiliser la superposition d'infos réduite"
 
 msgctxt "#31453"
 msgid "Show Date instead of Day of Week"
@@ -782,11 +786,11 @@ msgstr "Afficher la date au lieu du jour de la semaine"
 
 msgctxt "#31454"
 msgid "Visualization: Show player position and time in Info Overlay"
-msgstr "Visualisation : afficher la position du lecteur et l'heure dans la surcouche d'infos"
+msgstr "Visualisation : afficher la position du lecteur et l'heure dans la superposition d'infos"
 
 msgctxt "#31455"
 msgid "Visualization: Hide Clock and Temp in Info Overlay"
-msgstr "Visualisation : masquer l'horloge et la température dans la surcouche d'infos"
+msgstr "Visualisation : masquer l'horloge et la température dans la superposition d'infos"
 
 msgctxt "#31456"
 msgid "- Override default link"
@@ -868,6 +872,10 @@ msgctxt "#31475"
 msgid "Default OSD button"
 msgstr "Bouton d'affichage à l'écran par défaut"
 
+msgctxt "#31476"
+msgid "Disable default Submenus"
+msgstr "Désactiver les sous-menus par défaut"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Activer la prise en charge de la télé en direct (numériscope)"
@@ -947,3 +955,19 @@ msgstr "Afficher les prévisions météo sur l'écran d'accueil"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Rogner les imagettes dans la vue de la galerie des vidéos musicales"
+
+msgctxt "#31713"
+msgid "Custom Home Shortcut"
+msgstr "Raccourci d'accueil personnalisé"
+
+msgctxt "#31714"
+msgid "Label and Shortcut"
+msgstr "Étiquette et raccourci"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Icône"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Papier peint"

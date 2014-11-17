@@ -183,3 +183,7 @@ msgstr "Pressió"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Màxima"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Icona"

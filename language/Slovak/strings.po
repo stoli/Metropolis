@@ -195,3 +195,11 @@ msgstr "Viditeľnosť"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maximálny"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikona"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Tapeta"

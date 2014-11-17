@@ -64,6 +64,10 @@ msgctxt "#31024"
 msgid "Icon Home layout"
 msgstr "Layout de ícones da Página Inicial"
 
+msgctxt "#31025"
+msgid "Horizontal Text Home layout"
+msgstr "Layout Texto Horizontal Página Inicial"
+
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
 msgstr "Ocultar Status de Assistidos em Filmes"
@@ -185,8 +189,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Ajuste a maneira que o Kodi lida com conteúdo de vídeo. Inclui opções de empilhamento para arquivos com várias partes, opções de banco de dados da coleção, renderização e opções de reprodução"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Gerencie seus Add-ons instalados. Inclui procura e instalação do XBMC.org e modificações de Add-ons."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Gerencie seus Add-ons instalados. Inclui procura e instalação do Kodi.tv e modificações de Add-ons."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -868,6 +872,10 @@ msgctxt "#31475"
 msgid "Default OSD button"
 msgstr "Botão padrão de OSD"
 
+msgctxt "#31476"
+msgid "Disable default Submenus"
+msgstr "Desativar Submenus padrão"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Ativar Suporte TV ao Vivo (PVR)"
@@ -947,3 +955,19 @@ msgstr "Exibir previsão de tempo na Página Inicial"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Corte miniaturas em Visualização da Galeira de Vídeos Musicais"
+
+msgctxt "#31713"
+msgid "Custom Home Shortcut"
+msgstr "Atalho Customizado Página Inicial"
+
+msgctxt "#31714"
+msgid "Label and Shortcut"
+msgstr "Etiqueta e Atalho"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ícone"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Papel de Parede"

@@ -223,7 +223,7 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr ""
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
 msgstr ""
 
 msgctxt "#31213"
@@ -957,7 +957,6 @@ msgid "Disable default Submenus"
 msgstr ""
 
 #empty strings from id 31477 to 31599
-
 #PVR Resources
 
 msgctxt "#31600"

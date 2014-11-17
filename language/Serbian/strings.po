@@ -44,6 +44,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Spisak"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Prekriven"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Datoteke"

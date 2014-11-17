@@ -64,6 +64,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "リスト"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "カバーフロー"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "ファイル"

@@ -36,6 +36,10 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "標誌"
 
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "展示類型"
+
 msgctxt "#31207"
 msgid "Current"
 msgstr "目前的"

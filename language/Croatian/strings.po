@@ -80,6 +80,10 @@ msgctxt "#31289"
 msgid "Files"
 msgstr "Datoteke"
 
+msgctxt "#31291"
+msgid "Landscape"
+msgstr "Pejzaž"
+
 msgctxt "#31293"
 msgid "Picture Grid"
 msgstr "Poravnanje slike"
@@ -163,3 +167,7 @@ msgstr "Prognoza za 36 sati"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Najveća"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikona"

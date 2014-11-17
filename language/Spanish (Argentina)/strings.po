@@ -68,6 +68,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Lista"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Flujo de portadas"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Archivos"
@@ -135,3 +139,7 @@ msgstr "Pronóstico de 36 hs"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máxima"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ícono"

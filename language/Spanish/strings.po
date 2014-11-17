@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Ajusta como Kodi reproduce los vídeos, incluye opciones de vídeos multiparte, opciones de librería, renderizado y reproducción"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Configura e instala tus Add-Ons desde los repositorios de XBMC.org y muchos más."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Configura e instala tus Add-Ons desde los repositorios de Kodi.tv y muchos más."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -947,3 +947,11 @@ msgstr "Ver Pronóstico del Clima en la pantalla principal"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Recortar miniaturas en la vista Galería de Vídeos Musicales"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Icono"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Fondos"

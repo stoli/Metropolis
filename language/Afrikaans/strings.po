@@ -64,6 +64,10 @@ msgctxt "#31285"
 msgid "List"
 msgstr "Lys"
 
+msgctxt "#31286"
+msgid "Banner"
+msgstr "Coverflow"
+
 msgctxt "#31289"
 msgid "Files"
 msgstr "Lêers"

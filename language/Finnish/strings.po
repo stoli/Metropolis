@@ -40,6 +40,14 @@ msgctxt "#31133"
 msgid "Mute"
 msgstr "Mykistys"
 
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "Näyttötyyppi"
+
+msgctxt "#31207"
+msgid "Current"
+msgstr "Nykyinen"
+
 msgctxt "#31244"
 msgid "Playing"
 msgstr "Toistaa"
@@ -179,3 +187,7 @@ msgstr "Näkyvyys"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimi"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Kuvake"

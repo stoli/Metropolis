@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Laras bagaimana Kodi mengendali kandungan video. Termasuklah penindanan pilihan untuk fail bahagian-berbilang, pilihan pangkalan data pustaka, dan penerapan serta pilihan main balik"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Urus Tambahan terpasang anda. Termasuklah pelayaran dan pemasangan dari XMBC.org serta pengubahsuaian Tambahan."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Urus Tambahan terpasang anda. Termasuklah pelayaran dan pemasangan dari Kodi.tv serta pengubahsuaian Tambahan."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -907,3 +907,11 @@ msgstr "Tunjuk ramalan cuaca pada skrin rumah"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Kerat Lakaran Kenit dalam Paparan Galeri Video Muzik"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikon"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Kertas Dinding"

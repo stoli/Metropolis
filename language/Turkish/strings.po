@@ -96,6 +96,10 @@ msgctxt "#31423"
 msgid "Author"
 msgstr "Yazar"
 
+msgctxt "#31428"
+msgid "TV Guide"
+msgstr "TV Rehberi"
+
 msgctxt "#31441"
 msgid "Hide"
 msgstr "Gizle"
@@ -148,6 +152,22 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "36 Saatlik Hava Tahmini"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Basınç"
+
 msgctxt "#31704"
 msgid "Visibility"
 msgstr "Görünürlük"
+
+msgctxt "#31706"
+msgid "Maximum"
+msgstr "En fazla"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Simge"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Duvar Kağıdı"

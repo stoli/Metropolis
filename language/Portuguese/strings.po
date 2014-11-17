@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Definir como o Kodi lida com conteúdos vídeo. Inclui opções de empilhamento para ficheiros com várias partes, opções da base de dados da biblioteca e definições de reprodução"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Gerir os seus Add-ons instalados. Inclui navegação e instalação a partir de XBMC.org e modificações de Add-on."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Gerir os seus Add-ons instalados. Inclui navegação e instalação a partir de Kodi.tv e modificações de Add-on."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -683,3 +683,11 @@ msgstr "Visibilidade"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máxima"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ícone"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Fundo"

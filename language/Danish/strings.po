@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Juster hvordan Kodi håndterer videoindhold. Herunder kombineringsindstillinger for filer i flere dele, indstillinger for databasen og indstillinger for rendering og afspilning."
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Håndter dine installerede Add-ons. Herunder gennemsyn og installering fra XBMC.org og tilpasninger af Add-ons."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Håndter dine installerede Add-ons. Herunder gennemsyn og installering fra Kodi.tv og tilpasninger af Add-ons."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -743,3 +743,11 @@ msgstr "Brug udvidet vejrudsigt"
 msgctxt "#31711"
 msgid "Show weather forecast on home screen"
 msgstr "Vis vejrudsigten på hovedskærmen"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikon"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Baggrund"

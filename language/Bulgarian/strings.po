@@ -212,6 +212,14 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "36 часова прогноза"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Налягане"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Максимално"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Икона"

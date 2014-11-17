@@ -68,6 +68,10 @@ msgctxt "#31168"
 msgid "rwx32"
 msgstr "rwx32"
 
+msgctxt "#31183"
+msgid "Viewtype"
+msgstr "Styly zobrazení"
+
 msgctxt "#31207"
 msgid "Current"
 msgstr "Aktuální"
@@ -247,3 +251,7 @@ msgstr "Viditelnost"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Nejvyšší"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikona"

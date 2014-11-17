@@ -183,3 +183,7 @@ msgstr "Visibilidad"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máximo"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ícono"

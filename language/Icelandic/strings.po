@@ -207,3 +207,7 @@ msgstr "Skyggni"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Hámark"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Tákn"

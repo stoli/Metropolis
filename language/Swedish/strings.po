@@ -185,8 +185,8 @@ msgid "Adjust how Kodi handles video content. Includes stacking options for mult
 msgstr "Ändra hur Kodi hanterar videoinnehåll. Inklusive alternativ för flerdelade filer, alternativ för biblioteksdatabaser och renderings och uppspelningsalternativ"
 
 msgctxt "#31212"
-msgid "Manage your installed Add-ons. Includes browsing and installing from XBMC.org and Add-on modifications."
-msgstr "Hantera dina installerade tillägg. Bläddra och installera tillägg från xbmc.org och tilläggsinställningar."
+msgid "Manage your installed Add-ons. Includes browsing and installing from Kodi.tv and Add-on modifications."
+msgstr "Hantera dina installerade tillägg. Bläddra och installera tillägg från kodi.tv och tilläggsinställningar."
 
 msgctxt "#31213"
 msgid "Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions"
@@ -903,3 +903,11 @@ msgstr "Visa väderprognos på hemskärmen"
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
 msgstr "Beskär miniatyrer i galleriläge för musikvideos"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikon"
+
+msgctxt "#31716"
+msgid "Wallpaper"
+msgstr "Bakgrundsbild"

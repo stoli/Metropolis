@@ -183,3 +183,7 @@ msgstr "Nähtavus"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimaalne"
+
+msgctxt "#31715"
+msgid "Icon"
+msgstr "Ikoon"
