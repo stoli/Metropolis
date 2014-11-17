@@ -84,9 +84,10 @@
 					<height>25</height>
 					<font>METF_InfoTextLarger</font>
 					<textcolor>WeatherDetails</textcolor>
+					<visible>!IsEmpty(Window.Property(Current.UVIndex))</visible>
 				</control>
 				<control type="label">
-					<label>[COLOR WeatherHeading]$LOCALIZE[405]: [/COLOR] $INFO[Window.Property(Current.DewPoint)]</label>
+					<label>[COLOR WeatherHeading]$LOCALIZE[405]: [/COLOR] $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
 					<posx>-15</posx>
 					<posy>536</posy>
 					<width>400</width>
@@ -524,7 +525,7 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label">
-				    <top>220</top>
+					<top>220</top>
 					<align>center</align>
 					<label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 					<font>METF_WeatherHigh</font>
@@ -546,44 +547,49 @@
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
 						<label>[COLOR WeatherHeading]$LOCALIZE[406]: [/COLOR] $INFO[Window.Property(Current.Humidity)]</label>
+						<visible>!IsEmpty(Window.Property(Current.Humidity))</visible>
 					</control>
 					<control type="label">
 						<textcolor>WeatherDetails</textcolor>
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
-						<label>[COLOR WeatherHeading]$LOCALIZE[405]: [/COLOR] $INFO[Window.Property(Current.DewPoint)]</label>
+						<label>[COLOR WeatherHeading]$LOCALIZE[405]: [/COLOR] $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
+						<visible>!IsEmpty(Window.Property(Current.DewPoint))</visible>
 					</control>
 					<control type="label">
 						<textcolor>WeatherDetails</textcolor>
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
 						<label>[COLOR WeatherHeading]$LOCALIZE[403]: [/COLOR] $INFO[Window.Property(Current.UVIndex)]</label>
+						<visible>!IsEmpty(Window.Property(Current.UVIndex))</visible>
 					</control>
 					<control type="label">
 						<textcolor>WeatherDetails</textcolor>
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
 						<label>[COLOR WeatherHeading]$LOCALIZE[31703]: [/COLOR] $INFO[Window.Property(Current.Pressure)]</label>
+						<visible>!IsEmpty(Window.Property(Current.Pressure))</visible>
 					</control>
 					<control type="label">
 						<textcolor>WeatherDetails</textcolor>
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
-						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Current.Visibility)]</label>
-					</control>
-					<control type="label">
-						<left>-15</left>
-						<align>left</align>
-						<textcolor>WeatherDetails</textcolor>
-						<font>METF_WeatherDetailsCurrent</font>
-						<align>center</align>
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR] $INFO[Window.Property(Current.Wind)]</label>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31709]: [/COLOR] $INFO[Window.Property(Current.Precipitation)]</label>
+						<visible>!IsEmpty(Window.Property(Current.Precipitation))</visible>
 					</control>
 					<control type="label">
 						<textcolor>WeatherDetails</textcolor>
 						<font>METF_WeatherDetailsCurrent</font>
 						<align>center</align>
-						<label>[COLOR WeatherHeading]$LOCALIZE[404] $LOCALIZE[31709]: [/COLOR] $INFO[Window.Property(Current.WindGust)]</label>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Current.Cloudiness)]</label>
+						<visible>!IsEmpty(Window.Property(Current.Cloudiness))</visible>
+					</control>
+					<control type="label">
+						<textcolor>WeatherDetails</textcolor>
+						<font>METF_WeatherDetailsCurrent</font>
+						<align>center</align>
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR] $INFO[Window.Property(Current.WindSpeed)] $INFO[Window.Property(Current.WindDirection)]</label>
+						<visible>!IsEmpty(Window.Property(Current.WindSpeed))</visible>
 					</control>
 				</control>
 			</control>
@@ -659,15 +665,8 @@
 				</control>
 			</control>
 			<!-- Lower Left Corner Info -->
-			<control type="label">
-				<top>550</top>
-				<left>90</left>
-				<label>$LOCALIZE[33006]</label>
-				<font>METF_WeatherDayName7Day</font>
-				<textcolor>WeatherDay</textcolor>
-			</control>
 			<control type="grouplist">
-				<top>575</top>
+				<top>577</top>
 				<left>0</left>
 				<width>300</width>
 				<itemgap>20</itemgap>
@@ -680,7 +679,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[31705] $LOCALIZE[393]:</label>
-						<visible>!IsEmpty(Window.Property(Today.AvgHighTemperature))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -688,8 +686,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.AvgHighTemperature)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.AvgHighTemperature))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.AvgHighTemperature))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -699,7 +697,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[36428] $LOCALIZE[393]:</label>
-						<visible>!IsEmpty(Window.Property(Today.RecordHighTemperature))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -707,8 +704,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.RecordHighTemperature)] $LOCALIZE[1405] $INFO[Window.Property(Today.RecordHighYear)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.RecordHighTemperature))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.RecordHighTemperature))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -718,7 +715,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[31705] $LOCALIZE[391]:</label>
-						<visible>!IsEmpty(Window.Property(Today.AvgLowTemperature))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -726,8 +722,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.AvgLowTemperature)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.AvgLowTemperature))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.AvgLowTemperature))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -737,7 +733,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[36428] $LOCALIZE[391]:</label>
-						<visible>!IsEmpty(Window.Property(Today.RecordLowTemperature))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -745,8 +740,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.RecordLowTemperature)] $LOCALIZE[1405] $INFO[Window.Property(Today.RecordLowYear)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.RecordLowTemperature))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.RecordLowTemperature))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -756,7 +751,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[33027]:</label>
-						<visible>!IsEmpty(Window.Property(Today.Sunrise))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -764,8 +758,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.Sunrise)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.Sunrise))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.Sunrise))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -775,7 +769,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[33028]:</label>
-						<visible>!IsEmpty(Window.Property(Today.Sunset))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -783,8 +776,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.Sunset)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.Sunset))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.Sunset))</visible>
 				</control>
 				<control type="group">
 					<control type="label">
@@ -794,7 +787,6 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>$LOCALIZE[31708]:</label>
-						<visible>!IsEmpty(Window.Property(Today.MoonPhase))</visible>
 					</control>
 					<control type="label">
 						<width min="25" max="235">auto</width>
@@ -802,8 +794,8 @@
 						<font>METF_WeatherDetailsSmaller</font>
 						<textcolor>WeatherLowTemp</textcolor>
 						<label>[B]$INFO[Window.Property(Today.MoonPhase)][/B]</label>
-						<visible>!IsEmpty(Window.Property(Today.MoonPhase))</visible>
 					</control>
+					<visible>!IsEmpty(Window.Property(Today.MoonPhase))</visible>
 				</control>
 			</control>
 			<!-- 7 Day Forecast -->
@@ -894,15 +886,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.1.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.1.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.1.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.1.WindSpeed)] $INFO[Window.Property(Daily.1.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.1.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.1.WindSpeed)] $INFO[Window.Property(Daily.1.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -987,15 +986,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.2.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.2.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.2.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.2.WindSpeed)] $INFO[Window.Property(Daily.2.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.2.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.2.WindSpeed)] $INFO[Window.Property(Daily.2.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -1080,15 +1086,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.3.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.3.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.3.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.3.WindSpeed)] $INFO[Window.Property(Daily.3.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.3.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.3.WindSpeed)] $INFO[Window.Property(Daily.3.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -1173,15 +1186,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.4.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.4.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.4.Precipitation)]</label>
+						<posy>388</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.4.Cloudiness)]</label>
+						<posy>406</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
 						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.4.WindSpeed)] $INFO[Window.Property(Daily.4.WindDirection)]</label>
-						<posy>420</posy>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -1266,15 +1286,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.5.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.5.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.5.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.5.WindSpeed)] $INFO[Window.Property(Daily.5.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.5.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.5.WindSpeed)] $INFO[Window.Property(Daily.5.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -1359,15 +1386,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.6.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.6.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.6.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.6.WindSpeed)] $INFO[Window.Property(Daily.6.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.6.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.6.WindSpeed)] $INFO[Window.Property(Daily.6.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -1452,15 +1486,22 @@
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherLowTemp]$INFO[Window.Property(Daily.7.MinHumidity)][/COLOR] - [COLOR WeatherHighTemp]$INFO[Window.Property(Daily.7.MaxHumidity)][/COLOR]</label>
-						<posy>385</posy>>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31717]: [/COLOR] $INFO[Window.Property(Daily.7.Precipitation)]</label>
+						<posy>388</posy>>
 						<font>METF_WeatherDetails7Day</font>
 						<align>center</align>
 						<textcolor>WeatherDetails</textcolor>
 					</control>
 					<control type="label">
-						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.7.WindSpeed)] $INFO[Window.Property(Daily.7.ShortWindDirection)]</label>
-						<posy>420</posy>
+						<label>[COLOR WeatherHeading]$LOCALIZE[31704]: [/COLOR] $INFO[Window.Property(Daily.7.Cloudiness)]</label>
+						<posy>406</posy>>
+						<font>METF_WeatherDetails7Day</font>
+						<align>center</align>
+						<textcolor>WeatherDetails</textcolor>
+					</control>
+					<control type="label">
+						<label>[COLOR WeatherHeading]$LOCALIZE[404]: [/COLOR]$INFO[Window.Property(Daily.7.WindSpeed)] $INFO[Window.Property(Daily.7.WindDirection)]</label>
+						<posy>424</posy>
 						<align>center</align>
 						<font>METF_WeatherDetails7Day</font>
 						<textcolor>WeatherDetails</textcolor>
@@ -4183,7 +4224,7 @@
 								<visible>!IsEmpty(Window.Property(Weekend.1.Humidity))</visible>
 							</control>
 						</control>
-						<control  type="group">
+						<control type="group">
 							<control type="label">
 								<width>180</width>
 								<align>right</align>
@@ -4241,7 +4282,7 @@
 								<left>140</left>
 								<font>METF_WeatherDetailsWeekend</font>
 								<textcolor>WeatherDetails</textcolor>
-								<label>[B]$INFO[Window.Property(Weekend.1.WindSpeed)] $INFO[Window.Property(Weekend.1.ShortWindDirection)][/B]</label>
+								<label>[B]$INFO[Window.Property(Weekend.1.WindSpeed)] $INFO[Window.Property(Weekend.1.WindDirection)][/B]</label>
 								<visible>!IsEmpty(Window.Property(Weekend.1.WindSpeed))</visible>
 							</control>
 						</control>
@@ -4419,7 +4460,7 @@
 								<left>140</left>
 								<font>METF_WeatherDetailsWeekend</font>
 								<textcolor>WeatherDetails</textcolor>
-								<label>[B]$INFO[Window.Property(Weekend.2.WindSpeed)] $INFO[Window.Property(Weekend.2.ShortWindDirection)][/B]</label>
+								<label>[B]$INFO[Window.Property(Weekend.2.WindSpeed)] $INFO[Window.Property(Weekend.2.WindDirection)][/B]</label>
 								<visible>!IsEmpty(Window.Property(Weekend.2.WindSpeed))</visible>
 							</control>
 						</control>

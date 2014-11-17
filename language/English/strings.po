@@ -1010,7 +1010,7 @@ msgid "Pressure"
 msgstr ""
 
 msgctxt "#31704"
-msgid "Visibility"
+msgid "Clouds"
 msgstr ""
 
 msgctxt "#31705"
@@ -1030,7 +1030,7 @@ msgid "Moon Phase"
 msgstr ""
 
 msgctxt "#31709"
-msgid "Gusts"
+msgid "Precipitation"
 msgstr ""
 
 msgctxt "#31710"
@@ -1059,4 +1059,8 @@ msgstr ""
 
 msgctxt "#31716"
 msgid "Wallpaper"
+msgstr ""
+
+msgctxt "#31717"
+msgid "Precip"
 msgstr ""
