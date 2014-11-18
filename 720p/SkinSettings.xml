@@ -4756,7 +4756,7 @@
 					<control type="grouplist" id="807">
 						<left>0</left>
 						<top>0</top>
-						<width>775</width>
+						<width>780</width>
 						<height>70</height>
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
@@ -4870,6 +4870,17 @@
 							<onclick>XBMC.ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="818">
+							<description>Repeat</description>
+							<include>Animation_ButtonFocus</include>
+							<height>60</height>
+							<width>60</width>
+							<texturefocus>osd/osd_button_repeat_fo.png</texturefocus>
+							<texturenofocus>osd/osd_button_repeat_nf.png</texturenofocus>
+							<include condition="SubString(Skin.String(DefaultOSD),801)">OSDdiffuse</include>
+							<onclick>Skin.SetString(DefaultOSD,801)</onclick>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</control>
+						<control type="button" id="819">
 							<description>Video Settings</description>
 							<include>Animation_ButtonFocus</include>
 							<height>60</height>
@@ -4880,7 +4891,7 @@
 							<onclick>Skin.SetString(DefaultOSD,713)</onclick>
 							<onclick>XBMC.ReloadSkin()</onclick>
 						</control>
-						<control type="button" id="819">
+						<control type="button" id="820">
 							<description>Audio Settings</description>
 							<include>Animation_ButtonFocus</include>
 							<height>60</height>
