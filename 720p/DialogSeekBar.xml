@@ -7,12 +7,14 @@
 		<include>OSD_Player_Details</include>
 		<include>OSD_Player_Time</include>
 		<control type="group">
+			<include condition="Skin.HasSetting(Enable_OSDFade)">Animation_FadeOSD</include>
 			<include condition="!Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar2</include> 
 			<include condition="Skin.HasSetting(Slim_Seekbar)">OSD_Progress_Bar3</include>
 			<include condition="!Skin.HasSetting(Slim_Seekbar)">MediaInfo2</include>
 			<visible>!Player.ShowInfo + !Window.IsActive(Visualisation)</visible>
 		</control>
 		<control type="group">
+			<include condition="Skin.HasSetting(Enable_OSDFade)">Animation_FadeOSD</include>
 			<include>OSD_Progress_Bar3</include>
 			<visible>Window.IsActive(Visualisation)</visible>
 		</control>

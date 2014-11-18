@@ -79,6 +79,12 @@
 			<effect type="fade" time="300" start="100" end="0" />
 		</animation>
 	</include>
+	<include name="Animation_FadeOSD">
+		<!-- TODO: Fade timeout should be user-configurable, but Kodi doesn't allow info labels in IdleTime() -->
+		<animation type="Conditional" condition="System.IdleTime(15) + !Player.Caching" reversible="true">
+			<effect type="fade" start="100" end="0" time="800"/>
+		</animation>
+	</include>
 	<include name="Animation_ZoomInMenu">
 		<animation type="Visible">
 			<effect delay="200" type="zoom" time="600" center="640,360" start="50" end="100" tween="cubic" easing="out" />

@@ -1429,6 +1429,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
+			<include condition="Skin.HasSetting(Enable_OSDFade)">Animation_FadeOSD</include>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByOSDSettings</include>
 			<!-- Background Image -->

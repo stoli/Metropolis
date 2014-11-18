@@ -4663,28 +4663,35 @@
 						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="image" id="707">
+					<control type="radiobutton" id="707">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31477]</label>
+						<onclick>Skin.ToggleSetting(Enable_OSDFade)</onclick>
+						<onclick>XBMC.ReloadSkin()</onclick>
+						<selected>Skin.HasSetting(Enable_OSDFade)</selected>
+					</control>
+					<control type="image" id="708">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.tv.show.next.aired) | System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="708">
+					<control type="radiobutton" id="709">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31426]</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="709">
+					<control type="radiobutton" id="710">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31437]</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>
 						<selected>Skin.HasSetting(TvTunes)</selected>
 						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="image" id="711">
+					<control type="image" id="712">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="712">
+					<control type="radiobutton" id="713">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31710]</label>
 						<onclick>Skin.ToggleSetting(UseExtendedWeather)</onclick>
