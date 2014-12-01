@@ -145,7 +145,7 @@ msgid "Hide Video Root"
 msgstr ""
 
 msgctxt "#31126"
-msgid "Download extra TV Show artwork"
+msgid "Extra Artwork Downloader"
 msgstr ""
 
 #empty strings from id 31127 to 31132
