@@ -4663,25 +4663,40 @@
 						<selected>Skin.HasSetting(Enable_OSDClearArt)</selected>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="button" id="707">
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31477]</label>
-						<onclick>Skin.ToggleSetting(Enable_OSDFade)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
-						<selected>Skin.HasSetting(Enable_OSDFade)</selected>
+						<onload condition="IsEmpty(Skin.String(OSDFade))">Skin.SetString(OSDFade,Disabled)</onload>
+						<label2>$INFO[Skin.String(OSDFade)]</label2>
+						<label>$LOCALIZE[31476]</label>
+						<onclick condition="Stringcompare(Skin.String(OSDFade),Disabled) | IsEmpty(Skin.String(OSDFade))">Skin.SetString(OSDFade,Partial)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFade),Partial)">Skin.SetString(OSDFade,Complete)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFade),Complete)">Skin.SetString(OSDFade,Disabled)</onclick>
 					</control>
-					<control type="image" id="708">
+					<control type="button" id="708">
+						<include>SettingsLabel</include>
+						<onload condition="IsEmpty(Skin.String(OSDFadeTime))">Skin.SetString(OSDFadeTime,15)</onload>
+						<label2>$INFO[Skin.String(OSDFadeTime),, s]</label2>
+						<label>$LOCALIZE[31477]</label>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),30) | IsEmpty(Skin.String(OSDFadeTime))">Skin.SetString(OSDFadeTime,5)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),5)">Skin.SetString(OSDFadeTime,10)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),10)">Skin.SetString(OSDFadeTime,15)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),15)">Skin.SetString(OSDFadeTime,20)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),20)">Skin.SetString(OSDFadeTime,25)</onclick>
+						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),25)">Skin.SetString(OSDFadeTime,30)</onclick>
+						<visible>![StringCompare(Skin.String(OSDFade),Disabled) | IsEmpty(Skin.String(OSDFade))]</visible>
+					</control>
+					<control type="image" id="709">
 						<include>Settings_Line</include>
 						<visible>System.HasAddon(script.tv.show.next.aired) | System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="709">
+					<control type="radiobutton" id="710">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31426]</label>
 						<onclick>Skin.ToggleSetting(NextAired)</onclick>
 						<selected>Skin.HasSetting(NextAired)</selected>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="710">
+					<control type="radiobutton" id="711">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31437]</label>
 						<onclick>Skin.ToggleSetting(TvTunes)</onclick>

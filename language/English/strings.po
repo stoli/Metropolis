@@ -953,14 +953,15 @@ msgid "Default OSD button"
 msgstr ""
 
 msgctxt "#31476"
-msgid "Disable default Submenus"
+msgid "OSD: Fade away when paused"
 msgstr ""
 
 msgctxt "#31477"
-msgid "OSD: Fade after 15 seconds when paused"
+msgid "- Fade delay"
 msgstr ""
 
 #empty strings from id 31478 to 31599
+
 #PVR Resources
 
 msgctxt "#31600"
