@@ -128,6 +128,20 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
+				<control type="radiobutton" id="8">
+					<description>Hide broken</description>
+					<width>340</width>
+					<align>left</align>
+					<label>24999</label>
+					<aligny>center</aligny>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+				</control>
 				<include>Nav_NowPlaying</include>
 			</control>
 		</control>
