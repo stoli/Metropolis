@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-	<fontset id="Default" unicode="true">
+	<fontset id="Default">
 		<!-- Metropolis Fonts -->
 		<font>
 			<name>font13</name>
