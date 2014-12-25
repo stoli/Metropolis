@@ -317,7 +317,7 @@
 				<include condition="Skin.HasSetting(Home2)">HomePlayDiscIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomePlayDiscWallpaper</include>
 				<onclick>PlayDVD</onclick>
-				<visible>System.HasMediadvd</visible>
+				<visible>System.HasMediaDVD + !Skin.HasSetting(NoPlayDisc)</visible>
 			</item>
 			<item id="2">
 				<description>Movies (Empty library)</description>
@@ -513,7 +513,7 @@
 				<include condition="Skin.HasSetting(Home2)">HomeLiveTVIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeLiveTVWallpaper</include>
 				<onclick>ActivateWindow(PVR)</onclick>
-				<visible>System.GetBool(pvrmanager.enabled)</visible>
+				<visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(NoLiveTV)</visible>
 			</item>
 			<item id="7">
 				<description>Music</description>

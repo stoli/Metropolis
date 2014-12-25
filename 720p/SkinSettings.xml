@@ -2457,6 +2457,24 @@
 						<selected>Skin.HasSetting(NoShutdownSubs)</selected>
 					</control>
 
+					<!-- Play Disc item (1840-1845) -->
+					<control type="radiobutton" id="1840">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] $LOCALIZE[341]</label>
+						<onclick>Skin.ToggleSetting(NoPlayDisc)</onclick>
+						<selected>Skin.HasSetting(NoPlayDisc)</selected>
+					</control>
+
+					<!-- Live TV item (1846-1849) -->
+					<control type="radiobutton" id="1846">
+						<font>METF_Menu</font>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] $LOCALIZE[31601]</label>
+						<onclick>Skin.ToggleSetting(NoLiveTV)</onclick>
+						<selected>Skin.HasSetting(NoLiveTV)</selected>
+					</control>
+
 					<!-- Custom Home Shortcuts (2000-) -->
 
 					<!-- Custom Home Shortcut item 1 -->
