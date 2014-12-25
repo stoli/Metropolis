@@ -86,9 +86,10 @@
 					<aligny>center</aligny>
 					<pulseonselect>false</pulseonselect>
 				</control>
-				<control type="radiobutton" id="5">
+				<control type="button" id="5">
 					<description>Enable auto-updates</description>
 					<width>340</width>
+					<height>40</height>
 					<align>left</align>
 					<label>24063</label>
 					<aligny>center</aligny>
