@@ -107,3 +107,15 @@ msgstr "Ezabatu taldea"
 msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "36 orduko iragarpena"
+
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "Lainoak"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Prezipitazioak"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Prezi"

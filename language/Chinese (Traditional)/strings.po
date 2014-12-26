@@ -173,9 +173,17 @@ msgid "Pressure"
 msgstr "氣壓"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "可見度"
+msgid "Clouds"
+msgstr "雲"
 
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "最高"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "降雨量"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "降雨"

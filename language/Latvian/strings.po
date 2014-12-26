@@ -120,6 +120,22 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "36 stundu prognoze"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Spiediens"
+
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "Mākoņi"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimums"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "nokrišņu daudzums"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Nokrišņi"

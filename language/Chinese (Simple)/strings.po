@@ -116,10 +116,6 @@ msgctxt "#31125"
 msgid "Hide Video Root"
 msgstr "隐藏视频根目录"
 
-msgctxt "#31126"
-msgid "Download extra TV Show artwork"
-msgstr "下载额外电视剧集艺术图片"
-
 msgctxt "#31133"
 msgid "Mute"
 msgstr "静音"
@@ -721,12 +717,16 @@ msgid "Pressure"
 msgstr "气压"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "能见度"
+msgid "Clouds"
+msgstr "云"
 
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "最大"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "降雨量"
 
 msgctxt "#31715"
 msgid "Icon"
@@ -735,3 +735,7 @@ msgstr "图标"
 msgctxt "#31716"
 msgid "Wallpaper"
 msgstr "背景"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "降雨"

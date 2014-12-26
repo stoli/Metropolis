@@ -95,3 +95,15 @@ msgstr "Преименуј групу"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "Обриши групу"
+
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "oblačno"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Obilne padavine"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Precip"

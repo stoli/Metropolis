@@ -22,7 +22,7 @@ msgstr "Ansichten"
 
 msgctxt "#31002"
 msgid "Home Artwork"
-msgstr "Home-Menü Effekte"
+msgstr "Hauptbildschirmbildmaterial"
 
 msgctxt "#31004"
 msgid "Debug"
@@ -82,7 +82,7 @@ msgstr "Hintergrund-Fanart verbergen"
 
 msgctxt "#31034"
 msgid "Enable Dynamic Weather Artwork"
-msgstr "Aktuelles Wetter in der Schaltfläche anzeigen"
+msgstr "Dynamisches Wetterbildmaterial aktivieren"
 
 msgctxt "#31035"
 msgid "Show Clean Library SubMenu items"
@@ -121,8 +121,8 @@ msgid "Hide Video Root"
 msgstr "Video Hauptverzeichnis verstecken"
 
 msgctxt "#31126"
-msgid "Download extra TV Show artwork"
-msgstr "extra TV Serien Grafiken herunterladen"
+msgid "Extra Artwork Downloader"
+msgstr "Herunterlader für zusätzliches Bildmaterial"
 
 msgctxt "#31133"
 msgid "Mute"
@@ -873,8 +873,12 @@ msgid "Default OSD button"
 msgstr "Standard-OSD-Schaltfläche"
 
 msgctxt "#31476"
-msgid "Disable default Submenus"
-msgstr "Standarduntermenüs deaktivieren"
+msgid "OSD: Fade away when paused"
+msgstr "OSD: Abblenden, wenn pausiert"
+
+msgctxt "#31477"
+msgid "- Fade delay"
+msgstr "- Überblendverzögerung"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
@@ -921,8 +925,8 @@ msgid "Pressure"
 msgstr "Druck"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "Blickdistanz"
+msgid "Clouds"
+msgstr "Wolken"
 
 msgctxt "#31705"
 msgid "Average"
@@ -941,8 +945,8 @@ msgid "Moon Phase"
 msgstr "Mondphase"
 
 msgctxt "#31709"
-msgid "Gusts"
-msgstr "Böen"
+msgid "Precipitation"
+msgstr "Niederschlag"
 
 msgctxt "#31710"
 msgid "Use extended weather"
@@ -971,3 +975,7 @@ msgstr "Symbol"
 msgctxt "#31716"
 msgid "Wallpaper"
 msgstr "Hintergrund"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Niederschlag"

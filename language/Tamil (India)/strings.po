@@ -120,6 +120,18 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "36 மணி நேர முன் அறிவிப்பு"
 
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "மேகங்கள்"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "உச்ச அளவு"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "பொழிவு"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "பொழிவு"
