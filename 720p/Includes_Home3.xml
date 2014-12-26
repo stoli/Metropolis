@@ -105,6 +105,7 @@
 			<width>1420</width>
 			<height>63</height>
 			<texture flipy="true">osd/OSDdialogback.png</texture>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 		<!-- Main Menu -->
 		<control type="wraplist" id="9000">
@@ -150,7 +151,7 @@
 					<width>290</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
-					<textcolor>FrameBackgroundDiffuse</textcolor>
+					<textcolor>SubmenuText</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -179,7 +180,7 @@
 					<width>290</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
-					<textcolor>HelpArrowDiffuse</textcolor>
+					<textcolor>SubmenuTextFocused</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -190,7 +191,7 @@
 					<width>290</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
-					<textcolor>HelpArrowDiffuse</textcolor>
+					<textcolor>SubmenuTextFocused</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
