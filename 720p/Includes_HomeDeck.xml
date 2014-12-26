@@ -60,7 +60,7 @@
 	<!-- Main menu shared artwork -->
 	<include name="HomePlayDiscIcon">
 		<description>PlayDisc</description>
-		<label>$LOCALIZE[[341]</label>
+		<label>$LOCALIZE[341]</label>
 		<icon>home_icons/playdisc.png</icon>
 		<thumb>$INFO[Skin.String(CustomPlayDisc)]</thumb>
 	</include>
