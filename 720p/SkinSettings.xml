@@ -2541,7 +2541,7 @@
 						<label>  - $LOCALIZE[24000] 1</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon1))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom1_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite1_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite1_Path))</visible>
 					</control>
 					<control type="button" id="2007">
 						<include>SettingsLabel</include>
@@ -2562,7 +2562,7 @@
 						<label>  - $LOCALIZE[24000] 2</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon2))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom1_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite2_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite2_Path))</visible>
 					</control>
 					<control type="button" id="2009">
 						<include>SettingsLabel</include>
@@ -2583,7 +2583,7 @@
 						<label>  - $LOCALIZE[24000] 3</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon3))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom1_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite3_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite3_Path))</visible>
 					</control>
 					<control type="button" id="2011">
 						<include>SettingsLabel</include>
@@ -2604,7 +2604,7 @@
 						<label>  - $LOCALIZE[24000] 4</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon4))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom1_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite4_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite4_Path))</visible>
 					</control>
 					<control type="button" id="2013">
 						<include>SettingsLabel</include>
@@ -2625,7 +2625,7 @@
 						<label>  - $LOCALIZE[24000] 5</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon5))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom1_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite5_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome1Enable) + Skin.HasSetting(HomeCustom1_Shortcuts) + IsEmpty(Skin.String(HomeCustom1_Favourite5_Path))</visible>
 					</control>
 
 					<!-- Custom Home Shortcut item 2 -->
@@ -2692,7 +2692,7 @@
 						<label>  - $LOCALIZE[24000] 1</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon1))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom2_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite1_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite1_Path))</visible>
 					</control>
 					<control type="button" id="2022">
 						<include>SettingsLabel</include>
@@ -2713,7 +2713,7 @@
 						<label>  - $LOCALIZE[24000] 2</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon2))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom2_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite2_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite2_Path))</visible>
 					</control>
 					<control type="button" id="2024">
 						<include>SettingsLabel</include>
@@ -2734,7 +2734,7 @@
 						<label>  - $LOCALIZE[24000] 3</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon3))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom2_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite3_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite3_Path))</visible>
 					</control>
 					<control type="button" id="2026">
 						<include>SettingsLabel</include>
@@ -2755,7 +2755,7 @@
 						<label>  - $LOCALIZE[24000] 4</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon4))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom2_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite4_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite4_Path))</visible>
 					</control>
 					<control type="button" id="2028">
 						<include>SettingsLabel</include>
@@ -2776,7 +2776,7 @@
 						<label>  - $LOCALIZE[24000] 5</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon5))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom2_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite5_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome2Enable) + Skin.HasSetting(HomeCustom2_Shortcuts) + IsEmpty(Skin.String(HomeCustom2_Favourite5_Path))</visible>
 					</control>
 
 					<!-- Custom Home Shortcut item 3 -->
@@ -2843,7 +2843,7 @@
 						<label>  - $LOCALIZE[24000] 1</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon1))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom3_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite1_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite1_Path))</visible>
 					</control>
 					<control type="button" id="2037">
 						<include>SettingsLabel</include>
@@ -2864,7 +2864,7 @@
 						<label>  - $LOCALIZE[24000] 2</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon2))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom3_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite2_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite2_Path))</visible>
 					</control>
 					<control type="button" id="2039">
 						<include>SettingsLabel</include>
@@ -2885,7 +2885,7 @@
 						<label>  - $LOCALIZE[24000] 3</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon3))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom3_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite3_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite3_Path))</visible>
 					</control>
 					<control type="button" id="2041">
 						<include>SettingsLabel</include>
@@ -2906,7 +2906,7 @@
 						<label>  - $LOCALIZE[24000] 4</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon4))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom3_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite4_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite4_Path))</visible>
 					</control>
 					<control type="button" id="2043">
 						<include>SettingsLabel</include>
@@ -2927,7 +2927,7 @@
 						<label>  - $LOCALIZE[24000] 5</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon5))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom3_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite5_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome3Enable) + Skin.HasSetting(HomeCustom3_Shortcuts) + IsEmpty(Skin.String(HomeCustom3_Favourite5_Path))</visible>
 					</control>
 
 					<!-- Custom Home Shortcut item 4 -->
@@ -2994,7 +2994,7 @@
 						<label>  - $LOCALIZE[24000] 1</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon1))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom4_Addon1,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite1_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite1_Path))</visible>
 					</control>
 					<control type="button" id="2052">
 						<include>SettingsLabel</include>
@@ -3015,7 +3015,7 @@
 						<label>  - $LOCALIZE[24000] 2</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon2))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom4_Addon2,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite2_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite2_Path))</visible>
 					</control>
 					<control type="button" id="2054">
 						<include>SettingsLabel</include>
@@ -3036,7 +3036,7 @@
 						<label>  - $LOCALIZE[24000] 3</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon3))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom4_Addon3,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite3_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite3_Path))</visible>
 					</control>
 					<control type="button" id="2056">
 						<include>SettingsLabel</include>
@@ -3057,7 +3057,7 @@
 						<label>  - $LOCALIZE[24000] 4</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon4))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom4_Addon4,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite4_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite4_Path))</visible>
 					</control>
 					<control type="button" id="2058">
 						<include>SettingsLabel</include>
