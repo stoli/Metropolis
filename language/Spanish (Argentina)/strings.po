@@ -136,10 +136,26 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "Pronóstico de 36 hs"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Presión"
+
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "Nuboso"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máxima"
 
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Precipitación"
+
 msgctxt "#31715"
 msgid "Icon"
 msgstr "Ícono"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Lluvia"

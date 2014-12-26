@@ -63,3 +63,7 @@ msgstr "Guruh nomini o'zgartirish"
 msgctxt "#31607"
 msgid "Delete Group"
 msgstr "Guruhni o'chirish"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Yog'inlar"

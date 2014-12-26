@@ -116,10 +116,6 @@ msgctxt "#31125"
 msgid "Hide Video Root"
 msgstr "Ocultar Pasta-Raiz Vídeo"
 
-msgctxt "#31126"
-msgid "Download extra TV Show artwork"
-msgstr "Transferir artwork extra de Série TV"
-
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Sem Som"
@@ -677,12 +673,16 @@ msgid "Pressure"
 msgstr "Pressão"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "Visibilidade"
+msgid "Clouds"
+msgstr "Nuvens"
 
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máxima"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Precipitação"
 
 msgctxt "#31715"
 msgid "Icon"
@@ -691,3 +691,7 @@ msgstr "Ícone"
 msgctxt "#31716"
 msgid "Wallpaper"
 msgstr "Fundo"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Precip"

@@ -961,7 +961,6 @@ msgid "- Fade delay"
 msgstr ""
 
 #empty strings from id 31478 to 31599
-
 #PVR Resources
 
 msgctxt "#31600"

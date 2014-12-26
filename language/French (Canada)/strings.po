@@ -94,11 +94,11 @@ msgstr "Logo"
 
 msgctxt "#31056"
 msgid "Enable Cover Art overlay"
-msgstr "Activer la superposition des illustrations"
+msgstr "Activer la surcouche des illustrations"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
-msgstr "Activer la superposition des textes d'info des chansons"
+msgstr "Activer la surcouche des textes d'info des chansons"
 
 msgctxt "#31060"
 msgid "Show Recently Added Items"
@@ -121,8 +121,8 @@ msgid "Hide Video Root"
 msgstr "Cacher la racine des vidéos"
 
 msgctxt "#31126"
-msgid "Download extra TV Show artwork"
-msgstr "Télécharger des illustrations supplémentaires pour les émissions télé "
+msgid "Extra Artwork Downloader"
+msgstr "Téléchargeur d'illustrations supplémentaires"
 
 msgctxt "#31133"
 msgid "Mute"
@@ -778,7 +778,7 @@ msgstr "Recommandé"
 
 msgctxt "#31452"
 msgid "Visualization: Use Slim Info Overlay"
-msgstr "Visualisation : utiliser la superposition d'infos réduite"
+msgstr "Visualisation : utiliser la surcouche d'infos réduite"
 
 msgctxt "#31453"
 msgid "Show Date instead of Day of Week"
@@ -786,11 +786,11 @@ msgstr "Afficher la date au lieu du jour de la semaine"
 
 msgctxt "#31454"
 msgid "Visualization: Show player position and time in Info Overlay"
-msgstr "Visualisation : afficher la position du lecteur et l'heure dans la superposition d'infos"
+msgstr "Visualisation : afficher la position du lecteur et l'heure dans la surcouche d'infos"
 
 msgctxt "#31455"
 msgid "Visualization: Hide Clock and Temp in Info Overlay"
-msgstr "Visualisation : masquer l'horloge et la température dans la superposition d'infos"
+msgstr "Visualisation : masquer l'horloge et la température dans la surcouche d'infos"
 
 msgctxt "#31456"
 msgid "- Override default link"
@@ -873,8 +873,12 @@ msgid "Default OSD button"
 msgstr "Bouton d'affichage à l'écran par défaut"
 
 msgctxt "#31476"
-msgid "Disable default Submenus"
-msgstr "Désactiver les sous-menus par défaut"
+msgid "OSD: Fade away when paused"
+msgstr "Affichage à l'écran : fondu quand mis en pause"
+
+msgctxt "#31477"
+msgid "- Fade delay"
+msgstr "- Durée du fondu"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
@@ -921,8 +925,8 @@ msgid "Pressure"
 msgstr "Pression"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "Visibilité"
+msgid "Clouds"
+msgstr "Nuages"
 
 msgctxt "#31705"
 msgid "Average"
@@ -941,8 +945,8 @@ msgid "Moon Phase"
 msgstr "Phase de la lune"
 
 msgctxt "#31709"
-msgid "Gusts"
-msgstr "Bourrasques"
+msgid "Precipitation"
+msgstr "Précipitation"
 
 msgctxt "#31710"
 msgid "Use extended weather"
@@ -971,3 +975,7 @@ msgstr "Icône"
 msgctxt "#31716"
 msgid "Wallpaper"
 msgstr "Papier peint"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Précipitation"

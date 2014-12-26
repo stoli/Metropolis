@@ -112,6 +112,18 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "Ramalan 36 Jam"
 
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "Berawan"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimum"
+
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Tindakan cepat"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Precip"

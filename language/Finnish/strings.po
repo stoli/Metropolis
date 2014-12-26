@@ -181,13 +181,21 @@ msgid "Pressure"
 msgstr "Ilmanpaine"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "Näkyvyys"
+msgid "Clouds"
+msgstr "pilvistä"
 
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimi"
 
+msgctxt "#31709"
+msgid "Precipitation"
+msgstr "Sademäärä"
+
 msgctxt "#31715"
 msgid "Icon"
 msgstr "Kuvake"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Sadem."

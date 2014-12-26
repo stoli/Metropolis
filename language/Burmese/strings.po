@@ -100,6 +100,10 @@ msgctxt "#31702"
 msgid "36 Hour Forecast"
 msgstr "၃၆ နာရီ အကြိုခန့်မှန်းခြင်း"
 
+msgctxt "#31704"
+msgid "Clouds"
+msgstr "တိမ်များ"
+
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "အမြင့်ဆုံး"

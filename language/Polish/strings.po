@@ -22,7 +22,7 @@ msgstr "Opcje widoku"
 
 msgctxt "#31002"
 msgid "Home Artwork"
-msgstr "Grafika ekranu Start"
+msgstr "Grafika ekranu startowego"
 
 msgctxt "#31004"
 msgid "Debug"
@@ -62,19 +62,19 @@ msgstr "Obniż ocenę"
 
 msgctxt "#31024"
 msgid "Icon Home layout"
-msgstr "Układ ikon ekranu Start"
+msgstr "Układ ikon ekranu startowego"
 
 msgctxt "#31025"
 msgid "Horizontal Text Home layout"
-msgstr "Poziomy układ menu ekranu Start"
+msgstr "Poziomy układ menu startowego"
 
 msgctxt "#31031"
 msgid "Hide Movie Watched Status"
-msgstr "Ukrywaj stan oglądania filmów"
+msgstr "Ukrywaj stan obejrzenia filmów"
 
 msgctxt "#31032"
 msgid "Hide TV Watched Status"
-msgstr "Ukrywaj status oglądania seriali"
+msgstr "Ukrywaj stan obejrzenia seriali"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
@@ -110,7 +110,7 @@ msgstr "Aktywuj tryb diagnostyczny"
 
 msgctxt "#31109"
 msgid "Enable Debug Grid"
-msgstr "Aktywuj siatkę diagnostyczną"
+msgstr "Pokazuj siatkę diagnostyczną"
 
 msgctxt "#31118"
 msgid "Filemanager"
@@ -121,8 +121,8 @@ msgid "Hide Video Root"
 msgstr "Ukrywaj główny poziom wideo"
 
 msgctxt "#31126"
-msgid "Download extra TV Show artwork"
-msgstr "CLICK to download TV logos, Landscape and Banner images"
+msgid "Extra Artwork Downloader"
+msgstr "Dodatek Artwork Downloader"
 
 msgctxt "#31133"
 msgid "Mute"
@@ -182,7 +182,7 @@ msgstr "Ostatnia aktualizacja"
 
 msgctxt "#31210"
 msgid "Default Home layout"
-msgstr "Domyślny układ ekranu Start"
+msgstr "Domyślny układ ekranu startowego"
 
 msgctxt "#31211"
 msgid "Adjust how Kodi handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options"
@@ -206,7 +206,7 @@ msgstr "Ustaw lokalizację dla opcjonalnych informacji pogodowych"
 
 msgctxt "#31216"
 msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings"
-msgstr "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings"
+msgstr "Dostosuj wygląd Kodi. Skórę, motyw, dźwięki i czcionki, kanały RSS i ustawienia regionalne. "
 
 msgctxt "#31217"
 msgid "Adjust how Kodi displays personal image collections. Includes screenshot grabbing, special effects and advanced display options"
@@ -322,7 +322,7 @@ msgstr "Show Media Totals"
 
 msgctxt "#31324"
 msgid "Home Options"
-msgstr "Opcje ekranu Start"
+msgstr "Opcje ekranu startowego"
 
 msgctxt "#31328"
 msgid "Show Random Items"
@@ -338,7 +338,7 @@ msgstr "Scripts/Extras"
 
 msgctxt "#31331"
 msgid "Home Items"
-msgstr "Pozycje ekranu Start"
+msgstr "Pozycje ekranu startowego"
 
 msgctxt "#31334"
 msgid "Trailers"
@@ -578,7 +578,7 @@ msgstr "Ukrywaj aktualną temperaturę i warunki pogodowe"
 
 msgctxt "#31401"
 msgid "Hide Clock"
-msgstr "Hide Trailers"
+msgstr "Ukrywaj zegar"
 
 msgctxt "#31402"
 msgid "Use Plot Summary in other views"
@@ -674,7 +674,7 @@ msgstr "Menu ekranowe: Pokazuj miniatury"
 
 msgctxt "#31426"
 msgid "Enable TV Show Next Aired Date display"
-msgstr "Pokazuj daty emisji następnych odcinków seriali"
+msgstr "Pokazuj nadchodzące premiery odcinków"
 
 msgctxt "#31427"
 msgid "Next Episode"
@@ -762,7 +762,7 @@ msgstr "Używaj realistycznych ikon pogody"
 
 msgctxt "#31448"
 msgid "Show Plot only in Info dialog"
-msgstr "Pokazuj fabułę jedynie w oknie Info"
+msgstr "Pokazuj fabułę jedynie w oknie informacji"
 
 msgctxt "#31449"
 msgid "Show Recommended Items"
@@ -778,7 +778,7 @@ msgstr "Polecane"
 
 msgctxt "#31452"
 msgid "Visualization: Use Slim Info Overlay"
-msgstr "Wizualizacja: Użyj smukłej nakładki Info"
+msgstr "Wizualizacja: Używaj wąskiego menu ekranowego"
 
 msgctxt "#31453"
 msgid "Show Date instead of Day of Week"
@@ -790,7 +790,7 @@ msgstr "Wizualizacja: Pokaż pozycję odtwarzacza i czas w nakładce Info"
 
 msgctxt "#31455"
 msgid "Visualization: Hide Clock and Temp in Info Overlay"
-msgstr "Wizualizacja: Ukryj zegar i temperaturę w nakładce Info"
+msgstr "Wizualizacja: Ukrywaj zegar i temperaturę"
 
 msgctxt "#31456"
 msgid "- Override default link"
@@ -834,7 +834,7 @@ msgstr "Wyczyść Bibliotekę"
 
 msgctxt "#31466"
 msgid "Foreign is not technically a genre, but likely includes films with dialog in a tongue not native to the viewer."
-msgstr "Choć technicznie rzecz biorąc Zagraniczny to nie gatunek, ale zazwyczaj zawiera filmy w języku innym niż rodzimy osoby oglądającej."
+msgstr "Technicznie rzecz biorąc Zagraniczny to nie gatunek, ale zazwyczaj zawiera filmy w języku innym niż rodzimy osoby oglądającej."
 
 msgctxt "#31467"
 msgid "Holiday is a very broad genre, encompassing films that center around a certain holiday, such as Christmas, Halloween, Easter, etc."
@@ -871,6 +871,14 @@ msgstr "Używaj przycisku do przełączania napisów"
 msgctxt "#31475"
 msgid "Default OSD button"
 msgstr "Domyślny przycisk menu ekranowego"
+
+msgctxt "#31476"
+msgid "OSD: Fade away when paused"
+msgstr "Menu ekranowe: wygaszaj podczas pauzy"
+
+msgctxt "#31477"
+msgid "- Fade delay"
+msgstr "- opóźnienie wygasania"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
@@ -917,8 +925,8 @@ msgid "Pressure"
 msgstr "Ciśnienie"
 
 msgctxt "#31704"
-msgid "Visibility"
-msgstr "Widoczność"
+msgid "Clouds"
+msgstr "pochmurnie"
 
 msgctxt "#31705"
 msgid "Average"
@@ -937,8 +945,8 @@ msgid "Moon Phase"
 msgstr "Faza księżyca"
 
 msgctxt "#31709"
-msgid "Gusts"
-msgstr "Porywy wiatru"
+msgid "Precipitation"
+msgstr "opady"
 
 msgctxt "#31710"
 msgid "Use extended weather"
@@ -946,7 +954,7 @@ msgstr "Używaj rozszerzonej pogody"
 
 msgctxt "#31711"
 msgid "Show weather forecast on home screen"
-msgstr "Pokazuj prognozę pogody na ekranie startowym"
+msgstr "Pokazuj ikonę pogody na ekranie startowym"
 
 msgctxt "#31712"
 msgid "Crop Thumbnails in Music Video Gallery View"
@@ -967,3 +975,7 @@ msgstr "Kolejka Plakaty"
 msgctxt "#31716"
 msgid "Wallpaper"
 msgstr "Tapeta"
+
+msgctxt "#31717"
+msgid "Precip"
+msgstr "Opady"
