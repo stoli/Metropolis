@@ -47,7 +47,7 @@
 				<description>Default SpinControlex</description>
 				<include>SettingsLabel</include>
 			</control>
-			<control type="sliderex" id="10">
+			<control type="sliderex" id="13">
 				<description>Default Slider</description>
 				<include>SettingsLabel</include>
 				<sliderwidth>300</sliderwidth>

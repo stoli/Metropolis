@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="132">
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">20</defaultcontrol>
 	<include>Animation_OpenCloseFade</include>
 	<allowoverlay>yes</allowoverlay>
 	<coordinates>
@@ -24,14 +24,14 @@
 				<aligny>center</aligny>
 				<label>20333</label>
 			</control>
-			<control type="spincontrolex" id="3">
+			<control type="spincontrolex" id="20">
 				<description>Directory Content</description>
 				<posx>440</posx>
 				<posy>57</posy>
 				<include>SettingsLabel</include>
 				<label>20344</label>
 				<onup>5</onup>
-				<ondown>4</ondown>
+				<ondown>21</ondown>
 				<onleft>28</onleft>
 				<onright>28</onright>
 			</control>
@@ -55,12 +55,12 @@
 				<info>ListItem.Icon</info>
 				<aspectratio align="center" aligny="center">stretch</aspectratio>
 			</control>
-			<control type="list" id="4">
+			<control type="list" id="21">
 				<posx>740</posx>
 				<posy>101</posy>
 				<width>540</width>
 				<height>190</height>
-				<onup>3</onup>
+				<onup>20</onup>
 				<ondown>5</ondown>
 				<onleft>28</onleft>
 				<onright>28</onright>
@@ -107,8 +107,8 @@
 				<itemgap>0</itemgap>
 				<onleft>28</onleft>
 				<onright>28</onright>
-				<onup>4</onup>
-				<ondown>3</ondown>
+				<onup>21</onup>
+				<ondown>20</ondown>
 				<orientation>vertical</orientation>
 			</control>
 			<control type="button" id="7">
@@ -119,7 +119,7 @@
 				<description>Default Radio Button</description>
 				<include>SettingsLabel</include>
 			</control>
-			<control type="button" id="6">
+			<control type="button" id="22">
 				<description>Settings</description>
 				<posx>0</posx>
 				<posy>120</posy>
@@ -135,8 +135,8 @@
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 				<label>5</label>
-				<onleft>3</onleft>
-				<onright>3</onright>
+				<onleft>20</onleft>
+				<onright>20</onright>
 				<onup>28</onup>
 				<ondown>29</ondown>
 			</control>
@@ -156,9 +156,9 @@
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 				<label>222</label>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>6</onup>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<onup>22</onup>
 				<ondown>28</ondown>
 			</control>
 			<control type="button" id="28">
@@ -177,10 +177,10 @@
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 				<label>186</label>
-				<onleft>3</onleft>
-				<onright>3</onright>
+				<onleft>20</onleft>
+				<onright>20</onright>
 				<onup>29</onup>
-				<ondown>6</ondown>
+				<ondown>22</ondown>
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>

@@ -7,7 +7,7 @@
 				<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="inout" />
 				<effect type="fade" time="400" start="100" end="0" />
 			</animation>
-			<control type="label">
+			<control type="label" id="2">
 				<description>header label</description>
 				<posx>460</posx>
 				<posy>158</posy>
@@ -17,7 +17,7 @@
 				<textcolor>SettingsTitle</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[20067]</label>
+				<label>-</label>
 			</control>
 			<control type="label">
 				<posx>30</posx>
@@ -30,7 +30,7 @@
 				<aligny>center</aligny>
 				<label>[UPPERCASE]$LOCALIZE[551]:[/UPPERCASE]</label>
 			</control>
-			<control type="label" id="1000">
+			<control type="label" id="102">
 				<posx>360</posx>
 				<posy>386</posy>
 				<width>360</width>
@@ -51,7 +51,7 @@
 				<aligny>center</aligny>
 				<label>[UPPERCASE]$LOCALIZE[15311][/UPPERCASE]</label>
 			</control>
-			<control type="label" id="1001">
+			<control type="label" id="103">
 				<posx>360</posx>
 				<posy>424</posy>
 				<width>360</width>
@@ -107,7 +107,7 @@
 				<onup>29</onup>
 				<ondown>29</ondown>
 			</control>
-			<control type="image" id="2">
+			<control type="image" id="101">
 				<posx>30</posx>
 				<posy>188</posy>
 				<width>160</width>

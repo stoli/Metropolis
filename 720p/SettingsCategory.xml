@@ -71,6 +71,15 @@
 				<alttexturenofocus>-</alttexturenofocus>
 				<pulseonselect>false</pulseonselect>
 			</control>
+			<control type="sliderex" id="13">
+				<description>Default Slider</description>
+				<include>SettingsLabel</include>
+				<sliderwidth>300</sliderwidth>
+				<sliderheight>16</sliderheight>
+				<texturesliderbar>osdsliderback.png</texturesliderbar>
+				<textureslidernib>osdslidernib_2.png</textureslidernib>
+				<textureslidernibfocus>osdslidernib.png</textureslidernibfocus>
+			</control>
 			<control type="textbox" id="6">
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>

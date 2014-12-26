@@ -8,7 +8,7 @@
 				<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="inout" />
 				<effect type="fade" time="400" start="100" end="0" />
 			</animation>
-			<control type="label">
+			<control type="label" id="2">
 				<description>header label</description>
 				<posx>460</posx>
 				<posy>158</posy>

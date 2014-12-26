@@ -23,18 +23,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[5]</label>
 			</control>
-			<control type="label" id="3">
-				<description>No Settings Label</description>
-				<posx>440</posx>
-				<posy>240</posy>
-				<width>840</width>
-				<height>380</height>
-				<font>METF_ContextValue</font>
-				<textcolor>SettingsDetail</textcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>$LOCALIZE[35004]</label>
-			</control>
 			<control type="button" id="7">
 				<description>Default Button</description>
 				<include>SettingsLabel</include>
@@ -47,7 +35,7 @@
 				<description>Default SpinControlex</description>
 				<include>SettingsLabel</include>
 			</control>
-			<control type="sliderex" id="10">
+			<control type="sliderex" id="13">
 				<description>Default Slider</description>
 				<include>SettingsLabel</include>
 				<sliderwidth>300</sliderwidth>

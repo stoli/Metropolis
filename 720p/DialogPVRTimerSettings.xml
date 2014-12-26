@@ -32,7 +32,7 @@
 			<reverse>yes</reverse>
 			<include>SettingsLabel</include>
 		</control>
-		<control type="sliderex" id="10">
+		<control type="sliderex" id="13">
 			<description>Default Slider</description>
 			<height>40</height>
 			<include>SettingsLabel</include>
