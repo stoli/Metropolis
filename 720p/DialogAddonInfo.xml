@@ -140,7 +140,7 @@
 					<posx>0</posx>
 					<posy>76</posy>
 					<label>24022</label>
-					<onup>10</onup>
+					<onup>12</onup>
 					<ondown>7</ondown>
 					<onleft>Dialog.Close(addoninformation)</onleft>
 					<onright>Dialog.Close(addoninformation)</onright>
@@ -185,6 +185,17 @@
 					<posy>228</posy>
 					<label>24036</label>
 					<onup>8</onup>
+					<ondown>12</ondown>
+					<onleft>Dialog.Close(addoninformation)</onleft>
+					<onright>Dialog.Close(addoninformation)</onright>
+				</control>
+				<control type="button" id="12">
+					<description>Launch Addon button</description>
+					<include>SettingsLabelLeft</include>
+					<posx>0</posx>
+					<posy>266</posy>
+					<label>518</label>
+					<onup>10</onup>
 					<ondown>6</ondown>
 					<onleft>Dialog.Close(addoninformation)</onleft>
 					<onright>Dialog.Close(addoninformation)</onright>
