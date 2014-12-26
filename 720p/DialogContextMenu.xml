@@ -16,42 +16,31 @@
 		<origin x="440" y="120" />
 	</coordinates>
 	<controls>
-		<control type="image" id="997">
-			<description>background top image</description>
-			<posx>0</posx>
-			<posy>-50</posy>
-			<width>400</width>
-			<height>50</height>
-			<texture>dialogs/ContextMenu_Top.png</texture>
-			<colordiffuse>DialogBackgroundColor</colordiffuse>
-		</control>
 		<control type="image" id="999">
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>400</width>
-			<texture>dialogs/ContextMenu_Middle.png</texture>
+			<height>730</height>
+			<texture>frames/Menu_Glass2b.png</texture>
 			<colordiffuse>DialogBackgroundColor</colordiffuse>
 		</control>
-		<control type="image" id="998">
-			<description>background bottom image</description>
-			<posx>0</posx>
-			<width>400</width>
-			<height>50</height>
-			<texture>dialogs/ContextMenu_Bottom.png</texture>
-			<colordiffuse>DialogBackgroundColor</colordiffuse>
+		<control type="grouplist" id="996">
+			<description>grouplist for context buttons</description>
+			<left>30</left>
+			<top>30</top>
+			<width>340</width>
+			<height max="670">auto</height>
+			<itemgap>2</itemgap>
 		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
 			<onleft>Dialog.Close(contextmenu)</onleft>
 			<onright>Dialog.Close(contextmenu)</onright>
-			<posx>40</posx>
-			<posy>40</posy>
-			<width>320</width>
+			<left>-</left>
+			<top>-</top>
+			<width>340</width>
 			<height>35</height>
-			<!--
-			<font>METF_Menu</font>
-			-->
 			<font>METF_DialogLarge</font>
 			<align>center</align>
 			<aligny>center</aligny>
