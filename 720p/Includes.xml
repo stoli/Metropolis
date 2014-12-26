@@ -960,28 +960,6 @@
 		<texture border="2">settings_line.png</texture>
 		<colordiffuse>SettingsLine</colordiffuse>
 	</include>
-	<include name="SettingsAddons_List1">
-		<posx>440</posx>
-		<posy>240</posy>
-		<width>840</width>
-		<height>380</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
-	<include name="SettingsAddons_List2">
-		<posx>440</posx>
-		<posy>438</posy>
-		<width>840</width>
-		<height>162</height>
-		<itemgap>0</itemgap>
-		<onleft>10</onleft>
-		<onright>10</onright>
-		<onup>10</onup>
-		<ondown>10</ondown>
-	</include>
 
 	<!-- Shutdown Menu Buttons -->
 	<include name="SettingsShutdownMenu">
