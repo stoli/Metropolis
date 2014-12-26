@@ -2634,7 +2634,7 @@
 					<height>70</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(3) + !Skin.HasSetting(NoTVShowsSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(3) + !Skin.HasSetting(NoTVShowsSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
@@ -2690,10 +2690,10 @@
 
 				<!-- Music -->
 				<control type="grouplist">
-					<height>70</height>
+					<height>72</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(7) + !Skin.HasSetting(NoMusicSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(7) + !Skin.HasSetting(NoMusicSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
@@ -2752,7 +2752,7 @@
 					<height>26</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(8) + !Skin.HasSetting(NoMusicVideosSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [Container(9000).HasFocus(8) + !Skin.HasSetting(NoMusicVideosSubs) + ![Player.HasAudio + Skin.HasSetting(MusicCoverArtOverlay)]]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
