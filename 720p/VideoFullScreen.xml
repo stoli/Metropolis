@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2005">
+<window>
 	<controls>
 		<control type="group">
 			<animation effect="slide" end="0,-200" time="0" condition="Window.IsVisible(fullscreeninfo)">conditional</animation>
@@ -8,7 +8,7 @@
 				<posx>0</posx>
 				<posy>-45</posy>
 				<width>1280</width>
-				<height>175</height>
+				<height>186</height>
 				<texture>osd/OSDdialogback_top.png</texture>
 				<colordiffuse>OSDBackgroundColor</colordiffuse>
 			</control>
@@ -42,7 +42,7 @@
 				<label>-</label>
 				<align>left</align>
 				<width>1240</width>
-				<height>36</height>
+				<height>108</height>
 				<font>METF_DialogVerySmall</font>
 				<textcolor>TextNF</textcolor>
 			</control>
