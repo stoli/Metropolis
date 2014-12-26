@@ -40,7 +40,7 @@
 	<color name="RecentlyAddedFO">ddFFFFFF</color>
 	<color name="HomeStatsCategory">eef8cd22</color>
 	<color name="HomeStatsNumber">ddFFFFFF</color>
-	<color name="XBMCLogoDiffuse">ddFFFFFF</color>
+	<color name="KodiLogoDiffuse">ddFFFFFF</color>
 	<color name="Home2SkinName">ddec89ed</color>
 	
 	<!-- Media Flags -->

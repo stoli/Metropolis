@@ -195,7 +195,7 @@
 					<width>340</width>
 					<align>left</align>
 					<label>20336</label>
-					<onclick>xbmc.mastermode</onclick>
+					<onclick>XBMC.mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>
 					<texturefocus>ButtonFO2Wide.png</texturefocus>

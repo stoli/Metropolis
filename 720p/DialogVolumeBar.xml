@@ -32,7 +32,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>dialogs/Dialog_VolumeIcon.png</texture>
 			</control>
-			<!-- If Audio Volume is controlled by XBMC -->
+			<!-- If Audio Volume is controlled by Kodi -->
 			<control type="group">
 				<visible>!player.passthrough</visible>
 				<control type="progress" id="404">
