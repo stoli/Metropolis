@@ -512,7 +512,7 @@
 				<description>Live TV</description>
 				<include condition="Skin.HasSetting(Home2)">HomeLiveTVIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeLiveTVWallpaper</include>
-				<onclick>ActivateWindow(PVR)</onclick>
+				<onclick>ActivateWindow(TVChannels)</onclick>
 				<visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(NoLiveTV)</visible>
 			</item>
 			<item id="7">
@@ -1310,37 +1310,43 @@
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
-				<label>$LOCALIZE[19023]</label>
-				<onclick>ActivateWindow(PVR)</onclick>
-				<onclick>Setfocus(32)</onclick>
-				<onclick>Setfocus(11)</onclick>
+				<label>$LOCALIZE[19019]</label>
+				<onclick>ActivateWindow(TVChannels)</onclick>
 			</control>
 			<control type="button" id="92002">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
-				<label>$LOCALIZE[19069]</label>
-				<onclick>ActivateWindow(PVR)</onclick>
-				<onclick>Setfocus(31)</onclick>
-				<onclick>Setfocus(10)</onclick>
+				<label>$LOCALIZE[19024]</label>
+				<onclick>ActivateWindow(RadioChannels)</onclick>
 			</control>
 			<control type="button" id="92003">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
-				<label>$LOCALIZE[19163]</label>
-				<onclick>ActivateWindow(PVR)</onclick>
-				<onclick>Setfocus(34)</onclick>
-				<onclick>Setfocus(13)</onclick>
+				<label>$LOCALIZE[22020]</label>
+				<onclick>ActivateWindow(TVGuide)</onclick>
 			</control>
 			<control type="button" id="92004">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$LOCALIZE[19163]</label>
+				<onclick>ActivateWindow(TVRecordings)</onclick>
+			</control>
+			<control type="button" id="92005">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$LOCALIZE[19040]</label>
-				<onclick>ActivateWindow(PVR)</onclick>
-				<onclick>Setfocus(35)</onclick>
-				<onclick>Setfocus(14)</onclick>
+				<onclick>ActivateWindow(TVTimers)</onclick>
+			</control>
+			<control type="button" id="92006">
+				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
+				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
+				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$LOCALIZE[137]</label>
+				<onclick>ActivateWindow(TVSearch)</onclick>
 			</control>
 		</control>
 		<!-- Music Submenu -->

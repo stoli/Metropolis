@@ -26,11 +26,7 @@
 	<include file="Viewtype_Landscape.xml" />		<!-- 52  -->
 	<include file="Viewtype_Logo.xml" />			<!-- 56  -->
 	<include file="Viewtype_LowList.xml" />			<!-- 905 -->
-	<include file="Viewtype_PVR_TVChannel.xml" />
-	<include file="Viewtype_PVR_EPG.xml" />
-	<include file="Viewtype_PVR_Timers.xml" />
-	<include file="Viewtype_PVR_Recordings.xml" />
-	<include file="Viewtype_PVR_EPGSearch.xml" />
+	<include file="Includes_PVR.xml" />
 	<include file="Viewtype_Panel_Square.xml" />		<!-- 559 -->
 	<include file="Viewtype_PictureGrid.xml" />		<!-- 500 -->
 	<include file="Viewtype_PosterAndFanart.xml" />		<!-- 550 -->
@@ -503,7 +499,7 @@
 		<control type="group">
 			<posx>30</posx>
 			<posy>560</posy>
-			<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(13) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
 			<control type="image">
 				<description>TV Channel Icon</description>
 				<posx>0</posx>
