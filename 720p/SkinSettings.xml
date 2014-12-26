@@ -3078,7 +3078,7 @@
 						<label>  - $LOCALIZE[24000] 5</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon5))]</label2>
 						<onclick>Skin.SetAddon(HomeCustom4_Addon5,xbmc.addon.executable,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image)</onclick>
-						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite5_Path)</visible>
+						<visible>Skin.HasSetting(DialogHome4Enable) + Skin.HasSetting(HomeCustom4_Shortcuts) + IsEmpty(Skin.String(HomeCustom4_Favourite5_Path))</visible>
 					</control>
 				</control>
 				<!-- View Options -->
