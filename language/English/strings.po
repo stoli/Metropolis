@@ -960,7 +960,11 @@ msgctxt "#31477"
 msgid "- Fade delay"
 msgstr ""
 
-#empty strings from id 31478 to 31599
+msgctxt "#31478"
+msgid "Hide default submenu items"
+msgstr ""
+
+#empty strings from id 31479 to 31599
 #PVR Resources
 
 msgctxt "#31600"
