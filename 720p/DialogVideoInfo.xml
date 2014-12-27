@@ -471,6 +471,16 @@
 				<include>Animation_ButtonFocus</include>
 				<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
+			<!-- TV Tunes -->
+			<control type="button" id="21">
+				<include>VideoInfoButton</include>
+				<texturenofocus>buttons/button_tvtunes.png</texturenofocus>
+				<texturefocus>buttons/button_tvtunesFO.png</texturefocus>
+				<visible>Skin.HasSetting(TvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+				<include>Animation_ButtonFocus</include>
+				<label>$LOCALIZE[31956]</label>
+				<onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+			</control>						
 			<!-- Refresh -->
 			<control type="button" id="6">
 				<include>VideoInfoButton</include>
@@ -501,6 +511,12 @@
 				<include>VideoInfoButtonLabel</include>
 				<label>$LOCALIZE[31126]</label>
 				<visible>ControlGroup(7003).HasFocus(20)</visible>
+			</control>
+			<control type="label">
+				<description>Tv Tunes Downloader</description>
+				<include>VideoInfoButtonLabel</include>
+				<label>Tv Tunes Downloader</label>
+				<visible>ControlGroup(7003).HasFocus(21)</visible>
 			</control>
 			<control type="label">
 				<description>Trailer</description>
