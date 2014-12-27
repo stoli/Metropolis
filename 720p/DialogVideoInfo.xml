@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="2003">
+	<onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
 	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
 	<defaultcontrol always="true">7003</defaultcontrol>
 	<controls>
@@ -480,7 +481,20 @@
 				<include>Animation_ButtonFocus</include>
 				<label>$LOCALIZE[31956]</label>
 				<onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
-			</control>						
+			</control>
+			<!-- Video Extras -->
+			<control type="button" id="22">
+				<description>Extras</description>
+				<include>VideoInfoButton</include>
+				<texturenofocus>buttons/button_videoextras.png</texturenofocus>
+				<texturefocus>buttons/button_videoextrasFO.png</texturefocus>
+				<include>Animation_ButtonFocus</include>
+				<onclick condition="!Container.Content(tvshows)">RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+				<onclick condition="Container.Content(tvshows)">RunScript(script.videoextras,display,"$INFO[ListItem.Path]")</onclick>
+				<label>$INFO[System.AddonTitle(script.videoextras)]</label>
+				<visible>System.HasAddon(script.videoextras)</visible>
+				<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+			</control>
 			<!-- Refresh -->
 			<control type="button" id="6">
 				<include>VideoInfoButton</include>
@@ -515,8 +529,14 @@
 			<control type="label">
 				<description>Tv Tunes Downloader</description>
 				<include>VideoInfoButtonLabel</include>
-				<label>Tv Tunes Downloader</label>
+				<label>TvTunes Downloader</label>
 				<visible>ControlGroup(7003).HasFocus(21)</visible>
+			</control>
+			<control type="label">
+				<description>Video Extras</description>
+				<include>VideoInfoButtonLabel</include>
+				<label>$INFO[System.AddonTitle(script.videoextras)]</label>
+				<visible>ControlGroup(7003).HasFocus(22)</visible>
 			</control>
 			<control type="label">
 				<description>Trailer</description>
