@@ -188,7 +188,7 @@
 		<!-- Submenus -->
 		<control type="group" id="9001">
 			<posx>530</posx>
-			<posy>563</posy>
+			<posy>564</posy>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<include>Animation_OpenCloseFade</include>

@@ -161,7 +161,7 @@
 					</control>
 					<!-- Episode Count for Seasons -->
 					<control type="label">
-						<posx>800</posx>
+						<posx>730</posx>
 						<posy>-2</posy>
 						<width>120</width>
 						<height>35</height>
@@ -173,6 +173,7 @@
 						<visible>[Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 					</control>
 					<!-- Star Rating -->
+					<!-- XXX: temporarily commented out until I figure out exactly how I'd like to implement this
 					<control type="group">
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
@@ -189,15 +190,15 @@
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
 						<control type="image">
-							<posx>780</posx>
-							<posy>7</posy>
+							<posx>772</posx>
+							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
 							<texture>Star.png</texture>
 							<colordiffuse>FFFFFFFF</colordiffuse>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
-					</control>
+					</control>-->
 				</itemlayout>
 				<focusedlayout width="0" height="35">
 					<!-- List Line Item Divider -->
@@ -356,7 +357,7 @@
 					</control>
 					<!-- Episode Count for Seasons -->
 					<control type="label">
-						<posx>800</posx>
+						<posx>730</posx>
 						<posy>-2</posy>
 						<width>120</width>
 						<height>35</height>
@@ -368,6 +369,7 @@
 						<visible>[Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 					</control>
 					<!-- Star Rating -->
+					<!-- XXX: temporarily commented out until I figure out exactly how I'd like to implement this
 					<control type="group">
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
@@ -384,15 +386,15 @@
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
 						<control type="image">
-							<posx>780</posx>
-							<posy>7</posy>
+							<posx>772</posx>
+							<posy>6</posy>
 							<width>20</width>
 							<height>20</height>
 							<texture>Star.png</texture>
 							<colordiffuse>$VAR[RatingColor]</colordiffuse>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
-					</control>
+					</control>-->
 				</focusedlayout>
 			</control>
 			<!-- Thumbnails -->

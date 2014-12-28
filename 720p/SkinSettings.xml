@@ -23,9 +23,9 @@
 				<pagecontrol>-</pagecontrol>
 				<itemlayout height="38" width="380">
 					<control type="label">
-						<posx>370</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>370</width>
+						<width>362</width>
 						<height>38</height>
 						<textcolor>SettingsDetail</textcolor>
 						<font>METF_TitleTextMedium</font>
@@ -47,9 +47,9 @@
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>370</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>370</width>
+						<width>362</width>
 						<height>38</height>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -3415,8 +3415,8 @@
 								<visible>[Control.HasFocus(304) | Control.HasFocus(305)]</visible>
 							</control>
 							<control type="label">
-								<posx>730</posx>
-								<width>260</width>
+								<posx>490</posx>
+								<width>220</width>
 								<height>38</height>
 								<align>right</align>
 								<aligny>center</aligny>
@@ -3426,8 +3426,8 @@
 								<visible>![Control.HasFocus(304) | Control.HasFocus(305)]</visible>
 							</control>
 							<control type="label">
-								<posx>730</posx>
-								<width>260</width>
+								<posx>490</posx>
+								<width>220</width>
 								<height>38</height>
 								<align>right</align>
 								<aligny>center</aligny>
