@@ -64,31 +64,6 @@
 			<visible>false</visible>
 		</control>
 
-		<!-- Kodi Logo and Skin Name -->
-		<control type="group">
-			<include>Animation_OpenCloseFade</include>
-			<include>Animation_FadedByMenu</include>
-			<control type="image">
-				<posx>20</posx>
-				<posy>25</posy>
-				<width>240</width>
-				<height>54</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<colordiffuse>KodiLogoDiffuse</colordiffuse>
-				<texture>kodi-logo.png</texture>
-			</control>
-			<control type="label">
-				<posx>20</posx>
-				<posy>77</posy>
-				<width>274</width>
-				<height>30</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>METF_Heading</font>
-				<textcolor>Home2SkinName</textcolor>
-				<label>$LOCALIZE[31011]</label>
-			</control>
-		</control>
 		<!-- Main Menu -->
 		<control type="wraplist" id="9000">
 			<posx>10</posx>
