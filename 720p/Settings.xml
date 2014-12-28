@@ -18,7 +18,7 @@
 			<include>Animation_FadedByMenu</include>
 			<include>Animation_OpenCloseFade</include>
 		</control>
-		
+
 		<control type="group">
 			<include>Animation_FadedByMenu</include>
 			<control type="wraplist" id="60">
