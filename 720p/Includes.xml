@@ -101,7 +101,7 @@
 		<width>1220</width>
 		<height>30</height>
 		<font>METF_Heading</font>
-		<textcolor>GlobalHeading</textcolor>
+		<textcolor>SettingsDetail</textcolor>
 		<align>center</align>
 		<aligny>center</aligny>
 		<include>Animation_HiddenByInfo</include>
@@ -950,7 +950,6 @@
 		<textoffsetx>0</textoffsetx>
 		<align>left</align>
 		<aligny>center</aligny>
-		
 		<font>METF_TitleTextMedium</font>
 		<textcolor>SettingsDetail</textcolor>
 	</include>
