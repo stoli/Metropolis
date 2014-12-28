@@ -4695,7 +4695,7 @@
 					</control>
 					<control type="button" id="707">
 						<include>SettingsLabel</include>
-						<onload condition="IsEmpty(Skin.String(OSDFade))">Skin.SetString(OSDFade,Disabled)</onload>
+						<onfocus condition="IsEmpty(Skin.String(OSDFade))">Skin.SetString(OSDFade,Disabled)</onfocus>
 						<label2>$INFO[Skin.String(OSDFade)]</label2>
 						<label>$LOCALIZE[31476]</label>
 						<onclick condition="Stringcompare(Skin.String(OSDFade),Disabled) | IsEmpty(Skin.String(OSDFade))">Skin.SetString(OSDFade,Partial)</onclick>
@@ -4704,7 +4704,7 @@
 					</control>
 					<control type="button" id="708">
 						<include>SettingsLabel</include>
-						<onload condition="IsEmpty(Skin.String(OSDFadeTime))">Skin.SetString(OSDFadeTime,15)</onload>
+						<onfocus condition="IsEmpty(Skin.String(OSDFadeTime))">Skin.SetString(OSDFadeTime,15)</onfocus>
 						<label2>$INFO[Skin.String(OSDFadeTime),, s]</label2>
 						<label>$LOCALIZE[31477]</label>
 						<onclick condition="Stringcompare(Skin.String(OSDFadeTime),30) | IsEmpty(Skin.String(OSDFadeTime))">Skin.SetString(OSDFadeTime,5)</onclick>
