@@ -383,7 +383,7 @@
 		<value>$INFO[ListItem.Art(clearart)]</value>
 	</variable>
 	<variable name="PlayerTVShowClearartClearlogo">
-		<value condition="[!IsEmpty(Player.Art(tvshow.clearlogo)) + !StringCompare(Player.Art(tvshow.clearlogo),-) + Skin.HasSetting(ViewPreferClearLogo)] | IsEmpty(Player.Art(tvshow.clearlogo)) | StringCompare(Player.Art(tvshow.clearart),-)">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value condition="[!IsEmpty(Player.Art(tvshow.clearlogo)) + !StringCompare(Player.Art(tvshow.clearlogo),-) + Skin.HasSetting(ViewPreferClearLogo)] | IsEmpty(Player.Art(tvshow.clearart)) | StringCompare(Player.Art(tvshow.clearart),-)">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value>$INFO[Player.Art(tvshow.clearart)]</value>
 	</variable>
 	<variable name="VideoPlayerTitle">
