@@ -123,7 +123,6 @@
 				<width>650</width>
 				<height>25</height>
 				<align>center</align>
-				<aligny>-</aligny>
 				<scroll>true</scroll>
 				<font>METF_MusicVizTitle</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>
@@ -147,7 +146,6 @@
 				<width>336</width>
 				<height>30</height>
 				<align>left</align>
-				<aligny>-</aligny>
 				<scroll>true</scroll>
 				<font>METF_SettingsHeading</font>
 				<label>[COLOR=NowPlayingTitle]$INFO[MusicPlayer.Artist][/COLOR]</label>

@@ -461,7 +461,6 @@
 						<fadetime>100</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<fadetime>300</fadetime>
 						<visible>!IsEmpty(ListItem.Title) + !SubString(ListItem.Icon,default)</visible>
 					</control>
 					<control type="image">

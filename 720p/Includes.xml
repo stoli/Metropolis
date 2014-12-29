@@ -519,8 +519,7 @@
 				<posy>0</posy>
 				<width>620</width>
 				<height>30</height>
-				<scroll>true</scroll>
-				<align>false</align>
+				<align>left</align>
 				<aligny>center</aligny>
 				<scroll>true</scroll>
 				<include>SettingsLabel</include>
@@ -1104,9 +1103,8 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<font>METF_OSDTime</font>
-				<textcolor>OSDProgressBar</textcolor>
-				<label>$INFO[VideoPlayer.Time] [COLOR TextNF]/[/COLOR] $INFO[VideoPlayer.Duration]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
+				<label>$INFO[VideoPlayer.Time] [COLOR TextNF]/[/COLOR] $INFO[VideoPlayer.Duration]</label>
 			</control>
 			<!-- Finish Time -->
 			<control type="label">
@@ -1275,7 +1273,6 @@
 				<aligny>center</aligny>
 				<align>left</align>
 				<font>METF_OSDTime</font>
-				<textcolor>OSDProgressBar</textcolor>
 				<label>$INFO[VideoPlayer.Time] [COLOR TextNF]/[/COLOR] $INFO[VideoPlayer.Duration]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>

@@ -74,7 +74,6 @@
 				<font>METF_DialogLargeBold</font>
 				<textcolor>OSDFinishTime</textcolor>
 				<label>$INFO[MusicPlayer.Time]</label>
-				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -86,7 +85,6 @@
 				<font>METF_DialogLargeBold</font>
 				<textcolor>OSDFinishTime</textcolor>
 				<label>$INFO[MusicPlayer.Duration]</label>
-				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="grouplist" id="2001">
 				<posx>20</posx>
