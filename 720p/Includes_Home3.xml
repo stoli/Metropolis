@@ -125,16 +125,7 @@
 			<preloaditems>2</preloaditems>
 			<include>Animation_OpenCloseFade</include>
 			<include>Animation_FadedByMenu</include>
-			<itemlayout height="60" width="320">
-				<!-- XXX: Think I like it better without the lines
-				<control type="image">
-					<posx>-110</posx>
-					<posy>5</posy>
-					<width>1</width>
-					<height>50</height>
-					<texture>FocusLine.png</texture>
-					<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-				</control>
+			<itemlayout height="60" width="300">
 				<control type="image">
 					<posx>189</posx>
 					<posy>5</posy>
@@ -143,11 +134,10 @@
 					<texture>FocusLine.png</texture>
 					<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
 				</control>
-				-->
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>340</width>
+					<left>-110</left>
+					<top>0</top>
+					<width>298</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
 					<textcolor>SubmenuText</textcolor>
@@ -156,16 +146,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="60" width="320">
-				<!-- XXX: Think I like it better without the lines
-				<control type="image">
-					<posx>-110</posx>
-					<posy>5</posy>
-					<width>1</width>
-					<height>50</height>
-					<texture>FocusLine.png</texture>
-					<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-				</control>
+			<focusedlayout height="60" width="300">
 				<control type="image">
 					<posx>189</posx>
 					<posy>5</posy>
@@ -174,11 +155,10 @@
 					<texture>FocusLine.png</texture>
 					<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
 				</control>
-				-->
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>320</width>
+					<left>-110</left>
+					<top>0</top>
+					<width>298</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
 					<textcolor>SubmenuTextFocused</textcolor>
@@ -188,12 +168,12 @@
 					<visible>Control.HasFocus(9000)</visible>
 				</control>
 				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>320</width>
+					<left>-110</left>
+					<top>0</top>
+					<width>298</width>
 					<height>60</height>
 					<font>METF_HorizMenu</font>
-					<textcolor>SubmenuTextFocused</textcolor>
+					<textcolor>SubmenuText</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
