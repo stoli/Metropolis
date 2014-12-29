@@ -250,7 +250,7 @@
 				<height>60</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font-20</font>
+				<font>METF_InfoText</font>
 				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
 			</control>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
