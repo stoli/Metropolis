@@ -197,7 +197,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>MusicPlayer.Time</info>
-				<font>Font_Bartowski_Episodes</font>
+				<font>METF_DialogSmall</font>
 				<textcolor>NowPlayingTitle</textcolor>
 				<visible>Skin.HasSetting(ShowMusicTime)</visible>
 			</control>
@@ -225,13 +225,13 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>MusicPlayer.Duration</info>
-				<font>Font_Bartowski_Episodes</font>
+				<font>METF_DialogSmall</font>
 				<textcolor>NowPlayingTitle</textcolor>
 				<visible>Skin.HasSetting(ShowMusicTime)</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>306</posx>
-				<posy>670</posy>
+				<posy>676</posy>
 				<width>700</width>
 				<height>8</height>
 				<visible>true</visible>
@@ -240,7 +240,7 @@
 				<scrollspeed>1000</scrollspeed>
 				<pauseatend>10000</pauseatend>
 				<label>[COLOR=NowPlayingTitle]$LOCALIZE[209]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist]: $INFO[MusicPlayer.offset(1).Title]</label>
-				<font>Font_Bartowski_Episodes</font>
+				<font>METF_DialogSmall</font>
 				<textcolor>50FFFFFF</textcolor>
 				<align>center</align>
 			</control>

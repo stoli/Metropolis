@@ -70,7 +70,7 @@
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<scrollsuffix>   |   </scrollsuffix>
-					<font>METF_TitleTextSmall</font>
+					<font>METF_TitleText</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.Genre]</label>
 					<visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
@@ -82,7 +82,7 @@
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<scrollsuffix>   |   </scrollsuffix>
-					<font>METF_TitleTextSmall</font>
+					<font>METF_TitleText</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 					<visible>!IsEmpty(ListItem.Property(Artist_Genre)) + Container.Content(artists)</visible>
