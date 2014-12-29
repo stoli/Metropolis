@@ -795,7 +795,6 @@
 				<label>$LOCALIZE[31438]</label>
 				<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				<visible>Container(9000).HasFocus(2) + !Skin.HasSetting(NoMoviesSubs)</visible>
-				<texture></texture>
 			</control>
 			<control type="button" id="91102">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
