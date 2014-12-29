@@ -529,7 +529,7 @@
 			<control type="label">
 				<description>Tv Tunes Downloader</description>
 				<include>VideoInfoButtonLabel</include>
-				<label>TvTunes Downloader</label>
+				<label>$LOCALIZE[31127]</label>
 				<visible>ControlGroup(7003).HasFocus(21)</visible>
 			</control>
 			<control type="label">

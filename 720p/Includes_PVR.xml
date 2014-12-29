@@ -119,7 +119,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<include>Animation_HiddenByInfo</include>
-			<label>View Options</label>
+			<label>$LOCALIZE[31001]</label>
 		</control>
 		<control type="button" id="28">
 			<description>Channel Groups</description>
@@ -198,8 +198,8 @@
 			<alttexturefocus border="5">ButtonFO2.png</alttexturefocus>
 			<aligny>center</aligny>
 			<pulseonselect>false</pulseonselect>
-			<label>Sort: Descending</label>
-			<altlabel>Sort: Ascending</altlabel>
+			<label>584</label>
+			<altlabel>585</altlabel>
 			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>	
 	</include>		
@@ -253,11 +253,3 @@
 		</control>
 	</include>
 </includes>
-
-		
-				
-				
-				
-				
-				
-				
