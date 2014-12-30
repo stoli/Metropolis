@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "Extra Artwork Downloader"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "TvTunes Downloader"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Mute"
@@ -879,6 +883,10 @@ msgstr "OSD: Fade away when paused"
 msgctxt "#31477"
 msgid "- Fade delay"
 msgstr "- Fade delay"
+
+msgctxt "#31478"
+msgid "Hide default submenu items"
+msgstr "Hide default submenu items"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"

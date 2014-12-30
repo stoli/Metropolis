@@ -164,6 +164,10 @@ msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "На целия екран"
 
+msgctxt "#31449"
+msgid "Show Recommended Items"
+msgstr "Показвай препоръчаните елементи"
+
 msgctxt "#31451"
 msgid "Recommended"
 msgstr "Препоръчано"

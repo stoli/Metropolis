@@ -96,6 +96,10 @@ msgctxt "#31607"
 msgid "Delete Group"
 msgstr "Обриши групу"
 
+msgctxt "#31703"
+msgid "Pressure"
+msgstr "Pritisak"
+
 msgctxt "#31704"
 msgid "Clouds"
 msgstr "oblačno"

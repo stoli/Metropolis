@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "Téléchargeur d'illustrations supplémentaires"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "Téléchargeur TvTunes"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Sourdine"
@@ -879,6 +883,10 @@ msgstr "Affichage à l'écran : fondu quand mis en pause"
 msgctxt "#31477"
 msgid "- Fade delay"
 msgstr "- Durée du fondu"
+
+msgctxt "#31478"
+msgid "Hide default submenu items"
+msgstr "Cacher les éléments de sous-menus par défaut"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"

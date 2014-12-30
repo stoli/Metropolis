@@ -880,6 +880,10 @@ msgctxt "#31477"
 msgid "- Fade delay"
 msgstr "- Išnykimo uždelsimas"
 
+msgctxt "#31478"
+msgid "Hide default submenu items"
+msgstr "Slėpti numatytuosius submeniu elementus"
+
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"
 msgstr "Įjungti Live TV (PVR) palaikymą"
