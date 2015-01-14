@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "Papildomų iliustracijų siuntiklis"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "TvTunes atsiuntiklis"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Išjungti garsą"

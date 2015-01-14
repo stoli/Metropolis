@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "Herunterlader für zusätzliches Bildmaterial"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "TvTunes-Herunterlader"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Lautsprecher aus"

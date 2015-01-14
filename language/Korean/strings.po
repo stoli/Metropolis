@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "추가 아트워크 다운로더"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "TvTunes 다운로더"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "음소거"
@@ -875,6 +879,14 @@ msgstr "기본 OSD 단추"
 msgctxt "#31476"
 msgid "OSD: Fade away when paused"
 msgstr "OSD: 일시정지 상태일 때 흐리게"
+
+msgctxt "#31477"
+msgid "- Fade delay"
+msgstr "- 페이드 지연"
+
+msgctxt "#31478"
+msgid "Hide default submenu items"
+msgstr "기본 하위메뉴 항목 숨기기"
 
 msgctxt "#31600"
 msgid "Enable Live TV (PVR) support"

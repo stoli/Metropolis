@@ -124,6 +124,10 @@ msgctxt "#31126"
 msgid "Extra Artwork Downloader"
 msgstr "Extra Artwork Downloader"
 
+msgctxt "#31127"
+msgid "TvTunes Downloader"
+msgstr "TvTunes Downloader"
+
 msgctxt "#31133"
 msgid "Mute"
 msgstr "Dempen"

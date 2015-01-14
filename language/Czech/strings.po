@@ -200,6 +200,10 @@ msgctxt "#31460"
 msgid "Games"
 msgstr "Hry"
 
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Vyčisti knihovnu"
+
 msgctxt "#31468"
 msgid "Services"
 msgstr "Služby"
