@@ -28,7 +28,6 @@
 			<width>1280</width>
 			<height>720</height>
 			<include>Animation_BackdropFade</include>
-			<visible>!Skin.HasSetting(VisBgArtistSlideshow)</visible>
 		</control>
 		<control type="group">
 			<visible>Player.ShowInfo + Skin.HasSetting(ShowMusicTime) + ![Window.IsVisible(musicosd) | Window.IsVisible(seekbar)]</visible>
