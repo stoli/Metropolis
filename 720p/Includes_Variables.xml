@@ -30,6 +30,12 @@
 		<value condition="SubString(ListItem.Votes,$COMMA)">FF00FF00</value>
 	</variable>
 
+	<variable name="Weather_Fanart">
+		<value condition="!IsEmpty(Skin.String(CustomWeather)) + Skin.HasSetting(DynamicWeather)">$INFO[Skin.String(CustomWeather)]$INFO[Window(Weather).Property(Current.FanartCode)].jpg</value>
+		<value condition="!IsEmpty(Skin.String(CustomWeather)) + !Skin.HasSetting(DynamicWeather)">$INFO[Skin.String(CustomWeather)]</value>
+		<value condition="Skin.HasSetting(DynamicWeather)">$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather/,.jpg]</value>
+		<value>home_art/weather.jpg</value>
+	</variable>
 	<variable name="Weather_Icons_Current">
 		<value condition="Skin.HasSetting(WeatherIcons2)">$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons2/,.png]</value>
 		<value>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather_icons/,.png]</value>
