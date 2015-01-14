@@ -178,6 +178,7 @@
 				<height>15</height>
 				<align>center</align>
 				<info>Player.Progress</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -206,6 +207,7 @@
 				<height>15</height>
 				<align>center</align>
 				<info>Player.Progress</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>

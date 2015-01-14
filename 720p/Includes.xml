@@ -1046,6 +1046,7 @@
 				<width>1220</width>
 				<height>18</height>
 				<info>Player.Progress</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -1074,6 +1075,7 @@
 				<width>960</width>
 				<height>15</height>
 				<info>Player.ProgressCache</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -1087,6 +1089,7 @@
 				<width>960</width>
 				<height>15</height>
 				<info>Player.Progress</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -1257,6 +1260,7 @@
 				<width>700</width>
 				<height>15</height>
 				<info>Player.Progress</info>
+				<reveal>true</reveal>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
