@@ -2,7 +2,7 @@
 <includes>
 	<include file="defaults.xml" />
 	<include file="Includes_Variables.xml" />
-	<include file="Includes_MusicOverlay.xml" />
+	<include file="Includes_MediaOverlay.xml" />
 	<include file="Includes_Home1.xml" />
 	<include file="Includes_Home2.xml" />
 	<include file="Includes_Home3.xml" />
