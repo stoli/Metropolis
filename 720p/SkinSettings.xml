@@ -1239,7 +1239,7 @@
 						<label>$LOCALIZE[31441] $LOCALIZE[31334]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
-						<visible>system.hasaddon(plugin.video.the.trailers)</visible>
+						<visible>system.hasaddon(plugin.video.itunes_trailers)</visible>
 					</control>
 
 					<!-- Music item (1621-1650) -->
