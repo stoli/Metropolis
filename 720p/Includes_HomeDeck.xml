@@ -501,7 +501,14 @@
 				<include condition="Skin.HasSetting(Home2)">HomeTrailersIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeTrailersWallpaper</include>
 				<onclick>ActivateWindow(Videos,plugin://plugin.video.itunes_trailers,return)</onclick>
-				<visible>system.hasaddon(plugin.video.itunes_trailers) + !Skin.HasSetting(NoTrailers)</visible>
+				<visible>!Skin.HasSetting(NoTrailers) + IsEmpty(Skin.String(HomeTrailers_Addon) + System.HasAddon(plugin.video.itunes_trailers)</visible>
+			</item>
+			<item id="5">
+				<description>Movie Trailers (Custom Addon)</description>
+				<include condition="Skin.HasSetting(Home2)">HomeTrailersIcon</include>
+				<include condition="!Skin.HasSetting(Home2)">HomeTrailersWallpaper</include>
+				<onclick>RunAddon($INFO[Skin.String(HomeTrailers_Addon)])</onclick>
+				<visible>!Skin.HasSetting(NoTrailers) + !IsEmpty(Skin.String(HomeTrailers_Addon))</visible>
 			</item>
 			<item id="6">
 				<description>Live TV</description>

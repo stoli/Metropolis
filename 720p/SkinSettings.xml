@@ -1239,7 +1239,14 @@
 						<label>$LOCALIZE[31441] $LOCALIZE[31334]</label>
 						<onclick>Skin.ToggleSetting(NoTrailers)</onclick>
 						<selected>Skin.HasSetting(NoTrailers)</selected>
-						<visible>system.hasaddon(plugin.video.itunes_trailers)</visible>
+					</control>
+					<control type="button" id="1592">
+						<include>SettingsLabel</include>
+						<width>370</width>
+						<label>$LOCALIZE[31456]</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(HomeTrailers_Addon))]</label2>
+						<onclick>Skin.SetAddon(HomeTrailers_Addon,xbmc.addon.video)</onclick>
+						<visible>!Skin.HasSetting(NoTrailers)</visible>
 					</control>
 
 					<!-- Music item (1621-1650) -->
