@@ -96,7 +96,7 @@
 				<posy>555</posy>
 				<animation effect="slide" start="-280" end="30" time="600" tween="cubic" easing="out" delay="400">WindowOpen</animation>
 				<animation effect="slide" start="30" end="-280" time="600" tween="cubic" easing="out" delay="800">WindowClose</animation> 
-				<visible>!Skin.HasSetting(SlimMusicInfo) + Skin.HasSetting(MusicCoverArtOverlay)</visible>
+				<visible>!Skin.HasSetting(SlimMusicInfo) + Skin.HasSetting(MediaOverlay)</visible>
 				<control type="image" id="7026">
 					<width>180</width>
 					<height>180</height>
