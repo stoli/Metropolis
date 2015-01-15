@@ -243,6 +243,7 @@
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsEpisodes</textcolor>
 					<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
+					<visible>!IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 				</control>
 			</control>
 			<include>ScrollBar_Vertical</include>
