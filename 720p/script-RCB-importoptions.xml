@@ -1,0 +1,471 @@
+<window id="5200">
+	<defaultcontrol>5211</defaultcontrol>
+	<controls>
+		<include>Global_Background</include>
+		<control type="group">
+			<posx>420</posx>
+			<posy>125</posy>
+			
+			<control type="list" id="5210">
+				<hitrect x="0" y="0" w="0" h="0" />
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>836</width>
+				<height>34</height>
+				<onleft>5300</onleft>
+				<onright>5300</onright>
+				<onup>5210</onup>
+				<ondown>5210</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>0</scrolltime>
+				<itemlayout height="1" width="750">
+				</itemlayout>
+				<focusedlayout height="34" width="836">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>34</height>
+						<width>836</width>
+						<texture>ButtonFo.png</texture>
+						<visible>Control.HasFocus(5211) | Control.HasFocus(5212)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>34</height>
+						<include>SettingsLabel</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Rom Collection</label>
+					</control>
+					<control type="label">
+						<posx>700</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>34</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button" id="5211">
+				<description>Menu Item Next Button</description>
+				<posx>750</posx>
+				<posy>0</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowDownNF.png</texturenofocus>
+				<texturefocus>ArrowDownFO.png</texturefocus>
+				<onclick>Control.Move(5210,1)</onclick>
+				<onleft>5300</onleft>
+				<onright>5212</onright>
+				<onup>5291</onup>
+				<ondown>5222</ondown>
+			</control>
+			<control type="button" id="5212">
+				<description>Menu Item Prev Button</description>
+				<posx>784</posx>
+				<posy>0</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowUpNF.png</texturenofocus>
+				<texturefocus>ArrowUpFO.png</texturefocus>
+				<onclick>Control.Move(5210,-1)</onclick>
+				<onleft>5211</onleft>
+				<onright>5300</onright>
+				<onup>5292</onup>
+				<ondown>5223</ondown>
+			</control>
+			
+			<!-- Scraping mode -->		
+			<control type="list" id="5220">
+				<hitrect x="0" y="0" w="0" h="0" />
+				<posx>0</posx>
+				<posy>36</posy>
+				<width>836</width>
+				<height>34</height>
+				<onleft>5220</onleft>
+				<onright>5220</onright>
+				<onup>5220</onup>
+				<ondown>5220</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>0</scrolltime>
+				<itemlayout height="1" width="750">
+				</itemlayout>
+				<focusedlayout height="34" width="836">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>34</height>
+						<width>836</width>
+						<texture>ButtonFo.png</texture>
+						<visible>Control.HasFocus(5222) | Control.HasFocus(5223)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>34</height>
+						<include>SettingsLabel</include>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Scraping mode</label>
+					</control>
+					<control type="label">
+						<posx>700</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>34</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="button" id="5222">
+				<description>Menu Item Next Button</description>
+				<posx>750</posx>
+				<posy>36</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowDownNF.png</texturenofocus>
+				<texturefocus>ArrowDownFO.png</texturefocus>
+				<onclick>Control.Move(5220,1)</onclick>
+				<onleft>5300</onleft>
+				<onright>5223</onright>
+				<onup>5211</onup>
+				<ondown>5330</ondown>
+			</control>
+			<control type="button" id="5223">
+				<description>Menu Item Prev Button</description>
+				<posx>784</posx>
+				<posy>36</posy>
+				<width>34</width>
+				<height>34</height>
+				<label>-</label>
+				<font>-</font>
+				<texturenofocus>ArrowUpNF.png</texturenofocus>
+				<texturefocus>ArrowUpFO.png</texturefocus>
+				<onclick>Control.Move(5220,-1)</onclick>
+				<onleft>5222</onleft>
+				<onright>5300</onright>
+				<onup>5212</onup>
+				<ondown>5330</ondown>
+			</control>
+			
+			<control type="radiobutton" id="5330">
+				<posx>0</posx>
+				<posy>72</posy>
+				<width>836</width>
+				<height>34</height>
+				<include>SettingsLabel</include>
+				<label>Change scrapers for this run</label>
+				<onleft>5300</onleft>
+				<onright>5300</onright>
+				<onup>5223</onup>
+				<ondown>5272</ondown>
+				<onclick>Skin.ToggleSetting(rcb_overwriteImportOptions)</onclick>
+			</control>
+			
+			<control type="group">
+				<posx>0</posx>
+				<posy>108</posy>
+				
+				<!-- Scraper 1 -->
+				<control type="list" id="5270">
+					<hitrect x="0" y="0" w="0" h="0" />
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>836</width>
+					<height>34</height>
+					<onleft>5272</onleft>
+					<onright>5270</onright>
+					<onup>5270</onup>
+					<ondown>5270</ondown>
+					<enable>false</enable>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<itemlayout height="1" width="750">
+					</itemlayout>
+					<focusedlayout height="34" width="836">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<height>34</height>
+							<width>836</width>
+							<texture>ButtonFo.png</texture>
+							<visible>Control.HasFocus(5271) | Control.HasFocus(5272)</visible>
+						</control>
+						<control type="label">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>200</width>
+							<height>34</height>
+							<include>SettingsLabel</include>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>Scraper 1</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+						<control type="label">
+							<posx>700</posx>
+							<posy>0</posy>
+							<width>470</width>
+							<height>34</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="button" id="5271">
+					<description>Menu Item Next Button</description>
+					<posx>750</posx>
+					<posy>0</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowDownNF.png</texturenofocus>
+					<texturefocus>ArrowDownFO.png</texturefocus>
+					<onclick>Control.Move(5270,1)</onclick>
+					<onleft>5300</onleft>
+					<onright>5272</onright>
+					<onup>5330</onup>
+					<ondown>5281</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+				<control type="button" id="5272">
+					<description>Menu Item Prev Button</description>
+					<posx>784</posx>
+					<posy>0</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowUpNF.png</texturenofocus>
+					<texturefocus>ArrowUpFO.png</texturefocus>
+					<onclick>Control.Move(5270,-1)</onclick>
+					<onleft>5271</onleft>
+					<onright>5300</onright>
+					<onup>5330</onup>
+					<ondown>5282</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+				<!-- Scraper 2 -->
+				<control type="list" id="5280">
+					<hitrect x="0" y="0" w="0" h="0" />
+					<posx>0</posx>
+					<posy>34</posy>
+					<width>836</width>
+					<height>34</height>
+					<onleft>5280</onleft>
+					<onright>5280</onright>
+					<onup>5280</onup>
+					<ondown>5280</ondown>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<itemlayout height="1" width="750">
+					</itemlayout>
+					<focusedlayout height="34" width="836">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<height>34</height>
+							<width>836</width>
+							<texture>ButtonFo.png</texture>
+							<visible>Control.HasFocus(5281) | Control.HasFocus(5282)</visible>
+						</control>
+						<control type="label">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>200</width>
+							<height>34</height>
+							<include>SettingsLabel</include>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>Scraper 2</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+						<control type="label">
+							<posx>700</posx>
+							<posy>0</posy>
+							<width>470</width>
+							<height>34</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="button" id="5281">
+					<description>Menu Item Next Button</description>
+					<posx>750</posx>
+					<posy>33</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowDownNF.png</texturenofocus>
+					<texturefocus>ArrowDownFo.png</texturefocus>
+					<onclick>Control.Move(5280,1)</onclick>
+					<onleft>5300</onleft>
+					<onright>5282</onright>
+					<onup>5271</onup>
+					<ondown>5291</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+				<control type="button" id="5282">
+					<description>Menu Item Prev Button</description>
+					<posx>784</posx>
+					<posy>33</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowUpNF.png</texturenofocus>
+					<texturefocus>ArrowUpFO.png</texturefocus>
+					<onclick>Control.Move(5280,-1)</onclick>
+					<onleft>5281</onleft>
+					<onright>5300</onright>
+					<onup>5272</onup>
+					<ondown>5292</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+				<!-- Scraper 3 -->
+				<control type="list" id="5290">
+					<hitrect x="0" y="0" w="0" h="0" />
+					<posx>0</posx>
+					<posy>68</posy>
+					<width>836</width>
+					<height>34</height>
+					<onleft>5290</onleft>
+					<onright>5290</onright>
+					<onup>5290</onup>
+					<ondown>5290</ondown>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<itemlayout height="1" width="750">
+					</itemlayout>
+					<focusedlayout height="34" width="836">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<height>34</height>
+							<width>836</width>
+							<texture>ButtonFo.png</texture>
+							<visible>Control.HasFocus(5291) | Control.HasFocus(5292)</visible>
+						</control>
+						<control type="label">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>200</width>
+							<height>34</height>
+							<include>SettingsLabel</include>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>Scraper 3</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+						<control type="label">
+							<posx>700</posx>
+							<posy>0</posy>
+							<width>470</width>
+							<height>34</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_overwriteImportOptions)">Conditional</animation>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="button" id="5291">
+					<description>Menu Item Next Button</description>
+					<posx>750</posx>
+					<posy>67</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowDownNF.png</texturenofocus>
+					<texturefocus>ArrowDownFo.png</texturefocus>
+					<onclick>Control.Move(5290,1)</onclick>
+					<onleft>5300</onleft>
+					<onright>5292</onright>
+					<onup>5281</onup>
+					<ondown>5211</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+				<control type="button" id="5292">
+					<description>Menu Item Prev Button</description>
+					<posx>784</posx>
+					<posy>67</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowUpNF.png</texturenofocus>
+					<texturefocus>ArrowUpFO.png</texturefocus>
+					<onclick>Control.Move(5290,-1)</onclick>
+					<onleft>5291</onleft>
+					<onright>5300</onright>
+					<onup>5282</onup>
+					<ondown>5212</ondown>
+					<enable>Skin.HasSetting(rcb_overwriteImportOptions)</enable>
+				</control>
+			</control>
+			
+		</control>
+
+		<!-- Menu group -->
+		<control type="grouplist" id="9000">
+			<posx>0</posx>
+			<posy>200</posy>
+			<itemgap>20</itemgap>
+			<orientation>vertical</orientation>
+			<onleft>5211</onleft>
+			<onright>5211</onright>
+			<control type="button" id="5300">
+				<description>Import Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Import</label>
+			</control>
+			<control type="button" id="5310">
+				<description>Cancel Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Cancel</label>
+			</control>
+		</control>
+
+		<!-- Header group --> 
+		<control type="group">
+			<posx>30</posx>
+			<posy>10</posy>
+			<include>Animation_SlideDownFadeOut</include>
+			<control type="label">
+				<label>Rom Collection Browser</label>
+				<include>Global_HeadingSectionVars</include>
+			</control>
+			<control type="label">
+				<label>Import Games</label>
+				<include>Global_HeadingDetailVars</include>
+			</control>
+		</control>
+
+		<!-- Time, weather and debug options -->
+		<include>Global_Weather</include>
+ 		<include>Global_Time</include>
+		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
+	</controls>
+</window>

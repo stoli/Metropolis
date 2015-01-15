@@ -1,0 +1,429 @@
+<window id="5200">
+	<defaultcontrol>5601</defaultcontrol>
+	
+	<controls>
+		<include>Global_Background</include>
+		<!-- Category buttons -->
+		<control type="list" id="7000">
+			<posx>0</posx>
+			<posy>330</posy>
+			<width>380</width>
+			<height>210</height>
+			<scrolltime>0</scrolltime>
+			<onleft>7010</onleft>
+			<onright>7010</onright>
+			<onup>7000</onup>
+			<ondown>7000</ondown>
+			<pagecontrol>-</pagecontrol>
+			<orientation>vertical</orientation>
+
+			<scrolltime>300</scrolltime>
+			<itemlayout height="38" width="380">
+				<control type="label">
+					<posx>370</posx>
+
+					<posy>0</posy>
+
+					<width>370</width>
+
+					<height>38</height>
+
+					<textcolor>SettingsDetail</textcolor>
+
+					<font>METF_TitleTextMedium</font>
+
+					<aligny>center</aligny>
+
+					<align>right</align>
+
+					<focusedcolor>ButtonText</focusedcolor>
+
+					<label>$INFO[ListItem.Label]</label>
+
+				</control>
+			</itemlayout>
+			<focusedlayout height="38" width="380">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>380</width>
+
+					<height>38</height>
+
+					<align>left</align>
+
+					<aligny>center</aligny>
+
+					<texture>ButtonFo.png</texture>
+
+					<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(9000)">Conditional</animation>
+
+				</control>
+				<control type="label">
+
+					<posx>370</posx>
+
+					<posy>0</posy>
+
+					<width>370</width>
+
+					<height>38</height>
+
+					<align>right</align>
+
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+
+					<font>METF_TitleTextMedium</font>
+
+					<textcolor>DialogTextFO</textcolor>
+
+					<focusedcolor>BDialogTextFO</focusedcolor>
+
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<label>Offline scrapers</label>
+					<onclick>-</onclick>
+				</item>
+			</content>
+		</control>
+						
+		<control type="group" id="7010">
+			<!-- Offline scrapers -->
+			<control type="group" id="7004">				
+				<posx>420</posx>
+				<posy>110</posy>
+				
+				<!-- Scraper List -->
+				<control type="list" id="5600">
+					<hitrect x="0" y="0" w="0" h="0" />					
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>836</width>
+					<height>34</height>
+					<onleft>5600</onleft>
+					<onright>5600</onright>
+					<onup>5600</onup>
+					<ondown>5600</ondown>
+					<enable>false</enable>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<itemlayout height="1" width="750">
+					</itemlayout>
+					<focusedlayout height="34" width="836">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<height>34</height>
+							<width>836</width>
+							<texture>ButtonFo.png</texture>
+							<visible>Control.HasFocus(5601) | Control.HasFocus(5602)</visible>
+						</control>
+						<control type="label">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>200</width>
+							<height>34</height>
+							<include>SettingsLabel</include>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>Scraper</label>
+						</control>
+						<control type="label">
+							<posx>700</posx>
+							<posy>0</posy>
+							<width>480</width>
+							<height>34</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="button" id="5601">
+					<description>Menu Item Next Button</description>					
+					<posx>750</posx>
+					<posy>0</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowDownNF.png</texturenofocus>
+					<texturefocus>ArrowDownFo.png</texturefocus>
+					<onclick>Control.Move(5600,1)</onclick>
+					<onleft>6000</onleft>
+					<onright>5602</onright>
+					<onup>5620</onup>
+					<ondown>5550</ondown>
+				</control>
+				<control type="button" id="5602">
+					<description>Menu Item Prev Button</description>					
+					<posx>784</posx>
+					<posy>0</posy>
+					<width>34</width>
+					<height>34</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus>ArrowUpNF.png</texturenofocus>
+					<texturefocus>ArrowUpFO.png</texturefocus>
+					<onclick>Control.Move(5600,-1)</onclick>
+					<onleft>5601</onleft>
+					<onright>6000</onright>
+					<onup>5620</onup>
+					<ondown>5550</ondown>
+				</control>
+				
+				<!-- descfile per game -->
+				<control type="radiobutton" id="5550">
+					<posx>0</posx>
+					<posy>36</posy>
+					<width>836</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<label>Use description per game</label>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+					<onup>5601</onup>
+					<ondown>5520</ondown>
+					<onclick>Skin.ToggleSetting(rcb_editScraper_descFilePerGame)</onclick>
+				</control>
+				<!-- Path game desc -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>72</posy>
+					<width>836</width>
+					<height>34</height>
+					<texture>ButtonFo.png</texture>
+					<visible>Control.HasFocus(5520)</visible>
+				</control>				
+				<control type="label">
+					<posx>0</posx>
+					<posy>72</posy>
+					<width>200</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>Path game desc</label>					
+				</control>
+				<control type="button" id="5520"> 
+					<description>Path game desc</description>
+					<posx>340</posx>
+					<posy>72</posy>
+					<width>470</width>
+					<height>34</height>
+					<visible>true</visible>
+					<label>$INFO[ListItem.Label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>SettingsDetail</textcolor>
+					<focusedcolor>ButtonText</focusedcolor>
+					<selectedcolor>TextFO</selectedcolor>
+					<pulseonselect></pulseonselect>
+					<onup>5550</onup>
+					<ondown>5530</ondown>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+				</control>
+								
+				<!-- Game desc file mask -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>108</posy>
+					<width>836</width>
+					<height>34</height>
+					<texture>ButtonFo.png</texture>
+					<visible>Control.HasFocus(5530)</visible>
+				</control>				
+				<control type="label">
+					<posx>0</posx>
+					<posy>108</posy>
+					<width>300</width>
+					<include>SettingsLabel</include>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>Game desc file mask</label>					
+					<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_editScraper_descFilePerGame)">Conditional</animation>
+				</control>
+				<control type="button" id="5530">
+					<description>Game desc file mask</description>
+					<posx>240</posx>
+					<posy>108</posy>
+					<width>470</width>
+					<height>34</height>
+					<visible>true</visible>
+					<label>$INFO[ListItem.Label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>SettingsDetail</textcolor>
+					<focusedcolor>ButtonText</focusedcolor>
+					<selectedcolor>TextFO</selectedcolor>
+					<pulseonselect></pulseonselect>
+					<onup>5520</onup>
+					<ondown>5540</ondown>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+					<enable>Skin.HasSetting(rcb_editScraper_descFilePerGame)</enable>
+					<animation reversible="false" effect="fade" end="50" time="0" condition="!Skin.HasSetting(rcb_editScraper_descFilePerGame)">Conditional</animation>
+				</control>
+				
+				<!-- Parse instruction -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>144</posy>
+					<width>836</width>
+					<height>34</height>
+					<texture>ButtonFo.png</texture>
+					<visible>Control.HasFocus(5540)</visible>
+				</control>				
+				<control type="label">
+					<posx>0</posx>
+					<posy>144</posy>
+					<width>300</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>Parse instruction</label>
+				</control>
+				<control type="button" id="5540"> 
+					<description>Parse instruction</description>
+					<posx>340</posx>
+					<posy>144</posy>
+					<width>470</width>
+					<height>34</height>
+					<visible>true</visible>
+					<label>$INFO[ListItem.Label]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>SettingsDetail</textcolor>
+					<focusedcolor>ButtonText</focusedcolor>
+					<selectedcolor>TextFO</selectedcolor>
+					<pulseonselect></pulseonselect>
+					<onup>5530</onup>
+					<ondown>5560</ondown>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+				</control>
+				<!-- Search by crc -->
+				<control type="radiobutton" id="5560">
+					<posx>0</posx>
+					<posy>180</posy>
+					<width>836</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<label>Search game by crc</label>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+					<onup>5540</onup>
+					<ondown>5580</ondown>
+				</control>
+				<!-- Use foldername as crc -->
+				<control type="radiobutton" id="5580">
+					<posx>0</posx>
+					<posy>216</posy>
+					<width>836</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<label>Use foldername as crc</label>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+					<onup>5560</onup>
+					<ondown>5590</ondown>
+				</control>
+				<!-- Use filename as crc -->
+				<control type="radiobutton" id="5590">
+					<posx>0</posx>
+					<posy>252</posy>
+					<width>836</width>
+					<height>34</height>
+					<include>SettingsLabel</include>
+					<label>Use filename as crc</label>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+					<onup>5580</onup>
+					<ondown>5610</ondown>
+				</control>
+				<!-- Remove scraper -->
+				<control type="button" id="5610"> 
+					<description>Remove scraper</description>
+					<posx>0</posx>
+					<posy>288</posy>
+					<width>836</width>
+					<height>30</height>
+					<visible>true</visible>
+					<include>SettingsLabel</include>
+					<label>Remove scraper</label>				
+					<align>left</align>
+					<aligny>center</aligny>
+					<pulseonselect></pulseonselect>
+					<onup>5590</onup>
+					<ondown>5620</ondown>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+				</control>
+				<!-- Add scraper -->
+				<control type="button" id="5620"> 
+					<description>Add scraper</description>
+					<posx>0</posx>
+					<posy>324</posy>
+					<width>836</width>
+					<height>30</height>
+					<visible>true</visible>
+					<include>SettingsLabel</include>
+					<label>Add scraper</label>				
+					<pulseonselect></pulseonselect>
+					<onup>5610</onup>
+					<ondown>5601</ondown>
+					<onleft>6000</onleft>
+					<onright>6000</onright>
+				</control>
+			</control>
+		</control>
+			
+		<!-- Menu group -->
+		<control type="grouplist" id="9000">
+			<posx>0</posx>
+			<posy>200</posy>
+			<itemgap>10</itemgap>
+			<orientation>vertical</orientation>
+			<onleft>5602</onleft>
+			<onright>5601</onright>
+			<onup>7000</onup>
+			<ondown>7000</ondown>
+			<control type="button" id="6000">
+				<description>Save Config Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Save Config</label>
+			</control>
+			<control type="button" id="6010">
+				<description>Cancel Button</description>
+				<include>SettingsLabelLeft</include>
+				<label>Cancel</label>
+			</control>
+		</control>
+
+		<!-- Header group --> 
+		<control type="group">
+			<posx>30</posx>
+			<posy>10</posy>
+			<include>Animation_SlideDownFadeOut</include>
+			<control type="label">
+				<label>Rom Collection Browser</label>
+				<include>Global_HeadingSectionVars</include>
+			</control>
+			<control type="label">
+				<label>Configuration</label>
+				<include>Global_HeadingDetailVars</include>
+			</control>
+		</control>
+
+		<!-- Time, weather and debug options -->
+		<include>Global_Weather</include>
+ 		<include>Global_Time</include>
+		<include condition="Skin.HasSetting(DebugGrid)">Object_DebugGrid</include>
+		<include condition="Skin.HasSetting(DebugMode)">Debug</include>			
+	</controls>
+</window>
