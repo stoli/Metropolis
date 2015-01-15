@@ -229,8 +229,8 @@
 					<aligny>center</aligny>
 					<font>METF_MediaDetailsSmall</font>
 					<textcolor>MediaDetailsGenre</textcolor>
-					<label>$LOCALIZE[20416] $INFO[ListItem.Date]</label>
-					<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
+					<label>$LOCALIZE[20416] $INFO[ListItem.Premiered]</label>
+					<visible>!IsEmpty(ListItem.Premiered) + Container.Content(episodes)</visible>
 				</control>
 				<!-- Picture Date -->
 				<control type="label">

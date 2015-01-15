@@ -540,10 +540,10 @@
 					<width>550</width>
 					<height>27</height>
 					<align>right</align>
-					<label>$LOCALIZE[20416] $INFO[ListItem.Date]</label>
+					<label>$LOCALIZE[20416] $INFO[ListItem.Premiered]</label>
 					<font>METF_MediaDetails</font>
 					<textcolor>MediaDetailsInfo</textcolor>
-					<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
+					<visible>!IsEmpty(ListItem.Premiered) + Container.Content(episodes)</visible>
 				</control>
 				<!-- Addon Author -->
 				<control type="label">

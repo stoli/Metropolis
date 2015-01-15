@@ -120,8 +120,8 @@
 				<aligny>center</aligny>
 				<font>METF_InfoTextLarger</font>
 				<textcolor>MediaDetailsInfo</textcolor>
-				<label>$LOCALIZE[20416] $INFO[ListItem.Date]</label>
-				<visible>!IsEmpty(ListItem.Date) + Container.Content(episodes)</visible>
+				<label>$LOCALIZE[20416] $INFO[ListItem.Premiered]</label>
+				<visible>!IsEmpty(ListItem.Premiered) + Container.Content(episodes)</visible>
 			</control>
 			<!-- MPAA Long Description -->
 			<control type="textbox">
