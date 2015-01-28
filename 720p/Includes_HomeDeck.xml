@@ -2287,6 +2287,7 @@
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom1_Addon5))]</label>
 				<onclick>RunAddon($INFO[Skin.String(HomeCustom1_Addon5)])</onclick>
 				<visible>Skin.HasSetting(HomeCustom1_Shortcuts) + !IsEmpty(Skin.String(HomeCustom1_Addon5))</visible>
 			</control>
@@ -2375,6 +2376,7 @@
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom2_Addon5))]</label>
 				<onclick>RunAddon($INFO[Skin.String(HomeCustom2_Addon5)])</onclick>
 				<visible>Skin.HasSetting(HomeCustom2_Shortcuts) + !IsEmpty(Skin.String(HomeCustom2_Addon5))</visible>
 			</control>
@@ -2463,6 +2465,7 @@
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom3_Addon5))]</label>
 				<onclick>RunAddon($INFO[Skin.String(HomeCustom3_Addon5)])</onclick>
 				<visible>Skin.HasSetting(HomeCustom3_Shortcuts) + !IsEmpty(Skin.String(HomeCustom3_Addon5))</visible>
 			</control>
@@ -2551,6 +2554,7 @@
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
+				<label>$INFO[System.AddonTitle(Skin.String(HomeCustom4_Addon5))]</label>
 				<onclick>RunAddon($INFO[Skin.String(HomeCustom4_Addon5)])</onclick>
 				<visible>Skin.HasSetting(HomeCustom4_Shortcuts) + !IsEmpty(Skin.String(HomeCustom4_Addon5))</visible>
 			</control>
