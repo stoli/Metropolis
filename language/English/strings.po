@@ -406,7 +406,11 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr ""
 
-#empty strings from id 31332 to 31333
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr ""
+
+#empty string with id 31333
 
 msgctxt "#31334"
 msgid "Trailers"

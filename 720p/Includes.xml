@@ -56,25 +56,48 @@
 		<include>Animation_FadedByMenu</include>
 		<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
 		<fadetime>200</fadetime>
-		<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
 		<colordiffuse>$VAR[GlobalFanartDiffuse]</colordiffuse>
 	</include>
 	<include name="Global_Background_Fanart">
 		<!-- Videos -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
-			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart)</visible>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6997)) + IsEmpty(Control.GetLabel(6998))]]</visible>
+		</control>
+		<control type="multiimage" id="6997">
+			<include>Global_Background_Fanart_Common</include>
+			<timeperimage>6000</timeperimage>
+			<randomize>true</randomize>
+			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
+			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+		</control>
+		<control type="multiimage" id="6998">
+			<include>Global_Background_Fanart_Common</include>
+			<timeperimage>6000</timeperimage>
+			<randomize>true</randomize>
+			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
 		</control>
 		<!-- Music -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
-			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart)</visible>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6999))]]</visible>
+		</control>
+		<control type="multiimage" id="6999">
+			<include>Global_Background_Fanart_Common</include>
+			<timeperimage>6000</timeperimage>
+			<randomize>true</randomize>
+			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path]extrafanart/</imagepath>
+			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
 		</control>
 		<!-- Pictures -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
 			<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-			<visible>Window.IsVisible(pictures) + !Skin.HasSetting(HidePictureFanart) + !Control.IsVisible(500)</visible>
+			<visible>Window.IsActive(pictures) + !Skin.HasSetting(HidePictureFanart) + !Control.IsVisible(500)</visible>
 		</control>
 	</include>
 	<include name="Global_ContextFilter">
