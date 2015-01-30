@@ -652,7 +652,9 @@ msgctxt "#31398"
 msgid "Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music."
 msgstr ""
 
-#empty string with id 31399
+msgctxt "#31399"
+msgid "Lighter Background Fanart diffuse overlay"
+msgstr ""
 
 msgctxt "#31400"
 msgid "Hide Current Temperature and Weather Conditions"
