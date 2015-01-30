@@ -50,6 +50,33 @@
 			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
+	<include name="Global_Background_Fanart_Common">
+		<include>Dimensions_Fullscreen</include>
+		<include>Animation_CommonFade</include>
+		<include>Animation_FadedByMenu</include>
+		<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
+		<fadetime>200</fadetime>
+		<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+		<colordiffuse>$VAR[GlobalFanartDiffuse]</colordiffuse>
+	</include>
+	<include name="Global_Background_Fanart">
+		<!-- Videos -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart)</visible>
+		</control>
+		<!-- Music -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart)</visible>
+		</control>
+		<!-- Pictures -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+			<visible>Window.IsVisible(pictures) + !Skin.HasSetting(HidePictureFanart) + !Control.IsVisible(500)</visible>
+		</control>
+	</include>
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>

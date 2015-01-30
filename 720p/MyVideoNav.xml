@@ -7,16 +7,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<include>Animation_CommonFade</include>
-			<include>Animation_FadedByMenu</include>
-			<fadetime>200</fadetime>
-			<texture background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Art(fanart)]</texture>
-			<colordiffuse>FanartDiffuse</colordiffuse>
-			<animation effect="fade" start="100" end="60" time="300" condition="Window.IsVisible(movieinformation)">Conditional</animation>
-			<visible>!Skin.HasSetting(HideVideoFanart) + !IsEmpty(ListItem.path) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-		</control>
+		<include>Global_Background_Fanart</include>
 		<include>Object_InfoLines</include>
 		<include>Viewtype_LowList</include>			<!-- 905 -->
 		<include>Viewtype_List</include>			<!-- 55 -->
