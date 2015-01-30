@@ -26,6 +26,7 @@
 				<visible>Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 				<itemlayout width="294" height="194">
 					<control type="image">
+						<include>Animation_HiddenByInfo</include>
 						<posx>9</posx>
 						<posy>98</posy>
 						<width>272</width>
@@ -34,7 +35,7 @@
 						<fadetime>200</fadetime>
 						<colordiffuse>LandscapeDiffuse</colordiffuse>
 						<aspectratio aligny="center">keep</aspectratio>
-						<include>Animation_HiddenByInfo</include>
+						<visible>!Skin.HasSetting(LogoViewSingleItem)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="318" height="178">

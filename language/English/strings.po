@@ -744,7 +744,9 @@ msgctxt "#31421"
 msgid "Video OSD: Show ClearArt/Logo"
 msgstr ""
 
-#empty string with id 31422
+msgctxt "#31422"
+msgid "Logo View: Show only one item at a time"
+msgstr ""
 
 msgctxt "#31423"
 msgid "Author"

@@ -3109,7 +3109,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>840</width>
-					<height>408</height>
+					<height>418</height>
 					<itemgap>0</itemgap>
 					<scrolltime>0</scrolltime>
 					<onleft>9000</onleft>
@@ -3126,54 +3126,57 @@
 						<onclick>Skin.ToggleSetting(HideTVWatchedOverlays)</onclick>
 						<selected>Skin.HasSetting(HideTVWatchedOverlays)</selected>
 					</control>
-					<control type="image" id="503">
-						<include>Settings_Line</include>
-					</control>
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="503">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31448]</label>
 						<onclick>Skin.ToggleSetting(Hide_Plot)</onclick>
 						<selected>Skin.HasSetting(Hide_Plot)</selected>
 					</control>
-					<control type="radiobutton" id="505">
+					<control type="radiobutton" id="504">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31402]</label>
 						<onclick>Skin.ToggleSetting(Show_PlotOutline)</onclick>
 						<selected>Skin.HasSetting(Show_PlotOutline)</selected>
 						<visible>!Skin.HasSetting(Hide_Plot)</visible>
 					</control>
-					<control type="radiobutton" id="506">
+					<control type="radiobutton" id="505">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31404]</label>
 						<onclick>Skin.ToggleSetting(Hide_MediaFlags)</onclick>
 						<selected>Skin.HasSetting(Hide_MediaFlags)</selected>
 					</control>
-					<control type="radiobutton" id="507">
+					<control type="radiobutton" id="506">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31403]</label>
 						<onclick>Skin.ToggleSetting(Hide_ExtraMediaFlags)</onclick>
 						<selected>Skin.HasSetting(Hide_ExtraMediaFlags)</selected>
 					</control>
-					<control type="radiobutton" id="508">
+					<control type="radiobutton" id="507">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(Hide_MovieTagline)</onclick>
 						<selected>Skin.HasSetting(Hide_MovieTagline)</selected>
 					</control>
-					<control type="image" id="509">
+					<control type="image" id="508">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="509">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31399]</label>
 						<onclick>Skin.ToggleSetting(GlobalFanartLight)</onclick>
 						<selected>Skin.HasSetting(GlobalFanartLight)</selected>
 					</control>
-					<control type="radiobutton" id="511">
+					<control type="radiobutton" id="510">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31406]</label>
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
+					</control>
+					<control type="radiobutton" id="511">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31422]</label>
+						<onclick>Skin.ToggleSetting(LogoViewSingleItem)</onclick>
+						<selected>Skin.HasSetting(LogoViewSingleItem)</selected>
 					</control>
 					<control type="radiobutton" id="512">
 						<include>SettingsLabel</include>
@@ -5101,20 +5104,20 @@
 			<control type="image">
 				<include>Animation_CommonFadeNoHide</include>
 				<posx>848</posx>
-				<posy>72</posy>
+				<posy>76</posy>
 				<height>24</height>
 				<width>24</width>
 				<texture>Arrow2Up.png</texture>
-				<visible>[Container(9000).Hasfocus(2) + Container(9002).HasPrevious] | [Container(9000).Hasfocus(5) + Container(9005).HasPrevious]</visible>
+				<visible>[Container(9000).Hasfocus(2) + Container(9002).HasPrevious] | [Container(9000).Hasfocus(5) + Container(9005).HasPrevious] | [Container(9000).Hasfocus(10) + Container(9012).HasPrevious)] | [Container(9000).Hasfocus(3) + Container(9007).HasPrevious)]</visible>
 			</control>
 			<control type="image">
 				<include>Animation_CommonFadeNoHide</include>
 				<posx>848</posx>
-				<posy>524</posy>
+				<posy>518</posy>
 				<height>24</height>
 				<width>24</width>
 				<texture>Arrow2Down.png</texture>
-				<visible>[Container(9000).Hasfocus(2) + Container(9002).HasNext] | [Container(9000).Hasfocus(5) + Container(9005).HasNext]</visible>
+				<visible>[Container(9000).Hasfocus(2) + Container(9002).HasNext] | [Container(9000).Hasfocus(5) + Container(9005).HasNext] | [Container(9000).Hasfocus(10) + Container(9012).HasPrevious)] | [Container(9000).Hasfocus(3) + Container(9007).HasPrevious)]</visible>
 			</control>
 		</control>
 		<include>Global_ContextFilter</include>
