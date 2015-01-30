@@ -3271,7 +3271,7 @@
 					<control type="radiobutton" id="612">
 						<description>Fanart Wall</description>
 						<include>SettingsLabel</include>
-						<label>$LOCALIZE[31441] Fanart Wall</label>
+						<label>$LOCALIZE[31441] Fanart Wall</label> <!-- TODO Needs a language resource instead -->
 						<onclick>Skin.ToggleSetting(NoViewFanartWall)</onclick>
 						<selected>Skin.HasSetting(NoViewFanartWall)</selected>
 					</control>
