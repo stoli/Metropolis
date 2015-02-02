@@ -60,32 +60,40 @@
 				<include>Animation_HiddenByInfo</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_OpenCloseFade</include>
-				<posx>44</posx>
-				<posy>256</posy>
+				<posx>52</posx>
+				<posy>264</posy>
 				<visible>Window.IsActive(musiclibrary)</visible>
 				<!-- Album Genre -->
 				<control type="label">
 					<width>380</width>
-					<height>50</height>
-					<aligny>center</aligny>
+					<height>27</height>
 					<scroll>true</scroll>
 					<scrollsuffix>   |   </scrollsuffix>
 					<font>METF_TitleText</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.Genre]</label>
-					<visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
+					<visible>!IsEmpty(ListItem.Genre) + !Container.Content(artists)</visible>
 				</control>
 				<!-- Artist Genre -->
 				<control type="label">
 					<width>380</width>
-					<height>50</height>
-					<aligny>center</aligny>
+					<height>27</height>
 					<scroll>true</scroll>
 					<scrollsuffix>   |   </scrollsuffix>
 					<font>METF_TitleText</font>
 					<textcolor>MediaDetailsGenre</textcolor>
 					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 					<visible>!IsEmpty(ListItem.Property(Artist_Genre)) + Container.Content(artists)</visible>
+				</control>
+				<!-- Year -->
+				<control type="label">
+					<posy>30</posy>
+					<width>380</width>
+					<height>27</height>
+					<font>METF_MediaDetails</font>
+					<textcolor>MediaDetailsYear</textcolor>
+					<label>$INFO[ListItem.Year]</label>
+					<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
 				</control>
 			</control>
 			<control type="group">

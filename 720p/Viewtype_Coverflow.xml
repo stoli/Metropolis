@@ -857,45 +857,20 @@
 				</control>
 			</control>
 
-			<!-- Title and Watched Overlay -->
-			<control type="grouplist">
+			<!-- Title -->
+			<control type="label">
 				<posx>40</posx>
-				<posy>468</posy>
+				<posy>472</posy>
 				<width>1200</width>
-				<height>50</height>
+				<height>40</height>
 				<align>center</align>
-				<itemgap>10</itemgap>
-				<orientation>horizontal</orientation>
+				<font>METF_TitleTextLarge</font>
+				<textcolor>TitleText</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>50</height>
-					<aligny>center</aligny>
-					<font>METF_TitleTextLarge</font>
-					<textcolor>TitleText</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>28</width>
-					<height>50</height>
-					<texture>$INFO[ListItem.Overlay]</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>WatchedOverlay</colordiffuse>
-					<visible>!ListItem.IsResumable + [[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
-				</control>
-				<!-- Watched Overlay for In-Progress Items -->
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture>flags/Progress/$INFO[ListItem.PercentPlayed].png</texture>
-					<colordiffuse>WatchedOverlay</colordiffuse>
-					<visible>ListItem.IsResumable + [[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
-				</control>
+				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 			</control>
 			<!-- Browser label and flags -->
 			<control type="grouplist">
@@ -908,103 +883,9 @@
 				<align>center</align>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>
+				<include>ViewDetailsGenreYearDurEpsUnwatched</include>
 				<include>VisibleIfNotMovieSet</include>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
-				<!-- Genre -->
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsGenre</textcolor>
-					<label>$INFO[ListItem.Genre]</label>
-					<visible>!IsEmpty(ListItem.Genre) + !Container.Content(seasons)</visible>
-				</control>
-				<!-- Bullet -->
-				<control type="image">
-					<width>8</width>
-					<height>32</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Genre) | IsEmpty(ListItem.Year)] + !Container.Content(seasons)</visible>
-				</control>
-				<!-- Year -->
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsYear</textcolor>
-					<label>$INFO[ListItem.Year]</label>
-					<visible>!IsEmpty(ListItem.Year) + !Container.Content(seasons)</visible>
-				</control>
-				<!-- Bullet -->
-				<control type="image">
-					<width>8</width>
-					<height>32</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + !Container.Content(seasons)</visible>
-				</control>
-				<!-- Duration -->
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsDuration</textcolor>
-					<label>$INFO[ListItem.Duration]</label>
-					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
-				<!-- Bullet -->
-				<control type="image">
-					<width>8</width>
-					<height>32</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>![IsEmpty(ListItem.Duration) | IsEmpty(ListItem.Property(TotalEpisodes))] + ![Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
-				<!-- Episode Count -->
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsEpisodes</textcolor>
-					<label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[20360]</label>
-					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
-				<!-- Bullet -->
-				<control type="image">
-					<width>8</width>
-					<height>32</height>
-					<texture>Dot.png</texture>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<colordiffuse>BulletDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
-				<!-- Unwatched Episode Count -->
-				<control type="label">
-					<width min="25" max="1200">auto</width>
-					<height>30</height>
-					<aligny>center</aligny>
-					<font>METF_MediaDetailsSmall</font>
-					<textcolor>MediaDetailsEpisodes</textcolor>
-					<label>$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</label>
-					<visible>!IsEmpty(ListItem.Property(TotalEpisodes)) + [Container.Content(seasons) | Container.Content(tvshows)]</visible>
-				</control>
 			</control>
 			<!-- Movie Sets -->
 			<control type="label">

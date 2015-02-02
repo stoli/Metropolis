@@ -364,11 +364,7 @@
 			</control>
 			<!-- Bullet -->
 			<control type="image">
-				<width>8</width>
-				<height>32</height>
-				<texture>Dot.png</texture>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<colordiffuse>BulletDiffuse</colordiffuse>
+				<include>ViewDetailsBullet</include>
 				<visible>!IsEmpty(ListItem.Country) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(MusicVideos)]</visible>
 			</control>
 			<!-- Year -->
@@ -383,11 +379,7 @@
 			</control>
 			<!-- Bullet -->
 			<control type="image">
-				<width>8</width>
-				<height>32</height>
-				<texture>Dot.png</texture>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<colordiffuse>BulletDiffuse</colordiffuse>
+				<include>ViewDetailsBullet</include>
 				<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(MusicVideos)]</visible>
 			</control>
 			<!-- Duration -->

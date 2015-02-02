@@ -506,59 +506,7 @@
 					<include>Animation_OpenCloseFade</include>
 					<include>Animation_FadedByMenu</include>
 					<include>Animation_HiddenByInfo</include>
-					<!-- Year -->
-					<control type="label">
-						<width min="25" max="300">auto</width>
-						<height>27</height>
-						<font>METF_MediaDetails</font>
-						<textcolor>MediaDetailsYear</textcolor>
-						<label>$INFO[ListItem.Year]</label>
-						<visible>!IsEmpty(ListItem.Year) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
-					</control>
-					<!-- Bullet -->
-					<control type="image">
-						<width>8</width>
-						<height>32</height>
-						<texture>Dot.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<colordiffuse>BulletDiffuse</colordiffuse>
-						<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
-					</control>
-					<!-- Duration -->
-					<control type="label">
-						<width min="25" max="300">auto</width>
-						<height>27</height>
-						<font>METF_MediaDetails</font>
-						<textcolor>MediaDetailsDuration</textcolor>
-						<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-						<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
-					</control>
-					<control type="label">
-						<width min="25" max="300">auto</width>
-						<height>27</height>
-						<font>METF_MediaDetails</font>
-						<textcolor>MediaDetailsDuration</textcolor>
-						<label>$INFO[ListItem.Duration]</label>
-						<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
-					</control>
-					<!-- Bullet -->
-					<control type="image">
-						<width>8</width>
-						<height>32</height>
-						<texture>Dot.png</texture>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<colordiffuse>BulletDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.Year) + Container.Content(tvshows)</visible>
-					</control>
-					<!-- TV Shows - Number of Episodes -->
-					<control type="label">
-						<width min="25" max="300">auto</width>
-						<height>27</height>
-						<font>METF_MediaDetails</font>
-						<textcolor>MediaDetailsEpisodes</textcolor>
-						<label>$INFO[ListItem.Property(NumEpisodes)] $LOCALIZE[20360]</label>
-						<visible>Container.Content(tvshows)</visible>
-					</control>
+					<include>ViewDetailsOneLineJustified</include>
 				</control>
 			</control>
 			<!-- Scroll Bar -->
