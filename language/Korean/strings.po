@@ -93,8 +93,8 @@ msgid "Logo"
 msgstr "로고"
 
 msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "커버 아트 오버레이 사용"
+msgid "Enable Video/Album Art overlay"
+msgstr "비디오/앨범 아트 오버레이 활성화"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"

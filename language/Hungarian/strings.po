@@ -88,10 +88,6 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Logo"
 
-msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Borító grafika átlapolás engedélyezése"
-
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
 msgstr "Zeneszám Infó szöveg átlapolás engedélyezése"

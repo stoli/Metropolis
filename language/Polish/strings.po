@@ -93,8 +93,8 @@ msgid "Logo"
 msgstr "Logo"
 
 msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Pokazuj grafikę okładki"
+msgid "Enable Video/Album Art overlay"
+msgstr "Pokazuj nakładkę graficzną wideo/albumu"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
@@ -610,7 +610,7 @@ msgstr "*Press UP for full cast and photos*"
 
 msgctxt "#31408"
 msgid "Cinema Experience"
-msgstr "Cinema Experience"
+msgstr "Dodatek Cinema Experience"
 
 msgctxt "#31409"
 msgid "Finish"
@@ -646,11 +646,11 @@ msgstr "Tall Genre"
 
 msgctxt "#31417"
 msgid "*help text*"
-msgstr "*help text*"
+msgstr "*tekst pomocy*"
 
 msgctxt "#31418"
 msgid "Hide all"
-msgstr "Hide all"
+msgstr "Ukryj wszystko"
 
 msgctxt "#31419"
 msgid "Music Settings"
@@ -678,7 +678,7 @@ msgstr "Menu ekranowe: Pokazuj miniatury"
 
 msgctxt "#31426"
 msgid "Enable TV Show Next Aired Date display"
-msgstr "Pokazuj nadchodzące premiery odcinków"
+msgstr "Pokazuj informacje o odcinkach wkrótce na antenie"
 
 msgctxt "#31427"
 msgid "Next Episode"
@@ -754,7 +754,7 @@ msgstr "Logowanie automatyczne"
 
 msgctxt "#31445"
 msgid "Picture Settings"
-msgstr "Ustawienia Zdjęć"
+msgstr "Ustawienia obrazów"
 
 msgctxt "#31446"
 msgid "Fullscreen"
@@ -770,7 +770,7 @@ msgstr "Pokazuj fabułę jedynie w oknie informacji"
 
 msgctxt "#31449"
 msgid "Show Recommended Items"
-msgstr "Pokazuj Pozycje rekomendowane"
+msgstr "Pokazuj pozycje polecane"
 
 msgctxt "#31450"
 msgid " - changing the options below requires a restart -"

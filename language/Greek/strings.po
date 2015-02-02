@@ -92,10 +92,6 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Λογότυπο"
 
-msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Ενεργοποίηση επιφάνειας εικόνων Εξωφύλλου"
-
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
 msgstr "Ενεργοποίηση επιφάνειας πληροφοριών Τραγουδιού"

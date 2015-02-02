@@ -92,10 +92,6 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "Logo"
 
-msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Ativar sobreposição Artes das Capas"
-
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
 msgstr "Ativar sobreposição de Info Textos para Músicas"

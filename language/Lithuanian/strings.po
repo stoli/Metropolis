@@ -93,8 +93,8 @@ msgid "Logo"
 msgstr "Logotipas"
 
 msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Įjungti viršelio iliustracijos perdangą"
+msgid "Enable Video/Album Art overlay"
+msgstr "Įjungti vaizdo įrašo/albumo iliustracijos perdangą"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"

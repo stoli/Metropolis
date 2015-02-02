@@ -92,10 +92,6 @@ msgctxt "#31054"
 msgid "Logo"
 msgstr "סמל"
 
-msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "אפשר שכבת ציפוי עטיפה"
-
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
 msgstr "אפשר שכבת ציפוי טקסט מידע שיר"

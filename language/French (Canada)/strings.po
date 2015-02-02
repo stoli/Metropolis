@@ -93,8 +93,8 @@ msgid "Logo"
 msgstr "Logo"
 
 msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "Activer la surcouche des illustrations"
+msgid "Enable Video/Album Art overlay"
+msgstr "Activer la surcouche d'illustration des vidéos/albums"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
@@ -630,7 +630,7 @@ msgstr "*Peser sur HAUT pour choisir un profil*"
 
 msgctxt "#31413"
 msgid "Local subtitle available"
-msgstr "Sous-titres locaux disponibles"
+msgstr "Sous-titres locaux proposés"
 
 msgctxt "#31414"
 msgid "Gallery"

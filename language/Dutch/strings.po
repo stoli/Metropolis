@@ -93,8 +93,8 @@ msgid "Logo"
 msgstr "Logo"
 
 msgctxt "#31056"
-msgid "Enable Cover Art overlay"
-msgstr "CDArt inschakelen"
+msgid "Enable Video/Album Art overlay"
+msgstr "Activeer Video/Album art overlay"
 
 msgctxt "#31057"
 msgid "Enable Song Info text overlay"
