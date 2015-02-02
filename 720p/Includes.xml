@@ -59,25 +59,31 @@
 		<colordiffuse>$VAR[GlobalFanartDiffuse]</colordiffuse>
 	</include>
 	<include name="Global_Background_Fanart">
+		<!-- Addons -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>Container.Content(addons)</visible>
+		</control>
 		<!-- Videos -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
 			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6997)) + IsEmpty(Control.GetLabel(6998))]]</visible>
+			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6997)) + IsEmpty(Control.GetLabel(6998))]]</visible>
 		</control>
 		<control type="multiimage" id="6997">
 			<include>Global_Background_Fanart_Common</include>
 			<timeperimage>6000</timeperimage>
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
 		</control>
 		<control type="multiimage" id="6998">
 			<include>Global_Background_Fanart_Common</include>
 			<timeperimage>6000</timeperimage>
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
 		</control>
 		<!-- Music -->
 		<control type="image">
