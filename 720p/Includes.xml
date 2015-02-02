@@ -727,12 +727,22 @@
 			<font>METF_MediaDetailsSmall</font>
 			<textcolor>MediaDetailsYear</textcolor>
 			<label>$INFO[ListItem.Year]</label>
-			<visible>!IsEmpty(ListItem.Year)</visible>
+			<visible>!IsEmpty(ListItem.Year) + !Container.Content(episodes)</visible>
+		</control>
+		<!-- Episode aired date -->
+		<control type="label">
+			<width min="25" max="1200">auto</width>
+			<height>30</height>
+			<aligny>center</aligny>
+			<font>METF_MediaDetailsSmall</font>
+			<textcolor>MediaDetailsYear</textcolor>
+			<label>$LOCALIZE[20416] $INFO[ListItem.Premiered]</label>
+			<visible>!IsEmpty(ListItem.Premiered) + Container.Content(episodes)</visible>
 		</control>
 		<!-- Bullet -->
 		<control type="image">
 			<include>ViewDetailsBullet</include>
-			<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] | [![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Property(TotalEpisodes))] + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+			<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] | [![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Property(TotalEpisodes))] + [Container.Content(tvshows) | Container.Content(seasons)]] | [![IsEmpty(ListItem.Premiered) | IsEmpty(ListItem.Property(TotalEpisodes))] + Container.Content(episodes)]</visible>
 		</control>
 		<!-- Duration -->
 		<control type="label">
