@@ -16,6 +16,7 @@
 	<include file="Viewtype_Fanart.xml" />			<!-- 504 -->
 	<include file="Viewtype_FanartBanner.xml" />		<!-- 508 -->
 	<include file="Viewtype_FanartList.xml" />		<!-- 509 -->
+	<include file="Viewtype_FanartWall.xml" />		<!-- 513 -->
 	<include file="Viewtype_List.xml" />			<!-- 55  -->
 	<include file="Viewtype_Gallery.xml" />			<!-- 54  -->
 	<include file="Viewtype_Gallery_Fanart.xml" />		<!-- 59  -->
@@ -521,6 +522,7 @@
 	<include name="Global_VideoPlot">
 		<control type="group" id="9900">
 			<visible>!Skin.HasSetting(Hide_Plot) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | SubString(Container.FolderPath,plugin)]</visible>
+			<visible>!Control.IsVisible(513)</visible> <!-- Do not display plot for FanartWall view, we need the space to display the title -->
 			<include>PlotBox</include>
 		</control>
 	</include>

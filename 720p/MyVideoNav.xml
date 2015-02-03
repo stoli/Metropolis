@@ -2,7 +2,7 @@
 <window id="25">
 	<onload condition="Skin.HasSetting(TvTunes) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="Skin.HasSetting(NextAired) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<views>55,905,54,58,59,559,53,57,551,550,504,509,511,508,510,52,56,512,501</views>
+	<views>55,905,54,58,59,559,53,57,551,550,504,513,509,511,508,510,52,56,512,501</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -20,6 +20,7 @@
 		<include>Viewtype_Fanart</include>			<!-- 504 -->
 		<include>Viewtype_FanartList</include>			<!-- 509 -->
 		<include>Viewtype_FanartBanner</include>		<!-- 508 -->
+		<include>Viewtype_FanartWall</include>			<!-- 513 -->
 		<include>Viewtype_Banner</include>			<!-- 511 -->
 		<include>Viewtype_BannerPoster</include>		<!-- 510 -->
 		<include>Viewtype_Gallery</include>			<!-- 54 -->

@@ -3276,8 +3276,16 @@
 						<onclick>Skin.ToggleSetting(NoViewFanartList)</onclick>
 						<selected>Skin.HasSetting(NoViewFanartList)</selected>
 					</control>
-					<!-- View 511 -->
+					<!-- View 513 -->
 					<control type="radiobutton" id="612">
+						<description>Fanart Wall</description>
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31441] Fanart Wall</label> <!-- TODO Needs a language resource instead -->
+						<onclick>Skin.ToggleSetting(NoViewFanartWall)</onclick>
+						<selected>Skin.HasSetting(NoViewFanartWall)</selected>
+					</control>
+					<!-- View 511 -->
+					<control type="radiobutton" id="613">
 						<description>Banner</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31286]</label>
@@ -3285,7 +3293,7 @@
 						<selected>Skin.HasSetting(NoViewBanner)</selected>
 					</control>
 					<!-- View 508 -->
-					<control type="radiobutton" id="613">
+					<control type="radiobutton" id="614">
 						<description>Banner Fanart</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31442]</label>
@@ -3293,7 +3301,7 @@
 						<selected>Skin.HasSetting(NoViewBannerFanart)</selected>
 					</control>
 					<!-- View 510 -->
-					<control type="radiobutton" id="614">
+					<control type="radiobutton" id="615">
 						<description>Banner Poster</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31439]</label>
@@ -3301,7 +3309,7 @@
 						<selected>Skin.HasSetting(NoViewBannerPoster)</selected>
 					</control>
 					<!-- View 52 -->
-					<control type="radiobutton" id="615">
+					<control type="radiobutton" id="616">
 						<description>Landscape</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31291]</label>
@@ -3309,7 +3317,7 @@
 						<selected>Skin.HasSetting(NoViewLandscape)</selected>
 					</control>
 					<!-- View 56 -->
-					<control type="radiobutton" id="616">
+					<control type="radiobutton" id="617">
 						<description>Logo</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31054]</label>
@@ -3317,7 +3325,7 @@
 						<selected>Skin.HasSetting(NoViewLogo)</selected>
 					</control>
 					<!-- View 512 -->
-					<control type="radiobutton" id="617">
+					<control type="radiobutton" id="618">
 						<description>Coverflow</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[33031]</label>
@@ -3325,7 +3333,7 @@
 						<selected>Skin.HasSetting(NoViewCoverflow)</selected>
 					</control>
 					<!-- View 500 -->
-					<control type="radiobutton" id="618">
+					<control type="radiobutton" id="619">
 						<description>Picture Grid</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31293]</label>
@@ -3333,7 +3341,7 @@
 						<selected>Skin.HasSetting(NoViewPictureGrid)</selected>
 					</control>
 					<!-- View 559 -->
-					<control type="radiobutton" id="619">
+					<control type="radiobutton" id="620">
 						<description>Panel Square</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31298]</label>
@@ -3341,7 +3349,7 @@
 						<selected>Skin.HasSetting(NoViewPanelSquare)</selected>
 					</control>
 					<!-- View 501 -->
-					<control type="radiobutton" id="620">
+					<control type="radiobutton" id="621">
 						<description>Tall Genre</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31416]</label>
@@ -3349,7 +3357,7 @@
 						<selected>Skin.HasSetting(NoViewTallGenre)</selected>
 					</control>
 					<!-- View 950 -->
-					<control type="radiobutton" id="621">
+					<control type="radiobutton" id="622">
 						<description>Games</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[31460]</label>
