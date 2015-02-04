@@ -114,26 +114,13 @@
 					<width>1200</width>
 					<height>40</height>
 					<align>center</align>
-					<font>METF_TitleTextLarge</font>
-					<textcolor>TitleText</textcolor>
-					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
-					<include>Animation_OpenCloseFade</include>
-					<include>Animation_FadedByMenu</include>
-					<include>Animation_HiddenByInfo</include>
-					<visible>!Window.IsActive(pictures)</visible>
-				</control>
-				<control type="label">
-					<width>1200</width>
-					<height>40</height>
-					<align>center</align>
 					<aligny>center</aligny>
 					<font>METF_TitleTextLarge</font>
 					<textcolor>TitleText</textcolor>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[ListItemTitle]</label>
 					<include>Animation_OpenCloseFade</include>
 					<include>Animation_FadedByMenu</include>
 					<include>Animation_HiddenByInfo</include>
-					<visible>Window.IsActive(pictures)</visible>
 				</control>
 				<control type="grouplist">
 					<posy>33</posy>
