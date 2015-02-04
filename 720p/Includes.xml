@@ -748,7 +748,7 @@
 		<!-- Bullet -->
 		<control type="image">
 			<include>ViewDetailsBullet</include>
-			<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] | [![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Property(TotalEpisodes))] + [Container.Content(tvshows) | Container.Content(seasons)]] | [![IsEmpty(ListItem.Premiered) | IsEmpty(ListItem.Property(TotalEpisodes))] + Container.Content(episodes)]</visible>
+			<visible>![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Duration)] | [![IsEmpty(ListItem.Year) | IsEmpty(ListItem.Property(TotalEpisodes))] + [Container.Content(tvshows) | Container.Content(seasons)]] | [![IsEmpty(ListItem.Premiered) | IsEmpty(ListItem.Property(TotalEpisodes))] + Container.Content(episodes)] | [IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Genre) + !IsEmpty(ListItem.Duration)]</visible>
 		</control>
 		<!-- Duration -->
 		<control type="label">
