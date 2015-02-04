@@ -21,7 +21,7 @@
 						<pauseatend>400</pauseatend>
 						<font>METF_TitleTextLarge</font>
 						<textcolor>TitleText</textcolor>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$VAR[ListItemTitle]</label>
 					</control>
 					<!-- Movie Sets -->
 					<control type="label">

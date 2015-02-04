@@ -114,21 +114,7 @@
 					<scrollspeed>20</scrollspeed>
 					<font>METF_TitleTextLarge</font>
 					<textcolor>TitleText</textcolor>
-					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
-					<visible>!Window.IsActive(pictures)</visible>
-				</control>
-				<control type="fadelabel">
-					<width>820</width>
-					<height>30</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<scrollout>false</scrollout>
-					<pauseatend>600</pauseatend>
-					<scrollspeed>20</scrollspeed>
-					<font>METF_TitleTextLarge</font>
-					<textcolor>TitleText</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Window.IsActive(pictures)</visible>
+					<label>$VAR[ListItemTitle]</label>
 				</control>
 			</control>
 			<!-- Browser -->
