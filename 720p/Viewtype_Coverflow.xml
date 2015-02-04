@@ -2769,6 +2769,7 @@
 					<textcolor>TitleText</textcolor>
 					<label>$VAR[ListItemTitle]</label>
 				</control>
+				<!-- XXX: Title is off-center if neither of these are present
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2779,7 +2780,6 @@
 					<colordiffuse>WatchedOverlay</colordiffuse>
 					<visible>!ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 				</control>
-				<!-- Watched Overlay for In-Progress Items -->
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2789,6 +2789,7 @@
 					<colordiffuse>WatchedOverlay</colordiffuse>
 					<visible>ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 				</control>
+				-->
 			</control>
 			<!-- Browser label and flags -->
 			<control type="grouplist">
