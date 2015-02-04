@@ -133,7 +133,7 @@
 					<include>Animation_FadedByMenu</include>
 					<include>Animation_HiddenByInfo</include>
 					<include>ViewDetailsGenreYearDurEpsUnwatched</include>
-					<visible>!Window.IsActive(pictures) + Container.Content(episodes)</visible>
+					<visible>!Window.IsActive(pictures)</visible>
 				</control>
 			</control>
 			<include>ScrollBar_Vertical</include>

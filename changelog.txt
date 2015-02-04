@@ -1,3 +1,10 @@
+2.9.3 - 20150203
+- More view types allowed for addons.
+- Show season and episode number in addons.
+- Fix Last.fm Love/Ban buttons.
+- Never show both Progress and Watched overlays.
+- Show Eject Tray submenu item unconditionally.
+
 2.9.2 - 20150114
 - Dynamic Weather fanart path is now customizable.
 - Add 'Now Playing' video widget to bottom-left corner, a la Album Art.
