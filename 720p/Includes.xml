@@ -59,12 +59,6 @@
 		<colordiffuse>$VAR[GlobalFanartDiffuse]</colordiffuse>
 	</include>
 	<include name="Global_Background_Fanart">
-		<!-- Addons -->
-		<control type="image">
-			<include>Global_Background_Fanart_Common</include>
-			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
-		</control>
 		<!-- Videos -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
@@ -97,6 +91,12 @@
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path]extrafanart/</imagepath>
 			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+		</control>
+		<!-- Addons -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>!Window.IsActive(pictures) + [Container.Content(addons) | SubString(Container.FolderPath,plugin)]</visible>
 		</control>
 		<!-- Pictures -->
 		<control type="image">
