@@ -63,7 +63,7 @@
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
 			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>Container.Content(addons)</visible>
+			<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
 		</control>
 		<!-- Videos -->
 		<control type="image">
