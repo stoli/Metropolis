@@ -93,7 +93,7 @@
 					<!-- Focused Item Poster -->
 					<control type="group">
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="100,0" start="90" end="100" time="300" tween="sine" easing="inout" />
+							<effect type="zoom" center="100,0" start="86" end="100" time="250" tween="sine" easing="inout" delay="150" />
 						</animation>
 						<!-- Focused Item - Poster -->
 						<control type="image">
