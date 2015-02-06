@@ -68,9 +68,7 @@
 						<texture background="true">$VAR[ListClearartClearlogo]</texture>
 						<fadetime>200</fadetime>
 						<aspectratio aligny="center">keep</aspectratio>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="50" end="100" time="400" tween="back" easing="out" />
-						</animation>
+						<animation effect="zoom" center="auto" start="50" end="100" time="400" tween="back" easing="out" condition="!Skin.HasSetting(LogoViewSingleItem)">Focus</animation>
 					</control>
 					<control type="image">
 						<posx>305</posx>
@@ -79,8 +77,8 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
+						<animation effect="zoom" center="152,92" start="70" end="100" time="300" tween="back" easing="out" condition="!Skin.HasSetting(LogoViewSingleItem)">Focus</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="152,92" start="70" end="100" time="300" tween="back" easing="out" />
 							<effect type="fade" start="50" end="100" time="300" />
 						</animation>
 						<visible>!ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
@@ -93,8 +91,8 @@
 						<height>35</height>
 						<texture>flags/Progress/$INFO[ListItem.PercentPlayed].png</texture>
 						<colordiffuse>WatchedOverlay</colordiffuse>
+						<animation effect="zoom" center="152,92" start="70" end="100" time="300" tween="back" easing="out" condition="!Skin.HasSetting(LogoViewSingleItem)">Focus</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="152,92" start="70" end="100" time="300" tween="back" easing="out" />
 							<effect type="fade" start="50" end="100" time="300" />
 						</animation>
 						<visible>ListItem.IsResumable + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
