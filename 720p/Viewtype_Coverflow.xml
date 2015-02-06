@@ -2866,7 +2866,7 @@
 				</control>
 				-->
 			</control>
-			<!-- Browser label and flags -->
+			<!-- Details -->
 			<control type="grouplist">
 				<posx>40</posx>
 				<posy>505</posy>
@@ -2881,7 +2881,6 @@
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 				<include>VisibleIfNotMovieSet</include>
 			</control>
-			<!-- Movie Sets -->
 			<control type="label">
 				<posx>240</posx>
 				<posy>503</posy>

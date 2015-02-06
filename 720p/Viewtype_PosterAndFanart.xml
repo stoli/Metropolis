@@ -3,48 +3,6 @@
 	<include name="Viewtype_PosterAndFanart">
 		<control type="group">
 			<visible>Control.IsVisible(550)</visible>
-			<control type="group">
-				<include>Animation_FadedByMenu</include>
-				<include>Animation_HiddenByInfo</include>
-				<include>Animation_OpenCloseFade</include>
-				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
-				<!-- Browser label and flags -->
-				<control type="group">
-					<posx>490</posx>
-					<posy>438</posy>
-					<!-- Title -->
-					<control type="fadelabel">
-						<width>760</width>
-						<height>50</height>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>400</pauseatend>
-						<font>METF_TitleTextLarge</font>
-						<textcolor>TitleText</textcolor>
-						<label>$VAR[ListItemTitle]</label>
-					</control>
-					<!-- Movie Sets -->
-					<control type="label">
-						<posy>42</posy>
-						<width>800</width>
-						<height>30</height>
-						<font>METF_MediaDetailsSmall</font>
-						<textcolor>MediaDetailsGenre</textcolor>
-						<label>$LOCALIZE[31313]</label>
-						<include>VisibleIfMovieSet</include>
-					</control>
-					<control type="grouplist">
-						<posy>42</posy>
-						<width>1200</width>
-						<height>30</height>
-						<itemgap>10</itemgap>
-						<orientation>horizontal</orientation>
-						<include>ViewDetailsGenreYearDurEpsUnwatched</include>
-						<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-						<include>VisibleIfNotMovieSet</include>
-					</control>
-				</control>
-			</control>
 			<!-- Browser -->
 			<control type="wraplist" id="550">
 				<viewtype label="31424">bigwrap</viewtype>
@@ -203,9 +161,6 @@
 							<texture>frames/ClassicFrame_SegmentedDiffuse.png</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<control type="image">
@@ -216,9 +171,6 @@
 							<texture>frames/ClassicFrame_Background.png</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<colordiffuse>FrameBackgroundDiffuse</colordiffuse>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<control type="image">
@@ -228,9 +180,6 @@
 							<height>362</height>
 							<texture fallback="home_art/movies.jpg" diffuse="frames/ClassicFrame_SegmentedDiffuse.png">$VAR[LandscapeFanart]</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<control type="image">
@@ -240,9 +189,6 @@
 							<height>362</height>
 							<texture fallback="home_art/movies.jpg">$VAR[LandscapeFanart]</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<!-- Focused Item Segmented Fanart Frame -->
@@ -251,9 +197,6 @@
 							<height>410</height>
 							<texture>frames/ClassicFrame_Segmented.png</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 						<!-- Focused Item Normal Fanart Frame -->						
@@ -262,13 +205,51 @@
 							<height>410</height>
 							<texture>frames/ClassicFrame_FanartMedium.png</texture>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<animation type="Focus" reversible="false">
-								<effect type="fade" start="0" end="100" time="300" />
-							</animation>
 							<visible>!IsEmpty(ListItem.Title) + Skin.HasSetting(NoSegmentedFanart)</visible>
 						</control>
 					</control>
 				</focusedlayout>
+			</control>
+			<control type="group">
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<include>Animation_OpenCloseFade</include>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+				<control type="group">
+					<posx>490</posx>
+					<posy>438</posy>
+					<!-- Title -->
+					<control type="fadelabel">
+						<width>760</width>
+						<height>50</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>400</pauseatend>
+						<font>METF_TitleTextLarge</font>
+						<textcolor>TitleText</textcolor>
+						<label>$VAR[ListItemTitle]</label>
+					</control>
+					<!-- Details -->
+					<control type="grouplist">
+						<posy>42</posy>
+						<width>1200</width>
+						<height>30</height>
+						<itemgap>10</itemgap>
+						<orientation>horizontal</orientation>
+						<include>ViewDetailsGenreYearDurEpsUnwatched</include>
+						<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+						<include>VisibleIfNotMovieSet</include>
+					</control>
+					<control type="label">
+						<posy>42</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>METF_MediaDetailsSmall</font>
+						<textcolor>MediaDetailsGenre</textcolor>
+						<label>$LOCALIZE[31313]</label>
+						<include>VisibleIfMovieSet</include>
+					</control>
+				</control>
 			</control>
 			<include>ScrollBar_Horizontal</include>
 		</control>

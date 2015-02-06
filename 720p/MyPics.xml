@@ -7,7 +7,7 @@
 		<include>Global_Background</include>
 		<include>Global_Background_Fanart</include>
 		<include>Viewtype_List</include>
-		<include>Viewtype_FanartList</include>
+		<include>Viewtype_ListFanart</include>
 		<include>Viewtype_Gallery_Fanart</include>
 		<include>Viewtype_Gallery_Square</include>
 		<include>Viewtype_Panel_Square</include>

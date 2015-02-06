@@ -206,7 +206,6 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<!-- Browser label and flags -->
 			<!-- Title -->
 			<control type="label">
 				<posx>40</posx>
@@ -222,6 +221,7 @@
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 			</control>
+			<!-- Details -->
 			<control type="grouplist">
 				<posx>40</posx>
 				<posy>505</posy>
@@ -237,7 +237,6 @@
 				<visible>Window.IsActive(VideoLibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
 				<include>VisibleIfNotMovieSet</include>
 			</control>
-			<!-- Movie Sets -->
 			<control type="label">
 				<posx>240</posx>
 				<posy>503</posy>

@@ -102,7 +102,6 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<!-- Browser label and flags -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
@@ -122,6 +121,7 @@
 					<include>Animation_FadedByMenu</include>
 					<include>Animation_HiddenByInfo</include>
 				</control>
+				<!-- Details -->
 				<control type="grouplist">
 					<posy>33</posy>
 					<width>1200</width>

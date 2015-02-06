@@ -3273,8 +3273,8 @@
 						<description>Fanart List</description>
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31441] $LOCALIZE[20445] $LOCALIZE[535]</label>
-						<onclick>Skin.ToggleSetting(NoViewFanartList)</onclick>
-						<selected>Skin.HasSetting(NoViewFanartList)</selected>
+						<onclick>Skin.ToggleSetting(NoViewListFanart)</onclick>
+						<selected>Skin.HasSetting(NoViewListFanart)</selected>
 					</control>
 					<!-- View 511 -->
 					<control type="radiobutton" id="612">

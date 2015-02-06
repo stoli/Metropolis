@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="Viewtype_FanartList">
+	<include name="Viewtype_ListFanart">
 		<control type="group">
 			<visible>Control.IsVisible(509)</visible>
 			<!-- Browser -->
 			<control type="fixedlist" id="509">
-				<viewtype label="$LOCALIZE[20445] $LOCALIZE[535]">biglist</viewtype>
+				<viewtype label="$LOCALIZE[535] $LOCALIZE[20445]">biglist</viewtype>
 				<posx>658</posx>
 				<posy>60</posy>
 				<height>455</height>
@@ -22,7 +22,7 @@
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>!Skin.HasSetting(NoViewFanartList)</visible>
+				<visible>!Skin.HasSetting(NoViewListFanart)</visible>
 				<visible>Window.IsActive(pictures) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 				<itemlayout width="600" height="35">
 					<!-- List Line Item Divider -->
@@ -273,7 +273,7 @@
 					<include>VisibleIfMovieSet</include>
 				</control>
 			</control>
-			<!-- Info Details -->
+			<!-- Details -->
 			<control type="grouplist">
 				<posx>35</posx>
 				<posy>487</posy>

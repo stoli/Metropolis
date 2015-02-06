@@ -3,48 +3,6 @@
 	<include name="Viewtype_Poster_Large">
 		<control type="group">
 			<visible>Control.IsVisible(551)</visible>
-			<control type="group">
-				<include>Animation_FadedByMenu</include>
-				<include>Animation_HiddenByInfo</include>
-				<include>Animation_OpenCloseFade</include>
-				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
-				<!-- Browser label and flags -->
-				<control type="group">
-					<posx>520</posx>
-					<posy>450</posy>
-					<!-- Title -->
-					<control type="fadelabel">
-						<width>730</width>
-						<height>50</height>
-						<aligny>center</aligny>
-						<scrollout>false</scrollout>
-						<pauseatend>400</pauseatend>
-						<font>METF_TitleTextLarge</font>
-						<textcolor>TitleText</textcolor>
-						<label>$VAR[ListItemTitle]</label>
-					</control>
-					<!-- Movie Sets -->
-					<control type="label">
-						<posy>42</posy>
-						<width>800</width>
-						<height>30</height>
-						<font>METF_MediaDetailsSmall</font>
-						<textcolor>MediaDetailsGenre</textcolor>
-						<label>$LOCALIZE[31313]</label>
-						<include>VisibleIfMovieSet</include>
-					</control>
-					<control type="grouplist">
-						<posy>42</posy>
-						<width>1200</width>
-						<height>30</height>
-						<itemgap>10</itemgap>
-						<orientation>horizontal</orientation>
-						<include>ViewDetailsGenreYearDurEpsUnwatched</include>
-						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
-						<include>VisibleIfNotMovieSet</include>
-					</control>
-				</control>
-			</control>
 			<!-- Browser -->
 			<control type="wraplist" id="551">
 				<viewtype label="31430">bigwrap</viewtype>
@@ -192,6 +150,47 @@
 						</control>
 					</control>
 				</focusedlayout>
+			</control>
+			<control type="group">
+				<include>Animation_FadedByMenu</include>
+				<include>Animation_HiddenByInfo</include>
+				<include>Animation_OpenCloseFade</include>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<control type="group">
+					<posx>520</posx>
+					<posy>450</posy>
+					<!-- Title -->
+					<control type="fadelabel">
+						<width>730</width>
+						<height>50</height>
+						<aligny>center</aligny>
+						<scrollout>false</scrollout>
+						<pauseatend>400</pauseatend>
+						<font>METF_TitleTextLarge</font>
+						<textcolor>TitleText</textcolor>
+						<label>$VAR[ListItemTitle]</label>
+					</control>
+					<!-- Details -->
+					<control type="grouplist">
+						<posy>42</posy>
+						<width>1200</width>
+						<height>30</height>
+						<itemgap>10</itemgap>
+						<orientation>horizontal</orientation>
+						<include>ViewDetailsGenreYearDurEpsUnwatched</include>
+						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+						<include>VisibleIfNotMovieSet</include>
+					</control>
+					<control type="label">
+						<posy>42</posy>
+						<width>800</width>
+						<height>30</height>
+						<font>METF_MediaDetailsSmall</font>
+						<textcolor>MediaDetailsGenre</textcolor>
+						<label>$LOCALIZE[31313]</label>
+						<include>VisibleIfMovieSet</include>
+					</control>
+				</control>
 			</control>
 			<include>ScrollBar_Horizontal</include>
 		</control>
