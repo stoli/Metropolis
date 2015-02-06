@@ -328,6 +328,10 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr "Home Items"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Enable Extra Fanart"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"

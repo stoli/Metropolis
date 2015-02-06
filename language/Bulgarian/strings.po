@@ -128,6 +128,10 @@ msgctxt "#31328"
 msgid "Show Random Items"
 msgstr "Показвай произволни елементи"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Включи допълнителния фанарт"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Трейлъри"

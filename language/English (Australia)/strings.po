@@ -116,6 +116,10 @@ msgctxt "#31313"
 msgid "Movie Set"
 msgstr "Movie Set"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Enable Extra Fanart"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"

@@ -340,6 +340,10 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr "Home Einträge"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Zusätzliche Fankunst aktivieren"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"

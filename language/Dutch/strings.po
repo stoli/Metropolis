@@ -344,6 +344,10 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr "Beginscherm items"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Activeer Extra Fanart"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailers"

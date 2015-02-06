@@ -344,6 +344,10 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr "홈 항목"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "추가 팬아트 사용"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "예고편"
@@ -878,7 +882,7 @@ msgstr "기본 OSD 단추"
 
 msgctxt "#31476"
 msgid "OSD: Fade away when paused"
-msgstr "OSD: 일시정지 상태일 때 흐리게"
+msgstr "OSD: 일시 중지 상태일 때 흐리게"
 
 msgctxt "#31477"
 msgid "- Fade delay"

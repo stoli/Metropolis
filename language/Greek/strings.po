@@ -332,6 +332,10 @@ msgctxt "#31331"
 msgid "Home Items"
 msgstr "Αντικείμενα Αρχ. Οθόνης"
 
+msgctxt "#31332"
+msgid "Enable Extra Fanart"
+msgstr "Ενεργοποίηση Extra Fanart"
+
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Διαφημιστικά"

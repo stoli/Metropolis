@@ -92,6 +92,10 @@ msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Celoten zaslon"
 
+msgctxt "#31451"
+msgid "Recommended"
+msgstr "Priporočeno"
+
 msgctxt "#31457"
 msgid "Shortcuts"
 msgstr "Bližnjice"
@@ -99,6 +103,10 @@ msgstr "Bližnjice"
 msgctxt "#31460"
 msgid "Games"
 msgstr "Igre"
+
+msgctxt "#31465"
+msgid "Clean Library"
+msgstr "Počisti knjižnico"
 
 msgctxt "#31468"
 msgid "Services"
