@@ -40,7 +40,7 @@
 					<include>SettingsShutdownMenu</include>
 					<label>20046</label>
 					<altlabel>20045</altlabel>
-					<onclick>XBMC.MasterMode</onclick>
+					<onclick>MasterMode</onclick>
 					<visible>System.HasLocks</visible>
 				</control>
 				<control type="button" id="3111">

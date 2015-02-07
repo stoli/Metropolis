@@ -179,7 +179,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31006]</label>
 						<onclick>Skin.ToggleSetting(AutoScrollFast)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(AutoScrollFast)</selected>
 						<visible>Skin.HasSetting(AutoScroll)</visible>
 					</control>
@@ -4688,7 +4688,7 @@
 					<control type="button" id="703">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31126]</label>
-						<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, seasonposter, landscape, clearart, clearlogo, characterart)</onclick>
+						<onclick>RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, seasonposter, landscape, clearart, clearlogo, characterart)</onclick>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
 					<control type="radiobutton" id="704">
@@ -4804,7 +4804,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31436]</label>
 						<onclick>Skin.ToggleSetting(Slim_Seekbar)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(Slim_Seekbar)</selected>
 					</control>
 					<control type="radiobutton" id="805">
@@ -4812,7 +4812,7 @@
 						<label>$LOCALIZE[31474]</label>
 						<onclick>Skin.ToggleSetting(OneButtonSubtitles)</onclick>
 						<onclick>Skin.SetString(DefaultOSD,714)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(OneButtonSubtitles)</selected>
 					</control>
 					<control type="label" id="806">
@@ -4852,7 +4852,7 @@
 							<texturenofocus>osd/osd_button_playlist_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),711)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,711)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="810">
 							<description>Bookmarks</description>
@@ -4863,7 +4863,7 @@
 							<texturenofocus>osd/osd_button_book_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),712)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,712)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="811">
 							<description>OSD Subtitles</description>
@@ -4874,7 +4874,7 @@
 							<texturenofocus>osd/osd_button_sub_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),714)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,714)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="812">
 							<description>Previous</description>
@@ -4885,7 +4885,7 @@
 							<texturenofocus>osd/osd_button_prev_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),79)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,79)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="813">
 							<description>Rewind</description>
@@ -4896,7 +4896,7 @@
 							<texturenofocus>osd/osd_button_rew_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),73)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,73)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="814">
 							<description>Stop</description>
@@ -4907,7 +4907,7 @@
 							<texturenofocus>osd/osd_button_stop_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),75)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,75)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="815">
 							<description>Play</description>
@@ -4918,7 +4918,7 @@
 							<texturenofocus>osd/osd_button_pause_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),74)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,74)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="816">
 							<description>Forward</description>
@@ -4929,7 +4929,7 @@
 							<texturenofocus>osd/osd_button_ff_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),76)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,76)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="817">
 							<description>Next</description>
@@ -4940,7 +4940,7 @@
 							<texturenofocus>osd/osd_button_next_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),710)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,710)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="818">
 							<description>Repeat</description>
@@ -4951,7 +4951,7 @@
 							<texturenofocus>osd/osd_button_repeat_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),801)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,801)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="819">
 							<description>Video Settings</description>
@@ -4962,7 +4962,7 @@
 							<texturenofocus>osd/osd_button_settings_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),713)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,713)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 						<control type="button" id="820">
 							<description>Audio Settings</description>
@@ -4973,7 +4973,7 @@
 							<texturenofocus>osd/osd_button_audio_nf.png</texturenofocus>
 							<include condition="SubString(Skin.String(DefaultOSD),800)">OSDdiffuse</include>
 							<onclick>Skin.SetString(DefaultOSD,800)</onclick>
-							<onclick>XBMC.ReloadSkin()</onclick>
+							<onclick>ReloadSkin()</onclick>
 						</control>
 					</control>
 				</control>
@@ -5089,14 +5089,14 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31108]</label>
 						<onclick>Skin.ToggleSetting(DebugMode)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(DebugMode)</selected>
 					</control>
 					<control type="radiobutton" id="1002">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31109]</label>
 						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 						<selected>Skin.HasSetting(DebugGrid)</selected>
 					</control>
 					<control type="image" id="1003">
@@ -5106,7 +5106,7 @@
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31431]</label>
 						<onclick>Skin.ResetSettings</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
+						<onclick>ReloadSkin()</onclick>
 					</control>
 				</control>
 			</control>

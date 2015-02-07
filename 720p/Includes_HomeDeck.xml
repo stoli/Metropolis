@@ -374,7 +374,7 @@
 				<description>Movies (Playlist)</description>
 				<include condition="Skin.HasSetting(Home2)">HomeMoviesIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeMoviesWallpaper</include>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist)],return)</onclick>
 				<visible>!Skin.HasSetting(NoMovies) + Skin.HasSetting(HomeMovies_Override) + !IsEmpty(Skin.String(HomeMovies_Playlist))</visible>
 			</item>
 			<item id="2">
@@ -444,7 +444,7 @@
 				<description>TV Shows (Playlist)</description>
 				<include condition="Skin.HasSetting(Home2)">HomeTVShowsIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeTVShowsWallpaper</include>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist)],return)</onclick>
 				<visible>!Skin.HasSetting(NoTVShows) + Skin.HasSetting(HomeTVShows_Override) + !IsEmpty(Skin.String(HomeTVShows_Playlist))</visible>
 			</item>
 			<item id="3">
@@ -479,7 +479,7 @@
 				<description>Videos (Playlist)</description>
 				<include condition="Skin.HasSetting(Home2)">HomeVideoIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeVideoWallpaper</include>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist)],return)</onclick>
 				<visible>!Skin.HasSetting(NoVideos) + Skin.HasSetting(HomeVideos_Override) + !IsEmpty(Skin.String(HomeVideos_Playlist))</visible>
 			</item>
 			<item id="4">
@@ -577,7 +577,7 @@
 				<description>Music (Playlist)</description>
 				<include condition="Skin.HasSetting(Home2)">HomeMusicIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeMusicWallpaper</include>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist)],return)</onclick>
 				<visible>!Skin.HasSetting(NoMusic) + Skin.HasSetting(HomeMusic_Override) + !IsEmpty(Skin.String(HomeMusic_Playlist))</visible>
 			</item>
 			<item id="7">
@@ -647,7 +647,7 @@
 				<description>Music Videos (Playlist)</description>
 				<include condition="Skin.HasSetting(Home2)">HomeMusicVideosIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeMusicVideosWallpaper</include>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist)],return)</onclick>
 				<visible>!Skin.HasSetting(NoMusicVideos) + Skin.HasSetting(HomeMusicVideos_Override) + !IsEmpty(Skin.String(HomeMusicVideos_Playlist))</visible>
 			</item>
 			<item id="8">
@@ -798,7 +798,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMovies_Playlist1_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist1_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist1_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist1)</visible>
 			</control>
 			<control type="button" id="91103">
@@ -822,7 +822,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMovies_Playlist2_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist2_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist2_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist2)</visible>
 			</control>
 			<control type="button" id="91106">
@@ -846,7 +846,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMovies_Playlist3_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist3_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMovies_Playlist3_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMovies_Shortcuts) + Skin.HasSetting(HomeMovies_Playlist3)</visible>
 			</control>
 			<control type="button" id="91109">
@@ -972,7 +972,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeTVShows_Playlist1_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist1_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist1_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist1)</visible>
 			</control>
 			<control type="button" id="91203">
@@ -996,7 +996,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeTVShows_Playlist2_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist2_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist2_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist2)</visible>
 			</control>
 			<control type="button" id="91206">
@@ -1020,7 +1020,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeTVShows_Playlist3_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist3_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeTVShows_Playlist3_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeTVShows_Shortcuts) + Skin.HasSetting(HomeTVShows_Playlist3)</visible>
 			</control>
 			<control type="button" id="91209">
@@ -1156,7 +1156,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeVideos_Playlist1_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist1_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist1_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist1)</visible>
 			</control>
 			<control type="button" id="91003">
@@ -1180,7 +1180,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeVideos_Playlist2_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist2_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist2_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist2)</visible>
 			</control>
 			<control type="button" id="91006">
@@ -1204,7 +1204,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeVideos_Playlist3_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist3_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeVideos_Playlist3_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeVideos_Shortcuts) + Skin.HasSetting(HomeVideos_Playlist3)</visible>
 			</control>
 			<control type="button" id="91009">
@@ -1375,7 +1375,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusic_Playlist1_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist1_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist1_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist1)</visible>
 			</control>
 			<control type="button" id="91704">
@@ -1399,7 +1399,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusic_Playlist2_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist2_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist2_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist2)</visible>
 			</control>
 			<control type="button" id="91707">
@@ -1423,7 +1423,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusic_Playlist3_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist3_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusic_Playlist3_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusic_Shortcuts) + Skin.HasSetting(HomeMusic_Playlist3)</visible>
 			</control>
 			<control type="button" id="91710">
@@ -1573,7 +1573,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusicVideos_Playlist1_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist1_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist1_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist1)</visible>
 			</control>
 			<control type="button" id="92103">
@@ -1597,7 +1597,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusicVideos_Playlist2_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist2_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist2_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist2)</visible>
 			</control>
 			<control type="button" id="92106">
@@ -1621,7 +1621,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusicVideos_Playlist3_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist3_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist3_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist3)</visible>
 			</control>
 			<control type="button" id="92109">
@@ -1645,7 +1645,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$INFO[Skin.String(HomeMusicVideos_Playlist4_Label)]</label>
-				<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist4_Path)],return)</onclick>
+				<onclick>ActivateWindow(10025,$INFO[Skin.String(HomeMusicVideos_Playlist4_Path)],return)</onclick>
 				<visible>Skin.HasSetting(HomeMusicVideos_Shortcuts) + Skin.HasSetting(HomeMusicVideos_Playlist4)</visible>
 			</control>
 			<control type="button" id="92112">
