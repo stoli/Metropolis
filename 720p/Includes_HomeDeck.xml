@@ -730,7 +730,8 @@
 				<description>Shutdown</description>
 				<include condition="Skin.HasSetting(Home2)">HomeShutdownIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeShutdownWallpaper</include>
-				<onclick>Shutdown()</onclick>
+				<onclick>Powerdown()</onclick>
+				<visible>System.CanPowerDown</visible>
 				<visible>!Skin.HasSetting(NoShutdown)</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 			</item>
@@ -738,7 +739,8 @@
 				<description>Shutdown</description>
 				<include condition="Skin.HasSetting(Home2)">HomeShutdownIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeShutdownWallpaper</include>
-				<onclick>XBMC.Quit()</onclick>
+				<onclick>Quit()</onclick>
+				<visible>System.ShowExitButton</visible>
 				<visible>!Skin.HasSetting(NoShutdown)</visible>
 				<visible>Skin.HasSetting(NoShutdownDestructive)</visible>
 			</item>
@@ -2136,6 +2138,7 @@
 				<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>>
 				<visible>!System.HasAlarm(ShutdownTimer)</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
+				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
 			</control>
 			<control type="button" id="99002">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
@@ -2152,6 +2155,7 @@
 				<label>13011</label>
 				<onclick>Dialog.Close(ShutdownMenu,yes)</onclick>
 				<onclick>Suspend()</onclick>
+				<visible>System.CanSuspend</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 			</control>
 			<control type="button" id="99004">
@@ -2160,6 +2164,7 @@
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>13010</label>
 				<onclick>Hibernate()</onclick>
+				<visible>System.CanHibernate</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 			</control>
 			<control type="button" id="99005">
@@ -2167,7 +2172,7 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>13013</label>
-				<onclick>Reboot()</onclick>
+				<onclick>Reset()</onclick>
 				<visible>System.CanReboot</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 			</control>
@@ -2176,7 +2181,8 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>13005</label>
-				<onclick>Shutdown()</onclick>
+				<onclick>Powerdown()</onclick>
+				<visible>System.CanPowerDown</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
 			</control>
 			<control type="button" id="99007">
@@ -2185,7 +2191,8 @@
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>$LOCALIZE[20126]</label>
 				<onclick>System.LogOff</onclick>
-				<visible>System.HasLoginScreen</visible>
+				<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+				<visible>System.Loggedon</visible>
 			</control>
 			<control type="button" id="99008">
 				<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">Submenu_Button1</include>
@@ -2200,7 +2207,8 @@
 				<include condition="Skin.HasSetting(Home2)">Submenu_Button2</include>
 				<include condition="Skin.HasSetting(Home3)">Submenu_Button3</include>
 				<label>13012</label>
-				<onclick>XBMC.Quit()</onclick>
+				<onclick>Quit()</onclick>
+				<visible>System.ShowExitButton</visible>
 			</control>
 		</control>
 		<!--Custom 1 Submenu -->
