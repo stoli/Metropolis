@@ -36,24 +36,20 @@
 				<onright>28</onright>
 			</control>
 			<control type="image">
-				<description>Large Icon Image Background</description>
 				<posx>440</posx>
 				<posy>97</posy>
 				<width>280</width>
 				<height>200</height>
-				<texture border="2">dialogback.png</texture>
-				<colordiffuse>DialogBackgroundColour</colordiffuse>
-				<bordertexture border="8">border.png</bordertexture>
-				<bordersize>4</bordersize>
+				<texture>list/listframe.png</texture>
 			</control>
 			<control type="image">
 				<description>Large Icon Image</description>
-				<posx>462</posx>
-				<posy>119</posy>
-				<width>236</width>
-				<height>156</height>
-				<info>ListItem.Icon</info>
-				<aspectratio align="center" aligny="center">stretch</aspectratio>
+				<posx>472</posx>
+				<posy>122</posy>
+				<width>216</width>
+				<height>152</height>
+				<texture fallback="DefaultThumb.png" diffuse="list/listmatte.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="list" id="21">
 				<posx>740</posx>
