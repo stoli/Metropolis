@@ -173,10 +173,12 @@
 						<visible>[Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 					</control>
 					<!-- Star Rating -->
-					<!-- XXX: temporarily commented out until I figure out exactly how I'd like to implement this
 					<control type="group">
+						<!-- XXX: temporarily commented out for videos until I figure out exactly how I'd like to implement this
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
+						-->
+						<visible>!Window.IsActive(videolibrary)</visible>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
@@ -198,7 +200,7 @@
 							<colordiffuse>FFFFFFFF</colordiffuse>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
-					</control>-->
+					</control>
 				</itemlayout>
 				<focusedlayout width="0" height="35">
 					<!-- List Line Item Divider -->
@@ -369,10 +371,12 @@
 						<visible>[Container.Content(seasons) + !IsEmpty(ListItem.Property(NumEpisodes))] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 					</control>
 					<!-- Star Rating -->
-					<!-- XXX: temporarily commented out until I figure out exactly how I'd like to implement this
 					<control type="group">
+						<!-- XXX: temporarily commented out for videos until I figure out exactly how I'd like to implement this
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
+						-->
+						<visible>!Window.IsActive(videolibrary)</visible>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
@@ -394,7 +398,7 @@
 							<colordiffuse>$VAR[RatingColor]</colordiffuse>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 						</control>
-					</control>-->
+					</control>
 				</focusedlayout>
 			</control>
 			<!-- Thumbnails -->
