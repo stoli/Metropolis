@@ -64,40 +64,52 @@
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
 			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6997)) + IsEmpty(Control.GetLabel(6998))]]</visible>
+			<visible>!SubString(Container.FolderPath,plugin) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6997)) + IsEmpty(Control.GetLabel(6998))]]</visible>
 		</control>
 		<control type="multiimage" id="6997">
 			<include>Global_Background_Fanart_Common</include>
 			<timeperimage>6000</timeperimage>
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,../extrafanart/]</imagepath>
-			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+			<visible>!SubString(Container.FolderPath,plugin) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
 		</control>
 		<control type="multiimage" id="6998">
 			<include>Global_Background_Fanart_Common</include>
 			<timeperimage>6000</timeperimage>
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-			<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+			<visible>!SubString(Container.FolderPath,plugin) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+		</control>
+		<!-- Video Addons -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>SubString(Container.FolderPath,plugin) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(HideVideoFanart)</visible>
 		</control>
 		<!-- Music -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
 			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6999))]]</visible>
+			<visible>!SubString(Container.FolderPath,plugin) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + [!Skin.HasSetting(Enable_ExtraFanart) | [Skin.HasSetting(Enable_ExtraFanart) + IsEmpty(Control.GetLabel(6999))]]</visible>
 		</control>
 		<control type="multiimage" id="6999">
 			<include>Global_Background_Fanart_Common</include>
 			<timeperimage>6000</timeperimage>
 			<randomize>true</randomize>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$INFO[ListItem.Path]extrafanart/</imagepath>
-			<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+			<visible>!SubString(Container.FolderPath,plugin) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart) + Skin.HasSetting(Enable_ExtraFanart)</visible>
+		</control>
+		<!-- Music Addons -->
+		<control type="image">
+			<include>Global_Background_Fanart_Common</include>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
+			<visible>SubString(Container.FolderPath,plugin) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(HideMusicFanart)</visible>
 		</control>
 		<!-- Addons -->
 		<control type="image">
 			<include>Global_Background_Fanart_Common</include>
 			<texture background="true" diffuse="diffuse_fanart.png">$VAR[GlobalFanart]</texture>
-			<visible>!Window.IsActive(pictures) + [Container.Content(addons) | SubString(Container.FolderPath,plugin)]</visible>
+			<visible>!Window.IsActive(pictures) + Container.Content(addons)</visible>
 		</control>
 		<!-- Pictures -->
 		<control type="image">
