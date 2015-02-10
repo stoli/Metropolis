@@ -454,7 +454,7 @@
 			<height>135</height>
 			<font>METF_PlotTextMedium</font>
 			-->
-			<height>128</height>
+			<height>130</height>
 			<font>METF_PlotTextSmall</font>
 			<include condition="!Skin.HasSetting(AutoScrollFast)">AutoScrollLong</include>
 			<include condition="Skin.HasSetting(AutoScrollFast)">AutoScrollLongFast</include>
