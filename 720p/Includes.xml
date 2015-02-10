@@ -268,22 +268,27 @@
 
 			<!-- Right side details -->
 			<control type="label">
-				<label>$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31277]]</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
+				<visible>!IntegerGreaterThan(Container.NumItems,1) + ![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
+				<include>Global_HeadingDetailVars</include>
+				<visible>IntegerGreaterThan(Container.NumItems,1) + ![Container.Content(episodes) | Window.IsActive(systeminfo)]</visible>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Season,$LOCALIZE[20373] , - ]$INFO[Container.NumItems,, $LOCALIZE[20359]]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>!IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[ListItem.Season,$LOCALIZE[20373] ] - $INFO[Container.NumItems,, $LOCALIZE[20360]]</label>
+				<label>$INFO[ListItem.Season,$LOCALIZE[20373] , - ]$INFO[Container.NumItems,, $LOCALIZE[20360]]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>IntegerGreaterThan(Container.NumItems,1) + Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
-				<label>$INFO[ListItem.Artist]$INFO[ListItem.Album,] - $INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
+				<label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album,, - ]$INFO[Container.NumItems,, $LOCALIZE[31281]]</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>!substring(ListItem.Label,*) + Window.IsActive(musiclibrary) + Control.IsVisible(50)</visible>
 			</control>
@@ -320,7 +325,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>METF_InfoText</font>
-				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle)][CR]$INFO[Window(Home).Property(NextAired.AirTime)] - $INFO[Window(Home).Property(NextAired.NextDate)]</label>
+				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle),,[CR]]$INFO[Window(Home).Property(NextAired.AirTime),, - ]$INFO[Window(Home).Property(NextAired.NextDate)]</label>
 			</control>
 			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 		</control>

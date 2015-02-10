@@ -3821,7 +3821,7 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Episode 1</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.1.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.1.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.1.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.1.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.1.Play)]</onclick>
@@ -3829,7 +3829,7 @@
 			</item>
 			<item id="2">
 				<description>Recently Added Episode 2</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.2.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.2.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.2.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.2.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.2.Play)]</onclick>
@@ -3837,7 +3837,7 @@
 			</item>
 			<item id="3">
 				<description>Recently Added Episode 3</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.3.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.3.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.3.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.3.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.3.Play)]</onclick>
@@ -3845,7 +3845,7 @@
 			</item>
 			<item id="4">
 				<description>Recently Added Episode 4</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.4.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.4.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.4.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.4.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.4.Play)]</onclick>
@@ -3853,7 +3853,7 @@
 			</item>
 			<item id="5">
 				<description>Recently Added Episode 5</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.5.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.5.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.5.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.5.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.5.Play)]</onclick>
@@ -3861,7 +3861,7 @@
 			</item>
 			<item id="6">
 				<description>Recently Added Episode 6</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.6.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.6.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.6.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.6.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.6.Play)]</onclick>
@@ -3869,7 +3869,7 @@
 			</item>
 			<item id="7">
 				<description>Recently Added Episode 7</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.7.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.7.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.7.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.7.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.7.Play)]</onclick>
@@ -3877,7 +3877,7 @@
 			</item>
 			<item id="8">
 				<description>Recently Added Episode 8</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.8.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.8.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.8.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.8.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.8.Play)]</onclick>
@@ -3885,7 +3885,7 @@
 			</item>
 			<item id="9">
 				<description>Recently Added Episode 9</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.9.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.9.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.9.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.9.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.9.Play)]</onclick>
@@ -3893,7 +3893,7 @@
 			</item>
 			<item id="10">
 				<description>Recently Added Episode 10</description>
-				<label>$INFO[Window(Home).Property(RecentEpisode.10.TVShowTitle)] $INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)] - $INFO[Window(Home).Property(RecentEpisode.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentEpisode.10.TVShowTitle)]$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo), ]$INFO[Window(Home).Property(RecentEpisode.10.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecentEpisode.10.Art(fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentEpisode.10.Play)]</onclick>
@@ -3906,7 +3906,7 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Album 1</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.1.Artist)] - $INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.1.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3915,7 +3915,7 @@
 			</item>
 			<item id="2">
 				<description>Recently Added Album 2</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.2.Artist)] - $INFO[Window(Home).Property(RecentAlbum.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.2.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.2.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3924,7 +3924,7 @@
 			</item>
 			<item id="3">
 				<description>Recently Added Album 3</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.3.Artist)] - $INFO[Window(Home).Property(RecentAlbum.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.3.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.3.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3933,7 +3933,7 @@
 			</item>
 			<item id="4">
 				<description>Recently Added Album 4</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.4.Artist)] - $INFO[Window(Home).Property(RecentAlbum.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.4.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.4.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3942,7 +3942,7 @@
 			</item>
 			<item id="5">
 				<description>Recently Added Album 5</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.5.Artist)] - $INFO[Window(Home).Property(RecentAlbum.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.5.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.5.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3951,7 +3951,7 @@
 			</item>
 			<item id="6">
 				<description>Recently Added Album 6</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.6.Artist)] - $INFO[Window(Home).Property(RecentAlbum.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.6.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.6.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3960,7 +3960,7 @@
 			</item>
 			<item id="7">
 				<description>Recently Added Album 7</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.7.Artist)] - $INFO[Window(Home).Property(RecentAlbum.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.7.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.7.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3969,7 +3969,7 @@
 			</item>
 			<item id="8">
 				<description>Recently Added Album 8</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.8.Artist)] - $INFO[Window(Home).Property(RecentAlbum.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.8.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.8.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3978,7 +3978,7 @@
 			</item>
 			<item id="9">
 				<description>Recently Added Album 9</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.9.Artist)] - $INFO[Window(Home).Property(RecentAlbum.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.9.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.9.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -3987,7 +3987,7 @@
 			</item>
 			<item id="10">
 				<description>Recently Added Album 10</description>
-				<label>$INFO[Window(Home).Property(RecentAlbum.10.Artist)] - $INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentAlbum.10.Artist),, - ]$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4001,7 +4001,7 @@
 		<content>
 			<item id="1">
 				<description>Recently Added Music Video 1</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.1.Play)]</onclick>
@@ -4009,7 +4009,7 @@
 			</item>
 			<item id="2">
 				<description>Recently Added Music Video 2</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.2.Play)]</onclick>
@@ -4017,7 +4017,7 @@
 			</item>
 			<item id="3">
 				<description>Recently Added Music Video 3</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.3.Play)]</onclick>
@@ -4025,7 +4025,7 @@
 			</item>
 			<item id="4">
 				<description>Recently Added Music Video 4</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.4.Play)]</onclick>
@@ -4033,7 +4033,7 @@
 			</item>
 			<item id="5">
 				<description>Recently Added Music Video 5</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.5.Play)]</onclick>
@@ -4041,7 +4041,7 @@
 			</item>
 			<item id="6">
 				<description>Recently Added Music Video 6</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.6.Play)]</onclick>
@@ -4049,7 +4049,7 @@
 			</item>
 			<item id="7">
 				<description>Recently Added Music Video 7</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.7.Play)]</onclick>
@@ -4057,7 +4057,7 @@
 			</item>
 			<item id="8">
 				<description>Recently Added Music Video 8</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.8.Play)]</onclick>
@@ -4065,7 +4065,7 @@
 			</item>
 			<item id="9">
 				<description>Recently Added Music Video 9</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.9.Play)]</onclick>
@@ -4073,7 +4073,7 @@
 			</item>
 			<item id="10">
 				<description>Recently Added Music Video 10</description>
-				<label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)] - $INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist),, - ]$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecentMusicVideo.10.Play)]</onclick>
@@ -4172,7 +4172,7 @@
 		<content>
 			<item id="1">
 				<description>Random Episode 1</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.1.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.1.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.1.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.1.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.1.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.1.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.1.Play)]</onclick>
@@ -4180,7 +4180,7 @@
 			</item>
 			<item id="2">
 				<description>Random Episode 2</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.2.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.2.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.2.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.2.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.2.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.2.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.2.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.2.Play)]</onclick>
@@ -4188,7 +4188,7 @@
 			</item>
 			<item id="3">
 				<description>Random Episode 3</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.3.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.3.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.3.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.3.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.3.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.3.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.3.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.3.Play)]</onclick>
@@ -4196,7 +4196,7 @@
 			</item>
 			<item id="4">
 				<description>Random Episode 4</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.4.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.4.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.4.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.4.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.4.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.4.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.4.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.4.Play)]</onclick>
@@ -4204,7 +4204,7 @@
 			</item>
 			<item id="5">
 				<description>Random Episode 5</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.5.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.5.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.5.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.5.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.5.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.5.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.5.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.5.Play)]</onclick>
@@ -4212,7 +4212,7 @@
 			</item>
 			<item id="6">
 				<description>Random Episode 6</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.6.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.6.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.6.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.6.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.6.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.6.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.6.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.6.Play)]</onclick>
@@ -4220,7 +4220,7 @@
 			</item>
 			<item id="7">
 				<description>Random Episode 7</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.7.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.7.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.7.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.7.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.7.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.7.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.7.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.7.Play)]</onclick>
@@ -4228,7 +4228,7 @@
 			</item>
 			<item id="8">
 				<description>Random Episode 8</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.8.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.8.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.8.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.8.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.8.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.8.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.8.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.8.Play)]</onclick>
@@ -4236,7 +4236,7 @@
 			</item>
 			<item id="9">
 				<description>Random Episode 9</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.9.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.9.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.9.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.9.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.9.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.9.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.9.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.9.Play)]</onclick>
@@ -4244,7 +4244,7 @@
 			</item>
 			<item id="10">
 				<description>Random Episode 10</description>
-				<label>$INFO[Window(Home).Property(RandomEpisode.10.TVshowTitle)] $INFO[Window(Home).Property(RandomEpisode.10.EpisodeNo)] - $INFO[Window(Home).Property(RandomEpisode.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomEpisode.10.TVShowTitle)]$INFO[Window(Home).Property(RandomEpisode.10.EpisodeNo), ]$INFO[Window(Home).Property(RandomEpisode.10.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RandomEpisode.10.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.10.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomEpisode.10.Play)]</onclick>
@@ -4257,7 +4257,7 @@
 		<content>
 			<item id="1">
 				<description>Random Album 1</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.1.Artist)] - $INFO[Window(Home).Property(RandomAlbum.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.1.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.1.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.1.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4266,7 +4266,7 @@
 			</item>
 			<item id="2">
 				<description>Random Album 2</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.2.Artist)] - $INFO[Window(Home).Property(RandomAlbum.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.2.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.2.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.2.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4275,7 +4275,7 @@
 			</item>
 			<item id="3">
 				<description>Random Album 3</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.3.Artist)] - $INFO[Window(Home).Property(RandomAlbum.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.3.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.3.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.3.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4284,7 +4284,7 @@
 			</item>
 			<item id="4">
 				<description>Random Album 4</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.4.Artist)] - $INFO[Window(Home).Property(RandomAlbum.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.4.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.4.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.4.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4293,7 +4293,7 @@
 			</item>
 			<item id="5">
 				<description>Random Album 5</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.5.Artist)] - $INFO[Window(Home).Property(RandomAlbum.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.5.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.5.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.5.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4302,7 +4302,7 @@
 			</item>
 			<item id="6">
 				<description>Random Album 6</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.6.Artist)] - $INFO[Window(Home).Property(RandomAlbum.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.6.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.6.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.6.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4311,7 +4311,7 @@
 			</item>
 			<item id="7">
 				<description>Random Album 7</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.7.Artist)] - $INFO[Window(Home).Property(RandomAlbum.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.7.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.7.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.7.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4320,7 +4320,7 @@
 			</item>
 			<item id="8">
 				<description>Random Album 8</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.8.Artist)] - $INFO[Window(Home).Property(RandomAlbum.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.8.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.8.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.8.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4329,7 +4329,7 @@
 			</item>
 			<item id="9">
 				<description>Random Album 9</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.9.Artist)] - $INFO[Window(Home).Property(RandomAlbum.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.9.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.9.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.9.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4338,7 +4338,7 @@
 			</item>
 			<item id="10">
 				<description>Random Album 10</description>
-				<label>$INFO[Window(Home).Property(RandomAlbum.10.Artist)] - $INFO[Window(Home).Property(RandomAlbum.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomAlbum.10.Artist),, - ]$INFO[Window(Home).Property(RandomAlbum.10.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.10.Thumb)]</thumb>
 				<onclick>Playlist.Clear</onclick>
@@ -4352,7 +4352,7 @@
 		<content>
 			<item id="1">
 				<description>Random Music Video 1</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.1.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.1.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.1.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.1.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.1.Play)]</onclick>
@@ -4360,7 +4360,7 @@
 			</item>
 			<item id="2">
 				<description>Random Music Video 2</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.2.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.2.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.2.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.2.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.2.Play)]</onclick>
@@ -4368,7 +4368,7 @@
 			</item>
 			<item id="3">
 				<description>Random Music Video 3</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.3.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.3.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.3.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.3.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.3.Play)]</onclick>
@@ -4376,7 +4376,7 @@
 			</item>
 			<item id="4">
 				<description>Random Music Video 4</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.4.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.4.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.4.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.4.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.4.Play)]</onclick>
@@ -4384,7 +4384,7 @@
 			</item>
 			<item id="5">
 				<description>Random Music Video 5</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.5.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.5.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.5.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.5.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.5.Play)]</onclick>
@@ -4392,7 +4392,7 @@
 			</item>
 			<item id="6">
 				<description>Random Music Video 6</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.6.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.6.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.6.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.6.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.6.Play)]</onclick>
@@ -4400,7 +4400,7 @@
 			</item>
 			<item id="7">
 				<description>Random Music Video 7</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.7.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.7.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.7.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.7.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.7.Play)]</onclick>
@@ -4408,7 +4408,7 @@
 			</item>
 			<item id="8">
 				<description>Random Music Video 8</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.8.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.8.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.8.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.8.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.8.Play)]</onclick>
@@ -4416,7 +4416,7 @@
 			</item>
 			<item id="9">
 				<description>Random Music Video 9</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.9.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.9.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.9.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.9.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.9.Play)]</onclick>
@@ -4424,7 +4424,7 @@
 			</item>
 			<item id="10">
 				<description>Random Music Video 10</description>
-				<label>$INFO[Window(Home).Property(RandomMusicVideo.10.Artist)] - $INFO[Window(Home).Property(RandomMusicVideo.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RandomMusicVideo.10.Artist),, - ]$INFO[Window(Home).Property(RandomMusicVideo.10.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.10.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RandomMusicVideo.10.Play)]</onclick>
@@ -4523,7 +4523,7 @@
 		<content>
 			<item id="1">
 				<description>Watchlist Episode 1</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.1.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.1.Play)]</onclick>
@@ -4531,7 +4531,7 @@
 			</item>
 			<item id="2">
 				<description>Watchlist Episode 2</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.2.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.2.Play)]</onclick>
@@ -4539,7 +4539,7 @@
 			</item>
 			<item id="3">
 				<description>Watchlist Episode 3</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.3.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.3.Play)]</onclick>
@@ -4547,7 +4547,7 @@
 			</item>
 			<item id="4">
 				<description>Watchlist Episode 4</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.4.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.4.Play)]</onclick>
@@ -4555,7 +4555,7 @@
 			</item>
 			<item id="5">
 				<description>Watchlist Episode 5</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.5.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.5.Play)]</onclick>
@@ -4563,7 +4563,7 @@
 			</item>
 			<item id="6">
 				<description>Watchlist Episode 6</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.6.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.6.Play)]</onclick>
@@ -4571,7 +4571,7 @@
 			</item>
 			<item id="7">
 				<description>Watchlist Episode 7</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.7.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.7.Play)]</onclick>
@@ -4579,7 +4579,7 @@
 			</item>
 			<item id="8">
 				<description>Watchlist Episode 8</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.8.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.8.Play)]</onclick>
@@ -4587,7 +4587,7 @@
 			</item>
 			<item id="9">
 				<description>Watchlist Episode 9</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.9.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.9.Play)]</onclick>
@@ -4595,7 +4595,7 @@
 			</item>
 			<item id="10">
 				<description>Watchlist Episode 10</description>
-				<label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)] $INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo)] - $INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVShowTitle)]$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo), ]$INFO[Window(Home).Property(RecommendedEpisode.10.Title), - ]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedEpisode.10.Play)]</onclick>
@@ -4608,7 +4608,7 @@
 		<content>
 			<item id="1">
 				<description>Watchlist Album 1</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
@@ -4616,7 +4616,7 @@
 			</item>
 			<item id="2">
 				<description>Watchlist Album 2</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
@@ -4624,7 +4624,7 @@
 			</item>
 			<item id="3">
 				<description>Watchlist Album 3</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
@@ -4632,7 +4632,7 @@
 			</item>
 			<item id="4">
 				<description>Watchlist Album 4</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
@@ -4640,7 +4640,7 @@
 			</item>
 			<item id="5">
 				<description>Watchlist Album 5</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
@@ -4648,7 +4648,7 @@
 			</item>
 			<item id="6">
 				<description>Watchlist Album 6</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
@@ -4656,7 +4656,7 @@
 			</item>
 			<item id="7">
 				<description>Watchlist Album 7</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
@@ -4664,7 +4664,7 @@
 			</item>
 			<item id="8">
 				<description>Watchlist Album 8</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
@@ -4672,7 +4672,7 @@
 			</item>
 			<item id="9">
 				<description>Watchlist Album 9</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
@@ -4680,7 +4680,7 @@
 			</item>
 			<item id="10">
 				<description>Watchlist Album 10</description>
-				<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)] - $INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
 				<icon>-</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
@@ -4693,7 +4693,7 @@
 		<content>
 			<item id="1">
 				<description>Watchlist Music Video 1</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Play)]</onclick>
@@ -4701,7 +4701,7 @@
 			</item>
 			<item id="2">
 				<description>Watchlist Music Video 2</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Play)]</onclick>
@@ -4709,7 +4709,7 @@
 			</item>
 			<item id="3">
 				<description>Watchlist Music Video 3</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Play)]</onclick>
@@ -4717,7 +4717,7 @@
 			</item>
 			<item id="4">
 				<description>Watchlist Music Video 4</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Play)]</onclick>
@@ -4725,7 +4725,7 @@
 			</item>
 			<item id="5">
 				<description>Watchlist Music Video 5</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Play)]</onclick>
@@ -4733,7 +4733,7 @@
 			</item>
 			<item id="6">
 				<description>Watchlist Music Video 6</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Play)]</onclick>
@@ -4741,7 +4741,7 @@
 			</item>
 			<item id="7">
 				<description>Watchlist Music Video 7</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Play)]</onclick>
@@ -4749,7 +4749,7 @@
 			</item>
 			<item id="8">
 				<description>Watchlist Music Video 8</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Play)]</onclick>
@@ -4757,7 +4757,7 @@
 			</item>
 			<item id="9">
 				<description>Watchlist Music Video 9</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Play)]</onclick>
@@ -4765,7 +4765,7 @@
 			</item>
 			<item id="10">
 				<description>Watchlist Music Video 10</description>
-				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)] - $INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist),, - ]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
 				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Fanart)]</thumb>
 				<onclick>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Play)]</onclick>

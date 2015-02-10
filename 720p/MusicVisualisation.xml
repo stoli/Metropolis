@@ -238,7 +238,7 @@
 				<scrollout>false</scrollout>
 				<scrollspeed>1000</scrollspeed>
 				<pauseatend>10000</pauseatend>
-				<label>[COLOR=NowPlayingTitle]$LOCALIZE[209]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist]: $INFO[MusicPlayer.offset(1).Title]</label>
+				<label>[COLOR=NowPlayingTitle]$LOCALIZE[209]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist,,: ]$INFO[MusicPlayer.offset(1).Title]</label>
 				<font>METF_DialogSmall</font>
 				<textcolor>50FFFFFF</textcolor>
 				<align>center</align>

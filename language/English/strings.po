@@ -298,7 +298,11 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr ""
 
-#empty strings from id 31276 to 31277
+#empty strings from id 31276 to 31276
+
+msgctxt "#31277"
+msgid "Item"
+msgstr ""
 
 msgctxt "#31278"
 msgid "Open Playlist"
