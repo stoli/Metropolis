@@ -178,7 +178,7 @@
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
 						-->
-						<visible>!Window.IsActive(videolibrary)</visible>
+						<visible>!Window.IsActive(videolibrary) + !SubString(Container.FolderPath,plugin)</visible>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
@@ -376,7 +376,7 @@
 						<visible>!Window.IsActive(videolibrary) | [Window.IsActive(videolibrary) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]]</visible>
 						<include>VisibleIfNotMovieSet</include>
 						-->
-						<visible>!Window.IsActive(videolibrary)</visible>
+						<visible>!Window.IsActive(videolibrary) + !SubString(Container.FolderPath,plugin)</visible>
 						<control type="label">
 							<posx>775</posx>
 							<posy>-2</posy>
