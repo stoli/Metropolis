@@ -730,7 +730,7 @@
 				<description>Shutdown</description>
 				<include condition="Skin.HasSetting(Home2)">HomeShutdownIcon</include>
 				<include condition="!Skin.HasSetting(Home2)">HomeShutdownWallpaper</include>
-				<onclick>Powerdown()</onclick>
+				<onclick>ShutDown()</onclick>
 				<visible>System.CanPowerDown</visible>
 				<visible>!Skin.HasSetting(NoShutdown)</visible>
 				<visible>!Skin.HasSetting(NoShutdownDestructive)</visible>
