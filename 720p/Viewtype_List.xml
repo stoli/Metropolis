@@ -97,7 +97,21 @@
 						<colordiffuse>WatchedOverlay</colordiffuse>
 						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
-					<!-- Items NOT in Video Library -->
+					<!-- Items in Music Library -->
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>708</width>
+						<height>35</height>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<textcolor>TextNF</textcolor>
+						<selectedcolor>TextFO</selectedcolor>
+						<label>$VAR[ListItemTitle]</label>
+						<scroll>false</scroll>
+						<visible>Window.IsActive(musiclibrary)</visible>
+					</control>
+					<!-- Items NOT in Video or Music Library -->
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
@@ -109,7 +123,7 @@
 						<selectedcolor>TextFO</selectedcolor>
 						<label>$VAR[ListItemTitle]</label>
 						<scroll>false</scroll>
-						<visible>!Window.IsActive(videolibrary)</visible>
+						<visible>!Window.IsActive(videolibrary) + !Window.IsActive(musiclibrary)</visible>
 					</control>
 					<!-- Watched Overlay for Items NOT in Video Library -->
 					<control type="image">
@@ -292,7 +306,24 @@
 						<colordiffuse>WatchedOverlay</colordiffuse>
 						<visible>ListItem.IsResumable + Window.IsActive(videolibrary) + [[[Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideMovieWatchedOverlays)] | [![Container.Content(movies) | Container.Content(sets)] + !Skin.HasSetting(HideTVWatchedOverlays)]]</visible>
 					</control>
-					<!-- Items NOT in Video Library -->
+					<!-- Items in Music Library -->
+					<control type="label">
+						<posx>45</posx>
+						<posy>-2</posy>
+						<width>708</width>
+						<height>35</height>
+						<scrollout>false</scrollout>
+						<pauseatend>1800</pauseatend>
+						<scrollspeed>40</scrollspeed>
+						<scroll>true</scroll>
+						<aligny>center</aligny>
+						<font>METF_TitleText</font>
+						<label>$VAR[ListItemTitle]</label>
+						<textcolor>FocusBarText</textcolor>
+						<selectedcolor>FocusBarText</selectedcolor>
+						<visible>Window.IsActive(musiclibrary)</visible>
+					</control>
+					<!-- Items NOT in Video or Music Library -->
 					<control type="label">
 						<posx>45</posx>
 						<posy>-2</posy>
@@ -307,7 +338,7 @@
 						<textcolor>FocusBarText</textcolor>
 						<selectedcolor>FocusBarText</selectedcolor>
 						<label>$VAR[ListItemTitle]</label>
-						<visible>!Window.IsActive(videolibrary)</visible>
+						<visible>!Window.IsActive(videolibrary) + !Window.IsActive(musiclibrary)</visible>
 					</control>
 					<!-- Watched Overlay for Items NOT in Video Library -->
 					<control type="image">
