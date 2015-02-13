@@ -135,7 +135,7 @@
 				<label>$INFO[ListItem.mpaa]</label>
 				<visible>[Container.Content(movies) + !IsEmpty(ListItem.mpaa) + ![StringCompare(ListItem.mpaa,Rated PG) | StringCompare(ListItem.mpaa,Rated PG-13) | StringCompare(ListItem.mpaa,Rated R) | StringCompare(ListItem.mpaa,Rated G) | StringCompare(ListItem.mpaa,Rated NC-17) | StringCompare(ListItem.mpaa,Rated TV-14) | StringCompare(ListItem.mpaa,Rated TV-G) | StringCompare(ListItem.mpaa,Rated TV-MA) | StringCompare(ListItem.mpaa,Rated TV-PG) | StringCompare(ListItem.mpaa,Rated TV-Y) | StringCompare(ListItem.mpaa,Rated TV-Y7)]] + !Skin.HasSetting(ShowVideoPath)</visible>
 			</control>	 
-			
+
 			<control type="fadelabel">
 				<posx>-8</posx>
 				<posy>489</posy>
@@ -262,7 +262,7 @@
 				<posx>-8</posx>
 				<posy>138</posy>
 				<width>515</width>
-				<height>339</height>
+				<height>342</height>
 				<align>justify</align>
 				<font>METF_PlotText</font>
 				<textcolor>TextNF</textcolor>
