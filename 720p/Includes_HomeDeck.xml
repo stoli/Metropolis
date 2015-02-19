@@ -742,7 +742,7 @@
 				<onclick>Quit()</onclick>
 				<visible>System.ShowExitButton</visible>
 				<visible>!Skin.HasSetting(NoShutdown)</visible>
-				<visible>Skin.HasSetting(NoShutdownDestructive)</visible>
+				<visible>Skin.HasSetting(NoShutdownDestructive) | !System.CanPowerDown</visible>
 			</item>
 			<item id="17">
 				<description>Custom1</description>
