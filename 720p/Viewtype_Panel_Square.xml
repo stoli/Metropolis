@@ -9,7 +9,7 @@
 				<posx>440</posx>
 				<posy>60</posy>
 				<width>820</width>
-				<height>420</height>
+				<height>412</height>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<include condition="!Skin.HasSetting(ViewLockdown)">OnLeft7000</include>
