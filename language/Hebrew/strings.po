@@ -208,6 +208,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "מספר תמונות"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "פריט"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "פתיחת רשימת ניגון"

@@ -256,6 +256,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Meerdere afbeeldingen"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Item"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Open afspeellijst"
@@ -580,6 +584,10 @@ msgctxt "#31398"
 msgid "Films that have no synchronized soundtrack and no spoken dialogue, until the dawn of the talkies in the late 1920s. Films without dialogue featured titles for dialogue segments, and often were accompanied by live music."
 msgstr "Fims die geen gesynchroniseerd soundtrack en geen gesproken dialoog hebben, tot de dageraad van de talkies in de late jaren 1920. Films zonder dialoog kenmerkte titels voor dialoog segmenten, en werden vaak begeleid door live muziek."
 
+msgctxt "#31399"
+msgid "Lighter Background Fanart diffuse overlay"
+msgstr "Lichtere achtergrond fanart diffuus overlay"
+
 msgctxt "#31400"
 msgid "Hide Current Temperature and Weather Conditions"
 msgstr "Verberg huidige temperatuur- en weerscondities"
@@ -667,6 +675,10 @@ msgstr "Videoinstellingen"
 msgctxt "#31421"
 msgid "Video OSD: Show ClearArt/Logo"
 msgstr "Video OSD: Toon clearart/logo"
+
+msgctxt "#31422"
+msgid "Logo View: Show only one item at a time"
+msgstr "Logo weergave: Toon enkel een item per keer"
 
 msgctxt "#31423"
 msgid "Author"

@@ -240,6 +240,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Múltiplas Imagens"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Item"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Abrir Lista de Reprodução"
@@ -675,6 +679,10 @@ msgstr "Nuvens"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Máxima"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Fase da lua"
 
 msgctxt "#31709"
 msgid "Precipitation"

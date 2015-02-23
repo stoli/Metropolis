@@ -240,6 +240,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "多个图片"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "项"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "打开列表"

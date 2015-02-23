@@ -256,6 +256,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Keletas atvaizdų"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Elementas"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Atidaryti grojaraštį"

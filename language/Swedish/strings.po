@@ -240,6 +240,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Flerbild"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Objekt"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Öppna spellista"

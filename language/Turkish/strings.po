@@ -64,6 +64,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Çoklu Resim"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Nesne"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Çalma Listesini Aç"
@@ -111,6 +115,10 @@ msgstr "Film Kümesi"
 msgctxt "#31334"
 msgid "Trailers"
 msgstr "Fragmanlar"
+
+msgctxt "#31408"
+msgid "Cinema Experience"
+msgstr "Sinema Deneyimi"
 
 msgctxt "#31409"
 msgid "Finish"

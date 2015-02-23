@@ -244,6 +244,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Πολλαπλές Εικόνες"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Αντικείμενο"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Άνοιγμα Λίστας Αναπ/γής"

@@ -64,6 +64,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Vaihtuva kuva"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Kohdetta"
+
 msgctxt "#31281"
 msgid "Items"
 msgstr "Kohdetta"

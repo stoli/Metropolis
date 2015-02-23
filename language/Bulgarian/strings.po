@@ -80,6 +80,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Няколко картини"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Елемент"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Отвори плейлиста"

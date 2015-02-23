@@ -256,6 +256,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Plusieurs images"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Élément"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Ouvrir la liste de lecture"
@@ -734,7 +738,7 @@ msgstr "Utiliser une barre de recherche mince"
 
 msgctxt "#31437"
 msgid "Enable TV Tunes script"
-msgstr "Activer le script TV Tunes"
+msgstr "Activer le script TvTunes"
 
 msgctxt "#31438"
 msgid "Recent"

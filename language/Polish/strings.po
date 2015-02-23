@@ -210,7 +210,7 @@ msgstr "Ustaw lokalizację dla opcjonalnych informacji pogodowych"
 
 msgctxt "#31216"
 msgid "Adjust the look and feel of Kodi. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings"
-msgstr "Dostosuj wygląd Kodi. Skórę, motyw, dźwięki i czcionki, kanały RSS i ustawienia regionalne. "
+msgstr "Dostosuj wygląd Kodi. W tym skórę, motyw, dźwięki i czcionki, strumień nagłówków RSS i ustawienia regionalne. "
 
 msgctxt "#31217"
 msgid "Adjust how Kodi displays personal image collections. Includes screenshot grabbing, special effects and advanced display options"
@@ -255,6 +255,10 @@ msgstr "Ulubiony"
 msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Wiele obrazów"
+
+msgctxt "#31277"
+msgid "Item"
+msgstr "Pozycja"
 
 msgctxt "#31278"
 msgid "Open Playlist"
@@ -306,7 +310,7 @@ msgstr "Siatka obrazów"
 
 msgctxt "#31298"
 msgid "Panel Square"
-msgstr "PANEL SQUARE"
+msgstr "Panel kwadrat"
 
 msgctxt "#31299"
 msgid "Min"
@@ -646,11 +650,11 @@ msgstr "Galeria"
 
 msgctxt "#31415"
 msgid "Square"
-msgstr "Square"
+msgstr "Kwadrat"
 
 msgctxt "#31416"
 msgid "Tall Genre"
-msgstr "Tall Genre"
+msgstr "Sztuka wysoka"
 
 msgctxt "#31417"
 msgid "*help text*"
@@ -798,7 +802,7 @@ msgstr "Wizualizacja: Używaj wąskiego menu ekranowego"
 
 msgctxt "#31453"
 msgid "Show Date instead of Day of Week"
-msgstr "Pokaż datę zamiast dnia tygodnia"
+msgstr "Pokazuj datę zamiast dnia tygodnia"
 
 msgctxt "#31454"
 msgid "Visualization: Show player position and time in Info Overlay"

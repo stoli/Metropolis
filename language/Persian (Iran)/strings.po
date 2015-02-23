@@ -44,6 +44,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "چند تصویره"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "موضوع"
+
 msgctxt "#31281"
 msgid "Items"
 msgstr "موضوعات"

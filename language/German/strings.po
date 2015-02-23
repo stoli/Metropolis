@@ -252,6 +252,10 @@ msgctxt "#31275"
 msgid "Multi Image"
 msgstr "Mehrfach Bild"
 
+msgctxt "#31277"
+msgid "Item"
+msgstr "Element"
+
 msgctxt "#31278"
 msgid "Open Playlist"
 msgstr "Wiedergabeliste öffnen"
@@ -663,6 +667,10 @@ msgstr "Video Einstellungen"
 msgctxt "#31421"
 msgid "Video OSD: Show ClearArt/Logo"
 msgstr "Video OSD: Zeige ClearArt/Logo"
+
+msgctxt "#31422"
+msgid "Logo View: Show only one item at a time"
+msgstr "Logo Ansicht: Zeigt immer nur eines an"
 
 msgctxt "#31423"
 msgid "Author"
