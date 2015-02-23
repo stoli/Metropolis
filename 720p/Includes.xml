@@ -198,7 +198,7 @@
 			<control type="label">
 				<label>$LOCALIZE[20343]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !SubString(Container.FolderPath,plugin)</visible>
+				<visible>Container.Content(tvshows) + !SubString(Container.FolderPath,plugin)</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[20389]</label>
@@ -208,7 +208,7 @@
 			<control type="label">
 				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Container.Content(episodes) + !SubString(Container.FolderPath,plugin)</visible>
+				<visible>[Container.Content(episodes) | Container.Content(seasons)] + !SubString(Container.FolderPath,plugin)</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[3]</label>
@@ -327,7 +327,7 @@
 				<font>METF_InfoText</font>
 				<label>[COLOR=GlobalHeading]$LOCALIZE[31427]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextTitle),,[CR]]$INFO[Window(Home).Property(NextAired.AirTime),, - ]$INFO[Window(Home).Property(NextAired.NextDate)]</label>
 			</control>
-			<visible>[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			<visible>Container.Content(TVShows) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 		</control>
 	</include>
 	<!-- SortLetter popup when scrolling through lists quickly -->
