@@ -177,42 +177,58 @@
 				<control type="button" id="801">
 					<description>Repeat</description>
 					<include>Animation_ButtonFocus</include>
-					<height>0</height>
-					<width>0</width>
+					<height>60</height>
+					<width>60</width>
 					<label>-</label>
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>PlayerControl(Repeat)</onclick>
 				</control>
 				<control type="group" id="802">
-					<height>60</height>
-					<width>60</width>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_nf.png</texture>
 						<visible>!Playlist.IsRepeat | !Playlist.IsRepeatOne</visible>
 						<visible>!Control.HasFocus(801)</visible>
 					</control>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_fo.png</texture>
 						<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 						<visible>Control.HasFocus(801)</visible>
 					</control>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_one_nf.png</texture>
 						<visible>Playlist.IsRepeatOne</visible>
 						<visible>!Control.HasFocus(801)</visible>
 					</control>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_one_fo.png</texture>
 						<visible>Playlist.IsRepeatOne</visible>
 						<visible>Control.HasFocus(801)</visible>
 					</control>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_all_nf.png</texture>
 						<visible>Playlist.IsRepeat</visible>
 						<visible>!Control.HasFocus(801)</visible>
 					</control>
 					<control type="image">
+						<posx>-60</posx>
+						<height>60</height>
+						<width>60</width>
 						<texture>osd/osd_button_repeat_all_fo.png</texture>
 						<visible>Playlist.IsRepeat</visible>
 						<visible>Control.HasFocus(801)</visible>
