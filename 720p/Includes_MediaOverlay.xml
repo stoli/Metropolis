@@ -30,7 +30,7 @@
 					<posy>13</posy>
 					<width>220</width>
 					<height>124</height>
-					<visible>Player.HasVideo + ![Window.IsActive(home) + Skin.HasSetting(home1)]</visible>
+					<visible>Player.HasVideo + ![Window.IsActive(selectdialog)] + ![Window.IsActive(home) + Skin.HasSetting(home1)]</visible>
 				</control>
 			</control>
 			<control type="group" id="9905">
