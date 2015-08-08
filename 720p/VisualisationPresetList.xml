@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="122">
-	<defaultcontrol always="true">2</defaultcontrol>
+	<defaultcontrol always="true">5</defaultcontrol>
 	<include>Animation_CommonFade</include>
 	<include>Animation_FadedByMenu</include>
 	<coordinates>
@@ -18,7 +18,7 @@
 				<width>380</width>
 				<texture>ButtonFo.png</texture>
 			</control>
-			<control type="label" id="3">
+			<control type="label" id="2">
 				<description>Heading</description>
 				<posx>360</posx>
 				<posy>158</posy>
@@ -28,7 +28,6 @@
 				<textcolor>ButtonText</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>31048</label>
 			</control>
 			<control type="label" id="4">
 				<description>No Settings Label</description>
@@ -42,7 +41,7 @@
 				<aligny>center</aligny>
 				<label>13389</label>
 			</control>
-			<control type="list" id="2">
+			<control type="list" id="5">
 				<posx>460</posx>
 				<posy>158</posy>
 				<width>820</width>
@@ -67,7 +66,7 @@
 						<width>820</width>
 						<height>38</height>
 						<texture>ButtonFo.png</texture>
-						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(5)">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>10</posx>
