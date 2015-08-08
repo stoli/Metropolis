@@ -134,45 +134,6 @@
 				<onleft>60</onleft>
 				<onright>4</onright>
 				<onup>30</onup>
-				<ondown>31</ondown>
-			</control> 
-			<control type="button" id ="31">
-				<description>Edit Channel Button</description>
-				<posx>0</posx>
-				<posy>70</posy>
-				<width>380</width>
-				<height>35</height>
-				<include>SettingsLabel</include>
-				<label>$LOCALIZE[19203]</label>
-				<onleft>60</onleft>
-				<onright>4</onright>
-				<onup>34</onup>
-				<ondown>32</ondown>
-			</control>
-			<control type="button" id ="32">
-				<description>Delete Channel Button</description>
-				<posx>0</posx>
-				<posy>105</posy>
-				<width>380</width>
-				<height>35</height>
-				<include>SettingsLabel</include>
-				<label>$LOCALIZE[19211]</label>
-				<onleft>60</onleft>
-				<onright>4</onright>
-				<onup>31</onup>
-				<ondown>33</ondown>
-			</control>
-			<control type="button" id ="33">
-				<description>New Channel Button</description>
-				<posx>0</posx>
-				<posy>140</posy>
-				<width>380</width>
-				<height>35</height>
-				<include>SettingsLabel</include>
-				<label>$LOCALIZE[19204]</label>
-				<onleft>60</onleft>
-				<onright>4</onright>
-				<onup>32</onup>
 				<ondown>7</ondown>
 			</control>
 		</control>
