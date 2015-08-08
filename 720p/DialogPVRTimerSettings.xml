@@ -42,6 +42,15 @@
 			<height>40</height>
 			<include>SettingsLabel</include>
 		</control>
+		<control type="label" id="14">
+			<description>Default Label</description>
+			<height>40</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>METF_ContextValue</font>
+			<textcolor>SettingsDetail</textcolor>
+			<label>-</label>
+		</control>
     
 		<!-- Menu group -->
 		<control type="grouplist" id="9000">

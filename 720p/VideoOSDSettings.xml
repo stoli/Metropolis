@@ -138,6 +138,17 @@
 				<textureslidernib border="2">osd/SliderNibNF.png</textureslidernib>
 				<textureslidernibfocus border="2">osd/SliderNibFO.png</textureslidernibfocus>
 			</control>
+			<control type="label" id="14">
+				<description>Default Label</description>
+				<left>0</left>
+				<top>0</top>
+				<height>40</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_DialogLarge</font>
+				<textcolor>DialogTextFO</textcolor>
+				<label>-</label>
+			</control>
 		</control>
 		<include condition="Skin.HasSetting(DebugMode)">Debug</include>
 	</controls>

@@ -95,6 +95,15 @@
 				<textcolor>LowerText</textcolor>
 				<align>justify</align>
 			</control>
+			<control type="label" id="14">
+				<description>Default Label</description>
+				<height>38</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_ContextValue</font>
+				<textcolor>SettingsDetail</textcolor>
+				<label>-</label>
+			</control>
 		</control>
 		<include>Global_ContextFilter</include>
 		<include>Global_Weather</include>
