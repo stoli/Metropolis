@@ -202,6 +202,36 @@
 			<altlabel>585</altlabel>
 			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>	
+		<control type="radiobutton" id="6">
+			<description>Show hidden channels</description>
+			<width>340</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>METF_DialogLarge</font>
+			<textoffsetx>20</textoffsetx>
+			<textcolor>TextNF</textcolor>
+			<focusedcolor>DialogTextFO</focusedcolor>
+			<disabledcolor>TextDisabled</disabledcolor>
+			<texturefocus>ButtonFO2Wide.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>19051</label>
+			<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+		</control>
+		<control type="radiobutton" id="7">
+			<description>Show deleted recordings</description>
+			<width>340</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>METF_DialogLarge</font>
+			<textoffsetx>20</textoffsetx>
+			<textcolor>TextNF</textcolor>
+			<focusedcolor>DialogTextFO</focusedcolor>
+			<disabledcolor>TextDisabled</disabledcolor>
+			<texturefocus>ButtonFO2Wide.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>19184</label>
+			<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+		</control>
 	</include>		
 
 	<include name="PVR_Headers">			
