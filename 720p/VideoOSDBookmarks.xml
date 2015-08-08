@@ -70,7 +70,7 @@
 					<selectedcolor>DialogTextFO</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="215" width="240">
@@ -99,7 +99,7 @@
 					<selectedcolor>DialogTextFO</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<info>ListItem.Label</info>
+					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 				</control>
 			</focusedlayout>
 		</control>
