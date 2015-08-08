@@ -33,8 +33,9 @@
 	<include file="Viewtype_PictureGrid.xml" />		<!-- 500 -->
 	<include file="Viewtype_PosterAndFanart.xml" />		<!-- 550 -->
 	<include file="Viewtype_Poster_Fixed.xml" />		<!-- 53  -->
-	<include file="Viewtype_Poster_Large.xml" />		<!-- 551 -->
 	<include file="Viewtype_Poster_Wrap.xml" />		<!-- 57  -->
+	<include file="Viewtype_Poster_Large_Fixed.xml" />	<!-- 552 -->
+	<include file="Viewtype_Poster_Large_Wrap.xml" />	<!-- 551 -->
 	<include file="Viewtype_TallGenre.xml" />		<!-- 501 -->
 
 	<!-- Global dimensions -->

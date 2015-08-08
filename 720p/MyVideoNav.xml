@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="25">
 	<onload condition="Skin.HasSetting(NextAired) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True) + Container.Content(tvshows)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<views>55,905,509,54,58,59,559,53,57,551,550,504,511,508,510,52,56,512,501</views>
+	<views>55,905,509,54,58,59,559,53,57,552,551,550,504,511,508,510,52,56,512,501</views>
 	<defaultcontrol always="true">55</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -14,7 +14,8 @@
 		<include>Viewtype_Poster_Fixed</include>		<!-- 53 -->
 		<include>Viewtype_Poster_Wrap</include>			<!-- 57 -->
 		<include>Viewtype_PosterAndFanart</include>		<!-- 550 -->
-		<include>Viewtype_Poster_Large</include>		<!-- 551 -->
+		<include>Viewtype_Poster_Large_Fixed</include>		<!-- 552 -->
+		<include>Viewtype_Poster_Large_Wrap</include>		<!-- 551 -->
 		<include>Viewtype_Coverflow</include>			<!-- 512 -->
 		<include>Viewtype_Landscape</include>			<!-- 52 -->
 		<include>Viewtype_Fanart</include>			<!-- 504 -->

@@ -988,6 +988,10 @@ msgctxt "#31478"
 msgid "Hide default submenu items"
 msgstr ""
 
+msgctxt "#31479"
+msgid "Poster Fixed Large"
+msgstr ""
+
 #empty strings from id 31479 to 31599
 #PVR Resources
 
