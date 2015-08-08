@@ -134,6 +134,19 @@
 				<onleft>60</onleft>
 				<onright>4</onright>
 				<onup>30</onup>
+				<ondown>19204</ondown>
+			</control> 
+			<control type="button" id ="19204">
+				<description>New Channel Button</description>
+				<posx>0</posx>
+				<posy>140</posy>
+				<width>380</width>
+				<height>35</height>
+				<include>SettingsLabel</include>
+				<label>$LOCALIZE[19204]</label>
+				<onleft>60</onleft>
+				<onright>4</onright>
+				<onup>34</onup>
 				<ondown>7</ondown>
 			</control>
 		</control>
