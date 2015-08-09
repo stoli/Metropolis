@@ -267,6 +267,20 @@
 				<include>SettingsLabelLeft</include>
 				<label>$LOCALIZE[31607]</label>
 			</control>
+			<control type="radiobutton" id="25">
+				<description>Hide Group</description>
+				<width>340</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>METF_DialogLarge</font>
+				<textoffsetx>20</textoffsetx>
+				<textcolor>TextNF</textcolor>
+				<focusedcolor>DialogTextFO</focusedcolor>
+				<disabledcolor>TextDisabled</disabledcolor>
+				<texturefocus>ButtonFO2Wide.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<label>19289</label>
+			</control>
 		</control>
 
 		<!-- Header group --> 
