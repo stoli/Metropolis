@@ -4,7 +4,7 @@
 		<control type="label" id="200">
 			<description>Options</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<font>METF_Heading</font>
 			<textcolor>GlobalHeading</textcolor>
 			<align>center</align>
@@ -15,7 +15,7 @@
 		<control type="button" id="100">
 			<description>TV Channels</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -33,7 +33,7 @@
 		<control type="button" id="101">
 			<description>TV Guide</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -51,7 +51,7 @@
 		<control type="button" id="102">
 			<description>Recordings</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -68,7 +68,7 @@
 		<control type="button" id="103">
 			<description>Timers</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -85,7 +85,7 @@
 		<control type="button" id="104">
 			<description>EPG Search</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -113,7 +113,7 @@
 		<control type="label" id="201">
 			<description>View Options</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<font>METF_Heading</font>
 			<textcolor>GlobalHeading</textcolor>
 			<align>center</align>
@@ -124,7 +124,7 @@
 		<control type="button" id="28">
 			<description>Channel Groups</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -154,7 +154,7 @@
 		<control type="button" id="2">
 			<description>View As button</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -170,7 +170,7 @@
 		<control type="button" id="3">
 			<description>Sort by button</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>METF_DialogLarge</font>
@@ -185,7 +185,7 @@
 		<control type="togglebutton" id="4">
 			<description>Sort asc</description>
 			<width>340</width>
-			<height>40</height>
+			<height>38</height>
 			<align>left</align>
 			<textoffsetx>20</textoffsetx>
 			<font>METF_DialogLarge</font>
@@ -202,6 +202,21 @@
 			<altlabel>585</altlabel>
 			<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 		</control>	
+		<control type="radiobutton" id="31">
+			<description>Filter</description>
+			<width>340</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>METF_DialogLarge</font>
+			<textoffsetx>20</textoffsetx>
+			<textcolor>TextNF</textcolor>
+			<focusedcolor>DialogTextFO</focusedcolor>
+			<disabledcolor>TextDisabled</disabledcolor>
+			<texturefocus>ButtonFO2Wide.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>587</label>
+			<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+		</control>		
 		<control type="radiobutton" id="6">
 			<description>Show hidden channels</description>
 			<width>340</width>
