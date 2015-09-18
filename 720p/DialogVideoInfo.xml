@@ -132,8 +132,8 @@
 				<font>METF_MPAA</font>
 				<textcolor>MPAADescription</textcolor>
 				<label>$INFO[ListItem.mpaa]</label>
-				<visible>[Container.Content(movies) + !IsEmpty(ListItem.mpaa) + ![StringCompare(ListItem.mpaa,Rated PG) | StringCompare(ListItem.mpaa,Rated PG-13) | StringCompare(ListItem.mpaa,Rated R) | StringCompare(ListItem.mpaa,Rated G) | StringCompare(ListItem.mpaa,Rated NC-17) | StringCompare(ListItem.mpaa,Rated TV-14) | StringCompare(ListItem.mpaa,Rated TV-G) | StringCompare(ListItem.mpaa,Rated TV-MA) | StringCompare(ListItem.mpaa,Rated TV-PG) | StringCompare(ListItem.mpaa,Rated TV-Y) | StringCompare(ListItem.mpaa,Rated TV-Y7)]] + !Skin.HasSetting(ShowVideoPath)</visible>
-			</control>	 
+				<visible>Container.Content(movies) + !IsEmpty(ListItem.mpaa) + !Skin.HasSetting(ShowVideoPath)</visible>
+			</control>
 
 			<control type="fadelabel">
 				<posx>-8</posx>
@@ -148,7 +148,7 @@
 				<textcolor>MPAADescription</textcolor>
 				<label>$INFO[ListItem.FilenameAndPath]</label>
 				<visible>!SubString(ListItem.FilenameAndPath," ") + [Container.Content(movies) | Container.Content(videos) | Container.Content(episodes) | Container.Content(MusicVideos)] + Skin.HasSetting(ShowVideoPath)</visible>
-			</control>	
+			</control>
 			<control type="textbox">
 				<posx>-8</posx>
 				<posy>489</posy>
@@ -159,7 +159,7 @@
 				<textcolor>MPAADescription</textcolor>
 				<label>$INFO[ListItem.FilenameAndPath]</label>
 				<visible>SubString(ListItem.FilenameAndPath," ") + [Container.Content(movies) | Container.Content(videos) | Container.Content(episodes) | Container.Content(MusicVideos)] + Skin.HasSetting(ShowVideoPath)</visible>
-			</control>	
+			</control>
 			<control type="group">
 				<posx>550</posx>
 				<posy>225</posy>
