@@ -188,6 +188,10 @@ msgctxt "#31334"
 msgid "Trailers"
 msgstr "Trailere"
 
+msgctxt "#31408"
+msgid "Cinema Experience"
+msgstr "Kinoopplevelse"
+
 msgctxt "#31409"
 msgid "Finish"
 msgstr "Ferdig kl."
