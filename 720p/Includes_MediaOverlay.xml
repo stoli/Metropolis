@@ -2,7 +2,7 @@
 <includes>
 	<include name="Global_MediaOverlay">
 		<control type="group">
-			<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+			<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<control type="group" id="9904">
 				<posx>20</posx>
 				<posy>560</posy>
