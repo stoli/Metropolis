@@ -980,7 +980,11 @@ msgctxt "#31478"
 msgid "Hide default submenu items"
 msgstr ""
 
-#empty strings from id 31479 to 31599
+msgctxt "#31479"
+msgid "built-in"
+msgstr ""
+
+#empty strings from id 31480 to 31599
 #PVR Resources
 
 msgctxt "#31600"
@@ -1019,7 +1023,11 @@ msgctxt "#31610"
 msgid "Scheduled Time"
 msgstr ""
 
-#empty strings from id 31611 to 31699
+msgctxt "#31611"
+msgid "PVR Status"
+msgstr ""
+
+#empty strings from id 31612 to 31699
 
 msgctxt "#31700"
 msgid "7 Day Forecast"

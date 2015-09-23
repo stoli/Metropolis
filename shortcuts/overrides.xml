@@ -19,6 +19,23 @@
 	<widget label="Recommended Albums">LDPRecommendedAlbums</widget>
 	<widget label="Random Albums">LDPRandomAlbums</widget>
 	<widget label="Random Songs">LDPRandomSongs</widget>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget label="$LOCALIZE[20386] ($LOCALIZE[31479])">LibraryRecentlyAddedMovies</widget>
+	<widget label="$LOCALIZE[20387] ($LOCALIZE[31479])">LibraryRecentlyAddedEpisodes</widget>
+	<widget label="$LOCALIZE[359] ($LOCALIZE[31479])">LibraryRecentlyAddedAlbums</widget>
+	<widget label="$LOCALIZE[20390] ($LOCALIZE[31479])">LibraryRecentlyAddedMusicVideos</widget>
+	<widget label="$LOCALIZE[517] ($LOCALIZE[31479])">LibraryRecentlyPlayedAlbums</widget>
+	<widget label="$ADDON[service.library.data.provider 32005]">LDPRecentlyAddedMovies</widget>
+	<widget label="$ADDON[service.library.data.provider 32006]">LDPRecommendedMovies</widget>
+	<widget label="$ADDON[service.library.data.provider 32004]">LDPRandomMovies</widget>
+	<widget label="$ADDON[service.library.data.provider 32008]">LDPRecentlyAddedEpisodes</widget>
+	<widget label="$ADDON[service.library.data.provider 32010]">LDPRecommendedEpisodes</widget>
+	<widget label="$ADDON[service.library.data.provider 32007]">LDPRandomEpisodes</widget>
+	<widget label="$ADDON[service.library.data.provider 32019]">LDPRecentlyAddedVideos</widget>
+	<widget label="$ADDON[service.library.data.provider 32017]">LDPRecentlyAddedAlbums</widget>
+	<widget label="$ADDON[service.library.data.provider 32018]">LDPRecommendedAlbums</widget>
+	<widget label="$ADDON[service.library.data.provider 32016]">LDPRandomAlbums</widget>
+	<widget label="$ADDON[service.library.data.provider 32015]">LDPRandomSongs</widget>-->
 
 	<!-- Extended Info Script -->
 	<widget labelID="movies" label="Rotten Tomatoes (In Theaters)">InTheatersMovies</widget>
@@ -29,7 +46,6 @@
 	<widget labelID="movies" label="Rotten Tomatoes (Current DVD Releases)">CurrentDVDs</widget>
 	<widget labelID="movies" label="Rotten Tomatoes (New DVD Releases)">NewDVDs</widget>
 	<widget labelID="movies" label="Rotten Tomatoes (Upcoming DVD Releases)">UpcomingDVDs</widget>
-
 	<widget labelID="movies" label="The MovieDB (In Cinemas)">InCinemasMovies</widget>
 	<widget labelID="movies" label="The MovieDB (Upcoming Movies)">UpcomingMovies</widget>
 	<widget labelID="movies" label="The MovieDB (Popular Movies)">PopularMovies</widget>
@@ -38,38 +54,61 @@
 	<widget labelID="movies" label="The MovieDB (Top Rated TV Shows)">TopRatedTVShows</widget>
 	<widget labelID="movies" label="The MovieDB (On Air TV Shows)">OnAirTVShows</widget>
 	<widget labelID="movies" label="The MovieDB (Airing Today TV Shows)">AiringTodayTVShows</widget>
-
 	<widget labelID="movies" label="Trakt.tv (Trending Movies)">TrendingMovies</widget>
 	<widget labelID="tvshows" label="Trakt.tv (Trending TV Shows)">TrendingTVShows</widget>
 	<widget labelID="tvshows" label="Trakt.tv (Airing TV Shows)">AiringShows</widget>
 	<widget labelID="tvshows" label="Trakt.tv (Premiere TV Shows)">PremiereShows</widget>
-
 	<widget labelID="pictures" type="pictures" label="Random XKCD Comics">XKCD</widget>
 	<widget labelID="pictures" type="pictures" label="Random Cyanide and Happiness Comics">Cyanide</widget>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32042])">InTheatersMovies</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32043])">ComingSoonMovies</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32048])">Opening</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32055])">BoxOffice</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32056])">Top10Rentals</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32049])">CurrentDVDs</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32053])">NewDVDs</widget>
+	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32054])">UpcomingDVDs</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32042])">InCinemasMovies</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32043])">UpcomingMovies</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32044])">PopularMovies</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32046])">TopRatedMovies</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32041])">PopularTVShows</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32040])">TopRatedTVShows</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32039])">OnAirTVShows</widget>
+	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32038])">AiringTodayTVShows</widget>
+	<widget labelID="movies" label="Trakt.tv ($ADDON[script.extendedinfo 32047])">TrendingMovies</widget>
+	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32032])">TrendingTVShows</widget>
+	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32028])">AiringShows</widget>
+	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32029])">PremiereShows</widget>
+	<widget labelID="pictures" type="pictures" label="XKCD">XKCD</widget>
+	<widget labelID="pictures" type="pictures" label="Cyanide and Happiness">Cyanide</widget>-->
 
-	<!-- Videos
-	<widget label="Video addons">VideoAddons</widget>
-	<widgetdefault labelID="videos">VideoAddons</widgetdefault> -->
+	<!-- Videos -->
 
 	<!-- PVR -->
 	<widget label="PVR Status">PVR</widget>
-	<widgetdefault labelID="livetv">PVR</widgetdefault>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget label="$LOCALIZE[31611]">PVR</widget>-->
 
 	<!-- Music -->
 
-	<!-- Pictures
-	<widget label="Pictures addons">PictureAddons</widget>
-	<widgetdefault labelID="pictures">PictureAddons</widgetdefault> -->
+	<!-- Pictures -->
 
 	<!-- Programs -->
 	<widget label="Program Addons">LibraryAddons</widget>
-	<widget labelID="programs" type="programs" label="Program Addons">LibraryAddons</widget>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget label="$LOCALIZE[1043]">LibraryAddons</widget>-->
 
 	<!-- Favourites -->
 	<widget label="Favourites">LibraryFavourites</widget>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget label="$LOCALIZE[1036]">LibraryFavourites</widget>-->
 
 	<!-- Weather -->
 	<widget label="Weather Forecast">WeatherForecast</widget>
+	<!-- XXX: localized strings that don't seem to work everywhere -->
+	<!--<widget label="$LOCALIZE[10508]">WeatherForecast</widget>-->
 
 
 	<!-- Default widgets -->
@@ -79,6 +118,7 @@
 	<widgetdefault defaultID="music">LDPRecentlyAddedAlbums</widgetdefault>
 	<widgetdefault defaultID="musicvideos">LibraryRecentlyAddedMusicVideos</widgetdefault>
 	<widgetdefault defaultID="weather">WeatherForecast</widgetdefault>
+	<widgetdefault defaultID="livetv">PVR</widgetdefault>
 
 	<!-- Playlists -->
 	<widgetPlaylists>True</widgetPlaylists>
