@@ -68,7 +68,7 @@
 				<imagepath background="true">$INFO[Container(9000).ListItem.Thumb]</imagepath>
 				<aspectratio>stretch</aspectratio>
 				<visible>!Window.IsActive(videooverlay)</visible>
-				<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(defaultID),weather) | !Skin.HasSetting(DynamicWeather)</visible>
+				<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(labelID),weather) | !Skin.HasSetting(DynamicWeather)</visible>
 			</control>
 			<control type="image">
 				<posx>240</posx>
@@ -78,7 +78,7 @@
 				<texture>special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)].jpg</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!Window.IsActive(videooverlay)</visible>
-				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Property(defaultID),weather) + Skin.HasSetting(DynamicWeather)</visible>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Property(labelID),weather) + Skin.HasSetting(DynamicWeather)</visible>
 			</control>
 			<control type="videowindow">
 				<posx>240</posx>

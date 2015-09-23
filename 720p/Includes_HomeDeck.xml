@@ -93,7 +93,7 @@
 					<height>74</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(Movies.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(defaultID),movies)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(Movies.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(labelID),movies)]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
@@ -151,8 +151,7 @@
 					<height>74</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(defaultID),tvshows)]]</visible>
-				<visible></visible>
+					<visible>IntegerGreaterThan(Window.Property(Episodes.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(labelID),tvshows)]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
@@ -211,7 +210,7 @@
 					<height>74</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(defaultID),music)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(Music.SongsCount),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(labelID),music)]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
@@ -270,7 +269,7 @@
 					<height>26</height>
 					<orientation>vertical</orientation>
 					<itemgap>0</itemgap>
-					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(defaultID),musicvideos)]]</visible>
+					<visible>IntegerGreaterThan(Window.Property(MusicVideos.Count),0) + [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] | [StringCompare(Container(9000).ListItem.Property(labelID),musicvideos)]]</visible>
 					<control type="grouplist">
 						<height>24</height>
 						<orientation>horizontal</orientation>
