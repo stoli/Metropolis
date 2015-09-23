@@ -5,6 +5,11 @@
 		<!-- Heading -->
 		<control type="group">
 			<visible>[StringCompare(Window.Property(groupname),mainmenu) + IsEmpty(Window.Property(additionalDialog))] | !StringCompare(Window.Property(groupname),mainmenu)</visible>
+			<include>Animation_OpenCloseFade</include>
+			<!-- XXX: this doesn't fade for DialogSelect for some reason.. fix later -->
+			<animation type="Conditional" condition="Window.IsActive(selectdialog) | Window.IsActive(filebrowser)">
+				<effect type="fade" time="200" start="100" end="10" />
+			</animation>
 			<posx>30</posx>
 			<posy>10</posy>
 			<control type="label">

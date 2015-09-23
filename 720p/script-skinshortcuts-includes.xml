@@ -94,6 +94,8 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-31601</property>
 			<property name="group">mainmenu</property>
+			<property name="widget">PVR</property>
+			<property name="widgetName">PVR Status</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="7">
