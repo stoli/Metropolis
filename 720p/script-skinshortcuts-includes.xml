@@ -5,7 +5,6 @@
 			<label>$LOCALIZE[341]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/playdisc.png</icon>
-			<thumb>home_art/playdisc.jpg</thumb>
 			<property name="labelID">341</property>
 			<property name="defaultID">dvd</property>
 			<visible>System.HasMediaDVD</visible>
@@ -14,13 +13,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-341</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\dvd\</property>
+			<property name="backgroundName">$LOCALIZE[341]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/movies.png</icon>
-			<thumb>home_art/movies.jpg</thumb>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -31,13 +31,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedMovies</property>
 			<property name="widgetName">Recently Added Movies</property>
+			<property name="background">home\movies\</property>
+			<property name="backgroundName">$LOCALIZE[342]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/tvshows.png</icon>
-			<thumb>home_art/tvshows.jpg</thumb>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -48,13 +49,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedEpisodes</property>
 			<property name="widgetName">Recently Added Episodes</property>
+			<property name="background">home\tvshows\</property>
+			<property name="backgroundName">$LOCALIZE[20343]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[3]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/videos.png</icon>
-			<thumb>home_art/videos.jpg</thumb>
 			<property name="labelID">3</property>
 			<property name="defaultID">videos</property>
 			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
@@ -62,13 +64,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-3</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\videos\</property>
+			<property name="backgroundName">$LOCALIZE[3]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[31334]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/trailers.png</icon>
-			<thumb>home_art/trailers.jpg</thumb>
 			<property name="labelID">plugin.video.itunes_trailers</property>
 			<property name="defaultID">trailers</property>
 			<visible>System.HasAddon(plugin.video.itunes_trailers)</visible>
@@ -79,13 +82,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">ComingSoonMovies</property>
 			<property name="widgetName">Rotten Tomatoes (Coming Soon)</property>
+			<property name="background">home\trailers\</property>
+			<property name="backgroundName">$LOCALIZE[31334]</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31601]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/livetv.png</icon>
-			<thumb>home_art/livetv.jpg</thumb>
 			<property name="labelID">31601</property>
 			<property name="defaultID">livetv</property>
 			<visible>[PVR.HasTVChannels] + [PVR.HasTVChannels + System.GetBool(pvrmanager.enabled)]</visible>
@@ -96,13 +100,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">PVR</property>
 			<property name="widgetName">PVR Status</property>
+			<property name="background">home\livetv\</property>
+			<property name="backgroundName">$LOCALIZE[31601]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[2]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/music.png</icon>
-			<thumb>home_art/music.jpg</thumb>
 			<property name="labelID">2</property>
 			<property name="defaultID">music</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -113,13 +118,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedAlbums</property>
 			<property name="widgetName">Recently Added Albums</property>
+			<property name="background">home\music\</property>
+			<property name="backgroundName">$LOCALIZE[2]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/musicvideos.png</icon>
-			<thumb>home_art/musicvideos.jpg</thumb>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -130,13 +136,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LibraryRecentlyAddedMusicVideos</property>
 			<property name="widgetName">Recently Added Music Videos (Built-in)</property>
+			<property name="background">home\musicvideos\</property>
+			<property name="backgroundName">$LOCALIZE[20389]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[31602]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/radio.png</icon>
-			<thumb>home_art/radio.jpg</thumb>
 			<property name="labelID">31602</property>
 			<property name="defaultID">radio</property>
 			<visible>[PVR.HasRadioChannels] + [PVR.HasRadioChannels + System.GetBool(pvrmanager.enabled)]</visible>
@@ -145,13 +152,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-31602</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\radio\</property>
+			<property name="backgroundName">$LOCALIZE[31602]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[1]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/pictures.png</icon>
-			<thumb>home_art/pictures.jpg</thumb>
 			<property name="labelID">1</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
@@ -159,13 +167,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-1</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\pictures\</property>
+			<property name="backgroundName">$LOCALIZE[1]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[24001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/programs.png</icon>
-			<thumb>home_art/programs.jpg</thumb>
 			<property name="labelID">24001</property>
 			<property name="defaultID">programs</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
@@ -173,13 +182,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-24001</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\programs\</property>
+			<property name="backgroundName">$LOCALIZE[24001]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="12">
 			<label>$LOCALIZE[8]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/weather.png</icon>
-			<thumb>home_art/weather.jpg</thumb>
 			<property name="labelID">8</property>
 			<property name="defaultID">weather</property>
 			<visible>[!IsEmpty(Weather.Plugin)] + [!IsEmpty(Weather.Plugin)]</visible>
@@ -190,13 +200,14 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">WeatherForecast</property>
 			<property name="widgetName">Weather Forecast</property>
+			<property name="background">home\weather\</property>
+			<property name="backgroundName">$LOCALIZE[8]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="13">
 			<label>$LOCALIZE[1036]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/favourites.png</icon>
-			<thumb>home_art/favourites.jpg</thumb>
 			<property name="labelID">1036</property>
 			<property name="defaultID">favourites</property>
 			<onclick>ActivateWindow(favourites)</onclick>
@@ -204,13 +215,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-1036</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\favourites\</property>
+			<property name="backgroundName">$LOCALIZE[1036]</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="14">
 			<label>$LOCALIZE[5]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/settings.png</icon>
-			<thumb>home_art/settings.jpg</thumb>
 			<property name="labelID">5</property>
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindow(Settings)</onclick>
@@ -218,13 +230,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-5</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\settings\</property>
+			<property name="backgroundName">$LOCALIZE[5]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="15">
 			<label>$LOCALIZE[20126]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/logoff.png</icon>
-			<thumb>home_art/logoff.jpg</thumb>
 			<property name="labelID">20126</property>
 			<property name="defaultID">logoff</property>
 			<visible>[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon]</visible>
@@ -233,13 +246,14 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-20126</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\logoff\</property>
+			<property name="backgroundName">$LOCALIZE[20126]</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="16">
 			<label>$LOCALIZE[13005]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/shutdown.png</icon>
-			<thumb>home_art/shutdown.jpg</thumb>
 			<property name="labelID">13005</property>
 			<property name="defaultID">shutdown</property>
 			<onclick>ShutDown</onclick>
@@ -247,6 +261,8 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-13005</property>
 			<property name="group">mainmenu</property>
+			<property name="background">home\shutdown\</property>
+			<property name="backgroundName">$LOCALIZE[13005]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 	</include>

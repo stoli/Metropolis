@@ -63,7 +63,7 @@
 		<!-- Main menu background -->
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture background="true" diffuse="diffuse_fanart.png">$INFO[Container(9000).ListItem.Thumb]</texture>
+			<texture background="true" diffuse="diffuse_fanart.png">$VAR[HomeBackground]</texture>
 			<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 			<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
 			<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(labelID),weather) | !Skin.HasSetting(DynamicWeather)</visible>

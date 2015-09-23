@@ -170,12 +170,12 @@
 				</focusedlayout>
 			</control>
 
-			<!-- Icon and Thumbnail Background -->
+			<!-- Icon and Background backdrop -->
 			<control type="image" id="913">
 				<left>550</left>
-				<top>140</top>
+				<top>174</top>
 				<width>448</width>
-				<height>180</height>
+				<height>156</height>
 				<texture background="true" >list/listfocus.png</texture>
 				<colordiffuse>BackgroundColor</colordiffuse>
 			</control>
@@ -207,37 +207,51 @@
 					<label>$ADDON[script.skinshortcuts 32048]</label>
 					<label2>$INFO[Container(211).ListItem.Property(path)]</label2>
 				</control>
-				<!-- Choose thumbnail -->
-				<control type="button" id="306">
+				<!-- Choose thumbnail (Home2 icon) -->
+				<control type="button" id="311">
 					<description>Choose thumbnail Button</description>
 					<left>0</left>
 					<top>0</top>
 					<width>700</width>
-					<height>42</height>
+					<height>36</height>
 					<font>METF_SettingsDetail</font>
 					<textcolor>white</textcolor>
 					<align>left</align>
 					<aligny>top</aligny>
-					<label>20019</label>
-					<label2>$INFO[Container(211).ListItem.Property(thumbnail)]</label2>
+					<label>$ADDON[script.skinshortcuts 32026]</label>
+					<label2>$INFO[Container(211).ListItem.Icon]</label2>
 				</control>
-				<!-- Background Icon -->
+				<!-- Choose background -->
+				<control type="button" id="310">
+					<description>Choose thumbnail Button</description>
+					<left>0</left>
+					<top>0</top>
+					<width>700</width>
+					<height>36</height>
+					<font>METF_SettingsDetail</font>
+					<textcolor>white</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>$ADDON[script.skinshortcuts 32045]</label>
+					<label2>$VAR[HomeBackgroundSkinShortcuts]</label2>
+				</control>
+				<!-- Thumbnail (Home2 icon) -->
 				<control type="image" id="909">
 					<left>210</left>
 					<top>0</top>
 					<width>80</width>
-					<height>140</height>
-					<texture background="true" fallback="DefaultShortcut.png">$INFO[Container(211).ListItem.ActualIcon]</texture>
-				</control>
-				<!-- Background Thumbnail -->
-				<control type="image" id="910">
-					<left>350</left>
-					<top>-140</top>
-					<width>220</width>
-					<height>140</height>
+					<height>120</height>
 					<texture background="true" fallback="DefaultShortcut.png">$INFO[Container(211).ListItem.Icon]</texture>
 				</control>
-				<!-- Current Icon Label -->
+				<!-- Background -->
+				<control type="image" id="910">
+					<left>350</left>
+					<top>-120</top>
+					<width>220</width>
+					<height>120</height>
+					<texture background="true" fallback="DefaultShortcut.png">$VAR[HomeBackgroundSkinShortcuts]</texture>
+				</control>
+				<!-- Thumbnail Label -->
 				<control type="label" id="911">
 					<left>150</left>
 					<top>0</top>
@@ -247,9 +261,9 @@
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[19282]</label>
+					<label>$LOCALIZE[21371]</label>
 				</control>
-				<!-- Current Thumbnail Label -->
+				<!-- Background Label -->
 				<control type="label" id="912">
 					<left>360</left>
 					<top>-30</top>
@@ -259,7 +273,7 @@
 					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[20016]</label>
+					<label>$LOCALIZE[19190]</label>
 				</control>
 				<!-- Set label -->
 				<control type="button" id="305">

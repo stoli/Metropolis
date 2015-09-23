@@ -68,7 +68,7 @@
 					<posy>75</posy>
 					<width>150</width>
 					<height>300</height>
-					<texture>$INFO[ListItem.ActualIcon]</texture>
+					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
@@ -86,7 +86,7 @@
 					<posy>75</posy>
 					<width>150</width>
 					<height>300</height>
-					<texture>$INFO[ListItem.ActualIcon]</texture>
+					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>stretch</aspectratio>
 					<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
 					<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>

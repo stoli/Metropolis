@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="HomeBackground">
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\dvd\)">home_art/playdisc.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\movies\)">home_art/movies.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\tvshows\)">home_art/tvshows.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\videos\)">home_art/videos.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\trailers\)">home_art/trailers.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\livetv\)">home_art/livetv.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\music\)">home_art/music.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\musicvideos\)">home_art/musicvideos.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\radio\)">home_art/radio.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\pictures\)">home_art/pictures.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\programs\)">home_art/programs.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\weather\)">home_art/weather.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\favourites\)">home_art/favourites.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\settings\)">home_art/settings.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\logoff\)">home_art/logoff.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\shutdown\)">home_art/shutdown.jpg</value>
+		<value condition="!IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
+	</variable>
+	<variable name="HomeBackgroundSkinShortcuts">
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\dvd\)">home_art/playdisc.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\movies\)">home_art/movies.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\tvshows\)">home_art/tvshows.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\videos\)">home_art/videos.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\trailers\)">home_art/trailers.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\livetv\)">home_art/livetv.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\music\)">home_art/music.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\musicvideos\)">home_art/musicvideos.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\radio\)">home_art/radio.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\pictures\)">home_art/pictures.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\programs\)">home_art/programs.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\weather\)">home_art/weather.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\favourites\)">home_art/favourites.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\settings\)">home_art/settings.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\logoff\)">home_art/logoff.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\shutdown\)">home_art/shutdown.jpg</value>
+		<value>$INFO[Container(211).ListItem.Property(background)]</value>
+	</variable>
+
 	<variable name="ListItemTitle">
 		<value condition="Container.Content(albums) | Container.Content(songs)">$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</value>
 		<value condition="SubString(Container.FolderPath,plugin)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Label]</value>

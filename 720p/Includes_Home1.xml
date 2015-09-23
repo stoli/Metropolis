@@ -65,7 +65,7 @@
 				<timeperimage>15000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>500</fadetime>
-				<imagepath background="true">$INFO[Container(9000).ListItem.Thumb]</imagepath>
+				<imagepath background="true">$VAR[HomeBackground]</imagepath>
 				<aspectratio>stretch</aspectratio>
 				<visible>!Window.IsActive(videooverlay)</visible>
 				<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(labelID),weather) | !Skin.HasSetting(DynamicWeather)</visible>
