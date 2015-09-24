@@ -223,7 +223,7 @@
 				</control>
 				<!-- Choose background -->
 				<control type="button" id="310">
-					<description>Choose thumbnail Button</description>
+					<description>Choose background Button</description>
 					<left>0</left>
 					<top>0</top>
 					<width>700</width>
@@ -244,12 +244,16 @@
 					<texture background="true" fallback="DefaultShortcut.png">$INFO[Container(211).ListItem.Icon]</texture>
 				</control>
 				<!-- Background -->
-				<control type="image" id="910">
+				<control type="multiimage" id="910">
 					<left>350</left>
 					<top>-120</top>
 					<width>220</width>
 					<height>120</height>
-					<texture background="true" fallback="DefaultShortcut.png">$VAR[HomeBackgroundSkinShortcuts]</texture>
+					<timeperimage>15000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>500</fadetime>
+					<imagepath background="true">$VAR[HomeBackgroundSkinShortcuts]</imagepath>
+					<aspectratio>stretch</aspectratio>
 				</control>
 				<!-- Thumbnail Label -->
 				<control type="label" id="911">
