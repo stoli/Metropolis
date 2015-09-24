@@ -138,10 +138,12 @@
 			</control>
 		</control>
 
-		<!-- Submenu  -->
+		<!-- Submenus -->
 		<control type="list" id="9001">
-			<animation effect="fade" start="0" end="100" time="0">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="200">Visible</animation>
+			<include>Animation_OpenCloseFade</include>
+			<include>Animation_FadedByMenu</include>
 			<posx>490</posx>
 			<posy>554</posy>
 			<width>300</width>
@@ -150,7 +152,7 @@
 			<ondown>9001</ondown>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<visible allowhiddenfocus="true">![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)] + [!StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast) | Control.HasFocus(9001)]</visible>
+			<visible allowhiddenfocus="true">![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)] + Control.HasFocus(9001)</visible>
 			<orientation>vertical</orientation>
 			<defaultcontrol always="true">1</defaultcontrol>
 			<scrolltime tween="sine" easing="out">240</scrolltime>
