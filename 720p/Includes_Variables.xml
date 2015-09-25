@@ -119,6 +119,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),PremiereShows)">plugin://script.extendedinfo?info=premiereshows</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),XKCD)">plugin://script.extendedinfo?info=xkcd</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Cyanide)">plugin://script.extendedinfo?info=cyanide</value>
+		<value>$INFO[Container(9000).ListItem.Property(widgetPlaylist)]</value>
 	</variable>
 
 	<!-- setting the dynamic content target variable -->
@@ -142,7 +143,15 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomSongs)">$INFO[ListItem.Artist] - $INFO[ListItem.Title]</value>
+
+		<!-- fixing the playlists content labels-->
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Playlist) + IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Playlist) + !IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
+	</variable>
+
+	<variable name="GlobalWidgetIcon">
+		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 
 	<variable name="RatingColor">
