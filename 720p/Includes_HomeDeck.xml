@@ -325,7 +325,7 @@
 			<control type="group" id="9002">
 				<!-- Widget Menus -->
 				<control type="group">
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | [Skin.HasSetting(Home1) + Skin.HasSetting(HideUnfocusedWidgets)]] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))]</visible>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | Skin.HasSetting(HideUnfocusedWidgets)] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))]</visible>
 					<control type="button" id="8001">
 						<description>Fake button for picture-based widgets</description>
 						<onup>Control.Move(8000,-1)</onup>
@@ -347,7 +347,7 @@
 						<bordertexture border="6">frames/thumb_border.png</bordertexture>
 						<bordersize>6</bordersize>
 						<texture diffuse="frames/EpisodeMatte.png">$INFO[Container(8000).ListItem.Icon]</texture>
-						<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | [Skin.HasSetting(Home1) + Skin.HasSetting(HideUnfocusedWidgets)]] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
+						<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | Skin.HasSetting(HideUnfocusedWidgets)] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 					</control>
 					<control type="list" id="8000">
 						<description>Widget Lists</description>
@@ -391,7 +391,7 @@
 			<control type="group">
 				<left>470</left>
 				<top>554</top>
-				<visible>[Control.HasFocus(8002) | [Skin.HasSetting(Home1) + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
+				<visible>[Control.HasFocus(8002) | !Skin.HasSetting(HideUnfocusedWidgets)] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(Favourites)">conditional</animation>
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,80" time="0" condition="PVR.IsRecording">conditional</animation>
@@ -529,7 +529,7 @@
 				<height>WeatherHomeHeight</height>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<visible>[Control.HasFocus(8003) | [Skin.HasSetting(Home1) + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
+				<visible>[Control.HasFocus(8003) | !Skin.HasSetting(HideUnfocusedWidgets)] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
 				<!-- Current Day Forecast -->
 				<control type="group">
 					<width>WeatherHomeWidth</width>
@@ -930,7 +930,7 @@
 				<font>METF_RecentlyAddedListText</font>
 				<textcolor>RecentlyAddedNF</textcolor>
 				<label>$VAR[GlobalWidgetLabel]</label>
-				<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | [Skin.HasSetting(Home1) + Skin.HasSetting(HideUnfocusedWidgets)]] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
+				<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | Skin.HasSetting(HideUnfocusedWidgets)] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 			</control>
 		</itemlayout>
 		<focusedlayout width="510" height="27">
@@ -958,7 +958,7 @@
 				<font>METF_RecentlyAddedListText</font>
 				<textcolor>FocusBarText</textcolor>
 				<label>$VAR[GlobalWidgetLabel]</label>
-				<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | [Skin.HasSetting(Home1) + Skin.HasSetting(HideUnfocusedWidgets)]] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
+				<visible>[![Skin.HasSetting(Home2) | Skin.HasSetting(Home3) | Skin.HasSetting(HideUnfocusedWidgets)] + !Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(widget))] | [Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 			</control>
 		</focusedlayout>
 	</include>
