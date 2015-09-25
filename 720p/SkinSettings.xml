@@ -251,15 +251,21 @@
 						<selected>Skin.HasSetting(DynamicWeather)</selected>
 						<visible>!Skin.HasSetting(Home2)</visible>
 					</control>
-					<control type="image" id="206">
+					<control type="radiobutton" id="206">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31036]</label>
+						<onclick>Skin.ToggleSetting(HideUnfocusedWidgets)</onclick>
+						<selected>Skin.HasSetting(HideUnfocusedWidgets)</selected>
+					</control>
+					<control type="image" id="207">
 						<include>Settings_Line</include>
 					</control>
-					<control type="button" id="207">
+					<control type="button" id="208">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31718]</label>
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 					</control>
-					<control type="button" id="208">
+					<control type="button" id="209">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31719]</label>
 						<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
