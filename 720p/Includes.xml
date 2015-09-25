@@ -131,7 +131,7 @@
 		</control>
 	</include>
 
-	<!--  Navigation Menu Background Panel -->
+	<!-- Navigation Menu Background Panel -->
 	<include name="NavMenuBackground">
 		<control type="image">
 			<description>background image</description>

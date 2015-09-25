@@ -294,20 +294,21 @@
 
 	<include name="HomeDeck">
 		<control type="group">
+			<animation effect="fade" start="100" end="0" time="0" condition="[Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + Control.HasFocus(9001)">conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="200" condition="[Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !Control.HasFocus(9001)">conditional</animation>
+
 			<!-- Widgets for all home views -->
 			<control type="group">
 				<include>Animation_OpenCloseFade</include>
 				<include>Animation_FadedByMenu</include>
-				<visible>true</visible>
 				<!-- Widget arrow for all home views -->
 				<control type="image">
 					<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">RecentlyAddedArrow1</include>
 					<include condition="Skin.HasSetting(Home2)">RecentlyAddedArrow2</include>
 					<include condition="Skin.HasSetting(Home3)">RecentlyAddedArrow3</include>
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast) + ![[StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.IsRecording] + [StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.HasNonRecordingTimer]]</visible>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + ![[StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.IsRecording] + [StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.HasNonRecordingTimer]]</visible>
 					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 				</control>
-
 				<!-- Widget titles for all home views -->
 				<control type="label">
 					<include condition="![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)]">RecentlyAddedTitle1</include>
@@ -315,17 +316,13 @@
 					<include condition="Skin.HasSetting(Home3)">RecentlyAddedTitle3</include>
 					<label>[B]$INFO[Container(9000).ListItem.Property(widgetName)][/B]</label>
 					<shadowcolor>ff000000</shadowcolor>
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast) + ![[StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.IsRecording] + [StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.HasNonRecordingTimer]]</visible>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + ![[StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.IsRecording] + [StringCompare(Container(9000).ListItem.Property(Widget),PVR) + !PVR.HasNonRecordingTimer]]</visible>
 					<visible>![Control.HasFocus(8000) | Control.HasFocus(8001) | Control.HasFocus(8002) | Control.HasFocus(8003)]</visible>
 				</control>
 			</control>
 
+			<!-- Widgets -->
 			<control type="group" id="9002">
-				<animation effect="fade" start="100" end="0" time="0" condition="[Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !ControlGroup(9002).HasFocus()">conditional</animation>
-				<animation effect="fade" start="0" end="100" delay="200" time="200" condition="[Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + ControlGroup(9002).HasFocus()">conditional</animation>
-
-				<!-- Widget Thumbnails -->
-
 				<!-- Vertical List Widget thumbnail -->
 				<control type="group">
 					<control type="image">
@@ -376,8 +373,8 @@
 					<control type="list" id="8000">
 						<include>Global_Widget</include>
 						<content target="$VAR[GlobalWidgetType]">$VAR[GlobalWidgetContent]</content>
+						<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + ![StringCompare(Container(9000).ListItem.Property(Widget),Playlist) | StringCompare(Container(9000).ListItem.Property(Widget),PVR) | StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)]</visible>
 					</control>
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + ![StringCompare(Container(9000).ListItem.Property(Widget),Playlist) | StringCompare(Container(9000).ListItem.Property(Widget),PVR) | StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)]</visible>
 				</control>
 
 				<!-- Playlist Widget -->
@@ -412,10 +409,25 @@
 					<label>-</label>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
-					<onup>8002</onup>
-					<ondown>8002</ondown>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
 					<onclick>ActivateWindow(TVTimers)</onclick>
 					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
+				</control>
+
+				<!-- Weather Widget button -->
+				<control type="button" id="8003">
+					<left>1</left>
+					<top>1</top>
+					<width>1</width>
+					<height>1</height>
+					<label>-</label>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onclick>ActivateWindow(Weather)</onclick>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
 				</control>
 			</control>
 
@@ -423,7 +435,7 @@
 			<control type="group">
 				<left>470</left>
 				<top>554</top>
-				<visible>Control.HasFocus(8002) + [!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]]</visible>
+				<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(Favourites)">conditional</animation>
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,80" time="0" condition="PVR.IsRecording">conditional</animation>
@@ -553,8 +565,7 @@
 			</control>
 
 			<!-- Weather Forecast Widget -->
-			<control type="grouplist" id="8003">
-				<visible>Control.HasFocus(9000) + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
+			<control type="grouplist">
 				<top>WeatherHomeTop</top>
 				<!-- <left>WeatherHomeLeft</left> -->
 				<left>0</left>
@@ -562,6 +573,7 @@
 				<height>WeatherHomeHeight</height>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
+				<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
 				<!-- Current Day Forecast -->
 				<control type="group">
 					<width>WeatherHomeWidth</width>
@@ -924,7 +936,6 @@
 					</control>
 				</control>
 			</control>
-			
 		</control>
 	</include>
 
@@ -1008,8 +1019,8 @@
 		<posy>563</posy>
 		<width>510</width>
 		<height>135</height>
-		<onup>8000</onup>
-		<ondown>8000</ondown>
+		<onup>8001</onup>
+		<ondown>8001</ondown>
 		<onleft>9000</onleft>
 		<onright>9000</onright>
 		<viewtype>list</viewtype>
