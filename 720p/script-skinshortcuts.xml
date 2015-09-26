@@ -376,7 +376,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="5">ButtonFo.png</texturefocus>
 					<texturenofocus border="5">ButtonNf.png</texturenofocus>
-					<onclick condition="StringCompare(Window.Property(groupname),mainmenu)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onclick>
 					<onclick>Close</onclick>
 				</control>
 				<!-- Reset -->
