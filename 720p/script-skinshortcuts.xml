@@ -330,7 +330,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$ADDON[script.skinshortcuts 32072]</label>
-					<onclick>SetProperty(level,0)</onclick>
 					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<control type="image" id="906">
