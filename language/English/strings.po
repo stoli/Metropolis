@@ -101,10 +101,14 @@ msgid "Show Clean Library SubMenu items"
 msgstr ""
 
 msgctxt "#31036"
-msgid "Hide Widgets until focused on Default Home Layout"
+msgid "Hide Widgets until focused"
 msgstr ""
 
-#empty strings from id 31036 to 31053
+msgctxt "#31037"
+msgid "Stretch background fanart to fit into viewable area"
+msgstr ""
+
+#empty strings from id 31038 to 31053
 
 msgctxt "#31054"
 msgid "Logo"

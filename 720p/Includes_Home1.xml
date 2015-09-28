@@ -66,19 +66,22 @@
 				<randomize>true</randomize>
 				<fadetime>500</fadetime>
 				<imagepath background="true">$VAR[HomeBackground]</imagepath>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<visible>!Window.IsActive(videooverlay)</visible>
-				<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(labelID),weather) | !Skin.HasSetting(DynamicWeather)</visible>
+				<visible allowhiddenfocus="true">!Skin.HasSetting(HomeStretchBackgrounds)</visible>
 			</control>
-			<control type="image">
+			<control type="multiimage">
 				<posx>240</posx>
 				<posy>50</posy>
 				<width>800</width>
 				<height>450</height>
-				<texture>special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)].jpg</texture>
+				<timeperimage>15000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>500</fadetime>
+				<imagepath background="true">$VAR[HomeBackground]</imagepath>
 				<aspectratio>stretch</aspectratio>
 				<visible>!Window.IsActive(videooverlay)</visible>
-				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Property(labelID),weather) + Skin.HasSetting(DynamicWeather)</visible>
+				<visible allowhiddenfocus="true">Skin.HasSetting(HomeStretchBackgrounds)</visible>
 			</control>
 			<control type="videowindow">
 				<posx>240</posx>

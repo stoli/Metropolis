@@ -67,16 +67,20 @@
 			<randomize>true</randomize>
 			<fadetime>500</fadetime>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$VAR[HomeBackground]</imagepath>
-			<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
-			<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-			<visible allowhiddenfocus="true">!StringCompare(Container(9000).ListItem.Property(labelID),weather) | !Skin.HasSetting(DynamicWeather)</visible>
+			<aspectratio>stretch</aspectratio>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(HomeStretchBackgrounds)</visible>
 		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture background="true" diffuse="diffuse_fanart.png">special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)].jpg</texture>
-			<animation reversible="false" effect="zoom" center="auto" start="100" end="112" time="200" tween="sine" easing="inout">focus</animation>
-			<animation reversible="false" effect="zoom" center="auto" start="112" end="100" time="200" tween="sine" easing="inout">unfocus</animation>
-			<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Property(labelID),weather) + Skin.HasSetting(DynamicWeather)</visible>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>542</height>
+			<timeperimage>15000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>500</fadetime>
+			<imagepath background="true">$VAR[HomeBackground]</imagepath>
+			<aspectratio>stretch</aspectratio>
+			<visible allowhiddenfocus="true">Skin.HasSetting(HomeStretchBackgrounds)</visible>
 		</control>
 
 		<!-- Sub-menus and upper-menus -->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="HomeBackground">
+		<value condition="StringCompare(Container(9000).ListItem.Property(labelID),weather) + Skin.HasSetting(DynamicWeather)">special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)].jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\dvd\)">home_art/playdisc.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\movies\)">home_art/movies.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\tvshows\)">home_art/tvshows.jpg</value>
