@@ -107,14 +107,6 @@
 		<defaultID>settings</defaultID>
 	</shortcut>
 	<shortcut>
-		<label>$LOCALIZE[20126]</label>
-		<label2>32034</label2>
-		<icon>home_icons/logoff.png</icon>
-		<action>System.LogOff</action>
-		<visible>[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon</visible>
-		<defaultID>logoff</defaultID>
-	</shortcut>
-	<shortcut>
 		<label>$LOCALIZE[13005]</label>
 		<label2>32034</label2>
 		<icon>home_icons/shutdown.png</icon>
