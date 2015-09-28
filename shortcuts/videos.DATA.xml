@@ -40,6 +40,12 @@
 		<action>ActivateWindow(Videos,root)</action>
 	</shortcut>
 	<shortcut>
+		<label>5</label>
+		<label2>32034</label2>
+		<icon>DefaultShortcut.png</icon>
+		<action>ActivateWindow(VideosSettings)</action>
+	</shortcut>
+	<shortcut>
 		<label>31465</label>
 		<label2>32034</label2>
 		<icon>DefaultShortcut.png</icon>
@@ -50,11 +56,5 @@
 		<label2>32034</label2>
 		<icon>DefaultShortcut.png</icon>
 		<action>UpdateLibrary(video)</action>
-	</shortcut>
-	<shortcut>
-		<label>5</label>
-		<label2>32034</label2>
-		<icon>DefaultShortcut.png</icon>
-		<action>ActivateWindow(VideosSettings)</action>
 	</shortcut>
 </shortcuts>
