@@ -105,7 +105,7 @@
 		<icon>home_icons/search.png</icon>
 		<action>RunScript(script.globalsearch)</action>
 		<visible>System.HasAddon(script.globalsearch)</visible>
-		<defaultID>script.globalsearch</defaultID>
+		<defaultID>search</defaultID>
 	</shortcut>
 	<shortcut>
 		<label>$LOCALIZE[5]</label>

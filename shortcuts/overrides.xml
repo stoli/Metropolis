@@ -153,10 +153,10 @@
 	<backgrounddefault defaultID="weather">home\weather\</backgrounddefault>
 	<background label="1036">home\favourites\</background>
 	<backgrounddefault defaultID="favourites">home\favourites\</backgrounddefault>
+	<background label="137">home\search\</background>
+	<backgrounddefault defaultID="search">home\search\</backgrounddefault>
 	<background label="5">home\settings\</background>
 	<backgrounddefault defaultID="settings">home\settings\</backgrounddefault>
-	<background label="20126">home\logoff\</background>
-	<backgrounddefault defaultID="logoff">home\logoff\</backgrounddefault>
 	<background label="13005">home\shutdown\</background>
 	<backgrounddefault defaultID="shutdown">home\shutdown\</backgrounddefault>
 	<backgroundBrowse>True</backgroundBrowse>
@@ -176,8 +176,8 @@
 	<thumbnail label="24001">home_icons/programs.png</thumbnail>
 	<thumbnail label="8">home_icons/weather.png</thumbnail>
 	<thumbnail label="1036">home_icons/favourites.png</thumbnail>
+	<thumbnail label="137">home_icons/search.png</thumbnail>
 	<thumbnail label="5">home_icons/settings.png</thumbnail>
-	<thumbnail label="20126">home_icons/logoff.png</thumbnail>
 	<thumbnail label="13005">home_icons/shutdown.png</thumbnail>
 	<thumbnailBrowseDefault>special://skin/media/home_icons</thumbnailBrowseDefault>
 </overrides>

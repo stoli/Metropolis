@@ -15,8 +15,8 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\programs\)">home_art/programs.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\weather\)">home_art/weather.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\favourites\)">home_art/favourites.jpg</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\search\)">home_art/search.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\settings\)">home_art/settings.jpg</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\logoff\)">home_art/logoff.jpg</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(background),home\shutdown\)">home_art/shutdown.jpg</value>
 		<value condition="!IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
 	</variable>
@@ -34,8 +34,8 @@
 		<value condition="StringCompare(Container(211).ListItem.Property(background),home\programs\)">home_art/programs.jpg</value>
 		<value condition="StringCompare(Container(211).ListItem.Property(background),home\weather\)">home_art/weather.jpg</value>
 		<value condition="StringCompare(Container(211).ListItem.Property(background),home\favourites\)">home_art/favourites.jpg</value>
+		<value condition="StringCompare(Container(211).ListItem.Property(background),home\search\)">home_art/search.jpg</value>
 		<value condition="StringCompare(Container(211).ListItem.Property(background),home\settings\)">home_art/settings.jpg</value>
-		<value condition="StringCompare(Container(211).ListItem.Property(background),home\logoff\)">home_art/logoff.jpg</value>
 		<value condition="StringCompare(Container(211).ListItem.Property(background),home\shutdown\)">home_art/shutdown.jpg</value>
 		<value>$INFO[Container(211).ListItem.Property(background)]</value>
 	</variable>
