@@ -42,10 +42,10 @@
 				<top>-10</top>
 				<width>1</width>
 				<height>1</height>
-				<onleft>noop</onleft>
+				<onleft>211</onleft>
 				<onright>303</onright>
-				<onup>Control.Move(211,-1)</onup>
-				<ondown>Control.Move(211,1)</ondown>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 			</control>
 			<!-- Move up -->
 			<control type="button" id="303">
@@ -55,8 +55,8 @@
 				<height>1</height>
 				<onleft>304</onleft>
 				<onright>302</onright>
-				<onup>Control.Move(211,-1)</onup>
-				<ondown>Control.Move(211,1)</ondown>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 			</control>
 			<!-- Remove -->
 			<control type="button" id="302">
@@ -66,8 +66,8 @@
 				<height>1</height>
 				<onleft>303</onleft>
 				<onright>9001</onright>
-				<onup>Control.Move(211,-1)</onup>
-				<ondown>Control.Move(211,1)</ondown>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
 			</control>
 
 			<!-- Left list -->
@@ -76,10 +76,10 @@
 				<top>65</top>
 				<width>370</width>
 				<height>462</height>
-				<onleft>noop</onleft>
+				<onleft>9001</onleft>
 				<onright>304</onright>
-				<onup>noop</onup>
-				<ondown>9001</ondown>
+				<onup>211</onup>
+				<ondown>211</ondown>
 				<scrolltime tween="sine" easing="out">240</scrolltime>
 				<itemlayout width="375" height="38">
 					<control type="label">
@@ -187,10 +187,10 @@
 				<width>800</width>
 				<height>660</height>
 				<itemgap>0</itemgap>
-				<onleft>302</onleft>
+				<onleft>211</onleft>
 				<onright>noop</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<scrolltime tween="sine" easing="out">240</scrolltime>
@@ -347,7 +347,7 @@
 				<width>800</width>
 				<height>38</height>
 				<itemgap>0</itemgap>
-				<onleft>302</onleft>
+				<onleft>211</onleft>
 				<onright>noop</onright>
 				<onup>405</onup>
 				<ondown>401</ondown>
