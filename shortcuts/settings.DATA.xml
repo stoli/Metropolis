@@ -27,13 +27,13 @@
 	<shortcut>
 		<label>7</label>
 		<label2>32034</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(FileManager)</action>
 	</shortcut>
 	<shortcut>
 		<label>13200</label>
 		<label2>32034</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>UnknownUser.png</icon>
 		<action>ActivateWindow(Profiles)</action>
 	</shortcut>
 	<shortcut>

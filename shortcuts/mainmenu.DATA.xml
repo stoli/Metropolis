@@ -28,7 +28,7 @@
 		<label>10006</label>
 		<label2>32034</label2>
 		<icon>home_icons/videos.png</icon>
-		<action>ActivateWindow(Videos,videodb://files/,return)</action>
+		<action>ActivateWindow(Videos)</action>
 		<defaultID>videos</defaultID>
 	</shortcut>
 	<!-- non-standard mainmenu shortcut -->
@@ -90,7 +90,6 @@
 		<label2>32034</label2>
 		<icon>home_icons/weather.png</icon>
 		<action>ActivateWindow(Weather)</action>
-		<visible>!IsEmpty(Weather.Plugin)</visible>
 		<defaultID>weather</defaultID>
 	</shortcut>
 	<!-- non-standard mainmenu shortcut -->

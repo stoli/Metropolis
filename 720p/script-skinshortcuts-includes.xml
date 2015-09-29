@@ -59,8 +59,8 @@
 			<icon>home_icons/videos.png</icon>
 			<property name="labelID">videos</property>
 			<property name="defaultID">videos</property>
-			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://files/,return)</property>
+			<onclick>ActivateWindow(Videos)</onclick>
+			<property name="path">ActivateWindow(Videos)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">videos</property>
 			<property name="group">mainmenu</property>
@@ -192,7 +192,7 @@
 			<icon>home_icons/weather.png</icon>
 			<property name="labelID">weather</property>
 			<property name="defaultID">weather</property>
-			<visible>[!IsEmpty(Weather.Plugin)] + [!IsEmpty(Weather.Plugin)]</visible>
+			<visible>!IsEmpty(Weather.Plugin)</visible>
 			<onclick>ActivateWindow(Weather)</onclick>
 			<property name="path">ActivateWindow(Weather)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
@@ -281,9 +281,9 @@
 			<property name="group">dvd</property>
 		</item>
 		<item id="1">
-			<label>Recent movies</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label>$LOCALIZE[31438]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -295,7 +295,7 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -307,7 +307,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -319,8 +319,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
@@ -331,8 +331,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20348]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">20348</property>
 			<property name="defaultID">20348</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/directors/,return)</onclick>
@@ -343,7 +343,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20434]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
@@ -356,7 +356,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -369,7 +369,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
@@ -404,7 +404,7 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -418,7 +418,7 @@
 		<item id="2">
 			<label>$LOCALIZE[31428]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultAddonTvInfo.png</icon>
 			<property name="labelID">script.tv.show.next.aired</property>
 			<property name="defaultID">script.tv.show.next.aired</property>
 			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
@@ -430,7 +430,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -442,7 +442,7 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -454,8 +454,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
@@ -466,7 +466,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20388]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20388</property>
 			<property name="defaultID">20388</property>
@@ -478,7 +478,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -491,7 +491,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/files/,return)</onclick>
@@ -526,8 +526,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -539,7 +539,7 @@
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMovies.png</icon>
 			<property name="labelID">20342</property>
 			<property name="defaultID">20342</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -552,7 +552,7 @@
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -565,7 +565,7 @@
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMusicVideos.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -577,8 +577,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultPlaylist.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
@@ -589,12 +589,12 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(Videos,root)</onclick>
-			<property name="path">ActivateWindow(Videos,root)</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
@@ -637,8 +637,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19023</property>
 			<property name="defaultID">19023</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -650,8 +650,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -663,8 +663,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -676,8 +676,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -689,8 +689,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -702,7 +702,7 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -715,8 +715,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -727,8 +727,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -740,8 +740,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -753,8 +753,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -766,8 +766,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -779,8 +779,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -792,8 +792,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -805,8 +805,8 @@
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">589</property>
 			<property name="defaultID">589</property>
 			<onclick>PlayerControl(Partymode(music))</onclick>
@@ -817,12 +817,12 @@
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(MusicFiles,root)</onclick>
-			<property name="path">ActivateWindow(MusicFiles,root)</property>
+			<onclick>ActivateWindow(MusicFiles)</onclick>
+			<property name="path">ActivateWindow(MusicFiles)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
@@ -865,8 +865,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultRecentlyAddedMusicVideos.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -878,8 +878,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres/,return)</onclick>
@@ -890,8 +890,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
@@ -902,8 +902,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
@@ -914,8 +914,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/albums/,return)</onclick>
@@ -926,8 +926,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,Return)</onclick>
@@ -938,8 +938,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/files/,return)</onclick>
@@ -951,7 +951,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31465</property>
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(video)</onclick>
@@ -963,7 +963,7 @@
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">653</property>
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(video)</onclick>
@@ -973,11 +973,11 @@
 			<property name="group">musicvideos</property>
 		</item>
 		<item id="1">
-			<label>$LOCALIZE[19024]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<property name="labelID">19024</property>
-			<property name="defaultID">19024</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
@@ -987,8 +987,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -1000,8 +1000,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -1013,8 +1013,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -1026,8 +1026,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -1039,8 +1039,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32020]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -1063,8 +1063,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">1212</property>
 			<property name="defaultID">1212</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -1075,8 +1075,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">1211</property>
 			<property name="defaultID">1211</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -1087,8 +1087,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">1213</property>
 			<property name="defaultID">1213</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -1099,8 +1099,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddon.png</icon>
 			<property name="labelID">31009</property>
 			<property name="defaultID">31009</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -1123,8 +1123,8 @@
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>RunScript(script.globalsearch,actors=true)</onclick>
@@ -1135,8 +1135,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<onclick>RunScript(script.globalsearch,movies=true)</onclick>
@@ -1147,8 +1147,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
@@ -1159,8 +1159,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20360]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">20360</property>
 			<property name="defaultID">20360</property>
 			<onclick>RunScript(script.globalsearch,episodes=true)</onclick>
@@ -1171,8 +1171,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20389]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
@@ -1183,8 +1183,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>RunScript(script.globalsearch,artists=true)</onclick>
@@ -1195,8 +1195,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>RunScript(script.globalsearch,albums=true)</onclick>
@@ -1207,8 +1207,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>RunScript(script.globalsearch,songs=true)</onclick>
@@ -1268,7 +1268,7 @@
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
@@ -1447,9 +1447,9 @@
 	</include>
 	<include name="skinshortcuts-group-movies">
 		<item id="1">
-			<label>Recent movies</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label>$LOCALIZE[31438]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -1460,7 +1460,7 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -1471,7 +1471,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -1482,8 +1482,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
@@ -1493,8 +1493,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20348]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">20348</property>
 			<property name="defaultID">20348</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/directors/,return)</onclick>
@@ -1504,7 +1504,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20434]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
@@ -1516,7 +1516,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -1528,7 +1528,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
@@ -1561,9 +1561,9 @@
 	</include>
 	<include name="skinshortcuts-group-alt-movies">
 		<item id="1">
-			<label>Recent movies</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label>$LOCALIZE[31438]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -1575,7 +1575,7 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -1587,7 +1587,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -1599,8 +1599,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
@@ -1611,8 +1611,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20348]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">20348</property>
 			<property name="defaultID">20348</property>
 			<onclick>ActivateWindow(Videos,videodb://movies/directors/,return)</onclick>
@@ -1623,7 +1623,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20434]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20434</property>
 			<property name="defaultID">20434</property>
@@ -1636,7 +1636,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -1649,7 +1649,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
@@ -1686,7 +1686,7 @@
 	<include name="skinshortcuts-group-tvshows">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -1699,7 +1699,7 @@
 		<item id="2">
 			<label>$LOCALIZE[31428]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultAddonTvInfo.png</icon>
 			<property name="labelID">script.tv.show.next.aired</property>
 			<property name="defaultID">script.tv.show.next.aired</property>
 			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
@@ -1710,7 +1710,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -1721,7 +1721,7 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -1732,8 +1732,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
@@ -1743,7 +1743,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20388]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20388</property>
 			<property name="defaultID">20388</property>
@@ -1754,7 +1754,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -1766,7 +1766,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/files/,return)</onclick>
@@ -1800,7 +1800,7 @@
 	<include name="skinshortcuts-group-alt-tvshows">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -1814,7 +1814,7 @@
 		<item id="2">
 			<label>$LOCALIZE[31428]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultAddonTvInfo.png</icon>
 			<property name="labelID">script.tv.show.next.aired</property>
 			<property name="defaultID">script.tv.show.next.aired</property>
 			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
@@ -1826,7 +1826,7 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
@@ -1838,7 +1838,7 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
@@ -1850,8 +1850,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultActor.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
@@ -1862,7 +1862,7 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[20388]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20388</property>
 			<property name="defaultID">20388</property>
@@ -1874,7 +1874,7 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[20459]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20459</property>
 			<property name="defaultID">20459</property>
@@ -1887,7 +1887,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31289]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/files/,return)</onclick>
@@ -1924,8 +1924,8 @@
 	<include name="skinshortcuts-group-videos">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -1936,7 +1936,7 @@
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMovies.png</icon>
 			<property name="labelID">20342</property>
 			<property name="defaultID">20342</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -1948,7 +1948,7 @@
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -1960,7 +1960,7 @@
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMusicVideos.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -1971,8 +1971,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultPlaylist.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
@@ -1982,12 +1982,12 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(Videos,root)</onclick>
-			<property name="path">ActivateWindow(Videos,root)</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videos</property>
 		</item>
@@ -2028,8 +2028,8 @@
 	<include name="skinshortcuts-group-alt-videos">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -2041,7 +2041,7 @@
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMovies.png</icon>
 			<property name="labelID">20342</property>
 			<property name="defaultID">20342</property>
 			<visible>Library.HasContent(Movies)</visible>
@@ -2054,7 +2054,7 @@
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<visible>Library.HasContent(TVShows)</visible>
@@ -2067,7 +2067,7 @@
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultMusicVideos.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -2079,8 +2079,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultPlaylist.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
@@ -2091,12 +2091,12 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(Videos,root)</onclick>
-			<property name="path">ActivateWindow(Videos,root)</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">videos</property>
@@ -2143,8 +2143,8 @@
 	<include name="skinshortcuts-group-livetv">
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19023</property>
 			<property name="defaultID">19023</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2155,8 +2155,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2167,8 +2167,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2179,8 +2179,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2191,8 +2191,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2205,8 +2205,8 @@
 	<include name="skinshortcuts-group-alt-livetv">
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19023</property>
 			<property name="defaultID">19023</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2218,8 +2218,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2231,8 +2231,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2244,8 +2244,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2257,8 +2257,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32017]</label2>
+			<icon>DefaultTVShows.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasTVChannels</visible>
@@ -2272,7 +2272,7 @@
 	<include name="skinshortcuts-group-music">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -2284,8 +2284,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -2295,8 +2295,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2307,8 +2307,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2319,8 +2319,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2331,8 +2331,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2343,8 +2343,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2355,8 +2355,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2367,8 +2367,8 @@
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">589</property>
 			<property name="defaultID">589</property>
 			<onclick>PlayerControl(Partymode(music))</onclick>
@@ -2378,12 +2378,12 @@
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(MusicFiles,root)</onclick>
-			<property name="path">ActivateWindow(MusicFiles,root)</property>
+			<onclick>ActivateWindow(MusicFiles)</onclick>
+			<property name="path">ActivateWindow(MusicFiles)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">music</property>
 		</item>
@@ -2424,7 +2424,7 @@
 	<include name="skinshortcuts-group-alt-music">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
@@ -2437,8 +2437,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -2449,8 +2449,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2462,8 +2462,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2475,8 +2475,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2488,8 +2488,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2501,8 +2501,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2514,8 +2514,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">136</property>
 			<property name="defaultID">136</property>
 			<visible>Library.HasContent(Music)</visible>
@@ -2527,8 +2527,8 @@
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
 			<property name="labelID">589</property>
 			<property name="defaultID">589</property>
 			<onclick>PlayerControl(Partymode(music))</onclick>
@@ -2539,12 +2539,12 @@
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32019]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
-			<onclick>ActivateWindow(MusicFiles,root)</onclick>
-			<property name="path">ActivateWindow(MusicFiles,root)</property>
+			<onclick>ActivateWindow(MusicFiles)</onclick>
+			<property name="path">ActivateWindow(MusicFiles)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">music</property>
@@ -2589,8 +2589,8 @@
 	<include name="skinshortcuts-group-musicvideos">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultRecentlyAddedMusicVideos.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -2601,8 +2601,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres/,return)</onclick>
@@ -2612,8 +2612,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
@@ -2623,8 +2623,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
@@ -2634,8 +2634,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/albums/,return)</onclick>
@@ -2645,8 +2645,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,Return)</onclick>
@@ -2656,8 +2656,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/files/,return)</onclick>
@@ -2668,7 +2668,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31465</property>
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(video)</onclick>
@@ -2679,7 +2679,7 @@
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">653</property>
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(video)</onclick>
@@ -2691,8 +2691,8 @@
 	<include name="skinshortcuts-group-alt-musicvideos">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultRecentlyAddedMusicVideos.png</icon>
 			<property name="labelID">31438</property>
 			<property name="defaultID">31438</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
@@ -2704,8 +2704,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[135]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicGenres.png</icon>
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres/,return)</onclick>
@@ -2716,8 +2716,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[652]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicYears.png</icon>
 			<property name="labelID">652</property>
 			<property name="defaultID">652</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
@@ -2728,8 +2728,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicArtists.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
@@ -2740,8 +2740,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicAlbums.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/albums/,return)</onclick>
@@ -2752,8 +2752,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultMusicSongs.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,Return)</onclick>
@@ -2764,8 +2764,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[31289]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32018]</label2>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">31289</property>
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/files/,return)</onclick>
@@ -2777,7 +2777,7 @@
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31465</property>
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(video)</onclick>
@@ -2789,7 +2789,7 @@
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultFolder.png</icon>
+			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">653</property>
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(video)</onclick>
@@ -2801,11 +2801,11 @@
 	</include>
 	<include name="skinshortcuts-group-radio">
 		<item id="1">
-			<label>$LOCALIZE[19024]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<property name="labelID">19024</property>
-			<property name="defaultID">19024</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
@@ -2814,8 +2814,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2826,8 +2826,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2838,8 +2838,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2850,8 +2850,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2863,11 +2863,11 @@
 	</include>
 	<include name="skinshortcuts-group-alt-radio">
 		<item id="1">
-			<label>$LOCALIZE[19024]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
-			<property name="labelID">19024</property>
-			<property name="defaultID">19024</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
@@ -2877,8 +2877,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">22020</property>
 			<property name="defaultID">22020</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2890,8 +2890,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19163</property>
 			<property name="defaultID">19163</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2903,8 +2903,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">19040</property>
 			<property name="defaultID">19040</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2916,8 +2916,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32087]</label2>
+			<icon>DefaultAudio.png</icon>
 			<property name="labelID">137</property>
 			<property name="defaultID">137</property>
 			<visible>PVR.HasRadioChannels</visible>
@@ -2931,8 +2931,8 @@
 	<include name="skinshortcuts-group-pictures">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32020]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -2955,8 +2955,8 @@
 	<include name="skinshortcuts-group-alt-pictures">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32020]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -2981,8 +2981,8 @@
 	<include name="skinshortcuts-group-programs">
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">1212</property>
 			<property name="defaultID">1212</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -2992,8 +2992,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">1211</property>
 			<property name="defaultID">1211</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -3003,8 +3003,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">1213</property>
 			<property name="defaultID">1213</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -3014,8 +3014,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddon.png</icon>
 			<property name="labelID">31009</property>
 			<property name="defaultID">31009</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -3027,8 +3027,8 @@
 	<include name="skinshortcuts-group-alt-programs">
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonVideo.png</icon>
 			<property name="labelID">1212</property>
 			<property name="defaultID">1212</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
@@ -3039,8 +3039,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonMusic.png</icon>
 			<property name="labelID">1211</property>
 			<property name="defaultID">1211</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
@@ -3051,8 +3051,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddonPicture.png</icon>
 			<property name="labelID">1213</property>
 			<property name="defaultID">1213</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
@@ -3063,8 +3063,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32021]</label2>
+			<icon>DefaultAddon.png</icon>
 			<property name="labelID">31009</property>
 			<property name="defaultID">31009</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -3106,8 +3106,8 @@
 	<include name="skinshortcuts-group-script-globalsearch">
 		<item id="1">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>RunScript(script.globalsearch,actors=true)</onclick>
@@ -3117,8 +3117,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<onclick>RunScript(script.globalsearch,movies=true)</onclick>
@@ -3128,8 +3128,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
@@ -3139,8 +3139,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20360]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">20360</property>
 			<property name="defaultID">20360</property>
 			<onclick>RunScript(script.globalsearch,episodes=true)</onclick>
@@ -3150,8 +3150,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20389]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
@@ -3161,8 +3161,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>RunScript(script.globalsearch,artists=true)</onclick>
@@ -3172,8 +3172,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>RunScript(script.globalsearch,albums=true)</onclick>
@@ -3183,8 +3183,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>RunScript(script.globalsearch,songs=true)</onclick>
@@ -3196,8 +3196,8 @@
 	<include name="skinshortcuts-group-alt-script-globalsearch">
 		<item id="1">
 			<label>$LOCALIZE[344]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">344</property>
 			<property name="defaultID">344</property>
 			<onclick>RunScript(script.globalsearch,actors=true)</onclick>
@@ -3208,8 +3208,8 @@
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[342]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<onclick>RunScript(script.globalsearch,movies=true)</onclick>
@@ -3220,8 +3220,8 @@
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
 			<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
@@ -3232,8 +3232,8 @@
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20360]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">20360</property>
 			<property name="defaultID">20360</property>
 			<onclick>RunScript(script.globalsearch,episodes=true)</onclick>
@@ -3244,8 +3244,8 @@
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[20389]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
 			<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
@@ -3256,8 +3256,8 @@
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[133]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
 			<onclick>RunScript(script.globalsearch,artists=true)</onclick>
@@ -3268,8 +3268,8 @@
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[132]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<onclick>RunScript(script.globalsearch,albums=true)</onclick>
@@ -3280,8 +3280,8 @@
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[134]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<label2>$ADDON[script.skinshortcuts 32009]</label2>
+			<icon>DefaultProgram.png</icon>
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<onclick>RunScript(script.globalsearch,songs=true)</onclick>
@@ -3339,7 +3339,7 @@
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
@@ -3422,7 +3422,7 @@
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultShortcut.png</icon>
+			<icon>DefaultFolder.png</icon>
 			<property name="labelID">7</property>
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
