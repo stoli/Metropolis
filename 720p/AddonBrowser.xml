@@ -137,6 +137,21 @@
 					<texturefocus>ButtonFO2Wide.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
+				<control type="button" id="9">
+					<description>Check for updates</description>
+					<width>340</width>
+					<height>40</height>
+					<align>left</align>
+					<label>24034</label>
+					<aligny>center</aligny>
+					<font>METF_DialogLarge</font>
+					<textoffsetx>20</textoffsetx>
+					<textcolor>TextNF</textcolor>
+					<focusedcolor>DialogTextFO</focusedcolor>
+					<disabledcolor>TextDisabled</disabledcolor>
+					<texturefocus>ButtonFO2Wide.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+				</control>
 				<include>Nav_NowPlaying</include>
 			</control>
 		</control>
