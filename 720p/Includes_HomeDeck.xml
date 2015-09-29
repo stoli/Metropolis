@@ -368,7 +368,7 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onclick>ActivateWindow(TVTimers)</onclick>
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 				</control>
 
 				<!-- Weather Widget button -->
@@ -383,7 +383,7 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onclick>ActivateWindow(Weather)</onclick>
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
+					<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(widget),WeatherForecast)</visible>
 				</control>
 			</control>
 
@@ -391,7 +391,7 @@
 			<control type="group">
 				<left>470</left>
 				<top>554</top>
-				<visible>[Control.HasFocus(8002) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
+				<visible>[Control.HasFocus(8002) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(widget),PVR) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(Favourites)">conditional</animation>
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,80" time="0" condition="PVR.IsRecording">conditional</animation>
@@ -529,7 +529,7 @@
 				<height>WeatherHomeHeight</height>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<visible>[Control.HasFocus(8003) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(Widget),WeatherForecast)</visible>
+				<visible>[Control.HasFocus(8003) | [![Skin.HasSetting(Home2) | Skin.HasSetting(Home3)] + !Skin.HasSetting(HideUnfocusedWidgets)]] + !IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(widget),WeatherForecast)</visible>
 				<!-- Current Day Forecast -->
 				<control type="group">
 					<width>WeatherHomeWidth</width>

@@ -76,50 +76,50 @@
 
 	<variable name="GlobalWidgetContent">
 		<!-- built-in library content -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryRecentlyAddedMovies)">videodb://recentlyaddedmovies/</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryRecentlyAddedEpisodes)">videodb://recentlyaddedepisodes/</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryRecentlyAddedMusicVideos)">videodb://recentlyaddedmusicvideos/</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryRecentlyAddedAlbums)">musicdb://recentlyaddedalbums/</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryRecentlyPlayedAlbums )">musicdb://recentlyplayedalbums/ </value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryAddons)">addons://sources/executable/</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LibraryFavourites)">favourites://</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryRecentlyAddedMovies)">videodb://recentlyaddedmovies/</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryRecentlyAddedEpisodes)">videodb://recentlyaddedepisodes/</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryRecentlyAddedMusicVideos)">videodb://recentlyaddedmusicvideos/</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryRecentlyAddedAlbums)">musicdb://recentlyaddedalbums/</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryRecentlyPlayedAlbums )">musicdb://recentlyplayedalbums/ </value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryAddons)">addons://sources/executable/</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LibraryFavourites)">favourites://</value>
 
 		<!-- service.library.data.provider content -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedMovies)">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window(Home).Property(recentmovies)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedMovies)">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window(Home).Property(recommendedmovies)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomMovies)">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedEpisodes)">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedEpisodes)">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomEpisodes)">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedVideos)">plugin://service.library.data.provider?type=recentvideos&amp;reload=$INFO[Window.Property(recentvideos)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedAlbums)">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedAlbums)">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomAlbums)">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomSongs)">plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedMovies)">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window(Home).Property(recentmovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedMovies)">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window(Home).Property(recommendedmovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomMovies)">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedEpisodes)">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedEpisodes)">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomEpisodes)">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedVideos)">plugin://service.library.data.provider?type=recentvideos&amp;reload=$INFO[Window.Property(recentvideos)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedAlbums)">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedAlbums)">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomAlbums)">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomSongs)">plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]</value>
 
 		<!-- script.extendedinfo content -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),InTheatersMovies)">plugin://script.extendedinfo?info=intheaters</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),ComingSoonMovies)">plugin://script.extendedinfo?info=comingsoon</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Opening)">plugin://script.extendedinfo?info=opening</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),BoxOffice)">plugin://script.extendedinfo?info=boxoffice</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Top10Rentals)">plugin://script.extendedinfo?info=toprentals</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),CurrentDVDs)">plugin://script.extendedinfo?info=currentdvdreleases</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),NewDVDs)">plugin://script.extendedinfo?info=newdvdreleases</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),UpcomingDVDs)">plugin://script.extendedinfo?info=upcomingdvds</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),InCinemasMovies)">plugin://script.extendedinfo?info=incinemas</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),UpcomingMovies)">plugin://script.extendedinfo?info=upcoming</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),PopularMovies)">plugin://script.extendedinfo?info=popularmovies</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),TopRatedMovies)">plugin://script.extendedinfo?info=topratedmovies</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),PopularTVShows)">plugin://script.extendedinfo?info=populartvshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),TopRatedTVShows)">plugin://script.extendedinfo?info=topratedtvshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),OnAirTVShows)">plugin://script.extendedinfo?info=onairtvshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),AiringTodayTVShows)">plugin://script.extendedinfo?info=airingtodaytvshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),TrendingMovies)">plugin://script.extendedinfo?info=trendingmovies</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),TrendingTVShows)">plugin://script.extendedinfo?info=trendingshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),AiringShows)">plugin://script.extendedinfo?info=airingshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),PremiereShows)">plugin://script.extendedinfo?info=premiereshows</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),XKCD)">plugin://script.extendedinfo?info=xkcd</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Cyanide)">plugin://script.extendedinfo?info=cyanide</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),InTheatersMovies)">plugin://script.extendedinfo?info=intheaters</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),ComingSoonMovies)">plugin://script.extendedinfo?info=comingsoon</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),Opening)">plugin://script.extendedinfo?info=opening</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),BoxOffice)">plugin://script.extendedinfo?info=boxoffice</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),Top10Rentals)">plugin://script.extendedinfo?info=toprentals</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),CurrentDVDs)">plugin://script.extendedinfo?info=currentdvdreleases</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),NewDVDs)">plugin://script.extendedinfo?info=newdvdreleases</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),UpcomingDVDs)">plugin://script.extendedinfo?info=upcomingdvds</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),InCinemasMovies)">plugin://script.extendedinfo?info=incinemas</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),UpcomingMovies)">plugin://script.extendedinfo?info=upcoming</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),PopularMovies)">plugin://script.extendedinfo?info=popularmovies</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),TopRatedMovies)">plugin://script.extendedinfo?info=topratedmovies</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),PopularTVShows)">plugin://script.extendedinfo?info=populartvshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),TopRatedTVShows)">plugin://script.extendedinfo?info=topratedtvshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),OnAirTVShows)">plugin://script.extendedinfo?info=onairtvshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),AiringTodayTVShows)">plugin://script.extendedinfo?info=airingtodaytvshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),TrendingMovies)">plugin://script.extendedinfo?info=trendingmovies</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),TrendingTVShows)">plugin://script.extendedinfo?info=trendingshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),AiringShows)">plugin://script.extendedinfo?info=airingshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),PremiereShows)">plugin://script.extendedinfo?info=premiereshows</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),XKCD)">plugin://script.extendedinfo?info=xkcd</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),Cyanide)">plugin://script.extendedinfo?info=cyanide</value>
 		<value>$INFO[Container(9000).ListItem.Property(widgetPlaylist)]</value>
 	</variable>
 
@@ -128,26 +128,25 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),music)">music</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),programs)">programs</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),pictures)">pictures</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),video)">video</value>
 		<value>video</value>
 	</variable>
 
 	<variable name="GlobalWidgetLabel">
 		<!-- fixing the service.library.data.provider content labels-->
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecentlyAddedAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRecommendedAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),LDPRandomSongs)">$INFO[ListItem.Artist] - $INFO[ListItem.Title]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomMovies)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomEpisodes)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecentlyAddedAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRecommendedAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomAlbums)">$INFO[ListItem.Artist] - $INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),LDPRandomSongs)">$INFO[ListItem.Artist] - $INFO[ListItem.Title]</value>
 
 		<!-- fixing the playlists content labels-->
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Playlist) + IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),Playlist) + !IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),Playlist) + IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.Title] ($INFO[ListItem.Year])</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widget),Playlist) + !IsEmpty(Container(8000).ListItem.TVshowTitle)">$INFO[ListItem.TVshowTitle] - $INFO[ListItem.Season]x$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 
