@@ -134,8 +134,8 @@
 						<top>8</top>
 						<width>29</width>
 						<height>29</height>
-						<texture>osd/osd_button_channel_previous_fo.png</texture>
-						<colordiffuse>SubmenuTextFocused</colordiffuse>
+						<texture>osd/osd_button_channel_previous_nf.png</texture>
+						<include>Animation_ButtonFocus</include>
 						<visible>Control.HasFocus(304)</visible>
 					</control>
 					<control type="image">
@@ -143,8 +143,8 @@
 						<top>8</top>
 						<width>29</width>
 						<height>29</height>
-						<texture>osd/osd_button_channel_next_fo.png</texture>
-						<colordiffuse>SubmenuTextFocused</colordiffuse>
+						<texture>osd/osd_button_channel_next_nf.png</texture>
+						<include>Animation_ButtonFocus</include>
 						<visible>Control.HasFocus(303)</visible>
 					</control>
 					<control type="image">
@@ -152,8 +152,8 @@
 						<top>8</top>
 						<width>29</width>
 						<height>29</height>
-						<texture>osd/osd_button_ban_fo.png</texture>
-						<colordiffuse>SubmenuTextFocused</colordiffuse>
+						<texture>osd/osd_button_ban_nf.png</texture>
+						<include>Animation_ButtonFocus</include>
 						<visible>Control.HasFocus(302)</visible>
 					</control>
 					<control type="label">
