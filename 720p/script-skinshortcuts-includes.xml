@@ -31,6 +31,7 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedMovies</property>
 			<property name="widgetName">Recently Added Movies</property>
+			<property name="widgetType">video</property>
 			<property name="background">home\movies\</property>
 			<property name="backgroundName">$LOCALIZE[342]</property>
 			<property name="hasSubmenu">True</property>
@@ -49,6 +50,7 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedEpisodes</property>
 			<property name="widgetName">Recently Added Episodes</property>
+			<property name="widgetType">video</property>
 			<property name="background">home\tvshows\</property>
 			<property name="backgroundName">$LOCALIZE[20343]</property>
 			<property name="hasSubmenu">True</property>
@@ -82,6 +84,7 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">ComingSoonMovies</property>
 			<property name="widgetName">Rotten Tomatoes (Coming Soon)</property>
+			<property name="widgetType">video</property>
 			<property name="background">home\trailers\</property>
 			<property name="backgroundName">$LOCALIZE[31334]</property>
 			<property name="hasSubmenu">False</property>
@@ -99,7 +102,8 @@
 			<property name="submenuVisibility">livetv</property>
 			<property name="group">mainmenu</property>
 			<property name="widget">PVR</property>
-			<property name="widgetName">PVR Status</property>
+			<property name="widgetName">$LOCALIZE[31611]</property>
+			<property name="widgetType">video</property>
 			<property name="background">home\livetv\</property>
 			<property name="backgroundName">$ADDON[script.skinshortcuts 32022]</property>
 			<property name="hasSubmenu">True</property>
@@ -118,6 +122,7 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedAlbums</property>
 			<property name="widgetName">Recently Added Albums</property>
+			<property name="widgetType">music</property>
 			<property name="background">home\music\</property>
 			<property name="backgroundName">$LOCALIZE[10005]</property>
 			<property name="hasSubmenu">True</property>
@@ -136,6 +141,7 @@
 			<property name="group">mainmenu</property>
 			<property name="widget">LibraryRecentlyAddedMusicVideos</property>
 			<property name="widgetName">Recently Added Music Videos (Built-in)</property>
+			<property name="widgetType">video</property>
 			<property name="background">home\musicvideos\</property>
 			<property name="backgroundName">$LOCALIZE[20389]</property>
 			<property name="hasSubmenu">True</property>
@@ -199,7 +205,8 @@
 			<property name="submenuVisibility">weather</property>
 			<property name="group">mainmenu</property>
 			<property name="widget">WeatherForecast</property>
-			<property name="widgetName">Weather Forecast</property>
+			<property name="widgetName">$LOCALIZE[10508]</property>
+			<property name="widgetType">weather</property>
 			<property name="background">home\weather\</property>
 			<property name="backgroundName">$LOCALIZE[12600]</property>
 			<property name="hasSubmenu">True</property>

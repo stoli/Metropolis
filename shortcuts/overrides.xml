@@ -3,113 +3,110 @@
 	<!-- Widgets -->
 
 	<!-- Recently Added, Recommended, and Random -->
-	<widget label="Recently Added Movies (Built-in)">LibraryRecentlyAddedMovies</widget>
-	<widget label="Recently Added Episodes (Built-in)">LibraryRecentlyAddedEpisodes</widget>
-	<widget label="Recently Added Albums (Built-in)">LibraryRecentlyAddedAlbums</widget>
-	<widget label="Recently Added Music Videos (Built-in)">LibraryRecentlyAddedMusicVideos</widget>
-	<widget label="Recently Played Albums (Built-in)">LibraryRecentlyPlayedAlbums</widget>
-	<widget label="Recently Added Movies">LDPRecentlyAddedMovies</widget>
-	<widget label="Recommended Movies">LDPRecommendedMovies</widget>
-	<widget label="Random Movies">LDPRandomMovies</widget>
-	<widget label="Recently Added Episodes">LDPRecentlyAddedEpisodes</widget>
-	<widget label="Recommended Episodes">LDPRecommendedEpisodes</widget>
-	<widget label="Random Episodes">LDPRandomEpisodes</widget>
-	<widget label="Recently Added Videos">LDPRecentlyAddedVideos</widget>
-	<widget label="Recently Added Albums">LDPRecentlyAddedAlbums</widget>
-	<widget label="Recommended Albums">LDPRecommendedAlbums</widget>
-	<widget label="Random Albums">LDPRandomAlbums</widget>
-	<widget label="Random Songs">LDPRandomSongs</widget>
+	<widget type="video" label="Recently Added Movies (Built-in)">LibraryRecentlyAddedMovies</widget>
+	<widget type="video" label="Recently Added Episodes (Built-in)">LibraryRecentlyAddedEpisodes</widget>
+	<widget type="music" label="Recently Added Albums (Built-in)">LibraryRecentlyAddedAlbums</widget>
+	<widget type="video" label="Recently Added Music Videos (Built-in)">LibraryRecentlyAddedMusicVideos</widget>
+	<widget type="music" label="Recently Played Albums (Built-in)">LibraryRecentlyPlayedAlbums</widget>
+	<widget type="video" label="Recently Added Movies">LDPRecentlyAddedMovies</widget>
+	<widget type="video" label="Recommended Movies">LDPRecommendedMovies</widget>
+	<widget type="video" label="Random Movies">LDPRandomMovies</widget>
+	<widget type="video" label="Recently Added Episodes">LDPRecentlyAddedEpisodes</widget>
+	<widget type="video" label="Recommended Episodes">LDPRecommendedEpisodes</widget>
+	<widget type="video" label="Random Episodes">LDPRandomEpisodes</widget>
+	<widget type="video" label="Recently Added Videos">LDPRecentlyAddedVideos</widget>
+	<widget type="music" label="Recently Added Albums">LDPRecentlyAddedAlbums</widget>
+	<widget type="music" label="Recommended Albums">LDPRecommendedAlbums</widget>
+	<widget type="music" label="Random Albums">LDPRandomAlbums</widget>
+	<widget type="music" label="Random Songs">LDPRandomSongs</widget>
 	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget label="$LOCALIZE[20386] ($LOCALIZE[31479])">LibraryRecentlyAddedMovies</widget>
-	<widget label="$LOCALIZE[20387] ($LOCALIZE[31479])">LibraryRecentlyAddedEpisodes</widget>
-	<widget label="$LOCALIZE[359] ($LOCALIZE[31479])">LibraryRecentlyAddedAlbums</widget>
-	<widget label="$LOCALIZE[20390] ($LOCALIZE[31479])">LibraryRecentlyAddedMusicVideos</widget>
-	<widget label="$LOCALIZE[517] ($LOCALIZE[31479])">LibraryRecentlyPlayedAlbums</widget>
-	<widget label="$ADDON[service.library.data.provider 32005]">LDPRecentlyAddedMovies</widget>
-	<widget label="$ADDON[service.library.data.provider 32006]">LDPRecommendedMovies</widget>
-	<widget label="$ADDON[service.library.data.provider 32004]">LDPRandomMovies</widget>
-	<widget label="$ADDON[service.library.data.provider 32008]">LDPRecentlyAddedEpisodes</widget>
-	<widget label="$ADDON[service.library.data.provider 32010]">LDPRecommendedEpisodes</widget>
-	<widget label="$ADDON[service.library.data.provider 32007]">LDPRandomEpisodes</widget>
-	<widget label="$ADDON[service.library.data.provider 32019]">LDPRecentlyAddedVideos</widget>
-	<widget label="$ADDON[service.library.data.provider 32017]">LDPRecentlyAddedAlbums</widget>
-	<widget label="$ADDON[service.library.data.provider 32018]">LDPRecommendedAlbums</widget>
-	<widget label="$ADDON[service.library.data.provider 32016]">LDPRandomAlbums</widget>
-	<widget label="$ADDON[service.library.data.provider 32015]">LDPRandomSongs</widget>-->
+	<!--<widget type="video" label="$LOCALIZE[20386] ($LOCALIZE[31479])">LibraryRecentlyAddedMovies</widget>
+	<widget type="video" label="$LOCALIZE[20387] ($LOCALIZE[31479])">LibraryRecentlyAddedEpisodes</widget>
+	<widget type="music" label="$LOCALIZE[359] ($LOCALIZE[31479])">LibraryRecentlyAddedAlbums</widget>
+	<widget type="video" label="$LOCALIZE[20390] ($LOCALIZE[31479])">LibraryRecentlyAddedMusicVideos</widget>
+	<widget type="music" label="$LOCALIZE[517] ($LOCALIZE[31479])">LibraryRecentlyPlayedAlbums</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32005]">LDPRecentlyAddedMovies</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32006]">LDPRecommendedMovies</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32004]">LDPRandomMovies</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32008]">LDPRecentlyAddedEpisodes</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32010]">LDPRecommendedEpisodes</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32007]">LDPRandomEpisodes</widget>
+	<widget type="video" label="$ADDON[service.library.data.provider 32019]">LDPRecentlyAddedVideos</widget>
+	<widget type="music" label="$ADDON[service.library.data.provider 32017]">LDPRecentlyAddedAlbums</widget>
+	<widget type="music" label="$ADDON[service.library.data.provider 32018]">LDPRecommendedAlbums</widget>
+	<widget type="music" label="$ADDON[service.library.data.provider 32016]">LDPRandomAlbums</widget>
+	<widget type="music" label="$ADDON[service.library.data.provider 32015]">LDPRandomSongs</widget>-->
 
 	<!-- Extended Info Script -->
-	<widget labelID="movies" label="Rotten Tomatoes (In Theaters)">InTheatersMovies</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Coming Soon)">ComingSoonMovies</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Opening)">Opening</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Box Office)">BoxOffice</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Top 10 Rentals)">Top10Rentals</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Current DVD Releases)">CurrentDVDs</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (New DVD Releases)">NewDVDs</widget>
-	<widget labelID="movies" label="Rotten Tomatoes (Upcoming DVD Releases)">UpcomingDVDs</widget>
-	<widget labelID="movies" label="The MovieDB (In Cinemas)">InCinemasMovies</widget>
-	<widget labelID="movies" label="The MovieDB (Upcoming Movies)">UpcomingMovies</widget>
-	<widget labelID="movies" label="The MovieDB (Popular Movies)">PopularMovies</widget>
-	<widget labelID="movies" label="The MovieDB (Top Rated Movies)">TopRatedMovies</widget>
-	<widget labelID="movies" label="The MovieDB (Popular TV Shows)">PopularTVShows</widget>
-	<widget labelID="movies" label="The MovieDB (Top Rated TV Shows)">TopRatedTVShows</widget>
-	<widget labelID="movies" label="The MovieDB (On Air TV Shows)">OnAirTVShows</widget>
-	<widget labelID="movies" label="The MovieDB (Airing Today TV Shows)">AiringTodayTVShows</widget>
-	<widget labelID="movies" label="Trakt.tv (Trending Movies)">TrendingMovies</widget>
-	<widget labelID="tvshows" label="Trakt.tv (Trending TV Shows)">TrendingTVShows</widget>
-	<widget labelID="tvshows" label="Trakt.tv (Airing TV Shows)">AiringShows</widget>
-	<widget labelID="tvshows" label="Trakt.tv (Premiere TV Shows)">PremiereShows</widget>
-	<widget labelID="pictures" type="pictures" label="Random XKCD Comics">XKCD</widget>
-	<widget labelID="pictures" type="pictures" label="Random Cyanide and Happiness Comics">Cyanide</widget>
+	<widget type="video" label="Rotten Tomatoes (In Theaters)">InTheatersMovies</widget>
+	<widget type="video" label="Rotten Tomatoes (Coming Soon)">ComingSoonMovies</widget>
+	<widget type="video" label="Rotten Tomatoes (Opening)">Opening</widget>
+	<widget type="video" label="Rotten Tomatoes (Box Office)">BoxOffice</widget>
+	<widget type="video" label="Rotten Tomatoes (Top 10 Rentals)">Top10Rentals</widget>
+	<widget type="video" label="Rotten Tomatoes (Current DVD Releases)">CurrentDVDs</widget>
+	<widget type="video" label="Rotten Tomatoes (New DVD Releases)">NewDVDs</widget>
+	<widget type="video" label="Rotten Tomatoes (Upcoming DVD Releases)">UpcomingDVDs</widget>
+	<widget type="video" label="The MovieDB (In Cinemas)">InCinemasMovies</widget>
+	<widget type="video" label="The MovieDB (Upcoming Movies)">UpcomingMovies</widget>
+	<widget type="video" label="The MovieDB (Popular Movies)">PopularMovies</widget>
+	<widget type="video" label="The MovieDB (Top Rated Movies)">TopRatedMovies</widget>
+	<widget type="video" label="The MovieDB (Popular TV Shows)">PopularTVShows</widget>
+	<widget type="video" label="The MovieDB (Top Rated TV Shows)">TopRatedTVShows</widget>
+	<widget type="video" label="The MovieDB (On Air TV Shows)">OnAirTVShows</widget>
+	<widget type="video" label="The MovieDB (Airing Today TV Shows)">AiringTodayTVShows</widget>
+	<widget type="video" label="Trakt.tv (Trending Movies)">TrendingMovies</widget>
+	<widget type="video" label="Trakt.tv (Trending TV Shows)">TrendingTVShows</widget>
+	<widget type="video" label="Trakt.tv (Airing TV Shows)">AiringShows</widget>
+	<widget type="video" label="Trakt.tv (Premiere TV Shows)">PremiereShows</widget>
+	<widget type="pictures" label="Random XKCD Comics">XKCD</widget>
+	<widget type="pictures" label="Random Cyanide and Happiness Comics">Cyanide</widget>
 	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32042])">InTheatersMovies</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32043])">ComingSoonMovies</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32048])">Opening</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32055])">BoxOffice</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32056])">Top10Rentals</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32049])">CurrentDVDs</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32053])">NewDVDs</widget>
-	<widget labelID="movies" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32054])">UpcomingDVDs</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32042])">InCinemasMovies</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32043])">UpcomingMovies</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32044])">PopularMovies</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32046])">TopRatedMovies</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32041])">PopularTVShows</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32040])">TopRatedTVShows</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32039])">OnAirTVShows</widget>
-	<widget labelID="movies" label="The MovieDB ($ADDON[script.extendedinfo 32038])">AiringTodayTVShows</widget>
-	<widget labelID="movies" label="Trakt.tv ($ADDON[script.extendedinfo 32047])">TrendingMovies</widget>
-	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32032])">TrendingTVShows</widget>
-	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32028])">AiringShows</widget>
-	<widget labelID="tvshows" label="Trakt.tv ($ADDON[script.extendedinfo 32029])">PremiereShows</widget>
-	<widget labelID="pictures" type="pictures" label="XKCD">XKCD</widget>
-	<widget labelID="pictures" type="pictures" label="Cyanide and Happiness">Cyanide</widget>-->
+	<!--<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32042])">InTheatersMovies</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32043])">ComingSoonMovies</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32048])">Opening</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32055])">BoxOffice</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32056])">Top10Rentals</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32049])">CurrentDVDs</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32053])">NewDVDs</widget>
+	<widget type="video" label="Rotton Tomatoes ($ADDON[script.extendedinfo 32054])">UpcomingDVDs</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32042])">InCinemasMovies</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32043])">UpcomingMovies</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32044])">PopularMovies</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32046])">TopRatedMovies</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32041])">PopularTVShows</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32040])">TopRatedTVShows</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32039])">OnAirTVShows</widget>
+	<widget type="video" label="The MovieDB ($ADDON[script.extendedinfo 32038])">AiringTodayTVShows</widget>
+	<widget type="video" label="Trakt.tv ($ADDON[script.extendedinfo 32047])">TrendingMovies</widget>
+	<widget type="video" label="Trakt.tv ($ADDON[script.extendedinfo 32032])">TrendingTVShows</widget>
+	<widget type="video" label="Trakt.tv ($ADDON[script.extendedinfo 32028])">AiringShows</widget>
+	<widget type="video" label="Trakt.tv ($ADDON[script.extendedinfo 32029])">PremiereShows</widget>
+	<widget type="pictures" label="XKCD">XKCD</widget>
+	<widget type="pictures" label="Cyanide and Happiness">Cyanide</widget>-->
 
 	<!-- Videos -->
 
 	<!-- PVR -->
-	<widget label="PVR Status">PVR</widget>
-	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget label="$LOCALIZE[31611]">PVR</widget>-->
+	<widget type="video" label="31611">PVR</widget>
 
 	<!-- Music -->
 
 	<!-- Pictures -->
 
 	<!-- Programs -->
-	<widget label="Program Addons">LibraryAddons</widget>
-	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget label="$LOCALIZE[1043]">LibraryAddons</widget>-->
+	<widget type="programs" label="1043">LibraryAddons</widget>
 
 	<!-- Favourites -->
-	<widget label="Favourites">LibraryFavourites</widget>
-	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget label="$LOCALIZE[1036]">LibraryFavourites</widget>-->
+	<widget type="favourites" label="1036">LibraryFavourites</widget>
 
 	<!-- Weather -->
-	<widget label="Weather Forecast">WeatherForecast</widget>
-	<!-- XXX: localized strings that don't seem to work everywhere -->
-	<!--<widget label="$LOCALIZE[10508]">WeatherForecast</widget>-->
+	<widget type="weather" label="10508">WeatherForecast</widget>
 
+	<!-- Playlists -->
+	<widgetPlaylists>True</widgetPlaylists>
+
+	<!-- Settings -->
+	<forcesettings>true</forcesettings>
 
 	<!-- Default widgets -->
 	<widgetdefault defaultID="movies">LDPRecentlyAddedMovies</widgetdefault>
@@ -119,12 +116,6 @@
 	<widgetdefault defaultID="music">LDPRecentlyAddedAlbums</widgetdefault>
 	<widgetdefault defaultID="musicvideos">LibraryRecentlyAddedMusicVideos</widgetdefault>
 	<widgetdefault defaultID="weather">WeatherForecast</widgetdefault>
-
-	<!-- Playlists -->
-	<widgetPlaylists>True</widgetPlaylists>
-
-	<!-- Settings -->
-	<forcesettings>true</forcesettings>
 
 	<!-- Backgrounds (actual images specified in HomeBackground variables -->
 	<background label="32032">home\dvd\</background>
