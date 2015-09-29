@@ -11,7 +11,7 @@
 	<controls>
 		<control type="group">
 			<posy>-110</posy>
-			<control type="label" id="1">
+			<control type="label" id="2">
 				<description>Header Label</description>
 				<posx>460</posx>
 				<posy>175</posy>
@@ -21,7 +21,7 @@
 				<textcolor>SettingsTitle</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[5]</label>
+				<label>-</label>
 			</control>
 			<control type="button" id="7">
 				<description>Default Button</description>
