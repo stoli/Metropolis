@@ -170,14 +170,25 @@
 				</focusedlayout>
 			</control>
 
-			<!-- Icon and Background backdrop -->
-			<control type="image" id="913">
+			<!-- Icon and Background backdrop (mainmenu) -->
+			<control type="image" id="911">
 				<left>550</left>
 				<top>174</top>
 				<width>448</width>
 				<height>156</height>
 				<texture background="true" >list/listfocus.png</texture>
 				<colordiffuse>BackgroundColor</colordiffuse>
+				<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+			</control>
+			<!-- Icon backdrop (submenu) -->
+			<control type="image" id="912">
+				<left>550</left>
+				<top>138</top>
+				<width>390</width>
+				<height>156</height>
+				<texture background="true" >list/listfocus.png</texture>
+				<colordiffuse>BackgroundColor</colordiffuse>
+				<visible>!StringCompare(Window.Property(groupname),mainmenu)</visible>
 			</control>
 
 			<!-- Right grouplist -->
@@ -207,7 +218,7 @@
 					<label>$ADDON[script.skinshortcuts 32048]</label>
 					<label2>$INFO[Container(211).ListItem.Property(path)]</label2>
 				</control>
-				<!-- Choose thumbnail (Home2 icon) -->
+				<!-- Choose thumbnail (Home2 icon, submenu icon) -->
 				<control type="button" id="311">
 					<description>Choose thumbnail Button</description>
 					<left>0</left>
@@ -234,17 +245,28 @@
 					<aligny>top</aligny>
 					<label>$ADDON[script.skinshortcuts 32045]</label>
 					<label2>$VAR[HomeBackgroundSkinShortcuts]</label2>
+					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<!-- Thumbnail (Home2 icon) -->
-				<control type="image" id="909">
+				<control type="image" id="901">
 					<left>210</left>
 					<top>0</top>
 					<width>80</width>
 					<height>120</height>
 					<texture background="true" fallback="DefaultShortcut.png">$INFO[Container(211).ListItem.Icon]</texture>
+					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+				</control>
+				<!-- Thumbnail (Submenu icon) -->
+				<control type="image" id="902">
+					<left>300</left>
+					<top>0</top>
+					<width>120</width>
+					<height>120</height>
+					<texture background="true" fallback="DefaultShortcut.png">$INFO[Container(211).ListItem.Icon]</texture>
+					<visible>!StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<!-- Background -->
-				<control type="multiimage" id="910">
+				<control type="multiimage" id="903">
 					<left>350</left>
 					<top>-120</top>
 					<width>220</width>
@@ -254,9 +276,10 @@
 					<fadetime>500</fadetime>
 					<imagepath background="true">$VAR[HomeBackgroundSkinShortcuts]</imagepath>
 					<aspectratio>stretch</aspectratio>
+					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
-				<!-- Thumbnail Label -->
-				<control type="label" id="911">
+				<!-- Thumbnail Label (Home2) -->
+				<control type="label" id="904">
 					<left>150</left>
 					<top>0</top>
 					<width>200</width>
@@ -266,9 +289,23 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[21371]</label>
+					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+				</control>
+				<!-- Thumbnail Label (Submenu) -->
+				<control type="label" id="905">
+					<left>260</left>
+					<top>0</top>
+					<width>200</width>
+					<height>30</height>
+					<font>METF_SettingsDetail</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[21371]</label>
+					<visible>!StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<!-- Background Label -->
-				<control type="label" id="912">
+				<control type="label" id="906">
 					<left>360</left>
 					<top>-30</top>
 					<width>200</width>
@@ -278,6 +315,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19190]</label>
+					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<!-- Set label -->
 				<control type="button" id="305">
@@ -332,7 +370,7 @@
 					<label>$ADDON[script.skinshortcuts 32072]</label>
 					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
 				</control>
-				<control type="image" id="906">
+				<control type="image" id="910">
 					<height>8</height>
 					<width>700</width>
 					<texture border="2">settings_line.png</texture>
