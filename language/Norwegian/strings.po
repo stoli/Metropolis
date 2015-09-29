@@ -220,6 +220,10 @@ msgctxt "#31441"
 msgid "Hide"
 msgstr "Skjul"
 
+msgctxt "#31444"
+msgid "Auto Login"
+msgstr "Automatisk pålogging"
+
 msgctxt "#31446"
 msgid "Fullscreen"
 msgstr "Fullskjerm"
@@ -295,6 +299,10 @@ msgstr "skyer"
 msgctxt "#31706"
 msgid "Maximum"
 msgstr "Maksimal"
+
+msgctxt "#31708"
+msgid "Moon Phase"
+msgstr "Månefase"
 
 msgctxt "#31709"
 msgid "Precipitation"
