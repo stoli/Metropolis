@@ -67,7 +67,7 @@
 			<randomize>true</randomize>
 			<fadetime>500</fadetime>
 			<imagepath background="true" diffuse="diffuse_fanart.png">$VAR[HomeBackground]</imagepath>
-			<aspectratio>stretch</aspectratio>
+			<aspectratio>scale</aspectratio>
 			<visible allowhiddenfocus="true">!Skin.HasSetting(HomeStretchBackgrounds)</visible>
 		</control>
 		<control type="multiimage">
