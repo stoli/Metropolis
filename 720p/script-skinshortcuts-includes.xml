@@ -2,19 +2,19 @@
 <includes>
 	<include name="skinshortcuts-mainmenu">
 		<item id="1">
-			<label>$LOCALIZE[341]</label>
+			<label>$ADDON[script.skinshortcuts 32032]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/playdisc.png</icon>
-			<property name="labelID">341</property>
+			<property name="labelID">dvd</property>
 			<property name="defaultID">dvd</property>
 			<visible>System.HasMediaDVD</visible>
 			<onclick>PlayDVD()</onclick>
 			<property name="path">PlayDVD()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-341</property>
+			<property name="submenuVisibility">dvd</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\dvd\</property>
-			<property name="backgroundName">$LOCALIZE[341]</property>
+			<property name="backgroundName">$ADDON[script.skinshortcuts 32032]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -54,18 +54,18 @@
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="4">
-			<label>$LOCALIZE[3]</label>
+			<label>$LOCALIZE[10006]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/videos.png</icon>
-			<property name="labelID">3</property>
+			<property name="labelID">videos</property>
 			<property name="defaultID">videos</property>
 			<onclick>ActivateWindow(Videos,videodb://files/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://files/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-3</property>
+			<property name="submenuVisibility">videos</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\videos\</property>
-			<property name="backgroundName">$LOCALIZE[3]</property>
+			<property name="backgroundName">$LOCALIZE[10006]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -87,39 +87,39 @@
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="6">
-			<label>$LOCALIZE[31601]</label>
+			<label>$ADDON[script.skinshortcuts 32022]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/livetv.png</icon>
-			<property name="labelID">31601</property>
+			<property name="labelID">livetv</property>
 			<property name="defaultID">livetv</property>
 			<visible>[PVR.HasTVChannels] + [PVR.HasTVChannels + System.GetBool(pvrmanager.enabled)]</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-31601</property>
+			<property name="submenuVisibility">livetv</property>
 			<property name="group">mainmenu</property>
 			<property name="widget">PVR</property>
 			<property name="widgetName">PVR Status</property>
 			<property name="background">home\livetv\</property>
-			<property name="backgroundName">$LOCALIZE[31601]</property>
+			<property name="backgroundName">$ADDON[script.skinshortcuts 32022]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="7">
-			<label>$LOCALIZE[2]</label>
+			<label>$LOCALIZE[10005]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/music.png</icon>
-			<property name="labelID">2</property>
+			<property name="labelID">music</property>
 			<property name="defaultID">music</property>
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://files/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://files/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-2</property>
+			<property name="submenuVisibility">music</property>
 			<property name="group">mainmenu</property>
 			<property name="widget">LDPRecentlyAddedAlbums</property>
 			<property name="widgetName">Recently Added Albums</property>
 			<property name="background">home\music\</property>
-			<property name="backgroundName">$LOCALIZE[2]</property>
+			<property name="backgroundName">$LOCALIZE[10005]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="8">
@@ -141,67 +141,67 @@
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="9">
-			<label>$LOCALIZE[31602]</label>
+			<label>$ADDON[script.skinshortcuts 32087]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/radio.png</icon>
-			<property name="labelID">31602</property>
+			<property name="labelID">radio</property>
 			<property name="defaultID">radio</property>
 			<visible>[PVR.HasRadioChannels] + [PVR.HasRadioChannels + System.GetBool(pvrmanager.enabled)]</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-31602</property>
+			<property name="submenuVisibility">radio</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\radio\</property>
-			<property name="backgroundName">$LOCALIZE[31602]</property>
+			<property name="backgroundName">$ADDON[script.skinshortcuts 32087]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="10">
-			<label>$LOCALIZE[1]</label>
+			<label>$LOCALIZE[10002]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/pictures.png</icon>
-			<property name="labelID">1</property>
+			<property name="labelID">pictures</property>
 			<property name="defaultID">pictures</property>
 			<onclick>ActivateWindow(Pictures)</onclick>
 			<property name="path">ActivateWindow(Pictures)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-1</property>
+			<property name="submenuVisibility">pictures</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\pictures\</property>
-			<property name="backgroundName">$LOCALIZE[1]</property>
+			<property name="backgroundName">$LOCALIZE[10002]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="11">
-			<label>$LOCALIZE[24001]</label>
+			<label>$LOCALIZE[10001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/programs.png</icon>
-			<property name="labelID">24001</property>
+			<property name="labelID">programs</property>
 			<property name="defaultID">programs</property>
 			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Programs,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-24001</property>
+			<property name="submenuVisibility">programs</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\programs\</property>
-			<property name="backgroundName">$LOCALIZE[24001]</property>
+			<property name="backgroundName">$LOCALIZE[10001]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="12">
-			<label>$LOCALIZE[8]</label>
+			<label>$LOCALIZE[12600]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/weather.png</icon>
-			<property name="labelID">8</property>
+			<property name="labelID">weather</property>
 			<property name="defaultID">weather</property>
 			<visible>[!IsEmpty(Weather.Plugin)] + [!IsEmpty(Weather.Plugin)]</visible>
 			<onclick>ActivateWindow(Weather)</onclick>
 			<property name="path">ActivateWindow(Weather)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-8</property>
+			<property name="submenuVisibility">weather</property>
 			<property name="group">mainmenu</property>
 			<property name="widget">WeatherForecast</property>
 			<property name="widgetName">Weather Forecast</property>
 			<property name="background">home\weather\</property>
-			<property name="backgroundName">$LOCALIZE[8]</property>
+			<property name="backgroundName">$LOCALIZE[12600]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="13">
@@ -236,18 +236,18 @@
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="15">
-			<label>$LOCALIZE[5]</label>
+			<label>$LOCALIZE[10004]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>home_icons/settings.png</icon>
-			<property name="labelID">5</property>
+			<property name="labelID">settings</property>
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindow(Settings)</onclick>
 			<property name="path">ActivateWindow(Settings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-5</property>
+			<property name="submenuVisibility">settings</property>
 			<property name="group">mainmenu</property>
 			<property name="background">home\settings\</property>
-			<property name="backgroundName">$LOCALIZE[5]</property>
+			<property name="backgroundName">$LOCALIZE[10004]</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="16">
@@ -276,9 +276,9 @@
 			<property name="defaultID">32033</property>
 			<onclick>EjectTray()</onclick>
 			<property name="path">EjectTray()</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-341)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),dvd)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">341</property>
+			<property name="group">dvd</property>
 		</item>
 		<item id="1">
 			<label>Recent movies</label>
@@ -532,9 +532,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
@@ -545,9 +545,9 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
@@ -558,9 +558,9 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
@@ -571,9 +571,9 @@
 			<visible>Library.HasContent(MusicVideos)</visible>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
@@ -583,9 +583,9 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://playlists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
@@ -595,9 +595,9 @@
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[5]</label>
@@ -607,9 +607,9 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
@@ -619,9 +619,9 @@
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(video)</onclick>
 			<property name="path">CleanLibrary(video)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
@@ -631,9 +631,9 @@
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(video)</onclick>
 			<property name="path">UpdateLibrary(video)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
@@ -644,9 +644,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -657,9 +657,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -670,9 +670,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -683,9 +683,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -696,9 +696,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
@@ -709,9 +709,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
@@ -721,9 +721,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
@@ -734,9 +734,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://genres/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://genres/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
@@ -747,9 +747,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://years/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://years/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
@@ -760,9 +760,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://artists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://artists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
@@ -773,9 +773,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://albums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://albums/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
@@ -786,9 +786,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://songs/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://songs/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
@@ -799,9 +799,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://playlists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
@@ -811,9 +811,9 @@
 			<property name="defaultID">589</property>
 			<onclick>PlayerControl(Partymode(music))</onclick>
 			<property name="path">PlayerControl(Partymode(music))</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
@@ -823,9 +823,9 @@
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(MusicFiles,root)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[31465]</label>
@@ -835,9 +835,9 @@
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(music)</onclick>
 			<property name="path">CleanLibrary(music)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="12">
 			<label>$LOCALIZE[653]</label>
@@ -847,9 +847,9 @@
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(music)</onclick>
 			<property name="path">UpdateLibrary(music)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="13">
 			<label>$LOCALIZE[5]</label>
@@ -859,9 +859,9 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
@@ -981,9 +981,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -994,9 +994,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioGuide)</onclick>
 			<property name="path">ActivateWindow(RadioGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -1007,9 +1007,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioRecordings)</onclick>
 			<property name="path">ActivateWindow(RadioRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -1020,9 +1020,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioTimers)</onclick>
 			<property name="path">ActivateWindow(RadioTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -1033,9 +1033,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioSearch)</onclick>
 			<property name="path">ActivateWindow(RadioSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
@@ -1045,9 +1045,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-1)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),pictures)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[5]</label>
@@ -1057,9 +1057,9 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-1)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),pictures)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
@@ -1069,9 +1069,9 @@
 			<property name="defaultID">1212</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
@@ -1081,9 +1081,9 @@
 			<property name="defaultID">1211</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
@@ -1093,9 +1093,9 @@
 			<property name="defaultID">1213</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
@@ -1105,9 +1105,9 @@
 			<property name="defaultID">31009</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[10004]</label>
@@ -1117,9 +1117,9 @@
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-8)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">8</property>
+			<property name="group">weather</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[344]</label>
@@ -1225,9 +1225,9 @@
 			<property name="defaultID">31011</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[13000]</label>
@@ -1237,9 +1237,9 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[31468]</label>
@@ -1249,9 +1249,9 @@
 			<property name="defaultID">31468</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31469]</label>
@@ -1261,9 +1261,9 @@
 			<property name="defaultID">31469</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
@@ -1273,9 +1273,9 @@
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[13200]</label>
@@ -1285,9 +1285,9 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[130]</label>
@@ -1297,9 +1297,9 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="1">
 			<label>$LOCALIZE[31458]</label>
@@ -1418,7 +1418,7 @@
 			<property name="group">13005</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-341">
+	<include name="skinshortcuts-group-dvd">
 		<item id="1">
 			<label>$ADDON[script.skinshortcuts 32033]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -1428,10 +1428,10 @@
 			<onclick>EjectTray()</onclick>
 			<property name="path">EjectTray()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">341</property>
+			<property name="group">dvd</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-341">
+	<include name="skinshortcuts-group-alt-dvd">
 		<item id="1">
 			<label>$ADDON[script.skinshortcuts 32033]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -1440,9 +1440,9 @@
 			<property name="defaultID">32033</property>
 			<onclick>EjectTray()</onclick>
 			<property name="path">EjectTray()</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-341)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),dvd)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">341</property>
+			<property name="group">dvd</property>
 		</item>
 	</include>
 	<include name="skinshortcuts-group-movies">
@@ -1921,7 +1921,7 @@
 			<property name="group">tvshows</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-3">
+	<include name="skinshortcuts-group-videos">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -1931,7 +1931,7 @@
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
@@ -1943,7 +1943,7 @@
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
@@ -1955,7 +1955,7 @@
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
@@ -1967,7 +1967,7 @@
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
@@ -1978,7 +1978,7 @@
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://playlists/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
@@ -1989,7 +1989,7 @@
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[5]</label>
@@ -2000,7 +2000,7 @@
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
@@ -2011,7 +2011,7 @@
 			<onclick>CleanLibrary(video)</onclick>
 			<property name="path">CleanLibrary(video)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
@@ -2022,10 +2022,10 @@
 			<onclick>UpdateLibrary(video)</onclick>
 			<property name="path">UpdateLibrary(video)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-3">
+	<include name="skinshortcuts-group-alt-videos">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2034,9 +2034,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[20342]</label>
@@ -2047,9 +2047,9 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[20343]</label>
@@ -2060,9 +2060,9 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[20389]</label>
@@ -2073,9 +2073,9 @@
 			<visible>Library.HasContent(MusicVideos)</visible>
 			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[136]</label>
@@ -2085,9 +2085,9 @@
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,videodb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://playlists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[31289]</label>
@@ -2097,9 +2097,9 @@
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(Videos,root)</onclick>
 			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[5]</label>
@@ -2109,9 +2109,9 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(VideosSettings)</onclick>
 			<property name="path">ActivateWindow(VideosSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[31465]</label>
@@ -2121,9 +2121,9 @@
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(video)</onclick>
 			<property name="path">CleanLibrary(video)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[653]</label>
@@ -2133,14 +2133,14 @@
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(video)</onclick>
 			<property name="path">UpdateLibrary(video)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-3)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),videos)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">3</property>
+			<property name="group">videos</property>
 		</item>
 	</include>
 	<include name="skinshortcuts-group-plugin-video-itunes-trailers" />
 	<include name="skinshortcuts-group-alt-plugin-video-itunes-trailers" />
-	<include name="skinshortcuts-group-31601">
+	<include name="skinshortcuts-group-livetv">
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2151,7 +2151,7 @@
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -2163,7 +2163,7 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -2175,7 +2175,7 @@
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -2187,7 +2187,7 @@
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -2199,10 +2199,10 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-31601">
+	<include name="skinshortcuts-group-alt-livetv">
 		<item id="1">
 			<label>$LOCALIZE[19023]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2212,9 +2212,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -2225,9 +2225,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -2238,9 +2238,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVRecordings)</onclick>
 			<property name="path">ActivateWindow(TVRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -2251,9 +2251,9 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVTimers)</onclick>
 			<property name="path">ActivateWindow(TVTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -2264,12 +2264,12 @@
 			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVSearch)</onclick>
 			<property name="path">ActivateWindow(TVSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31601)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),livetv)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31601</property>
+			<property name="group">livetv</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-2">
+	<include name="skinshortcuts-group-music">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2280,7 +2280,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
@@ -2291,7 +2291,7 @@
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
@@ -2303,7 +2303,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://genres/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://genres/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
@@ -2315,7 +2315,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://years/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://years/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
@@ -2327,7 +2327,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://artists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://artists/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
@@ -2339,7 +2339,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://albums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://albums/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
@@ -2351,7 +2351,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://songs/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://songs/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
@@ -2363,7 +2363,7 @@
 			<onclick>ActivateWindow(MusicLibrary,musicdb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://playlists/,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
@@ -2374,7 +2374,7 @@
 			<onclick>PlayerControl(Partymode(music))</onclick>
 			<property name="path">PlayerControl(Partymode(music))</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
@@ -2385,7 +2385,7 @@
 			<onclick>ActivateWindow(MusicFiles,root)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,root)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[31465]</label>
@@ -2396,7 +2396,7 @@
 			<onclick>CleanLibrary(music)</onclick>
 			<property name="path">CleanLibrary(music)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="12">
 			<label>$LOCALIZE[653]</label>
@@ -2407,7 +2407,7 @@
 			<onclick>UpdateLibrary(music)</onclick>
 			<property name="path">UpdateLibrary(music)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="13">
 			<label>$LOCALIZE[5]</label>
@@ -2418,10 +2418,10 @@
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-2">
+	<include name="skinshortcuts-group-alt-music">
 		<item id="1">
 			<label>$LOCALIZE[31438]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2431,9 +2431,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[24001]</label>
@@ -2443,9 +2443,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[135]</label>
@@ -2456,9 +2456,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://genres/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://genres/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[652]</label>
@@ -2469,9 +2469,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://years/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://years/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[133]</label>
@@ -2482,9 +2482,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://artists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://artists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[132]</label>
@@ -2495,9 +2495,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://albums/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://albums/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[134]</label>
@@ -2508,9 +2508,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://songs/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://songs/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="8">
 			<label>$LOCALIZE[136]</label>
@@ -2521,9 +2521,9 @@
 			<visible>Library.HasContent(Music)</visible>
 			<onclick>ActivateWindow(MusicLibrary,musicdb://playlists/,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,musicdb://playlists/,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="9">
 			<label>$LOCALIZE[589]</label>
@@ -2533,9 +2533,9 @@
 			<property name="defaultID">589</property>
 			<onclick>PlayerControl(Partymode(music))</onclick>
 			<property name="path">PlayerControl(Partymode(music))</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="10">
 			<label>$LOCALIZE[31289]</label>
@@ -2545,9 +2545,9 @@
 			<property name="defaultID">31289</property>
 			<onclick>ActivateWindow(MusicFiles,root)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,root)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="11">
 			<label>$LOCALIZE[31465]</label>
@@ -2557,9 +2557,9 @@
 			<property name="defaultID">31465</property>
 			<onclick>CleanLibrary(music)</onclick>
 			<property name="path">CleanLibrary(music)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="12">
 			<label>$LOCALIZE[653]</label>
@@ -2569,9 +2569,9 @@
 			<property name="defaultID">653</property>
 			<onclick>UpdateLibrary(music)</onclick>
 			<property name="path">UpdateLibrary(music)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 		<item id="13">
 			<label>$LOCALIZE[5]</label>
@@ -2581,9 +2581,9 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(MusicSettings)</onclick>
 			<property name="path">ActivateWindow(MusicSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-2)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),music)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">2</property>
+			<property name="group">music</property>
 		</item>
 	</include>
 	<include name="skinshortcuts-group-musicvideos">
@@ -2799,7 +2799,7 @@
 			<property name="group">musicvideos</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-31602">
+	<include name="skinshortcuts-group-radio">
 		<item id="1">
 			<label>$LOCALIZE[19024]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2810,7 +2810,7 @@
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -2822,7 +2822,7 @@
 			<onclick>ActivateWindow(RadioGuide)</onclick>
 			<property name="path">ActivateWindow(RadioGuide)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -2834,7 +2834,7 @@
 			<onclick>ActivateWindow(RadioRecordings)</onclick>
 			<property name="path">ActivateWindow(RadioRecordings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -2846,7 +2846,7 @@
 			<onclick>ActivateWindow(RadioTimers)</onclick>
 			<property name="path">ActivateWindow(RadioTimers)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -2858,10 +2858,10 @@
 			<onclick>ActivateWindow(RadioSearch)</onclick>
 			<property name="path">ActivateWindow(RadioSearch)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-31602">
+	<include name="skinshortcuts-group-alt-radio">
 		<item id="1">
 			<label>$LOCALIZE[19024]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2871,9 +2871,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[22020]</label>
@@ -2884,9 +2884,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioGuide)</onclick>
 			<property name="path">ActivateWindow(RadioGuide)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[19163]</label>
@@ -2897,9 +2897,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioRecordings)</onclick>
 			<property name="path">ActivateWindow(RadioRecordings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[19040]</label>
@@ -2910,9 +2910,9 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioTimers)</onclick>
 			<property name="path">ActivateWindow(RadioTimers)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[137]</label>
@@ -2923,12 +2923,12 @@
 			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioSearch)</onclick>
 			<property name="path">ActivateWindow(RadioSearch)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-31602)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),radio)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">31602</property>
+			<property name="group">radio</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-1">
+	<include name="skinshortcuts-group-pictures">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2938,7 +2938,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[5]</label>
@@ -2949,10 +2949,10 @@
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-1">
+	<include name="skinshortcuts-group-alt-pictures">
 		<item id="1">
 			<label>$LOCALIZE[24001]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2961,9 +2961,9 @@
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-1)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),pictures)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[5]</label>
@@ -2973,12 +2973,12 @@
 			<property name="defaultID">5</property>
 			<onclick>ActivateWindow(PicturesSettings)</onclick>
 			<property name="path">ActivateWindow(PicturesSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-1)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),pictures)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">1</property>
+			<property name="group">pictures</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-24001">
+	<include name="skinshortcuts-group-programs">
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -2988,7 +2988,7 @@
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
@@ -2999,7 +2999,7 @@
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
@@ -3010,7 +3010,7 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
@@ -3021,10 +3021,10 @@
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-24001">
+	<include name="skinshortcuts-group-alt-programs">
 		<item id="1">
 			<label>$LOCALIZE[1212]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -3033,9 +3033,9 @@
 			<property name="defaultID">1212</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[1211]</label>
@@ -3045,9 +3045,9 @@
 			<property name="defaultID">1211</property>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 			<property name="path">ActivateWindow(MusicFiles,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[1213]</label>
@@ -3057,9 +3057,9 @@
 			<property name="defaultID">1213</property>
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31009]</label>
@@ -3069,12 +3069,12 @@
 			<property name="defaultID">31009</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-24001)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),programs)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">24001</property>
+			<property name="group">programs</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-8">
+	<include name="skinshortcuts-group-weather">
 		<item id="1">
 			<label>$LOCALIZE[10004]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -3084,10 +3084,10 @@
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">8</property>
+			<property name="group">weather</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-8">
+	<include name="skinshortcuts-group-alt-weather">
 		<item id="1">
 			<label>$LOCALIZE[10004]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -3096,9 +3096,9 @@
 			<property name="defaultID">settings</property>
 			<onclick>ActivateWindow(WeatherSettings)</onclick>
 			<property name="path">ActivateWindow(WeatherSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-8)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),weather)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">8</property>
+			<property name="group">weather</property>
 		</item>
 	</include>
 	<include name="skinshortcuts-group-1036" />
@@ -3291,7 +3291,7 @@
 			<property name="group">script.globalsearch</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-5">
+	<include name="skinshortcuts-group-settings">
 		<item id="1">
 			<label>$LOCALIZE[31011]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -3301,7 +3301,7 @@
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[13000]</label>
@@ -3312,7 +3312,7 @@
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[31468]</label>
@@ -3323,7 +3323,7 @@
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31469]</label>
@@ -3334,7 +3334,7 @@
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
@@ -3345,7 +3345,7 @@
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[13200]</label>
@@ -3356,7 +3356,7 @@
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[130]</label>
@@ -3367,10 +3367,10 @@
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-5">
+	<include name="skinshortcuts-group-alt-settings">
 		<item id="1">
 			<label>$LOCALIZE[31011]</label>
 			<label2>$ADDON[script.skinshortcuts 32034]</label2>
@@ -3379,9 +3379,9 @@
 			<property name="defaultID">31011</property>
 			<onclick>ActivateWindow(SkinSettings)</onclick>
 			<property name="path">ActivateWindow(SkinSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="2">
 			<label>$LOCALIZE[13000]</label>
@@ -3391,9 +3391,9 @@
 			<property name="defaultID">13000</property>
 			<onclick>ActivateWindow(SystemSettings)</onclick>
 			<property name="path">ActivateWindow(SystemSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="3">
 			<label>$LOCALIZE[31468]</label>
@@ -3403,9 +3403,9 @@
 			<property name="defaultID">31468</property>
 			<onclick>ActivateWindow(ServiceSettings)</onclick>
 			<property name="path">ActivateWindow(ServiceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="4">
 			<label>$LOCALIZE[31469]</label>
@@ -3415,9 +3415,9 @@
 			<property name="defaultID">31469</property>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			<property name="path">ActivateWindow(AppearanceSettings)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="5">
 			<label>$LOCALIZE[7]</label>
@@ -3427,9 +3427,9 @@
 			<property name="defaultID">7</property>
 			<onclick>ActivateWindow(FileManager)</onclick>
 			<property name="path">ActivateWindow(FileManager)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="6">
 			<label>$LOCALIZE[13200]</label>
@@ -3439,9 +3439,9 @@
 			<property name="defaultID">13200</property>
 			<onclick>ActivateWindow(Profiles)</onclick>
 			<property name="path">ActivateWindow(Profiles)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 		<item id="7">
 			<label>$LOCALIZE[130]</label>
@@ -3451,9 +3451,9 @@
 			<property name="defaultID">130</property>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 			<property name="path">ActivateWindow(SystemInfo)</property>
-			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),num-5)]</visible>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),settings)]</visible>
 			<property name="isSubmenu">True</property>
-			<property name="group">5</property>
+			<property name="group">settings</property>
 		</item>
 	</include>
 	<include name="skinshortcuts-group-13005">
