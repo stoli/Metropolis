@@ -114,9 +114,8 @@
 			<icon>home_icons/music.png</icon>
 			<property name="labelID">music</property>
 			<property name="defaultID">music</property>
-			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,musicdb://files/,return)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,musicdb://files/,return)</property>
+			<onclick>ActivateWindow(Music)</onclick>
+			<property name="path">ActivateWindow(Music)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">music</property>
 			<property name="group">mainmenu</property>
