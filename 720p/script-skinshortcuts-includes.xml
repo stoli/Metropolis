@@ -125,10 +125,9 @@
 			<property name="widgetType">music</property>
 			<property name="background">home\music\</property>
 			<property name="backgroundName">$LOCALIZE[10005]</property>
-			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,musicdb://files/,return)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,musicdb://files/,return)</property>
-			<property name="list">musicdb://files/</property>
+			<onclick>ActivateWindow(Music)</onclick>
+			<property name="path">ActivateWindow(Music)</property>
+			<property name="list">Music</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">music</property>
 			<property name="group">mainmenu</property>
