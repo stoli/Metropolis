@@ -7,7 +7,7 @@
 			<visible>IsEmpty(Window.Property(additionalDialog))</visible>
 			<include>Animation_OpenCloseFade</include>
 			<!-- XXX: this doesn't fade for DialogSelect for some reason.. fix later -->
-			<animation type="Conditional" condition="Window.IsActive(selectdialog) | Window.IsActive(filebrowser)">
+			<animation type="Conditional" condition="Window.IsActive(selectdialog) | Window.IsActive(filebrowser) | Window.IsActive(extendedprogressdialog)">
 				<effect type="fade" time="200" start="100" end="10" />
 			</animation>
 			<posx>30</posx>
