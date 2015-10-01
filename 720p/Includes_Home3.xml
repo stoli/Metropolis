@@ -82,24 +82,6 @@
 			<aspectratio>stretch</aspectratio>
 			<visible allowhiddenfocus="true">Skin.HasSetting(HomeStretchBackgrounds)</visible>
 		</control>
-		<!-- hack to get the correct colordiffuse on the home deck -->
-		<control type="image">
-			<posx>0</posx>
-			<posy>544</posy>
-			<width>1280</width>
-			<height>176</height>
-			<texture>background.png</texture>
-			<aspectratio aligny="bottom">scale</aspectratio>
-		</control>  
-		<control type="image">
-			<posx>0</posx>
-			<posy>544</posy>
-			<width>1280</width>
-			<height>176</height>
-			<texture>background.png</texture>
-			<aspectratio aligny="bottom">scale</aspectratio>
-			<colordiffuse>BackgroundColor</colordiffuse>
-		</control>
 
 		<!-- Sub-menus and upper-menus -->
 		<include>HomeDeck</include>
