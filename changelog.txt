@@ -1,3 +1,9 @@
+3.1.0 - 20151002
+- More consistent design for MyMusicPlaylist.xml.
+- Don't hide widget when submenu is focused on Home1.
+- Progress dialog was overlapped by a couple of other dialog headings.
+- Default background and icon for Search mainmenu shortcut.
+
 3.0.8 - 20150929
 - Customizable Home furniture.
 - Complete Home screen refactor, with support for widgets.
