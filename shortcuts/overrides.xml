@@ -151,7 +151,6 @@
 	<background label="13005">home\shutdown\</background>
 	<backgrounddefault defaultID="shutdown">home\shutdown\</backgrounddefault>
 	<backgroundBrowse>True</backgroundBrowse>
-	<backgroundBrowseDefault>special://skin/media/home_art</backgroundBrowseDefault>
 
 	<!-- Thumbnails (Home2 icons, also specified in shortcuts/mainmenu.DATA.xml) -->
 	<thumbnail label="32032">home_icons/playdisc.png</thumbnail>
@@ -170,5 +169,4 @@
 	<thumbnail label="137">home_icons/search.png</thumbnail>
 	<thumbnail label="10004">home_icons/settings.png</thumbnail>
 	<thumbnail label="13005">home_icons/shutdown.png</thumbnail>
-	<thumbnailBrowseDefault>special://skin/media/home_icons</thumbnailBrowseDefault>
 </overrides>
