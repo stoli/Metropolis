@@ -4,36 +4,31 @@
 		<label>31458</label>
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
-		<action>AlarmClock(ShutdownTimer,Shutdown)</action>
-		<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+		<action>AlarmClock(ShutdownTimer,Shutdown())</action>
 	</shortcut>
 	<shortcut>
 		<label>31459</label>
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
 		<action>CancelAlarm(ShutdownTimer)</action>
-		<visible>System.HasAlarm(ShutdownTimer)</visible>
 	</shortcut>
 	<shortcut>
 		<label>13011</label>
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
-		<action>Suspend</action>
-		<visible>System.CanSuspend</visible>
+		<action>Suspend()</action>
 	</shortcut>
 	<shortcut>
 		<label>13010</label>
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
-		<action>Hibernate</action>
-		<visible>System.CanHibernate</visible>
+		<action>Hibernate()</action>
 	</shortcut>
 	<shortcut>
 		<label>13013</label>
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
-		<action>Reboot</action>
-		<visible>System.CanReboot</visible>
+		<action>Reset()</action>
 	</shortcut>
 	<shortcut>
 		<label>13005</label>
@@ -47,7 +42,6 @@
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
 		<action>System.LogOff</action>
-		<visible>[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon</visible>
 	</shortcut>
 	<shortcut>
 		<label>20183</label>
@@ -60,6 +54,5 @@
 		<label2>32054</label2>
 		<icon>DefaultShortcut.png</icon>
 		<action>Quit()</action>
-		<visible>System.ShowExitButton</visible>
 	</shortcut>
 </shortcuts>

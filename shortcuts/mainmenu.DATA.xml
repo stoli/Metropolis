@@ -4,24 +4,21 @@
 		<label>32032</label>
 		<label2>32034</label2>
 		<icon>home_icons/playdisc.png</icon>
-		<action>PlayDVD()</action>
-		<visible>System.HasMediaDVD</visible>
+		<action>XBMC.PlayDVD()</action>
 		<defaultID>dvd</defaultID>
 	</shortcut>
 	<shortcut>
 		<label>342</label>
 		<label2>32034</label2>
 		<icon>home_icons/movies.png</icon>
-		<action>ActivateWindow(Videos,videodb://movies/titles/,return)</action>
-		<visible>Library.HasContent(Movies)</visible>
+		<action>ActivateWindow(Videos,MovieTitles,return)</action>
 		<defaultID>movies</defaultID>
 	</shortcut>
 	<shortcut>
 		<label>20343</label>
 		<label2>32034</label2>
 		<icon>home_icons/tvshows.png</icon>
-		<action>ActivateWindow(Videos,videodb://tvshows/titles/,return)</action>
-		<visible>Library.HasContent(TVShows)</visible>
+		<action>ActivateWindow(Videos,TVShowTitles,return)</action>
 		<defaultID>tvshows</defaultID>
 	</shortcut>
 	<shortcut>
@@ -45,7 +42,6 @@
 		<label2>32034</label2>
 		<icon>home_icons/livetv.png</icon>
 		<action>ActivateWindow(TVChannels)</action>
-		<visible>PVR.HasTVChannels + System.GetBool(pvrmanager.enabled)</visible>
 		<defaultID>livetv</defaultID>
 	</shortcut>
 	<shortcut>
@@ -59,8 +55,7 @@
 		<label>20389</label>
 		<label2>32034</label2>
 		<icon>home_icons/musicvideos.png</icon>
-		<action>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</action>
-		<visible>Library.HasContent(MusicVideos)</visible>
+		<action>ActivateWindow(Videos,MusicVideoTitles,return)</action>
 		<defaultID>musicvideos</defaultID>
 	</shortcut>
 	<shortcut>
@@ -68,7 +63,6 @@
 		<label2>32034</label2>
 		<icon>home_icons/radio.png</icon>
 		<action>ActivateWindow(RadioChannels)</action>
-		<visible>PVR.HasRadioChannels + System.GetBool(pvrmanager.enabled)</visible>
 		<defaultID>radio</defaultID>
 	</shortcut>
 	<shortcut>

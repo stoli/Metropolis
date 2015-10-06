@@ -10,9 +10,9 @@
 			<property name="background">home\dvd\</property>
 			<property name="backgroundName">$ADDON[script.skinshortcuts 32032]</property>
 			<visible>System.HasMediaDVD</visible>
-			<onclick>PlayDVD()</onclick>
-			<property name="path">PlayDVD()</property>
-			<property name="list">PlayDVD()</property>
+			<onclick>XBMC.PlayDVD()</onclick>
+			<property name="path">XBMC.PlayDVD()</property>
+			<property name="list">XBMC.PlayDVD()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">dvd</property>
 			<property name="group">mainmenu</property>
@@ -30,9 +30,9 @@
 			<property name="background">home\movies\</property>
 			<property name="backgroundName">$LOCALIZE[342]</property>
 			<visible>Library.HasContent(Movies)</visible>
-			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
-			<property name="list">videodb://movies/titles/</property>
+			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<property name="path">ActivateWindow(Videos,MovieTitles,return)</property>
+			<property name="list">MovieTitles</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">movies</property>
 			<property name="group">mainmenu</property>
@@ -50,9 +50,9 @@
 			<property name="background">home\tvshows\</property>
 			<property name="backgroundName">$LOCALIZE[20343]</property>
 			<visible>Library.HasContent(TVShows)</visible>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+			<property name="path">ActivateWindow(Videos,TVShowTitles,return)</property>
+			<property name="list">TVShowTitles</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">tvshows</property>
 			<property name="group">mainmenu</property>
@@ -105,7 +105,7 @@
 			<property name="widgetType">video</property>
 			<property name="background">home\livetv\</property>
 			<property name="backgroundName">$ADDON[script.skinshortcuts 32022]</property>
-			<visible>[PVR.HasTVChannels] + [PVR.HasTVChannels + System.GetBool(pvrmanager.enabled)]</visible>
+			<visible>PVR.HasTVChannels</visible>
 			<onclick>ActivateWindow(TVChannels)</onclick>
 			<property name="path">ActivateWindow(TVChannels)</property>
 			<property name="list">TVChannels</property>
@@ -145,9 +145,9 @@
 			<property name="background">home\musicvideos\</property>
 			<property name="backgroundName">$LOCALIZE[20389]</property>
 			<visible>Library.HasContent(MusicVideos)</visible>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
+			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+			<property name="path">ActivateWindow(Videos,MusicVideoTitles,return)</property>
+			<property name="list">MusicVideoTitles</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">musicvideos</property>
 			<property name="group">mainmenu</property>
@@ -161,7 +161,7 @@
 			<property name="defaultID">radio</property>
 			<property name="background">home\radio\</property>
 			<property name="backgroundName">$ADDON[script.skinshortcuts 32087]</property>
-			<visible>[PVR.HasRadioChannels] + [PVR.HasRadioChannels + System.GetBool(pvrmanager.enabled)]</visible>
+			<visible>PVR.HasRadioChannels</visible>
 			<onclick>ActivateWindow(RadioChannels)</onclick>
 			<property name="path">ActivateWindow(RadioChannels)</property>
 			<property name="list">RadioChannels</property>
@@ -1413,10 +1413,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31458</property>
 			<property name="defaultID">31458</property>
-			<visible>[System.CanPowerDown | System.CanSuspend | System.CanHibernate] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
-			<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>
-			<property name="path">AlarmClock(ShutdownTimer,Shutdown)</property>
-			<property name="list">AlarmClock(ShutdownTimer,Shutdown)</property>
+			<visible>[!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<onclick>AlarmClock(ShutdownTimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(ShutdownTimer,Shutdown())</property>
+			<property name="list">AlarmClock(ShutdownTimer,Shutdown())</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -1427,7 +1427,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31459</property>
 			<property name="defaultID">31459</property>
-			<visible>[[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(ShutdownTimer)]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<visible>[System.HasAlarm(shutdowntimer)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
 			<onclick>CancelAlarm(ShutdownTimer)</onclick>
 			<property name="path">CancelAlarm(ShutdownTimer)</property>
 			<property name="list">CancelAlarm(ShutdownTimer)</property>
@@ -1441,10 +1441,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>[[System.CanSuspend] + [System.CanSuspend]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
+			<visible>[System.CanSuspend] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -1455,10 +1455,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>[[System.CanHibernate] + [System.CanHibernate]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
+			<visible>[System.CanHibernate] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -1470,9 +1470,9 @@
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<visible>[System.CanReboot] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -1497,7 +1497,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<visible>[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>
 			<property name="list">System.LogOff</property>
@@ -1524,7 +1524,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>[[System.ShowExitButton] + [System.ShowExitButton]] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
+			<visible>[System.ShowExitButton] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-13005)</visible>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
 			<property name="list">Quit()</property>
@@ -3830,10 +3830,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31458</property>
 			<property name="defaultID">31458</property>
-			<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
-			<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>
-			<property name="path">AlarmClock(ShutdownTimer,Shutdown)</property>
-			<property name="list">AlarmClock(ShutdownTimer,Shutdown)</property>
+			<visible>!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]</visible>
+			<onclick>AlarmClock(ShutdownTimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(ShutdownTimer,Shutdown())</property>
+			<property name="list">AlarmClock(ShutdownTimer,Shutdown())</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3844,7 +3844,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31459</property>
 			<property name="defaultID">31459</property>
-			<visible>[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(ShutdownTimer)]</visible>
+			<visible>System.HasAlarm(shutdowntimer)</visible>
 			<onclick>CancelAlarm(ShutdownTimer)</onclick>
 			<property name="path">CancelAlarm(ShutdownTimer)</property>
 			<property name="list">CancelAlarm(ShutdownTimer)</property>
@@ -3858,10 +3858,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>[System.CanSuspend] + [System.CanSuspend]</visible>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
+			<visible>System.CanSuspend</visible>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3872,10 +3872,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>[System.CanHibernate] + [System.CanHibernate]</visible>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
+			<visible>System.CanHibernate</visible>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3887,9 +3887,9 @@
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<visible>System.CanReboot</visible>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3914,7 +3914,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon]</visible>
+			<visible>[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon</visible>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>
 			<property name="list">System.LogOff</property>
@@ -3941,7 +3941,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>[System.ShowExitButton] + [System.ShowExitButton]</visible>
+			<visible>System.ShowExitButton</visible>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
 			<property name="list">Quit()</property>
@@ -3957,10 +3957,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31458</property>
 			<property name="defaultID">31458</property>
-			<visible>[System.CanPowerDown | System.CanSuspend | System.CanHibernate] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
-			<onclick>AlarmClock(ShutdownTimer,Shutdown)</onclick>
-			<property name="path">AlarmClock(ShutdownTimer,Shutdown)</property>
-			<property name="list">AlarmClock(ShutdownTimer,Shutdown)</property>
+			<visible>[!System.HasAlarm(shutdowntimer) + [System.CanPowerDown | System.CanSuspend | System.CanHibernate]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<onclick>AlarmClock(ShutdownTimer,Shutdown())</onclick>
+			<property name="path">AlarmClock(ShutdownTimer,Shutdown())</property>
+			<property name="list">AlarmClock(ShutdownTimer,Shutdown())</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3971,7 +3971,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">31459</property>
 			<property name="defaultID">31459</property>
-			<visible>[[System.HasAlarm(shutdowntimer)] + [System.HasAlarm(ShutdownTimer)]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<visible>[System.HasAlarm(shutdowntimer)] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
 			<onclick>CancelAlarm(ShutdownTimer)</onclick>
 			<property name="path">CancelAlarm(ShutdownTimer)</property>
 			<property name="list">CancelAlarm(ShutdownTimer)</property>
@@ -3985,10 +3985,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13011</property>
 			<property name="defaultID">13011</property>
-			<visible>[[System.CanSuspend] + [System.CanSuspend]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
-			<onclick>Suspend</onclick>
-			<property name="path">Suspend</property>
-			<property name="list">Suspend</property>
+			<visible>[System.CanSuspend] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<onclick>Suspend()</onclick>
+			<property name="path">Suspend()</property>
+			<property name="list">Suspend()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -3999,10 +3999,10 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13010</property>
 			<property name="defaultID">13010</property>
-			<visible>[[System.CanHibernate] + [System.CanHibernate]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
-			<onclick>Hibernate</onclick>
-			<property name="path">Hibernate</property>
-			<property name="list">Hibernate</property>
+			<visible>[System.CanHibernate] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<onclick>Hibernate()</onclick>
+			<property name="path">Hibernate()</property>
+			<property name="list">Hibernate()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -4014,9 +4014,9 @@
 			<property name="labelID">13013</property>
 			<property name="defaultID">13013</property>
 			<visible>[System.CanReboot] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
-			<onclick>Reboot</onclick>
-			<property name="path">Reboot</property>
-			<property name="list">Reboot</property>
+			<onclick>Reset()</onclick>
+			<property name="path">Reset()</property>
+			<property name="list">Reset()</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">13005</property>
 			<property name="isSubmenu">True</property>
@@ -4041,7 +4041,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">20126</property>
 			<property name="defaultID">20126</property>
-			<visible>[[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + [[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<visible>[[System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)] + System.Loggedon] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
 			<onclick>System.LogOff</onclick>
 			<property name="path">System.LogOff</property>
 			<property name="list">System.LogOff</property>
@@ -4068,7 +4068,7 @@
 			<icon>DefaultShortcut.png</icon>
 			<property name="labelID">13012</property>
 			<property name="defaultID">13012</property>
-			<visible>[[System.ShowExitButton] + [System.ShowExitButton]] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
+			<visible>[System.ShowExitButton] + StringCompare(Window(10000).Property(submenuVisibility),num-13005)</visible>
 			<onclick>Quit()</onclick>
 			<property name="path">Quit()</property>
 			<property name="list">Quit()</property>
