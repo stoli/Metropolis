@@ -139,7 +139,7 @@
 				<control type="group">
 					<width>58</width>
 					<height>62</height>
-					<visible>[IsEmpty(ListItem.Top250) | [!IsEmpty(ListItem.Top250) + SubString(ListItem.Top250,0,Left)]] + !IsEmpty(ListItem.Votes)</visible>
+					<visible>[IsEmpty(ListItem.Top250) | [!IsEmpty(ListItem.Top250) + SubString(ListItem.Top250,0,Left)]] + !IsEmpty(ListItem.Votes) + !SubString(ListItem.Votes,0,Left)</visible>
 					<control type="image">
 						<include>MediaFlagsVarsSquareHalfTop</include>
 						<texture>flags/IMDB-Logo.png</texture>
