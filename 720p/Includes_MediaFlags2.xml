@@ -100,7 +100,7 @@
 				</control>
 			</control>
 
-			<!-- Video Aspect-->
+			<!-- Video Aspect -->
 			<control type="group">
 				<width>90</width>
 				<height>62</height>
@@ -208,60 +208,6 @@
 					<aspectratio aligny="center" scalediffuse="true">stretch</aspectratio>
 				</control>
 			</control>
-
-			<!-- MPAA Flag (only shown in fullscreen video info) -->
-			<!--
-				XXX: this doesn't really belong with the other media flags.
-				commenting out for now until people complain about it.
-			<control type="group">
-				<width>58</width>
-				<height>62</height>
-				<visible>IsEmpty(ListItem.mpaa) + !IsEmpty(VideoPlayer.mpaa)</visible>
-				<control type="image">
-					<include>MediaFlagsVarsSquare</include>
-					<texture>$VAR[MediaFlag_MPAA]</texture>
-					<colordiffuse>MediaFlagDiffuse</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<width>66</width>
-					<height>54</height>
-					<texture>flags/flag_framesquare.png</texture>
-					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-				</control>
-			</control>
-			-->
-
-			<!-- Star Rating (only shown in fullscreen video info) -->
-			<!--
-				XXX: this doesn't really belong with the other media flags.
-				commenting out for now until people complain about it.
-			<control type="group">
-				<width>58</width>
-				<height>62</height>
-				<visible>IsEmpty(ListItem.Rating) + !IsEmpty(VideoPlayer.Rating)</visible>
-				<control type="image">
-					<include>MediaFlagsVarsSquare</include>
-					<texture>Star.png</texture>
-					<colordiffuse>RatingStarDiffuse</colordiffuse>
-				</control>
-				<control type="label">
-					<include>MediaFlagsVarsSquare</include>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label fallback="NA">$INFO[VideoPlayer.Rating]</label>
-					<textcolor>MediaFlagDiffuse</textcolor>
-					<font>METF_StarRating</font>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<width>66</width>
-					<height>54</height>
-					<texture>flags/flag_framesquare.png</texture>
-					<colordiffuse>MediaFlagBoxDiffuse</colordiffuse>
-				</control>
-			</control>
-			-->
 		</control>
 	</include>
 </includes>

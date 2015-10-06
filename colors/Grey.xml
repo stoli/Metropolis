@@ -47,7 +47,8 @@
 	<color name="MediaFlagDiffuse">ddFFFFFF</color>
 	<color name="MediaFlagBoxDiffuse">dd808080</color>
 	<color name="RatingStarDiffuse">bbe47406</color>
-	<color name="IMDbDiffuse">eed0b331</color>
+	<color name="IMDbDiffuseTop250">eed0b331</color>
+	<color name="IMDbDiffuseVotes">bb3dd76c</color>
 
 	<!-- Viewtypes -->
 	<color name="TitleText">FFFFFFFF</color>
