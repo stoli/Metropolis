@@ -230,6 +230,11 @@
 			<size>14</size>
 		</font>
 		<font>
+			<name>METF_DialogVerySmallBold</name>
+			<filename>MET_UbuntuBold.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
 			<name>METF_Menu</name>
 			<filename>MET_FontinSansSmallCaps.ttf</filename>
 			<!--

@@ -992,7 +992,15 @@ msgctxt "#31479"
 msgid "Poster Fixed Large"
 msgstr ""
 
-#empty strings from id 31479 to 31599
+msgctxt "#31480"
+msgid "Show IMDb Ranking Media Flag"
+msgstr ""
+
+msgctxt "#31481"
+msgid "Show Votes instead of Top250 always"
+msgstr ""
+
+#empty strings from id 31482 to 31599
 #PVR Resources
 
 msgctxt "#31600"

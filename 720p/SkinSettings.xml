@@ -330,32 +330,45 @@
 					</control>
 					<control type="radiobutton" id="507">
 						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31480]</label>
+						<onclick>Skin.ToggleSetting(Show_IMDbMediaFlag)</onclick>
+						<selected>Skin.HasSetting(Show_IMDbMediaFlag)</selected>
+					</control>
+					<control type="radiobutton" id="508">
+						<include>SettingsLabel</include>
+						<label>$LOCALIZE[31481]</label>
+						<onclick>Skin.ToggleSetting(Show_VotesMediaFlagAlways)</onclick>
+						<selected>Skin.HasSetting(Show_VotesMediaFlagAlways)</selected>
+						<visible>Skin.HasSetting(Show_IMDbMediaFlag)</visible>
+					</control>
+					<control type="radiobutton" id="509">
+						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(Hide_MovieTagline)</onclick>
 						<selected>Skin.HasSetting(Hide_MovieTagline)</selected>
 					</control>
-					<control type="image" id="508">
+					<control type="image" id="510">
 						<include>Settings_Line</include>
 					</control>
-					<control type="radiobutton" id="509">
+					<control type="radiobutton" id="511">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31399]</label>
 						<onclick>Skin.ToggleSetting(GlobalFanartLight)</onclick>
 						<selected>Skin.HasSetting(GlobalFanartLight)</selected>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="512">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31406]</label>
 						<onclick>Skin.ToggleSetting(NoSegmentedFanart)</onclick>
 						<selected>Skin.HasSetting(NoSegmentedFanart)</selected>
 					</control>
-					<control type="radiobutton" id="511">
+					<control type="radiobutton" id="513">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31422]</label>
 						<onclick>Skin.ToggleSetting(LogoViewSingleItem)</onclick>
 						<selected>Skin.HasSetting(LogoViewSingleItem)</selected>
 					</control>
-					<control type="radiobutton" id="512">
+					<control type="radiobutton" id="514">
 						<include>SettingsLabel</include>
 						<label>$LOCALIZE[31712]</label>
 						<onclick>Skin.ToggleSetting(CropMVGalleryIcon)</onclick>
